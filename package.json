@@ -1,0 +1,88 @@
+{
+  "name": "LAMP-documentation",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@docusaurus/utils": "^2.0.0-alpha.37",
+    "@easyops-cn/docusaurus-search-local": "^0.15.0",
+    "@mdx-js/react": "^1.6.21",
+    "@monaco-editor/react": "^3.3.2",
+    "clsx": "^1.1.1",
+    "dag-map": "^2.0.2",
+    "fs-extra": "^9.0.1",
+    "import-fresh": "^3.2.1",
+    "json-refs": "^3.0.15",
+    "json-schema-ref-parser": "^9.0.1",
+    "lodash.kebabcase": "^4.1.1",
+    "md5": "^2.2.1",
+    "openapi-to-postmanv2": "^1.2.1",
+    "postman-code-generators": "^1.0.0",
+    "postman-collection": "^3.6.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-magic-dropzone": "^1.0.1",
+    "react-markdown": "^4.3.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "remark-admonitions": "^1.2.1",
+    "traverse": "^0.6.6"
+  },
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "dev": "docusaurus start"
+  },
+  "babel": {
+    "compact": true,
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+          "loose": true,
+          "corejs": "3",
+          "modules": false,
+          "exclude": [
+            "transform-typeof-symbol"
+          ]
+        }
+      ],
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "corejs": false,
+          "helpers": false,
+          "regenerator": true,
+          "useESModules": true
+        }
+      ],
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-proposal-optional-chaining",
+      "@babel/plugin-proposal-nullish-coalescing-operator"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
