@@ -5,7 +5,7 @@ module.exports = {
   favicon: './docs/assets/logo.png',
   organizationName: 'BIDMCDigitalPsychiatry',
   projectName: 'LAMP-platform',
-  baseUrl: '/',
+  baseUrl: '/LAMP-platform/', // FIXME: CHANGE THIS ONCE CNAME IS CONFIGURED
   onBrokenLinks: 'throw',
   onDuplicateRoutes: 'throw',
   onBrokenMarkdownLinks: 'throw',

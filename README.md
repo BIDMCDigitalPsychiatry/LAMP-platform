@@ -7,3 +7,8 @@
 | | | | | [Python](https://github.com/BIDMCDigitalPsychiatry/LAMP-py) |
 | | | | | [Swift](https://github.com/BIDMCDigitalPsychiatry/LAMP-swift) |
 | | | | | [Kotlin](https://github.com/BIDMCDigitalPsychiatry/LAMP-kotlin) |
+
+
+### Editing Documentation
+
+To edit and test documentation locally after cloning the repository, run `npm start`. 
