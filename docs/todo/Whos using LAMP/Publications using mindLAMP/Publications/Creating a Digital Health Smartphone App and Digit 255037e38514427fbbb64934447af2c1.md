@@ -1,0 +1,5 @@
+# Creating a Digital Health Smartphone App and Digital Phenotyping Platform for Mental Health and Diverse Healthcare Needs: an Interdisciplinary and Collaborative Approach
+
+Citation: Torous, J., Wisniewski, H., Bird, B. et al. Creating a Digital Health Smartphone App and Digital Phenotyping Platform for Mental Health and Diverse Healthcare Needs: an Interdisciplinary and Collaborative Approach. J. technol. behav. sci. 4, 73–85 (2019). https://doi.org/10.1007/s41347-019-00095-w
+
+[../../../Topics/Publications using mindLAMP/Publications/Creating a Digital Health Smartphone App and Digit/Torous2019_Article_CreatingADigitalHealthSmartpho.pdf](../../../Topics/Publications using mindLAMP/Publications/Creating a Digital Health Smartphone App and Digit/Torous2019_Article_CreatingADigitalHealthSmartpho.pdf)
