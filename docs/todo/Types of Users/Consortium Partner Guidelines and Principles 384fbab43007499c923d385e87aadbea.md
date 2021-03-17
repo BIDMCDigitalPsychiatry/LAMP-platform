@@ -12,7 +12,7 @@ Non-identifiable data is shared in a common data pool for consortium partners to
 
 ## ③ Shared **Survey**
 
-If using mindLAMP to administer surveys, consortium partners must agree to use 1 - 5 common questions which are listed [here](Consortium Partner Survey Requirements.md). This will allow partners to gather data from diverse study populations.
+If using mindLAMP to administer surveys, consortium partners must agree to use 1 - 5 common questions which are listed [here](Consortium%20Partner%20Survey%20Requirements.md). This will allow partners to gather data from diverse study populations.
 
 ## ④ **Independent Server**
 

@@ -21,7 +21,7 @@ LAMP.connect('api.lamp.digital', 'my_email@address.com', 'my_password')
 
 ## Protocol methods
 
-Methods native to the LAMP API can now be called to pull data from the platform. These methods can be easily viewed on the [[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](../Data Science with LAMP.md). 
+Methods native to the LAMP API can now be called to pull data from the platform. These methods can be easily viewed on the [[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](../Data%20Science%20with%20LAMP.md). 
 
 For example, we can find all of the participants belonging to a Researcher:
 
@@ -46,7 +46,7 @@ LAMP.Participant.all_by_researcher(TEST_RESEARCHER)
 #    'helpline': None}]}
 ```
 
-For information on API object hierarchy, please refer [[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](../Data Science with LAMP.md) .
+For information on API object hierarchy, please refer [[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](../Data%20Science%20with%20LAMP.md) .
 
 For example, the code below will make CSV files of all the 'lamp.gps.contextual' sensor events for all participants under a given researcher id:
 
@@ -178,7 +178,7 @@ Details of the 'activity can be be viewed the following method
 LAMP.Activity.view('16fnz109gs4sehyfc84n')
 ```
 
-**To learn more about the data types available for Activities and Sensors, see** [Data Types](Data Types.md). 
+**To learn more about the data types available for Activities and Sensors, see** [Data Types](Data%20Types.md). 
 
 ## Dataframe methods
 

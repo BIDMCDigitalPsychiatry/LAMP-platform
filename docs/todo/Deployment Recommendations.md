@@ -2,7 +2,7 @@
 
 # Disclosure
 
-The steps to deploy the LAMP Platform on your own [can be found here](Deploying the LAMP Platform.md). We encourage all self-deploying users to consult the legal and IT departments, as well as sign a Business Associate Agreement (BAA) with the cloud provider to comply with HIPAA regulations.
+The steps to deploy the LAMP Platform on your own [can be found here](Deploying%20the%20LAMP%20Platform.md). We encourage all self-deploying users to consult the legal and IT departments, as well as sign a Business Associate Agreement (BAA) with the cloud provider to comply with HIPAA regulations.
 
 LAMP is completely free, open source software; as a result you are free to follow any or all steps that are suggested. However, we can only assure a successful deployment of the LAMP Platform if each required step is followed. If these steps are not implemented correctly, we are unable to guarantee LAMP will deploy properly. We are also unable to offer the technical support from our team for other deployments.
 

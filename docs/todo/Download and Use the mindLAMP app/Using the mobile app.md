@@ -34,6 +34,6 @@ May require **Google Fit** to be installed for all features to work correctly.
 
     Web: [https://dashboard-staging.lamp.digital/](https://dashboard-staging.lamp.digital/) 
 
-[Apple App Store Review](Using the mobile app/Apple App Store Review.md)
+[Apple App Store Review](Using%20the%20mobile%20app/Apple%20App%20Store%20Review.md)
 
-[Google Play Store Review](Using the mobile app/Google Play Store Review.md)
+[Google Play Store Review](Using%20the%20mobile%20app/Google%20Play%20Store%20Review.md)

@@ -54,4 +54,4 @@ Once you create your journal activity, it will show up in the Manage tab. Howeve
 
 ![](../../assets/Untitled 85.png)
 
-Ready to start [Take Surveys and Complete Activities](Take Surveys and Complete Activities.md)?
+Ready to start [Take Surveys and Complete Activities](Take%20Surveys%20and%20Complete%20Activities.md)?

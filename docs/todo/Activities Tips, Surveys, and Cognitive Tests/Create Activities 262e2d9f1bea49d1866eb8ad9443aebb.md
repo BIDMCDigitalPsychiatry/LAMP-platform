@@ -8,12 +8,12 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 
 1. Log in to the dashboard and navigate to the Activities tab.
 2. Click the `[+ Add]` button at the top right of the list to begin. If you would like to edit an existing activity, simply tap on its row in the list instead.
-3. Select a cognitive test to add an activity that will show up in the [Manage tab](../What are the Components of LAMP.md).
-4. Select "tips" to create tip or resource for a patient to show up in the [Learn tab](../What are the Components of LAMP.md).
+3. Select a cognitive test to add an activity that will show up in the [Manage tab](../What%20are%20the%20Components%20of%20LAMP.md).
+4. Select "tips" to create tip or resource for a patient to show up in the [Learn tab](../What%20are%20the%20Components%20of%20LAMP.md).
 5. If you would like to create a group of activities, click Activity Group.
 
 ![](../../assets/Untitled B.png)
 
 Note, you can add surveys and activities to an activity group. This group of activities can then be scheduled like a survey or other activities.
 
-Check out  [Customize and Schedule Activities](Customize and Schedule Activities.md) next.
+Check out  [Customize and Schedule Activities](Customize%20and%20Schedule%20Activities.md) next.

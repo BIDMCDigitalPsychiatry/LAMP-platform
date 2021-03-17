@@ -10,9 +10,9 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
  🌎 **[→ Learn more about the Division of Digital Psychiatry.](https://www.digitalpsych.org/)**
 
-[→ Download and Use the mindLAMP app.](LAMP Platform User Guide/%E2%86%92 Download and Use the mindLAMP app.md)
+[→ Download and Use the mindLAMP app.](LAMP%20Platform%20User%20Guide/%E2%86%92%20Download%20and%20Use%20the%20mindLAMP%20app.md)
 
-[→ Report a bug or request a feature.](LAMP Platform User Guide/%E2%86%92 Report a bug or request a feature.md)
+[→ Report a bug or request a feature.](LAMP%20Platform%20User%20Guide/%E2%86%92%20Report%20a%20bug%20or%20request%20a%20feature.md)
 
  📰 **[→ Ask a question on the community forum.](https://mindlamp.discourse.group)**
 
@@ -22,15 +22,15 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
 *Curious to learn more about the Platform? Explore here to learn more about LAMP and register your interest!*
 
-[How does LAMP Platform Work?](LAMP Platform User Guide/How does LAMP Platform Work.md)
+[How does LAMP Platform Work?](LAMP%20Platform%20User%20Guide/How%20does%20LAMP%20Platform%20Work.md)
 
-[LAMP User Prerequisites](LAMP Platform User Guide/LAMP User Prerequisites.md)
+[LAMP User Prerequisites](LAMP%20Platform%20User%20Guide/LAMP%20User%20Prerequisites.md)
 
-[Types of Users](LAMP Platform User Guide/Types of Users.md)
+[Types of Users](LAMP%20Platform%20User%20Guide/Types%20of%20Users.md)
 
-[Privacy Policy](LAMP Platform User Guide/Privacy Policy.md)
+[Privacy Policy](LAMP%20Platform%20User%20Guide/Privacy%20Policy.md)
 
-[Security & Privacy](LAMP Platform User Guide/Security & Privacy.md)
+[Security & Privacy](LAMP%20Platform%20User%20Guide/Security%20&%20Privacy.md)
 
 # 📨Register Your Interest Here
 
@@ -52,7 +52,7 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
     ### Do I need a wearable to collect passive data?
 
-    HealthKit data is only available with wearables with two exceptions: step count and sleep data. Step count can be gathered through your mobile device, and sleep data can be gathered by downloading specific apps on iOS (napbot) and Android (sleep as android). mindLAMP requires WatchOS 7 and WearOS 2. Please see [Wearables](LAMP Platform User Guide/Wearables.md) for more information.
+    HealthKit data is only available with wearables with two exceptions: step count and sleep data. Step count can be gathered through your mobile device, and sleep data can be gathered by downloading specific apps on iOS (napbot) and Android (sleep as android). mindLAMP requires WatchOS 7 and WearOS 2. Please see [Wearables](LAMP%20Platform%20User%20Guide/Wearables.md) for more information.
 
     ### What's a system administrator?
 
@@ -76,11 +76,11 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
     ### How do I create a survey?
 
-    Click the `[+ Add]` button at the top right of the list and select "Survey Instrument". See [Create Surveys](LAMP Platform User Guide/Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) for more information.
+    Click the `[+ Add]` button at the top right of the list and select "Survey Instrument". See [Create Surveys](LAMP%20Platform%20User%20Guide/Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information.
 
     ### Can I edit a survey?
 
-    Yes, you can edit it from the activities tab by tapping on its row in the list. See [Create Surveys](LAMP Platform User Guide/Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) for more information. We recommend only editing surveys to fix typos or adjust the language of a question or response choice.
+    Yes, you can edit it from the activities tab by tapping on its row in the list. See [Create Surveys](LAMP%20Platform%20User%20Guide/Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information. We recommend only editing surveys to fix typos or adjust the language of a question or response choice.
 
     ### What happens to my data after I delete a survey?
 
@@ -88,7 +88,7 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
     ### How do I delete a survey?
 
-    Select one or more survey instruments you would like to delete and press the trash can icon at the top right of the list. See [Create Surveys](LAMP Platform User Guide/Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) for more information.
+    Select one or more survey instruments you would like to delete and press the trash can icon at the top right of the list. See [Create Surveys](LAMP%20Platform%20User%20Guide/Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information.
 
     ### How do I customize an activity?
 
@@ -100,11 +100,11 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
     ### Why is my Manage section appearing blank?
 
-    You must add activities for them to show up in a specific tab. If there are no activities created for a specific tab, that tab will remain blank.  See [Create Surveys](LAMP Platform User Guide/Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) for more information.
+    You must add activities for them to show up in a specific tab. If there are no activities created for a specific tab, that tab will remain blank.  See [Create Surveys](LAMP%20Platform%20User%20Guide/Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information.
 
     ### Who can see my data?
 
-    Your system administrator will only access your personal information to support internal operations, including troubleshooting/user support, and service improvements. To ensure you are receiving the highest level of service in your interaction with the mindLAMP app, the Division of Digital Psychiatry may use your contact information to communicate with you regarding your requests. We also use this data to create aggregated statistics which helps us in the improvement of our service. For more information, please see our [Privacy Policy](LAMP Platform User Guide/Privacy Policy.md).
+    Your system administrator will only access your personal information to support internal operations, including troubleshooting/user support, and service improvements. To ensure you are receiving the highest level of service in your interaction with the mindLAMP app, the Division of Digital Psychiatry may use your contact information to communicate with you regarding your requests. We also use this data to create aggregated statistics which helps us in the improvement of our service. For more information, please see our [Privacy Policy](LAMP%20Platform%20User%20Guide/Privacy%20Policy.md).
 
     ### Does the mindLAMP app work offline?
 
@@ -116,65 +116,65 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
     ### Is mindLAMP 2 available in other languages?
 
-    The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about future plans by checking out  [What's New in the LAMP Platform?](LAMP Platform User Guide/What's New in the LAMP Platform.md) ﻿ 
+    The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about future plans by checking out  [What's New in the LAMP Platform?](LAMP%20Platform%20User%20Guide/What's%20New%20in%20the%20LAMP%20Platform.md) ﻿ 
 
 # 🍎 Why Use the LAMP Platform?
 
 *Not sure why you should use the LAMP Platform? Read more here.*
 
-[How mindLAMP, the Data Center, and Cortex Work Together](LAMP Platform User Guide/How mindLAMP, the Data Center, and Cortex Work Tog.md)
+[How mindLAMP, the Data Center, and Cortex Work Together](LAMP%20Platform%20User%20Guide/How%20mindLAMP,%20the%20Data%20Center,%20and%20Cortex%20Work%20Tog.md)
 
-[What is the LAMP Platform?](LAMP Platform User Guide/What is the LAMP Platform.md)
+[What is the LAMP Platform?](LAMP%20Platform%20User%20Guide/What%20is%20the%20LAMP%20Platform.md)
 
-[What are the Components of LAMP?](LAMP Platform User Guide/What are the Components of LAMP.md)
+[What are the Components of LAMP?](LAMP%20Platform%20User%20Guide/What%20are%20the%20Components%20of%20LAMP.md)
 
-[LAMP: Platforms vs. Apps](LAMP Platform User Guide/Topics/LAMP Platforms vs Apps.md) 
+[LAMP: Platforms vs. Apps](LAMP%20Platform%20User%20Guide/Topics/LAMP%20Platforms%20vs%20Apps.md) 
 
-[How does the LAMP data format work?](LAMP Platform User Guide/How does the LAMP data format work.md)
+[How does the LAMP data format work?](LAMP%20Platform%20User%20Guide/How%20does%20the%20LAMP%20data%20format%20work.md)
 
-[Consortium Webinar Recordings](LAMP Platform User Guide/Consortium Webinar Recordings.md)
+[Consortium Webinar Recordings](LAMP%20Platform%20User%20Guide/Consortium%20Webinar%20Recordings.md)
 
 # 🆕 New Users Start Here!
 
 *Ready to start using LAMP? Click here to learn the basics of surveys, activities etc.*
 
-[Accessing Your Account](LAMP Platform User Guide/Accessing Your Account.md)
+[Accessing Your Account](LAMP%20Platform%20User%20Guide/Accessing%20Your%20Account.md)
 
-[Log In Information, Tips, and Tricks](LAMP Platform User Guide/Log In Information, Tips, and Tricks.md)
+[Log In Information, Tips, and Tricks](LAMP%20Platform%20User%20Guide/Log%20In%20Information,%20Tips,%20and%20Tricks.md)
 
-[Users vs Activities Tab](LAMP Platform User Guide/Users vs Activities Tab.md)
+[Users vs Activities Tab](LAMP%20Platform%20User%20Guide/Users%20vs%20Activities%20Tab.md)
 
-[Create or Manage Users](LAMP Platform User Guide/Create or Manage Users.md)
+[Create or Manage Users](LAMP%20Platform%20User%20Guide/Create%20or%20Manage%20Users.md)
 
-[Activities: Tips, Surveys, and Cognitive Tests](LAMP Platform User Guide/Activities Tips, Surveys, and Cognitive Tests.md)
+[Activities: Tips, Surveys, and Cognitive Tests](LAMP%20Platform%20User%20Guide/Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests.md)
 
-[View the Dashboard](LAMP Platform User Guide/View the Dashboard.md)
+[View the Dashboard](LAMP%20Platform%20User%20Guide/View%20the%20Dashboard.md)
 
-[Visualize data](LAMP Platform User Guide/Visualize data.md)
+[Visualize data](LAMP%20Platform%20User%20Guide/Visualize%20data.md)
 
-[Care Team - Connection with Patients ](LAMP Platform User Guide/Care Team - Connection with Patients.md)
+[Care Team - Connection with Patients ](LAMP%20Platform%20User%20Guide/Care%20Team%20-%20Connection%20with%20Patients.md)
 
-[Survey Instrument Library](LAMP Platform User Guide/Survey Instrument Library.md)
+[Survey Instrument Library](LAMP%20Platform%20User%20Guide/Survey%20Instrument%20Library.md)
 
-[Wearables](LAMP Platform User Guide/Wearables.md)
+[Wearables](LAMP%20Platform%20User%20Guide/Wearables.md)
 
 # 🖥️ LAMP for IT
 
 *Running LAMP on your own server? Hosting your own data? Look no further!*
 
-[Prerequisites for Deploying the LAMP Platform](LAMP Platform User Guide/Prerequisites for Deploying the LAMP Platform.md)
+[Prerequisites for Deploying the LAMP Platform](LAMP%20Platform%20User%20Guide/Prerequisites%20for%20Deploying%20the%20LAMP%20Platform.md)
 
-[Deployment Recommendations](LAMP Platform User Guide/Deployment Recommendations.md)
+[Deployment Recommendations](LAMP%20Platform%20User%20Guide/Deployment%20Recommendations.md)
 
-[Costs of Deploying the LAMP Platform](LAMP Platform User Guide/Costs of Deploying the LAMP Platform.md)
+[Costs of Deploying the LAMP Platform](LAMP%20Platform%20User%20Guide/Costs%20of%20Deploying%20the%20LAMP%20Platform.md)
 
-[Provisioning the LAMP Platform](LAMP Platform User Guide/Provisioning the LAMP Platform.md)
+[Provisioning the LAMP Platform](LAMP%20Platform%20User%20Guide/Provisioning%20the%20LAMP%20Platform.md)
 
-[Preparing Resources on AWS](LAMP Platform User Guide/Preparing Resources on AWS.md)
+[Preparing Resources on AWS](LAMP%20Platform%20User%20Guide/Preparing%20Resources%20on%20AWS.md)
 
-[Deploying the LAMP Platform](LAMP Platform User Guide/Deploying the LAMP Platform.md)
+[Deploying the LAMP Platform](LAMP%20Platform%20User%20Guide/Deploying%20the%20LAMP%20Platform.md)
 
-[Testing the LAMP Platform](LAMP Platform User Guide/Testing the LAMP Platform.md)
+[Testing the LAMP Platform](LAMP%20Platform%20User%20Guide/Testing%20the%20LAMP%20Platform.md)
 
 - Cloud Network Diagram
 
@@ -182,27 +182,27 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
 # 🖥️ LAMP for Developers
 
-[Components of the LAMP Platform](LAMP Platform User Guide/Components of the LAMP Platform.md)
+[Components of the LAMP Platform](LAMP%20Platform%20User%20Guide/Components%20of%20the%20LAMP%20Platform.md)
 
-[How the Platform Works](LAMP Platform User Guide/How the Platform Works.md)
+[How the Platform Works](LAMP%20Platform%20User%20Guide/How%20the%20Platform%20Works.md)
 
-[Low Power & Connectivity Support](LAMP Platform User Guide/Low Power & Connectivity Support.md)
+[Low Power & Connectivity Support](LAMP%20Platform%20User%20Guide/Low%20Power%20&%20Connectivity%20Support.md)
 
-[Continuous Monitoring & Intervention Delivery](LAMP Platform User Guide/Continuous Monitoring & Intervention Delivery.md)
+[Continuous Monitoring & Intervention Delivery](LAMP%20Platform%20User%20Guide/Continuous%20Monitoring%20&%20Intervention%20Delivery.md)
 
-[Building New Activities](LAMP Platform User Guide/Building New Activities.md)
+[Building New Activities](LAMP%20Platform%20User%20Guide/Building%20New%20Activities.md)
 
-[How Interventions Work (Flow Diagram)](LAMP Platform User Guide/How Interventions Work (Flow Diagram).md)
+[How Interventions Work (Flow Diagram)](LAMP%20Platform%20User%20Guide/How%20Interventions%20Work%20(Flow%20Diagram).md)
 
-[[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](LAMP Platform User Guide/Data Science with LAMP.md)
+[[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](LAMP%20Platform%20User%20Guide/Data%20Science%20with%20LAMP.md)
 
 *Documentation of the LAMP API and support around analytics using LAMP.*
 
-[Cortex](LAMP Platform User Guide/Cortex.md)
+[Cortex](LAMP%20Platform%20User%20Guide/Cortex.md)
 
 *Learn about our data analysis pipeline.*
 
-[What's New in the LAMP Platform?](LAMP Platform User Guide/What's New in the LAMP Platform.md)
+[What's New in the LAMP Platform?](LAMP%20Platform%20User%20Guide/What's%20New%20in%20the%20LAMP%20Platform.md)
 
 *Find weekly updates on everything from current bugs to UI improvements here!*
 
@@ -210,7 +210,7 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
 *Looking for inspiration? Just curious? Take a look at who's using LAMP!*
 
-[MAPNET](LAMP Platform User Guide/MAPNET.md)
+[MAPNET](LAMP%20Platform%20User%20Guide/MAPNET.md)
 
 *Information for MAPNET sites.*
 
@@ -222,6 +222,6 @@ Let us know by making a post in the [LAMP Community](https://community.lamp.digi
 
 - `Index`
 
-    [Why Use the LAMP Platform?](LAMP Platform User Guide/Why Use the LAMP Platform.md)
+    [Why Use the LAMP Platform?](LAMP%20Platform%20User%20Guide/Why%20Use%20the%20LAMP%20Platform.md)
 
     [Topics](LAMP Platform User Guide/Topics 00d1e6eb213f4bb7b778fa41bc55b3a8.csv)

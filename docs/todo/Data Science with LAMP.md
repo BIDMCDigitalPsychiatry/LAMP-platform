@@ -7,13 +7,13 @@ If you're interested in working in Ry, Python, or JS, we recommend you try out o
 
 ### Sample Code
 
-[Preparing to Analyze Your Data in Python](Data Science with LAMP/Preparing to Analyze Your Data in Python.md)
+[Preparing to Analyze Your Data in Python](Data%20Science%20with%20LAMP/Preparing%20to%20Analyze%20Your%20Data%20in%20Python.md)
 
-[Preparing to Analyze Your Data in R](Data Science with LAMP/Preparing to Analyze Your Data in R.md)
+[Preparing to Analyze Your Data in R](Data%20Science%20with%20LAMP/Preparing%20to%20Analyze%20Your%20Data%20in%20R.md)
 
-[Anomaly Detection in R](Data Science with LAMP/Anomaly Detection in R.md)
+[Anomaly Detection in R](Data%20Science%20with%20LAMP/Anomaly%20Detection%20in%20R.md)
 
-[Data Types](Data Science with LAMP/Data Types.md)
+[Data Types](Data%20Science%20with%20LAMP/Data%20Types.md)
 
 ---
 

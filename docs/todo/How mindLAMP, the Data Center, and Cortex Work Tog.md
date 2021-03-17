@@ -20,10 +20,10 @@ Clinicians and Researchers can create, customize, and schedule activities for pa
 
 The **Database** securely and chronologically indexes the data through the **LAMP Protocol** for programming and data science. It informs custom data analysis code in real-time that new patient data has arrived. Researchers can better build reusable tools, analysis pipelines, and conduct reproducible science, knowing that others around the globe using the **LAMP Platform** can easily work with their data or replicate their unique study.
 
-[Learn more about the **Database** and **API** here.](Data Science with LAMP.md)
+[Learn more about the **Database** and **API** here.](Data%20Science%20with%20LAMP.md)
 
 ### ④ Cortex
 
 The **Cortex** data analysis pipeline is designed to easily hook into the **Database** and extract important and clinically useful secondary data features, such as sedentary behavior, time spent at home, device/screen usage, sleep estimates, and much more, from the terabytes of raw data. It can trigger custom just-in-time adaptive interventions and produce useful interactive visualizations viewable by patients and clinicians.
 
-[Learn more about **Cortex** here.](Data Science with LAMP.md)
+[Learn more about **Cortex** here.](Data%20Science%20with%20LAMP.md)

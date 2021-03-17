@@ -79,7 +79,7 @@ If your clinic or study has enabled some sensor types, you'll find them here in 
 
 ![](../assets/Screen_Shot_2020-01-31_at_4.57.21_PM.png)
 
-Want to get your data science team involved for even more visualization options? Check out [[Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000)](Data Science with LAMP.md).
+Want to get your data science team involved for even more visualization options? Check out [[Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000)](Data%20Science%20with%20LAMP.md).
 
 ---
 

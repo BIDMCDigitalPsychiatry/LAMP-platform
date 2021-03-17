@@ -4,7 +4,7 @@
 
 When the clinician or researcher logs in, they will see the Patients tab. Here, there will be a list of patients they have added.
 
-The blue "Add" button is used to add patients or studies. For information about adding and managing patients, see [Create or Manage Users](Create or Manage Users.md).
+The blue "Add" button is used to add patients or studies. For information about adding and managing patients, see [Create or Manage Users](Create%20or%20Manage%20Users.md).
 
 ![](../assets/Untitled 50.jpeg)
 
@@ -14,7 +14,7 @@ Each patient will have the following attributes:
 
 ### Name
 
-A patient's name is automatically generated as a de-identified patient identifier, typically beginning with a `U`, followed by a random number of random digits. Clinicians and researchers are able to change this name; see [Create or Manage Users](Create or Manage Users.md) for more information.
+A patient's name is automatically generated as a de-identified patient identifier, typically beginning with a `U`, followed by a random number of random digits. Clinicians and researchers are able to change this name; see [Create or Manage Users](Create%20or%20Manage%20Users.md) for more information.
 
 ### Last Active
 
@@ -40,11 +40,11 @@ Study shows which study a patient is participating in. To filter patients by wha
 
 # Activities
 
-A clinician or researcher can navigate to the activities page by selecting "Activities" on the left menu bar of the dashboard.  Surveys and cognitive tests are examples of activities for patients. To learn more about specific activities, check out [What are the Components of LAMP?](What are the Components of LAMP.md).
+A clinician or researcher can navigate to the activities page by selecting "Activities" on the left menu bar of the dashboard.  Surveys and cognitive tests are examples of activities for patients. To learn more about specific activities, check out [What are the Components of LAMP?](What%20are%20the%20Components%20of%20LAMP.md).
 
 ![](../assets/Untitled 50.png)
 
-The blue "Add" button is used to add activities and surveys manually or to import them. For information about adding and managing activities and surveys, see [Create Surveys](Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) and [Create Activities](Activities Tips, Surveys, and Cognitive Tests/Create Activities.md).
+The blue "Add" button is used to add activities and surveys manually or to import them. For information about adding and managing activities and surveys, see [Create Surveys](Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) and [Create Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Activities.md).
 
 ![](../assets/Untitled 53.jpeg)
 

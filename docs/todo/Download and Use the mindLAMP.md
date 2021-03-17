@@ -94,7 +94,7 @@ If you'd like to test the beta version of the app, please follow the instruction
 
 **Some Android manufacturers make it difficult for mindLAMP to collect data in the background. Read more below.**
 
-[[Android] Don't kill my app!](%E2%86%92 Download and Use the mindLAMP app/%5BAndroid%5D Don't kill my app!.md)
+[[Android] Don't kill my app!](%E2%86%92%20Download%20and%20Use%20the%20mindLAMP%20app/%5BAndroid%5D%20Don't%20kill%20my%20app!.md)
 
 ### Beta
 
@@ -108,4 +108,4 @@ If you'd like to test the beta version of the app, please follow the instruction
 Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
 *Page last updated on December 20th, 2020.*
 
-[Using the mobile app](%E2%86%92 Download and Use the mindLAMP app/Using the mobile app.md)
+[Using the mobile app](%E2%86%92%20Download%20and%20Use%20the%20mindLAMP%20app/Using%20the%20mobile%20app.md)

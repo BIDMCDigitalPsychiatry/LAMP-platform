@@ -1,8 +1,8 @@
 # Delete and Schedule Surveys
 
-Check out [Importing, Exporting, and Duplicating Activities](Importing, Exporting, and Duplicating Activities.md).
+Check out [Importing, Exporting, and Duplicating Activities](Importing,%20Exporting,%20and%20Duplicating%20Activities.md).
 
-Look at  [Create Activities](Create Activities.md) to add some tips or cognitive tests to your Activities tab!
+Look at  [Create Activities](Create%20Activities.md) to add some tips or cognitive tests to your Activities tab!
 
 # Delete an Existing Survey Instrument.
 
@@ -15,7 +15,7 @@ Look at  [Create Activities](Create Activities.md) to add some tips or cognitive
 
 ![](../../assets/Untitled 87.png)
 
-Trying to delete or edit responses to a survey? Check out [Visualize data](../Visualize data.md) and go to step 3!
+Trying to delete or edit responses to a survey? Check out [Visualize data](../Visualize%20data.md) and go to step 3!
 
 # Scheduling a Survey
 
@@ -29,4 +29,4 @@ Trying to delete or edit responses to a survey? Check out [Visualize data](../Vi
 
 ![](../../assets/Untitled 88.png)
 
-Ready to start [Take Surveys and Complete Activities](Take Surveys and Complete Activities.md)?
+Ready to start [Take Surveys and Complete Activities](Take%20Surveys%20and%20Complete%20Activities.md)?

@@ -94,7 +94,7 @@ id  timestamp  name                                                             
 write.csv(results, "./output-1-27-20.csv", row.names = F)
 ```
 
-**To learn more about the data types and format, see here:** [[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](../Data Science with LAMP.md) 
+**To learn more about the data types and format, see here:** [[Data Science with LAMP](https://www.notion.so/Data-Science-with-LAMP-5420896d7b034afa8326f28e6bd24000)](../Data%20Science%20with%20LAMP.md) 
 
 # **Appendix: Sample Analyses**
 

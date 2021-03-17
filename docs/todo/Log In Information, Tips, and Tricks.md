@@ -128,7 +128,7 @@ Managing credentials for yourself or others is as follows:
 
 ![Log In Information, Tips, and Tricks/Untitled 66.png](Log In Information, Tips, and Tricks/Untitled 66.png)
 
-Want to manage your current patients? See [Create or Manage Users](Create or Manage Users.md) 
+Want to manage your current patients? See [Create or Manage Users](Create%20or%20Manage%20Users.md) 
 
 ---
 

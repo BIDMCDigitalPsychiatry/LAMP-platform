@@ -2,7 +2,7 @@
 
 ![](../assets/Common_Data_Format.png)
 
-**→** [Learn more about the API that powers the LAMP Platform and the Cortex pipeline.](Data Science with LAMP.md)
+**→** [Learn more about the API that powers the LAMP Platform and the Cortex pipeline.](Data%20Science%20with%20LAMP.md)
 
 ## ① 
 Activity Specification
@@ -38,7 +38,7 @@ Time Series Query
 
 ---
 
-The researcher/data scientist can query this data at any desired temporal resolution (e.g. one millisecond, one day, one year, etc.) and filter by the type of activity (e.g. Survey, Jewels, etc.). The query can be [manipulated using map/reduce document transforms](Topics/Using Document Transformations.md) and listened to notify client code directly with real-time updates.
+The researcher/data scientist can query this data at any desired temporal resolution (e.g. one millisecond, one day, one year, etc.) and filter by the type of activity (e.g. Survey, Jewels, etc.). The query can be [manipulated using map/reduce document transforms](Topics/Using%20Document%20Transformations.md) and listened to notify client code directly with real-time updates.
 
 ---
 

@@ -13,7 +13,7 @@
 
 ![](../assets/Untitled M.png)
 
-When created initially, these patients/participants won’t have an associated de-identification alias or an account to login to mindLAMP with themselves. To allow patients to access mindLAMP themselves on a desktop or mobile device, **see** [Log In Information, Tips, and Tricks](Log In Information, Tips, and Tricks.md)
+When created initially, these patients/participants won’t have an associated de-identification alias or an account to login to mindLAMP with themselves. To allow patients to access mindLAMP themselves on a desktop or mobile device, **see** [Log In Information, Tips, and Tricks](Log%20In%20Information,%20Tips,%20and%20Tricks.md)
 
 ### Rename a Patient
 
@@ -70,7 +70,7 @@ Please note the following:
 
 We recommend the structured `JSON` export option wherever possible, as the LAMP Platform processes and harmonizes your data automatically for you. Selecting `CSV` will disable these optimizations and may require you to manually process your data yourself.
 
-To learn more about sending patients or participants surveys check out [Create Surveys](Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md).
+To learn more about sending patients or participants surveys check out [Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md).
 
 ---
 

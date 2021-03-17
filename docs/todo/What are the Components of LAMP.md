@@ -11,7 +11,7 @@ Tips and resources for patients and study participants are entered by researcher
 
 Clinicians and researchers offer patients and study participants useful health related tips and resources in the Learn tab.
 
-To learn more about customizing a tip for a patient, check out [Customize and Schedule Activities](Activities Tips, Surveys, and Cognitive Tests/Customize and Schedule Activities.md).
+To learn more about customizing a tip for a patient, check out [Customize and Schedule Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Customize%20and%20Schedule%20Activities.md).
 
 # **ASSESS**
 
@@ -21,7 +21,7 @@ Surveys and cognitive games – their content, answer choice style, and time of 
 
 Patients and study participants complete cognitive games and customized surveys related to mood, symptoms, and behaviors unique to them through the Assess tab.
 
-To learn how to create surveys for this tab, check out [Create Surveys](Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md).
+To learn how to create surveys for this tab, check out [Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md).
 
 # **MANAGE**
 
@@ -73,7 +73,7 @@ All activities are available through the Manage tab—below is an outline of the
 
 *Work with trusted peers or health care team to identify personal signals of anxiety, sadness, or unease and record coping mechanisms.*
 
-To learn about customizing activities in the manage tab, check out [Customize and Schedule Activities](Activities Tips, Surveys, and Cognitive Tests/Customize and Schedule Activities.md) 
+To learn about customizing activities in the manage tab, check out [Customize and Schedule Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Customize%20and%20Schedule%20Activities.md) 
 
 # **PREVENT**
 
@@ -83,7 +83,7 @@ mindLAMP collects a combination of active and passive data. Patients and st
 
 Data collected from mindLAMP – including survey responses and passive data such as step count – can be viewed through the Prevent tab.
 
-To learn more about viewing your data, see [Visualize data](Visualize data.md).
+To learn more about viewing your data, see [Visualize data](Visualize%20data.md).
 
 **Was there something we didn't cover, or need more help?**
 Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟

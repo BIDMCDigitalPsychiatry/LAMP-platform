@@ -18,13 +18,13 @@ If you or your organization doesn't yet have access to mindLAMP, but would like 
 
 If no domain was specified by your IT systems administrator, you can leave that field blank ("lamp.my_organization.org" is only for this example).
 
-For more instructions around logging in, see [Log In Information, Tips, and Tricks](Log In Information, Tips, and Tricks.md) 
+For more instructions around logging in, see [Log In Information, Tips, and Tricks](Log%20In%20Information,%20Tips,%20and%20Tricks.md) 
 
 ### Step 3: See what the Dashboard looks like for patients or participants.
 
 ![](../assets/Untitled 1.png)
 
-To learn more about what you can see here, visit [View the Dashboard](View the Dashboard.md).
+To learn more about what you can see here, visit [View the Dashboard](View%20the%20Dashboard.md).
 
 ---
 
