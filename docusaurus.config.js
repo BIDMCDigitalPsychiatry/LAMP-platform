@@ -95,7 +95,7 @@ module.exports = {
       }
     ],
     [
-    require('path').resolve(__dirname, './src/docusaurus-plugin-openapi'), 
+    require.resolve('docusaurus-plugin-openapi'),
       {
         routeBasePath: 'api',
         openapiPath: require.resolve('./docs/openapi.json'),
