@@ -13,13 +13,13 @@ module.exports = {
     defaultMode: 'light',
     disableSwitch: false,
     respectPrefersColorScheme: true,
-    image: './docs/assets/logo.png',
+    image: 'logo.png',
     navbar: {
       title: 'LAMP Platform',
       hideOnScroll: false,
       logo: {
         alt: 'LAMP Platform',
-        src: './docs/assets/logo.png',
+        src: 'logo.png',
       },
       items: [
         {
