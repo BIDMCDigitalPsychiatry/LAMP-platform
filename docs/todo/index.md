@@ -1,5 +1,6 @@
 ---
 title: LAMP Platform User Guide
+slug: /todo
 ---
 
 ![](../assets/LAMP_Overview.png)

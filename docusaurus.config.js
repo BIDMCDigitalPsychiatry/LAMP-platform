@@ -29,11 +29,11 @@ module.exports = {
           activeBaseRegex: '/([0-9a-zA-Z]+)',
           items: [
             {
-              label: 'Doc 2',
+              label: 'ABC',
               to: '/doc2',
             },
             {
-              label: 'Doc 3',
+              label: 'FAQ',
               to: '/doc3',
             },
           ],
@@ -42,6 +42,11 @@ module.exports = {
           label: 'API',
           position: 'left',
           to: '/api',
+        },
+        {
+          label: 'What\'s New',
+          position: 'left',
+          to: '/blog',
         },
         {
           label: 'Community',
@@ -80,6 +85,15 @@ module.exports = {
           sidebarPath: require.resolve('./docs/sidebar.js'),
           editUrl:
             'https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/',
+        },
+        blog: {
+          blogTitle: 'LAMP Platform',
+          blogDescription: 'The LAMP Platform documentation.',
+          blogSidebarTitle: 'All updates',
+          feedOptions: {
+            type: 'all',
+            copyright: `© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC`,
+          }
         }
       },
     ],
@@ -89,20 +103,17 @@ module.exports = {
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         indexDocs: true,
-        indexBlog: false, 
-        indexPages: false,
+        indexBlog: true, 
+        indexPages: true,
         hashed: true
       }
     ],
     [
-    require.resolve('docusaurus-plugin-openapi'),
+      require.resolve('docusaurus-plugin-openapi'),
       {
         routeBasePath: 'api',
         openapiPath: require.resolve('./docs/openapi.json'),
       }
     ]
-  ],
-  "scripts": [
-    "https://unpkg.com/rapidoc/dist/rapidoc-min.js"
   ]
-};
+}
