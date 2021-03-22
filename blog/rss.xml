@@ -4,8 +4,16 @@
         <title>LAMP Platform Blog</title>
         <link>https://docs.lamp.digital/blog</link>
         <description>LAMP Platform Blog</description>
-        <lastBuildDate>Sun, 25 Oct 2015 23:29:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Mar 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <copyright>© 2021 LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
+        <item>
+            <title><![CDATA[Initial release]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2021/03/21/test</link>
+            <guid>Initial release</guid>
+            <pubDate>Sun, 21 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is my first release note.]]></description>
+        </item>
     </channel>
 </rss>
