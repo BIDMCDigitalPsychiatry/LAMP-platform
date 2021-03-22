@@ -72,12 +72,15 @@ module.exports = {
       style: 'dark',
       links: [],
       copyright: `© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC`,
-    },
+    }
   },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
+        googleAnalytics: {
+          trackingID: 'UA-192736629-1'
+        },
         docs: {
           routeBasePath: '/',
           showLastUpdateAuthor: true,
