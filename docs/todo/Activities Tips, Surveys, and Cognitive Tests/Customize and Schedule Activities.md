@@ -16,7 +16,7 @@ To create any activity that shows up on the manage page (e.g. Jewels A or B):
 8. Click Save to save your activity.
 9. See some examples of different activities below.
 
-![](../../activities_menu.jpg)
+![](../../activity_menu.jpg)
 
 ### Some examples of activities you can customize:
 
