@@ -1,5 +1,7 @@
-# Creating and Customizing Tips
-
+---
+title: Creating and Customizing Tips
+slug: create_tips
+---
 # Creating and Customizing a Tip for Learn
 
 Navigate to the activities page click the “+ Add” button, and then scroll to the bottom and click “tips”.
@@ -12,9 +14,9 @@ Navigate to the activities page click the “+ Add” button, and then scroll to
 6. Add the tip author. If there is no author, this will be left blank.
 7. Press the `(+)` icon to add an image.
 
-![](../../assets/Untitled 33.png)
+![](../../assets/activity_menu.jpg)
 
-![](../../assets/Untitled 32.png)
+![](../../assets/new_tip.png)
 
 # Customizing the Content of Your Tip
 
