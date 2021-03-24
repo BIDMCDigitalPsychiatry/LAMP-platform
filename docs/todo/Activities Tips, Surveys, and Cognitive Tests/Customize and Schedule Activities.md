@@ -1,5 +1,7 @@
-# Customize and Schedule Activities
-
+---
+title: Customize and Schedule Activities
+slug: customize_activities
+---
 # Creating a New Activity for Manage
 
 To create any activity that shows up on the manage page (e.g. Jewels A or B):
@@ -14,9 +16,7 @@ To create any activity that shows up on the manage page (e.g. Jewels A or B):
 8. Click Save to save your activity.
 9. See some examples of different activities below.
 
-![](../../assets/Untitled 81.png)
-
-![](../../assets/Untitled 81.png)
+![](../../activities_menu.jpg)
 
 ### Some examples of activities you can customize:
 
@@ -28,19 +28,19 @@ For both Jewels A and Jewels B, you are able to input specifics such as game dur
 
 To edit any of these, simply click on the box and enter your desired number.
 
-![](../../assets/Untitled 82.png)
+![](../../assets/jewels.jpg)
 
 ### Breathe (Mindfulness)
 
 You are able to either copy a URL and paste it into a breathe activity, or you can upload a previously recorded audio file by selecting "Upload Audio" and importing it.
 
-![](../../assets/Untitled 83.png)
+![](../../assets/breathe.jpg)
 
 ### Journal
 
 Once you create your journal activity, it will show up in the Manage tab. However, you are only able to view the results in the Prevent tab.
 
-![](../../assets/Untitled 84.png)
+![](../../assets/journal.jpg)
 
 # Scheduling an Activity
 
@@ -52,6 +52,6 @@ Once you create your journal activity, it will show up in the Manage tab. Howeve
 6. Click the check mark.
 7. The patient or participant will receive a feed item and a notification on their phone at the specified time.
 
-![](../../assets/Untitled 85.png)
+![](../../assets/schedule.jpg)
 
 Ready to start [Take Surveys and Complete Activities](Take%20Surveys%20and%20Complete%20Activities.md)?
