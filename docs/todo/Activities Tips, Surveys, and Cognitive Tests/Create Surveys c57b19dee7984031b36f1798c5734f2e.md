@@ -1,8 +1,10 @@
-# Create Surveys
+---
+title: Create Surveys
+slug: create_surveys
+---
+# Create a New Survey for the Assess tab.
 
 Need some inspiration to create your survey? Browse our [Survey Instrument Library](../Survey%20Instrument%20Library.md).
-
-# Create a New Survey for the Assess tab.
 
 Survey instruments and other Activities in the LAMP Platform afford you automatic version control. In other software or when managing “paper & pencil” data, it is typically difficult, if not impossible, to track changes to survey questions or survey responses when administered with a patient. 
 
@@ -11,7 +13,7 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 3. Select the cognitive test to add an activity or select Survey Instrument to add a survey to [the Assess tab.](../What%20are%20the%20Components%20of%20LAMP.md)
 4. If you would like to import a survey or activity, click "Import Activities."
 
-![](../../assets/Untitled 30.png)
+![](../../assets/activity_menu.jpg)
 
 # Create a New Question for Your Survey.
 
@@ -23,15 +25,13 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 
 6.    You can add description content to each question or option choice that can assist clinicians or patients in their selections. If such the description content field is left empty, it will not be displayed when a question or option choice is presented.
 
-![](../../assets/Untitled 31.jpeg)
+![](../../assets/survey_edit.jpg)
 
 7.    Please double check and ensure you have no typos or errors when saving the new survey. Once you press the `[Save]` button, you will be returned to the screen displaying the list of Activities in your clinic or study, now with the newly added survey. 
 
 If you need to update your survey to add new questions or remove questions, consider making a new survey instead, to avoid changing the intention of the survey or the analysis of its data. 
 
 # Question Types
-
-![../Topics/Create or manage surveys/03d_Survey_5.png](../Topics/Create or manage surveys/03d_Survey_5.png)
 
 When selecting the question type, please note the following:
 
