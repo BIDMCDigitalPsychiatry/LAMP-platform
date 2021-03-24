@@ -1,4 +1,7 @@
-# Importing, Exporting, and Duplicating Activities
+---
+title: Importing, Exporting, and Duplicating Activities
+slug: import_activities
+---
 
 ### Exporting Your Activities
 
@@ -8,7 +11,7 @@ If you’d like to share your clinic or research study’s Activity setup such a
 2. Select one or more survey instruments you would like to share.
 3. Press Export at the top of the list.
 
-    ![](../../assets/Untitled 89.png)
+    ![](../../assets/export_activities.jpg)
 
 If you’re a clinic administrator and would like to ensure that all the clinics you manage are using the most recent versions of some assessments, this method allows you to quickly synchronize different clinics.
 
@@ -22,9 +25,7 @@ If you’re a researcher and would like to ensure that your research study is re
 4. Drag or select the file to load its contents; an error will be displayed if an invalid file is uploaded.
 5. Tap the `[Import]` button, these survey instruments and groups will be copied into your clinic.
 
-![Importing, Exporting, and Duplicating Activities/Untitled 80.jpeg](Importing, Exporting, and Duplicating Activities/Untitled 80.jpeg)
-
-![Importing, Exporting, and Duplicating Activities/Untitled 89.png](Importing, Exporting, and Duplicating Activities/Untitled 89.png)
+![](../../assets/import_activities.jpg)
 
 ### **Duplicating an Existing Activity (Surveys Only)**
 
@@ -34,7 +35,7 @@ If you’re a researcher and would like to ensure that your research study is re
 4. Make your desired changes.
 5. Click “Duplicate.”
 
-![Importing, Exporting, and Duplicating Activities/Untitled 81.jpeg](Importing, Exporting, and Duplicating Activities/Untitled 81.jpeg)
+![](../../assets/duplicating_activities.jpg)
 
 If you’re a clinic administrator and would like to ensure that all the clinics you manage are using the most recent versions of some assessments, this method allows you to quickly synchronize different clinics.
 
