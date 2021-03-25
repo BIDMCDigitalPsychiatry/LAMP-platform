@@ -16,7 +16,7 @@ Navigate to the activities page click the “+ Add” button, and then scroll to
 
 ![](../../assets/activity_menu.jpg)
 
-![](../../assets/new_tip.png)
+![](../../assets/new_tip.jpg)
 
 # Customizing the Content of Your Tip
 
