@@ -1,4 +1,7 @@
-# Preparing to Analyze Your Data in Python
+---
+title: Preparing to Analyze Your Data in Python
+slug: python
+---
 
 If you'd like to follow along with this tutorial but don't have a Python development environment set up, **consider using [Google Collab](https://colab.research.google.com/), a free service** from Google Research. 
 
