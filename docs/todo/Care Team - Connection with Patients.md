@@ -1,4 +1,7 @@
-# Care Team - Connection with Patients
+---
+title: Care Team - Connection with Patients
+slug: care_team
+---
 
 ### Step 1: Understanding the care team and messaging feature.
 
