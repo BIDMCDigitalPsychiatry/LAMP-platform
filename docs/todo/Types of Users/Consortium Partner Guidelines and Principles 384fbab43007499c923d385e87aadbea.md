@@ -2,6 +2,7 @@
 title: Consortium Partner Guidelines and Principles
 slug: consortium_guidelines
 ---
+
 **Consortium Partners utilize the LAMP Platform at no-cost;** the guidelines and principles below outline the benefits and expectations:
 
 ## ① **Support**
@@ -42,5 +43,3 @@ All partners are expected to contribute to the LAMP Consortium in one of the fol
 2) Lending expertise around feature development, study design etc.
 
 3) Sharing anonymized data (not PII or PHI) to facilitate collaboration across studies. 
-
----
