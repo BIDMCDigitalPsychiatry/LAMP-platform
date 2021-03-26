@@ -1,4 +1,7 @@
-# Anomaly Detection in R
+---
+title: Anomaly Detection in R
+slug: anomaly_detection_r
+---
 
 Code originally written in 2017 by [Ian Barnett, PhD](mailto:ibarnett@pennmedicine.upenn.edu), and modified and maintained by the [Division of Digital Psychiatry](mailto:team@digitalpsych.org).
 
