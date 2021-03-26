@@ -273,9 +273,3 @@ for subject in test_cohort:
 ```
 
 Many methods are shared between ParticipantExt and StudyExt objects. More details on StudyExt objects can be viewed in the "study_ext.py" file.
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on August 10th, 2020.*
