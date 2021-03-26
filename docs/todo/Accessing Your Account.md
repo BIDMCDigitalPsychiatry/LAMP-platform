@@ -25,9 +25,3 @@ For more instructions around logging in, see [Log In Information, Tips, and Tric
 ![](../assets/Untitled 1.png)
 
 To learn more about what you can see here, visit [View the Dashboard](View%20the%20Dashboard.md).
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 28th, 2020.*
