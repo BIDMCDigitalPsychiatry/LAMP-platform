@@ -1,4 +1,3 @@
-# Consortium Partner Survey Requirements
 ---
 title: Consortium Partner Surveys Requirements
 slug: consortium_survey_reqs
