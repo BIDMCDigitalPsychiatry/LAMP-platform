@@ -1,5 +1,7 @@
-# Components of the LAMP Platform
-
+---
+title: Components of the LAMP Platform
+slug: components_of_lamp
+---
 The LAMP Platform API Server manages all internal components and inter-component message-passing. Its components are embedded within Docker containers and use Docker Swarm for orchestration. Docker Compose and Kubernetes may also be used to deploy the components. Please see [Deployment Recommendations](Deployment%20Recommendations.md) if you do not plan on using Docker.
 
 ![](../assets/Platform_Overview.png)
@@ -36,6 +38,6 @@ Handles the synchronization of communication between all the above actors in the
 
 This component handles scheduled push notification delivery as well as execution of triggered scripts to deliver interventions to patients.
 
-- ****A compute platform such as a Docker-enabled system or AWS Lambda is used to handle actual execution of code once bundled.
-- ****A dependency bundler such as Webpack, PIP, or Packrat is used to bundle each automation’s code to avoid dependency versioning conflicts that could crash or halt execution.
+- A compute platform such as a Docker-enabled system or AWS Lambda is used to handle actual execution of code once bundled.
+- A dependency bundler such as Webpack, PIP, or Packrat is used to bundle each automation’s code to avoid dependency versioning conflicts that could crash or halt execution.
 - This component encompasses: **Docker Environment, Attachment Container, Automation Scripts, Scheduler**.
