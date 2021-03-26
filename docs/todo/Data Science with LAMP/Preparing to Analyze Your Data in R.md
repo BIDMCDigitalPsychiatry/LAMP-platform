@@ -1,6 +1,7 @@
-# Preparing to Analyze Your Data in R
-
-# Preparing to analyze your data in R
+---
+title: Preparing to Analyze Your Data in R
+slug: r
+---
 
 If you'd like to follow along with this tutorial but don't have an R development environment set up, **consider using [RStudio Cloud](https://rstudio.cloud/), a free service** from the RStudio team. 
 
