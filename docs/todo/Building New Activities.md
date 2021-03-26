@@ -1,4 +1,7 @@
-# Building New Activities
+---
+title: Building New Activities
+slug: build_new_activities
+---
 
 Because the **LAMP Platform** is built around around a simple native core and a flexible WebView UI, any HTML/CSS/JavaScript code that works in a browser can work in the app.
 
