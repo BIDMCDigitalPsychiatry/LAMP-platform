@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[285],{368:function(e){e.exports=JSON.parse('{"title":"All updates","items":[{"title":"Initial release","permalink":"/LAMP-platform/blog/2021/03/21/test"}]}')}}]);
