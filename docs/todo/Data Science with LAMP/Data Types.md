@@ -121,9 +121,3 @@ Active sensor events are produced on a rolling basis via interactions by a Parti
 - **lamp.respiratory_rate**
 - **lamp.accelerometer**
 - **lamp.activity_recognition**
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on September 28th, 2020.*
