@@ -144,9 +144,3 @@ for(i in 1:length(patient_names)){
 # View output
 head(featanom)
 ```
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on July 3rd, 2020.*
