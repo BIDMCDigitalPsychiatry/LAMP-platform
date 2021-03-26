@@ -44,6 +44,3 @@ All partners are expected to contribute to the LAMP Consortium in one of the fol
 3) Sharing anonymized data (not PII or PHI) to facilitate collaboration across studies. 
 
 ---
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
