@@ -6,7 +6,7 @@ slug: data_types
 All event streams in the LAMP API are catalogued by a timestamp and specific "blueprints" (schema) of what kind of data they hold. For example, a sensor event that occurred 20 minutes ago would carry that instant's timestamp, along with a link to what kind of sensor it was, and that sensor's measurement as a payload of data. The kinds of activities and sensors available are declared below, along with the blueprint you can expect their events' data to follow. 
 
 **To learn more about accessing these data types, follow along with either of these tutorials:**
-[Preparing to analyze your data in R](../Topics/Preparing to analyze your data in R.md) or [Preparing to analyze your data in Python](../Topics/Preparing%20to%20analyze%20your%20data%20in%20Python.md).
+[Preparing to analyze your data in R](../Topics/Preparing%20to%20analyze%20your%20data%20in%20R.md) or [Preparing to analyze your data in Python](../Topics/Preparing%20to%20analyze%20your%20data%20in%20Python.md).
 
 ## Activity Types
 
