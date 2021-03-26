@@ -1,5 +1,7 @@
-# Consortium Partner Guidelines and Principles
-
+---
+title: Consortium Partner Guidelines and Principles
+slug: consortium_guidelines
+---
 **Consortium Partners utilize the LAMP Platform at no-cost;** the guidelines and principles below outline the benefits and expectations:
 
 ## ① **Support**
@@ -45,4 +47,3 @@ All partners are expected to contribute to the LAMP Consortium in one of the fol
 
 **Was there something we didn't cover, or need more help?**
 Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on March 9th, 2020.*
