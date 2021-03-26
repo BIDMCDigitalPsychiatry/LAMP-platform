@@ -1,4 +1,7 @@
-# Using the mobile app
+---
+title: Using the Mobile App
+slug: using_mobile_app
+---
 
 [Tap here to download mindLAMP for iOS.](https://itunes.apple.com/us/app/mind-lamp/id1322877070?mt=8)
 
