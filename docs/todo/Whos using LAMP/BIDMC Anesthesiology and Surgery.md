@@ -1,4 +1,4 @@
-# BIDMC Anaesthesiology and Surgery
+# BIDMC Anesthesiology and Surgery
 
 Location: Boston, Massachusetts, United States
 Role: Researchers
