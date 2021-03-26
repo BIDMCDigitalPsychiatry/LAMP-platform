@@ -19,9 +19,3 @@ If you'd like to try creating your own, but don't have a ReactJS development env
 **Figure 2:** Using a variant of Blockly, developed by Google and used by the MIT Scratch language, we can drag-and-drop blocks to generate JavaScript code behind the scenes.
 
 ![](../assets/Screen_Shot_2019-04-16_at_12.41.17_PM.png)
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on February 20th, 2020.*
