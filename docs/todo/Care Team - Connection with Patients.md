@@ -33,10 +33,4 @@ Examples of team members could include...
 - **pharmacists**
 - **trusted peers**
 
-...and more. 
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 29th, 2020.*
+...and more.
