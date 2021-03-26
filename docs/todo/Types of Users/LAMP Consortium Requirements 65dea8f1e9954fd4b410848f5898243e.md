@@ -1,4 +1,7 @@
-# LAMP Consortium Requirements
+---
+title: LAMP Consortium Requirements
+slug: consortium_reqs
+---
 
 ## 1. Human subject research conducted with the mindLAMP app requires the approval of an Ethics Review Board or Institutional Review Board.
 
@@ -17,7 +20,3 @@ All research participants must physically or electronically (on an IRB-approved 
 5. The withdrawal process.
 
 **Please note that this also applies to data imported from outside of the LAMP Platform, irrespective of where such data was collected or how it was collected.**
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 26th, 2020.*
