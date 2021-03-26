@@ -51,9 +51,3 @@ When selecting the question type, please note the following:
 3. Return to the list of existing survey instruments. 
 
 Check out  [Delete and Schedule Surveys](Delete and Schedule Surveys.md) or [Create Activities](Create%20Activities.md)  next.
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 28th, 2020.*
