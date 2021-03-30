@@ -1,4 +1,7 @@
-# Low Power & Connectivity Support
+---
+title: Low Power & Connectivity Support
+slug: low_power
+---
 
 The LAMP Platform API Server encompasses two main purposes:
 
@@ -13,7 +16,7 @@ In proxy mode, an instance of the API Server can continue to vend the API withou
 2. a connection to another instance of the LAMP server, and
 3. periodic synchronization between (1) and (2) determined by an availability factor.
 
-    ![Low Power & Connectivity Support/Proxy_Mode.png](Low Power & Connectivity Support/Proxy_Mode.png)
+    ![](../assets/Proxy_Mode.png)
 
 The proxy mode use-case of the LAMP server enables chaining instances together for accumulative data transfer. This serves useful for several reasons:
 
@@ -44,9 +47,3 @@ While a server instance in proxy mode appears transparent to any clients, there 
 5. **Activity deployment-notification and scheduling:** a push notification to deploy an Activity to a patient at the current instance (that is, not a scheduled one) may not succeed if the root instance does not synchronize with the proxy mode instance, and specifically targeting one instance may not be possible (such as the proxy mode instance running on a smartphone instead of on a wearable device, which is unsuitable for interaction).
     1. the API key (that is, the origination as explained above) of a suitable client can optionally be specified when pushing a notification; such notifications will remain queued at the root instance until downstream synchronization reaches the correct proxy mode instance.
     2. if no origination is required, the first available proxy mode instance with the applicable ActivitySpec will consume the notification and dequeue it (preventing downstream instances from knowing it was ever present).
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on January 29th, 2020.*
