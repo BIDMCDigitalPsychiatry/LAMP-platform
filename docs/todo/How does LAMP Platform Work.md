@@ -1,4 +1,7 @@
-# How does LAMP Platform Work?
+---
+title: How does LAMP Platform Work?
+slug: how_does_lamp_work
+---
 
 LAMP stands for Learn, Assess, Manage, Prevent. It is a measurement based care platform designed for both research and clinical use. The core components are the app and the dashboard.
 
@@ -20,4 +23,4 @@ Please note that LAMP requires at least Android 7 minimum and soon will require 
 
 ### Diagram of the LAMP Platform
 
-[How does LAMP Platform Work/LAMP_Diagrams.pdf](How does LAMP Platform Work/LAMP_Diagrams.pdf)
+![](../assets/LAMP_Diagrams.png)
