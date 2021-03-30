@@ -1,11 +1,14 @@
-# What are the Components of LAMP?
+---
+title: What are the Components of LAMP?
+slug: lamp_components
+---
 
 # LAMP is Organized Into Four Tabs: 
 Learn, Assess, Manage Prevent
 
 # **LEARN**
 
-![](../assets/Untitled 40.png)
+![](../assets/Untitled%2040.png)
 
 Tips and resources for patients and study participants are entered by researchers or clinicians through the Dashboard. Notifications for patients and study participants to review tips or resources can be preset and customized to be delivered at any time during the day.
 
@@ -15,7 +18,7 @@ To learn more about customizing a tip for a patient, check out [Customize and Sc
 
 # **ASSESS**
 
-![](../assets/Untitled 41.png)
+![](../assets/Untitled%2041.png)
 
 Surveys and cognitive games – their content, answer choice style, and time of delivery – are customized by clinicians and researchers in the Dashboard. Patients and study participants complete them on the app and answers are stored over time.
 
@@ -31,43 +34,43 @@ All activities are available through the Manage tab—below is an outline of the
 
 *Record thoughts, write lists, and make notes. Journal entries are date and time stamped so previous entries can be recalled and read at any time.*
 
-![](../assets/Untitled 42.png)
+![](../assets/Untitled%2042.png)
 
 **Guided Meditation**
 
 *Watch a soothing video to refocus energy and attention. Add an audio recording to customize the sound.*
 
-![](../assets/Untitled 43.png)
+![](../assets/Untitled%2043.png)
 
 **Scratch Card**
 
 *Select an image to “uncover” by sliding finger over screen until the image is revealed.*
 
-![](../assets/Untitled 44.png)
+![](../assets/Untitled%2044.png)
 
 **Medication Tracker (Coming Soon)**
 
 *Enter medication information in a calendar to receive daily reminders, track intake, and ensure prescriptions are refilled in time.*
 
-![](../assets/Untitled 45.png)
+![](../assets/Untitled%2045.png)
 
 **Goal Setter (Coming Soon)**
 
 *Enter a goal, small or big, and opt in/out of customized related reminders. The Goal Setter also lets users mark goals as complete and keeps track of completed goals.*
 
-![](../assets/Untitled 46.png)
+![](../assets/Untitled%2046.png)
 
 **Thought Log (Coming Soon)**
 
 *Offload negative thoughts or feelings by writing them down. Thoughts appear as bubbles that are popped and disappear afterwards.*
 
-![](../assets/Untitled 47.png)
+![](../assets/Untitled%2047.png)
 
 **Hope Box (Coming Soon)**
 
 *Collect and save favorite images and quotes to an album. The Hope Box is a digital scrapbook of positive moments.*
 
-![](../assets/Untitled 48.png)
+![](../assets/Untitled%2048.png)
 
 **Safety Plan (Coming Soon)**
 
@@ -77,14 +80,10 @@ To learn about customizing activities in the manage tab, check out [Customize an
 
 # **PREVENT**
 
-![](../assets/Untitled 49.png)
+![](../assets/Untitled%2049.png)
 
 mindLAMP collects a combination of active and passive data. Patients and study participants, and clinicians and researchers, can view aggregated data on mindLAMP or on the Dashboard. Data appears in charts.
 
 Data collected from mindLAMP – including survey responses and passive data such as step count – can be viewed through the Prevent tab.
 
 To learn more about viewing your data, see [Visualize data](Visualize%20data.md).
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on November 5th, 2020.*
