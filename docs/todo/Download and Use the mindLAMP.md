@@ -1,4 +1,7 @@
-# → Download and Use the mindLAMP app.
+---
+title: Download and Use the mindLAMP app.
+slug: download_mindlamp
+---
 
 ![](../assets/banner.png)
 
@@ -103,9 +106,5 @@ If you'd like to test the beta version of the app, please follow the instruction
 1. [Enroll in the Play Store beta for mindLAMP.](https://play.google.com/apps/testing/digital.lamp.mindlamp)
 
 ---
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on December 20th, 2020.*
 
 [Using the mobile app](%E2%86%92%20Download%20and%20Use%20the%20mindLAMP%20app/Using%20the%20mobile%20app.md)
