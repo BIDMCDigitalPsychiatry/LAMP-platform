@@ -1,6 +1,6 @@
 # [Android] Don't kill my app!
 
-![](../../assets/%5BAndroid%5D Don't kill my app!/Screen_Shot_2021-02-19_at_8.21.21_AM.png)
+![](../../assets/Screen_Shot_2021-02-19_at_8.21.21_AM.png)
 
 Read more at [https://dontkillmyapp.com](https://dontkillmyapp.com/)
 
