@@ -1,5 +1,5 @@
 ---
-title: [Android] Don't kill my app!
+title: Android Don't kill my app!
 slug: dont_kill_my_app
 ---
 
