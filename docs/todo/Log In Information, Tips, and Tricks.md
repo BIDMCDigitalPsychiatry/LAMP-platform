@@ -1,5 +1,6 @@
-# Log In Information, Tips, and Tricks
-
+---
+title: Log In Information, Tips, and Tricks
+slug: logging_in
 ## Logging In
 
 ![](../assets/Screen_Shot_2020-09-21_at_10.56.36_AM.png)
