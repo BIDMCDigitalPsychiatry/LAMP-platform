@@ -15,4 +15,4 @@ HealthKit data is only available with wearables with two exceptions: step count 
 
 ### How do I access raw data collected from wearables?
 
-Visualizations are can be displayed on the Prevent tab. Please see [Visualize data](Visualize data.md) for more information. If you wish to analyze data, please see [[Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000).
+Visualizations are can be displayed on the Prevent tab. Please see [Visualize data](Visualize data.md) for more information. If you wish to analyze data, please see [Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000).
