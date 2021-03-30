@@ -1,4 +1,7 @@
-# Data Science with LAMP
+---
+title: Data Science with LAMP
+slug: data_science
+---
 
 **The API sandbox allows you to test the raw HTTP REST API against a live server to see how to work with the low-level API itself.** 
 If you're interested in working in Ry, Python, or JS, we recommend you try out our programming libraries instead. 
@@ -61,9 +64,3 @@ If you're interested in working in Ry, Python, or JS, we recommend you try out o
     </body> 
     </html>
     ```
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on November 10th, 2020.*
