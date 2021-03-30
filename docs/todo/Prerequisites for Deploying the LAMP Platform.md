@@ -1,4 +1,7 @@
-# Prerequisites for Deploying the LAMP Platform
+---
+title: Prerequisites for Deploying the LAMP Platform
+slug: deploy_prereqs
+---
 
 The mindLAMP app interfaces with the much broader LAMP Platform to provide all of the functionality and features you can interact with within the app. The [LAMP Platform is open source](https://github.com/BIDMCDigitalPsychiatry/) and its components are detailed below; to see technical materials such as source code or compiling/testing routines, please visit the components' corresponding repository. 
 
