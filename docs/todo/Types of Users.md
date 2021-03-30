@@ -1,4 +1,7 @@
-# Types of Users
+---
+title: Types of Users
+slug: user_types
+---
 
 # **Self-Deploying User**
 
@@ -23,9 +26,3 @@ Consortium partners are required to host their own data if they are not part of 
 ---
 
 If your team is interested in building additional functions and features on LAMP – whether you are a **Self-Deploying User** or **Consortium Partner** – you can provide us with a detailed understanding of the functions and features and we will work with our engineering and design partners to determine the feasibility, cost, and a realistic timeline.
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 26th, 2020.*
