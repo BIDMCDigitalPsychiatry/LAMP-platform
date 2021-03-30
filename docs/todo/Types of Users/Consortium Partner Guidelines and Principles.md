@@ -3,15 +3,22 @@ title: Consortium Partner Guidelines and Principles
 slug: consortium_guidelines
 ---
 
-**Consortium Partners utilize the LAMP Platform at no-cost;** the guidelines and principles below outline the benefits and expectations:
+The LAMP Platform is open source, but please note that in order to receive the following benefits you **must** be a consortium partner.
+
+Users can purchase a LAMP Consortium membership starts at $5000 per year to become a consortium partner without access to Cortex, our data analysis pipeline. The guidelines and principles below outline the benefits and expectations of a consortium membership:
 
 ## ① **Support**
 
 The Division of Digital Psychiatry will provide partners two hours of technical support time to set up mindLAMP. Issues or bugs can be reported in [our feedback system here](https://www.notion.so/Report-a-Bug-or-Request-a-Feature-be1e3c107e354663b2d1726632816d99) and will be prioritized. Members are encouraged to post any mindLAMP related questions and comments in our [online forum here](https://community.lamp.digital/) .
 
-## ② **Shared** **Data**
+## ② **Collaborative** **Analysis**
 
-Non-identifiable data is shared in a common data pool for consortium partners to view and access for data analysis.
+Please include the Division of Digital Psychiatry at Beth Israel Deaconess Medical Center in your IRB to locally run code to gather the following de-identified, anonymized population metrics for consortium use:
+
+1. Duration of time spent in each section of LAMP → how much time is a patient spending in the Learn tab of LAMP versus the Assess tab?
+2. Features from accelerometer data including but not limited to sleep time, physical activity time, sedentary time etc. No PHI or PII is required for these metrics.
+
+This allows us to continue making the LAMP Platform more engaging for users.
 
 ## ③ Shared **Survey**
 
