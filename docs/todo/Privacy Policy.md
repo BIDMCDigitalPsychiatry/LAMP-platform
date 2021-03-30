@@ -1,4 +1,7 @@
-# Privacy Policy
+---
+title: Privacy Policy
+slug: privacy_policy
+---
 
 # Your Personal Information
 
@@ -43,9 +46,3 @@ Here's some language you might find useful in conveying the LAMP Platform's HIPA
 Here's another example regarding participant anonymity.
 
 > The app never records or stores any personal identity information. Every participant is assigned a randomly generated participant ID (for example, “U123456789”), and all participant data are connected only to that ID, not to a name, phone number, or address.
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 28th, 2020.*
