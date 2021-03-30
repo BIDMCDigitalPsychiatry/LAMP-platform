@@ -1,4 +1,7 @@
-# Visualize data
+---
+title: Visualize data
+slug: visualize
+---
 
 If you would like to hide graphs on the Prevent page from patients or participants, [please contact us here.](mailto:team@digitalpsych.org)
 
@@ -79,10 +82,4 @@ If your clinic or study has enabled some sensor types, you'll find them here in 
 
 ![](../assets/Screen_Shot_2020-01-31_at_4.57.21_PM.png)
 
-Want to get your data science team involved for even more visualization options? Check out [[Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000)](Data%20Science%20with%20LAMP.md).
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 29th, 2020.*
+Want to get your data science team involved for even more visualization options? Check out [Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000).
