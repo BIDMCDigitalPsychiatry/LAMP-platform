@@ -1,4 +1,7 @@
-# Deploying the LAMP Platform
+---
+title: Deploying the LAMP Platform
+slug: deploying_lamp
+---
 
 **You must have a configured Docker Swarm cluster to continue.**
 Please follow all steps below in the exact order specified, though you may skip optional steps.
@@ -235,9 +238,3 @@ docker stack deploy --compose-file lamp.yml lamp
 ## Maintaining and Updating the LAMP Platform
 
 If you are using this Docker Stack provided, you will only need to run a `docker service update` command on the API Server to pull the latest image. Because Docker image versioning is calendar-based, at the moment you will manually need to update from `2020` to `2021`, and so on.
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 15th, 2020.*
