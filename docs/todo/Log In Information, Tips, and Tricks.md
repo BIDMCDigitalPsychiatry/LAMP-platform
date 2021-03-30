@@ -112,7 +112,7 @@ Managing credentials for yourself or others is as follows:
 - **I am a clinician or researcher and  want to manage my own credentials.**
     - Tap the profile icon at top right and select the Manage Credentials option from the drop-down list.
 
-![](../assets/Untitled%2065.png)
+![](../assets/Untitled%2055.jpeg)
 
 - I am a clinician or researcher and want to **manage the credentials of a patient or participant.**
     - Tap the Edit Password after checking the patient's name.
