@@ -1,4 +1,7 @@
-# View the Dashboard
+---
+title: View the Dashboard
+slug: view_dashboard
+---
 
 The app can be customized to your organization or clinic's need to include all or just some of the below sections. Choose the ones that suit your needs best. Some visualizations will only be possible when certain data is collected. We are always working to create new visualizations. 
 
@@ -29,9 +32,3 @@ More ways to visualize passive data are coming soon. Stay up to date by checking
 This section of the app is useful to integrate a care team into mindLAMP and enables messaging features between patients and clinicians. **This feature is disabled by default.** 
 
 For more information, check out [Care Team - Connection with Patients ](Care%20Team%20-%20Connection%20with%20Patients.md).
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on October 28th, 2020.*
