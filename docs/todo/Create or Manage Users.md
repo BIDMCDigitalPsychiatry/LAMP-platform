@@ -1,6 +1,8 @@
 ---
 title: Create or Manage Patients and Participants
 slug: create_patients_participants
+---
+
 ### Creating a New Patient or Participant
 
 ![](../assets/users_tab.jpg)
