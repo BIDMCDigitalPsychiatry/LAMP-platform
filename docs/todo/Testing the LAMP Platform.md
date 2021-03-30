@@ -1,4 +1,7 @@
-# Testing the LAMP Platform
+---
+title: Testing the LAMP Platform
+slug: testing_lamp
+---
 
 Once you've deployed the `LAMP-server` and `LAMP-database`, you'll be able to use the mindLAMP app (either on your mobile device or [in a desktop browser](https://dashboard.lamp.digital/)) to connect to your instance. 
 
