@@ -1,4 +1,7 @@
-# How does the LAMP data format work?
+---
+title: How does the LAMP Data Format Work?
+slug: lamp_data_format
+---
 
 ![](../assets/Common_Data_Format.png)
 
