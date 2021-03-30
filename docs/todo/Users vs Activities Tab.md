@@ -1,4 +1,7 @@
-# Users vs Activities Tab
+---
+title: Users vs Activities Tab
+slug: users_vs_activities
+---
 
 # Users
 
@@ -6,9 +9,9 @@ When the clinician or researcher logs in, they will see the Patients tab. Here, 
 
 The blue "Add" button is used to add patients or studies. For information about adding and managing patients, see [Create or Manage Users](Create%20or%20Manage%20Users.md).
 
-![](../assets/Untitled 50.jpeg)
+![](../assets/Untitled%2050.jpeg)
 
-![](../assets/Untitled 51.jpeg)
+![](../assets/Untitled%2051.jpeg)
 
 Each patient will have the following attributes:
 
@@ -42,11 +45,11 @@ Study shows which study a patient is participating in. To filter patients by wha
 
 A clinician or researcher can navigate to the activities page by selecting "Activities" on the left menu bar of the dashboard.  Surveys and cognitive tests are examples of activities for patients. To learn more about specific activities, check out [What are the Components of LAMP?](What%20are%20the%20Components%20of%20LAMP.md).
 
-![](../assets/Untitled 50.png)
+![](../assets/Untitled%2050.png)
 
 The blue "Add" button is used to add activities and surveys manually or to import them. For information about adding and managing activities and surveys, see [Create Surveys](Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) and [Create Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Activities.md).
 
-![](../assets/Untitled 53.jpeg)
+![](../assets/Untitled%2053.jpeg)
 
 Each activity will the following attributes:
 
@@ -62,4 +65,4 @@ Type indicates if an activity is a tip, survey, cognitive test, or breathe activ
 
 Study indicates which study an activity is a part of. To filter activities by what study they are associated with, select the drop down menu "Filter Results." To view the activities in a selected study, click on the study's bubble underneath the search bar.
 
-![](../assets/Untitled 51.png)
+![](../assets/Untitled%2051.png)
