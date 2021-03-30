@@ -1,5 +1,6 @@
-# Deployment Recommendations
-
+---
+title: Deployment Recommendations
+slug: deployment_recs
 # Disclosure
 
 The steps to deploy the LAMP Platform on your own [can be found here](Deploying%20the%20LAMP%20Platform.md). We encourage all self-deploying users to consult the legal and IT departments, as well as sign a Business Associate Agreement (BAA) with the cloud provider to comply with HIPAA regulations.
