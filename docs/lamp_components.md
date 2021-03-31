@@ -8,7 +8,7 @@ Learn, Assess, Manage Prevent
 
 # **LEARN**
 
-![](../assets/Untitled_40.png)
+![](assets/Untitled_40.png)
 
 Tips and resources for patients and study participants are entered by researchers or clinicians through the Dashboard. Notifications for patients and study participants to review tips or resources can be preset and customized to be delivered at any time during the day.
 
@@ -18,7 +18,7 @@ To learn more about customizing a tip for a patient, check out [Customize and Sc
 
 # **ASSESS**
 
-![](../assets/Untitled_41.png)
+![](assets/Untitled_41.png)
 
 Surveys and cognitive games – their content, answer choice style, and time of delivery – are customized by clinicians and researchers in the Dashboard. Patients and study participants complete them on the app and answers are stored over time.
 
@@ -34,43 +34,43 @@ All activities are available through the Manage tab—below is an outline of the
 
 *Record thoughts, write lists, and make notes. Journal entries are date and time stamped so previous entries can be recalled and read at any time.*
 
-![](../assets/Untitled_42.png)
+![](assets/Untitled_42.png)
 
 **Guided Meditation**
 
 *Watch a soothing video to refocus energy and attention. Add an audio recording to customize the sound.*
 
-![](../assets/Untitled_43.png)
+![](assets/Untitled_43.png)
 
 **Scratch Card**
 
 *Select an image to “uncover” by sliding finger over screen until the image is revealed.*
 
-![](../assets/Untitled_44.png)
+![](assets/Untitled_44.png)
 
 **Medication Tracker (Coming Soon)**
 
 *Enter medication information in a calendar to receive daily reminders, track intake, and ensure prescriptions are refilled in time.*
 
-![](../assets/Untitled_45.png)
+![](assets/Untitled_45.png)
 
 **Goal Setter (Coming Soon)**
 
 *Enter a goal, small or big, and opt in/out of customized related reminders. The Goal Setter also lets users mark goals as complete and keeps track of completed goals.*
 
-![](../assets/Untitled_46.png)
+![](assets/Untitled_46.png)
 
 **Thought Log (Coming Soon)**
 
 *Offload negative thoughts or feelings by writing them down. Thoughts appear as bubbles that are popped and disappear afterwards.*
 
-![](../assets/Untitled_47.png)
+![](assets/Untitled_47.png)
 
 **Hope Box (Coming Soon)**
 
 *Collect and save favorite images and quotes to an album. The Hope Box is a digital scrapbook of positive moments.*
 
-![](../assets/Untitled_48.png)
+![](assets/Untitled_48.png)
 
 **Safety Plan (Coming Soon)**
 
@@ -80,7 +80,7 @@ To learn about customizing activities in the manage tab, check out [Customize an
 
 # **PREVENT**
 
-![](../assets/Untitled_49.png)
+![](assets/Untitled_49.png)
 
 mindLAMP collects a combination of active and passive data. Patients and study participants, and clinicians and researchers, can view aggregated data on mindLAMP or on the Dashboard. Data appears in charts.
 

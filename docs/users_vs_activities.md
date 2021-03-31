@@ -9,9 +9,9 @@ When the clinician or researcher logs in, they will see the Patients tab. Here, 
 
 The blue "Add" button is used to add patients or studies. For information about adding and managing patients, see [Create or Manage Users](Create_or_Manage_Users.md).
 
-![](../assets/Untitled_50.jpeg)
+![](assets/Untitled_50.jpeg)
 
-![](../assets/Untitled_51.jpeg)
+![](assets/Untitled_51.jpeg)
 
 Each patient will have the following attributes:
 
@@ -39,17 +39,17 @@ Gray means that a patient's passive data has never been collected.
 
 Study shows which study a patient is participating in. To filter patients by what study they are in select the drop down menu "Filter Results." To view patients in a selected study, click on the study's bubble underneath the search bar.
 
-![](../assets/Untitled 52.jpeg)
+![](assets/Untitled 52.jpeg)
 
 # Activities
 
 A clinician or researcher can navigate to the activities page by selecting "Activities" on the left menu bar of the dashboard.  Surveys and cognitive tests are examples of activities for patients. To learn more about specific activities, check out [What are the Components of LAMP?](What_are_the_Components_of_LAMP.md).
 
-![](../assets/Untitled_50.png)
+![](assets/Untitled_50.png)
 
 The blue "Add" button is used to add activities and surveys manually or to import them. For information about adding and managing activities and surveys, see [Create Surveys](Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) and [Create Activities](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Activities.md).
 
-![](../assets/Untitled_53.jpeg)
+![](assets/Untitled_53.jpeg)
 
 Each activity will the following attributes:
 
@@ -65,4 +65,4 @@ Type indicates if an activity is a tip, survey, cognitive test, or breathe activ
 
 Study indicates which study an activity is a part of. To filter activities by what study they are associated with, select the drop down menu "Filter Results." To view the activities in a selected study, click on the study's bubble underneath the search bar.
 
-![](../assets/Untitled_51.png)
+![](assets/Untitled_51.png)

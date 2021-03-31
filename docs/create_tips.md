@@ -14,9 +14,9 @@ Navigate to the activities page click the “+ Add” button, and then scroll to
 6. Add the tip author. If there is no author, this will be left blank.
 7. Press the `(+)` icon to add an image.
 
-![](../assets/activity_menu.jpg)
+![](assets/activity_menu.jpg)
 
-![](../assets/new_tip.jpg)
+![](assets/new_tip.jpg)
 
 # Customizing the Content of Your Tip
 
@@ -24,7 +24,7 @@ Tips support [Markdown-formatted text](https://www.markdownguide.org/getting-sta
 
 ### Basic Formatting
 
-![](../assets/Screen_Shot_2020-12-01_at_2.00.39_PM.png)
+![](assets/Screen_Shot_2020-12-01_at_2.00.39_PM.png)
 
 ```markdown
 # h1 Heading
@@ -45,7 +45,7 @@ Tips support [Markdown-formatted text](https://www.markdownguide.org/getting-sta
 Emojis in this text will be replaced like in Slack or GitHub: :dog: :+1:
 ```
 
-![](../assets/Screen_Shot_2020-12-01_at_2.00.54_PM.png)
+![](assets/Screen_Shot_2020-12-01_at_2.00.54_PM.png)
 
 ```markdown
 ## Lists
@@ -75,9 +75,9 @@ Start numbering with offset:
 1. bar
 ```
 
-![](../assets/Screen_Shot_2020-12-01_at_2.01.29_PM.png)
+![](assets/Screen_Shot_2020-12-01_at_2.01.29_PM.png)
 
-![](../assets/Screen_Shot_2020-12-01_at_2.01.12_PM.png)
+![](assets/Screen_Shot_2020-12-01_at_2.01.12_PM.png)
 
 ```markdown
 ## Blocks
@@ -100,7 +100,7 @@ Sample text here...
 
 ```
 
-![](../assets/Screen_Shot_2020-12-01_at_2.01.59_PM.png)
+![](assets/Screen_Shot_2020-12-01_at_2.01.59_PM.png)
 
 ```markdown
 ## Links & Media
@@ -114,7 +114,7 @@ Sample text here...
 
 ### Advanced Formatting
 
-![](../assets/Screen_Shot_2020-12-01_at_2.01.46_PM.png)
+![](assets/Screen_Shot_2020-12-01_at_2.01.46_PM.png)
 
 ```markdown
 ## Tables
@@ -126,7 +126,7 @@ Sample text here...
 | ![embedded image](https://www.flaticon.com/svg/static/icons/svg/3823/3823851.svg) | | 1. hi<br />2. hello | | **test** |
 ```
 
-![](../assets/Screen_Shot_2020-12-01_at_2.02.22_PM.png)
+![](assets/Screen_Shot_2020-12-01_at_2.02.22_PM.png)
 
 ```markdown
 <details>

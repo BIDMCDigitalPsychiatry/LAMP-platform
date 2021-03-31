@@ -4,7 +4,7 @@ slug: complete_activities
 ---
 ### Step 1: View your Feed.
 
-![](../assets/feed.jpg)
+![](assets/feed.jpg)
 
 Now that you've logged into mindLAMP, you'll immediately see the Feed. Along the tab bar, you'll find buttons that link you to all the things you can do within mindLAMP. They're organized into the following sections:
 
@@ -19,7 +19,7 @@ In the Prevent tab you'll find data visualization tools. To learn more about you
 
 When you tap one of the buttons, you'll be taken to a full-screen Activity. One example is the breathe exercise in the **Manage** section (shown below), but you can also try taking surveys from the **Assess** section (shown below). 
 
-![](../assets/manage.jpg)
+![](assets/manage.jpg)
 
 Please note that some survey instruments can contain description information along with option anchors, as shown in the image below. 
 
@@ -29,4 +29,4 @@ Each day that a survey or activity is completed, an encouraging streak tracker w
 
 Want to see your survey results? Go to [View the Dashboard](../View_the_Dashboard.md)!
 
-![](../assets/streak.jpg)
+![](assets/streak.jpg)

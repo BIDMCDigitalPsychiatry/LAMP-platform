@@ -5,7 +5,7 @@ slug: lamp_data_cortex
 
 # LAMP Platform
 
-![](../assets/LAMP_Overview.png)
+![](assets/LAMP_Overview.png)
 
 ### ① App
 

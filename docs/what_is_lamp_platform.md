@@ -15,4 +15,4 @@ The dashboard allows both you and the user to view the information that was coll
 
 ### Diagram of the LAMP Platform
 
-![](../assets/LAMP_Diagrams.png)
+![](assets/LAMP_Diagrams.png)

@@ -23,4 +23,4 @@ Please note that LAMP requires at least Android 7 minimum and soon will require 
 
 ### Diagram of the LAMP Platform
 
-![](../assets/LAMP_Diagrams.png)
+![](assets/LAMP_Diagrams.png)

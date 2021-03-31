@@ -7,9 +7,9 @@ If you would like to hide graphs on the Prevent page from patients or participan
 
 ### Step 1: View the different kinds of data available.
 
-![](../assets/Screen_Shot_2020-10-02_at_3.01.26_PM.png)
+![](assets/Screen_Shot_2020-10-02_at_3.01.26_PM.png)
 
-![](../assets/Screen_Shot_2020-10-02_at_3.01.36_PM.png)
+![](assets/Screen_Shot_2020-10-02_at_3.01.36_PM.png)
 
 When you open the patient dashboard, in the visualizations section you'll see either two or three sections, as explained below:
 
@@ -23,7 +23,7 @@ Each item in these sections appears as a bubble with a name, as well as a small 
 
 ### Step 2: View a selected graph of data.
 
-![](../assets/Screen_Shot_2020-01-31_at_4.59.00_PM.png)
+![](assets/Screen_Shot_2020-01-31_at_4.59.00_PM.png)
 
 Once a graph is selected as visible in its default view, it appears with a toolbar at the top including the following information and actions:
 
@@ -37,7 +37,7 @@ Hover over a data point to see its exact date and time, along with its score and
 
 Tapping the **Switch Views** button allows you to toggle between **Overview** and **Expanded** modes. In the **Expanded** mode, you'll be able to see each individual question as its own sparkline graph over time, along with the actual value of that data point.
 
-![](../assets/Screen_Shot_2020-01-31_at_5.00.08_PM.png)
+![](assets/Screen_Shot_2020-01-31_at_5.00.08_PM.png)
 
 Tapping on any blue dot will enter **Detail** mode, where you will see all the parameters saved for that data point alone. In this view, the toolbar will contain the following: 
 
@@ -50,7 +50,7 @@ To return to your previous view, tap the back button.
 
 To learn more about the **Editing** panel, see the next step.
 
-![](../assets/Screen_Shot_2020-01-31_at_4.59.31_PM.png)
+![](assets/Screen_Shot_2020-01-31_at_4.59.31_PM.png)
 
 ### Step 3: Delete, duplicate, overwrite survey responses.
 
@@ -66,20 +66,20 @@ Please note that the **Delete** and **Overwrite** options only hide the original
 
 **Duplicate**
 
-![](../assets/Screen_Shot_2020-10-02_at_3.04.16_PM.png)
+![](assets/Screen_Shot_2020-10-02_at_3.04.16_PM.png)
 
 **Overwrite**
 
-![](../assets/Screen_Shot_2020-10-02_at_3.03.50_PM.png)
+![](assets/Screen_Shot_2020-10-02_at_3.03.50_PM.png)
 
 ### Step 4: Show step count and other sensor data.
 
-![](../assets/Screen_Shot_2020-10-02_at_3.01.26_PM.png)
+![](assets/Screen_Shot_2020-10-02_at_3.01.26_PM.png)
 
-![](../assets/Screen_Shot_2020-10-02_at_3.01.36_PM.png)
+![](assets/Screen_Shot_2020-10-02_at_3.01.36_PM.png)
 
 If your clinic or study has enabled some sensor types, you'll find them here in this section. As before, tap on an item's bubble to view the graphs for that type of data. You'll see **Step Count** as an example below. 
 
-![](../assets/Screen_Shot_2020-01-31_at_4.57.21_PM.png)
+![](assets/Screen_Shot_2020-01-31_at_4.57.21_PM.png)
 
 Want to get your data science team involved for even more visualization options? Check out [Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000).

@@ -13,7 +13,7 @@ Any Javascript-based code can be added the LAMP Platform using the ActivitySpec 
 
 **Figure 1:** Approximately ~40 lines of JavaScript + React code, shown on the left, produces a naïve implementation of the Jewels game, shown on the right.
 
-![](../assets/Screen_Shot_2019-04-16_at_12.12.16_PM.png)
+![](assets/Screen_Shot_2019-04-16_at_12.12.16_PM.png)
 
 If you'd like to try creating your own, but don't have a ReactJS development environment, **consider using [CodeSandbox](https://codesandbox.io/)**, a free service.
 
@@ -21,4 +21,4 @@ If you'd like to try creating your own, but don't have a ReactJS development env
 
 **Figure 2:** Using a variant of Blockly, developed by Google and used by the MIT Scratch language, we can drag-and-drop blocks to generate JavaScript code behind the scenes.
 
-![](../assets/Screen_Shot_2019-04-16_at_12.41.17_PM.png)
+![](assets/Screen_Shot_2019-04-16_at_12.41.17_PM.png)

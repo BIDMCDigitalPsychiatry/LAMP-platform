@@ -16,7 +16,7 @@ Look at  [Create Activities](Create_Activities.md) to add some tips or cognitive
     **All data saved under that survey activity is deleted for every patient in your clinic.** 
     Once deleted, a survey activity and any deleted data cannot be recovered. 
 
-![](../assets/delete_activities.jpg)
+![](assets/delete_activities.jpg)
 
 Trying to delete or edit responses to a survey? Check out [Visualize data](../Visualize_data.md) and go to step 3!
 
@@ -30,6 +30,6 @@ Trying to delete or edit responses to a survey? Check out [Visualize data](../Vi
 6. Click the check mark.
 7. The patient or participant will receive a feed item and a notification on their phone at the specified time.
 
-![](../assets/schedule.jpg)
+![](assets/schedule.jpg)
 
 Ready to start [Take Surveys and Complete Activities](Take_Surveys_and_Complete_Activities.md)?

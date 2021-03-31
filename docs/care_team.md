@@ -5,9 +5,9 @@ slug: care_team
 
 ### Step 1: Understanding the care team and messaging feature.
 
-![](../assets/06_Messages1.png)
+![](assets/06_Messages1.png)
 
-![](../assets/06_Messages2.png)
+![](assets/06_Messages2.png)
 
 In some cases, you may want to use mindLAMP to connect with patients and/or create virtual care teams or allow patients to create peer support networks. 
 

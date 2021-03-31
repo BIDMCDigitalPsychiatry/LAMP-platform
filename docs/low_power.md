@@ -16,7 +16,7 @@ In proxy mode, an instance of the API Server can continue to vend the API withou
 2. a connection to another instance of the LAMP server, and
 3. periodic synchronization between (1) and (2) determined by an availability factor.
 
-    ![](../assets/Proxy_Mode.png)
+    ![](assets/Proxy_Mode.png)
 
 The proxy mode use-case of the LAMP server enables chaining instances together for accumulative data transfer. This serves useful for several reasons:
 

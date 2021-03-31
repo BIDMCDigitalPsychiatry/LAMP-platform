@@ -2,7 +2,7 @@ module.exports = {
   "Main": [
     {
       "type": "doc",
-      "id": "todo/index"
+      "id": "index"
     },
     {
       "type": "category",
@@ -10,15 +10,15 @@ module.exports = {
       "items": [
         {
           "type": "doc",
-          "id": "todo/download"
+          "id": "download"
         },
         {
           "type": "doc",
-          "id": "todo/bug"
+          "id": "bug"
         },
         {
           "type": "doc",
-          "id": "todo/faq"
+          "id": "faq"
         }
       ]
     },
@@ -28,23 +28,23 @@ module.exports = {
       "items": [
         {
           "type": "doc",
-          "id": "todo/how_works"
+          "id": "how_works"
         },
         {
           "type": "doc",
-          "id": "todo/user_prereqs"
+          "id": "user_prereqs"
         },
         {
           "type": "doc",
-          "id": "todo/user_types"
+          "id": "user_types"
         },
         {
           "type": "doc",
-          "id": "todo/privacy"
+          "id": "privacy"
         },
         {
           "type": "doc",
-          "id": "todo/security"
+          "id": "security"
         }
       ]
     },
@@ -70,27 +70,27 @@ module.exports = {
       "items": [
         {
           "type": "doc",
-          "id": "todo/lamp_data_cortex"
+          "id": "lamp_data_cortex"
         },
         {
           "type": "doc",
-          "id": "todo/what_is_lamp_platform"
+          "id": "what_is_lamp_platform"
         },
         {
           "type": "doc",
-          "id": "todo/lamp_components"
+          "id": "lamp_components"
         },
         {
           "type": "doc",
-          "id": "todo/platforms_vs_apps"
+          "id": "platforms_vs_apps"
         },
         {
           "type": "doc",
-          "id": "todo/lamp_data_format"
+          "id": "lamp_data_format"
         },
         {
           "type": "doc",
-          "id": "todo/webinar_recordings"
+          "id": "webinar_recordings"
         }
       ]
     },
@@ -100,15 +100,15 @@ module.exports = {
       "items": [
         {
           "type": "doc",
-          "id": "todo/accessing_account"
+          "id": "accessing_account"
         },
         {
           "type": "doc",
-          "id": "todo/logging_in"
+          "id": "logging_in"
         },
         {
           "type": "doc",
-          "id": "todo/create_patients_participants"
+          "id": "create_patients_participants"
         },
         {
           "type": "category",
@@ -116,49 +116,49 @@ module.exports = {
           "items": [
             {
               "type": "doc",
-              "id": "todo/create_tips"
+              "id": "create_tips"
             },
             {
               "type": "doc",
-              "id": "todo/create_surveys"
+              "id": "create_surveys"
             },
             {
               "type": "doc",
-              "id": "todo/delete_activities"
+              "id": "delete_activities"
             },
             {
               "type": "doc",
-              "id": "todo/import_activities"
+              "id": "import_activities"
             },
             {
               "type": "doc",
-              "id": "todo/create_activities"
+              "id": "create_activities"
             },
             {
               "type": "doc",
-              "id": "todo/customize_activities"
+              "id": "customize_activities"
             },
             {
               "type": "doc",
-              "id": "todo/complete_activities"
+              "id": "complete_activities"
             }
           ]
         },
         {
           "type": "doc",
-          "id": "todo/view_dashboard"
+          "id": "view_dashboard"
         },
         {
           "type": "doc",
-          "id": "todo/care_team"
+          "id": "care_team"
         },
         {
           "type": "doc",
-          "id": "todo/Survey_Instrument_Library"
+          "id": "Survey_Instrument_Library"
         },
         {
           "type": "doc",
-          "id": "todo/wearables"
+          "id": "wearables"
         }
       ]
     },
@@ -168,31 +168,31 @@ module.exports = {
       "items": [
         {
           "type": "doc",
-          "id": "todo/deploy_prereqs"
+          "id": "deploy_prereqs"
         },
         {
           "type": "doc",
-          "id": "todo/deployment_recs"
+          "id": "deployment_recs"
         },
         {
           "type": "doc",
-          "id": "todo/costs"
+          "id": "costs"
         },
         {
           "type": "doc",
-          "id": "todo/provisioning_lamp"
+          "id": "provisioning_lamp"
         },
         {
           "type": "doc",
-          "id": "todo/aws_resources"
+          "id": "aws_resources"
         },
         {
           "type": "doc",
-          "id": "todo/deploying_lamp"
+          "id": "deploying_lamp"
         },
         {
           "type": "doc",
-          "id": "todo/testing_lamp"
+          "id": "testing_lamp"
         }
       ]
     },
@@ -202,45 +202,45 @@ module.exports = {
       "items": [
         {
           "type": "doc",
-          "id": "todo/components_of_lamp"
+          "id": "components_of_lamp"
         },
         {
           "type": "doc",
-          "id": "todo/how_works"
+          "id": "how_works"
         },
         {
           "type": "doc",
-          "id": "todo/low_power"
+          "id": "low_power"
         },
         {
           "type": "doc",
-          "id": "todo/intervention_delivery"
+          "id": "intervention_delivery"
         },
         {
           "type": "doc",
-          "id": "todo/build_new_activities"
+          "id": "build_new_activities"
         },
         {
           "type": "doc",
-          "id": "todo/how_interventions_work"
+          "id": "how_interventions_work"
         },
         {
           "type": "doc",
-          "id": "todo/data_science"
+          "id": "data_science"
         }
       ]
     },
     {
       "type": "doc",
-      "id": "todo/cortex"
+      "id": "cortex"
     },
     {
       "type": "doc",
-      "id": "todo/Whos_using_LAMP"
+      "id": "Whos_using_LAMP"
     },
     {
       "type": "doc",
-      "id": "todo/mapnet"
+      "id": "mapnet"
     }
   ]
 };

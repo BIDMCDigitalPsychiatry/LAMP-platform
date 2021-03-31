@@ -14,7 +14,7 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 4. Select "tips" to create tip or resource for a patient to show up in the [Learn tab](../What_are_the_Components_of_LAMP.md).
 5. If you would like to create a group of activities, click Activity Group.
 
-![](../assets/activity_menu.jpg)
+![](assets/activity_menu.jpg)
 
 Note, you can add surveys and activities to an activity group. This group of activities can then be scheduled like a survey or other activities.
 

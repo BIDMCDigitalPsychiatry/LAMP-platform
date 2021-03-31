@@ -3,7 +3,7 @@ title: Wearables
 slug: wearables
 ---
 
-![](../assets/wearables.png)
+![](assets/wearables.png)
 
 ### Requirements
 

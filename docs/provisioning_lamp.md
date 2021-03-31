@@ -3,7 +3,7 @@ title: Provisioning the LAMP Platform
 slug: provisioning_lamp
 ---
 
-![](../assets/AWS_Mini_Map.png)
+![](assets/AWS_Mini_Map.png)
 
 *BIDMC Digital Psychiatry's LAMP Platform*
 
@@ -18,7 +18,7 @@ If you or your organization have further questions about choosing a cloud provid
 
 ### Segmenting Compute Resources
 
-![](../assets/AWS_Map.png)
+![](assets/AWS_Map.png)
 
 *BIDMC Digital Psychiatry's LAMP Platform*
 
