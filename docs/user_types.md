@@ -17,11 +17,11 @@ Consortium partners are required to host their own data if they are not part of 
 
 **Important to know:**
 
-[Consortium Partner Guidelines and Principles](Types_of_Users/Consortium_Partner_Guidelines_and_Principles.md)
+[Consortium Partner Guidelines and Principles](consortium_guidelines.md)
 
-[Consortium Partner Survey Requirements](Types_of_Users/Consortium_Partner_Survey_Requirements.md)
+[Consortium Partner Survey Requirements](consortium_survey.md)
 
-[LAMP Consortium Requirements](Types_of_Users/LAMP_Consortium_Requirements.md)
+[LAMP Consortium Requirements](consortium_requirements.md)
 
 ---
 

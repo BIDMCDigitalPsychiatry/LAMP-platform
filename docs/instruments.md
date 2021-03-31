@@ -1,4 +1,7 @@
-# Survey Instrument Library
+---
+title: Survey Instrument Library
+slug: instruments
+---
 
 Import existing surveys instruments into your LAMP project! To do so, open one of the surveys pages below and download the survey json file hosted there. Then, [import the file in the LAMP dashboard.](https://www.notion.so/digitalpsychiatry/Create-or-manage-surveys-411ad2267aa948b3b2848a38077e2ac8) 
 

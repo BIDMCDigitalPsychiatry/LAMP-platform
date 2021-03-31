@@ -1,4 +1,8 @@
-﻿
+﻿---
+title: Who's using LAMP?
+slug: consortium_users
+---
+
 Name,Location,Role
 LA County Department of Mental Health,"Los Angeles, California, United States",Researchers
 National Institute of Mental Health and Neurosciences,,Researchers

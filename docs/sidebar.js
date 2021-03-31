@@ -28,7 +28,7 @@ module.exports = {
       "items": [
         {
           "type": "doc",
-          "id": "how_works"
+          "id": "how_does_lamp_work"
         },
         {
           "type": "doc",
@@ -37,6 +37,24 @@ module.exports = {
         {
           "type": "doc",
           "id": "user_types"
+        },
+        {
+          "type": "category",
+          "label": "Consortium",
+          "items": [
+            {
+              "type": "doc",
+              "id": "consortium_guidelines"
+            },
+            {
+              "type": "doc",
+              "id": "consortium_survey"
+            },
+            {
+              "type": "doc",
+              "id": "consortium_requirements"
+            }
+          ]
         },
         {
           "type": "doc",
@@ -111,6 +129,10 @@ module.exports = {
           "id": "create_patients_participants"
         },
         {
+          "type": "doc",
+          "id": "users_vs_activities"
+        },
+        {
           "type": "category",
           "label": "Activities: Tips, Surveys, and Cognitive Tests",
           "items": [
@@ -141,6 +163,10 @@ module.exports = {
             {
               "type": "doc",
               "id": "complete_activities"
+            },
+            {
+              "type": "doc",
+              "id": "visualize"
             }
           ]
         },
@@ -154,11 +180,15 @@ module.exports = {
         },
         {
           "type": "doc",
-          "id": "Survey_Instrument_Library"
+          "id": "instruments"
         },
         {
           "type": "doc",
           "id": "wearables"
+        },
+        {
+          "type": "doc",
+          "id": "dont_kill_my_app"
         }
       ]
     },
@@ -223,10 +253,32 @@ module.exports = {
         {
           "type": "doc",
           "id": "how_interventions_work"
-        },
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Data Science",
+      "items": [
         {
           "type": "doc",
           "id": "data_science"
+        },
+        {
+          "type": "doc",
+          "id": "data_types"
+        },
+        {
+          "type": "doc",
+          "id": "python"
+        },
+        {
+          "type": "doc",
+          "id": "r"
+        },
+        {
+          "type": "doc",
+          "id": "anomaly_detection_r"
         }
       ]
     },
@@ -236,7 +288,11 @@ module.exports = {
     },
     {
       "type": "doc",
-      "id": "Whos_using_LAMP"
+      "id": "consortium_users"
+    },
+    {
+      "type": "doc",
+      "id": "publications"
     },
     {
       "type": "doc",

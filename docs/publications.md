@@ -1,4 +1,9 @@
-﻿Name,Citation
+﻿---
+title: Publications with LAMP
+slug: publications
+---
+
+Name,Citation
 Creating a Digital Health Smartphone App and Digital Phenotyping Platform for Mental Health and Diverse Healthcare Needs: an Interdisciplinary and Collaborative Approach,"Torous, J., Wisniewski, H., Bird, B. et al. Creating a Digital Health Smartphone App and Digital Phenotyping Platform for Mental Health and Diverse Healthcare Needs: an Interdisciplinary and Collaborative Approach. J. technol. behav. sci. 4, 73–85 (2019). https://doi.org/10.1007/s41347-019-00095-w"
 Assessing the potential of longitudinal smartphone based cognitive assessment in schizophrenia: A naturalistic pilot study,"Gang Liu, Philip Henson, Matcheri Keshavan, Jukka Pekka-Onnela, John Torous, Assessing the potential of longitudinal smartphone based cognitive assessment in schizophrenia: A naturalistic pilot study, Schizophrenia Research: Cognition, Volume 17, 2019, 100144, ISSN 2215-0013, https://doi.org/10.1016/j.scog.2019.100144."
 "Using a Smartphone App to Identify Clinically Relevant Behavior Trends via Symptom Report, Cognition Scores, and Exercise Levels: A Case Series","Wisniewski Hannah, Henson Philip, Torous John. Using a Smartphone App to Identify Clinically Relevant Behavior Trends via Symptom Report, Cognition Scores, and Exercise Levels: A Case Series. Frontiers in Psychiatry. 10-2019-652. doi:10.3389/fpsyt.2019.00652"

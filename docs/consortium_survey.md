@@ -1,6 +1,6 @@
 ---
 title: Consortium Partner Surveys Requirements
-slug: consortium_survey_reqs
+slug: consortium_survey
 ---
 We request that if using mindLAMP to administer surveys, consortium partners agree to use the following questions in a survey sent once to participants. This so there are common elements across all studies using mindLAMP and feedback collected on use. Each question should be asked and rated on a Likert scale.
 
