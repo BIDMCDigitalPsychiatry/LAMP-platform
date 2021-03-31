@@ -3,31 +3,30 @@ title: Who's using LAMP?
 slug: consortium_users
 ---
 
-Name,Location,Role
-LA County Department of Mental Health,"Los Angeles, California, United States",Researchers
-National Institute of Mental Health and Neurosciences,,Researchers
-Monash University,"Melbourne, Australia",Researchers
-Unity Health Toronto,"Toronto, Ontario, Canada","Clinicians, Researchers"
-Mayo Clinic,"Rochester, Minnesota, United States",Researchers
-Cambridge Health Alliance,"Massachusetts, United States",Clinicians
-Massachusetts Psychosis Network for Early Treatment (MAPNET),"Massachusetts, United States",Clinicians
-McGill University,"Montreal, Québec, Canada",Researchers
-University of Ottawa,"Ottawa, Canada",Researchers
-University of Oxford,"Oxford, United Kingdom",Researchers
-The Medical University of Varna,"Varna, Bulgaria","Clinicians, Researchers"
-University of Nebraska Medical Center,"Omaha, Nebraska, United States",Clinicians
-New Hampshire State Hospital,"Concord, New Hampshire, United States",Researchers
-National Institute for Mental Health Collaboration,United States and Australia,"Clinicians, Researchers"
-University of California San Diego,"San Diego, California, United States","Clinicians, Researchers"
-Boston University,"Boston, Massachusetts, United States",Researchers
-University College London,"London, United Kingdom","Clinicians, Researchers"
-BIDMC Anaesthesiology and Surgery,"Boston, Massachusetts, United States",Researchers
-California State University Northridge,"Los Angeles, California, United States",Researchers
-Henry Ford Behavioral Health Services,"Detroit, Michigan, United States",Clinicians
-BIDMC Neurology,"Boston, Massachusetts, United States",Researchers
-Shanghai Mental Health,"Shanghai, China",Researchers
-,,
-,,
+| Name                                                         | Location                                 | Role                      |
+|--------------------------------------------------------------|------------------------------------------|---------------------------|
+| LA County Department of Mental Health                        | "Los Angeles, California, United States" | Researchers               |
+| National Institute of Mental Health and Neurosciences        |                                          | Researchers               |
+| Monash University                                            | "Melbourne, Australia"                   | Researchers               |
+| Unity Health Toronto                                         | "Toronto, Ontario, Canada"               | "Clinicians, Researchers" |
+| Mayo Clinic                                                  | "Rochester, Minnesota, United States"    | Researchers               |
+| Cambridge Health Alliance                                    | "Massachusetts, United States"           | Clinicians                |
+| Massachusetts Psychosis Network for Early Treatment (MAPNET) | "Massachusetts, United States"           | Clinicians                |
+| McGill University                                            | "Montreal, Québec, Canada"               | Researchers               |
+| University of Ottawa                                         | "Ottawa, Canada"                         | Researchers               |
+| University of Oxford                                         | "Oxford, United Kingdom"                 | Researchers               |
+| The Medical University of Varna                              | "Varna, Bulgaria"                        | "Clinicians, Researchers" |
+| University of Nebraska Medical Center                        | "Omaha, Nebraska, United States"         | Clinicians                |
+| New Hampshire State Hospital                                 | "Concord, New Hampshire, United States"  | Researchers               |
+| National Institute for Mental Health Collaboration           | United States and Australia              | "Clinicians, Researchers" |
+| University of California San Diego                           | "San Diego, California, United States"   | "Clinicians, Researchers" |
+| Boston University                                            | "Boston, Massachusetts, United States"   | Researchers               |
+| University College London                                    | "London, United Kingdom"                 | "Clinicians, Researchers" |
+| BIDMC Anaesthesiology and Surgery                            | "Boston, Massachusetts, United States"   | Researchers               |
+| California State University Northridge                       | "Los Angeles, California, United States" | Researchers               |
+| Henry Ford Behavioral Health Services                        | "Detroit, Michigan, United States"       | Clinicians                |
+| BIDMC Neurology                                              | "Boston, Massachusetts, United States"   | Researchers               |
+| Shanghai Mental Health                                       | "Shanghai, China"                        | Researchers               |
 
 
 # BIDMC Anesthesiology and Surgery
@@ -210,4 +209,3 @@ Location: Oxford, United Kingdom
 Role: Researchers
 
 > In this study we aim to use digital interventions to improve mental wellbeing in the general population, with a specific target of four groups that are particularly, but very differently, affected by the COVID-19 pandemic: people in isolation, students, athletes, and frontline clinical staff. Clinical staff will likely have limited flexibility in their daily routine, but those who can no longer work will have too much flexibility. We will capture digital phenotypes of participants as well as signals related to interventions like mood, anxiety, diet, sleep, steps etc (as noted above). We will compare a standard intervention (using the app to deliver generic advice and instructions about pre-defined interventions) with a personalised one (using information based on individual differences and preferences in a personalised and dynamic way). All data will be de-identified and made freely available to the scientific community at the end of the study.
-
