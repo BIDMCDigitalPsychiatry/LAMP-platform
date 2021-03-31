@@ -4,16 +4,86 @@
         <title>LAMP Platform Blog</title>
         <link>https://docs.lamp.digital/blog</link>
         <description>LAMP Platform Blog</description>
-        <lastBuildDate>Sun, 21 Mar 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Apr 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>© 2021 LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
         <item>
-            <title><![CDATA[Initial release]]></title>
-            <link>https://docs.lamp.digital/LAMP-platform/blog/2021/03/21/test</link>
-            <guid>Initial release</guid>
-            <pubDate>Sun, 21 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is my first release note.]]></description>
+            <title><![CDATA[Documentation Overhaul]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2021/04/01/</link>
+            <guid>Documentation Overhaul</guid>
+            <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Documentation Overhaul]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Patient Profile & New Cognitive Tests]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2021/02/12/</link>
+            <guid>Patient Profile &amp; New Cognitive Tests</guid>
+            <pubDate>Fri, 12 Feb 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Patient Profile & New Cognitive Tests]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Stability & Performance Improvements]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2021/01/11/</link>
+            <guid>Stability &amp; Performance Improvements</guid>
+            <pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Stability & Performance Improvements]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Ease of Use Improvements]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/12/17/</link>
+            <guid>Ease of Use Improvements</guid>
+            <pubDate>Thu, 17 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Ease of Use Improvements]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Cortex Visualizations & Activity Updates]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/12/01/</link>
+            <guid>Cortex Visualizations &amp; Activity Updates</guid>
+            <pubDate>Tue, 01 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Cortex Visualizations & Activity Updates]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Ease of Use Improvements]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/11/06/</link>
+            <guid>Ease of Use Improvements</guid>
+            <pubDate>Fri, 06 Nov 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Ease of Use Improvements]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Stability & Performance Improvements]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/11/05/</link>
+            <guid>Stability &amp; Performance Improvements</guid>
+            <pubDate>Thu, 05 Nov 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Stability & Performance Improvements]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Clinical Customization Updates]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/10/23/</link>
+            <guid>Clinical Customization Updates</guid>
+            <pubDate>Fri, 23 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Clinical Customization Updates]]></description>
+        </item>
+        <item>
+            <title><![CDATA[User Experience Upgrades]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/10/15/</link>
+            <guid>User Experience Upgrades</guid>
+            <pubDate>Thu, 15 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[User Experience Upgrades]]></description>
+        </item>
+        <item>
+            <title><![CDATA[General Availability of mindLAMP 2]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/10/05/</link>
+            <guid>General Availability of mindLAMP 2</guid>
+            <pubDate>Mon, 05 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[General Availability of mindLAMP 2]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Stability & Infrastructure Upgrades]]></title>
+            <link>https://docs.lamp.digital/LAMP-platform/blog/2020/08/25/</link>
+            <guid>Stability &amp; Infrastructure Upgrades</guid>
+            <pubDate>Tue, 25 Aug 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Stability & Infrastructure Upgrades]]></description>
         </item>
     </channel>
 </rss>
