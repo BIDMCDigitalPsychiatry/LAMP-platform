@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{91:function(o){o.exports=JSON.parse('{"permalink":"/LAMP-platform/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":11,"previousPage":"/LAMP-platform/blog","nextPage":null,"blogDescription":"The LAMP Platform documentation.","blogTitle":"LAMP Platform"}')}}]);
