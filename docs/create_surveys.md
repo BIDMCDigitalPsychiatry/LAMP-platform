@@ -13,7 +13,7 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 3. Select the cognitive test to add an activity or select Survey Instrument to add a survey to [the Assess tab.](../What_are_the_Components_of_LAMP.md)
 4. If you would like to import a survey or activity, click "Import Activities."
 
-![](../assets/activity_menu.jpg)
+![](assets/activity_menu.jpg)
 
 # Create a New Question for Your Survey.
 
@@ -25,7 +25,7 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 
 6.    You can add description content to each question or option choice that can assist clinicians or patients in their selections. If such the description content field is left empty, it will not be displayed when a question or option choice is presented.
 
-![](../assets/survey_edit.jpg)
+![](assets/survey_edit.jpg)
 
 7.    Please double check and ensure you have no typos or errors when saving the new survey. Once you press the `[Save]` button, you will be returned to the screen displaying the list of Activities in your clinic or study, now with the newly added survey. 
 

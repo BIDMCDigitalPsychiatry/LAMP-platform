@@ -5,7 +5,7 @@ slug: view_dashboard
 
 The app can be customized to your organization or clinic's need to include all or just some of the below sections. Choose the ones that suit your needs best. Some visualizations will only be possible when certain data is collected. We are always working to create new visualizations. 
 
-![](../assets/feed.png)
+![](assets/feed.png)
 
 # Feed
 
@@ -21,11 +21,11 @@ To learn more about how to use this section, see [Visualize data](Visualize_data
 
 More ways to visualize passive data are coming soon. Stay up to date by checking out [[What's New with LAMP?](https://www.notion.so/3f8828a4fd1b40ab947af4ce08ae7694)](https://www.notion.so/What-s-New-with-LAMP-c6fb984faf6842c2af9d70ab788add2f) 
 
-![](../assets/prevent.png)
+![](assets/prevent.png)
 
-![](../assets/banner.png)
+![](assets/banner.png)
 
-![](../assets/Screen_Shot_2020-10-02_at_2.08.01_PM.png)
+![](assets/Screen_Shot_2020-10-02_at_2.08.01_PM.png)
 
 ## Care Team & Conversations
 

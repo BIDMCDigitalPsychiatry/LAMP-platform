@@ -3,7 +3,7 @@ title: How does the LAMP Data Format Work?
 slug: lamp_data_format
 ---
 
-![](../assets/Common_Data_Format.png)
+![](assets/Common_Data_Format.png)
 
 **→** [Learn more about the API that powers the LAMP Platform and the Cortex pipeline.](Data_Science_with_LAMP.md)
 
