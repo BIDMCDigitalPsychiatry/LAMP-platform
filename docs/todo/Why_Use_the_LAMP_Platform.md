@@ -1,1 +1,0 @@
-# Why Use the LAMP Platform?

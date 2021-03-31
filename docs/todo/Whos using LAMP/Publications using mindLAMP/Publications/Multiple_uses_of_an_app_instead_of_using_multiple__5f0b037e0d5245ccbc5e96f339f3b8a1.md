@@ -1,5 +1,0 @@
-# Multiple uses of an app instead of using multiple apps – a case for rethinking the digital health technology toolbox
-
-Citation: Torous, J., & Vaidyam, A. (2020). Multiple uses of app instead of using multiple apps – a case for rethinking the digital health technology toolbox. Epidemiology and Psychiatric Sciences, 29, E100. doi:10.1017/S2045796020000013
-
-[../../../Topics/Publications using mindLAMP/Publications/Multiple uses of an app instead of using multiple /multiple_uses_of_app_instead_of_using_multiple_apps_a_case_for_rethinking_the_digital_health_technology_toolbox.pdf](../../../Topics/Publications using mindLAMP/Publications/Multiple uses of an app instead of using multiple /multiple_uses_of_app_instead_of_using_multiple_apps_a_case_for_rethinking_the_digital_health_technology_toolbox.pdf)

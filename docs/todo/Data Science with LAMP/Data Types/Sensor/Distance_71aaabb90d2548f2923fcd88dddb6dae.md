@@ -1,3 +1,0 @@
-# Distance
-
-SensorSpec: lamp.distance

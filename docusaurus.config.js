@@ -6,9 +6,9 @@ module.exports = {
   organizationName: 'BIDMCDigitalPsychiatry',
   projectName: 'LAMP-platform',
   baseUrl: '/LAMP-platform/', // FIXME: CHANGE THIS ONCE CNAME IS CONFIGURED
-  onBrokenLinks: 'ignore',
-  onDuplicateRoutes: 'ignore',
-  onBrokenMarkdownLinks: 'ignore',
+  onBrokenLinks: 'warn',
+  onDuplicateRoutes: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   themeConfig: {
     defaultMode: 'light',
     disableSwitch: false,

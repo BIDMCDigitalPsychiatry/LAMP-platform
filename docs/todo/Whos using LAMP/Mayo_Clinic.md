@@ -1,6 +1,0 @@
-# Mayo Clinic
-
-Location: Rochester, Minnesota, United States
-Role: Researchers
-
-> The purpose of this protocol is to assess the feasibility and acceptability of passive data collection with a smartphone in depressed patients and investigate how passive data gathered via technology platforms can generate transdiagnostic digital phenotypes that potentially inform the assessment and/or treatment outcome of major mood disorders. To ensure these digital biomarkers are specific to mental health and not due to chance or regular variations in normal human behavior, we will have a control group of healthy adults. The control group will also allow us to report sensitivity and specificity of our results, which is important for understanding their use in clinical care as potential new tests. If MindLAMP is feasible in this patient population and digital phenotypes are identified, larger studies will be developed to assess digital phenotypic biomarkers and their ability to predict treatment response, early in the intervention, and impending relapse.
