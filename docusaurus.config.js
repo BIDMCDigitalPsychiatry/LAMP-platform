@@ -97,6 +97,8 @@ module.exports = {
           blogTitle: 'LAMP Platform',
           blogDescription: 'The LAMP Platform documentation.',
           blogSidebarTitle: 'All updates',
+          blogSidebarCount: 10000,
+          postsPerPage: 1,
           feedOptions: {
             type: 'all',
             copyright: `© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC`,
