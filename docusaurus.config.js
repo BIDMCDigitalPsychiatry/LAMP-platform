@@ -25,16 +25,20 @@ module.exports = {
         {
           label: 'User Guide',
           position: 'left',
-          to: '/doc1',
+          to: '/',
           activeBaseRegex: '/([0-9a-zA-Z]+)',
           items: [
             {
-              label: 'ABC',
-              to: '/doc2',
+              label: 'Download App',
+              to: '/app',
+            },
+            {
+              label: 'Report Bug',
+              to: '/bug',
             },
             {
               label: 'FAQ',
-              to: '/doc3',
+              to: '/faq',
             },
           ],
         },

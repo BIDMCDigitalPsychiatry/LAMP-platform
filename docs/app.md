@@ -1,6 +1,6 @@
 ---
 title: Download and Use mindLAMP
-slug: download
+slug: app
 ---
 
 ![](assets/banner.png)
