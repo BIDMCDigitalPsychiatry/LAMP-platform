@@ -97,7 +97,7 @@ If you'd like to test the beta version of the app, please follow the instruction
 
 **Some Android manufacturers make it difficult for mindLAMP to collect data in the background. Read more below.**
 
-[[Android] Don't kill my app!](%E2%86%92%20Download%20and%20Use%20the%20mindLAMP%20app/%5BAndroid%5D%20Don't%20kill%20my%20app!.md)
+[[Android] Don't kill my app!](%E2%86%92_Download_and_Use_the_mindLAMP_app/%5BAndroid%5D_Don't_kill_my_app!.md)
 
 ### Beta
 
@@ -107,4 +107,4 @@ If you'd like to test the beta version of the app, please follow the instruction
 
 ---
 
-[Using the mobile app](%E2%86%92%20Download%20and%20Use%20the%20mindLAMP%20app/Using%20the%20mobile%20app.md)
+[Using the mobile app](%E2%86%92_Download_and_Use_the_mindLAMP_app/Using_the_mobile_app.md)

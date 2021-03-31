@@ -1,15 +1,15 @@
 # Activities: Tips, Surveys, and Cognitive Tests
 
-[Creating and Customizing Tips](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Creating%20and%20Customizing%20Tips.md)
+[Creating and Customizing Tips](Activities_Tips,_Surveys,_and_Cognitive_Tests/Creating_and_Customizing_Tips.md)
 
-[Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md)
+[Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md)
 
-[Delete and Schedule Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Delete%20and%20Schedule%20Surveys.md)
+[Delete and Schedule Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Delete_and_Schedule_Surveys.md)
 
-[Importing, Exporting, and Duplicating Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Importing,%20Exporting,%20and%20Duplicating%20Activities.md)
+[Importing, Exporting, and Duplicating Activities](Activities_Tips,_Surveys,_and_Cognitive_Tests/Importing,_Exporting,_and_Duplicating_Activities.md)
 
-[Create Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Activities.md)
+[Create Activities](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Activities.md)
 
-[Customize and Schedule Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive/Customize%20and%20Schedule.md)
+[Customize and Schedule Activities](Activities_Tips,_Surveys,_and_Cognitive/Customize_and_Schedule.md)
 
-[Take Surveys and Complete Activities](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Take%20Surveys%20and%20Complete%20Activities.md)
+[Take Surveys and Complete Activities](Activities_Tips,_Surveys,_and_Cognitive_Tests/Take_Surveys_and_Complete_Activities.md)

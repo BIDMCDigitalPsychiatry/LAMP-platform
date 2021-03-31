@@ -5,7 +5,7 @@ slug: /todo
 
 ![](../assets/LAMP_Overview.png)
 
-**[→ Learn more about mindLAMP, the Data Center, and Cortex here.](./How%20mindLAMP,%20the%20Data%20Center,%20and%20Cortex%20Work%20Tog.md)**
+**[→ Learn more about mindLAMP, the Data Center, and Cortex here.](./How_mindLAMP,_the_Data_Center,_and_Cortex_Work_Tog.md)**
 
 The **LAMP Platform** is a neuropsychiatric research and clinical care management platform designed to help you manage your research studies and digitally-enabled clinics. The many robust components of the platform work together to automate your workflows and simplify clinic and data management. Today, the **LAMP Platform** is indexed in the World Health Organizations Digital Health Atlas, used around the globe by many research groups, and implemented in busy community clinics, including at major **Harvard Medical School** teaching hospitals.
 
@@ -13,9 +13,9 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
  🌎 **[→ Learn more about the Division of Digital Psychiatry.](https://www.digitalpsych.org/)**
 
-[→ Download and Use the mindLAMP app.](%E2%86%92%20Download%20and%20Use%20the%20mindLAMP%20app.md)
+[→ Download and Use the mindLAMP app.](%E2%86%92_Download_and_Use_the_mindLAMP_app.md)
 
-[→ Report a bug or request a feature.](%E2%86%92%20Report%20a%20bug%20or%20request%20a%20feature.md)
+[→ Report a bug or request a feature.](%E2%86%92_Report_a_bug_or_request_a_feature.md)
 
  📰 **[→ Ask a question on the community forum.](https://mindlamp.discourse.group)**
 
@@ -25,15 +25,15 @@ The **LAMP Platform** is a neuropsychiatric research and clinical care managemen
 
 *Curious to learn more about the Platform? Explore here to learn more about LAMP and register your interest!*
 
-[How does LAMP Platform Work?](How%20does%20LAMP%20Platform%20Work.md)
+[How does LAMP Platform Work?](How_does_LAMP_Platform_Work.md)
 
-[LAMP User Prerequisites](LAMP%20User%20Prerequisites.md)
+[LAMP User Prerequisites](LAMP_User_Prerequisites.md)
 
-[Types of Users](Types%20of%20Users.md)
+[Types of Users](Types_of_Users.md)
 
-[Privacy Policy](Privacy%20Policy.md)
+[Privacy Policy](Privacy_Policy.md)
 
-[Security & Privacy](Security%20&%20Privacy.md)
+[Security & Privacy](Security_&_Privacy.md)
 
 # 📨Register Your Interest Here
 
@@ -79,11 +79,11 @@ A study comprises of a set of activities that multiple patients will interact wi
 
 ### How do I create a survey?
 
-Click the `[+ Add]` button at the top right of the list and select "Survey Instrument". See [Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information.
+Click the `[+ Add]` button at the top right of the list and select "Survey Instrument". See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information.
 
 ### Can I edit a survey?
 
-Yes, you can edit it from the activities tab by tapping on its row in the list. See [Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information. We recommend only editing surveys to fix typos or adjust the language of a question or response choice.
+Yes, you can edit it from the activities tab by tapping on its row in the list. See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information. We recommend only editing surveys to fix typos or adjust the language of a question or response choice.
 
 ### What happens to my data after I delete a survey?
 
@@ -91,7 +91,7 @@ Deleting a survey or other activity automatically deletes their response data ac
 
 ### How do I delete a survey?
 
-Select one or more survey instruments you would like to delete and press the trash can icon at the top right of the list. See [Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information.
+Select one or more survey instruments you would like to delete and press the trash can icon at the top right of the list. See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information.
 
 ### How do I customize an activity?
 
@@ -103,11 +103,11 @@ You may need to set schedules for the surveys or activities that you have assign
 
 ### Why is my Manage section appearing blank?
 
-You must add activities for them to show up in a specific tab. If there are no activities created for a specific tab, that tab will remain blank.  See [Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) for more information.
+You must add activities for them to show up in a specific tab. If there are no activities created for a specific tab, that tab will remain blank.  See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information.
 
 ### Who can see my data?
 
-Your system administrator will only access your personal information to support internal operations, including troubleshooting/user support, and service improvements. To ensure you are receiving the highest level of service in your interaction with the mindLAMP app, the Division of Digital Psychiatry may use your contact information to communicate with you regarding your requests. We also use this data to create aggregated statistics which helps us in the improvement of our service. For more information, please see our [Privacy Policy](Privacy%20Policy.md).
+Your system administrator will only access your personal information to support internal operations, including troubleshooting/user support, and service improvements. To ensure you are receiving the highest level of service in your interaction with the mindLAMP app, the Division of Digital Psychiatry may use your contact information to communicate with you regarding your requests. We also use this data to create aggregated statistics which helps us in the improvement of our service. For more information, please see our [Privacy Policy](Privacy_Policy.md).
 
 ### Does the mindLAMP app work offline?
 
@@ -119,7 +119,7 @@ Submit any bugs or feature requests here: [Report a Bug or Request a Feature](ht
 
 ### Is mindLAMP 2 available in other languages?
 
-The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about future plans by checking out  [What's New in the LAMP Platform?](What's%20New%20in%20the%20LAMP%20Platform.md) ﻿ 
+The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about future plans by checking out  [What's New in the LAMP Platform?](What's_New_in_the_LAMP_Platform.md) ﻿ 
 
 </details>
 
@@ -127,39 +127,39 @@ The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about fu
 
 *Not sure why you should use the LAMP Platform? Read more here.*
 
-[How mindLAMP, the Data Center, and Cortex Work Together](How%20mindLAMP,%20the%20Data%20Center,%20and%20Cortex%20Work%20Tog.md)
+[How mindLAMP, the Data Center, and Cortex Work Together](How_mindLAMP,_the_Data_Center,_and_Cortex_Work_Tog.md)
 
-[What is the LAMP Platform?](What%20is%20the%20LAMP%20Platform.md)
+[What is the LAMP Platform?](What_is_the_LAMP_Platform.md)
 
-[What are the Components of LAMP?](What%20are%20the%20Components%20of%20LAMP.md)
+[What are the Components of LAMP?](What_are_the_Components_of_LAMP.md)
 
-[LAMP: Platforms vs. Apps](Topics/LAMP%20Platforms%20vs%20Apps.md) 
+[LAMP: Platforms vs. Apps](Topics/LAMP_Platforms_vs_Apps.md) 
 
-[How does the LAMP data format work?](How%20does%20the%20LAMP%20data%20format%20work.md)
+[How does the LAMP data format work?](How_does_the_LAMP_data_format_work.md)
 
-[Consortium Webinar Recordings](Consortium%20Webinar%20Recordings.md)
+[Consortium Webinar Recordings](Consortium_Webinar_Recordings.md)
 
 # 🆕 New Users Start Here!
 
 *Ready to start using LAMP? Click here to learn the basics of surveys, activities etc.*
 
-[Accessing Your Account](Accessing%20Your%20Account.md)
+[Accessing Your Account](Accessing_Your_Account.md)
 
-[Log In Information, Tips, and Tricks](Log%20In%20Information,%20Tips,%20and%20Tricks.md)
+[Log In Information, Tips, and Tricks](Log_In_Information,_Tips,_and_Tricks.md)
 
-[Users vs Activities Tab](Users%20vs%20Activities%20Tab.md)
+[Users vs Activities Tab](Users_vs_Activities_Tab.md)
 
-[Create or Manage Users](Create%20or%20Manage%20Users.md)
+[Create or Manage Users](Create_or_Manage_Users.md)
 
-[Activities: Tips, Surveys, and Cognitive Tests](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests.md)
+[Activities: Tips, Surveys, and Cognitive Tests](Activities_Tips,_Surveys,_and_Cognitive_Tests.md)
 
-[View the Dashboard](View%20the%20Dashboard.md)
+[View the Dashboard](View_the_Dashboard.md)
 
-[Visualize data](Visualize%20data.md)
+[Visualize data](Visualize_data.md)
 
-[Care Team - Connection with Patients ](Care%20Team%20-%20Connection%20with%20Patients.md)
+[Care Team - Connection with Patients ](Care_Team_-_Connection_with_Patients.md)
 
-[Survey Instrument Library](Survey%20Instrument%20Library.md)
+[Survey Instrument Library](Survey_Instrument_Library.md)
 
 [Wearables](Wearables.md)
 
@@ -167,35 +167,35 @@ The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about fu
 
 *Running LAMP on your own server? Hosting your own data? Look no further!*
 
-[Prerequisites for Deploying the LAMP Platform](Prerequisites%20for%20Deploying%20the%20LAMP%20Platform.md)
+[Prerequisites for Deploying the LAMP Platform](Prerequisites_for_Deploying_the_LAMP_Platform.md)
 
-[Deployment Recommendations](Deployment%20Recommendations.md)
+[Deployment Recommendations](Deployment_Recommendations.md)
 
-[Costs of Deploying the LAMP Platform](Costs%20of%20Deploying%20the%20LAMP%20Platform.md)
+[Costs of Deploying the LAMP Platform](Costs_of_Deploying_the_LAMP_Platform.md)
 
-[Provisioning the LAMP Platform](Provisioning%20the%20LAMP%20Platform.md)
+[Provisioning the LAMP Platform](Provisioning_the_LAMP_Platform.md)
 
-[Preparing Resources on AWS](Preparing%20Resources%20on%20AWS.md)
+[Preparing Resources on AWS](Preparing_Resources_on_AWS.md)
 
-[Deploying the LAMP Platform](Deploying%20the%20LAMP%20Platform.md)
+[Deploying the LAMP Platform](Deploying_the_LAMP_Platform.md)
 
-[Testing the LAMP Platform](Testing%20the%20LAMP%20Platform.md)
+[Testing the LAMP Platform](Testing_the_LAMP_Platform.md)
 
 # 🖥️ LAMP for Developers
 
-[Components of the LAMP Platform](Components%20of%20the%20LAMP%20Platform.md)
+[Components of the LAMP Platform](Components_of_the_LAMP_Platform.md)
 
-[How the Platform Works](How%20the%20Platform%20Works.md)
+[How the Platform Works](How_the_Platform_Works.md)
 
-[Low Power & Connectivity Support](Low%20Power%20&%20Connectivity%20Support.md)
+[Low Power & Connectivity Support](Low_Power_&_Connectivity_Support.md)
 
-[Continuous Monitoring & Intervention Delivery](Continuous%20Monitoring%20&%20Intervention%20Delivery.md)
+[Continuous Monitoring & Intervention Delivery](Continuous_Monitoring_&_Intervention_Delivery.md)
 
-[Building New Activities](Building%20New%20Activities.md)
+[Building New Activities](Building_New_Activities.md)
 
-[How Interventions Work (Flow Diagram)](How%20Interventions%20Work%20(Flow%20Diagram).md)
+[How Interventions Work (Flow Diagram)](How_Interventions_Work_(Flow_Diagram).md)
 
-[Data Science with LAMP](Data%20Science%20with%20LAMP.md)
+[Data Science with LAMP](Data_Science_with_LAMP.md)
 
 *Documentation of the LAMP API and support around analytics using LAMP.*
 
@@ -203,7 +203,7 @@ The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about fu
 
 *Learn about our data analysis pipeline.*
 
-[What's New in the LAMP Platform?](What's%20New%20in%20the%20LAMP%20Platform.md)
+[What's New in the LAMP Platform?](What's_New_in_the_LAMP_Platform.md)
 
 *Find weekly updates on everything from current bugs to UI improvements here!*
 

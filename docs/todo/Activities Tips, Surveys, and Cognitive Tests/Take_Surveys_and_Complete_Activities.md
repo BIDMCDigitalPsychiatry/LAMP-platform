@@ -13,7 +13,7 @@ Now that you've logged into mindLAMP, you'll immediately see the Feed. Along the
 3. **Manage:** You'll find relaxing activities to clear your headspace here.
 4. **Prevent:** You'll find resources to help receive care and manage your symptoms here.
 
-In the Prevent tab you'll find data visualization tools. To learn more about your data and how you can view it, see [Visualize data](../Visualize%20data.md).
+In the Prevent tab you'll find data visualization tools. To learn more about your data and how you can view it, see [Visualize data](../Visualize_data.md).
 
 ### Step 2: Take a survey or use a relaxing Activity.
 
@@ -27,6 +27,6 @@ Surveys with many questions and options are **best taken on desktop, laptop, or 
 
 Each day that a survey or activity is completed, an encouraging streak tracker will pop up showing the number of days in a row that the patient has take the survey or completed the activity. This streak tracker is unique for surveys and activities. In other words, if a patient completes a mood tracker survey for seven days in a row and an anxiety survey for five days, their respective streak pop ups will show different numbers.
 
-Want to see your survey results? Go to [View the Dashboard](../View%20the%20Dashboard.md)!
+Want to see your survey results? Go to [View the Dashboard](../View_the_Dashboard.md)!
 
 ![](../../assets/streak.jpg)

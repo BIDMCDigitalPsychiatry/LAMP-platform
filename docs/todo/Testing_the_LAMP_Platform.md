@@ -37,7 +37,7 @@ All data is encrypted before communication between your browser or the app to an
         curl -k https://api.example.com/researcher -H 'Authorization: Basic admin:GENERATED_PASSWORD_HERE'
         ```
 
-Create a `Researcher` and a `Participant` using the browser management user interface to verify the setup works as expected. To jumpstart your instance of the LAMP Platform and test surveys or other activities, follow the instructions in [Create Surveys](Activities%20Tips,%20Surveys,%20and%20Cognitive%20Tests/Create%20Surveys.md) and import the file below into the `Researcher` you just created. 
+Create a `Researcher` and a `Participant` using the browser management user interface to verify the setup works as expected. To jumpstart your instance of the LAMP Platform and test surveys or other activities, follow the instructions in [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) and import the file below into the `Researcher` you just created. 
 
 [lamp_example_survey_battery_export.json](Testing the LAMP Platform/export.json)
 

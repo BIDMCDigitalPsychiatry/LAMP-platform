@@ -47,7 +47,7 @@ Patient Profile & New Cognitive Tests
 
 - The new "Pop The Bubbles" and "Balloon Risk" cognitive test activities are available for configuration and usage (in specific installations only; consult your system administrator).
 
-![](../assets/Untitled%20A.png)
+![](../assets/Untitled_A.png)
 
 ---
 

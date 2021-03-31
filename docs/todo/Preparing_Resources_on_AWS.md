@@ -5,7 +5,7 @@ slug: aws_resources
 
 The following instructions will result in a Docker Swarm setup prepared to deploy LAMP. You will need to continue following the instructions after this phase to successfully configure LAMP.
 
-![](../assets/Untitled%20AWS.png)
+![](../assets/Untitled_AWS.png)
 
 Digital Psychiatry's AWS Network Diagram for the LAMP Platform
 

@@ -3,9 +3,9 @@ title: Delete and Schedule Activities
 slug: delete_activities
 ---
 
-Check out [Importing, Exporting, and Duplicating Activities](Importing,%20Exporting,%20and%20Duplicating%20Activities.md).
+Check out [Importing, Exporting, and Duplicating Activities](Importing,_Exporting,_and_Duplicating_Activities.md).
 
-Look at  [Create Activities](Create%20Activities.md) to add some tips or cognitive tests to your Activities tab!
+Look at  [Create Activities](Create_Activities.md) to add some tips or cognitive tests to your Activities tab!
 
 # Delete an Existing Activity
 
@@ -18,7 +18,7 @@ Look at  [Create Activities](Create%20Activities.md) to add some tips or cogniti
 
 ![](../../assets/delete_activities.jpg)
 
-Trying to delete or edit responses to a survey? Check out [Visualize data](../Visualize%20data.md) and go to step 3!
+Trying to delete or edit responses to a survey? Check out [Visualize data](../Visualize_data.md) and go to step 3!
 
 # Scheduling an Activity
 
@@ -32,4 +32,4 @@ Trying to delete or edit responses to a survey? Check out [Visualize data](../Vi
 
 ![](../../assets/schedule.jpg)
 
-Ready to start [Take Surveys and Complete Activities](Take%20Surveys%20and%20Complete%20Activities.md)?
+Ready to start [Take Surveys and Complete Activities](Take_Surveys_and_Complete_Activities.md)?
