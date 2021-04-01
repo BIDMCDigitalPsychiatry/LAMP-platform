@@ -5,7 +5,7 @@ slug: consortium_guidelines
 
 The LAMP Platform is open source, but please note that in order to receive the following benefits you **must** be a consortium partner.
 
-Users can purchase a LAMP Consortium membership starts at $5000 per year to become a consortium partner without access to Cortex, our data analysis pipeline. The guidelines and principles below outline the benefits and expectations of a consortium membership:
+Users can choose to enroll in a LAMP Consortium membership to become a consortium partner by reaching out to team@digitalpsych.org. There are multiple tiers of membership with option to include access to Cortex, our data analysis pipeline. The guidelines and principles below outline the benefits and expectations of a consortium membership:
 
 ## ① **Support**
 
