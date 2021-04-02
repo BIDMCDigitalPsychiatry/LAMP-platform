@@ -3,10 +3,6 @@ title: Delete and Schedule Activities
 slug: delete_activities
 ---
 
-Check out [Importing, Exporting, and Duplicating Activities](Importing,_Exporting,_and_Duplicating_Activities.md).
-
-Look at  [Create Activities](Create_Activities.md) to add some tips or cognitive tests to your Activities tab!
-
 # Delete an Existing Activity
 
 1. Log into the dashboard and navigate to the Activities tab.
@@ -17,8 +13,6 @@ Look at  [Create Activities](Create_Activities.md) to add some tips or cognitive
     Once deleted, a survey activity and any deleted data cannot be recovered. 
 
 ![](assets/delete_activities.jpg)
-
-Trying to delete or edit responses to a survey? Check out [Visualize data](../Visualize_data.md) and go to step 3!
 
 # Scheduling an Activity
 
@@ -31,5 +25,3 @@ Trying to delete or edit responses to a survey? Check out [Visualize data](../Vi
 7. The patient or participant will receive a feed item and a notification on their phone at the specified time.
 
 ![](assets/schedule.jpg)
-
-Ready to start [Take Surveys and Complete Activities](Take_Surveys_and_Complete_Activities.md)?
