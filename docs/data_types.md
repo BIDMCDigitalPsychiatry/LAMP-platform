@@ -5,9 +5,6 @@ slug: data_types
 
 All event streams in the LAMP API are catalogued by a timestamp and specific "blueprints" (schema) of what kind of data they hold. For example, a sensor event that occurred 20 minutes ago would carry that instant's timestamp, along with a link to what kind of sensor it was, and that sensor's measurement as a payload of data. The kinds of activities and sensors available are declared below, along with the blueprint you can expect their events' data to follow. 
 
-**To learn more about accessing these data types, follow along with either of these tutorials:**
-[Preparing to analyze your data in R](../Topics/Preparing_to_analyze_your_data_in_R.md) or [Preparing to analyze your data in Python](../Topics/Preparing_to_analyze_your_data_in_Python.md).
-
 ## Activity Types
 
 In the case of activities (active data) completed by the participant or patient, the activity declares two types of blueprints: **static data**, or data that relates to the overall session, and **temporal slices**, data that provides millisecond precision and carries information about each action or intention the participant or patient might have. Furthermore, activities that can be customized will also have **settings** blueprints, but these won't actually appear in the event data (and are omitted from the fields listed below).
