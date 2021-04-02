@@ -37,5 +37,3 @@ Mobility features belong to one of two categories: *trips* and *significant loca
 ### *Activity Suite*
 
 Cortex provides activity segmentation derived from a user’s accelerometer and gyroscope sensor data. The segmentation involves 6 different activity classes: *Walking*, *Jogging*, *Walking Upstairs*, *Walking Downstairs*, *Sitting*, and *Standing*. Using labeled activity data, we are able to train a model to predict the activity a user is performing. Please note that this model does not return 100% accuracy - Cortex will never know the “ground truth” (i.e. the actual activity a user is performing). Moreover, for a large sample of points, we can provide a rough estimate of the amount of time a user spends performing each activity.
-
-[Complete List of Available Features](Cortex/Complete_List_of_Available_Features.md)
