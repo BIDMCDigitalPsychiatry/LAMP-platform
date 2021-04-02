@@ -102,7 +102,3 @@ If you'd like to test the beta version of the app, please follow the instruction
 If you'd like to test the beta version of the app, please follow the instructions below.
 
 1. [Enroll in the Play Store beta for mindLAMP.](https://play.google.com/apps/testing/digital.lamp.mindlamp)
-
----
-
-[Using the mobile app](%E2%86%92_Download_and_Use_the_mindLAMP_app/Using_the_mobile_app.md)
