@@ -20,11 +20,3 @@ If you or your organization doesn't yet have access to mindLAMP, but would like 
 ![](assets/Screen_Shot_2020-10-02_at_2.03.53_PM.png)
 
 If no domain was specified by your IT systems administrator, you can leave that field blank ("lamp.my_organization.org" is only for this example).
-
-For more instructions around logging in, see [Log In Information, Tips, and Tricks](Log_In_Information,_Tips,_and_Tricks.md) 
-
-### Step 3: See what the Dashboard looks like for patients or participants.
-
-![](assets/Untitled 1.png)
-
-To learn more about what you can see here, visit [View the Dashboard](View_the_Dashboard.md).
