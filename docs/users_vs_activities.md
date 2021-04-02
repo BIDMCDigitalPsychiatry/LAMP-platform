@@ -37,7 +37,7 @@ Gray means that a patient's passive data has never been collected.
 
 Study shows which study a patient is participating in. To filter patients by what study they are in select the drop down menu "Filter Results." To view patients in a selected study, click on the study's bubble underneath the search bar.
 
-![](assets/Untitled 52.jpeg)
+![](assets/Untitled_52.jpeg)
 
 # Activities
 
