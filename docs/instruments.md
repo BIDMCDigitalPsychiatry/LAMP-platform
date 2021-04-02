@@ -3,7 +3,7 @@ title: Survey Instrument Library
 slug: instruments
 ---
 
-Import existing surveys instruments into your LAMP project! To do so, open one of the surveys pages below and download the survey json file hosted there. Then, [import the file in the LAMP dashboard.](https://www.notion.so/digitalpsychiatry/Create-or-manage-surveys-411ad2267aa948b3b2848a38077e2ac8) 
+Import existing surveys instruments into your LAMP project! To do so, open one of the surveys pages below and download the survey json file hosted there. Then, import the file into the LAMP dashboard.
 
 If you have a survey instrument that you would like to contribute to the repository, please contact us!
 
@@ -30,9 +30,3 @@ If you have a survey instrument that you would like to contribute to the reposit
 - Concie Health Risk Tracking Self-Report 16 (CHRT-SR16) Weekly - Andy Czysz MD, PhD (UTSW)
 
     [chrt-sr16.json](Survey Instrument Library/chrt-sr16.json)
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on June 30th, 2020.*
