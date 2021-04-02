@@ -118,5 +118,3 @@ Managing credentials for yourself or others is as follows:
     - Tap the Edit Password after checking the patient's name.
 
 ![](assets/Untitled_66.png)
-
-Want to manage your current patients? See [Create or Manage Users](Create_or_Manage_Users.md) 
