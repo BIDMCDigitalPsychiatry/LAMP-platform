@@ -53,5 +53,3 @@ Once you create your journal activity, it will show up in the Manage tab. Howeve
 7. The patient or participant will receive a feed item and a notification on their phone at the specified time.
 
 ![](assets/schedule.jpg)
-
-Ready to start [Take Surveys and Complete Activities](Take_Surveys_and_Complete_Activities.md)?
