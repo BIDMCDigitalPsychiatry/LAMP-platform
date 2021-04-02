@@ -4,13 +4,13 @@ slug: create_surveys
 ---
 # Create a New Survey for the Assess tab.
 
-Need some inspiration to create your survey? Browse our [Survey Instrument Library](../Survey_Instrument_Library.md).
+Need some inspiration to create your survey? Browse our **Survey Instrument Library**
 
 Survey instruments and other Activities in the LAMP Platform afford you automatic version control. In other software or when managing “paper & pencil” data, it is typically difficult, if not impossible, to track changes to survey questions or survey responses when administered with a patient. 
 
 1. Log in to the dashboard and navigate to the Activities tab.
 2. Click the `[+ Add]` button at the top right of the list to begin. If you would like to edit an existing survey, simply tap on its row in the list instead.
-3. Select the cognitive test to add an activity or select Survey Instrument to add a survey to [the Assess tab.](../What_are_the_Components_of_LAMP.md)
+3. Select the cognitive test to add an activity or select Survey Instrument to add a survey to the Assess tab.
 4. If you would like to import a survey or activity, click "Import Activities."
 
 ![](assets/activity_menu.jpg)
@@ -49,5 +49,3 @@ When selecting the question type, please note the following:
 1. Press the trash can icon to the right of the outlined "Question Option" text box.
 2. Click the Publish button or press the ← icon at the top left to cancel
 3. Return to the list of existing survey instruments. 
-
-Check out  [Delete and Schedule Surveys](Delete and Schedule Surveys.md) or [Create Activities](Create_Activities.md)  next.
