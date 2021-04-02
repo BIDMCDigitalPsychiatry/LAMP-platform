@@ -9,11 +9,11 @@ The app that is associated with the LAMP Platform is called mindLAMP. mindLAMP 1
 
 ### How do I transition from mindLAMP 1 to mindLAMP 2?
 
-If you are using mindLAMP with a web browser like Chrome, Safari, Firefox etc. then it will automatically have updated. If you are using the app, simply download mindLAMP 2 from the App Store or Play Store and log in. See [Download the mindLAMP App](https://www.notion.so/Download-the-mindLAMP-App-3dfeac4295b941939543b8e61524d338) for more information.
+If you are using mindLAMP with a web browser like Chrome, Safari, Firefox etc. then it will automatically have updated. If you are using the app, simply download mindLAMP 2 from the App Store or Play Store and log in.
 
 ### Do I need a wearable to collect passive data?
 
-HealthKit data is only available with wearables with two exceptions: step count and sleep data. Step count can be gathered through your mobile device, and sleep data can be gathered by downloading specific apps on iOS (napbot) and Android (sleep as android). mindLAMP requires WatchOS 7 and WearOS 2. Please see [Wearables](Wearables.md) for more information.
+HealthKit data is only available with wearables with two exceptions: step count and sleep data. Step count can be gathered through your mobile device, and sleep data can be gathered by downloading specific apps on iOS (napbot) and Android (sleep as android). mindLAMP requires WatchOS 7 and WearOS 2.
 
 ### What's a system administrator?
 
@@ -37,11 +37,11 @@ A study comprises of a set of activities that multiple patients will interact wi
 
 ### How do I create a survey?
 
-Click the `[+ Add]` button at the top right of the list and select "Survey Instrument". See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information.
+Click the `[+ Add]` button at the top right of the list and select "Survey Instrument".
 
 ### Can I edit a survey?
 
-Yes, you can edit it from the activities tab by tapping on its row in the list. See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information. We recommend only editing surveys to fix typos or adjust the language of a question or response choice.
+Yes, you can edit it from the activities tab by tapping on its row in the list. We recommend only editing surveys to fix typos or adjust the language of a question or response choice.
 
 ### What happens to my data after I delete a survey?
 
@@ -49,7 +49,7 @@ Deleting a survey or other activity automatically deletes their response data ac
 
 ### How do I delete a survey?
 
-Select one or more survey instruments you would like to delete and press the trash can icon at the top right of the list. See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information.
+Select one or more survey instruments you would like to delete and press the trash can icon at the top right of the list.
 
 ### How do I customize an activity?
 
@@ -61,15 +61,15 @@ You may need to set schedules for the surveys or activities that you have assign
 
 ### Why is my Manage section appearing blank?
 
-You must add activities for them to show up in a specific tab. If there are no activities created for a specific tab, that tab will remain blank.  See [Create Surveys](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Surveys.md) for more information.
+You must add activities for them to show up in a specific tab. If there are no activities created for a specific tab, that tab will remain blank.
 
 ### Who can see my data?
 
-Your system administrator will only access your personal information to support internal operations, including troubleshooting/user support, and service improvements. To ensure you are receiving the highest level of service in your interaction with the mindLAMP app, the Division of Digital Psychiatry may use your contact information to communicate with you regarding your requests. We also use this data to create aggregated statistics which helps us in the improvement of our service. For more information, please see our [Privacy Policy](Privacy_Policy.md).
+Your system administrator will only access your personal information to support internal operations, including troubleshooting/user support, and service improvements. To ensure you are receiving the highest level of service in your interaction with the mindLAMP app, the Division of Digital Psychiatry may use your contact information to communicate with you regarding your requests. We also use this data to create aggregated statistics which helps us in the improvement of our service.
 
 ### Does the mindLAMP app work offline?
 
-The mindLAMP app does not currently work offline. However, this is a highly requested feature that we are working on. Stay in the loop about this by checking out [[What's New with LAMP?](https://www.notion.so/3f8828a4fd1b40ab947af4ce08ae7694)](https://www.notion.so/What-s-New-with-LAMP-c6fb984faf6842c2af9d70ab788add2f) 
+The mindLAMP app does not currently work offline. However, this is a highly requested feature that we are working on.
 
 ### Where do I report a bug or request a feature?
 
