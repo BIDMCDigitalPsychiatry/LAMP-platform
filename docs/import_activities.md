@@ -38,5 +38,3 @@ If you’re a researcher and would like to ensure that your research study is re
 ![](assets/duplicating_activities.jpg)
 
 If you’re a clinic administrator and would like to ensure that all the clinics you manage are using the most recent versions of some assessments, this method allows you to quickly synchronize different clinics.
-
-Ready to [Take Surveys and Complete Activities](Take_Surveys_and_Complete_Activities.md)?
