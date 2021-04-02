@@ -7,7 +7,7 @@ slug: accessing_account
 
 ![](assets/login.png)
 
-The app is available at `[https://dashboard.lamp.digital/](https://dashboard.lamp.digital/)` — consider bookmarking it so you don't forget.
+The app is available at `https://dashboard.lamp.digital/` — consider bookmarking it so you don't forget.
 
 Please note that LAMP requires at least Android 7 minimum and soon will require iOS 14 minimum to run on a smartphone.
 
