@@ -77,4 +77,4 @@ Submit any bugs or feature requests here: [Report a Bug or Request a Feature](ht
 
 ### Is mindLAMP 2 available in other languages?
 
-The mindLAMP app currently supports Hindi and Spanish. Stay in the loop about future plans by checking out  [What's New in the LAMP Platform?](What's_New_in_the_LAMP_Platform.md) ﻿ 
+The mindLAMP app currently supports Hindi and Spanish.
