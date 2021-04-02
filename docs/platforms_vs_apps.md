@@ -21,8 +21,6 @@ Dr. M is a clinician using the LAMP Platform in inpatient cardiology to monitor 
 
 PS is a patient independently using the LAMP Platform to track lived experiences and share them with family and trusted peers.
 
-→ **[Learn more](https://www.notion.so/mindLAMP-Help-21db12cc01ce4138bed256fa0ba54194).**
-
 ---
 
 ## ② A platform is flexible and customizable.
@@ -36,8 +34,6 @@ Dr. T designs surveys to track and monitor symptoms of psychosis in his study pa
 Dr. M has her patients take several cognitive assessments a week and a quality survey to understand how they feel about their care. 
 
 When PS wakes up, he receives a reminder to read a new tip from his weekly category and to start his day off with a breathing exercise. 
-
-→ **[Learn more](https://www.notion.so/Create-or-manage-surveys-411ad2267aa948b3b2848a38077e2ac8).**
 
 ---
 
@@ -53,8 +49,6 @@ Dr. T and Dr. M both use their desktop browsers to access the dashboard, but the
 
 PS’s mother lives in India and doesn’t speak English, but still helps keep track of his symptoms and how active he is each day as a student in California.
 
-→ **[Learn more](https://www.notion.so/Using-the-mobile-app-5204c133da264c67ae954eabfcc60303).**
-
 ---
 
 ## ④ A platform securely enables data interoperability and extensibility.
@@ -68,8 +62,6 @@ Dr. T’s research fellows use their lab’s preferred data analytics software t
 Dr. M’s hospital IT department builds a completely new dashboard just for their cardiology department that connects the LAMP Platform with their EHR, allowing ___________.
 
 PS can customize his experience using the LAMP Platform without any coding experience and synchronizes his Fitbit band’s data. 
-
-→ **[Learn more](https://www.notion.so/LAMP-Protocol-75f737c54a5a4d8fa476024c5d0cc0dd).**
 
 ---
 
@@ -85,8 +77,6 @@ Dr. M’s hospital IT department and privacy office manage the LAMP Platform for
 
 PS uses the publicly available LAMP Platform instance and uses a smartphone app with his Apple Watch fitness tracker, but shares access to the web dashboard with his mother and PCP, who can save shared data to PS’s health records.
 
-→ **[Learn more](https://www.notion.so/Cloud-Deployment-Infrastructure-ebf62b0a24614d0c9b22a5817fe3e803).**
-
 ---
 
 ## ⑥ A platform engages the care team through interactive clinical decision support.
@@ -101,8 +91,6 @@ Dr. M configures the LAMP Platform to send alerts when patients respond to quest
 
 When PS responds to the LAMP Platform that he hasn’t been feeling well, his mother receives a text message and knows to call him and his therapist.
 
-→ **[Learn more](https://www.notion.so/Continuous-Monitoring-Intervention-Delivery-b99a910393474507b380a09ac8ca304b).**
-
 ---
 
 - Automations Use-case
@@ -110,9 +98,3 @@ When PS responds to the LAMP Platform that he hasn’t been feeling well, his mo
     > Using the Automations framework in the LAMP Platform is like the difference between running an entire chemistry lab to individually process your patient blood tests versus having an in-house medical diagnostics facility that simply provides profile reports for every processed blood sample.
 
     It’s the integrated digital ‘medical diagnostics facility’ for the terabytes of data that you quickly capture using the LAMP Platform — and you can quickly get started with any of our pre-built templates, or customize every aspect of the processing pipeline for your unique needs.
-
----
-
-**Was there something we didn't cover, or need more help?**
-Let us know by making a post in the [LAMP Community](https://community.lamp.digital/), or [contact us directly](mailto:team@digitalpsych.org). Thank you for your contribution! 🌟
-*Page last updated on July 5th, 2020.*
