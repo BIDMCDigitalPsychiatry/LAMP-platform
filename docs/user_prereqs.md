@@ -5,7 +5,7 @@ slug: user_prereqs
 
 ### User Types
 
-All LAMP users have the opportunity to be part of the LAMP Consortium. If you are interested in becoming a partner, please review [Types of Users](Types_of_Users.md) 
+All LAMP users have the opportunity to be part of the LAMP Consortium. If you are interested in becoming a partner, please review **Types of Users.**
 
 ### Using the mindLAMP App
 
@@ -19,10 +19,9 @@ Android 7
 
 WearOS 2
 
-You can learn more about wearables and mindLAMP here: [Wearables](Wearables.md).
 
-The Division of Digital Psychiatry **continuously maintains** the mindLAMP app for app store regulatory compliance through frequent updates and correspondence with Apple and Google. All updates are listed on [What's New in the LAMP Platform?](What's_New_in_the_LAMP_Platform.md) 
+The Division of Digital Psychiatry **continuously maintains** the mindLAMP app for app store regulatory compliance through frequent updates and correspondence with Apple and Google.
 
 ### Hosting Your Data
 
-LAMP users are currently required to host their own data. The Division of Digital Psychiatry is no longer able to host data from sites outside of Beth Israel Deaconess Medical Center. The exception to this policy is for external studies that the Division of Digital Psychiatry is a part of. Please see [Prerequisites for Deploying the LAMP Platform](Prerequisites_for_Deploying_the_LAMP_Platform.md) for more information about hosting your data.
+LAMP users are currently required to host their own data. The Division of Digital Psychiatry is no longer able to host data from sites outside of Beth Israel Deaconess Medical Center. The exception to this policy is for external studies that the Division of Digital Psychiatry collaborates with.
