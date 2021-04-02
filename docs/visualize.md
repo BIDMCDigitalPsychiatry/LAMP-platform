@@ -81,5 +81,3 @@ Please note that the **Delete** and **Overwrite** options only hide the original
 If your clinic or study has enabled some sensor types, you'll find them here in this section. As before, tap on an item's bubble to view the graphs for that type of data. You'll see **Step Count** as an example below. 
 
 ![](assets/Screen_Shot_2020-01-31_at_4.57.21_PM.png)
-
-Want to get your data science team involved for even more visualization options? Check out [Data Science with LAMP](https://www.notion.so/5420896d7b034afa8326f28e6bd24000).
