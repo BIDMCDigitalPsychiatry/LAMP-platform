@@ -73,7 +73,7 @@ The mindLAMP app does not currently work offline. However, this is a highly requ
 
 ### Where do I report a bug or request a feature?
 
-Submit any bugs or feature requests here: [Report a Bug or Request a Feature](https://www.notion.so/Report-a-Bug-or-Request-a-Feature-be1e3c107e354663b2d1726632816d99) 
+Submit any bugs or feature requests here: [Report a Bug or Request a Feature](/bug.md) 
 
 ### Is mindLAMP 2 available in other languages?
 
