@@ -7,8 +7,6 @@ slug: users_vs_activities
 
 When the clinician or researcher logs in, they will see the Patients tab. Here, there will be a list of patients they have added.
 
-The blue "Add" button is used to add patients or studies. For information about adding and managing patients, see [Create or Manage Users](Create_or_Manage_Users.md).
-
 ![](assets/Untitled_50.jpeg)
 
 ![](assets/Untitled_51.jpeg)
@@ -17,7 +15,7 @@ Each patient will have the following attributes:
 
 ### Name
 
-A patient's name is automatically generated as a de-identified patient identifier, typically beginning with a `U`, followed by a random number of random digits. Clinicians and researchers are able to change this name; see [Create or Manage Users](Create_or_Manage_Users.md) for more information.
+A patient's name is automatically generated as a de-identified patient identifier, typically beginning with a `U`, followed by a random number of random digits. Clinicians and researchers are able to change this name.
 
 ### Last Active
 
@@ -43,11 +41,11 @@ Study shows which study a patient is participating in. To filter patients by wha
 
 # Activities
 
-A clinician or researcher can navigate to the activities page by selecting "Activities" on the left menu bar of the dashboard.  Surveys and cognitive tests are examples of activities for patients. To learn more about specific activities, check out [What are the Components of LAMP?](What_are_the_Components_of_LAMP.md).
+A clinician or researcher can navigate to the activities page by selecting "Activities" on the left menu bar of the dashboard.  Surveys and cognitive tests are examples of activities for patients.
 
 ![](assets/Untitled_50.png)
 
-The blue "Add" button is used to add activities and surveys manually or to import them. For information about adding and managing activities and surveys, see [Create Surveys](Activities Tips, Surveys, and Cognitive Tests/Create Surveys.md) and [Create Activities](Activities_Tips,_Surveys,_and_Cognitive_Tests/Create_Activities.md).
+The blue "Add" button is used to add activities and surveys manually or to import them.
 
 ![](assets/Untitled_53.jpeg)
 
