@@ -95,9 +95,7 @@ If you'd like to test the beta version of the app, please follow the instruction
 - [ ]  Is the device powered on at all times of the day?
 - [ ]  Are the required permissions (above) granted correctly in the Settings app?
 
-**Some Android manufacturers make it difficult for mindLAMP to collect data in the background. Read more below.**
-
-[[Android] Don't kill my app!](%E2%86%92_Download_and_Use_the_mindLAMP_app/%5BAndroid%5D_Don't_kill_my_app!.md)
+**Some Android manufacturers make it difficult for mindLAMP to collect data in the background.**
 
 ### Beta
 
