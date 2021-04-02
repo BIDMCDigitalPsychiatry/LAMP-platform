@@ -13,15 +13,7 @@ Your team can modify and build on the open source code that powers the LAMP Plat
 
 Your team can utilize mindLAMP as it is built today with support from us. We will provide two hours of technical training to get you started and include you in monthly webinars. As a partner, you are a member of the LAMP Consortium – a community of LAMP users who share research and ideas.
 
-Consortium partners are required to host their own data if they are not part of Beth Israel Deaconess Medical Center. For more information, please see [Prerequisites for Deploying the LAMP Platform](Prerequisites for Deploying the LAMP Platform.md) and [Deployment Recommendations](Deployment_Recommendations.md).
-
-**Important to know:**
-
-[Consortium Partner Guidelines and Principles](consortium_guidelines.md)
-
-[Consortium Partner Survey Requirements](consortium_survey.md)
-
-[LAMP Consortium Requirements](consortium_requirements.md)
+Consortium partners are required to host their own data if they are not part of Beth Israel Deaconess Medical Center.
 
 ---
 
