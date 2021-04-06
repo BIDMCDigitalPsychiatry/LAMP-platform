@@ -114,7 +114,7 @@ Here are some example expressions and their results when applied to the above JS
 
 ## Navigating JSON Arrays
 
-JSON arrays are used when an ordered collection of values is required.  Each value in the array is associated with an index (position) rather than a name, so in order to address individual values in an array, extra syntax is required to specify the index.  This is done using square brackets after the field name of the array.  If the square brackets contains a number, or an expression that evaluates to a number, then the number represents the index of the value to select.  Indexes are zero offset, i.e. the first value in an array `arr` is `arr[0]`.  If the number is not an integer, then it is rounded _down_ to an integer.  If the expression in square brackets is non-numeric, or is an expression that doesn't evaluate to a number, then it is treated as a [predicate](predicate#predicates).
+JSON arrays are used when an ordered collection of values is required.  Each value in the array is associated with an index (position) rather than a name, so in order to address individual values in an array, extra syntax is required to specify the index.  This is done using square brackets after the field name of the array.  If the square brackets contains a number, or an expression that evaluates to a number, then the number represents the index of the value to select.  Indexes are zero offset, i.e. the first value in an array `arr` is `arr[0]`.  If the number is not an integer, then it is rounded _down_ to an integer.  If the expression in square brackets is non-numeric, or is an expression that doesn't evaluate to a number, then it is treated as a [predicate](#predicates).
 
 Negative indexes count from the end of the array, for example, `arr[-1]` will select the last value, `arr[-2]` the second to last, etc. If an index is specified that exceeds the size of the array, then nothing is selected.
 
@@ -170,7 +170,7 @@ If no index is specified for an array (i.e. no square brackets after the field r
     <div>[ "0203 544 1234", "01962 001234", "01962 001235", "077 7700 1234" ]</div>
   </div>
 
-- Applies the index to the array returned by `Phone.number`. One use of [parentheses](composition.md#parenthesized-expressions-and-blocks).
+- Applies the index to the array returned by `Phone.number`. One use of [parentheses](#parenthesized-expressions-and-blocks).
   <div class="jsonata-ex">
     <div>(Phone.number)[0]</div>
     <div>"0203 544 1234"</div>
@@ -201,7 +201,7 @@ Consider the JSON document:
       { "ref": [ 3,4 ] }
     ]
 
-At the top level, we have an array rather than an object.  If we want to select the first object in this top level array, we don't have a field name to append the `[0]` to.  We can't use `[0]` on its own because that clashes with the [array constructor](construction.md#array-constructors) syntax.  However, we can use the _context_ reference `$` to refer to the start of the document as follows:
+At the top level, we have an array rather than an object.  If we want to select the first object in this top level array, we don't have a field name to append the `[0]` to.  We can't use `[0]` on its own because that clashes with the [array constructor](#array-constructors) syntax.  However, we can use the _context_ reference `$` to refer to the start of the document as follows:
 
 - `$` at the start of an expression refers to the entire input document
   <div class="jsonata-ex">
@@ -221,7 +221,7 @@ At the top level, we have an array rather than an object.  If we want to select 
     <div>1</div>
   </div>
 
-- Despite the structure of the nested array, the resultant selection is flattened into a single flat array.  The original nested structure of the input arrays is lost. See [Array constructors](construction.md#array-constructors) for how to maintain the original structure in the results.
+- Despite the structure of the nested array, the resultant selection is flattened into a single flat array.  The original nested structure of the input arrays is lost. See [Array constructors](#array-constructors) for how to maintain the original structure in the results.
   <div class="jsonata-ex">
     <div>$.ref</div>
     <div>[ 1, 2, 3, 4 ]</div>
@@ -332,7 +332,7 @@ __Examples__
     <div>"Fred Smith"</div>
   </div>
 
-- Concatenates the `Street` and `City` from the `Address` object with a comma separator. Note the use of [parentheses](composition.md#parenthesized-expressions-and-blocks)
+- Concatenates the `Street` and `City` from the `Address` object with a comma separator. Note the use of [parentheses](#parenthesized-expressions-and-blocks)
   <div class="jsonata-ex">
     <div>Address.(Street & ', ' & City)</div>
     <div>"Hursley Park, Winchester"</div>
@@ -490,7 +490,7 @@ __Examples__
 }</div>
   </div>
 
-- Combines the key/value pairs into a single object.  In this case, for consistency, all numbers are grouped into arrays. See [Singleton array and value equivalence](predicate.md#singleton-array-and-value-equivalence) for more details.
+- Combines the key/value pairs into a single object.  In this case, for consistency, all numbers are grouped into arrays. See [Singleton array and value equivalence](#singleton-array-and-value-equivalence) for more details.
   <div class="jsonata-ex">
     <div>Phone{type: number[]}</div>
     <div>{
@@ -555,7 +555,7 @@ The [order-by](path-operators#order-by-) operator is a convenient syntax that ca
 
 ## Grouping
 
-The JSONata [object constructor](construction#object-constructors) syntax allows you to specify an expression for the key in any key/value pair (the value can obviously be an expression too). The key expression must evaluate to a string since this is a restriction on JSON objects.  The key and value expressions are evaluated for each item in the input context (see [processing model](processing#the-jsonata-processing-model)). The result of each key/value expression pair is inserted into the resulting JSON object.
+The JSONata [object constructor](#object-constructors) syntax allows you to specify an expression for the key in any key/value pair (the value can obviously be an expression too). The key expression must evaluate to a string since this is a restriction on JSON objects.  The key and value expressions are evaluated for each item in the input context (see [processing model](#the-jsonata-processing-model)). The result of each key/value expression pair is inserted into the resulting JSON object.
 
 If the evaluation of any key expression results in a key that is already in the result object, then the result of its associated value expression will be grouped with the value(s) already associated with that key. Note that the value expressions are not evaluated until all of the grouping has been performed.  This allows for aggregation expressions to be evaluated over the collection of items for each group.
 
@@ -671,7 +671,7 @@ The sequence flattening rules are as follows:
 
 2. A __singleton sequence__ is a sequence containing a single value.  It is considered equivalent to that value itself, and the output from any expression, or sub-expression will be that value without any surrounding structure.
 
-3. A sequence containing more than one value is represented in the output as a JSON array.  This is still internally flagged as a sequence and subject to the next rule.  Note that if an expression matches an array from the input JSON, or a JSON array is explicitly constructed in the query using the [array constructor](construction#array-constructors), then this remains an array of values rather than a sequence of values and will not be subject to the sequence flattening rules.  However, if this array becomes the context of a subsequent expression, then the result of that _will_ be a sequence.
+3. A sequence containing more than one value is represented in the output as a JSON array.  This is still internally flagged as a sequence and subject to the next rule.  Note that if an expression matches an array from the input JSON, or a JSON array is explicitly constructed in the query using the [array constructor](#array-constructors), then this remains an array of values rather than a sequence of values and will not be subject to the sequence flattening rules.  However, if this array becomes the context of a subsequent expression, then the result of that _will_ be a sequence.
 
 4. If a sequence contains one or more (sub-)sequences, then the values from the sub-sequence are pulled up to the level of the outer sequence.  A result sequence will never contain child sequences (they are flattened).
 
@@ -757,7 +757,7 @@ TBD
 
 ## Variables
 
-Any name that starts with a dollar '$' is a variable.  A variable is a named reference to a value.  The value can be one of any type in the language's [type system](processing#the-jsonata-type-system).
+Any name that starts with a dollar '$' is a variable.  A variable is a named reference to a value.  The value can be one of any type in the language's [type system](#the-jsonata-type-system).
 
 ### Built-in variables
 
@@ -1264,7 +1264,7 @@ If the predicate expression is an array of integers, or an expression that evalu
 
 If the predicate expression evaluates to any other value, then it is cast to a Boolean as if using the `$boolean()` function.  If this evaluates to `true`, then the item is retained in the result sequence.  Otherwise it is rejected.
 
-See [Navigating JSON Arrays](simple#navigating-json-arrays) and [Predicates](predicate) for more details and examples.
+See [Navigating JSON Arrays](#navigating-json-arrays) and [Predicates](predicate) for more details and examples.
 
 ## `^(` ... `)` (Order-by)
 
@@ -1305,12 +1305,12 @@ See [Grouping and Aggregation](sorting-grouping#grouping) for more details.
 ## `*` (Wildcard)
 
 This wildcard selects the values of all the properties of the context object.  It can be used in a path expression in place of a property name, but it cannot be combined with other characters like a glob pattern.  The order of these values in the result sequence is implementation dependent.
-See [Wildcards](predicate#wildcards) for examples.
+See [Wildcards](#wildcards) for examples.
 
 ## `**` (Descendants)
 
 This wildcard recursively selects the values of all the properties of the context object, and the properties of any objects contained within these values as it descends the hierarchy.
-See [Navigate arbitrary depths](predicate#navigate-arbitrary-depths).
+See [Navigate arbitrary depths](#navigate-arbitrary-depths).
 
 ## `%` (Parent)
 
