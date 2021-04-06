@@ -156,13 +156,13 @@ If no index is specified for an array (i.e. no square brackets after the field r
   <div class="jsonata-ex">
     <div>Phone[0].number</div>
     <div>"0203 544 1234"</div>
-  <div>
+  </div>
 
 - No index is given to `Phone` so it selects all of them (the whole array), then it selects all the `number` fields for each of them
   <div class="jsonata-ex">
     <div>Phone.number</div>
     <div>[ "0203 544 1234", "01962 001234", "01962 001235", "077 7700 1234" ]</div>
-  <div>
+  </div>
 
 - Might expect it to just return the first number, but it returns the first number of each of the items selected by `Phone`
   <div class="jsonata-ex">
@@ -207,7 +207,7 @@ At the top level, we have an array rather than an object.  If we want to select 
   <div class="jsonata-ex">
     <div>$[0]</div>
     <div>{ "ref": [ 1,2 ] }</div>
-  <div>
+  </div>
 
 - `.ref` here returns the entire internal array
   <div class="jsonata-ex">
@@ -880,7 +880,7 @@ Functions that have been assigned to variables can invoke themselves using that 
   $factorial:= function($x){ $x <= 1 ? 1 : $x * $factorial($x-1) };
   $factorial(4)
 )</div>
-  <div>24</div>
+  </div>24</div>
 </div>
 
 Note that it is actually possible to write a recursive function using purely anonymous functions (i.e. nothing gets assigned to variables).  This is done using the [Y-combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed_point_combinators_in_lambda_calculus) which might be an interesting [diversion](#advanced-example-the-y-combinator) for those interested in functional programming.
@@ -1901,12 +1901,12 @@ __Examples__
 
 <div class="jsonata-ex">
   <div>$eval("[1,2,3]")</div>
-  <div>[1, 2, 3]</div>
+  </div>[1, 2, 3]</div>
 </div>
 
 <div class="jsonata-ex">
   <div>$eval('[1,$string(2),3]')</div>
-  <div>[1,"2",3]</div>
+  </div>[1,"2",3]</div>
 </div>
 
 
