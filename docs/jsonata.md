@@ -76,40 +76,69 @@ The following sample JSON document is used by examples throughout this guide, un
 Here are some example expressions and their results when applied to the above JSON document:
 
 - Returns a JSON string ("double quoted")
-  <div class="jsonata-ex">
-    <div>Surname</div>
-    <div>"Smith"</div>
-  </div>
+  
+  **Query**
+  ```
+  Surname
+  ```
+  **Result**
+  ```
+  "Smith"
+  ```
 
 - Returns a JSON number
-  <div class="jsonata-ex">
-    <div>Age</div>
-    <div>28</div>
-  </div>
+  
+  **Query**
+  ```
+  Age
+  ```
+  **Result**
+  ```
+  28
+  ```
 
 - Field references are separated by '.'
-  <div class="jsonata-ex">
-    <div>Address.City</div>
-    <div>"Winchester"</div>
-  </div>
+  
+  **Query**
+  ```
+  Address.City
+  ```
+  **Result**
+  ```
+  "Winchester"
+  ```
 
 - Matched the path and returns the null value
-  <div class="jsonata-ex">
-    <div>Other.Misc</div>
-    <div>null</div>
-  </div>
+  
+  **Query**
+  ```
+  Other.Misc
+  ```
+  **Result**
+  ```
+  null
+  ```
 
 - Path not found.  Returns nothing (i.e. Javascript _undefined_)
-  <div class="jsonata-ex">
-    <div>Other.Nothing</div>
-    <div></div>
-  </div>
+  **Query**
+  ```
+  Other.Nothing
+  ```
+  **Result**
+  ```
+    
+  ```
 
 - Field references containing whitespace or reserved tokens can be enclosed in backticks
-  <div class="jsonata-ex">
-    <div>Other.`Over 18 ?`</div>
-    <div>true</div>
-  </div>
+  
+  **Query**
+  ```
+  Other.`Over 18 ?`
+  ```
+  **Result**
+  ```
+  true
+  ```
 
 
 ## Navigating JSON Arrays
@@ -123,67 +152,116 @@ If no index is specified for an array (i.e. no square brackets after the field r
 #### Examples
 
 - Returns the first item (an object)
-  <div class="jsonata-ex">
-    <div>Phone[0]</div>
-    <div>{ "type": "home", "number": "0203 544 1234" }</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[0]
+  ```
+  **Result**
+  ```
+  { "type": "home", "number": "0203 544 1234" }
+  ```
 
 - Returns the second item
-  <div class="jsonata-ex">
-    <div>Phone[1]</div>
-    <div>{ "type": "office", "number": "01962 001234" }</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[1]
+  ```
+  **Result**
+  ```
+  { "type": "office", "number": "01962 001234" }
+  ```
 
 - Returns the last item
-  <div class="jsonata-ex">
-    <div>Phone[-1]</div>
-    <div>{ "type": "mobile", "number": "077 7700 1234" }</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[-1]
+  ```
+  **Result**
+  ```
+  { "type": "mobile", "number": "077 7700 1234" }
+  ```
 
 - Negative indexed count from the end
-  <div class="jsonata-ex">
-    <div>Phone[-2]</div>
-    <div>{ "type": "office", "number": "01962 001235" }</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[-2]
+  ```
+  **Result**
+  ```
+  { "type": "office", "number": "01962 001235" }
+  ```
 
 - Doesn't exist - returns nothing
-  <div class="jsonata-ex">
-    <div>Phone[8]</div>
-    <div></div>
-  </div>
+  **Query**
+  ```
+  Phone[8]
+  ```
+  **Result**
+  ```
+    
+  ```
 
 - Selects the `number` field in the first item
-  <div class="jsonata-ex">
-    <div>Phone[0].number</div>
-    <div>"0203 544 1234"</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[0].number
+  ```
+  **Result**
+  ```
+  "0203 544 1234"
+  ```
 
 - No index is given to `Phone` so it selects all of them (the whole array), then it selects all the `number` fields for each of them
-  <div class="jsonata-ex">
-    <div>Phone.number</div>
-    <div>[ "0203 544 1234", "01962 001234", "01962 001235", "077 7700 1234" ]</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone.number
+  ```
+  **Result**
+  ```
+  [ "0203 544 1234", "01962 001234", "01962 001235", "077 7700 1234" ]
+  ```
 
 - Might expect it to just return the first number, but it returns the first number of each of the items selected by `Phone`
-  <div class="jsonata-ex">
-    <div>Phone.number[0]</div>
-    <div>[ "0203 544 1234", "01962 001234", "01962 001235", "077 7700 1234" ]</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone.number[0]
+  ```
+  **Result**
+  ```
+  [ "0203 544 1234", "01962 001234", "01962 001235", "077 7700 1234" ]
+  ```
 
 - Applies the index to the array returned by `Phone.number`. One use of [parentheses](#parenthesized-expressions-and-blocks).
-  <div class="jsonata-ex">
-    <div>(Phone.number)[0]</div>
-    <div>"0203 544 1234"</div>
-  </div>
+  
+  **Query**
+  ```
+  (Phone.number)[0]
+  ```
+  **Result**
+  ```
+  "0203 544 1234"
+  ```
 
 - Returns a range of items by creating an array of indexes
-  <div class="jsonata-ex">
-    <div>Phone[[0..1]]</div>
-    <div>[
+  
+  **Query**
+  ```
+  Phone[[0..1]]
+  ```
+  **Result**
+  ```
+  [
   { "type": "home", "number": "0203 544 1234" },
   { "type": "office", "number": "01962 001234" }
-]</div>
-  </div>
+]
+  ```
 
 
 ## Result sequences
@@ -204,28 +282,48 @@ Consider the JSON document:
 At the top level, we have an array rather than an object.  If we want to select the first object in this top level array, we don't have a field name to append the `[0]` to.  We can't use `[0]` on its own because that clashes with the [array constructor](#array-constructors) syntax.  However, we can use the _context_ reference `$` to refer to the start of the document as follows:
 
 - `$` at the start of an expression refers to the entire input document
-  <div class="jsonata-ex">
-    <div>$[0]</div>
-    <div>{ "ref": [ 1,2 ] }</div>
-  </div>
+  
+  **Query**
+  ```
+  $[0]
+  ```
+  **Result**
+  ```
+  { "ref": [ 1,2 ] }
+  ```
 
 - `.ref` here returns the entire internal array
-  <div class="jsonata-ex">
-    <div>$[0].ref</div>
-    <div>[ 1,2 ]</div>
-  </div>
+  
+  **Query**
+  ```
+  $[0].ref
+  ```
+  **Result**
+  ```
+  [ 1,2 ]
+  ```
 
 - returns element on first position of the internal array
-  <div class="jsonata-ex">
-    <div>$[0].ref[0]</div>
-    <div>1</div>
-  </div>
+  
+  **Query**
+  ```
+  $[0].ref[0]
+  ```
+  **Result**
+  ```
+  1
+  ```
 
 - Despite the structure of the nested array, the resultant selection is flattened into a single flat array.  The original nested structure of the input arrays is lost. See [Array constructors](#array-constructors) for how to maintain the original structure in the results.
-  <div class="jsonata-ex">
-    <div>$.ref</div>
-    <div>[ 1, 2, 3, 4 ]</div>
-  </div>
+  
+  **Query**
+  ```
+  $.ref
+  ```
+  **Result**
+  ```
+  [ 1, 2, 3, 4 ]
+  ```
 
 # Query refinement using predicate expressions
 
@@ -236,22 +334,37 @@ At any step in a location path, the selected items can be filtered using a predi
 #### Examples:
 
 - Select the `Phone` items that have a `type` field that equals `"mobile"`.
-  <div class="jsonata-ex">
-    <div>Phone[type='mobile']</div>
-    <div>{ "type": "mobile",  "number": "077 7700 1234" }</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[type='mobile']
+  ```
+  **Result**
+  ```
+  { "type": "mobile",  "number": "077 7700 1234" }
+  ```
 
 - Select the mobile phone number
-  <div class="jsonata-ex">
-    <div>Phone[type='mobile'].number</div>
-    <div>"077 7700 1234"</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[type='mobile'].number
+  ```
+  **Result**
+  ```
+  "077 7700 1234"
+  ```
 
 - Select the office phone numbers - there are two of them!
-  <div class="jsonata-ex">
-    <div>Phone[type='office'].number</div>
-    <div>[ "01962 001234",  "01962 001235" ]</div>
-  </div>
+  
+  **Query**
+  ```
+  Phone[type='office'].number
+  ```
+  **Result**
+  ```
+  [ "01962 001234",  "01962 001235" ]
+  ```
 
 
 ## Singleton array and value equivalence
@@ -283,16 +396,26 @@ Use of `*` instead of field name to select all fields in an object
 #### Examples
 
 - Select the values of all the fields of `Address`
-  <div class="jsonata-ex">
-    <div>Address.*</div>
-    <div>[ "Hursley Park", "Winchester", "SO21 2JN" ]</div>
-  </div>
+  
+  **Query**
+  ```
+  Address.*
+  ```
+  **Result**
+  ```
+  [ "Hursley Park", "Winchester", "SO21 2JN" ]
+  ```
 
 - Select the `Postcode` value of any child object
-  <div class="jsonata-ex">
-    <div>*.Postcode</div>
-    <div>"SO21 2JN"</div>
-  </div>
+  
+  **Query**
+  ```
+  *.Postcode
+  ```
+  **Result**
+  ```
+  "SO21 2JN"
+  ```
 
 
 
@@ -303,10 +426,15 @@ Descendant wildcard `**` instead of `*` will traverse all descendants (multi-lev
 #### Examples
 
 - Select all `Postcode` values, regardless of how deeply nested they are in the structure
-  <div class="jsonata-ex">
-    <div>**.Postcode</div>
-    <div>[ "SO21 2JN", "E1 6RF" ]</div>
-  </div>
+  
+  **Query**
+  ```
+  **.Postcode
+  ```
+  **Result**
+  ```
+  [ "SO21 2JN", "E1 6RF" ]
+  ```
 
 # Manipulating data with functions and expressions
 
@@ -327,22 +455,37 @@ the expected (string) type.
 __Examples__
 
 - Concatenate `FirstName` followed by space followed by `Surname`
-  <div class="jsonata-ex">
-    <div>FirstName & ' ' & Surname</div>
-    <div>"Fred Smith"</div>
-  </div>
+  
+  **Query**
+  ```
+  FirstName & ' ' & Surname
+  ```
+  **Result**
+  ```
+  "Fred Smith"
+  ```
 
 - Concatenates the `Street` and `City` from the `Address` object with a comma separator. Note the use of [parentheses](#parenthesized-expressions-and-blocks)
-  <div class="jsonata-ex">
-    <div>Address.(Street & ', ' & City)</div>
-    <div>"Hursley Park, Winchester"</div>
-  </div>
+  
+  **Query**
+  ```
+  Address.(Street & ', ' & City)
+  ```
+  **Result**
+  ```
+  "Hursley Park, Winchester"
+  ```
 
 - Casts the operands to strings, if necessary
-  <div class="jsonata-ex">
-    <div>5&0&true</div>
-    <div>"50true"</div>
-  </div>
+  
+  **Query**
+  ```
+  5&0&true
+  ```
+  **Result**
+  ```
+  "50true"
+  ```
 
 
 
@@ -433,30 +576,45 @@ Array constructors can also be used within location paths for making multiple se
 __Examples__
 
 - The four email addresses are returned in a flat array.
-  <div class="jsonata-ex">
-    <div>Email.address</div>
-    <div>[
+  
+  **Query**
+  ```
+  Email.address
+  ```
+  **Result**
+  ```
+  [
   "fred.smith@my-work.com",
   "fsmith@my-work.com",
   "freddy@my-social.com",
   "frederic.smith@very-serious.com"
-]</div>
-  </div>
+]
+  ```
 
 - Each email object generates an array of addresses.
-  <div class="jsonata-ex">
-    <div>Email.[address]</div>
-    <div>[
+  
+  **Query**
+  ```
+  Email.[address]
+  ```
+  **Result**
+  ```
+  [
   [ "fred.smith@my-work.com",  "fsmith@my-work.com" ],
   [ "freddy@my-social.com", "frederic.smith@very-serious.com" ]
-]</div>
-  </div>
+]
+  ```
 
 - Selects the `City` value of both `Address` and `Alternative.Address` objects.
-  <div class="jsonata-ex">
-    <div>[Address, Other.`Alternative.Address`].City</div>
-    <div>[ "Winchester", "London" ]</div>
-  </div>
+  
+  **Query**
+  ```
+  [Address, Other.`Alternative.Address`].City
+  ```
+  **Result**
+  ```
+  [ "Winchester", "London" ]
+  ```
 
 ## Object constructors
 
@@ -467,33 +625,48 @@ When an object constructor follows an expression that selects multiple values, t
 __Examples__
 
 - Produces an array of objects (one for each phone).
-  <div class="jsonata-ex">
-    <div>Phone.{type: number}</div>
-    <div>[
+  
+  **Query**
+  ```
+  Phone.{type: number}
+  ```
+  **Result**
+  ```
+  [
   { "home": "0203 544 1234" }, 
   { "office": "01962 001234" }, 
   { "office": "01962 001235" }, 
   { "mobile": "077 7700 1234"  } 
-]</div>
-  </div>
+]
+  ```
 
-- Combines the key/value pairs into a single object.  See [Grouping using object key expression](sorting-grouping.md) for more details.
-  <div class="jsonata-ex">
-    <div>Phone{type: number}</div>
-    <div>{
+- Combines the key/value pairs into a single object.  See [Grouping using object key expression](#sorting-grouping) for more details.
+  
+  **Query**
+  ```
+  Phone{type: number}
+  ```
+  **Result**
+  ```
+  {
   "home": "0203 544 1234",
   "office": [
     "01962 001234",
     "01962 001235"
   ],
   "mobile": "077 7700 1234"
-}</div>
-  </div>
+}
+  ```
 
 - Combines the key/value pairs into a single object.  In this case, for consistency, all numbers are grouped into arrays. See [Singleton array and value equivalence](#singleton-array-and-value-equivalence) for more details.
-  <div class="jsonata-ex">
-    <div>Phone{type: number[]}</div>
-    <div>{
+  
+  **Query**
+  ```
+  Phone{type: number[]}
+  ```
+  **Result**
+  ```
+  {
   "home": [
     "0203 544 1234"
   ],
@@ -504,8 +677,8 @@ __Examples__
   "mobile": [
     "077 7700 1234"
   ]
-}</div>
-  </div>
+}
+  ```
 
 
 ## JSON literals
@@ -562,66 +735,91 @@ If the evaluation of any key expression results in a key that is already in the 
 __Examples__
 
 - Group all of the product sales by name, with the price of each item in each group
-  <div class="jsonata-ex">
-    <div>Account.Order.Product{`Product Name`: Price}</div>
-    <div>{
+  
+  **Query**
+  ```
+  Account.Order.Product{`Product Name`: Price}
+  ```
+  **Result**
+  ```
+  {
   "Bowler Hat": [ 34.45, 34.45 ],
   "Trilby hat": 21.67,
   "Cloak": 107.99
-}</div>
-  </div>
+}
+  ```
 
 - Group all of the product sales by name, with the price and the quantity of each item in each group
-  <div class="jsonata-ex">
-    <div>Account.Order.Product {
+  
+  **Query**
+  ```
+  Account.Order.Product {
   `Product Name`: {"Price": Price, "Qty": Quantity}
-}</div>
-    <div>{
+}
+  ```
+  **Result**
+  ```
+  {
   "Bowler Hat": {
     "Price": [ 34.45, 34.45 ],
     "Qty": [ 2, 4 ]
   },
   "Trilby hat": { "Price": 21.67, "Qty": 1 },
   "Cloak": { "Price": 107.99, "Qty": 1 }
-}</div>
-  </div>
+}
+  ```
 
 Note in the above example, the value expression grouped all of the prices together and all of the quantities together into separate arrays.  This is because the context value is the sequence of all grouped Products and the `Price` expression will select all prices from all products.  If you want to collect the price and quantity into individual objects, then you need to evaluate the object constructor _for each_ product in the context sequence.  The following example shows this.
 
 - Explicit use of `$.{ ... }` to create an object for each item in the group.
-  <div class="jsonata-ex">
-    <div>Account.Order.Product {
+  
+  **Query**
+  ```
+  Account.Order.Product {
   `Product Name`: $.{"Price": Price, "Qty": Quantity}
-}</div>
-    <div>{
+}
+  ```
+  **Result**
+  ```
+  {
   "Bowler Hat": [
     { "Price": 34.45, "Qty": 2 },
     { "Price": 34.45, "Qty": 4 }
   ],
   "Trilby hat": { "Price": 21.67, "Qty": 1 },
   "Cloak": { "Price": 107.99, "Qty": 1 }
-}</div>
-  </div>
+}
+  ```
 
 - Multiply the Price by the Quantity for each product in each group
-  <div class="jsonata-ex">
-    <div>Account.Order.Product{`Product Name`: $.(Price*Quantity)}</div>
-    <div>{
+  
+  **Query**
+  ```
+  Account.Order.Product{`Product Name`: $.(Price*Quantity)}
+  ```
+  **Result**
+  ```
+  {
   "Bowler Hat": [ 68.9, 137.8 ],
   "Trilby hat": 21.67,
   "Cloak": 107.99
-}</div>
-  </div>
+}
+  ```
 
 - The total aggregated value in each group
-  <div class="jsonata-ex">
-    <div>Account.Order.Product{`Product Name`: $sum($.(Price*Quantity))}</div>
-    <div>{
+  
+  **Query**
+  ```
+  Account.Order.Product{`Product Name`: $sum($.(Price*Quantity))}
+  ```
+  **Result**
+  ```
+  {
   "Bowler Hat": 206.7,
   "Trilby hat": 21.67,
   "Cloak": 107.99
-}</div>
-  </div>
+}
+  ```
 
 
 
@@ -632,16 +830,26 @@ Often queries are just required to return aggregated results from a set of match
 __Examples__
 
 - Total price of each product in each order
-  <div class="jsonata-ex">
-    <div>$sum(Account.Order.Product.Price)</div>
-    <div>198.56</div>
-  </div>
+  
+  **Query**
+  ```
+  $sum(Account.Order.Product.Price)
+  ```
+  **Result**
+  ```
+  198.56
+  ```
 
 - More likely want to add up the total of the price times quantity for each order
-  <div class="jsonata-ex">
-    <div>$sum(Account.Order.Product.(Price*Quantity))</div>
-    <div>336.36</div>
-  </div>
+  
+  **Query**
+  ```
+  $sum(Account.Order.Product.(Price*Quantity))
+  ```
+  **Result**
+  ```
+  336.36
+  ```
 
 Other [numeric aggregation functions](aggregation-functions) are available (i.e. average, min, max) and an [aggregator for strings](string-functions#join).  It is also possible to write complex custom aggregators using the [`$reduce()`](higher-order-functions#reduce) higher-order function.
 
@@ -875,13 +1083,17 @@ Each type symbol may also have *options* applied.
 
 Functions that have been assigned to variables can invoke themselves using that variable reference.  This allows recursive functions to be defined.  Eg.
 
-<div class="jsonata-ex">
-  <div>(
+**Query**
+```
+(
   $factorial:= function($x){ $x <= 1 ? 1 : $x * $factorial($x-1) };
   $factorial(4)
-)</div>
-  </div>24</div>
-</div>
+)
+```
+**Result**
+```
+24
+```
 
 Note that it is actually possible to write a recursive function using purely anonymous functions (i.e. nothing gets assigned to variables).  This is done using the [Y-combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed_point_combinators_in_lambda_calculus) which might be an interesting [diversion](#advanced-example-the-y-combinator) for those interested in functional programming.
 
@@ -970,23 +1182,33 @@ e.g. bound to a variable, passed to a higher-order function, etc.
 __Examples__
 
 - Create a function to return the first five characters of a string by partially applying the `$substring` function
-  <div class="jsonata-ex">
-    <div>(
+  
+  **Query**
+  ```
+  (
   $first5 := $substring(?, 0, 5);
   $first5("Hello, World")
-)</div>
-    <div>"Hello"</div>
-  </div>
+)
+  ```
+  **Result**
+  ```
+  "Hello"
+  ```
 
 - Partially applied function can be further partially applied
-  <div class="jsonata-ex">
-    <div>(
+  
+  **Query**
+  ```
+  (
   $firstN := $substring(?, 0, ?);
   $first5 := $firstN(?, 5);
   $first5("Hello, World")
-)</div>
-    <div>"Hello"</div>
-  </div>
+)
+  ```
+  **Result**
+  ```
+  "Hello"
+  ```
 
 
 ### Function chaining
@@ -1019,13 +1241,18 @@ is equivalent to\
 __Examples__
 
 - Create a new function by chaining two existing functions
-  <div class="jsonata-ex">
-    <div>(
+  
+  **Query**
+  ```
+  (
    $normalize := $uppercase ~> $trim;
    $normalize("   Some   Words   ")
-)</div>
-    <div>"SOME WORDS"</div>
-  </div>
+)
+  ```
+  **Result**
+  ```
+  "SOME WORDS"
+  ```
 
 ### Functions as first class values
 
@@ -1035,13 +1262,18 @@ functions.
 __Examples__
 
 - Create a new function by chaining two partially evaluated functions
-  <div class="jsonata-ex">
-    <div>(
+  
+  **Query**
+  ```
+  (
   $first5Capitalized := $substring(?, 0, 5) ~> $uppercase(?);
   $first5Capitalized(Address.City)
-)</div>
-    <div>"WINCH"</div>
-  </div>
+)
+  ```
+  **Result**
+  ```
+  "WINCH"
+  ```
 
 
 ### Advanced example - The Y-combinator
@@ -1176,18 +1408,23 @@ The timestamp is captured at the start of the expression evaluation, and that sa
 __Example__
 
 - The timestamp will be the same for all invocations within an expression
-  <div class="jsonata-ex">
-    <div>{
+  
+  **Query**
+  ```
+  {
   "invoiceTime": $now(),
   "total": $sum(Account.Order.Product.(Price * Quantity)),
   "closingTime": $now()
-}</div>
-    <div>{
+}
+  ```
+  **Result**
+  ```
+  {
   "invoiceTime": "2018-12-10T13:49:51.141Z",
   "total": 336.36,
   "closingTime": "2018-12-10T13:49:51.141Z"
-}</div>
-  </div>
+}
+  ```
 
 ## JSON and ISO 8601
 
@@ -1213,17 +1450,27 @@ See [`toMillis()`](date-time-functions#tomillis) and [`fromMillis()`](date-time-
 __Examples__
 
 - The date `12/10/2018` in US format and `10/12/2018` in European format both refer to the same day.
-  <div class="jsonata-ex">
-    <div>$toMillis('10/12/2018', '[D]/[M]/[Y]') ~> $fromMillis('[M]/[D]/[Y]')</div>
-    <div>"12/10/2018"</div>
-  </div>
+  
+  **Query**
+  ```
+  $toMillis('10/12/2018', '[D]/[M]/[Y]') ~> $fromMillis('[M]/[D]/[Y]')
+  ```
+  **Result**
+  ```
+  "12/10/2018"
+  ```
 
 - More verbose format.
-  <div class="jsonata-ex">
-    <div>$toMillis('10/12/2018', '[D]/[M]/[Y]') 
-       ~> $fromMillis('[FNn], [D1o] [MNn] [YI]')</div>
-    <div>"Monday, 10th December MMXVIII"</div>
-  </div>
+  
+  **Query**
+  ```
+  $toMillis('10/12/2018', '[D]/[M]/[Y]') 
+       ~> $fromMillis('[FNn], [D1o] [MNn] [YI]')
+  ```
+  **Result**
+  ```
+  "Monday, 10th December MMXVIII"
+  ```
 
 
 # Path Operators
@@ -1855,40 +2102,70 @@ The optional `limit` parameter,  is a number that specifies the maximum number o
 
 __Examples__
 
-  <div class="jsonata-ex">
-    <div>$replace("John Smith and John Jones", "John", "Mr")</div>
-    <div>"Mr Smith and Mr Jones"</div>
-  </div>
+  
+  **Query**
+  ```
+  $replace("John Smith and John Jones", "John", "Mr")
+  ```
+  **Result**
+  ```
+  "Mr Smith and Mr Jones"
+  ```
 
-  <div class="jsonata-ex">
-    <div>$replace("John Smith and John Jones", "John", "Mr", 1)</div>
-    <div>"Mr Smith and John Jones"</div>
-  </div>
+  
+  **Query**
+  ```
+  $replace("John Smith and John Jones", "John", "Mr", 1)
+  ```
+  **Result**
+  ```
+  "Mr Smith and John Jones"
+  ```
 
-  <div class="jsonata-ex">
-    <div>$replace("abracadabra", /a.*?a/, "*")</div>
-    <div>"*c*bra"</div>
-  </div>
+  
+  **Query**
+  ```
+  $replace("abracadabra", /a.*?a/, "*")
+  ```
+  **Result**
+  ```
+  "*c*bra"
+  ```
 
-  <div class="jsonata-ex">
-    <div>$replace("John Smith", /(\w+)\s(\w+)/, "$2, $1")</div>
-    <div>"Smith, John"</div>
-  </div>
+  
+  **Query**
+  ```
+  $replace("John Smith", /(\w+)\s(\w+)/, "$2, $1")
+  ```
+  **Result**
+  ```
+  "Smith, John"
+  ```
 
-  <div class="jsonata-ex">
-    <div>$replace("265USD", /([0-9]+)USD/, "$$$1")</div>
-    <div>"$265"</div>
-  </div>
+  
+  **Query**
+  ```
+  $replace("265USD", /([0-9]+)USD/, "$$$1")
+  ```
+  **Result**
+  ```
+  "$265"
+  ```
 
-  <div class="jsonata-ex">
-    <div>(
+  
+  **Query**
+  ```
+  (
   $convert := function($m) {
     ($number($m.groups[0]) - 32) * 5/9 & "C"
   };
   $replace("temperature = 68F today", /(\d+)F/, $convert)
-)</div>
-    <div>"temperature = 20C today"</div>
-  </div>
+)
+  ```
+  **Result**
+  ```
+  "temperature = 20C today"
+  ```
 
 
 ## `$eval()`
@@ -1899,15 +2176,23 @@ Parses and evaluates the string `expr` which contains literal JSON or a JSONata 
 __Examples__
 
 
-<div class="jsonata-ex">
-  <div>$eval("[1,2,3]")</div>
-  </div>[1, 2, 3]</div>
-</div>
+**Query**
+```
+$eval("[1,2,3]")
+```
+**Result**
+```
+[1, 2, 3]
+```
 
-<div class="jsonata-ex">
-  <div>$eval('[1,$string(2),3]')</div>
-  </div>[1,"2",3]</div>
-</div>
+**Query**
+```
+$eval('[1,$string(2),3]')
+```
+**Result**
+```
+[1,"2",3]
+```
 
 
 Optionally override the context by specifying the second parameter
