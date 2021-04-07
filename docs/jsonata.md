@@ -7,6 +7,50 @@ slug: jsonata
 
 The LAMP Platform supports Document Transformations using the JSONata query language developed by IBM. [The following documentation is extracted from the JSONata documentation website.](https://docs.jsonata.org/)
 
+The following methods corresponding to API calls have been added to the JSONata engine:
+```
+$LAMP.ActivityEvent.list(participant_id: string, origin: string | null, from: number | null, to: number | null, limit: number | null) => ActivityEvent[]
+$LAMP.ActivityEvent.create(participant_id: string, activity_events: ActivityEvent | ActivityEvent[]) => void
+$LAMP.Activity.list(study_id: string, ignore_binary: boolean = true, sibling: boolean = false) => Activity[]
+$LAMP.Activity.create(activity_id: string, activity: Activity) => void
+$LAMP.Activity.get(activity_id: string) => Activity
+$LAMP.Activity.set(activity_id: string, activity: Activity | null) => void
+$LAMP.ActivitySpec.list() => ActivitySpec[]
+$LAMP.ActivitySpec.create(activity_spec: ActivitySpec) => void
+$LAMP.ActivitySpec.get(activity_spec_id: string) => ActivitySpec
+$LAMP.ActivitySpec.set(activity_spec_id: string, activity_spec: ActivitySpec | null) => void
+$LAMP.Credential.list(type_id: string | null) => Credential[]
+$LAMP.Credential.create(type_id: string | null, credential: Credential) => void
+$LAMP.Credential.get(type_id: string | null, access_key: string) => Credential
+$LAMP.Credential.set(type_id: string | null, access_key: string, credential: Credential | null) => void
+$LAMP.Participant.list(study_id: string, sibling: boolean = false) => Participant[]
+$LAMP.Participant.create(study_id: string, participant: Participant) => void
+$LAMP.Participant.get(participant_id: string) => Participant
+$LAMP.Participant.set(participant_id: string, participant: Participant) => void
+$LAMP.Researcher.list() => Researcher[]
+$LAMP.Researcher.create(researcher: Researcher) => void
+$LAMP.Researcher.get(researcher_id: string) => Researcher
+$LAMP.Researcher.set(researcher_id: string, researcher: Researcher | null) => void
+$LAMP.SensorEvent.list(participant_id: string, origin: string | null, from: number | null, to: number | null, limit: number | null) => SensorEvent[]
+$LAMP.SensorEvent.create(participant_id: string, sensor_events: SensorEvent | SensorEvent[]) => void
+$LAMP.Sensor.list(study_id: string, ignore_binary: boolean = true, sibling: boolean = false) => Sensor[]
+$LAMP.Sensor.create(study_id: string, sensor: Sensor) => void
+$LAMP.Sensor.get(sensor_id: string) => Sensor
+$LAMP.Sensor.set(sensor_id: string, sensor: Sensor | null) => void
+$LAMP.SensorSpec.list() => SensorSpec[]
+$LAMP.SensorSpec.create(sensor_spec: SensorSpec) => void
+$LAMP.SensorSpec.get(sensor_spec_id: string) => SensorSpec
+$LAMP.SensorSpec.set(sensor_spec_id: string, sensor_spec: SensorSpec | null) => void
+$LAMP.Study.list(researcher_id: string) => Study[]
+$LAMP.Study.create(researcher_id: string, study: Study) => void
+$LAMP.Study.get(study_id: string) => Study
+$LAMP.Study.set(study_id: string, study: Study | null) => void
+$LAMP.Type.parent(type_id: string) => string
+$LAMP.Tag.list(type_id: string) => string[]
+$LAMP.Tag.get(type_id: string, attachment_key: string) => any
+$LAMP.Tag.set(type_id: string, attachment_key: string, target: string, attachment_value: string) => void
+```
+
 ## Introduction
 
 JSONata is a lightweight query and transformation language for JSON data. Inspired by the 'location path' semantics of XPath 3.1, it allows sophisticated queries to be expressed in a compact and intuitive notation.  A rich complement of built in operators and functions is provided for manipulating and combining extracted data, and the results of queries can be formatted into any JSON output structure using familiar JSON object and array syntax. Coupled with the facility to create user defined functions, advanced expressions can be built to tackle any JSON query and transformation task. [Try it out here.](http://try.jsonata.org/)
