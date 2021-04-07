@@ -720,11 +720,11 @@ Each expression in the block is evaluated _in sequential order_; the result of t
 
 Arrays contain an ordered collection of values.  If you need to re-order the values, then the array must be sorted.  In JSONata, there are two ways of sorting an array:
 
-1. Using the [`$sort()`](array-functions#sort) function.
+1. Using the [`$sort()`](#sort) function.
 
-2. Using the [order-by](path-operators#order-by-) operator.
+2. Using the [order-by](#order-by-) operator.
 
-The [order-by](path-operators#order-by-) operator is a convenient syntax that can used directly in a path expression to sort the result sequences in ascending or descending order.  The [`$sort()`](array-functions#sort) function requires more syntax to be written, but is more flexible and supports custom comparator functions.
+The [order-by](#order-by-) operator is a convenient syntax that can used directly in a path expression to sort the result sequences in ascending or descending order.  The [`$sort()`](#sort) function requires more syntax to be written, but is more flexible and supports custom comparator functions.
 
 ## Grouping
 
@@ -851,7 +851,7 @@ __Examples__
   336.36
   ```
 
-Other [numeric aggregation functions](aggregation-functions) are available (i.e. average, min, max) and an [aggregator for strings](string-functions#join).  It is also possible to write complex custom aggregators using the [`$reduce()`](higher-order-functions#reduce) higher-order function.
+Other [numeric aggregation functions](#aggregation-functions) are available (i.e. average, min, max) and an [aggregator for strings](#join).  It is also possible to write complex custom aggregators using the [`$reduce()`](#reduce) higher-order function.
 
 # The JSONata processing model
 
@@ -907,7 +907,7 @@ __Reduce__ | seq`{` expr`:`expr`,` expr`:`expr ...`}` | Group and aggregate the 
 In the above table:
 
 - In the 'Syntax' column, 'seq' refers to the input sequence for the current stage, which is the result sequence from the previous stage.
-- The 'Action' column gives a brief outline of the stage's behavior; fuller details are in the [Path Operators](path-operators) reference page.
+- The 'Action' column gives a brief outline of the stage's behavior; fuller details are in the [Path Operators](#path-operators) reference page.
 - The relative precedence of each operator affects the scope of its influence on the input sequence. Specifically,
   - The Filter operator binds tighter than the Map operator.  This means, for example, that `books.authors[0]` will select the all of the first authors from _each_ book rather than the first author from all of the books.
   - The Sort (order-by) operator has the lowest precedence, meaning that the full path to the left of it will be evaluated, and its result sequence will be sorted.
@@ -1322,10 +1322,10 @@ where:
 
 A number of functions are available that take a regular expression as a parameter
 
-- [$match()](string-functions#match)
-- [$contains()](string-functions#contains)
-- [$split()](string-functions#split)
-- [$replace()](string-functions#replace)
+- [$match()](#match)
+- [$contains()](#contains)
+- [$split()](#split)
+- [$replace()](#replace)
 
 __Examples__
 
@@ -1335,7 +1335,7 @@ Regexes are often used in query predicates (filter expressions) when selecting o
 
 `path.to.object[stringProperty ~> /regex/]`
 
-The `~>` is the [chain operator](control-operators#chain), and its use here implies that the result of `/regex/` is a function.  We'll see below that this is in fact the case.
+The `~>` is the [chain operator](#chain), and its use here implies that the result of `/regex/` is a function.  We'll see below that this is in fact the case.
 
 __Examples__
 
@@ -1400,8 +1400,8 @@ So it's possible to write any user-defined matcher function, provided it conform
 
 There are two functions that return the 'current' date/time timestamp:
 
-1. [`$now()`](date-time-functions#now) returns the timestamp in an ISO 8601 formatted string.
-2. [`$millis()`](date-time-functions#millis) returns the same timestamp as the number of milliseconds since midnight on 1st January 1970 UTC (the [Unix epoch](https://en.wikipedia.org/wiki/Unix_time)).
+1. [`$now()`](#now) returns the timestamp in an ISO 8601 formatted string.
+2. [`$millis()`](#millis) returns the same timestamp as the number of milliseconds since midnight on 1st January 1970 UTC (the [Unix epoch](https://en.wikipedia.org/wiki/Unix_time)).
 
 The timestamp is captured at the start of the expression evaluation, and that same timestamp value is returned for every occurrence of `$now()` and `$millis()` in the same expression for the duration of the evaluation.
 
@@ -1439,13 +1439,13 @@ __Example__
 ```
 
 JSONata follows this convention and provides functions for formatting and parsing ISO 8601 formatted timestamps 
-([`toMillis()`](date-time-functions#tomillis) and [`fromMillis()`](date-time-functions#frommillis))
+([`toMillis()`](#tomillis) and [`fromMillis()`](#frommillis))
 
 ## Support for other date/time formats
 
 Since there is no standard for date/time format in JSON, it is entirely possible that the JSON data you are working with will have date/time values formatted in other ways.  JSONata supports the highly versatile picture string notation from the XPath/XQuery [fn:format-dateTime()](https://www.w3.org/TR/xpath-functions-31/#func-format-dateTime) specification for both the formatting and parsing of a wide variety of date/time formats. 
 
-See [`toMillis()`](date-time-functions#tomillis) and [`fromMillis()`](date-time-functions#frommillis) for details.
+See [`toMillis()`](#tomillis) and [`fromMillis()`](#frommillis) for details.
 
 __Examples__
 
@@ -1511,7 +1511,7 @@ If the predicate expression is an array of integers, or an expression that evalu
 
 If the predicate expression evaluates to any other value, then it is cast to a Boolean as if using the `$boolean()` function.  If this evaluates to `true`, then the item is retained in the result sequence.  Otherwise it is rejected.
 
-See [Navigating JSON Arrays](#navigating-json-arrays) and [Predicates](predicate) for more details and examples.
+See [Navigating JSON Arrays](#navigating-json-arrays) and [Predicates](#predicate) for more details and examples.
 
 ## `^(` ... `)` (Order-by)
 
@@ -1546,7 +1546,7 @@ __Examples__
 
 The reduce operator can be used as the last step in a path expression to group and aggregate its input sequence into a single object.
 The key/value pairs between the curly braces determine the groupings (by evaluating the key expression) and the aggregated values for each group.
-See [Grouping and Aggregation](sorting-grouping#grouping) for more details.
+See [Grouping and Aggregation](#grouping) for more details.
 
 
 ## `*` (Wildcard)
@@ -1769,7 +1769,7 @@ __Example__
 
 `library.books[price < 10 or section="diy"].title`
 
-__Please note that Boolean 'NOT' is a [function](boolean-functions#not), not an operator.__
+__Please note that Boolean 'NOT' is a [function](#not), not an operator.__
 
 # Other Operators
 
@@ -2557,7 +2557,7 @@ __Examples__
 ## `$distinct()`
 __Signature__ `$distinct(array)`
 
-Returns an array containing all the values from the `array` parameter, but with any duplicates removed.  Values are tested for deep equality as if by using the [equality operator](comparison-operators#equals).
+Returns an array containing all the values from the `array` parameter, but with any duplicates removed.  Values are tested for deep equality as if by using the [equality operator](#equals).
 
 __Examples__
 - `$distinct([1,2,3,3,4,3,5])` => `[1, 2, 3, 4, 5]`
