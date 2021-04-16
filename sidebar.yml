@@ -1,0 +1,94 @@
+Main:
+- index
+- type: category
+  label: Quick Links
+  items:
+  - app
+  - bug
+  - faq
+- type: category
+  label: Thinking about using mindLAMP?
+  items:
+  - how_does_lamp_work
+  - user_prereqs
+  - user_types
+  - type: category
+    label: Consortium
+    items:
+    - consortium_guidelines
+    - consortium_survey
+    - consortium_requirements
+  - privacy
+  - security
+- type: category
+  label: Register your Interest
+  items:
+  - type: link
+    label: 'Interest Form (Part 1);'
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSeNyY469zPcwVoZ8gKTwW8dLuzRDXpObLcR8JtHdUlRhAQcyQ/viewform?gxids=7757'
+  - type: link
+    label: 'How will you use LAMP? (Part 2)'
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLScCHNRqCIbVOxg1JBz1lsdu1-94tnlYq2hA_0wOPafFRDFrrA/viewform'
+- type: category
+  label: Why use the LAMP Platform?
+  items:
+  - lamp_data_cortex
+  - what_is_lamp_platform
+  - lamp_components
+  - platforms_vs_apps
+  - lamp_data_format
+  - webinar_recordings
+- type: category
+  label: New Users Start Here
+  items:
+  - accessing_account
+  - logging_in
+  - create_patients_participants
+  - users_vs_activities
+  - type: category
+    label: 'Activities: Tips, Surveys, and Cognitive Tests'
+    items:
+    - create_tips
+    - create_surveys
+    - delete_activities
+    - import_activities
+    - create_activities
+    - customize_activities
+    - complete_activities
+    - visualize
+  - view_dashboard
+  - care_team
+  - instruments
+  - wearables
+  - dont_kill_my_app
+- type: category
+  label: LAMP for IT
+  items:
+  - deploy_prereqs
+  - deployment_recs
+  - costs
+  - provisioning_lamp
+  - aws_resources
+  - deploying_lamp
+  - testing_lamp
+- type: category
+  label: LAMP for Developers
+  items:
+  - components_of_lamp
+  - how_works
+  - low_power
+  - intervention_delivery
+  - build_new_activities
+  - how_interventions_work
+- type: category
+  label: Data Science
+  items:
+  - data_science
+  - data_types
+  - python
+  - r
+  - anomaly_detection_r
+- cortex
+- consortium_users
+- publications
+- mapnet

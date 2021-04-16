@@ -89,7 +89,7 @@ module.exports = {
           routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true, 
-          sidebarPath: require.resolve('./docs/sidebar.js'),
+          sidebarPath: require.resolve('./docs/sidebar.json'),
           editUrl:
             'https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/',
         },

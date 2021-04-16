@@ -12,7 +12,12 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
+  "devDependencies": {
+    "yamljs": "^0.3.0"
+  },
   "scripts": {
+    "prestart": "yaml2json ./openapi.yml > ./docs/openapi.json && yaml2json ./sidebar.yml > ./docs/sidebar.json",
+    "prebuild": "yaml2json ./openapi.yml > ./docs/openapi.json && yaml2json ./sidebar.yml > ./docs/sidebar.json",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
     "build": "docusaurus build",
