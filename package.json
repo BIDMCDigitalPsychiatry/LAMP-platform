@@ -16,8 +16,8 @@
     "yamljs": "^0.3.0"
   },
   "scripts": {
-    "prestart": "yaml2json ./openapi.yml > ./docs/openapi.json && yaml2json ./sidebar.yml > ./docs/sidebar.json",
-    "prebuild": "yaml2json ./openapi.yml > ./docs/openapi.json && yaml2json ./sidebar.yml > ./docs/sidebar.json",
+    "prestart": "npm run prebuild",
+    "prebuild": "yaml2json ./openapi.yml > ./openapi.json && yaml2json ./sidebar.yml > ./sidebar.json",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
     "build": "docusaurus build",
@@ -70,6 +70,133 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "docusaurus": {
+    "title": "LAMP Platform",
+    "tagline": "The LAMP Platform documentation.",
+    "url": "https://docs.lamp.digital",
+    "favicon": "./docs/assets/logo.png",
+    "organizationName": "BIDMCDigitalPsychiatry",
+    "projectName": "LAMP-platform",
+    "baseUrl": "/",
+    "onBrokenLinks": "error",
+    "onDuplicateRoutes": "error",
+    "onBrokenMarkdownLinks": "error",
+    "themeConfig": {
+      "defaultMode": "light",
+      "disableSwitch": false,
+      "respectPrefersColorScheme": true,
+      "image": "logo.png",
+      "navbar": {
+        "title": "LAMP Platform",
+        "hideOnScroll": false,
+        "logo": {
+          "alt": "LAMP Platform",
+          "src": "logo.png"
+        },
+        "items": [
+          {
+            "label": "User Guide",
+            "position": "left",
+            "to": "/",
+            "activeBaseRegex": "/([0-9a-zA-Z]+)",
+            "items": [
+              {
+                "label": "Download App",
+                "to": "/app"
+              },
+              {
+                "label": "Report Bug",
+                "to": "/bug"
+              },
+              {
+                "label": "FAQ",
+                "to": "/faq"
+              }
+            ]
+          },
+          {
+            "label": "API",
+            "position": "left",
+            "to": "/api"
+          },
+          {
+            "label": "What's New",
+            "position": "left",
+            "to": "/blog"
+          },
+          {
+            "label": "Community",
+            "position": "right",
+            "items": [
+              {
+                "label": "Forum",
+                "href": "https://mindlamp.discourse.group/"
+              },
+              {
+                "label": "GitHub",
+                "href": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/"
+              },
+              {
+                "label": "Contact",
+                "href": "mailto:team@digitalpsych.org"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "style": "dark",
+        "links": [],
+        "copyright": "© 2021 LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
+      }
+    },
+    "presets": [
+      [
+        "@docusaurus/preset-classic",
+        {
+          "googleAnalytics": {
+            "trackingID": "UA-192736629-1"
+          },
+          "docs": {
+            "routeBasePath": "/",
+            "showLastUpdateAuthor": true,
+            "showLastUpdateTime": true,
+            "sidebarPath": "./sidebar.json",
+            "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/"
+          },
+          "blog": {
+            "blogTitle": "LAMP Platform",
+            "blogDescription": "The LAMP Platform documentation.",
+            "blogSidebarTitle": "All updates",
+            "blogSidebarCount": 10000,
+            "postsPerPage": 1,
+            "feedOptions": {
+              "type": "all",
+              "copyright": "© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
+            }
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "docusaurus-plugin-openapi",
+        {
+          "routeBasePath": "api",
+          "openapiPath": "./openapi.json"
+        }
+      ],
+      [
+        "@easyops-cn/docusaurus-search-local",
+        {
+          "indexDocs": true,
+          "indexBlog": true,
+          "indexPages": true,
+          "hashed": true
+        }
+      ]
     ]
   }
 }

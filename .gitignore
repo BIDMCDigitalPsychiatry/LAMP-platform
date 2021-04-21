@@ -8,6 +8,8 @@ package-lock.json
 # Generated files
 .docusaurus
 .cache-loader
+openapi.json
+sidebar.json
 
 # Misc
 .DS_Store
