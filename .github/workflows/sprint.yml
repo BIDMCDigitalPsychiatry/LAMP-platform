@@ -1,0 +1,13 @@
+name: Sprint Milestone
+on:
+  schedule:
+    - cron: "0 12 * * 1" # every Monday at 12am UTC
+jobs:
+  sprint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: davideviolante/sprint-milestone-action@v2.1.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        sprint-duration: 2 # weeks
