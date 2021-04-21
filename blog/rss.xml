@@ -7,7 +7,7 @@
         <lastBuildDate>Thu, 01 Apr 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <copyright>© 2021 LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
+        <copyright>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
         <item>
             <title><![CDATA[Documentation Overhaul]]></title>
             <link>https://docs.lamp.digital/blog/2021/04/01/</link>
