@@ -1,7 +1,4 @@
----
-title: Using Document Transformations
-slug: jsonata
----
+# Using Document Transformations
 
 # Overview
 

@@ -1,7 +1,4 @@
----
-title: Delete and Schedule Activities
-slug: delete_activities
----
+# Delete and Schedule Activities
 
 # Delete an Existing Activity
 

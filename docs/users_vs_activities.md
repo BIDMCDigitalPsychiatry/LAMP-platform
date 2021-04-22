@@ -1,7 +1,4 @@
----
-title: Users vs Activities Tab
-slug: users_vs_activities
----
+# Users vs Activities Tab
 
 # Users
 

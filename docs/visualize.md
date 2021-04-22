@@ -1,7 +1,4 @@
----
-title: Visualize data
-slug: visualize
----
+# Visualize data
 
 If you would like to hide graphs on the Prevent page from patients or participants, [please contact us here.](mailto:team@digitalpsych.org)
 

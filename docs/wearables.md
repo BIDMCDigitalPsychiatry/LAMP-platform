@@ -1,7 +1,4 @@
----
-title: Wearables
-slug: wearables
----
+# Wearables
 
 ![](assets/wearables.png)
 

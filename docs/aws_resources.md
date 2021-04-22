@@ -1,7 +1,4 @@
----
-title: Preparing Resources on AWS
-slug: aws_resources
----
+# Preparing Resources on AWS
 
 The following instructions will result in a Docker Swarm setup prepared to deploy LAMP. You will need to continue following the instructions after this phase to successfully configure LAMP.
 

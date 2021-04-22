@@ -1,7 +1,5 @@
----
-title: Components of the LAMP Platform
-slug: components_of_lamp
----
+# Components of the LAMP Platform
+
 The LAMP Platform API Server manages all internal components and inter-component message-passing. Its components are embedded within Docker containers and use Docker Swarm for orchestration. Docker Compose and Kubernetes may also be used to deploy the components. Please see **Deployment Recommendations** if you do not plan on using Docker.
 
 ![](assets/Platform_Overview.png)

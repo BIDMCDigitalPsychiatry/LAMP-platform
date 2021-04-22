@@ -1,7 +1,4 @@
----
-title: Costs of Deploying the LAMP Platform
-slug: costs
----
+# Costs of Deploying the LAMP Platform
 
 The components of the LAMP Platform rely on IT infrastructure that can be self-hosted by your organization (sometimes called "on-prem") or hosted by a cloud provider such as Amazon or Google. 
 

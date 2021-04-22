@@ -1,7 +1,4 @@
----
-title: Create or Manage Patients and Participants
-slug: create_patients_participants
----
+# Create or Manage Patients and Participants
 
 ### Creating a New Patient or Participant
 

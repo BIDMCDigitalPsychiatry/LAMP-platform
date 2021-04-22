@@ -1,8 +1,4 @@
----
-title: Customize and Schedule Activities
-slug: customize_activities
----
-# Creating a New Activity for Manage
+# Customize and Schedule Activities
 
 To create any activity that shows up on the manage page (e.g. Jewels A or B):
 

@@ -1,7 +1,4 @@
----
-title: Consortium Partner Guidelines and Principles
-slug: consortium_guidelines
----
+# Consortium Partner Guidelines and Principles
 
 The LAMP Platform is open source, but please note that in order to receive the following benefits you **must** be a consortium partner.
 

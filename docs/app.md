@@ -1,7 +1,4 @@
----
-title: Download and Use mindLAMP
-slug: app
----
+# Download and Use mindLAMP
 
 ![](assets/banner.png)
 

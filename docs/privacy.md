@@ -1,7 +1,4 @@
----
-title: Privacy Policy
-slug: privacy
----
+# Privacy Policy
 
 # Your Personal Information
 

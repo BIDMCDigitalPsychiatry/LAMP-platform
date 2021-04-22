@@ -1,7 +1,4 @@
----
-title: LAMP Consortium Requirements
-slug: consortium_requirements
----
+# LAMP Consortium Requirements
 
 ## 1. Human subject research conducted with the mindLAMP app requires the approval of an Ethics Review Board or Institutional Review Board.
 

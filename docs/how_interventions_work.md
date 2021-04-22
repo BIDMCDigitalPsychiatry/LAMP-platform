@@ -1,7 +1,4 @@
----
-title: How Interventions Work
-slug: how_interventions_work
----
+# How Interventions Work
 
 1. Patient logs into mobile app (iOS/Android)
 2. Mobile app uses Study configuration to activate device sensor data collection (i.e. which sensors, frequency per sensor, misc. settings)

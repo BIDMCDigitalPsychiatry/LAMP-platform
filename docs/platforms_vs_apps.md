@@ -1,7 +1,4 @@
----
-title: Platforms vs. Apps
-slug: platforms_vs_apps
----
+# Platforms vs. Apps
 
 > **Healthcare platforms do much more than apps.**
 

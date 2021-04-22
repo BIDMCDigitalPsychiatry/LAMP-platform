@@ -1,7 +1,5 @@
----
-title: Create Activities
-slug: create_activities
----
+# Create Activities
+
 ### Create a New Activity for the Assess and Manage tabs
 
 If you would like to create your own custom activity, you can do so by writing it in html/javascript. There is no required structure or framework; as long as it is in html/javascript it will work with LAMP.

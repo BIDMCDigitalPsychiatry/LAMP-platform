@@ -1,7 +1,4 @@
----
-title: View the Dashboard
-slug: view_dashboard
----
+# View the Dashboard
 
 The app can be customized to your organization or clinic's need to include all or just some of the below sections. Choose the ones that suit your needs best. Some visualizations will only be possible when certain data is collected. We are always working to create new visualizations. 
 

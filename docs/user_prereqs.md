@@ -1,7 +1,4 @@
----
-title: LAMP User Prerequisites
-slug: user_prereqs
----
+# LAMP User Prerequisites
 
 ### User Types
 

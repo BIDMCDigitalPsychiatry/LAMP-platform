@@ -1,7 +1,4 @@
----
-title: Deployment Recommendations
-slug: deployment_recs
----
+# Deployment Recommendations
 
 # Disclosure
 

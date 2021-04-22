@@ -1,7 +1,4 @@
----
-title: Accessing Your Account
-slug: accessing_account
----
+# Accessing Your Account
 
 ### Step 1: Open your phone or desktop browser and navigate to the mindLAMP app.
 

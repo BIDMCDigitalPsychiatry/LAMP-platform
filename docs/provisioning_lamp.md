@@ -1,7 +1,4 @@
----
-title: Provisioning the LAMP Platform
-slug: provisioning_lamp
----
+# Provisioning the LAMP Platform
 
 ![](assets/AWS_Mini_Map.png)
 

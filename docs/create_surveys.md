@@ -1,8 +1,4 @@
----
-title: Create Surveys
-slug: create_surveys
----
-# Create a New Survey for the Assess tab.
+# Create Surveys
 
 Need some inspiration to create your survey? Browse our **Survey Instrument Library**
 

@@ -1,8 +1,4 @@
----
-title: Creating and Customizing Tips
-slug: create_tips
----
-# Creating and Customizing a Tip for Learn
+# Creating and Customizing Tips
 
 Navigate to the activities page click the “+ Add” button, and then scroll to the bottom and click “tips”.
 

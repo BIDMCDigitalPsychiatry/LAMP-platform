@@ -1,7 +1,4 @@
----
-title: Types of Users
-slug: user_types
----
+# Types of Users
 
 # **Self-Deploying User**
 

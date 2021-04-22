@@ -1,7 +1,4 @@
----
-title: MAPNET
-slug: mapnet
----
+# MAPNET
 
 ### Current MAPNET Specific Features and Information
 

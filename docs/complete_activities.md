@@ -1,7 +1,5 @@
----
-title: Take Surveys and Complete Activities
-slug: complete_activities
----
+# Take Surveys and Complete Activities
+
 ### Step 1: View your Feed.
 
 ![](assets/feed.jpg)

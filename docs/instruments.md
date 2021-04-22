@@ -1,7 +1,4 @@
----
-title: Survey Instrument Library
-slug: instruments
----
+# Survey Instrument Library
 
 Import existing surveys instruments into your LAMP project! To do so, open one of the surveys pages below and download the survey json file hosted there. Then, import the file into the LAMP dashboard.
 

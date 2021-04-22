@@ -1,7 +1,4 @@
----
-title: Cortex
-slug: cortex
----
+# Cortex
 
 ## **What is Cortex?**
 

@@ -1,7 +1,4 @@
----
-title: Deploying the LAMP Platform
-slug: deploying_lamp
----
+# Deploying the LAMP Platform
 
 **You must have a configured Docker Swarm cluster to continue.**
 Please follow all steps below in the exact order specified, though you may skip optional steps.

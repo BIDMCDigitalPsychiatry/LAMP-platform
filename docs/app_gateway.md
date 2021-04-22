@@ -1,7 +1,4 @@
----
-title: Working with the App Gateway
-slug: app_gateway
----
+# Working with the App Gateway
 
 The app gateway requires an API Key to make requests and supports `apns` (Apple device push notification service), `gcm` (Google device push notification service), `mailto` (standard mail address via AWS SES), `sms` (standard phone number SMS via AWS SNS), and `slack` (a Slack channel API hook) recipients. 
 
