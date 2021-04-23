@@ -1,4 +1,12 @@
-﻿# Publications with LAMP
+# Publications with LAMP
+ 
+:::info
+
+If you use the LAMP Platform in your projects or publications, please cite the latest release at the time of publication using the DOI below. (This image will automatically always display only the latest version's DOI.)
+
+[![DOI](https://zenodo.org/badge/311382406.svg)](https://zenodo.org/badge/latestdoi/311382406)
+
+:::
 
 |Name                                                                                                                                                                     |Citation                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
