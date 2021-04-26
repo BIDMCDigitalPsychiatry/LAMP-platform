@@ -6,7 +6,7 @@ Users can choose to enroll in a LAMP Consortium membership to become a consortiu
 
 ## ① **Support**
 
-The Division of Digital Psychiatry will provide partners two hours of technical support time to set up mindLAMP. Issues or bugs can be reported in [our feedback system here](https://www.notion.so/Report-a-Bug-or-Request-a-Feature-be1e3c107e354663b2d1726632816d99) and will be prioritized. Members are encouraged to post any mindLAMP related questions and comments in our [online forum here](https://community.lamp.digital/) .
+The Division of Digital Psychiatry will provide partners two hours of technical support time to set up mindLAMP. Issues or bugs can be reported in [our feedback system here](https://docs.lamp.digital/bug) and will be prioritized. Members are encouraged to post any mindLAMP related questions and comments in our [online forum here](https://community.lamp.digital/) .
 
 ## ② **Collaborative** **Analysis**
 
