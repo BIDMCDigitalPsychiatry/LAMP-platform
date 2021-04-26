@@ -61,6 +61,7 @@ Main:
   - instruments
   - wearables
   - dont_kill_my_app
+  - updates_tutorial
 - type: category
   label: LAMP for IT
   items:
