@@ -26,9 +26,9 @@ Location: Boston, Massachusetts, United States
 > The objective of our research using the mindLAMP app is to understand how one’s internal and contextual experience shapes cognitive function from moment to moment. Our current work involves smartphone assessment of cognition and context in young adults as well as individuals with Parkinson’s disease. Our hope is through digital phenotyping we can determine how patterns of fluctuation can help improve clinical diagnosis and point us towards personalized and precision interventions.
 
 <details>
-   <summary> To learn more, [you can read this article](https://www.bu.edu/ihsip/2019/09/17/cognitive-testing-in-the-wild/) published by [Emma Weizenbaum, MA](https://www.bu.edu/neuropsychology/lab-members/emma-weizenbaum-ma/).</summary>
+   <summary> To learn more, [you can read this article](https://www.bu.edu/ihsip/2019/09/17/cognitive-testing-in-the-wild/) published by [Emma Weizenbaum, MA](https://www.bu.edu/neuropsychology/lab-members/emma-weizenbaum-ma/). </summary>
 
-- **Abstract:** Assessing the convergence between smartphone- and lab-based neuropsychological assessment
+ - **Abstract:** Assessing the convergence between smartphone- and lab-based neuropsychological assessment
 
     **Authors:** Emma Weizenbaum, Alice Cronin-Golomb, John Torous, Daniel Fulford
 
@@ -40,7 +40,7 @@ Location: Boston, Massachusetts, United States
 
     **Conclusions** We provide preliminary evidence of convergent validity between smartphone-based assessments of complex attention and working memory and traditional neuropsychological tests in people with PD. Self-report of executive dysfunction did not relate to objective lab- or smartphone-based measures. These findings pave the way for a new era of more personalized assessment of cognition in real-world settings, with potential for more precise diagnosis and treatment.
 
-- **Abstract:** Mobile cognitive assessment via smartphones: Studying how context shapes cognition in young adults and persons with Parkinson’s disease
+ - **Abstract:** Mobile cognitive assessment via smartphones: Studying how context shapes cognition in young adults and persons with Parkinson’s disease
 
     **Authors** Emma Weizenbaum, Alice Cronin-Golomb, Emma L. Pinsky, John Torous, Daniel Fulford
 
