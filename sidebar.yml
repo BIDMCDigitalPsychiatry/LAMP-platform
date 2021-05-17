@@ -41,6 +41,7 @@ Main:
 - type: category
   label: New Users Start Here
   items:
+  - overview
   - accessing_account
   - logging_in
   - create_patients_participants
