@@ -1,12 +1,21 @@
 # Publications with LAMP
  
-:::note Citing the LAMP Platform
+:::
+
+note Citing the LAMP Platform
 
 If you use the LAMP Platform in your projects or publications, please cite the latest release at the time of publication using the DOI below. (This image will automatically always display only the latest version's DOI.)
 
 [![DOI](https://zenodo.org/badge/311382406.svg)](https://zenodo.org/badge/latestdoi/311382406)
 
 :::
+### Smartphone-Based Neuropsychological Assessment in Parkinson’s Disease: Feasibility, Validity, and Contextually Driven Variability in Cognition
+
+[![](assets/weizenbaum_paper.jpg)](assets/Weizenbaum%20smartphone%20cognition%20PD%20JINS%20May%202021.pdf)
+
+```
+Weizenbaum, E., Fulford, D., Torous, J., Pinsky, E., Kolachalama, V., & Cronin-Golomb, A. (2021). Smartphone-Based Neuropsychological Assessment in Parkinson’s Disease: Feasibility, Validity, and Contextually Driven Variability in Cognition. Journal of the International Neuropsychological Society, 1-13. doi:10.1017/S1355617721000503
+```
 
 ### A pilot study using ecological momentary assessment via smartphone application to identify adolescent problematic internet use
 
