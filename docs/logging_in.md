@@ -31,6 +31,10 @@ The **Name** field of your very first credential will always be reset to `Defaul
 
 ![](assets/Screen_Shot_2020-10-02_at_3.26.07_PM.png)
 
+### Video Tutorial
+
+[![Video Explanation](assets/add_researcher_video.jpg)](https://www.youtube.com/watch?v=mp9HrcIt4B0)
+
 ## Reset a Clinican's or Researcher's Password (Admins Only)
 
 ![](assets/users_tab.jpg)
