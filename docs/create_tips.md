@@ -1,4 +1,4 @@
-# Creating and Customizing Tips
+# Create and Customize Tips
 
 [![Video Explanation](assets/create_tips_video.jpg)](https://youtu.be/5Hf3CPCgC50)
 *How to Create a Tip from the Patient Profile*
