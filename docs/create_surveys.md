@@ -1,5 +1,9 @@
 # Create and Customize Surveys
 
+[![Video Explanation](assets/create_survey_video.jpg)](https://youtu.be/0VkPQBwqLTc)
+*How to Create a Survey from the Patient Profile*
+
+
 Need some inspiration to create your survey? Browse our **Survey Instrument Library**
 
 Survey instruments and other Activities in the LAMP Platform afford you automatic version control. In other software or when managing “paper & pencil” data, it is typically difficult, if not impossible, to track changes to survey questions or survey responses when administered with a patient. 
