@@ -2,6 +2,10 @@
 
 If you would like to hide graphs on the Prevent page from patients or participants, [please contact us here.](mailto:team@digitalpsych.org)
 
+## Video Tutorial
+[![Video Explanation](assets/view_data_video.jpg)](https://www.youtube.com/watch?v=XJHzGU695YM)
+
+
 ### Step 1: View the different kinds of data available.
 
 ![](assets/Screen_Shot_2020-10-02_at_3.01.26_PM.png)
