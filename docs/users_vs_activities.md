@@ -1,4 +1,4 @@
-# Users vs Activities Tab
+# Users vs Activities vs Sensors vs Studies Tab
 
 # Users
 
@@ -61,3 +61,36 @@ Type indicates if an activity is a tip, survey, cognitive test, or breathe activ
 Study indicates which study an activity is a part of. To filter activities by what study they are associated with, select the drop down menu "Filter Results." To view the activities in a selected study, click on the study's bubble underneath the search bar.
 
 ![](assets/Untitled_51.png)
+
+# Sensors
+
+A clinician or researcher can navigate to the activities page by selecting "Sensors" on the left menu bar of the dashboard. GPS and heart rate are examples of sensors.
+The blue "Add" button is used to add sensors.
+
+Each sensor will the following attributes:
+
+### Name
+
+The name of the sensor describes what the activity itself is; for example, "gps" would be the gps sensor).
+
+### Study
+
+Study indicates which study an sensor is a part of. To filter sensors by what study they are associated with, select the drop down menu "Filter Results." To view the sensors in a selected study, click on the study's bubble underneath the search bar.
+
+# Studies
+
+A clinician or researcher can navigate to the activities page by selecting "Studies" on the left menu bar of the dashboard.  
+
+The blue "Add" button is used to add sensors.
+
+### Name
+
+The name of the study. You can add a new study or group from either the "Users" tab or the "Studies" tab. See instructions below:
+
+[![Video Explanation](assets/add_group_video.jpg)](https://www.youtube.com/watch?v=BuBvGKFsOBY)
+
+You are able to add a new user and a new group at the same time. You can also duplicate an existing group. See instructions below:
+
+[![Video Explanation](assets/add_group_user_video.jpg)](https://https://www.youtube.com/watch?v=YO7yutC4j7o)
+
+
