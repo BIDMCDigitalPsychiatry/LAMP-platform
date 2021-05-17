@@ -49,3 +49,6 @@ Once you create your journal activity, it will show up in the Manage tab. Howeve
 7. The patient or participant will receive a feed item and a notification on their phone at the specified time.
 
 ![](assets/schedule.jpg)
+
+[![Video Explanation](assets/schedule_notifications.jpg)](https://www.youtube.com/watch?v=LegFC4ZB1ro)
+*How to schedule an activity from the Patient Profile*
