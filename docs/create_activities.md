@@ -2,6 +2,9 @@
 
 ### Create a New Activity for the Assess and Manage tabs
 
+[![Video Explanation](assets/manage_act_video.jpg)](https://www.youtube.com/watch?v=SJpWGlI_jdQ)
+*How to add a Manage activity from the Patient Profile*
+
 If you would like to create your own custom activity, you can do so by writing it in html/javascript. There is no required structure or framework; as long as it is in html/javascript it will work with LAMP.
 
 Survey instruments and other Activities in the LAMP Platform afford you automatic version control. In other software or when managing “paper & pencil” data, it is typically difficult, if not impossible, to track changes to survey questions or survey responses when administered with a patient. 
