@@ -15,6 +15,9 @@ If you are using mindLAMP with a web browser like Chrome, Safari, Firefox etc. t
 
 HealthKit data is only available with wearables with two exceptions: step count and sleep data. Step count can be gathered through your mobile device, and sleep data can be gathered by downloading specific apps on iOS (napbot) and Android (sleep as android). mindLAMP requires WatchOS 7 and WearOS 2.
 
+### What can I customize to my study or clinic?
+You are able to customize tips in Learn, surveys in Assess, activities in Assess and Manage, and potentially visualizations in Prevent.
+
 ### What's a system administrator?
 
 This is usually your Information Technology (IT) or Information Services (IS) department at your institution.
