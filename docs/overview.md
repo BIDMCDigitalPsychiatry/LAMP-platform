@@ -1,8 +1,19 @@
-# How does the mindLAMP App Work?
+# How does the mindLAMP app work?
 [![Video Explanation](assets/mindlamp_video.jpg)](https://www.youtube.com/watch?v=yLWyh5x7hxU)
 
-# How does the LAMP Dashboard Work?
+# How does the LAMP dashboard work?
 [![Video Explanation](assets/dashboard_video.jpg)](https://www.youtube.com/watch?v=vLXCSL6zO6k)
 
-# What can I Customize to my Study or Clinic?
-You are able to customize tips in Learn, surveys in Assess, activities in Assess and Manage, and potentially visualizations in Prevent.
+# What can I customize to my study or clinic?
+
+## Learn
+You can customize tips in Learn and by uploading custom content including images, videos, text, etc.
+
+## Assess
+You are able to create custom surveys and  use surveys from the Division of Digital Psychiatry's survey instrument library. You are also able to customize already existing cognitive tests such as Jewels by specifying the number of jewels and time limit.
+
+## Manage
+You can customize existing activities in Manage such as Breathe by uploading your own audio files.
+
+## Prevent
+You have the option to program new visualizations in Prevent. You are also able to hide any visualizations from patients or participants.
