@@ -1,5 +1,8 @@
 # Creating and Customizing Tips
 
+[![Video Explanation](assets/create_tips_video.jpg)](https://youtu.be/5Hf3CPCgC50)
+*How to Create a Tip from the Patient Profile*
+
 Navigate to the activities page click the “+ Add” button, and then scroll to the bottom and click “tips”.
 
 1. Log in to the dashboard and navigate to the Activities tab.
