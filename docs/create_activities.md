@@ -1,4 +1,4 @@
-# Create Activities
+# Create and Customize Activities
 
 ### Create a New Activity for the Assess and Manage tabs
 
