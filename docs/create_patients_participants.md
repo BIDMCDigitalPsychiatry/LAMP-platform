@@ -1,5 +1,19 @@
 # Create or Manage Patients and Participants
 
+# Video Tutorials
+
+You can add a user to an existing group. See instructions below:
+
+[![Video Explanation](assets/add_user_existing_group.jpg)](https://youtu.be/aYqDNHMp9Gg)
+
+You are able to add a new user and a new group at the same time. You can also duplicate an existing group. See instructions below:
+
+[![Video Explanation](assets/add_group_user_video.jpg)](https://www.youtube.com/watch?v=YO7yutC4j7o)
+
+You can add a new study or group from either the "Users" tab or the "Studies" tab. See instructions below:
+
+[![Video Explanation](assets/add_group_video.jpg)](https://www.youtube.com/watch?v=BuBvGKFsOBY)
+
 ### Creating a New Patient or Participant
 
 ![](assets/users_tab.jpg)
