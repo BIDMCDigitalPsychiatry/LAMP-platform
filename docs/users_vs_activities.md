@@ -91,6 +91,6 @@ The name of the study. You can add a new study or group from either the "Users" 
 
 You are able to add a new user and a new group at the same time. You can also duplicate an existing group. See instructions below:
 
-[![Video Explanation](assets/add_group_user_video.jpg)](https://https://www.youtube.com/watch?v=YO7yutC4j7o)
+[![Video Explanation](assets/add_group_user_video.jpg)](https://www.youtube.com/watch?v=YO7yutC4j7o)
 
 
