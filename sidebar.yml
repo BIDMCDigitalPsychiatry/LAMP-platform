@@ -89,8 +89,8 @@ Main:
   - data_types
   - python
   - r
-  - anomaly_detection_r
-- cortex
+  - cortex
+  - cortex_example
 - consortium_users
 - publications
 - mapnet
