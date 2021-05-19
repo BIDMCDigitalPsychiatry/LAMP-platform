@@ -4,7 +4,7 @@
 
 ### Requirements
 
-mindLAMP requires WatchOS 7 and WearOS 2.
+mindLAMP requires WatchOS 7 (series 5 or later) and WearOS 2.
 
 ### Do I need wearables to collect passive data?
 
