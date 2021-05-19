@@ -2,7 +2,7 @@
 It's easy to get started with analysis on data collected from mindLAMP. In this example, we'll walk through using [Cortex](https://docs.lamp.digital/cortex) with [Luminol](https://github.com/linkedin/luminol), an anomaly detection library, and [Altair](https://altair-viz.github.io), an interactive visualization library, to tag and visualize survey scores for a particular patient.
 
 :::info
-[Tap here to directly view the Jupyter Notebook for this example.](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/blob/master/docs/cortex_example.ipynb)
+This sample code is not intended to be used in clinical practice. All data and visualizations provided here are examples only and not linked to actual patients in any way, shape, or form. [Tap here to directly view the Jupyter Notebook for this example.](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/blob/master/docs/cortex_example.ipynb)
 :::
 
 
