@@ -30,12 +30,13 @@ df.index = df.timestamp.astype(int) // 10**3
 df['anomaly'] = 0 # default to no anomaly
 ```
 
-    [INFO:feature_types:_wrapper2] Processing primary feature "cortex.survey_scores"...
-    [INFO:feature_types:_wrapper2] Cortex caching directory set to: /home/_data/cortex_cache
-    [INFO:feature_types:_wrapper2] Processing raw feature "lamp.survey"...
-    [INFO:feature_types:_wrapper2] No saved raw data found, getting new...
-    [INFO:feature_types:_wrapper2] Saving raw data as "/home/_data/cortex_cache/survey_U1089294357_0_1621449536000.cortex"...
-
+```
+[INFO:feature_types:_wrapper2] Processing primary feature "cortex.survey_scores"...
+[INFO:feature_types:_wrapper2] Cortex caching directory set to: /home/_data/cortex_cache
+[INFO:feature_types:_wrapper2] Processing raw feature "lamp.survey"...
+[INFO:feature_types:_wrapper2] No saved raw data found, getting new...
+[INFO:feature_types:_wrapper2] Saving raw data as "/home/_data/cortex_cache/survey_U1089294357_0_1621449536000.cortex"...
+```
 
 In addition to the survey `score` column, we also have a `category` column that's derived from custom survey grouping. The Cortex feature `survey_scores` automatically scores each question for you, whether it's a Likert scale, list of options, True/False, and so on. Then, it groups together questions from a single survey, such as "Weekly Survey" by predefined categories, like "Mood" and "Anxiety" to better understand symptom domains.
 
@@ -48,41 +49,28 @@ df
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
-      <th>id</th>
-      <th>category</th>
-      <th>timestamp</th>
-      <th>score</th>
-      <th>anomaly</th>
+      <th style="text-align: right;"></th>
+      <th style="text-align: right;">id</th>
+      <th style="text-align: right;">category</th>
+      <th style="text-align: right;">timestamp</th>
+      <th style="text-align: right;">score</th>
+      <th style="text-align: right;">anomaly</th>
     </tr>
     <tr>
-      <th>timestamp</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th style="text-align: right;">timestamp</th>
+      <th style="text-align: right;"></th>
+      <th style="text-align: right;"></th>
+      <th style="text-align: right;"></th>
+      <th style="text-align: right;"></th>
+      <th style="text-align: right;"></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>1546087152000000</th>
+      <th style="vertical-align: top;">1546087152000000</th>
       <td>U1089294357</td>
       <td>Sleep and Social</td>
       <td>2018-12-29 12:39:12</td>
@@ -90,7 +78,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1545836461000000</th>
+      <th style="vertical-align: top;">1545836461000000</th>
       <td>U1089294357</td>
       <td>Sleep and Social</td>
       <td>2018-12-26 15:01:01</td>
@@ -98,7 +86,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1545696447000000</th>
+      <th style="vertical-align: top;">1545696447000000</th>
       <td>U1089294357</td>
       <td>Sleep and Social</td>
       <td>2018-12-25 00:07:27</td>
@@ -106,7 +94,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1545449535000000</th>
+      <th style="vertical-align: top;">1545449535000000</th>
       <td>U1089294357</td>
       <td>Sleep and Social</td>
       <td>2018-12-22 03:32:15</td>
@@ -114,7 +102,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1545262330000000</th>
+      <th style="vertical-align: top;">1545262330000000</th>
       <td>U1089294357</td>
       <td>Sleep and Social</td>
       <td>2018-12-19 23:32:10</td>
@@ -122,7 +110,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>...</th>
+      <th style="vertical-align: top;">...</th>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -130,7 +118,7 @@ df
       <td>...</td>
     </tr>
     <tr>
-      <th>1535656477000000</th>
+      <th style="vertical-align: top;">1535656477000000</th>
       <td>U1089294357</td>
       <td>Psychosis and Social</td>
       <td>2018-08-30 19:14:37</td>
@@ -138,7 +126,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1535480282000000</th>
+      <th style="vertical-align: top;">1535480282000000</th>
       <td>U1089294357</td>
       <td>Psychosis and Social</td>
       <td>2018-08-28 18:18:02</td>
@@ -146,7 +134,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1535480042000000</th>
+      <th style="vertical-align: top;">1535480042000000</th>
       <td>U1089294357</td>
       <td>Psychosis and Social</td>
       <td>2018-08-28 18:14:02</td>
@@ -154,7 +142,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1535479779000000</th>
+      <th style="vertical-align: top;">1535479779000000</th>
       <td>U1089294357</td>
       <td>Psychosis and Social</td>
       <td>2018-08-28 18:09:39</td>
@@ -162,7 +150,7 @@ df
       <td>0</td>
     </tr>
     <tr>
-      <th>1535478102000000</th>
+      <th style="vertical-align: top;">1535478102000000</th>
       <td>U1089294357</td>
       <td>Psychosis and Social</td>
       <td>2018-08-28 17:41:42</td>
