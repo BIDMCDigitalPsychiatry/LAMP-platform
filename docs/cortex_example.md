@@ -51,7 +51,7 @@ You can then load this CSV file into Microsoft Excel (or Apple Numbers on macOS)
 
 ![](assets/cortex_excel_survey_group.png)
 
-# Case Example: Anomaly Detection
+## Case Example: Anomaly Detection
 It's easy to get started with more advanced analysis on data collected from mindLAMP. In this example, we'll walk through using [Cortex](https://docs.lamp.digital/cortex) with [Luminol](https://github.com/linkedin/luminol), an anomaly detection library, and [Altair](https://altair-viz.github.io), an interactive visualization library, to tag and visualize survey scores for a particular patient.
 
 :::info
@@ -70,7 +70,7 @@ from luminol.anomaly_detector import AnomalyDetector
 
     
 
-## Preparing the data using Cortex
+### Preparing the data using Cortex
 First, call `cortex.run(...)` with your Participant ID of interest. Then, we'll need to rearrange the resultant data frame by setting the index to the `timestamp` and adding an `anomaly` column for later.
 
 
@@ -94,7 +94,7 @@ df['anomaly'] = 0 # default to no anomaly
 In addition to the survey `score` column, we also have a `category` column that's derived from custom survey grouping. The Cortex feature `survey_scores` automatically scores each question for you, whether it's a Likert scale, list of options, True/False, and so on. Then, it groups together questions from a single survey, such as "Weekly Survey" by predefined categories, like "Mood" and "Anxiety" to better understand symptom domains.
 
 
-## Detecting anomalies using Luminol
+### Detecting anomalies using Luminol
 Now, we feed the Luminol detector our `score` column. It then processes the data and returns anomalous time windows tagged with an anomaly score. We'll tag the actual survey scores in our DataFrame that lie within these windows with their respective anomaly score. We need to iterate over each category and tag anomalies within the category independent of survey scores from other categories.
 
 
@@ -107,7 +107,7 @@ for cat in df.category.unique():
         df.loc[ts & (df.category == cat), 'anomaly'] = a.anomaly_score
 ```
 
-## Visualizing the anomalies using Altair
+### Visualizing the anomalies using Altair
 We'll use the Altair interactive plotting library to break question categories out into their own sub-charts. We'll also bring extra attention to anomalous survey score data points by increasing their size and changing their color.
 
 
