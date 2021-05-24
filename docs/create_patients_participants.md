@@ -73,10 +73,10 @@ Though it appears that the patient has been “renamed,” this new alias is onl
 
 ### Reset a Patient's Password
 
-![](assets/edit_pass.jpg)
+![](assets/edit_password.png)
 
 1. Log into the app and click on the "Users" tab.
-2. Select the checkbox next to the patient whose credentials you wish to change.
+2. Select the key next to the patient whose credentials you wish to change.
 3. Select **Edit Password.**
 4. Select the credential you wish to change and click **Reset Password.**
 5. Enter your new password and select the circled check mark to save it.
