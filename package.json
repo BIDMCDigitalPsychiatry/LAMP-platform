@@ -88,6 +88,9 @@
       "disableSwitch": false,
       "respectPrefersColorScheme": true,
       "image": "logo.png",
+      "googleAnalytics": {
+        "trackingID": "UA-192736629-1"
+      },
       "navbar": {
         "title": "LAMP Platform",
         "hideOnScroll": false,
@@ -156,9 +159,6 @@
       [
         "@docusaurus/preset-classic",
         {
-          "googleAnalytics": {
-            "trackingID": "UA-192736629-1"
-          },
           "docs": {
             "routeBasePath": "/",
             "showLastUpdateAuthor": true,
