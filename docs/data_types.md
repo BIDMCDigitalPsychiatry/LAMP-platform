@@ -97,7 +97,7 @@ Blood pressure is
 
 # Bluetooth
 
-SensorSpec: lamp.bluetooth
+Cortex: cortex.raw.bluetooth
 
 ### Description
 
@@ -107,9 +107,9 @@ It is supported for Android devices
 
 ### Data
 
-- `device_id: string`: unique identifier for detected device
-- `frequency: number`: (units: Hz) WiFi band frequency
-- `rssi: number`: (units: DB) WiFI signal strength
+- `timestamp: number`:  UTC timestamp of the Bluetooth event
+- `bt_address: string`: Address of Bluetooth event 
+- `bt_rssi: number`: (units: DB) WiFI signal strength
 
 # Calls
 
@@ -322,7 +322,7 @@ SensorSpec: lamp.weight
 
 # WiFi
 
-SensorSpec: lamp.wifi
+Cortex: cortex.raw.wifi
 
 ### Description
 
@@ -332,9 +332,9 @@ It is supported for Android devices
 
 ### Data
 
-- `device__id: string`: unique identifier for detected device
-- `frequency: number`: (units: Hz) WiFi band frequency
-- `rssi: number`: (units: DB) WiFI signal strength
+- `timestamp: number`: UTC timestamp of WiFi event
+- `bssid: string`: BSSID of WiFi event
+- `ssid: string`: SSID of WiFi event
 
 - **lamp.accelerometer.motion:** records processed triaxial motion, triaxial rotation, triaxial gravity, and triaxial magnetic field data.
     1. **tilt**
