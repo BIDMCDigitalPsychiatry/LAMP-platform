@@ -158,6 +158,7 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
           NATS_SERVER: 'message_queue:4222'
         networks:
           - public
+          - default
         deploy:
           mode: replicated
           update_config:
@@ -165,6 +166,7 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
             failure_action: rollback
           labels:
             traefik.enable: 'true'
+            traefik.docker.network: 'public'
             traefik.http.routers.lamp_server.entryPoints: 'websecure'
             traefik.http.routers.lamp_server.rule: 'Host(`api.example.com`)'
             traefik.http.routers.lamp_server.tls.certresolver: 'default'
