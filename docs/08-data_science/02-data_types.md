@@ -43,7 +43,12 @@ The NBack test.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`:
+    - `score`: The computed score for the completed session.
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.
+    - `total_questions`: The total number of questions encountered during the session.	
+    - `version`: The version of the test played.  
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -68,7 +73,12 @@ The Spatial Span test, with Forward and Backward variants.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`:
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.	
+    - `type`: The integer indicating forward or backward variant.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -93,7 +103,12 @@ The Simple Memory test.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`:
+    - `score`: The computed score for the completed session. 
+    - `correct_answers`: The total number of correct answers made in the session.
+    - `wrong_answers`: The total number of incorrect answers made in the session.
+    - `total_questions`: The total number of questions encountered during the session.
+    - `version`: The version of the test played.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -119,6 +134,11 @@ The Serial 7s test.
 #### Data 
 
 - `static_data`: Unused.
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `total_attempts`: The total number of attempts made during the session.	
+    - `total_questions`: The total number of questions encountered during the session.	
+    - `version`: The version of the test played.  
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -143,7 +163,12 @@ The Cats and Dogs game.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`:
+    - `point`: The associated point value with the completed session.	
+    - `rating`:	The associated rating of the completed session.	
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.	
+    - `total_questions`: The total number of questions encountered during the session.    
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -168,7 +193,10 @@ The 3D Figure drawing game.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`: 
+    - `point`: The associated point value with the completed session.	
+    - `drawn_file_name`: The link to the file containing the drawn image.	
+    - `game_name`: The unique game name for the drawing session.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -193,7 +221,12 @@ The Visual Association test.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`:
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `total_attempts`:	The total number of attempts made during the session.	
+    - `total_questions`: The total number of questions encountered during the session.	
+    - `version`: The version of the test played.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -218,7 +251,12 @@ The Digit Span test, with Forward and Backward variants.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`: 
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.	
+    - `type`: The integer indicating forward or backward variant.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -243,7 +281,12 @@ The Temporal Order test.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`:
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.	
+    - `version`: The version of the test played.  
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -268,7 +311,11 @@ The new dot-touch variant of the Trails B test.
 
 #### Data 
 
-- `static_data`: Unused.
+- `static_data`: 
+    -  `point`: The associated point value with the completed session.	
+    -  `rating`: The associated rating of the completed session.
+    -  `score`: The computed score for the completed session.	
+    -  `total_attempts`: The total number of attempts made during the session.		
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
@@ -401,7 +448,7 @@ The bluetooth sensor logs information about the device's Bluetooth sensor and ab
     > RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
 
 
-![](assets/rssi.png)
+<img width="660" alt="Screen Shot 2021-05-12 at 11 01 50 AM" src=assets/rssi.png>
 
 ```
  {'timestamp': 1616172913842,
@@ -452,7 +499,7 @@ alt.Chart(
 # Encode "timestamp vs. address (unique count)" as a line plot.
 .mark_line().encode(x='timestamp', y='address')
 ```
-![](assets/bt_plot.png)
+<img width="653" alt="Screen Shot 2021-05-12 at 11 21 51 AM" src=assets/bt_plot.png>
 
 ### Calls
 
