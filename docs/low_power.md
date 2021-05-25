@@ -1,7 +1,4 @@
----
-title: Low Power & Connectivity Support
-slug: low_power
----
+# Low Power & Connectivity Support
 
 The LAMP Platform API Server encompasses two main purposes:
 

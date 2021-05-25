@@ -1,7 +1,4 @@
----
-title: Continuous Monitoring & Intervention Delivery
-slug: intervention_delivery
----
+# Continuous Monitoring & Intervention Delivery
 
 ![](assets/Clinic_Loop.png)
 

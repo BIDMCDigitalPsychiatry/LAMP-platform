@@ -1,7 +1,4 @@
----
-title: Importing, Exporting, and Duplicating Activities
-slug: import_activities
----
+# Importing, Exporting, and Duplicating Activities
 
 ### Exporting Your Activities
 

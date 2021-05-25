@@ -1,7 +1,4 @@
----
-title: Log In Information, Tips, and Tricks
-slug: logging_in
----
+# Log In Information, Tips, and Tricks
 
 ## Logging In
 

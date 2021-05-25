@@ -1,7 +1,4 @@
----
-title: What is the LAMP Platform?
-slug: what_is_lamp_platform
----
+# What is the LAMP Platform?
 
 LAMP stands for Learn, Assess, Manage, Prevent. It is a measurement based care platform designed for both research and clinical use. The core components are the app and the dashboard.
 

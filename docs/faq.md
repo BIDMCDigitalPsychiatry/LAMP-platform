@@ -1,7 +1,4 @@
----
-title: Frequently Asked Questions
-slug: /faq
----
+# Frequently Asked Questions
 
 ### Why are there two mindLAMP apps available? Which one should I use?
 

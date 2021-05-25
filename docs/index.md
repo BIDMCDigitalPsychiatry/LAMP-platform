@@ -1,7 +1,8 @@
 ---
-title: Welcome
 slug: /
 ---
+
+# Welcome
 
 ![](assets/LAMP_Overview.png)
 

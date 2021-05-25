@@ -1,7 +1,4 @@
----
-title: Android Don't Kill My App!
-slug: dont_kill_my_app
----
+# [Android] Don't Kill My App!
 
 ![](assets/Screen_Shot_2021-02-19_at_8.21.21_AM.png)
 

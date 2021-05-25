@@ -1,7 +1,4 @@
-﻿---
-title: Who's using LAMP?
-slug: consortium_users
----
+﻿# Who's using LAMP?
 
 ## BIDMC Anesthesiology and Surgery
 
