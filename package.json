@@ -17,7 +17,7 @@
   },
   "scripts": {
     "prestart": "npm run prebuild",
-    "prebuild": "yaml2json ./openapi.yml > ./openapi.json && yaml2json ./sidebar.yml > ./sidebar.json",
+    "prebuild": "yaml2json ./openapi.yml > ./openapi.json",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
     "build": "docusaurus build",
@@ -163,7 +163,6 @@
             "routeBasePath": "/",
             "showLastUpdateAuthor": true,
             "showLastUpdateTime": true,
-            "sidebarPath": "./sidebar.json",
             "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/"
           },
           "blog": {
