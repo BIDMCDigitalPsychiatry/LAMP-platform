@@ -1,9 +1,6 @@
----
-title: How mindLAMP, the Data Center, and Cortex Work Together
-slug: lamp_data_cortex
----
+# How mindLAMP, the Data Center, and Cortex Work Together
 
-# LAMP Platform
+## LAMP Platform
 
 ![](assets/LAMP_Overview.png)
 

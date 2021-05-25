@@ -1,9 +1,4 @@
----
-title: Security & Privacy
-slug: security
----
-
-# Introduction
+# Security & Privacy
 
 The LAMP Platform is free and open source software currently developed by Beth Israel Deaconess Medical Center but does not have any licensing restrictions for intellectual property. LAMP is safe, secure, and easy to use. Though it has broad potential, we will be using it as an interface that patients and clinicians can use together to track data and generate visual reports. It’s important to note that LAMP is not an electronic health record system. Below is an outline of the technical specifications that back privacy and security in the LAMP Platform.
 

@@ -1,10 +1,6 @@
----
-title: What are the Components of LAMP?
-slug: lamp_components
----
+# What are the Components of LAMP?
 
-# LAMP is Organized Into Four Tabs: 
-Learn, Assess, Manage Prevent
+LAMP is Organized Into Four Tabs: Learn, Assess, Manage Prevent
 
 # **LEARN**
 
