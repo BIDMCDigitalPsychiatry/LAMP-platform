@@ -14,7 +14,7 @@ This section of the app allows patients and clinicians to visualize different da
 
 ![](assets/prevent.png)
 
-![](assets/banner.png)
+![](/banner.png)
 
 ![](assets/Screen_Shot_2020-10-02_at_2.08.01_PM.png)
 

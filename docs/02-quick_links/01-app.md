@@ -4,7 +4,7 @@ slug: /app
 
 # Download mindLAMP
 
-![](assets/banner.png)
+![](/banner.png)
 
 [→ If you'd like to access mindLAMP in a compatible desktop browser, tap here instead.](https://dashboard.lamp.digital)
 
