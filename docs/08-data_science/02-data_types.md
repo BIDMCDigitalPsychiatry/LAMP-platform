@@ -447,8 +447,14 @@ The bluetooth sensor logs information about the device's Bluetooth sensor and ab
 - `bt_rssi: number`: (units: DB) WiFI signal strength
     > RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
 
+| Signal Strength | TL;DR                | 
+|-----------------|---------------------------| 
+| -30 dBm |     Amazing        | 
+| -67 dBm        |    Very Good               | 
+| -70 dBm    |     Okay    | 
+| -80 dBm              |    Not Good    | 
+| -90 dBm     | Unusable |
 
-![](assets/rssi.png)
 
 ```
  {'timestamp': 1616172913842,
