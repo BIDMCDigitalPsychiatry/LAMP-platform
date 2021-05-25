@@ -109,20 +109,12 @@ Cortex: cortex.raw.bluetooth
 
 The bluetooth sensor logs information about the device's Bluetooth sensor and about surrounding Bluetooth devices that are enabled and/or visible. The device scan for surrounding Bluetooth devices at a set frequency (default is 60 seconds). If multiple devices are detected in a single scan, they are all assigned the same timestamp.
 
-It is supported for Android devices
-
 #### Data
 
 - `timestamp: number`:  UTC timestamp of the Bluetooth event
 - `bt_address: string`: Address of Bluetooth event 
 - `bt_rssi: number`: (units: DB) WiFI signal strength
-
-> RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is.
-> [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
-
-<img width="660" alt="Screen Shot 2021-05-12 at 11 01 50 AM" src="https://user-images.githubusercontent.com/1361003/118000625-fe789d00-b313-11eb-8bef-7407ceee8ad1.png">
-
-### Raw Bluetooth Example
+    > RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
 
 ```
  {'timestamp': 1616172913842,
@@ -147,7 +139,7 @@ It is supported for Android devices
     'bt_address': 'CCF087D3-A0FC-0FDF-D7F9-1285211653FB'}}
 ```
 
-### Visualized Example
+#### Example
 
 (Sample code to generate a plot of number of unique addresses encountered per day per patient.)
 
@@ -173,9 +165,6 @@ alt.Chart(
 # Encode "timestamp vs. address (unique count)" as a line plot.
 .mark_line().encode(x='timestamp', y='address')
 ```
-
-<img width="653" alt="Screen Shot 2021-05-12 at 11 21 51 AM" src="https://user-images.githubusercontent.com/1361003/118000939-439ccf00-b314-11eb-93e6-c95a539ec349.png">
-
 
 ### Calls
 
@@ -393,8 +382,6 @@ Cortex: cortex.raw.wifi
 #### Description
 
 The wifi sensor provides information about the devices to which the user's device connects via wifi. 
-
-It is supported for Android devices
 
 #### Data
 
