@@ -452,7 +452,7 @@ alt.Chart(
 # Encode "timestamp vs. address (unique count)" as a line plot.
 .mark_line().encode(x='timestamp', y='address')
 ```
-![](assets/bt_plot.png)
+<img width="653" alt="Screen Shot 2021-05-12 at 11 21 51 AM" src=assets/bt_plot.png>
 
 ### Calls
 
