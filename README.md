@@ -12,3 +12,14 @@
 ### Editing Documentation
 
 To edit and test documentation locally after cloning the repository, run `npm start`. 
+
+### Updating OpenAPI documentation
+
+The `LAMP-protocol` repository houses the OpenAPI specification for the LAMP Protocol. To update the interactive documentation, you need to update the git submodule:
+
+```shell
+git checkout https://github.com/BIDMCDigitalPsychiatry/LAMP-platform.git
+git pull --recurse-submodules
+git submodule update --remote --recursive
+git commit -am 'Fast-forward LAMP-protocol submodule'
+```
