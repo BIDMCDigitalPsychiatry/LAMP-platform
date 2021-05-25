@@ -17,7 +17,7 @@
   },
   "scripts": {
     "prestart": "npm run prebuild",
-    "prebuild": "yaml2json ./openapi.yml > ./openapi.json",
+    "prebuild": "yaml2json ./LAMP-protocol/openapi.yml > ./openapi.json",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
     "build": "docusaurus build",

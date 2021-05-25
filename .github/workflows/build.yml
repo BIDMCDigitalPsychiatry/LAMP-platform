@@ -9,7 +9,9 @@ jobs:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with: 
+          submodules: true
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
@@ -21,7 +23,9 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with: 
+          submodules: true
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
