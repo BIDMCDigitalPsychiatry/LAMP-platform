@@ -2,7 +2,9 @@
 
 ## **What is Cortex?**
 
-The Division of Digital Psychiatry has developed a data analysis pipeline called Cortex so that researchers and clinicians with a variety of backgrounds have the tools to analyze their data. Cortex is an analysis tool that automatically turns patient or participant data into useful features that provide valuable insight to clinicians and researchers.
+The Cortex data analysis toolkit is part of the LAMP Platform, enabling researchers and clinicians with a variety of backgrounds have use pre-build tools to analyze their data and build analysis pipelines. Cortex converts patient or participant data into useful features that provide valuable clinical and research insight.
+
+![](assets/cortex_features.svg)
 
 ## **Why Cortex?**
 

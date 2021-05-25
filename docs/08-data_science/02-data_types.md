@@ -32,32 +32,38 @@ Active sensor events are produced on a rolling basis via interactions by a Parti
 
 | Name           | SensorSpec                | 
 |----------------|---------------------------| 
-| Accelerometer  | lamp.accelerometer        | 
-| Motion         | lamp.accelerometer.motion | 
-| Gyroscope      | lamp.gyroscope            | 
-| Screen         | lamp.screen_state         | 
+| Analytics      | lamp.analytics            | 
 | Location       | lamp.gps                  | 
+| Device Motion  | lamp.device_motion        | 
+|                | lamp.accelerometer        | 
+| Pedometer      | lamp.steps                | 
+| Sleep          | lamp.sleep                | 
+| Nutrition      | lamp.nutrition            | 
+| Workouts       | lamp.segment              | 
+| Screen         | lamp.screen_state         | 
+| Bluetooth & WiFi | lamp.nearby_device      | 
+| Calls & Texts  | lamp.telephony            | 
 | Blood Pressure | lamp.blood_pressure       | 
-| Calls          | lamp.calls                | 
-| SMS            | lamp.sms                  | 
-| WiFi           | lamp.wifi                 | 
-| Bluetooth      | lamp.bluetooth            | 
-| Weight         | lamp.weight               | 
-| Distance       | lamp.distance             | 
+| Blood Glucose  | lamp.blood_glucose        | 
+| Oxygen Saturation | lamp.oxygen_saturation | 
+| Body Temperature | lamp.body_temperature   | 
+| Heart Rate & HRV | lamp.heart_rate         | 
+| Respiratory Rate | lamp.respiratory_rate   | 
+| Activity Recognition | lamp.activity_recognition | 
 
-# Accelerometer
+### Accelerometer
 
 SensorSpec: lamp.accelerometer
 
-### Description
+#### Description
 
 The triaxial accelerometer measures acceleration applied to the device. Each measurement is measured in Gs and is taken relative to the coordinate plane of the device, screen facing upwards. For example, a device resting face-up on a flat surface will report a measurement with the coordinate values `<0, 0, 1>`.
 
-### Settings
+#### Settings
 
 - `frequency: number`: (units: Hz) the required accelerometer measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system.
 
-### Data
+#### Data
 
 - `x: number`: (units: G) the X-axis coordinate.
 - `y: number`: (units: G) the Y-axis coordinate.
@@ -69,7 +75,7 @@ The triaxial accelerometer measures acceleration applied to the device. Each mea
     - `2`: medium; the sensor is reporting data at an average accuracy, and environmental calibration of the device may improve data.
     - `3`: high; the sensor is reporting data at maximal accuracy and is correctly calibrated.
 
-### Example
+#### Example
 
 ```markdown
 # **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.accelerometer")**
@@ -85,7 +91,7 @@ The triaxial accelerometer measures acceleration applied to the device. Each mea
 }
 ```
 
-# Blood Pressure
+### Blood Pressure
 
 SensorSpec: lamp.blood_pressure
 
@@ -95,17 +101,17 @@ Blood pressure is
     1. **value**: number
     2. **units**: string
 
-# Bluetooth
+### Bluetooth
 
 Cortex: cortex.raw.bluetooth
 
-### Description
+#### Description
 
 The bluetooth sensor logs information about the device's Bluetooth sensor and about surrounding Bluetooth devices that are enabled and/or visible. The device scan for surrounding Bluetooth devices at a set frequency (default is 60 seconds). If multiple devices are detected in a single scan, they are all assigned the same timestamp.
 
 It is supported for Android devices
 
-### Data
+#### Data
 
 - `timestamp: number`:  UTC timestamp of the Bluetooth event
 - `bt_address: string`: Address of Bluetooth event 
@@ -171,17 +177,17 @@ alt.Chart(
 <img width="653" alt="Screen Shot 2021-05-12 at 11 21 51 AM" src="https://user-images.githubusercontent.com/1361003/118000939-439ccf00-b314-11eb-93e6-c95a539ec349.png">
 
 
-# Calls
+### Calls
 
 SensorSpec: lamp.calls
 
-### Description
+#### Description
 
 The calls sensor measures information on phone calls made and received by the user. Each event is a single phone call, with information on its type (incoming, outgoing, missed, etc), duration, and trace (the other device which the user connected with during the call). 
 
 Call type options differ between Android and iOS devices.
 
-### Data
+#### Data
 
 - `call_trace: string`: the SHA-1-encrypted source/target of the call. A device will have a consistent trace.
 - `call_type: number`: integer label for the call type
@@ -192,27 +198,27 @@ Call type options differ between Android and iOS devices.
         - `4`: busy; the user's phone was busy
 - `call_duration`: (units: seconds) the length of the call session
 
-# Distance
+### Distance
 
 SensorSpec: lamp.distance
 
-# Gyroscope
+### Gyroscope
 
 SensorSpec: lamp.gyroscope
 
-### Description
+#### Description
 
 The gyroscope sensors measures the rate of rotation around each of a device's x, y and z axes. Rotation values are in radians/second. Positive values indicate counter-clockwise rotation; negative values indicate clockwise rotation. These are raw values—i.e. they do not correct for nosie or drift.
 
-### Settings
+#### Settings
 
-### Data
+#### Data
 
 - `x: number` (units: rad/s) the rotational velocity around the x-axis. The x-axis goes from left to right, across the device's screen face
 - `y: number` (units: rad/s) the rotational velocity around the y-axis. The y-axis is vertical and points up
 - `z: number` (units: rad/s) the rotational velocity around the z-axis. The z-axis is horizontal and points out from the front screen (towards the user looking at the screen)
 
-### Example
+#### Example
 
 ```markdown
 # **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.accelerometer")**
@@ -228,19 +234,19 @@ The gyroscope sensors measures the rate of rotation around each of a device's x,
 }
 ```
 
-# Location
+### Location
 
 SensorSpec: lamp.gps
 
-### Description
+#### Description
 
 The location sensor records the device's current GPS coordinates. Depending on the device operating system and device battery level, the source of the data from this sensor may alternate between GPS antennae (high accuracy), cellular tower triangulation (moderate accuracy), WiFi triangulation (poor accuracy), or a combination of these. 
 
-### Settings
+#### Settings
 
 - `frequency: number`: (units: Hz) the required location measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system.
 
-### Data
+#### Data
 
 - `latitude: number`: (units: degrees) the coordinate's latitude.
 - `longitude: number`: (units: degrees) the coordinate's longitude.
@@ -250,7 +256,7 @@ The location sensor records the device's current GPS coordinates. Depending on t
 
 *Unsupported event properties:* `bearing` *and* `speed`*.*
 
-### Example
+#### Example
 
 ```markdown
 # **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.gps")**
@@ -266,15 +272,15 @@ The location sensor records the device's current GPS coordinates. Depending on t
 }
 ```
 
-# Motion
+### Motion
 
 SensorSpec: lamp.accelerometer.motion
 
-### Description
+#### Description
 
 The motion sensor gathers information on the device's physical movement. It includes metrics on device tilt, rotation, experienced gravity, acceleration, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
 
-### Data
+#### Data
 
 - `tilt: object`
     - 
@@ -302,7 +308,7 @@ The motion sensor gathers information on the device's physical movement. It incl
         - `2`: medium; the sensor is reporting data at an average accuracy, and environmental calibration of the device may improve data.
         - `3`: high; the sensor is reporting data at maximal accuracy and is correctly calibrated.
 
-### Example
+#### Example
 
 ```markdown
 # **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.accelerometer")**
@@ -318,36 +324,36 @@ The motion sensor gathers information on the device's physical movement. It incl
 }
 ```
 
-# SMS
+### SMS
 
 SensorSpec: lamp.sms
 
-### Description
+#### Description
 
 The sms sensor measures information on text messages sent and received by the user. Each event is a single message, with information on its type (incoming, outgoing) and trace (the other device involved in the messaging exchange). 
 
-### Data
+#### Data
 
 - `trace: string`: the SHA-1-encrypted source/target of the text message. A device will have a consistent trace.
 - `type: number`: integer label for the message type
     - `1`: received; the message was received by the user
     - `2`: sent; the message was sent by the user
 
-# Screen
+### Screen
 
 SensorSpec: lamp.screen_state
 
-### Description
+#### Description
 
 The screen state sensor records when the screen was turned on or off, when the device was locked or unlocked, and changes in battery level from charging or discharging the device. 
 
 This sensor **DOES NOT** record the amount of time spent within specific apps on the device or how many notifications were received.
 
-### Settings
+#### Settings
 
 - None
 
-### Data
+#### Data
 
 - `screen_state: number`: (units: N/A) the current device screen and lock state.
     - `0`: screen_off; the screen was turned off, either by the user or by a notification.
@@ -358,7 +364,7 @@ This sensor **DOES NOT** record the amount of time spent within specific apps on
     - `5`: battery_unplugged; the device was unplugged from the charger by the user.
 - `battery_level: number`: (units: percentage) the current battery level of the device.
 
-### Example
+#### Example
 
 ```markdown
 # **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.screen_state")**
@@ -372,25 +378,25 @@ This sensor **DOES NOT** record the amount of time spent within specific apps on
 }
 ```
 
-# Weight
+### Weight
 
 SensorSpec: lamp.weight
 
-### Description
+#### Description
 
-### Data
+#### Data
 
-# WiFi
+### WiFi
 
 Cortex: cortex.raw.wifi
 
-### Description
+#### Description
 
 The wifi sensor provides information about the devices to which the user's device connects via wifi. 
 
 It is supported for Android devices
 
-### Data
+#### Data
 
 - `timestamp: number`: UTC timestamp of WiFi event
 - `bssid: string`: BSSID of WiFi event
@@ -476,24 +482,3 @@ It is supported for Android devices
     1. **device_id**: string
     2. **frequency**: number
     3. **rssi**: number
-
-### Beta Sensors
-
-- **lamp.gps**
-- **lamp.analytics**
-- **lamp.device_motion**
-- **lamp.steps**
-- **lamp.nearby_device**
-- **lamp.telephony**
-- **lamp.screen_state**
-- **lamp.segment**
-- **lamp.sleep**
-- **lamp.nutrition**
-- **lamp.blood_glucose**
-- **lamp.blood_pressure**
-- **lamp.oxygen_saturation**
-- **lamp.body_temperature**
-- **lamp.heart_rate**
-- **lamp.respiratory_rate**
-- **lamp.accelerometer**
-- **lamp.activity_recognition**
