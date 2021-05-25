@@ -16,8 +16,10 @@
     "yamljs": "^0.3.0"
   },
   "scripts": {
+    "fix-config": "echo \"module.exports = require('./package.json').docusaurus; module.exports.plugins[0][1].openapiPath = require.resolve(module.exports.plugins[0][1].openapiPath);\" > docusaurus.config.js",
+    "gen-openapi": "yaml2json ./LAMP-protocol/openapi.yml > ./openapi.json",
+    "prebuild": "npm run gen-openapi && npm run fix-config",
     "prestart": "npm run prebuild",
-    "prebuild": "yaml2json ./LAMP-protocol/openapi.yml > ./openapi.json",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
     "build": "docusaurus build",
