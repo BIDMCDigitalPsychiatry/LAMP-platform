@@ -2,9 +2,15 @@
 
 ## **What is Cortex?**
 
-The Cortex data analysis toolkit is part of the LAMP Platform, enabling researchers and clinicians with a variety of backgrounds have use pre-build tools to analyze their data and build analysis pipelines. Cortex converts patient or participant data into useful features that provide valuable clinical and research insight.
+The Cortex data analysis and machine learning toolkit is part of the LAMP Platform, enabling researchers and clinicians with a variety of backgrounds have use pre-build tools to analyze their data and build analysis pipelines. 
+
+- It integrates tightly across the platform to provide a unified processing pipeline to convert patient or participant data into useful features that provide valuable clinical and research insight.
+- It offers robust support for artificial intelligence, behavioral feature extraction, interactive visualizations, generation of targeted and automated adaptive interventions, and high-performance data processing through parallelization and vectorization techniques.
 
 ![](assets/cortex_features.svg)
+
+_Categories of Activity and Sensor data types alongside Cortex features synthesized from raw data streams. Availability of Wearable Sensors depends on the device type used and supported API; Apple Watch (HealthKit) sensors are shown here._
+
 
 ## **Why Cortex?**
 
@@ -17,8 +23,6 @@ The unique data structure of the LAMP platform allows all users to analyze their
 
 ## Cortex Engine
 
-![](assets/cortex_caching.svg)
-
 The Cortex Engine breaks down data streams into three fundamental categories of "features." A feature is a consolidated representation of significant behavioral measures as captured by _both_ activities and sensors in the LAMP Platform. Features may also act as target or independent variables, for example, in the context of machine learning models. 
 
 1. **Raw Features**: A "raw" feature is a fully virtualized Cortex-compatible abstraction of a low level data stream from the LAMP Platform. For example, survey question responses or accelerometer data. The integration of raw features allows for simplified development of analysis code both within Cortex and outside of Cortex, by avoiding the need to switch contexts between the higher-level Cortex abstractions and the lower-level underlying LAMP Protocol when writing code.
@@ -26,6 +30,16 @@ The Cortex Engine breaks down data streams into three fundamental categories of 
 1. **Secondary Features**: A "secondary" feature is a composite (i.e. summary) clinical/behavioral representation of multiple data streams, either through raw or primary features. Secondary features are additionally windowed by time resolution (i.e. "time spent at home each day" vs. "time spent at home each week"). For example, `Home Time` is a secondary feature that buckets `Significant Locations` by the specified resolution and determines the amount of time an individual spent at home within that time window. Additionally, `Trip Distance` is a secondary feature that also relis on the `Significant Locations` primary feature to calculate the distance traveled by an individual per time window. 
 
 It's easy to use existng features to create your own novel features, or start entirely from scratch. Cortex will automatically handle the dependency and execution graph to ensure your data streams are post-processed in the right order.
+
+![](assets/cortex_caching.svg)
+
+_A sample execution plan for Cortex:_
+1. The clinician or researcher creates an aggregate operation.
+2. Cortex transparently interposes the correct feature layers by creating a dependency graph of data and executes each “atomic operation” (i.e. independent of external variables) in the order it computes to be most efficient.
+3. Any raw sensor data is transparently cached during execution.
+4. As multiple operations require the same raw sensor data, Cortex blocks their execution until the cached data becomes available, to avoid duplicate downloads, wasted computation, and over-saturation of network bandwidth.
+
+
 
 ## **Examples of Algorithms**
 
