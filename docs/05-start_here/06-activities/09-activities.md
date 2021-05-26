@@ -18,10 +18,8 @@
 ![](assets/jewels_ex.png)
 
 ### Balloon Risk
-![](assets/balloon_ex.jpg)
 
 ### Pop the Bubbles
-![](assets/bubble_ex.jpg)
 
 ## Manage
 
