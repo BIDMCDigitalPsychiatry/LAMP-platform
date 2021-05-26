@@ -39,3 +39,49 @@ This component handles scheduled push notification delivery as well as execution
 - A compute platform such as a Docker-enabled system or AWS Lambda is used to handle actual execution of code once bundled.
 - A dependency bundler such as Webpack, PIP, or Packrat is used to bundle each automation’s code to avoid dependency versioning conflicts that could crash or halt execution.
 - This component encompasses: **Docker Environment, Attachment Container, Automation Scripts, Scheduler**.
+
+## Repositories
+
+| Frontend | Backend | Native Core | Data Science | Programming Libraries |
+|-|-|-|-|-|
+| [Dashboard](https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard) | [API Server](https://github.com/BIDMCDigitalPsychiatry/LAMP-server) | [iOS](https://github.com/BIDMCDigitalPsychiatry/LAMP-core-ios) | [Cortex](https://github.com/BIDMCDigitalPsychiatry/LAMP-cortex) | [R](https://github.com/BIDMCDigitalPsychiatry/LAMP-r) |
+| [Activities](https://github.com/BIDMCDigitalPsychiatry/LAMP-activities) | [App Gateway](https://github.com/BIDMCDigitalPsychiatry/LAMP-app-gateway) | [Android](https://github.com/BIDMCDigitalPsychiatry/LAMP-core-android) | [CollegeStudy](https://github.com/BIDMCDigitalPsychiatry/LAMP-college-study) | [JS](https://github.com/BIDMCDigitalPsychiatry/LAMP-js) |
+| | | | | [Python](https://github.com/BIDMCDigitalPsychiatry/LAMP-py) |
+| | | | | [Swift](https://github.com/BIDMCDigitalPsychiatry/LAMP-swift) |
+| | | | | [Kotlin](https://github.com/BIDMCDigitalPsychiatry/LAMP-kotlin) |
+
+The LAMP Platform is designed, developed, and managed entirely as a series of GitHub repositories: 
+1. Core:
+    1. `LAMP-platform`: **All issues and documentation across any component repository MUST be centralized here!** Acts as the project tracker and documentation hub.
+        1. `package.json`: All configuration for the Docusaurus documentation generator is housed here; the `docusaurus.config.js` file is dynamically generated.
+        2. `openapi.json`: This file is dynamically generated from the `LAMP-protocol` git submodule that contains the `openapi.yaml` file. 
+        3. `blog`: This directory contains the release notes/updates/"What's New" tab documents. 
+        4. `docs`: This directory contains all documentation in entirely markdown files. Each file and folder includes a numeric prefix that sorts its order in the documentation sidebar, as well as an `assets` folder for all relevant images and media. 
+    1. `LAMP-protocol`: The `openapi.yml` file houses the OpenAPI specification for the LAMP Protocol, upon which the entire LAMP Platform is built.
+1. Backend:
+    1. `LAMP-server`: (See Backend section in the documentation for more details on the nature of the component and how the code is organized.)
+    1. `LAMP-worker`: (See Automations section in the documentation for more details on the nature of the component and how the code is organized.)
+    1. `LAMP-app-gateway`: (See App Gateway section in the documentation for more details on the nature of the component and how the code is organized.)
+1. Frontend:
+    1. `LAMP-dashboard`: (See Frontend section in the documentation for more details on the nature of the component and how the code is organized.)
+    1. `LAMP-data-studio`:
+    1. `LAMP-activities`: 
+1. SDKs:
+    1. `LAMP-js`:
+    2. `LAMP-py`:
+    3. `LAMP-r`:
+    4. `LAMP-swift`:
+    5. `LAMP-kotlin`:
+1. Data Science:
+    1. `LAMP-cortex`: (See Cortex section in the documentation for more details on the nature of the component and how the code is organized.)
+    1. `LAMP-ide`: A JupyterLab and VSCode-based integrated development environment with extensive support for Cortex.
+1. Native Apps:
+    1. `LAMP-core-ios`: A Swift-based scaffolding that incorporates support for TypeScript business logic and a WKWebView for the frontend UI. Designed to work well with the `LAMP-swift` SDK.
+    1. `LAMP-core-android`: A Kotlin-based scaffolding that incorporates support for TypeScript business logic and a WebView for the frontend UI. Designed to work well with the `LAMP-kotlin` SDK.
+1. Other:
+    1. `LAMP-college-study`: A proof of concept for the Automations framework that is a part of the LAMP Platform.
+    1. `clinical-scales-importer`: Automated clinical scale importer that works for RedCap integration into the LAMP Platform.
+    1. `analysis-tools`: Misc. analysis tools for working with research studies using the LAMP Platform.
+1. Deprecated:
+    1. `LAMP-app`: The mindLAMP v1 native app for iOS and Android. **DO NOT USE.**
+    1. `LAMP-portal`: The mindLAMP v1 backend. **DO NOT USE.**
