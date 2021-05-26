@@ -28,7 +28,7 @@ For example, we can find all of the participants belonging to a Researcher:
 ```python
 TEST_RESEARCHER = 'UmVzZWFyY2hlcjoxNjM~'
 
-LAMP.Participant.all_by_researcher(TEST_RESEARCHER)
+[LAMP.Participant.all_by_study(study['id'])['data'] for study in LAMP.Study.all_by_researcher(TEST_RESEARCHER)['data']]
 ```
 
 ```python
