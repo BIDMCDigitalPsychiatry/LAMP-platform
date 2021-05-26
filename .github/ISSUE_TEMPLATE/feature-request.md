@@ -2,8 +2,8 @@
 name: Feature Request
 about: Suggest an idea to improve the LAMP Platform
 title: ''
-labels: NO ETA, backend, feature, frontend, native core
-assignees: avaidyam
+labels: feature
+assignees: 
 
 ---
 
