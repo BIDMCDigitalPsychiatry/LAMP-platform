@@ -23,7 +23,18 @@
 
 ## Manage
 
-### Breathe
+### Mindfulness/Breathe
+- Anchoring Ambience
+- Breathe with Your Body
+- Breathing Exercise
+- Calming Your Body
+- Forest and Nature Sounds
+- Inner Teacher
+- Kindness
+- Loving Kindness
+- Mountain Meditation
+- Positive Thinking
+- Nature Relaxation
 ![](assets/breathe_ex.png)
 
 ### Scratch Image
