@@ -26,3 +26,12 @@ curl -XPOST "https://app-gateway.lamp.digital/push" \
 }
 EOF
 ```
+
+The flow of data is shown below:
+![](assets/push_notifications.png)
+
+## Push Notifications 
+
+The `Automations Worker` component handles all push notification scheduling working in tandem with the API Server using the `LAMP-js` SDK. It caches CRON expressions matching to Activity IDs and Participant IDs for delivery. The workflow is shown below:
+
+![](assets/activity_schedules.svg)
