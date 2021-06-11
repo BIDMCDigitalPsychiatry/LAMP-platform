@@ -2,8 +2,8 @@
 name: Bug Report
 about: Create a bug report to help us improve the LAMP Platform
 title: ''
-labels: NO ETA, backend, bug, frontend, native core
-assignees: avaidyam
+labels: bug
+assignees: 
 
 ---
 

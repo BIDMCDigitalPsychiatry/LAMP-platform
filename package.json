@@ -3,16 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "2.0.0-alpha.70",
-    "@docusaurus/utils": "^2.0.0-alpha.37",
+    "@docusaurus/core": "2.0.0-alpha.74",
+    "@docusaurus/preset-classic": "2.0.0-alpha.74",
+    "@docusaurus/utils": "^2.0.0-alpha.74",
     "@easyops-cn/docusaurus-search-local": "^0.15.0",
     "@monaco-editor/react": "^3.3.2",
-    "docusaurus-plugin-openapi": "^0.0.13",
+    "docusaurus-plugin-openapi": "^0.0.16",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
+  "devDependencies": {
+    "yamljs": "^0.3.0"
+  },
   "scripts": {
+    "fix-config": "echo \"module.exports = require('./package.json').docusaurus; module.exports.plugins[0][1].openapiPath = require.resolve(module.exports.plugins[0][1].openapiPath);\" > docusaurus.config.js",
+    "gen-openapi": "yaml2json ./LAMP-protocol/openapi.yml > ./openapi.json",
+    "prebuild": "npm run gen-openapi && npm run fix-config",
+    "prestart": "npm run prebuild",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
     "build": "docusaurus build",
@@ -65,6 +72,145 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "docusaurus": {
+    "title": "LAMP Platform",
+    "tagline": "The LAMP Platform documentation.",
+    "url": "https://docs.lamp.digital",
+    "favicon": "./docs/assets/logo.png",
+    "organizationName": "BIDMCDigitalPsychiatry",
+    "projectName": "LAMP-platform",
+    "baseUrl": "/",
+    "onBrokenLinks": "error",
+    "onDuplicateRoutes": "error",
+    "onBrokenMarkdownLinks": "error",
+    "themeConfig": {
+      "defaultMode": "light",
+      "disableSwitch": false,
+      "respectPrefersColorScheme": true,
+      "image": "logo.png",
+      "googleAnalytics": {
+        "trackingID": "UA-192736629-1"
+      },
+      "languageTabs": [
+        {
+          "tabName": "cURL",
+          "highlight": "bash",
+          "language": "curl",
+          "variant": "curl",
+          "options": {
+            "longFormat": false,
+            "followRedirect": true,
+            "trimRequestBody": true
+          }
+        }
+      ],
+      "navbar": {
+        "title": "LAMP Platform",
+        "hideOnScroll": false,
+        "logo": {
+          "alt": "LAMP Platform",
+          "src": "logo.png"
+        },
+        "items": [
+          {
+            "label": "User Guide",
+            "position": "left",
+            "to": "/",
+            "activeBaseRegex": "/([0-9a-zA-Z]+)",
+            "items": [
+              {
+                "label": "Download App",
+                "to": "/app"
+              },
+              {
+                "label": "Report Bug",
+                "to": "/bug"
+              },
+              {
+                "label": "FAQ",
+                "to": "/faq"
+              }
+            ]
+          },
+          {
+            "label": "API",
+            "position": "left",
+            "to": "/api"
+          },
+          {
+            "label": "What's New",
+            "position": "left",
+            "to": "/blog"
+          },
+          {
+            "label": "Community",
+            "position": "right",
+            "items": [
+              {
+                "label": "Forum",
+                "href": "https://mindlamp.discourse.group/"
+              },
+              {
+                "label": "GitHub",
+                "href": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/"
+              },
+              {
+                "label": "Contact",
+                "href": "mailto:team@digitalpsych.org"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "style": "dark",
+        "links": [],
+        "copyright": "© 2021 LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
+      }
+    },
+    "presets": [
+      [
+        "@docusaurus/preset-classic",
+        {
+          "docs": {
+            "routeBasePath": "/",
+            "showLastUpdateAuthor": true,
+            "showLastUpdateTime": true,
+            "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/"
+          },
+          "blog": {
+            "blogTitle": "LAMP Platform",
+            "blogDescription": "The LAMP Platform documentation.",
+            "blogSidebarTitle": "All updates",
+            "blogSidebarCount": 10000,
+            "postsPerPage": 1,
+            "feedOptions": {
+              "type": "all",
+              "copyright": "© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
+            }
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "docusaurus-plugin-openapi",
+        {
+          "routeBasePath": "api",
+          "openapiPath": "./openapi.json"
+        }
+      ],
+      [
+        "@easyops-cn/docusaurus-search-local",
+        {
+          "indexDocs": true,
+          "indexBlog": true,
+          "indexPages": true,
+          "hashed": true
+        }
+      ]
     ]
   }
 }
