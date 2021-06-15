@@ -1,4 +1,4 @@
-# Using Cortex
+# Anomaly Detection with Cortex
 
 ## Setting up Cortex
 
