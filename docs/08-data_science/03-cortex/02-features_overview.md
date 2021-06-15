@@ -6,7 +6,7 @@ The Cortex Engine breaks down data streams into three fundamental categories of 
 1. **Primary Features**: A "primary" feature is a miniaturized abstraction around a raw feature that can either be used directly, or used within _multiple_ secondary features and analyses. It acts as a reusable intermediate or bridge between these higher-level representations features and lower-level raw data streams. For example, `Significant Locations` is a primary feature that processes raw GPS data and groups these data points together into weighted travelled regions of significance.
 1. **Secondary Features**: A "secondary" feature is a composite (i.e. summary) clinical/behavioral representation of multiple data streams, either through raw or primary features. Secondary features are additionally windowed by time resolution (i.e. "time spent at home each day" vs. "time spent at home each week"). For example, `Home Time` is a secondary feature that buckets `Significant Locations` by the specified resolution and determines the amount of time an individual spent at home within that time window. Additionally, `Trip Distance` is a secondary feature that also relis on the `Significant Locations` primary feature to calculate the distance traveled by an individual per time window. 
 
-![](assets/cortex_features.png)
+![](../assets/cortex_features.png)
 
 _Categories of Activity and Sensor data types alongside Cortex features synthesized from raw data streams. Availability of Wearable Sensors depends on the device type used and supported API._
 
@@ -14,7 +14,7 @@ It's easy to use existng features to create your own novel features, or start en
 
 Features in Cortex need not handle pre-processing for variation in sensor data between Android and iOS, because the LAMP Platform harmonizes the data, accounting for various differences in functionality and recording between Apple and Android devices. For example, accelerometer measurements taken on Apple devices are measured in G's (unit of gravity) with a frame of reference experiencing -1G in the downward-facing axis, whereas measurements on Android are measured in meters per second squared (m/s^2) without a frame of reference provided. Because the platform automatically applies this harmonization step, data analysis code and Cortex feature code need not have an intrinsic understanding of the source of the data. 
 
-![](assets/cortex_caching.svg)
+![](../assets/cortex_caching.svg)
 
 _A sample execution plan for Cortex:_
 1. The clinician or researcher creates an aggregate operation.
