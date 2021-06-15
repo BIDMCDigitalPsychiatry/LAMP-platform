@@ -1,1 +1,3 @@
-# Data Science with LAMP
+# Cortex Overview
+
+## Quick Start Guide
