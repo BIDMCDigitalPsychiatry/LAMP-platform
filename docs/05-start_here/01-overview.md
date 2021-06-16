@@ -1,8 +1,10 @@
 # How does the mindLAMP app work?
-[![Video Explanation](assets/mindlamp_video.jpg)](https://www.youtube.com/watch?v=yLWyh5x7hxU)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yLWyh5x7hxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # How does the LAMP dashboard work?
-[![Video Explanation](assets/dashboard_video.jpg)](https://www.youtube.com/watch?v=vLXCSL6zO6k)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vLXCSL6zO6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # What can I customize to my study or clinic?
 
