@@ -1,9 +1,11 @@
 # Create and Customize Activities
 
-[![Video Explanation](assets/cog_test_video.jpg)](https://www.youtube.com/watch?v=-km1ztZgLdY)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-km1ztZgLdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 *How to add an Assess cognitive test from the Patient Profile*
 
-[![Video Explanation](assets/manage_act_video.jpg)](https://www.youtube.com/watch?v=SJpWGlI_jdQ)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SJpWGlI_jdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 *How to add a Manage activity from the Patient Profile*
 
 If you would like to create your own custom activity, you can do so by writing it in html/javascript. There is no required structure or framework; as long as it is in html/javascript it will work with LAMP.
