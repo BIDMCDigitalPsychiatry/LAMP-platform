@@ -4,15 +4,15 @@
 
 You can add a user to an existing group. See instructions below:
 
-[![Video Explanation](assets/add_user_existing_group.jpg)](https://youtu.be/aYqDNHMp9Gg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aYqDNHMp9Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You are able to add a new user and a new group at the same time. You can also duplicate an existing group. See instructions below:
 
-[![Video Explanation](assets/add_group_user_video.jpg)](https://www.youtube.com/watch?v=YO7yutC4j7o)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YO7yutC4j7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can add a new study or group from either the "Users" tab or the "Studies" tab. See instructions below:
 
-[![Video Explanation](assets/add_group_video.jpg)](https://www.youtube.com/watch?v=BuBvGKFsOBY)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BuBvGKFsOBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Creating a New Patient or Participant
 
