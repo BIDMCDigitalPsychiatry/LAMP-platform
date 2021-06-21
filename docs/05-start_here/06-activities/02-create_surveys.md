@@ -1,6 +1,7 @@
 # Create and Customize Surveys
 
-[![Video Explanation](assets/create_survey_video.jpg)](https://youtu.be/0VkPQBwqLTc)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0VkPQBwqLTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 *How to Create a Survey from the Patient Profile*
 
 
