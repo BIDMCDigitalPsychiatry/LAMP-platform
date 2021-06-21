@@ -50,5 +50,6 @@ Once you create your journal activity, it will show up in the Manage tab. Howeve
 
 ![](assets/schedule.jpg)
 
-[![Video Explanation](assets/schedule_notifications.jpg)](https://www.youtube.com/watch?v=LegFC4ZB1ro)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LegFC4ZB1ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 *How to schedule an activity from the Patient Profile*
