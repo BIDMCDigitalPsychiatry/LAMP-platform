@@ -30,7 +30,7 @@ The **Name** field of your very first credential will always be reset to `Defaul
 
 ### Video Tutorial
 
-[![Video Explanation](assets/add_researcher_video.jpg)](https://www.youtube.com/watch?v=mp9HrcIt4B0)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mp9HrcIt4B0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Reset a Clinican's or Researcher's Password (Admins Only)
 
