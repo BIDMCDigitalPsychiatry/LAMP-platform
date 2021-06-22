@@ -1,4 +1,4 @@
-# Log into LAMP
+# Logging into LAMP
 
 ### Step 1: Open your phone or desktop browser and navigate to the mindLAMP app.
 
