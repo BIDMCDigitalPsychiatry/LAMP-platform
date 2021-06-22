@@ -1,5 +1,4 @@
 # Researcher Checklist
-# Admin Checklist
 - [ ] Download the LAMP app
 - [ ] Log into LAMP
 - [ ] Create a study
