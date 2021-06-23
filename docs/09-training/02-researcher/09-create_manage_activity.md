@@ -6,6 +6,6 @@
 *How to add a Manage activity from the Patient Profile*
 
 1. Log in to the dashboard and navigate to the Activities tab.
-2. Click the `[+ Add]` button at the top right of the list to add an activity like Breathe or Jewels.
+2. Click the `[+ Add]` button at the top right of the list to add an activity like Mindfulness to the Manage tab.
 
 ![](../05-start_here/06-activities/assets/activity_menu.jpg)
