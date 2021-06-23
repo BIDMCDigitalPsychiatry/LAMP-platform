@@ -11,7 +11,7 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 
 1. Log in to the dashboard and navigate to the Activities tab.
 2. Click the `[+ Add]` button at the top right of the list to begin. If you would like to edit an existing survey, simply tap on its row in the list instead.
-3. Select the cognitive test to add an activity or select Survey Instrument to add a survey to the Assess tab.
+3. Select Survey Instrument to add a survey to the Assess tab.
 4. If you would like to import a survey or activity, click "Import Activities."
 
 ![](assets/activity_menu.jpg)
