@@ -2,7 +2,6 @@
 - [ ] Download the LAMP app
 - [ ] Log into LAMP
 - [ ] Create a study
-- [ ] Delete a study
 - [ ] Create a _Learn_ tip
 - [ ] Create an _Assess_ activity like Jewels
 - [ ] Create a Survey
