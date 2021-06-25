@@ -14,7 +14,7 @@ Then, import the library and connect to the server.
 
 ```python
 import LAMP
-LAMP.connect('api.lamp.digital', 'my_email@address.com', 'my_password')
+LAMP.connect('my_email@address.com', 'my_password', 'api.lamp.digital')
 ```
 
 # Usage
