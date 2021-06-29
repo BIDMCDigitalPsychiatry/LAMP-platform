@@ -12,5 +12,5 @@
 6.You can add description content to each question or option choice that can assist clinicians or patients in their selections. If such the description content field is left empty, it will not be displayed when a question or option choice is presented.
 7. Please double check and ensure you have no typos or errors when saving the new survey. Once you press the `[Save]` button, you will be returned to the screen displaying the list of Activities in your clinic or study, now with the newly added survey. 
 
-![](../05-start_here/06-activities/assets/activity_menu.jpg)
-![](../05-start_here/06-activities/assets/survey_edit.jpg)
+![](../../05-start_here/06-activities/assets/activity_menu.jpg)
+![](../../05-start_here/06-activities/assets/survey_edit.jpg)
