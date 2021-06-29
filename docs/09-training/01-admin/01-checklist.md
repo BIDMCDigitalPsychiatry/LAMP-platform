@@ -3,6 +3,7 @@
 - [ ] Log into LAMP
 - [ ] Create a researcher or clinician
 - [ ] Reset researcher or clinicain credentials
+- [ ] Delete a researcher or clinician credentials
 - [ ] Create a study
 - [ ] Delete a study
 - [ ] Create a _Learn_ tip
