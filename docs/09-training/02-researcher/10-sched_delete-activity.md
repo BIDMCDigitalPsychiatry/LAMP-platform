@@ -10,7 +10,7 @@
 6. Click the check mark.
 7. The patient or participant will receive a feed item and a notification on their phone at the specified time.
 
-![](../05-start_here/06-activities/assets/schedule.jpg)
+![](../../05-start_here/06-activities/assets/schedule.jpg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LegFC4ZB1ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -25,4 +25,4 @@
     **All data saved under that survey activity is deleted for every patient in your clinic.** 
     Once deleted, a survey activity and any deleted data cannot be recovered. 
 
-![](../05-start_here/06-activities/assets/delete_activities.jpg)
+![](../../05-start_here/06-activities/assets/delete_activities.jpg)
