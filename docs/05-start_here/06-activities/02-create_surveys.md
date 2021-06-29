@@ -1,6 +1,7 @@
 # Create and Customize Surveys
 
-[![Video Explanation](assets/create_survey_video.jpg)](https://youtu.be/0VkPQBwqLTc)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0VkPQBwqLTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 *How to Create a Survey from the Patient Profile*
 
 
@@ -10,7 +11,7 @@ Survey instruments and other Activities in the LAMP Platform afford you automati
 
 1. Log in to the dashboard and navigate to the Activities tab.
 2. Click the `[+ Add]` button at the top right of the list to begin. If you would like to edit an existing survey, simply tap on its row in the list instead.
-3. Select the cognitive test to add an activity or select Survey Instrument to add a survey to the Assess tab.
+3. Select Survey Instrument to add a survey to the Assess tab.
 4. If you would like to import a survey or activity, click "Import Activities."
 
 ![](assets/activity_menu.jpg)

@@ -3,8 +3,7 @@
 If you would like to hide graphs on the Prevent page from patients or participants, [please contact us here.](mailto:team@digitalpsych.org)
 
 ## Video Tutorial
-[![Video Explanation](assets/view_data_video.jpg)](https://www.youtube.com/watch?v=XJHzGU695YM)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XJHzGU695YM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Step 1: View the different kinds of data available.
 
