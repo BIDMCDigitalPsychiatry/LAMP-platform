@@ -1,8 +1,8 @@
 # Create a New Researcher or Clinician Credential
 
-![](../05-start_here/assets/users_tab.jpg)
+![](../../05-start_here/assets/users_tab.jpg)
 
-![](../05-start_here/assets/Untitled_55.jpeg)
+![](../../05-start_here/assets/Untitled_55.jpeg)
 
 1. Log into the app and click on the "Users" tab.
 2. Tap the profile icon at top left in the blue bar and select the Manage Credentials option from the drop-down list. 
@@ -13,9 +13,9 @@ Note that the email address you provide **MUST NOT** already be used across any 
 
 The **Name** field of your very first credential will always be reset to `Default Credential`. 
 
-![](../05-start_here/assets/Screen_Shot_2020-10-02_at_3.27.24_PM.png)
+![](../../05-start_here/assets/Screen_Shot_2020-10-02_at_3.27.24_PM.png)
 
-![](../05-start_here/assets/Screen_Shot_2020-10-02_at_3.26.07_PM.png)
+![](../../05-start_here/assets/Screen_Shot_2020-10-02_at_3.26.07_PM.png)
 
 # Video Tutorial
 
