@@ -1,4 +1,4 @@
-# Reset a Clinican's or Researcher's Password
+# Reset a Clinican or Researcher Password
 
 ![](../../05-start_here/assets/users_tab.jpg)
 
