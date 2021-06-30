@@ -1,4 +1,4 @@
-# Reset a Clinican's or Researcher's Password (Admins Only)
+# Reset a Clinican's or Researcher's Password
 
 ![](../../05-start_here/assets/users_tab.jpg)
 
@@ -15,7 +15,7 @@
 
 **DO NOT** attempt to reset the password of the credential you are currently using to log into and access mindLAMP. This may prevent you from using the app and lock you out.
 
-# Change a Clinician or Researcher Log In Email (Admins Only)
+# Change a Clinician or Researcher Log In Email
 
 ![](../../05-start_here/assets/users_tab.jpg)
 
