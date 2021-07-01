@@ -1,0 +1,1 @@
+# Downloading the mindLAMP App
