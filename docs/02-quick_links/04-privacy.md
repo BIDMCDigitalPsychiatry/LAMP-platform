@@ -86,8 +86,20 @@ LAMP offers physical and technical safeguards that are in line with the HIPAA Se
 
 ### Breach Policy
 
-In the event of a suspected data breach, a site lead may immediately revoke all credentials and immediately disable access to the data. As both a public and private key are required to decrypt exported data, and separate private keys are maintained per site and per patient, a data breach of one sub-section of the data cannot and will not affect other sub-sections or the entire platform Furthermore, devices are identified by a unique per-device token and data integrity in flight can be ensured when reviewing the audit trail by cross-referencing this device-specific token. As noted above, LAMP does not record name but identifies users by codes so even with a breach, it will be hard to connect a person to their data.
+In the event of a suspected data breach, a site lead may immediately revoke all credentials and immediately disable access to the data. As both a public and private key are required to decrypt exported data, and separate private keys are maintained per site and per patient, a data breach of one sub-section of the data cannot and will not affect other sub-sections or the entire platform. Furthermore, devices are identified by a unique per-device token and data integrity in flight can be ensured when reviewing the audit trail by cross-referencing this device-specific token. As noted above, LAMP does not record name but identifies users by codes so even with a breach, it will be hard to connect a person to their data.
 
 ### Risk Analysis and Management
 
-Our team performs frequent risk analysis as part of our security management processes.
+Our team performs frequent risk analysis as part of our security management processes. We take the following steps to mitigate risk:
+1. Daily review of logs for all BIDMC-hosted research and clinical sites to pinpoint potential risks.
+2. Determine the probability of a major security issue occuring.
+3. Frequent security updates to proactively prevent new threats to LAMP's security.
+
+### Security Threat Protocol
+
+In the unlikely event of an active security threat, our team will take the following steps:
+1. Determine how and what information has been endangered.
+2. Alert users with steps (if any) they must take, such as changing their passwords.
+3. Identify and complete the necessary steps our team must take to secure our server, dashboard, and data.
+4. Log the type of threat, when and how it occured, and the resolution.
+
