@@ -1,8 +1,3 @@
-<head>
-  <meta name="google-site-verification" content="MDFm8izKofwRdAnUbqg2muDPnSlHISr1EVApzHUI-Z4" />
-</head>
-
-
 ---
 slug: /
 ---
