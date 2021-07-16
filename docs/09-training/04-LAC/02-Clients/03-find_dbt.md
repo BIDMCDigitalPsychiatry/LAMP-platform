@@ -4,3 +4,5 @@
 ![](../assets/feed.jpg)
 3. Select "DBT Diary Card" and click "Start Survey."
 ![](../assets/dbt_start.jpg)
+4. Your "Life worth living goal" will be on the next screen.
+![](../assets/life_worth_living.jpg)
