@@ -1,4 +1,4 @@
-Create Login Credentials for Clients
+# Create Login Credentials for Clients
 1. From the Users page, click the key icon next to your client’s username. 
 <img width="430" alt="image" src="https://user-images.githubusercontent.com/69599815/124176916-9164c680-da7d-11eb-94a4-73834cb4ed2f.png">
 2. A pop-up with the heading “Manage Credentials” will appear. Click the grey circle with the + inside.
