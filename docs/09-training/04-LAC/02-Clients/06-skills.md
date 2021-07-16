@@ -9,4 +9,5 @@
 8. Next, you will be prompted to answer if you have used any skills. Select Yes or No. ![](../assets/skills.jpg)
 9. If you select yes, you will be taken to a list of all skills. Click on each section to expand the options, and select any skills you used. ![](../assets/skills2.jpg)
 10. Select "Next" to rank from 0-5 how much effort you put into the skills you used. ![](../assets/skills3.jpg)
-11. Select "Next" to specify if the skills helped. ![](../assets/skills4.jpg)
+11. Select "Next" to specify if the skills helped. 
+12. ![](../assets/skills4.jpg)
