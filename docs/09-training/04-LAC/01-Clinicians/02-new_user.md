@@ -1,11 +1,35 @@
-# Add a New Client User
-1. From the Users page on the mindLAMP dashboard, locate the “Add” button on the upper right-hand corner and select “Add a new user and group.”
-<img width="379" alt="image" src="https://user-images.githubusercontent.com/69599815/124173045-8a878500-da78-11eb-8f9d-b06f58b43f7d.png">
-2. Where it says “Group Name,” enter the identification or name you want to use for your client (eg. FRV or PT 1673) and select “Duplicate from” the group name provided to you.
-<img width="378" alt="image" src="https://user-images.githubusercontent.com/69599815/124173129-9ffcaf00-da78-11eb-8f37-d8ea42645c50.png">
-3. Check the box next to “Create a new user under this group” then Confirm.
-<img width="410" alt="image" src="https://user-images.githubusercontent.com/69599815/124173177-ae4acb00-da78-11eb-81ef-8b6549ddb43f.png">
-4. The client you added will now show up in your Users page.
-<img width="430" alt="image" src="https://user-images.githubusercontent.com/69599815/124173258-cd495d00-da78-11eb-8a11-8bb0f489de7f.png">
+# Create and Rename User
+
+You can add a user to an existing group. See instructions below:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aYqDNHMp9Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![](../../../05-start_here/assets/users_tab.jpg)
+
+1. Log into the app and click on the "Users" tab.
+2. Tap the profile icon at top right and select the Manage Credentials option from the drop-down list. 
+3. Tap the `[+]` button at the top right of the list; you will be prompted with a counter for the number of patients/participants to add, as you may want to create more than one at a time.
+4. Once you create a patient, you will have the opportunity to input an email address and password. This does **not** need to be a real email. You can make the email anything you'd like (e.g. patient@xyz.com).
+
+![](../../../05-start_here/assets/patient_menu.jpg)
+
+![](../../../05-start_here/assets/new_patient_qr.jpg)
+
+# Rename a User
+
+For each patient/participant in the list on this screen, you’ll see an outlined text box containing their de-identified patient identifier, typically beginning with a `U`, followed by a random number of random digits. 
+
+It is not recommended to use full names or other identifying text when referring to patients instead of their patient identifier as this increases your liability and and risk when **complying with HIPAA, COPPA, GDPR, or other federal regulations.**
+
+1. Log into the app and click on the "Users" tab.
+2. Check the box next to the patient's name.
+3. Tap **Rename** to add, edit, or remove the de-identification alias. 
+4. Tap outside of the text box or press the check mark icon at the right side of the text box. You will now see the patient/participant’s identifier as mini hovering text above the text box.
+
+![](../../../05-start_here/assets/users_tab.jpg)
+
+![](../../../05-start_here/assets/edit_pass.jpg)
+
+![](../../../05-start_here/assets/rename.jpg)
+
+Though it appears that the patient has been “renamed,” this new alias is only visible to you, as a clinician or researcher, and not to the user, or anywhere in the data when saved or exported. 
