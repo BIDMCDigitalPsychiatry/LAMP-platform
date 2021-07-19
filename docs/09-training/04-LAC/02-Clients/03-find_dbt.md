@@ -1,5 +1,7 @@
 # Open the DBT Diary Card
-![](../assets/access_dbt.jpg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vqHqJJKHjso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 1. Log into the mindLAMP app or dashboard at dashboard.lamp.digital
 2. Navigate to the Assess tab.
 ![](../assets/feed.jpg)
