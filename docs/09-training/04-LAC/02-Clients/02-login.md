@@ -1,5 +1,7 @@
 # Logging into LAMP
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dnyWdtlqmIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Step 1: Open your phone or desktop browser and navigate to the mindLAMP app.
 
 ![](../../../05-start_here/assets/login.png)
