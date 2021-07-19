@@ -9,6 +9,6 @@
 
 ![](../assets/emotions_create.jpg)
 
-9. Save the customized diary card.
+9. Save the customized diary card by clicking the blue `Save` button in the bottom right-hand corner.
 
 ![](../assets/save.jpg)
