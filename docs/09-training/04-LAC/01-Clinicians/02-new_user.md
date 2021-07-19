@@ -1,4 +1,4 @@
-# Create and Rename User
+# Create and Rename a Client
 
 You can add a user to an existing group. See instructions below:
 
