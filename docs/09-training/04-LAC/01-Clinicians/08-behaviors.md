@@ -3,7 +3,7 @@
 2. Click the `[+ Add]` button at the top right of the list and select DBT Diary Card.
 3. Create a title for the client's DBT Diary Card.
 5. Add the life worth living goal.
-6. To add target behaviors, select the red `[+ ADD ITEM]`.
+6. To add target behaviors, select the red `[+ ADD ITEM]` text.
 
 ![](../assets/edit_targets.jpg)
 
