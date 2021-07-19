@@ -1,4 +1,4 @@
-# Reset a Patient's Credentials
+# Reset a Client's Credentials
 
 ## Reset Password from the Users tab
 
