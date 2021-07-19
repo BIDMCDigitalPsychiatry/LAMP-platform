@@ -7,3 +7,5 @@
 <img width="410" alt="image" src="https://user-images.githubusercontent.com/69599815/124173177-ae4acb00-da78-11eb-81ef-8b6549ddb43f.png">
 4. The client you added will now show up in your Users page.
 <img width="430" alt="image" src="https://user-images.githubusercontent.com/69599815/124173258-cd495d00-da78-11eb-8a11-8bb0f489de7f.png">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aYqDNHMp9Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
