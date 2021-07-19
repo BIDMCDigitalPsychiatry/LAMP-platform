@@ -1,4 +1,4 @@
-# Add Skills to Your DBT Card
+# Add Skills to the DBT Diary Card
 1. Log into the mindLAMP app or dashboard.
 2. Navigate to the Assess tab.
 3. Click on DBT Diary Card.![](../assets/feed.jpg)
