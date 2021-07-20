@@ -18,7 +18,7 @@
 
 ## Reset Password from the Patient Profile
 
-![](../../05-start_here/assets/edit_pass.jpg)
+![](../../../05-start_here/assets/edit_pass.jpg)
 
 1. Log into the app and click on the "Users" tab.
 2. Select one or more patients/participants by tapping the checkboxes at the left of their row. 
