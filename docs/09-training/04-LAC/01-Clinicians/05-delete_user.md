@@ -1,5 +1,7 @@
 # Delete a User or Share Login Link
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5W3Vp2OSAEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 1. Log into the app and click on the "Users" tab.
 2. Select one or more users by tapping the checkboxes at the left of their row. 
 3. Tap the delete icon and confirm your selection. 
