@@ -1,5 +1,7 @@
 # Reset a Client's Credentials
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MTFwfsP4_9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Reset Password from the Users tab
 
 ![](../../../05-start_here/assets/edit_password.png)
