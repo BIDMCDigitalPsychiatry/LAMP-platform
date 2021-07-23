@@ -20,7 +20,7 @@ Screen active builds bouts of time when the screen is "on". Using screen_state m
 #### Example
 
 ```markdown
-# **cortex.primary.screen_active.screen_active(id="U1234567890", start=0, end=cortex.now())**
+# **cortex.primary.screen_active.screen_active(id="U1234567890", start=1607072400000, end=cortex.now())**
 {
   'timestamp': 1607072400000,
   'duration': 5616000000,
