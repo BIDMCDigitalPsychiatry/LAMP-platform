@@ -24,7 +24,7 @@ cortex.primary.sleep_periods.sleep_periods(id="U1234567890", start=0, end=cortex
 Output:
 ```markdown
 {
-  'timestamp': 1607072400000,
+  'timestamp': 0,
   'duration': 5616000000,
   'data': [
              {'start': 1607116800000, 'end': 1607146800000},
