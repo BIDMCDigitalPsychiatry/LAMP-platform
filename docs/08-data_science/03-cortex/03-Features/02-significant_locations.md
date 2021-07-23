@@ -35,7 +35,7 @@ For method="mode":
 
 ```markdown
 cortex.primary.significant_locations.significant_locations(id="U1234567890",
-                                                           start=0,
+                                                           start=1607072400000,
                                                            end=cortex.now(),
                                                            max_clusters=-1,
                                                            min_cluster_size=0.01)
@@ -82,7 +82,7 @@ cortex.primary.significant_locations.significant_locations(id="U1234567890",
 #### Example 1 - using method='mode' with max_clusters set to 2
 ```markdown
 cortex.primary.significant_locations.significant_locations(id="U1234567890",
-                                                           start=0,
+                                                           start=1607072400000,
                                                            end=cortex.now(),
                                                            max_clusters=2,
                                                            min_cluster_size=0.01)
