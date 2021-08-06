@@ -126,7 +126,7 @@ mkdir -p /data/couchdb
 You must first generate two cryptographically secure hexadecimal strings. Substitute these strings in the stack file below as indicated by the environment variables after the `#`.
 
 ```bash
-openssl rand -hex 8 # DB_PASSSWORD_HERE
+openssl rand -hex 8 # DB_PASSWORD_HERE
 openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
 ```
 
@@ -144,7 +144,7 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
     version: '3.7'
     services:
       server:
-        image: bidmcdigitalpsychiatry/lamp-server:2020
+        image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2021
         healthcheck:
           test: wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
         environment:
@@ -157,8 +157,8 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
           REDIS_HOST: 'redis://cache:6379/0'
           NATS_SERVER: 'message_queue:4222'
         networks:
-          - public
           - default
+          - public
         deploy:
           mode: replicated
           update_config:
@@ -236,4 +236,4 @@ docker stack deploy --compose-file lamp.yml lamp
 
 ## Maintaining and Updating the LAMP Platform
 
-If you are using this Docker Stack provided, you will only need to run a `docker service update` command on the API Server to pull the latest image. Because Docker image versioning is calendar-based, at the moment you will manually need to update from `2020` to `2021`, and so on.
+If you are using this Docker Stack provided, you will only need to run a `docker service update` command on the API Server to pull the latest image. Because Docker image versioning is calendar-based, at the moment you will manually need to update from `2021` to `2022`, and so on.
