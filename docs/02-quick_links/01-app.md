@@ -53,7 +53,7 @@ If you'd like to test the beta version of the app, please follow the instruction
 
 ## Android
 
-→ **Requires Android 7 (and Google Fit).**
+→ **Requires Android 8 (and Google Fit).**
 
 ![https://www.unifiedremote.com/content/images/badge-android.png](https://www.unifiedremote.com/content/images/badge-android.png)
 
