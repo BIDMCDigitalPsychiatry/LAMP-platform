@@ -9,7 +9,3 @@ The LAMP smartphone app mindLAMP2 collects multiple, customizable data streams f
 ### The Dashboard
 
 The dashboard allows both you and the user to view the information that was collected from the smartphone app. The dashboard allows clinicians, researchers, and patients to visualize data that is collected and aid in treatment and/or research. 
-
-### Diagram of the LAMP Platform
-
-![](assets/LAMP_Diagrams.png)
