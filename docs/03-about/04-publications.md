@@ -8,6 +8,15 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 :::
 
+### Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology.
+
+![image](https://user-images.githubusercontent.com/86117379/130236989-b6265676-e77c-444b-9ded-91d78cbada66.png)
+
+```
+Li, H., Yang, S., Chi, H., Xu, L., Zhang, T., Singleton, G., Ting, Y., Stone, W.S. & Wang, J. (2021). Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology. Asian Journal of Psychiatry, 58, 102587. doi:10.1016/j.ajp.2021.102587
+```
+
+
 ### Smartphone-Based Neuropsychological Assessment in Parkinson’s Disease: Feasibility, Validity, and Contextually Driven Variability in Cognition
 
 [![](assets/weizenbaum_paper.jpg)](assets/Weizenbaum%20smartphone%20cognition%20PD%20JINS%20May%202021.pdf)
@@ -80,10 +89,4 @@ Vaidyam A, Roux S, Torous J. Patient Innovation in Investigating the Effects of 
 Wisniewski Hannah, Henson Philip, Torous John. Using a Smartphone App to Identify Clinically Relevant Behavior Trends via Symptom Report, Cognition Scores, and Exercise Levels: A Case Series. Frontiers in Psychiatry. 10-2019-652. doi:10.3389/fpsyt.2019.00652
 ```
 
-### Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology.
 
-![image](https://user-images.githubusercontent.com/86117379/130236989-b6265676-e77c-444b-9ded-91d78cbada66.png)
-
-```
-Li, H., Yang, S., Chi, H., Xu, L., Zhang, T., Singleton, G., Ting, Y., Stone, W.S. & Wang, J. (2021). Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology. Asian Journal of Psychiatry, 58, 102587. doi:10.1016/j.ajp.2021.102587
-```
