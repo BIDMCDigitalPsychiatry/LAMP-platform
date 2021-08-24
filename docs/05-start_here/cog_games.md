@@ -4,11 +4,42 @@ mindLAMP offers a variety of neurocognitive assessments in the form of games, wh
 
 ## Jewels
 
-Jewels replicates the Trail Making Tests, in which participants are asked to sequentially select numbered jewels in the correct ascending order. In Jewels A, participants must select jewels starting from 1 in ascending order, within a given time limit. The amount of jewels correctly selected as well as the number of mistakes are both assessed. In Jewels B, participants must select alternately between two types of jewels in ascending order. Participants are indicated which jewel shape they must begin at number 1 with. 
+Jewels replicates the Trail Making Tests, in which participants are asked to sequentially select numbered jewels in the correct ascending order. 
 
-**Sample Instructions, Jewels A:** "*Tap the jewels in chronological order, starting with number 1."*
+The Trail Making Test, with its two subtypes A and B, typically used to screen for dementia and assess cognition. It evaluates visual and motor abilities, executive functioning, and set shifting (1). Evidence suggests that digital and computerized version of the pen-and-paper Trail Making Test reliably assess the same cognitive domains. (2, 3, 4). Trails A requires a patient to make a 'trail' connecting numbered circles, placed randomly on a single page, in ascending order. Trails B requires a patient to make a similar trail, but alternate between numbered and alphabetized circles.
 
-**Sample Instructions, Jewels B:** "*Look at the bottom of the screen to see which jewel to collect first. Tap number of 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected."*
+mindLAMP offers its own digitized version of both version of the Trail Making Test, called Jewels. Here, the numbered circles are replaced by numbered jewels in both Jewels A and B. For Jewels B, instead of having alternating numbers and alphabets, the sets alternate between two differently shaped jewels. participants must select jewels starting from 1 in ascending order, within a given time limit. Participants are indicated which jewel shape they must begin at number 1 with. Here is an example of both Jewels A and B.
+
+### Jewels A Sample Game Play: 
+![image](https://user-images.githubusercontent.com/82968538/130676448-51aea299-9091-4bbb-a01e-d27f57733bde.png)
+
+### Jewels B Sample Game Play: 
+![IMG_0633](https://user-images.githubusercontent.com/82968538/130677581-a0142a08-d632-4120-9118-a06cec0d8704.PNG)
+
+
+### Customization
+
+The digitized version offers the opportunity to customize Jewels, using the Activity settings: 
+
+![Screen Shot 2021-08-23 at 3 27 32 PM](https://user-images.githubusercontent.com/82968538/130677807-298add5e-43ce-4f6c-8e14-c842eec5e1dc.png)
+1. **Variant:** Here, clinicians and researchers can define which Variant, A or B, they would like patients to play. 
+2. **Mode:** The game can be played at four different difficulty modes - Beginner, Intermediate, Advanced, or Expert. Clinicians can customize which difficulty mode they would like patients to play, by selecting from the Mode category.
+    a. Each mode varies by the Duration the player has to complete the trail. This can also be changed for each mode, by changing the various Durations, in seconds. 
+3. **Initial Diamond Count:** This can be used to determine the number of jewels that appear at the Level 1.
+4. **Initial Shape Count:** If so desired, the game can present not 1 or 2 different shapes of jewels, as it would for Trails A and B respectively, but any number of shapes. 
+5. **Bonus points:** As an additional gamification strategy, bonus points can be awarded for each level completed.
+
+*For more advanced settings, please contact our research team for assistance.*
+
+### Scoring
+
+Scoring for both Jewels variants are out of a 100, with each incorrect jewel earning -2 point
+
+### Sample Instructions
+
+**Sample Instructions, Jewels A:** *"Tap the jewels in chronological order, starting with number 1."*
+
+**Sample Instructions, Jewels B:** *"Look at the bottom of the screen to see which jewel to collect first. Tap number of 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected."*
 
 ## Box Game
 
