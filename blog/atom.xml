@@ -2,12 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.lamp.digital/blog</id>
     <title>LAMP Platform Blog</title>
-    <updated>2021-08-09T00:00:00.000Z</updated>
+    <updated>2021-08-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.lamp.digital/blog"/>
     <subtitle>LAMP Platform Blog</subtitle>
     <icon>https://docs.lamp.digital/./docs/assets/logo.png</icon>
     <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
+    <entry>
+        <title type="html"><![CDATA[]]></title>
+        <id>https://docs.lamp.digital/blog/2021/08/25/</id>
+        <link href="https://docs.lamp.digital/blog/2021/08/25/"/>
+        <updated>2021-08-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Updates]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[]]></title>
         <id>https://docs.lamp.digital/blog/2021/08/09/</id>
