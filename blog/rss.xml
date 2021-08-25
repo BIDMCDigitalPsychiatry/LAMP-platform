@@ -9,8 +9,9 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
         <item>
+            <title><![CDATA[Visualization & Activity Updates]]></title>
             <link>https://docs.lamp.digital/blog/2021/08/25/</link>
-            <guid>https://docs.lamp.digital/blog/2021/08/25/</guid>
+            <guid>Visualization &amp; Activity Updates</guid>
             <pubDate>Wed, 25 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Updates]]></description>
         </item>
