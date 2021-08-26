@@ -25,10 +25,7 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 
 ### Jewels A (left) and B (right) Sample Game Play: 
 
-<p align=center>
-    <img src="https://user-images.githubusercontent.com/82968538/130676448-51aea299-9091-4bbb-a01e-d27f57733bde.png", width="320" />
-    <img src="https://user-images.githubusercontent.com/82968538/130677581-a0142a08-d632-4120-9118-a06cec0d8704.PNG", width="320" />
-</p>
+![Jewels Samples](https://user-images.githubusercontent.com/82968538/130969826-0f467610-b988-451b-a57d-207827208986.png)
 
 
 ### Customization
@@ -85,31 +82,18 @@ The animal stimuli and the box together assess visual memory, working memory, an
 ### Sample Game Play
 
 #### Trial 1
-<p align=center>
-    <img src="https://user-images.githubusercontent.com/82968538/130859599-90c09a35-1d7e-46a5-9336-26b3550d6c96.PNG", width="320" />
-    <img src="https://user-images.githubusercontent.com/82968538/130860982-bad67261-d1f3-491c-b0c7-eafa06852af9.PNG", width="320" />
-    <img src="https://user-images.githubusercontent.com/82968538/130859661-242fb247-4c1e-4c02-9430-8b724a945936.PNG", width="320" />
-    <img src="https://user-images.githubusercontent.com/82968538/130859705-5e68438a-7fca-4f08-84af-3ff9ba178302.PNG", width="320" />
-</p>
+![C D Trial 1A](https://user-images.githubusercontent.com/82968538/130972978-b96e9129-df46-4a80-8176-93639f1758e4.png)
+![C D Trial 1B](https://user-images.githubusercontent.com/82968538/130972986-f74a39ef-9465-491f-8a37-23dd2a30bd6b.png)
+
 
 #### Trial 2
-<p align=center>
-    <img src="https://user-images.githubusercontent.com/82968538/130860982-bad67261-d1f3-491c-b0c7-eafa06852af9.PNG", width="315" />
-    <img src="https://user-images.githubusercontent.com/82968538/130860107-ac34c77e-4465-4418-b819-5f37c6e13dca.PNG", width="315" />
-    <img src="https://user-images.githubusercontent.com/82968538/130860116-fb3ac419-066a-4da2-9504-74e36e28cfec.PNG", width="315" />
-    
-</p>
-
+![C D Trial 2](https://user-images.githubusercontent.com/82968538/130973004-e035e322-7804-49d2-838e-211d8a49bf29.png)
 
 
 ### Examples of Rule Changes at Subsequent Levels
 
-<p align=center>
-    <img src="https://user-images.githubusercontent.com/82968538/130861365-e5b310b2-6450-48c5-8056-41002b96495f.PNG", width="315" />
-    <img src="https://user-images.githubusercontent.com/82968538/130861400-80a1931f-c29d-4c81-a1f2-a5f6dc199858.PNG", width="315" />
-    <img src="https://user-images.githubusercontent.com/82968538/130861379-8677a084-712b-4ef8-a537-a7d7a49c30b9.PNG", width="315" />
-    
-</p>
+![C D Rules](https://user-images.githubusercontent.com/82968538/130973343-b1a41782-c9a2-493d-9a37-748e4900cd93.png)
+
 
 ### Sample Instructions
 
@@ -124,10 +108,8 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 
 ### Examples of Rule Changes at Subsequent Levels
 
-<p align=center>
-    <img src="https://user-images.githubusercontent.com/82968538/130857783-f0ad28fb-dc1d-4aa0-a06e-8a67458c4d1e.PNG", width="320" />
-    <img src="https://user-images.githubusercontent.com/82968538/130857794-e2c60155-47fa-4e67-9464-327b12a10980.PNG", width="320" />
-</p>
+![Pop Levels](https://user-images.githubusercontent.com/82968538/130975328-392de105-18c6-4272-bc13-2c0200773205.png)
+
 
 ### Customization
 
@@ -140,9 +122,8 @@ The task can be customized by the clinician or researcher in the Activity settin
 
 Final scores on based on the number of bubbles successfully popped, the number of incorrectly missed bubbles, the number of correctly-ignored bubbles and the number of incorrectly popped bubbles, as shown below:
 
-<p align=center>
-    <img src = "https://user-images.githubusercontent.com/82968538/130858358-6ac74197-92bb-471d-890a-94b46d14499d.PNG", width="320" />
-</p>
+![Pop Score (1)](https://user-images.githubusercontent.com/82968538/130975605-572b2c88-89cd-4121-a2cd-22e1bced2656.png)
+
 
 ### Sample Instructions   
 
