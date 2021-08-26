@@ -25,7 +25,7 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 
 ### Jewels A (left) and B (right) Sample Game Play: 
 
-<p align=center float: left>
+<p align=center>
     <img src="https://user-images.githubusercontent.com/82968538/130676448-51aea299-9091-4bbb-a01e-d27f57733bde.png", width="320" />
     <img src="https://user-images.githubusercontent.com/82968538/130677581-a0142a08-d632-4120-9118-a06cec0d8704.PNG", width="320" />
 </p>
@@ -85,7 +85,7 @@ The animal stimuli and the box together assess visual memory, working memory, an
 ### Sample Game Play
 
 #### Trial 1
-<p align=center float: left>
+<p align=center>
     <img src="https://user-images.githubusercontent.com/82968538/130859599-90c09a35-1d7e-46a5-9336-26b3550d6c96.PNG", width="320" />
     <img src="https://user-images.githubusercontent.com/82968538/130860982-bad67261-d1f3-491c-b0c7-eafa06852af9.PNG", width="320" />
     <img src="https://user-images.githubusercontent.com/82968538/130859661-242fb247-4c1e-4c02-9430-8b724a945936.PNG", width="320" />
@@ -93,7 +93,7 @@ The animal stimuli and the box together assess visual memory, working memory, an
 </p>
 
 #### Trial 2
-<p align=center float: left>
+<p align=center>
     <img src="https://user-images.githubusercontent.com/82968538/130860982-bad67261-d1f3-491c-b0c7-eafa06852af9.PNG", width="315" />
     <img src="https://user-images.githubusercontent.com/82968538/130860107-ac34c77e-4465-4418-b819-5f37c6e13dca.PNG", width="315" />
     <img src="https://user-images.githubusercontent.com/82968538/130860116-fb3ac419-066a-4da2-9504-74e36e28cfec.PNG", width="315" />
@@ -104,7 +104,7 @@ The animal stimuli and the box together assess visual memory, working memory, an
 
 ### Examples of Rule Changes at Subsequent Levels
 
-<p align=center float: left>
+<p align=center>
     <img src="https://user-images.githubusercontent.com/82968538/130861365-e5b310b2-6450-48c5-8056-41002b96495f.PNG", width="315" />
     <img src="https://user-images.githubusercontent.com/82968538/130861400-80a1931f-c29d-4c81-a1f2-a5f6dc199858.PNG", width="315" />
     <img src="https://user-images.githubusercontent.com/82968538/130861379-8677a084-712b-4ef8-a537-a7d7a49c30b9.PNG", width="315" />
@@ -124,7 +124,7 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 
 ### Examples of Rule Changes at Subsequent Levels
 
-<p align=center float: left>
+<p align=center>
     <img src="https://user-images.githubusercontent.com/82968538/130857783-f0ad28fb-dc1d-4aa0-a06e-8a67458c4d1e.PNG", width="320" />
     <img src="https://user-images.githubusercontent.com/82968538/130857794-e2c60155-47fa-4e67-9464-327b12a10980.PNG", width="320" />
 </p>
