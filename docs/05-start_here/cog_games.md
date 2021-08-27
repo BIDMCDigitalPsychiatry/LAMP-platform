@@ -23,7 +23,7 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 
 </details>
 
-### Jewels A (left) and B (right) Sample Game Play: 
+### Jewels A (left) and B (right) Sample Game Play 
 
 ![Jewels Samples](https://user-images.githubusercontent.com/82968538/130969826-0f467610-b988-451b-a57d-207827208986.png)
 
@@ -55,18 +55,47 @@ Scoring for both Jewels variants are out of a 100, with each incorrect jewel ear
 
 ## Spatial Span
 
-Spatial Span is a task that assess visual, spatial and working memory, and attention, in which participants must recall and reproduce the order in which boxes in a grid light up. The task can be customized such that the patterns must be reproduced in the same order as shown, or in reverse of the order shown on.  
+Spatial Span is a task that assess visuospatial working memory and memory capacity. In this game, white squares are arranged in a grid. Squares will 'light up' or change color to green, and then return to white, one square at a time. Participants are required to recall and reproduce the order in which squares in the grid light up. The task can be customized such that the patterns must be reproduced in the same order as cued, or in reverse of the order cued. At every subsequent level, the number of squares that light up increases.
 
-**Sample Instructions, Forward Box Game:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the same order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
+The recall and reproduce task requires the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, the increasing number of squares to remember measures memory capacity.
 
-**Sample Instructions, Backwards Box Game:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the REVERSE order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
+### Sample Game Play
+#### Forward Spatial Span
+##### Level 1
+
+![FSS Trial 0](https://user-images.githubusercontent.com/82968538/131180452-ac22d260-7f9b-4f86-8229-8c278d69744f.png)
+![FSS Trial 0B](https://user-images.githubusercontent.com/82968538/131180463-351b12c1-55a9-4979-b395-25903dab89ff.png)
+
+##### Level 2
+
+![FSS Trial 1 ](https://user-images.githubusercontent.com/82968538/131180486-d31bf6d8-4b62-4855-a207-4141636d095a.png)
+![FSS Trial1B](https://user-images.githubusercontent.com/82968538/131180519-7886ec94-acef-4e5b-a30c-17a8192a4ddb.png)
+
+#### Backward Spatial Span 
+
+##### Level 1
+
+![SS Trial 1](https://user-images.githubusercontent.com/82968538/131180554-8c6410b2-00be-4620-b769-a94934c49b31.png)
+![Trial 1B](https://user-images.githubusercontent.com/82968538/131180563-47f75b56-bb54-47a4-866c-42f0f9ef2624.png)
 
 
-## Balloon Risk
+##### Level 2 
 
-Balloon Risk is a risk-reward task, in which participants must tap to inflate a balloon to the largest possible size without it bursting. The task can be customized to alter the mean number of taps required to burst the balloon, as well as the standard deviation for the number of taps required. Participants are given points based on the number of taps they made before they stopped inflating the balloon, or no points if the balloon burst.
+![Trial 2 A](https://user-images.githubusercontent.com/82968538/131180581-3dfc3e79-4525-4def-9639-1e43bc679089.png)
+![SS Trial 2B](https://user-images.githubusercontent.com/82968538/131180598-0d8797da-e145-49cc-939d-7f8ee9e44da9.png)
 
-**Sample Instructions:** *Tap the button to 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
+### Customization 
+
+Each trial allows the user to play 5 levels as a default. Researchers and clinicians can designate whether the game is to be ordered Forward or Backward.
+
+![Screen Shot 2021-08-23 at 3 30 50 PM](https://user-images.githubusercontent.com/82968538/131180976-c5f81535-a293-4162-9f1f-df38c0b520b1.png)
+
+
+### Sample Instructions
+
+**Forward Spatial Span:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the same order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
+
+**Backwards Spatial Span:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the REVERSE order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
 
 
 ## Cats and Dogs
@@ -128,3 +157,28 @@ Final scores on based on the number of bubbles successfully popped, the number o
 ### Sample Instructions   
 
 *"In this game, you will see lots of different colored bubbles, one at a time. Your task is to "pop" the correctly colored bubbles, while ignoring the incorrect ones. Pay attention to the instructions for each level to know which colored bubbles you should tap, and which ones you should ignore."*
+
+
+## Balloon Risk
+
+Balloon Risk, or the Balloon Analog Risk Task is a risk-reward task, in which participants must tap to inflate a balloon to the largest possible size without it bursting. The task has been successfully used as a computerized assessment for risk-taking behavior.
+
+### Sample Game Play
+
+![Balloon Risk T1](https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png)
+
+### Customizations
+
+**Balloon Count:** This will change the number of balloon trials required to complete the task. 
+
+**Breakpoint Mean and Standard Deviation:** The task can be customized to alter the mean number of taps required to burst the balloon, as well as the standard deviation for the number of taps required. These can be used to adjust the level of risk. 
+
+![Screen Shot 2021-08-23 at 3 24 53 PM](https://user-images.githubusercontent.com/82968538/131181080-a61d2e72-1af7-4497-9d20-def6e5becb31.png)
+
+### Scoring
+
+Participants are given points based on the number of taps they made before they stopped inflating the balloon, or no points if the balloon burst.
+
+### Sample Instructions
+
+*Tap the button to 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
