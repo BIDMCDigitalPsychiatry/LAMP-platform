@@ -1,12 +1,12 @@
+---
 # Introduction
 
 ## User Types
 
-All LAMP users have the opportunity to be part of the LAMP Consortium. If you are interested in becoming a partner, please review **Types of Users.**
+All mindLAMP users have the opportunity to be part of the LAMP Consortium. If you are interested in becoming a partner, please review **Types of Users.**
 
 LAMP users are currently required to host their own data. The Division of Digital Psychiatry is no longer able to host data from sites outside of Beth Israel Deaconess Medical Center. The exception to this policy is for external studies that the Division of Digital Psychiatry collaborates with.
 
----
 
 ## **Self-Deploying User**
 
