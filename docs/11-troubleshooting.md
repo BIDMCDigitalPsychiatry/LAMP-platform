@@ -1,7 +1,3 @@
----
-slug: /
----
-
 # Troubleshooting
 
 In case your app is running into issues or you have questions regarding setting up, see this section to see if the solutions listed help! If you are a collaborator or a researcher using mindLAMP, please post on our community forums [here](https://mindlamp.discourse.group/). If you are still in need of further assistance, please file a report through our bug reporting form [here](https://docs.google.com/forms/d/e/1FAIpQLSdy354xNzQVekizuSMePWk_F7YGl9ENencXKJ-T0oo4ZTNkaA/viewform).
