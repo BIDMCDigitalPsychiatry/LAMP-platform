@@ -21,3 +21,7 @@ The **Database** securely and chronologically indexes the data through the **LAM
 ### ④ Cortex
 
 The **Cortex** data analysis pipeline is designed to easily hook into the **Database** and extract important and clinically useful secondary data features, such as sedentary behavior, time spent at home, device/screen usage, sleep estimates, and much more, from the terabytes of raw data. It can trigger custom just-in-time adaptive interventions and produce useful interactive visualizations viewable by patients and clinicians.
+
+<head>
+  <meta name="google-site-verification" content="MDFm8izKofwRdAnUbqg2muDPnSlHISr1EVApzHUI-Z4" />
+</head>
