@@ -12,7 +12,7 @@ See this page for a list of the following standardized assessments administered 
 'Over the past week, I have felt bad about myself, or that I am a failure or have let down myself or my family.'\
 'Over the past week, I have had trouble concentrating on things such as reading the newspaper or watching television.'\
 'Over the past week, I have found myself moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that I have been moving around a lot more than usual.'\
-'Over the past week, I have had thoughts that I would be better off dead, or thoughts of hurting myself.'\
+'Over the past week, I have had thoughts that I would be better off dead, or thoughts of hurting myself.'
 
 ## GAD-7 (Anxiety)
 'Over the past week, I have felt nervous, anxious, or on edge.'\
@@ -21,7 +21,7 @@ See this page for a list of the following standardized assessments administered 
 'Over the past week, I have had trouble relaxing.'\
 'Over the past week, I have felt so restless that it's hard to sit still.'\
 'Over the past week, I have felt myself becoming easily annoyed or irritable.'\
-'Over the past week, I have felt afraid as if something awful might happen.'\
+'Over the past week, I have felt afraid as if something awful might happen.'
 
  ## PSS (Stress)
 'In the last week, how often have you been upset because of something that  happened unexpectedly?'\
@@ -33,7 +33,7 @@ See this page for a list of the following standardized assessments administered 
 'In the last week, how often have you been able to control irritations in  your life?'\
 'In the last week, how often have you felt that you were on top of things?'\
 'In the last week, how often have you been angered because of things that  happened that were outside of your control?' \
-'In the last week, how often have you felt difficulties were piling up so high that  you could not overcome them?'\
+'In the last week, how often have you felt difficulties were piling up so high that  you could not overcome them?'
  
  ## UCLA Loneliness (Loneliness)
 'I am unhappy doing so many things alone'\
@@ -55,7 +55,7 @@ See this page for a list of the following standardized assessments administered 
 'I am unhappy being so withdrawn'\
 'It is difficult for me to make friends'\
 'I feel shut out and excluded by others'\
-'People are around me but not with me'\
+'People are around me but not with me'
  
  ## PQ-16 (Prodromal)
 'I feel uninterested in the things I used to enjoy'\
@@ -73,7 +73,7 @@ See this page for a list of the following standardized assessments administered 
 'I have heard things other people can't hear like voices of people whispering or talking.'\
 'I often feel that others have it in for me.'\
 'I have had the sense that some person or force is around me, even though I could not see anyone.'\
-'I feel that parts of my body have changed in some way, or that parts of my body are working differently than before.'\
+'I feel that parts of my body have changed in some way, or that parts of my body are working differently than before.'
  
  ## PSQI (Sleep)
 'During the past week, when have you usually gone to bed?'\
@@ -88,7 +88,7 @@ See this page for a list of the following standardized assessments administered 
 'How often have you had trouble sleeping because you have bad dreams'\
 'How often have you had trouble sleeping because you have pain'\
 'During the past week, how often have you had trouble staying awake while driving, eating meals, or engaging in social activity?'\
-'During the past week, how much of a problem has it been for you to keep up enthusiasm to get things done?'\
+'During the past week, how much of a problem has it been for you to keep up enthusiasm to get things done?'
  
  ## D-WAI (App Engagement)
 'I trust the app to guide me towards my personal goals'\
@@ -96,4 +96,4 @@ See this page for a list of the following standardized assessments administered 
 'The app encourages me to accomplish tasks and make progress'\
 'I agree that the tasks within the app are important for my goals'\
 'The app is easy to use and operate'\
-'The app supports me to overcome challenges'\
+'The app supports me to overcome challenges'
