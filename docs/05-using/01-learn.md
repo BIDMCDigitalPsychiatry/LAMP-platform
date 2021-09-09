@@ -12,3 +12,4 @@ Some examples of what learn tips include are supported snippets of information a
 
 It is also possible to enter have videos embedded within the app as well. If requested by a user, a clinician or researcher can also create individualized tips for a patient or participant to learn about. For example, if a patient was specifically struggling with social relationships (i.e. friendships, family dynamics, etc.), a set of tips in the Learn tab could be specifically created from the Dashboard for how to navigate and create healthy social relationships. 
 ![](assets/learn2.png)
+
