@@ -7,6 +7,7 @@ package-lock.json
 
 # Generated files
 .docusaurus
+.ipynb_checkpoints
 .cache-loader
 openapi.json
 sidebar.json
