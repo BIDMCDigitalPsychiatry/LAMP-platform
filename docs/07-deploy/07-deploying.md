@@ -159,6 +159,10 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
         networks:
           - default
           - public
+        logging:
+          options:
+            max-size: "10m"
+            max-file: "3"
         deploy:
           mode: replicated
           update_config:
