@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 # LAMP Platform
 
 ![](assets/LAMP_Overview.png)
