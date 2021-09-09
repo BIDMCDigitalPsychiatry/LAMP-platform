@@ -1,12 +1,12 @@
 # Reset a Clinican or Researcher Password
 
-![](../../05-start_here/assets/users_tab.jpg)
+![](../../06-start_here/assets/users_tab.jpg)
 
-![](../../05-start_here/assets/Untitled_61.png)
+![](../../06-start_here/assets/Untitled_61.png)
 
-![](../../05-start_here/assets/Screen_Shot_2020-10-02_at_3.27.40_PM.png)
+![](../../06-start_here/assets/Screen_Shot_2020-10-02_at_3.27.40_PM.png)
 
-![](../../05-start_here/assets/Screen_Shot_2020-10-02_at_3.27.55_PM.png)
+![](../../06-start_here/assets/Screen_Shot_2020-10-02_at_3.27.55_PM.png)
 
 1. Log into the app and click on the "Users" tab.
 2. Tap the profile icon at top left and select the Manage Credentials option from the drop-down list. 
@@ -17,9 +17,9 @@
 
 # Change a Clinician or Researcher Log In Email
 
-![](../../05-start_here/assets/users_tab.jpg)
+![](../../06-start_here/assets/users_tab.jpg)
 
-![](../../05-start_here/assets/Untitled_61.png)
+![](../../06-start_here/assets/Untitled_61.png)
 
 To change a log in email for a clinician, you must create a new credential and delete the old one.
 
@@ -30,14 +30,14 @@ To change a log in email for a clinician, you must create a new credential and d
 5. Again, tap the profile icon at top left and select the Manage Credentials option from the drop-down list. 
 6. To delete the old credential, tap its icon and select the `Delete` option from the drop-down list.
 
-![](../../05-start_here/assets/Screen_Shot_2020-10-02_at_3.27.24_PM.png)
+![](../../06-start_here/assets/Screen_Shot_2020-10-02_at_3.27.24_PM.png)
 
-![](../../05-start_here/assets/Screen_Shot_2020-10-02_at_3.26.07_PM.png)
+![](../../06-start_here/assets/Screen_Shot_2020-10-02_at_3.26.07_PM.png)
 
-![](../../05-start_here/assets/Untitled_62.png)
+![](../../06-start_here/assets/Untitled_62.png)
 
 **If you are locked out of your account, please consult your clinician or system administrator/your organization's IT department for assistance.**
 
-![](../../05-start_here/assets/Untitled_62.png)
+![](../../06-start_here/assets/Untitled_62.png)
 
-![](../../05-start_here/assets/Screen_Shot_2020-10-02_at_3.28.11_PM.png)
+![](../../06-start_here/assets/Screen_Shot_2020-10-02_at_3.28.11_PM.png)

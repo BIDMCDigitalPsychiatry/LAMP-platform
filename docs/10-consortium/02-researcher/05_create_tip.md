@@ -14,6 +14,6 @@ Navigate to the activities page click the “+ Add” button, and then scroll to
 6. Add the tip author. If there is no author, this will be left blank.
 7. Press the `(+)` icon to add an image.
 
-![](../../05-start_here/06-activities/assets/activity_menu.jpg)
+![](../../06-start_here/06-activities/assets/activity_menu.jpg)
 
-![](../../05-start_here/06-activities/assets/new_tip.jpg)
+![](../../06-start_here/06-activities/assets/new_tip.jpg)
