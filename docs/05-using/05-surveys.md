@@ -4,8 +4,8 @@ See this page for a list of the following standardized assessments administered 
 
 
 ## PHQ-9 (Mood)
-'Over the past week, I have felt little interest or pleasure in doing things'
-'Over the past week, I have felt down, depressed, or hopeless.'
+'Over the past week, I have felt little interest or pleasure in doing things'\
+'Over the past week, I have felt down, depressed, or hopeless.'\
 'Over the past week, I have had trouble falling asleep, starting asleep, or sleeping too much.'
 'Over the past week, I have felt tired or have had little energy.'
 'Over the past week, I have experienced poor appetite or overeating.'
