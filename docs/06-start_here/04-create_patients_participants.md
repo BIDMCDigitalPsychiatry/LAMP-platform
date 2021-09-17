@@ -110,7 +110,7 @@ Though it appears that the patient has been “renamed,” this new alias is onl
 
 ![](assets/patient_profile.jpg)
 
-### Export Data for Multiple Patients/Participants
+### Export Data for Multiple Patients/Participants - **This function is currently unavailable**
 
 1. Log into the app and click on the "Users" tab.
 2. Select one or more patients/participants by tapping the checkboxes at the left of their row. 
