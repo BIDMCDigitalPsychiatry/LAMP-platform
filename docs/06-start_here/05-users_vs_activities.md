@@ -1,5 +1,11 @@
 # Users vs Activities vs Sensors vs Studies Tab
 
+When logging in a reseracher or clinician, be sure to note the view mode that you are currently in. This can be seen by looking in the top right corner, in which there will be a small, oval-shaped button that can toggle between "Simple Mode" and "Advanced Mode". See the images below for a visual. Simple mode simplifies the view so that only the users tab is visible in case a clinician as no need for the extra features and the advanced view is for researchers who require the full usage of LAMP's research capabilities. 
+
+| Simple Mode  | Advanced Mode |
+| ----------- | ----------- |
+| ![](assets/simple.png)      | ![](assets/advanced.png) |
+
 # Users
 
 When the clinician or researcher logs in, they will see the Patients tab. Here, there will be a list of patients they have added.
