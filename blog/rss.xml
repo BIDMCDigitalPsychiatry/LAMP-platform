@@ -9,11 +9,11 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
         <item>
-            <title><![CDATA[Fixes, Features, and Improvements]]></title>
+            <title><![CDATA[Scheduled Routine mindLAMP AWS Maintenance]]></title>
             <link>https://docs.lamp.digital/blog/2021/09/13/</link>
-            <guid>Fixes, Features, and Improvements</guid>
+            <guid>Scheduled Routine mindLAMP AWS Maintenance</guid>
             <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Features]]></description>
+            <description><![CDATA[Hi all,]]></description>
         </item>
         <item>
             <title><![CDATA[Visualization & Activity Updates]]></title>

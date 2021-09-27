@@ -9,11 +9,11 @@
     <icon>https://docs.lamp.digital/./docs/assets/logo.png</icon>
     <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
     <entry>
-        <title type="html"><![CDATA[Fixes, Features, and Improvements]]></title>
-        <id>Fixes, Features, and Improvements</id>
+        <title type="html"><![CDATA[Scheduled Routine mindLAMP AWS Maintenance]]></title>
+        <id>Scheduled Routine mindLAMP AWS Maintenance</id>
         <link href="https://docs.lamp.digital/blog/2021/09/13/"/>
         <updated>2021-09-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Features]]></summary>
+        <summary type="html"><![CDATA[Hi all,]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Visualization & Activity Updates]]></title>
