@@ -68,4 +68,4 @@ To analyze specific data, use the 'Select tag categories' dropdown menu to selec
 
 
 ### Help & Updates
-The LAMP data portal is currently in alpha, as is this documentation. We are actively seeking both feedback and requests about the usability and usefulness of the data portal and this documentation. Please give us any questions, comments, or feature requests either through our [community page](community.lamp.digital) or our public (GitHub repository)[https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues]
+The LAMP data portal is currently in alpha, as is this documentation. We are actively seeking both feedback and requests about the usability and usefulness of the data portal and this documentation. Please give us any questions, comments, or feature requests either through our [community page](community.lamp.digital) or our public [GitHub repository](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues)
