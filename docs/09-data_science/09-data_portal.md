@@ -67,5 +67,22 @@ Once you have loaded your data, you can click the "Adjust Graph Display" button 
 To analyze specific data, use the 'Select tag categories' dropdown menu to select a category of tag you would like to see more details about, then select a specific tag name that is listed. If you are using publicly available LAMP analysis code - e.g. from a GitHub repository or other publicly available site, graphs are likely under the 'experimental' category.
 
 
+# Data Portal Usage Examples
+
+Below are some examples and ideas to get you started using the LAMP Data Portal.
+
+![](assets/docs_gps_scatter_example.png)
+**Example 1**: By plotting number of gps(or other passive measure) data points received by hour, you quickly identify which (if any) of your participants may be having data collection issues. Prevent unpleasant end-of-study realizations by ensuring that all your participants are collecting the highest quality data possible.  
+
+![](assets/docs_tooltip_example.png)
+**Example 2**: Use Vega's easy to create and manage tooltips to fit far more data into a single graph than would be possible in a traditional paper graph - here, for example, you can both see how survey responses trend and examine specific surveys in detail.  
+
+![](assets/docs_activity_counts.png)
+**Example 3**: Keep track of which activities (and how many) your participants are doing with Vega's stacked bar plots.  
+
+
+![](assets/docs_example_charts.png)
+**Example 4**: Use an array of charts to examine a participant's data in great detail. Here, find examples of summary graphs which show changes over time, correlation heatmaps which highlight connections between different LAMP measures (outlined in red), and the activity tracking functionality seen in example 3.  
+
 ### Help & Updates
 The LAMP data portal is currently in alpha, as is this documentation. We are actively seeking both feedback and requests about the usability and usefulness of the data portal and this documentation. Please give us any questions, comments, or feature requests either through our [community page](community.lamp.digital) or our public [GitHub repository](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues)
