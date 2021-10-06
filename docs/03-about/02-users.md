@@ -82,9 +82,9 @@ Role: Clinicians
 
 Location: Los Angeles, California, United States
 
-Role: Researchers
+Role: Clinicians, Researchers
 
-> They will be using LAMP with patients in the Department of Mental Health's system.
+> They will be using LAMP with patients in the Department of Mental Health's system. Clincians will be using mindLAMP to implement a digital version of DBT diary cards.
 
 ## Massachusetts Psychosis Network for Early Treatment (MAPNET)
 
@@ -109,6 +109,14 @@ Location: Montreal, Québec, Canada
 Role: Researchers
 
 > We are planning a study in which we examine the association between sleep and cognition and would like to use LAMP to measure our cognitive performance.
+
+## Uninersity of Michigan Medicine
+
+Location: Ann Arbor, Michigan, United States
+
+Role: Researchers
+
+> The Heinz C. Prechter Bipolar Research Program for approximately 20 people in a piloty study as a part of their Bipolar research.
 
 ## Monash University
 
