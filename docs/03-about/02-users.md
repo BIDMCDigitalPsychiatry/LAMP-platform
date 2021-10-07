@@ -166,6 +166,14 @@ Role: Researchers
 
 > Shanghai Mental Health leveraged LAMP’s open-source platform to create BrainSmart. BrainSmart is an app with similar capabilities as LAMP, including customizable games and surveys that can be used to engage patients. Shanghai Mental Health used BrainSmart in a study that investigated whether interactive technology is feasible way to enhance cognitive function of patients at clinical risk for psychosis. The prevalence of smartphones, paired with high reports of regular app use, suggest that engaging technology may be an avenue for building on cognitive capabilities.
 
+## Stony Brook University
+
+Location: Stony Brook, New York, United States
+
+Role: Researchers
+
+> This will be a research study examining patterns of depression, community mobility, social engagement and health among those with subacute spinal cord injury. Over a 4 month period, participants will first be monitored (passive and active data) for the 2 months, then permitted to share their results and access the mindfulness/stress reduction activities in addition ongoing monitoring in the second 2 months.
+
 ## The Medical University of Varna
 
 Location: Varna, Bulgaria
