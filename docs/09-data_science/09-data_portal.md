@@ -6,7 +6,7 @@ As of late September 2021, the latest versions of the LAMP platform includes a d
 
 The data portal is accessible in three ways:
 1. After logging in as an administrator, click the 'Data Portal' tab on the left or bottom of your screen.
-2. After loggin in as a researcher, click the 'Data Portal' tab on the left or bottom of your screen.
+2. After logging in as a researcher, click the 'Data Portal' tab on the left or bottom of your screen.
 3. Direct navigation to [dashboard.lamp.digital/#/data_portal](dashboard.lamp.digital/#/data_portal)
 
 At this time, the data portal is not accessible using participant credentials.
