@@ -20,6 +20,7 @@ To create a new User Admin or Practice Lead, follow the steps below:
 
 ![](assets/adminview.png)
 ![](assets/newadmin.png)
+
 | User Admin                | Practice Lead          |
 |----------------               |------------------------| 
 | ![](assets/useradmin.png)   | ![](assets/practicelead.png) |
