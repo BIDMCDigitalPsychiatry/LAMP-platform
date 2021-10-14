@@ -33,6 +33,7 @@ This can be found by looking in the top right corner, in which there will be a s
 | Simple Mode  | Advanced Mode |
 | ----------- | ----------- |
 | ![](assets/simple.png)      | ![](assets/advanced.png) |
+|---------|--------|
 
 ## Why would someone want to use different modes?
 
