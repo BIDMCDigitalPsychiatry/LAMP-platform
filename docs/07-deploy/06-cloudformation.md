@@ -2,6 +2,12 @@
 
 [![](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=LAMP&templateURL=https://s3.us-east-2.amazonaws.com/lamp.cloudformation/cloudformation.yml)
 
+<!-- NOTE TO BIDMC MAINTAINERS: 
+- To update the CloudFormation stack (notice the proper URL syntax above) we must update the cloudformation.yml file in the "lamp.cloudformation" S3 bucket owned by BIDMC. 
+- We do not want to have several files/zip folders to download; everything should be contained within the single cloudformation.yml file and several commands below.
+- DO NOT LINK TO EXTERNAL GITHUB REPOSITORIES OR CLOUDFORMATION FILES NOT HOSTED OR PROVIDED BY BIDMC.
+-->
+
 ## Validate
 
 ```bash
