@@ -6,8 +6,11 @@ Please follow all steps below in the exact order specified, though you may skip 
 The files provided below support these orchestration tools: 
 1. **Docker Compose** (single-node)
 2. **Docker Swarm** (single-node or multi-node)
-3. **Kubernetes** (multi-node)
-    → For more information on using Kubernetes, [follow this guide](https://docs.docker.com/get-started/orchestration/) or [this guide](https://docs.docker.com/docker-for-mac/kubernetes/#override-the-default-orchestrator) instead.
+    - **WARNING:** If creating a multi-node deployment, [follow the proper procedures for manager/worker node allocation](https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/). 
+    - `An N manager cluster tolerates the loss of at most (N-1)/2 managers`. 
+    - If creating a 2-node cluster and both are designated as managers, **CATASTROPHIC FAILURE AND SEVERE DATA LOSS may occur if EITHER node loses connectivity for more than 5 minutes.** 
+4. **Kubernetes** (multi-node)
+    - For more information on using Kubernetes, [follow this guide](https://docs.docker.com/get-started/orchestration/) or [this guide](https://docs.docker.com/docker-for-mac/kubernetes/#override-the-default-orchestrator) instead.
 
 ### Prerequisites
 
