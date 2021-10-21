@@ -16,7 +16,7 @@ The patient uses the **App**, taking surveys, playing cognitive games, accessing
 
 ### ② Dashboard
 
-Clinicians and Researchers can create, customize, and schedule activities for patients or participants to interact and receive notifications, and tap into near-real-time information about patients and better inform decision making. The dashboard also allows for unique interactive features for specialized research or clinical-specific use. Additionaly, the dashboard now has a fully functional **data portal** for an in-depth and comprehensive view of all patient and participant data. 
+Clinicians and Researchers can create, customize, and schedule activities for patients or participants to interact and receive notifications, and tap into near-real-time information about patients and better inform decision making. The dashboard also allows for unique interactive features for specialized research or clinical-specific use. Additionaly, the dashboard now has a fully functional **Data Portal** for an in-depth and comprehensive view of all patient and participant data. 
 
 ### ③ Database
 
