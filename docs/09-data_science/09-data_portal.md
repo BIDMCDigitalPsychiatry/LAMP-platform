@@ -27,7 +27,7 @@ To download activity event data for a researcher, study, or specific participant
 
 1. Using the Collapse/Expand arrow buttons in the listings on the left side of the portal, navigate through your researchers (if applicable), studies, and/or users until you can see the target you want to download. If you have many users, you may find it helpful to use the search functionality by clicking the magnifying glass icon.
 2. Press the Download button to the left of the Collapse/Expand button to bring up the selection window.
-3. Change the auto-generated file name if necessary, then click the download button to bring up the selection window.
+3. Change the auto-generated file name if necessary, then click the download button.
 
 At this time, it is not possible to download sensor data through the data portal due to the high volume of data required. To download sensor data for analysis, please see the appropriate section in the `Cortex and API` section of the LAMP docs based on your chosen programming language.
 
