@@ -27,16 +27,9 @@ Active sensor events are produced on a rolling basis via interactions by a Parti
 
 ## Accelerometer
 SensorSpec: lamp.accelerometer
+
 ### Description
 The triaxial accelerometer measures acceleration applied to the device. Each measurement is measured in Gs and is taken relative to the coordinate plane of the device, screen facing upwards. For example, a device resting face-up on a flat surface will report a measurement with the coordinate values `<0, 0, 1>`.
-
-## Blood Pressure
-SensorSpec: lamp.blood_pressure
-
-Blood pressure is 
-- **lamp.blood_pressure:** records blood pressure from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
 
 ## Bluetooth
 Cortex: cortex.raw.bluetooth
@@ -66,7 +59,6 @@ SensorSpec: lamp.accelerometer.motion
 ### Description
 The motion sensor gathers information on the device's physical movement. It includes metrics on device tilt, rotation, experienced gravity, acceleration, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
 
-
 ## None
 SensorSpec: lamp.none
 
@@ -85,9 +77,6 @@ SensorSpec: lamp.screen_state
 ### Description
 The screen state sensor records when the screen was turned on or off, when the device was locked or unlocked, and changes in battery level from charging or discharging the device.
 This sensor **DOES NOT** record the amount of time spent within specific apps on the device or how many notifications were received.
-
-## Weight
-SensorSpec: lamp.weight
 
 ## WiFi
 Cortex: cortex.raw.wifi
