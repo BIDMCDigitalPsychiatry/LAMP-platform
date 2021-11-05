@@ -27,7 +27,7 @@ Active sensor events are produced on a rolling basis via interactions by a Parti
 
 ## Accelerometer
 SensorSpec: lamp.accelerometer
-#### Description
+### Description
 The triaxial accelerometer measures acceleration applied to the device. Each measurement is measured in Gs and is taken relative to the coordinate plane of the device, screen facing upwards. For example, a device resting face-up on a flat surface will report a measurement with the coordinate values `<0, 0, 1>`.
 
 ## Blood Pressure
@@ -67,10 +67,10 @@ SensorSpec: lamp.accelerometer.motion
 The motion sensor gathers information on the device's physical movement. It includes metrics on device tilt, rotation, experienced gravity, acceleration, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
 
 
-## Accelerometer
+## None
 SensorSpec: lamp.none
 
-#### Description
+### Description
 The none sensor makes it so that no sensor data is collected from any sensors. This can be convenient if a user or study is ideally only to collect active data.
 
 ## SMS
