@@ -22,7 +22,7 @@ Active sensor events are produced on a rolling basis via interactions by a Parti
 | Heart Rate & HRV | lamp.heart_rate         | 
 | Respiratory Rate | lamp.respiratory_rate   | 
 | Activity Recognition | lamp.activity_recognition | 
-
+| None          | lamp.none | 
 #### Details on the most commonly analyzed specs are below: For greater detail of specs, see **Cortex & API** section.
 
 ## Accelerometer
@@ -66,6 +66,13 @@ SensorSpec: lamp.accelerometer.motion
 ### Description
 The motion sensor gathers information on the device's physical movement. It includes metrics on device tilt, rotation, experienced gravity, acceleration, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
 
+
+## Accelerometer
+SensorSpec: lamp.none
+
+#### Description
+The none sensor makes it so that no sensor data is collected from any sensors. This can be convenient if a user or study is ideally only to collect active data.
+
 ## SMS
 SensorSpec: lamp.sms
 
@@ -87,3 +94,6 @@ Cortex: cortex.raw.wifi
 
 ### Description
 The wifi sensor provides information about the devices to which the user's device connects via wifi. 
+
+
+
