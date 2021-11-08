@@ -82,3 +82,7 @@ Submit any bugs or feature requests here: [Report a Bug or Request a Feature](/b
 ### Is mindLAMP 2 available in other languages?
 
 The mindLAMP app currently supports Hindi and Spanish.
+
+### Is there a page for quick troubleshooting?
+
+If you require immediate advice on how to solve some commonly encountered issues, please see the [Troubleshooting Page](https://docs.lamp.digital/troubleshooting)
