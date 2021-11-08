@@ -22,7 +22,9 @@ If you go to the top right corner, click on the person icon, which will allow yo
 
 For Android users, please go to settings, then apps & notifications. Proceed to click on mindLAMP, then storage & cache, and clear cache to clean data. Sometimes this can help and it will clear stored data on your phone, allowing LAMP to run better. This does not affect data that has already been collected and uploaded, so there is no worry of losing past data.
 
+## Getting Logged out of the app
 
+Sometimes, the app may log you out on its own. If this is the case, please try to give us as detailed of response as to when this happened and what other activities you may have been doing at the time you noticed the logout. We are currently investigating this issue, but because of the complexity of people having various phones, scenarios when logged out, and activities on their account, it will be a work in progress. If you experience any issues or have any feedback regarding this issue, please contact as at team@digitalpsych.org
 
 <head>
   <meta name="google-site-verification" content="MDFm8izKofwRdAnUbqg2muDPnSlHISr1EVApzHUI-Z4" />
