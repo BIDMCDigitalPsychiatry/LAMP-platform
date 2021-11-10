@@ -47,11 +47,18 @@ Call type options differ between Android and iOS devices.
 ## Distance
 SensorSpec: lamp.distance
 
+## GPS
+SensorSpec: lamp.gps
+
+### Description
+The GPS sensor gets the longitude and latitude of a user at a designated frequency. As a requirement for smartphone apps to be running in the background and collecting any passive sensor data, GPS **is required** to be collected when any sensor data is being collected, even if it is not manually selected. To save battery and make it so extra data is not collected, GPS is collected at a lower frequency when it is not selected.
+
 ## Gyroscope
 SensorSpec: lamp.gyroscope
 
 ### Description
 The gyroscope sensors measures the rate of rotation around each of a device's x, y and z axes. Rotation values are in radians/second. Positive values indicate counter-clockwise rotation; negative values indicate clockwise rotation. These are raw values—i.e. they do not correct for nosie or drift.
+
 
 ## Motion
 SensorSpec: lamp.accelerometer.motion
