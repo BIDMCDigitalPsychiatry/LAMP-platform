@@ -51,7 +51,7 @@ SensorSpec: lamp.distance
 SensorSpec: lamp.gps
 
 ### Description
-The GPS sensor gets the longitude and latitude of a user at a designated frequency. As a requirement for smartphone apps to be running in the background and collecting any passive sensor data, GPS **is required** to be collected when any sensor data is being collected, even if it is not manually selected. To save battery and make it so extra data is not collected, GPS is collected at a lower frequency when it is not selected.
+The GPS sensor gets the longitude and latitude of a user at a designated frequency of ~1Hz. As a requirement for smartphone apps to be running in the background and collecting any passive sensor data, GPS **is required** to be collected when any sensor data is being collected, even if it is not manually selected. To save battery and make it so extra data is not collected, GPS is collected at a lower frequency when it is not selected.
 
 ## Gyroscope
 SensorSpec: lamp.gyroscope
