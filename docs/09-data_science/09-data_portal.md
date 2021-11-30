@@ -7,7 +7,7 @@ As of late September 2021, the latest versions of the LAMP platform includes a d
 The data portal is accessible in three ways:
 1. After logging in as an administrator, click the 'Data Portal' tab on the left or bottom of your screen.
 2. After logging in as a researcher, click the 'Data Portal' tab on the left or bottom of your screen.
-3. Direct navigation to [dashboard.lamp.digital/#/data_portal](dashboard.lamp.digital/#/data_portal)
+3. Direct navigation to [dashboard.lamp.digital/#/data_portal](https://dashboard.lamp.digital/#/data_portal)
 
 At this time, the data portal is not accessible using participant credentials.
 
@@ -85,4 +85,4 @@ Below are some examples and ideas to get you started using the LAMP Data Portal.
 **Example 4**: Use an array of charts to examine a participant's data in great detail. Here, find examples of summary graphs which show changes over time, correlation heatmaps which highlight connections between different LAMP measures (outlined in red), and the activity tracking functionality seen in example 3.  
 
 ### Help & Updates
-The LAMP data portal is currently in alpha, as is this documentation. We are actively seeking both feedback and requests about the usability and usefulness of the data portal and this documentation. Please give us any questions, comments, or feature requests either through our [community page](community.lamp.digital) or our public [GitHub repository](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues)
+The LAMP data portal is currently in alpha, as is this documentation. We are actively seeking both feedback and requests about the usability and usefulness of the data portal and this documentation. Please give us any questions, comments, or feature requests either through our [community page](https://community.lamp.digital) or our public [GitHub repository](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues)
