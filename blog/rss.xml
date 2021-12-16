@@ -4,10 +4,18 @@
         <title>LAMP Platform Blog</title>
         <link>https://docs.lamp.digital/blog</link>
         <description>LAMP Platform Blog</description>
-        <lastBuildDate>Mon, 22 Nov 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Dec 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
+        <item>
+            <title><![CDATA[New features, stability fixes, and improvements]]></title>
+            <link>https://docs.lamp.digital/blog/2021/12/16/</link>
+            <guid>New features, stability fixes, and improvements</guid>
+            <pubDate>Thu, 16 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[- Questions created in the survey builder can now be toggled between to have optional or required responses. By default, they will begin as required but can be checked to be optional]]></description>
+            <content:encoded><![CDATA[<h1>New Features</h1><ul><li>Questions created in the survey builder can now be toggled between to have optional or required responses. By default, they will begin as required but can be checked to be optional</li><li>Activities can now be customized in the dashboard to appear in any of the tabs among Learn, Assess, Manage, and Prevent</li></ul><h1>Updates</h1><ul><li>Activities in the Portal page are now automatically expanded</li><li>DBT Diary card has had visuals rearranged for better user viewing</li><li>DBT Diary cards now feature a filterable grid-based visualization for skills used</li></ul><h1>Bux Fixes</h1><ul><li>Resolved in issue where surveys with slider questions would default to the first value. This has been fixed so that these questions will now begin with a null value</li><li>Resolved an issue in the Android version where apps were not opening due to an infinite loading screen</li><li>Resolved an issue where certain created credentials were not working upon logging in</li><li>Fixed an issue where labels were overlapping with icons for activities in the mobile version</li><li>Fixed an issue where the DBT diary card would allow a streak badge to popup even when the DBT diary card activities was exited</li><li>Resolved an issue where activities completed in the Feed tab would automatically mark themselves as incomplete after completion</li><li>Fixed an issue where activities completed through the Feed tab would lead to undefined entries through API calls</li></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[New, fully functional Clinical-specific use for mindLAMP!]]></title>
             <link>https://docs.lamp.digital/blog/2021/11/22/</link>
