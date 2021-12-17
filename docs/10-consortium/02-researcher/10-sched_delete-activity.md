@@ -9,6 +9,7 @@
 5. Select you Start Date, Time, Repeat Interval, etc.
 6. Click the check mark.
 7. The patient or participant will receive a feed item and a notification on their phone at the specified time.
+8. Because activities close at midnight Eastern Standard Time, the patient or participant should be instructed to complete the activity before this closing time. 
 
 ![](../../06-start_here/06-activities/assets/schedule.jpg)
 
