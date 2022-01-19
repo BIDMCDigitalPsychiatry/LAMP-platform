@@ -11,7 +11,7 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 ### Global Collaboration Around Digital Mental Health: The LAMP Consortium.
 
-![](assets/1.18.22springer.png)(https://link.springer.com/article/10.1007/s41347-022-00240-y#citeas)
+![](assets/1.18.22springer.png)
 
 ```
 Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LAMP Consortium. J. technol. behav. sci. (2022). https://doi.org/10.1007/s41347-022-00240-y
