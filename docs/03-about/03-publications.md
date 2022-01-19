@@ -20,7 +20,7 @@ Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LA
 
 ### Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study.
 
-![](assets/covidpaperdocs.png)
+[![](assets/covidpaperdocs.png)](https://www.frontiersin.org/articles/10.3389/fpsyt.2021.788926/full)
 
 ```
 Patel, S., & Torous, J. Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study. Frontiers in Psychiatry, 2517.
@@ -29,7 +29,7 @@ Patel, S., & Torous, J. Exploring the Neuropsychiatric Sequalae of Perceived COV
 
 ### Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study.
 
-![](assets/jmir1.7.22.png)
+[![](assets/jmir1.7.22.png)](https://pubmed.ncbi.nlm.nih.gov/34994710/)
 
 ```
 Vaidyam A, Halamka J, Torous J. Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study. JMIR Mhealth Uhealth. 2022 Jan 7;10(1):e30557. doi: 10.2196/30557. PMID: 34994710.
