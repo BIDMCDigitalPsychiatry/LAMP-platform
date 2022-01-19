@@ -20,7 +20,7 @@ Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LA
 
 ### Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study.
 
-![](covidpaperdocs.png)
+![](assets/covidpaperdocs.png)
 
 ```
 Patel, S., & Torous, J. Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study. Frontiers in Psychiatry, 2517.
