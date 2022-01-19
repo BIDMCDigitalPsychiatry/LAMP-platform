@@ -8,12 +8,31 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 :::
 
+
 ### Global Collaboration Around Digital Mental Health: The LAMP Consortium.
 
 ![](assets/1.18.22springer.png)
 
 ```
 Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LAMP Consortium. J. technol. behav. sci. (2022). https://doi.org/10.1007/s41347-022-00240-y
+```
+
+
+### Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study.
+
+![](covidpaperdocs.png)
+
+```
+Patel, S., & Torous, J. Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study. Frontiers in Psychiatry, 2517.
+```
+
+
+### Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study.
+
+![](assets/jmir1.7.22.png)
+
+```
+Vaidyam A, Halamka J, Torous J. Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study. JMIR Mhealth Uhealth. 2022 Jan 7;10(1):e30557. doi: 10.2196/30557. PMID: 34994710.
 ```
 
 
