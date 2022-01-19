@@ -8,6 +8,15 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 :::
 
+### Global Collaboration Around Digital Mental Health: The LAMP Consortium.
+
+[![](assets/1.18.22springer.png)]
+
+```
+Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LAMP Consortium. J. technol. behav. sci. (2022). https://doi.org/10.1007/s41347-022-00240-y
+```
+
+
 ### Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology.
 
 ![image](https://user-images.githubusercontent.com/86117379/130236989-b6265676-e77c-444b-9ded-91d78cbada66.png)
