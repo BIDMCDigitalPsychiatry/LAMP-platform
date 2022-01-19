@@ -11,7 +11,7 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 ### Global Collaboration Around Digital Mental Health: The LAMP Consortium.
 
-[![](assets/1.18.22springer.png)](https://link.springer.com/article/10.1007/s41347-022-00240-y#citeas)
+[![](assets/1.18.22springer.png)](assets/1.18.22springer.pdf)
 
 ```
 Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LAMP Consortium. J. technol. behav. sci. (2022). https://doi.org/10.1007/s41347-022-00240-y
@@ -20,7 +20,7 @@ Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LA
 
 ### Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study.
 
-[![](assets/covidpaperdocs.png)](https://www.frontiersin.org/articles/10.3389/fpsyt.2021.788926/full)
+[![](assets/covidpaperdocs.png)](assets/covidpaper.pdf)
 
 ```
 Patel, S., & Torous, J. Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study. Frontiers in Psychiatry, 2517.
