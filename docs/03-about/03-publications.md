@@ -8,7 +8,7 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 :::
 
-### Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample
+### Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample.
 
 [![](assets/Springer 1.19.2022.png)](assets/Springer 1.19.2022.pdf)
 
@@ -44,7 +44,7 @@ Vaidyam A, Halamka J, Torous J. Enabling Research and Clinical Use of Patient-Ge
 ```
 
 
-### Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia
+### Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia.
 
 [![](assets/NPJ Schiz 12.21.2021.png)](assets/NPJ Schiz 12.21.2021.pdf)
 
