@@ -10,7 +10,7 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 ### Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample.
 
-[![](assets/Springer%201.19.2022.png)](assets/Springer%201.19.2022.pdf)
+[![](assets/Springer.1.19.2022.png)](assets/Springer.1.19.2022.pdf)
 
 ```
 Gansner, M., Nisenson, M., Lin, V. et al. Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample. Child Psychiatry Hum Dev (2022). https://doi.org/10.1007/s10578-022-01313-y
@@ -46,7 +46,7 @@ Vaidyam A, Halamka J, Torous J. Enabling Research and Clinical Use of Patient-Ge
 
 ### Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia.
 
-[![](assets/NPJ%20Schiz%2012.21.2021.png)](assets/NPJ%20Schiz%2012.21.2021.pdf)
+[![](assets/NPJ.Schiz.12.21.2021.png)](assets/NPJ.Schiz.12.21.2021.pdf)
 
 ```
 Shvetz C, Gu F, Drodge J, Torous J, Guimond S. Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia. NPJ Schizophr. 2021 Dec 21;7(1):64. doi: 10.1038/s41537-021-00194-9. PMID: 34934063; PMCID: PMC8692600.
