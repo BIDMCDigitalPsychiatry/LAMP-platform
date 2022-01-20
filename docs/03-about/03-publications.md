@@ -10,7 +10,7 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 ### Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample.
 
-[![](assets/Springer 1.19.2022.png)](assets/Springer 1.19.2022.pdf)
+[![](assets/Springer%201.19.2022.png)](assets/Springer%201.19.2022.pdf)
 
 ```
 Gansner, M., Nisenson, M., Lin, V. et al. Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample. Child Psychiatry Hum Dev (2022). https://doi.org/10.1007/s10578-022-01313-y
