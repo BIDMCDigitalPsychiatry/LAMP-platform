@@ -46,7 +46,7 @@ Vaidyam A, Halamka J, Torous J. Enabling Research and Clinical Use of Patient-Ge
 
 ### Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia.
 
-[![](assets/NPJ%20Schiz 12.21.2021.png)](assets/NPJ%20Schiz 12.21.2021.pdf)
+[![](assets/NPJ%20Schiz%2012.21.2021.png)](assets/NPJ%20Schiz%2012.21.2021.pdf)
 
 ```
 Shvetz C, Gu F, Drodge J, Torous J, Guimond S. Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia. NPJ Schizophr. 2021 Dec 21;7(1):64. doi: 10.1038/s41537-021-00194-9. PMID: 34934063; PMCID: PMC8692600.
