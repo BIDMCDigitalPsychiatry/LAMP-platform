@@ -76,19 +76,13 @@ The Balloon Risk test is a computerized assessment of risk-taking behavior. Part
 #### Data 
 
 - `static_data`:
-    - `points`: The associated point value with the completed session.
-- `balloon_count`: Number of balloons the participant interacts with
-- `breakpoint_mean`: The average value the balloon will pop at
-- `breakpoint_std`: The standard deviation of the value the balloon will pop at.	  
+    - `points`: The associated point value with the completed session.  
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
     - `type`: Unused.
     - `duration`: Unused.
     - `level`: Unused.
-- `timestamp`: Unix timestamp (ms) of when the test began
-- `activity`: Alphanumeric id of the LAMP activity
-- `duration`: Total time spent on this activity
 
 #### Example
 
@@ -258,14 +252,14 @@ ActivitySpec: `lamp.pop_the_bubbles`
 
 A sustained attention task where the user is instructed to pop various sequences of bubbles according to varying rulesets.
 
-### Settings
+#### Settings
 - `bubble_count: number[] = [60, 80, 80]`: number of bubbles per level; array length = number of levels, must match below array's length
 - `bubble_speed: number[] = [30, 30, 30]`: speed at which bubbles enter level in seconds; array length = number of levels, must match above array's length
 - `intertrial_duration: number = 0.5`: duration between trials, in seconds
 - `bubble_duration: number = 1.0`: length of time bubbles remain on screen, in seconds
 
 
-### Data
+#### Data
 - `static_data`: Unused
 
 - `temporal_slices`
@@ -274,9 +268,6 @@ A sustained attention task where the user is instructed to pop various sequences
     - `type: boolean`: whether this tap was correct or incorrect
     - `level: number`: the level number
     - `duration: number`: the reaction time to tap the bubble, in milliseconds, or `null` if bubble ignored (Currently bugged: not present)
-- `timestamp`: Unix timestamp (ms) of when the test began
-- `activity`: Alphanumeric id of the LAMP activity
-- `duration`: Total time spent on this activity
 
 #### Example
 ```
