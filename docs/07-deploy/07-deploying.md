@@ -147,7 +147,7 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
     version: '3.7'
     services:
       server:
-        image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2021
+        image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2022
         healthcheck:
           test: wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
         environment:
@@ -243,4 +243,4 @@ docker stack deploy --compose-file lamp.yml lamp
 
 ## Maintaining and Updating the LAMP Platform
 
-If you are using this Docker Stack provided, you will only need to run a `docker service update` command on the API Server to pull the latest image. Because Docker image versioning is calendar-based, at the moment you will manually need to update from `2021` to `2022`, and so on.
+If you are using this Docker Stack provided, you will only need to run a `docker service update` command on the API Server to pull the latest image. Because Docker image versioning is calendar-based, at the moment you will manually need to update from `2022` to `2023`, and so on.
