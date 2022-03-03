@@ -28,12 +28,12 @@ os.environ['LAMP_SERVER_ADDRESS'] = 'YOUR_SERVER_ADDRESS'
 ```python
 cortex.run('YOUR_RESEARCHER_ID', ['hometime'], start=0, end=cortex.now())
 ```
-parameter 0: A string containing researcher, study, or single participant ID. (OR) A list containing multiple participant IDs.
-
-parameter 1: A list containing strings matching Cortex feature functions to run
+`cortex.run` parameters:
+- A string containing researcher, study, or single participant ID. (OR) A list containing multiple participant IDs.
+- A list containing strings matching Cortex feature functions to run
 
 To see the list of features, call: ```cortex.all_features()```
 
 This outputs a list of functions; to see names only, use: ```[x.__name__ for x in cortex.all_features()]```
 
-This will provide the entire list of Cortex feature functions that can be used in the 2nd parameter of the cortex.run() function.
+This will provide the entire list of Cortex feature functions that can be used in the 2nd parameter of the `cortex.run()` function.
