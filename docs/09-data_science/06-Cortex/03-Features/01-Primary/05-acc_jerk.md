@@ -1,4 +1,4 @@
-# Acc_jerk
+# Accelerometer Jerk
 
 computed from raw feature: cortex.raw.accelerometer
 
