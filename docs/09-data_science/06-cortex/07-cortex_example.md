@@ -1,7 +1,5 @@
 # Cortex Quick Start Guide
 
-# Using Cortex
-
 ## Setting up Cortex
 
 You will need Python 3.4+ and `pip` installed in order to use Cortex. 
