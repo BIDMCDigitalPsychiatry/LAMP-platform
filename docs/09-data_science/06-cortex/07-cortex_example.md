@@ -1,3 +1,5 @@
+# Cortex Quick Start Guide
+
 # Using Cortex
 
 ## Setting up Cortex
