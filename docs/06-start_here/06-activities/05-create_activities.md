@@ -36,4 +36,8 @@ Finally, click the dropdown to display all tab options.
 
 ![](assets/customizeactivitytab2.png)
 
-There are four tab options to choose from: Assess, Learn, Manage, and Portal. Check off the box next to the desired tab you would like the activity to appear in. Finally, click the "Save" button on the bottom right. 
+There are four tab options to choose from: Assess, Learn, Manage, and Portal. Check off the box next to the desired tab you would like the activity to appear in.
+
+Note that you can select no tabs, which hides the activity. This can be helpful if there are schedules assigned to a particular activity. It can also be helpful if there are several surveys grouped together, and you only would like the group to appear. Note that you can also display the activity on multiple tabs. 
+
+Finally, click the "Save" button on the bottom right. 
