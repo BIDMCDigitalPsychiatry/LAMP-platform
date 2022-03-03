@@ -29,6 +29,7 @@ os.environ['LAMP_SERVER_ADDRESS'] = 'YOUR_SERVER_ADDRESS'
 cortex.run('YOUR_RESEARCHER_ID', ['hometime'], start=0, end=cortex.now())
 ```
 parameter 0: A string containing researcher, study, or single participant ID. (OR) A list containing multiple participant IDs.
+
 parameter 1: A list containing strings matching Cortex feature functions to run
 
 To see the list of features, call: ```cortex.all_features()```
