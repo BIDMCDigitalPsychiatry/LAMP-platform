@@ -20,11 +20,21 @@ As such, it is important to monitor data to ensure that you have enough data to 
 
 ## TODO: put images here
 
+Graphs are attached to the Data Portal. To Navigate to the Data Portal, 
 
 To generate these graphs, you can either call a function from Cortex, or download the source code from Github and run a bash script.
 
 To use the Cortex function, make sure that Cortex is installed. Then use the following code (substituting "researcher_id" with your own ID):
 ```
 import cortex
-cortex.visualizations.data_quality.data_ quality(researcher_id)
+cortex.visualizations.data_quality.data_quality(researcher_id)
+```
+
+To run the bash script, first clone the cortex repository from source:
+```
+git clone https://github.com/BIDMCDigitalPsychiatry/LAMP-cortex.git
+```
+Then from inside the LAMP-cortex folder run the bash script (substituting "researcher_id" with your own ID):
+```
+./cortex/visualizations/run_data_quality.sh "researcher_id"
 ```
