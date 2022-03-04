@@ -17,16 +17,18 @@ As such, it is important to monitor data to ensure that you have enough data to 
 
 ### 1) Activity counts over the last week:
 
-[]("../assets/activities_qual_viz.png" | width=700)
+![](assets/activities_qual_viz.png)
 
 ### 2) A measure of screen, GPS, and accelerometer quality over the past week:
 The graph has tool tips. If you hover over a colored block in the graph it will tell you the computed data frequency (percentage of hours with data) as well as any days where the participant had no data.
 
-<img src="../assets/tags_qual_viz.png" width="900"/>
+![](assets/tags_qual_viz.png)
 
 ### 3) Average screen time, steps, and home time over the past week, as a sanity check:
 
-<img src="../assets/hometime_qual_viz.png" width="300"/> <img src="../assets/screen_dur_qual_viz.png" width="300"/> <img src="../assets/steps_qual_viz.png" width="300"/> 
+![](assets/hometime_qual_viz.png)
+![](assets/screen_dur_qual_viz.png)
+![](assets/steps_qual_viz.png)
 
 To generate these graphs, you can either call a function from Cortex, or download the source code from Github and run a bash script.
 
@@ -48,14 +50,14 @@ Then from inside the LAMP-cortex folder run the bash script (substituting "resea
 ### Where are the graphs I've generated?
 Graphs are attached to the Data Portal. To Navigate to the Data Portal, go to the Dashboard and click "Data Portal" on the left hand side:
 
-<img src="../assets/data_portal_viz0.png" width="700"/>
+![](assets/data_portal_viz0.png)
 
 Search for and select your researcher. Then toggle the button next to "Analyze participant data" to see the researcher graphs.
 
-<img src="../assets/data_portal_viz1.png" width="700"/>
+![](assets/data_portal_viz1.png)
 
 Here, under graphs.data_quality, you should see the three graphs shown above: activity counts, passive features, and quality tags (along with any others you may have created). You can click on the buttons to view each graph.
 
-<img src="../assets/data_portal_viz2.png" width="700"/>
+![](assets/data_portal_viz2.png)
 
 For more information, please go to the Data Portal section of the documentation.
