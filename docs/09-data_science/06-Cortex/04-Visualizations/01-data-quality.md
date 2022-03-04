@@ -14,13 +14,18 @@ Missing data is problematic because it will affect the validity of passive featu
 - Phone not in use (OS turns off data collection)
 
 As such, it is important to monitor data to ensure that you have enough data to create good quality features. If you have participants with low data, you can follow up and try to resolve the issue. We have created visualizations that can be attached to your Data Portal on the Dashboard to provide a summary of your participant's data. These include:
-- Activity counts over the last week
-- A measure of screen, GPS, and accelerometer quality over the past week
-- Average screen time, steps, and home time over the past week, as a sanity check
 
-![](assets/activities_qual_viz.png)
+### 1) Activity counts over the last week:
 
-Graphs are attached to the Data Portal. To Navigate to the Data Portal, 
+<img src="../assets/activities_qual_viz.png" width="700"/>
+
+### 2) A measure of screen, GPS, and accelerometer quality over the past week:
+
+<img src="../assets/tags_qual_viz.png" width="900"/>
+
+### 3) Average screen time, steps, and home time over the past week, as a sanity check:
+
+<img src="../assets/hometime_qual_viz.png" width="300"/> <img src="../assets/screen_dur_qual_viz.png" width="300"/> <img src="../assets/steps_qual_viz.png" width="300"/> 
 
 To generate these graphs, you can either call a function from Cortex, or download the source code from Github and run a bash script.
 
@@ -38,3 +43,6 @@ Then from inside the LAMP-cortex folder run the bash script (substituting "resea
 ```
 ./cortex/visualizations/run_data_quality.sh "researcher_id"
 ```
+
+### Where are the graphs I've generated?
+Graphs are attached to the Data Portal. To Navigate to the Data Portal, 
