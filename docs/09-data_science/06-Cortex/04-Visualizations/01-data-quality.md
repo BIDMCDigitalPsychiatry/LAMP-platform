@@ -18,7 +18,7 @@ As such, it is important to monitor data to ensure that you have enough data to 
 - A measure of screen, GPS, and accelerometer quality over the past week
 - Average screen time, steps, and home time over the past week, as a sanity check
 
-## TODO: put images here
+![](assets/activities_qual_viz.png)
 
 Graphs are attached to the Data Portal. To Navigate to the Data Portal, 
 
