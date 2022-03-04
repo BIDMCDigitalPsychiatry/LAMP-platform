@@ -17,7 +17,7 @@ As such, it is important to monitor data to ensure that you have enough data to 
 
 ### 1) Activity counts over the last week:
 
-<img src="../assets/activities_qual_viz.png" width="700"/>
+[]("../assets/activities_qual_viz.png" | width=700)
 
 ### 2) A measure of screen, GPS, and accelerometer quality over the past week:
 The graph has tool tips. If you hover over a colored block in the graph it will tell you the computed data frequency (percentage of hours with data) as well as any days where the participant had no data.
