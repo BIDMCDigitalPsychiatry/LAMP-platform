@@ -45,4 +45,16 @@ Then from inside the LAMP-cortex folder run the bash script (substituting "resea
 ```
 
 ### Where are the graphs I've generated?
-Graphs are attached to the Data Portal. To Navigate to the Data Portal, 
+Graphs are attached to the Data Portal. To Navigate to the Data Portal, go to the Dashboard and click "Data Portal" on the left hand side:
+
+<img src="../assets/data_portal_viz0.png" width="700"/>
+
+Search for and select your researcher. Then toggle the button next to "Analyze participant data" to see the researcher graphs.
+
+<img src="../assets/data_portal_viz1.png" width="700"/>
+
+Here, under graphs.data_quality, you should see the three graphs shown above: activity counts, passive features, and quality tags (along with any others you may have created). You can click on the buttons to view each graph.
+
+<img src="../assets/data_portal_viz2.png" width="700"/>
+
+For more information, please go to the Data Portal section of the documentation.
