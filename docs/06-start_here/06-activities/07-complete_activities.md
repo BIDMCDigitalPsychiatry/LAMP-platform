@@ -26,3 +26,7 @@ Surveys with many questions and options are **best taken on desktop, laptop, or 
 Each day that a survey or activity is completed, an encouraging streak tracker will pop up showing the number of days in a row that the patient has take the survey or completed the activity. This streak tracker is unique for surveys and activities. In other words, if a patient completes a mood tracker survey for seven days in a row and an anxiety survey for five days, their respective streak pop ups will show different numbers.
 
 ![](assets/streak.jpg)
+
+Streak popups can be customized in that they can be turned on or off for activities. Within groups, each activity can have their own streak. The streak title and description can also be changed by editing the respective "Streak title" and "Streak Description" fields shown below.
+
+![](assets/voicerecordingdocs3.3.2022.png)
