@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.lamp.digital/blog</id>
     <title>LAMP Platform Blog</title>
-    <updated>2022-01-11T00:00:00.000Z</updated>
+    <updated>2022-02-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.lamp.digital/blog"/>
     <subtitle>LAMP Platform Blog</subtitle>
     <icon>https://docs.lamp.digital/./docs/assets/logo.png</icon>
     <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
+    <entry>
+        <title type="html"><![CDATA[]]></title>
+        <id>https://docs.lamp.digital/blog/2022/2/15/</id>
+        <link href="https://docs.lamp.digital/blog/2022/2/15/"/>
+        <updated>2022-02-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Features & Improvements]]></summary>
+        <content type="html"><![CDATA[<h3>Features &amp; Improvements</h3><ul><li>Added the ability to load ActivitySpec executables directly from the API (BETA).</li><li>Added new configuration parameters for Voice Diary prompts.</li><li>Added customizable Streak text and the ability toggle Streaks on and off.</li><li>Added the ability to modify the <code>CACHE_SIZE</code> variable to adjust SensorEvent cache flushing thresholds.</li><li>Resolved a connection stability issue when using the Android app to connect to a LAMP server. </li><li>Added the ability to schedule notifications in the patient&#x27;s local timezone. </li></ul><p>::: error</p><p>Please note that when upgrading to the latest version of the LAMP dashboard or server (<code>2022.2.14</code>), clinicians are required to re-save all activity schedules to update GMT-scheduling to local timezone scheduling. If this step is not performed, patients may receive notifications early or late.</p><p>:::</p><h3>Bug Fixes</h3><ul><li>Resolved several issues with weekly filters for DBT Diary Card visualizations that were not synchronized.</li><li>Resolved visibility issues with DBT Diary Card visualizations including font and text placement.</li><li>Resolved an issue with DBT Diary Card visualizations where a single data point did not appear (it now draws a line).</li><li>Resolved an issue with DBT Diary Card graphs rendering incorrect dates or time ranges.</li><li>Resolved an issue where all notes from past DBT Diary Cards did not appear when viewing data.</li><li>Resolved an issue with erroneous character limits applied to matrix survey questions (BETA).</li><li>Resolved an issue where the back button would not work for exiting Tips. </li><li>Resolved an issue where the back button did not capture data for Journal and Tips. </li><li>Resolved several issues capturing Breathe and Tips data when being used by patients. </li><li>Resolved out-of-order and skipping issues with activities sequentially placed in groups.</li><li>Resolved out-of-order dates on the Feed tab.</li><li>Resolved a crash issue when loading the Feed tab in certain conditions.</li></ul>]]></content>
+        <author>
+            <name>Ashley Meyer</name>
+            <uri>https://github.com/akmeyer3</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022 User Interface Improvements]]></title>
         <id>2022 User Interface Improvements</id>
