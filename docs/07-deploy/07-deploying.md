@@ -182,7 +182,7 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
             constraints:
               - node.role == manager
       database:
-        image: apache/couchdb:3.1.1
+        image: apache/couchdb:3.1
         healthcheck:
           test: curl --fail --silent http://localhost:5984/_up || exit 1
         environment:
