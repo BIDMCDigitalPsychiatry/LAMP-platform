@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.lamp.digital/blog</id>
     <title>LAMP Platform Blog</title>
-    <updated>2022-02-15T00:00:00.000Z</updated>
+    <updated>2022-03-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.lamp.digital/blog"/>
     <subtitle>LAMP Platform Blog</subtitle>
     <icon>https://docs.lamp.digital/./docs/assets/logo.png</icon>
     <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
+    <entry>
+        <title type="html"><![CDATA[]]></title>
+        <id>https://docs.lamp.digital/blog/2022/03/07/</id>
+        <link href="https://docs.lamp.digital/blog/2022/03/07/"/>
+        <updated>2022-03-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Features & Improvements]]></summary>
+        <content type="html"><![CDATA[<h3>Features &amp; Improvements</h3><ul><li>iOS and Android app updates are now available that primarily resolve notification timezone issues. Clinical and research coordinators should ensure their patients update the app to reflect these changes.</li></ul>]]></content>
+        <author>
+            <name>Ashley Meyer</name>
+            <uri>https://github.com/akmeyer3</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[]]></title>
         <id>https://docs.lamp.digital/blog/2022/2/15/</id>

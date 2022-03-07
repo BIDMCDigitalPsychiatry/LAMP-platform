@@ -4,10 +4,17 @@
         <title>LAMP Platform Blog</title>
         <link>https://docs.lamp.digital/blog</link>
         <description>LAMP Platform Blog</description>
-        <lastBuildDate>Tue, 15 Feb 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Mar 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
+        <item>
+            <link>https://docs.lamp.digital/blog/2022/03/07/</link>
+            <guid>https://docs.lamp.digital/blog/2022/03/07/</guid>
+            <pubDate>Mon, 07 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features & Improvements]]></description>
+            <content:encoded><![CDATA[<h3>Features &amp; Improvements</h3><ul><li>iOS and Android app updates are now available that primarily resolve notification timezone issues. Clinical and research coordinators should ensure their patients update the app to reflect these changes.</li></ul>]]></content:encoded>
+        </item>
         <item>
             <link>https://docs.lamp.digital/blog/2022/2/15/</link>
             <guid>https://docs.lamp.digital/blog/2022/2/15/</guid>
