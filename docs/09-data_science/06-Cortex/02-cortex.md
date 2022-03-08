@@ -9,7 +9,7 @@ The Cortex data analysis and machine learning toolkit is part of the LAMP Platfo
 - It obviates the need for individual analyses tied to custom code for specific sensor types across various devices. It also provides access to processed Apple HealthKit and Google Fit sensor data, such as activity recognition or heart rate variability.
 - It provides a companion IDE based on JupyterLab and VSCode that abstracts away login and security issues by securely injecting an authenticated connection to the server into Cortex and resulting analysis notebooks.
 
-![](assets/cortex_features.png)
+![](assets/cortex_diagram.svg)
 
 _Categories of Activity and Sensor data types alongside Cortex features synthesized from raw data streams. Availability of Wearable Sensors depends on the device type used and supported API; Apple Watch (HealthKit) sensors are shown here._
 
