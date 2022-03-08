@@ -2,11 +2,11 @@
 
 ## **What is Cortex?**
 
-The Cortex data analysis and machine learning toolkit is part of the LAMP Platform, enabling researchers and clinicians with a variety of backgrounds have use pre-build tools to analyze their data and build analysis pipelines. 
+The Cortex data analysis toolkit is part of the LAMP Platform, enabling researchers and clinicians with a variety of backgrounds to use pre-built tools to analyze their data and build analysis pipelines. 
 
 - It integrates tightly across the platform to provide a unified processing pipeline to convert patient or participant data into useful features that provide valuable clinical and research insight.
-- It offers robust support for artificial intelligence, behavioral feature extraction, interactive visualizations, generation of targeted and automated adaptive interventions, and high-performance data processing through parallelization and vectorization techniques.
-- It obviates the need for individual analyses tied to custom code for specific sensor types across various devices. It also provides access to processed Apple HealthKit and Google Fit sensor data, such as activity recognition or heart rate variability.
+- It offers robust support for behavioral feature extraction, interactive visualizations, and high-performance data processing through parallelization and vectorization techniques.
+- It obviates the need for individual analyses tied to custom code for specific sensor types across various devices.
 - It provides a companion IDE based on JupyterLab and VSCode that abstracts away login and security issues by securely injecting an authenticated connection to the server into Cortex and resulting analysis notebooks.
 
 ![](assets/cortex_diagram.svg)
