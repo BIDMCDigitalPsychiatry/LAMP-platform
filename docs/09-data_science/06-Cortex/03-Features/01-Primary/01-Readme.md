@@ -1,4 +1,4 @@
-## Primary Feature Overview
+# Primary Feature Overview
 
 Primary features in cortex are derived from raw data and typically contain multiple bouts / periods. 
 
