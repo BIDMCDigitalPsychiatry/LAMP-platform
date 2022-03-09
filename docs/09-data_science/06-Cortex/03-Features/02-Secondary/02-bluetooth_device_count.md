@@ -1,6 +1,6 @@
 # Bluetooth Device Count
 
-computed from raw feature: cortex.raw.bluetooth
+computed from raw feature: `cortex.raw.bluetooth`
 
 #### Description
 
@@ -8,14 +8,14 @@ Bluetooth device count sums the number of bluetooth device connections.
 
 #### Optional or required kwargs
 
-- `start: number`: (units: ms) the start time.
-- `end: number`: (units: ms) the end time.
-- `resolution: number`: (units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
+- `resolution`: (int, units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
 
 #### Data
 
-- `timestamp: number`: (units: ms) the start time of each bin of size `kwargs['resolution']`.
-- `value: number`: (units: None) the number of unique bluetooth devices.
+- `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
+- `value`: (int, units: None) the number of unique bluetooth devices.
 
 #### Example
 
