@@ -1,23 +1,23 @@
 # Trips
 
-computed from raw feature: cortex.raw.gps
+computed from raw feature: `cortex.raw.gps`
 
 #### Description
 
-Computes trips from gps data. Trips are when a participant is traveling more than 10 kph. Any change in gps less than 10 kph or for more than 600 ms is considered stationary.
+Computes trips from GPS data. Trips are when a participant is traveling more than 10 kph. Any change in gps less than 10 kph or over more than 600 ms is considered stationary.
 
 #### Optional or required kwargs
 
-- `start: number`: (units: ms) the start time.
-- `end: number`: (units: ms) the end time.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
 
 #### Data
 
-- `start: number`: (units: ms) the start time of a given trip.
-- `end: number`: (units: ms) the end time of a given trip.
-- `latitude: number`: (units: degrees) the latitude of the starting point of the trip.
-- `longitude: number`: (units: degrees) the longitude of the starting point of the trip.
-- `distance: number`: (units: km) the distance traveled on the trip.
+- `start`: (int, units: ms) the start time of a given trip.
+- `end`: (int, units: ms) the end time of a given trip.
+- `latitude`: (float, units: degrees) the latitude of the starting point of the trip.
+- `longitude`: (float, units: degrees) the longitude of the starting point of the trip.
+- `distance`: (float, units: km) the distance traveled on the trip.
 
 #### Example
 
