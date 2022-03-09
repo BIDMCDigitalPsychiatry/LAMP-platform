@@ -1,22 +1,22 @@
 # Screen Duration
 
-computed from primary feature: cortex.primary.screen_active
-computed from raw feature: cortex.raw.screen_state
+computed from primary feature: `cortex.primary.screen_active`
+computed from raw feature: `cortex.raw.screen_state`
 
 #### Description
 
-Screen duration is the sum of the time spent with the screen on. 
+Screen duration is the sum of the time spent with the screen "on". 
 
 #### Optional or required kwargs
 
-- `start: number`: (units: ms) the start time.
-- `end: number`: (units: ms) the end time.
-- `resolution: number`: (units: ms) the resolution over which to compute features.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
+- `resolution`: (int, units: ms) the resolution over which to compute features.
 
 #### Data
 
-- `timestamp: number`: (units: ms) the start time of each bin of size `kwargs['resolution']`.
-- `value: number`: (units: ms) the screen duration.
+- `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
+- `value`: (int, units: ms) the screen duration.
 
 #### Example
 
