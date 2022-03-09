@@ -1,5 +1,10 @@
 # Trip Duration
 
+computed from primary feature: `cortex.primary.trips`
+computed from raw feature: `cortex.raw.gps`
+
+#### Description
+
 Trip Duration is the total duration of all trips in a period of time. 
 
 #### Optional or required kwargs
