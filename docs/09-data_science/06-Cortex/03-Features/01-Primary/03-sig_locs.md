@@ -76,7 +76,8 @@ cortex.primary.significant_locations.significant_locations(id="U1234567890",
               'proportion': 0.025816716577551066,
               'duration': 39207942
            }
-       ]
+       ],
+  'has_raw_data': 1,
 }
 ```
 #### Example 1 - using method='mode' with max_clusters set to 2
@@ -113,7 +114,8 @@ cortex.primary.significant_locations.significant_locations(id="U1234567890",
               'proportion': 0.23479623859598767,
               'duration': 566147289
            }
-       ]
+       ],
+  'has_raw_data': 1,
 }
 ```
 
