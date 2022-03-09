@@ -36,6 +36,7 @@ The supported scoring types are:
 - "boolean": "Yes" --> 1, "No" --> 0
 - map to a dictionary: give the name of the dictionary (ex: "map0", and create a corresponding dictionary in the scoring_dict)
 Non-numeric scores are not supported at this time. 
+
 "map_to" can be used to say that for example "question #2" should really be considered identical to "quesiton #1."
 Please see the example below for an example of a scoring_dict.
 
