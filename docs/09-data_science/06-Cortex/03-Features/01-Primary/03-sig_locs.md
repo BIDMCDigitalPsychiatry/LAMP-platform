@@ -19,7 +19,7 @@ For method == "k-means":
 For method == "mode":
 - `max_clusters`: (int, units: None, default: -1) the maximum number of clusters to use. If set to -1, then min_cluster_size will be used to determine the number of clusters returned (see below). If there are less clusters than max_clusters then all clusters will be returned. 
 - `min_cluster_size`: (float, units: None, default: 0.01) the minimum size of possible clusters as a percentage of the total number of points. (ex: if the total number of points is 100 and min_cluster_size is set to 0.2 then any clusters with more than 20 points will be used).
-- `max_dist`: (float, units: None, default: 300) if clusters are less than max_dist away from one another, they will be merged into one cluster. To not merge clusters, set max_dist to 0. 
+- `max_dist`: (float, units: m, default: 300) if clusters are less than max_dist away from one another, they will be merged into one cluster. To not merge clusters, set max_dist to 0. 
 
 #### Data
 - `start`: (int, units: ms) the start time.
