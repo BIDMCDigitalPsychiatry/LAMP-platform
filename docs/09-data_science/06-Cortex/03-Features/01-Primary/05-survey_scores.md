@@ -94,10 +94,11 @@ Output:
   'duration': 1627067480000,
   'data': [
            {'start': 1639759199227, 'end': 1639777579969, 'category': 'GAD-7', 'score': 7},
-           .
-           .
-           .
            {'start': 1639759199227, 'end': 1639777579969, 'category': 'DWAI', 'score': 6},
+           .
+           .
+           .
+           {'start': 1639426388269, 'end': 1639426610663, 'category': 'Daily_sleep_qual', 'score': 3},
           ]
 }
 ```
