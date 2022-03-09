@@ -1,17 +1,22 @@
 # Trip Duration
 
+computed from primary feature: `cortex.primary.trips`
+computed from raw feature: `cortex.raw.gps`
+
+#### Description
+
 Trip Duration is the total duration of all trips in a period of time. 
 
 #### Optional or required kwargs
 
-- `start: number`: (units: ms) the start time.
-- `end: number`: (units: ms) the end time.
-- `resolution: number`: (units: ms) the resolution over which to compute features.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
+- `resolution`: (int, units: ms) the resolution over which to compute features.
 
 #### Data
 
-- `timestamp: number`: (units: ms) the start time of each bin of size `kwargs['resolution']`.
-- `value: number`: (units: ms) the duration of the trip.
+- `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
+- `value`: (int, units: ms) the duration of the trip.
 
 #### Example
 

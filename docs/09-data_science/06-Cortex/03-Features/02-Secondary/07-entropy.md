@@ -1,7 +1,7 @@
 # Entropy
 
-computed from primary feature: cortex.primary.significant_locations
-computed from raw feature: cortex.raw.gps
+computed from primary feature: `cortex.primary.significant_locations`
+computed from raw feature: `cortex.raw.gps`
 
 #### Description
 
@@ -11,14 +11,14 @@ Entropy is a measure of how much a participant moves around to different locatio
 
 #### Optional or required kwargs
 
-- `start: number`: (units: ms) the start time.
-- `end: number`: (units: ms) the end time.
-- `resolution: number`: (units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
+- `resolution`: (int, units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
 
 #### Data
 
-- `timestamp: number`: (units: ms) the start time of each bin of size `kwargs['resolution']`.
-- `value: number`: (units: None) the entropy. If there is no gps data, entropy will be 'None'.
+- `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
+- `value`: (float) the entropy. If there is no gps data, entropy will be 'None'.
 
 #### Example
 

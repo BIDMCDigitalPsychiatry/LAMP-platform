@@ -1,6 +1,6 @@
 # Accelerometer Jerk
 
-computed from raw feature: cortex.raw.accelerometer
+computed from raw feature: `cortex.raw.accelerometer`
 
 #### Description
 
@@ -8,14 +8,14 @@ Computes jerk from accelerometer data. Jerk is the derivative of accelerometer.
 
 #### Optional or required kwargs
 
-- `start: number`: (units: ms) the start time.
-- `end: number`: (units: ms) the end time.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
+- `threshold`: (int, units: ms, default: 500) the maximum difference between timestamps to compute jerk.
 
 #### Data
 
-- `start: number`: (units: ms) the start time of a given trip.
-- `end: number`: (units: ms) the end time of a given trip.
-- `threshold: number`: (units: ms) the maximum difference between timestamps to compute jerk.
+- `timestamp`: (int, units: ms) the start time of the jerk.
+- `acc_jerk`: (float, units: m/s^3) the jerk.
 
 #### Example
 
@@ -33,7 +33,8 @@ Output:
                  .
                  .
            {'timestamp': 1607094950000, 'acc_jerk': 0.0028039384631051243}
-          ]
+          ],
+  'has_raw_data': 1,
 }
 ```
 
