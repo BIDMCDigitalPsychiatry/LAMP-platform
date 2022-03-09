@@ -22,7 +22,26 @@ Survey results computes the mean score per resolution bin for a given category. 
 #### Example
 
 ```markdown
-cortex.secondary.trip_duration.trip_duration(id="U1234567890", start=0, end=cortex.now(), resolution=86400000, scoring_dict=scoring_dict, category="GAD-7")
+scoring_dict = {
+    "category_list": ["GAD-7"],
+    "questions": {
+            "Over the past week, I have felt nervous, anxious, or on edge.": {"category": "GAD-7", "scoring": "value_map"},
+            "Over the past week, I have not been able to stop or control worrying.": {"category": "GAD-7", "scoring": "value_map"},
+            "Over the past week, I have been worrying too much about different things.": {"category": "GAD-7", "scoring": "value_map"},
+            "Over the past week, I have had trouble relaxing.": {"category": "GAD-7", "scoring": "value_map"},
+            "Over the past week, I have felt so restless that it's hard to sit still.": {"category": "GAD-7", "scoring": "value_map"},
+            "Over the past week, I have felt myself becoming easily annoyed or irritable.": {"category": "GAD-7", "scoring": "value_map"},
+            "Over the past week, I have felt afraid as if something awful might happen.": {"category": "GAD-7", "scoring": "value_map"},
+        },
+    "value_map": {
+        "Not at all": 0,
+        "Several days": 1,
+        "More than half the days": 2,
+        "Over half the days": 2,
+        "Nearly every day": 3
+    },
+}
+cortex.secondary.survey_results.survey_results(id="U1234567890", start=0, end=cortex.now(), resolution=86400000, scoring_dict=scoring_dict, category="GAD-7")
 ```
 Output:
 ```markdown
