@@ -10,14 +10,14 @@ _Note: "lamp.screen_state" is now deprecated and has been replaced by "lamp.devi
 
 #### Optional or required kwargs
 
-- `start`: number: (units: ms) the start time.
-- `end`: number: (units: ms) the end time.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
 
 #### Data
 
-- `start`: number: (units: ms) the start time of a given bout when the phone is "on".
-- `end`: number: (units: ms) the end time of a given bout.
-- `duration`: number: (units: ms) the duration of the bout (ie `start - end`).
+- `start`: (int, units: ms) the start time of a given bout when the phone is "on".
+- `end`: (int, units: ms) the end time of a given bout.
+- `duration`: (int, units: ms) the duration of the bout (ie `start - end`).
 
 #### Example
 
