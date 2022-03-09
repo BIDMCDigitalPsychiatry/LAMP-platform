@@ -1,6 +1,6 @@
 # Sleep Periods
 
-computed from raw feature: cortex.raw.accelerometer
+computed from raw feature: `cortex.raw.accelerometer`
 
 #### Description
 
@@ -8,13 +8,13 @@ Sleep periods finds the bouts of sleep using accelerometer data. Data is grouped
 
 #### Optional or required kwargs
 
-- `start: number`: (units: ms) the start time.
-- `end: number`: (units: ms) the end time.
+- `start`: (int, units: ms) the start time.
+- `end`: (int, units: ms) the end time.
 
 #### Data
 
-- `start: number`: (units: ms) the start time of a given bout of sleep.
-- `end: number`: (units: ms) the end time of a given bout.
+- `start`: (int, units: ms) the start time of a given bout of sleep.
+- `end`: (int, units: ms) the end time of a given bout.
 
 #### Example
 
