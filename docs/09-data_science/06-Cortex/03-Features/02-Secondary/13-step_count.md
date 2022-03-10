@@ -1,10 +1,10 @@
-# Call Number
+# Step Count
 
-computed from raw feature: `cortex.raw.calls`
+computed from raw feature: `cortex.raw.steps`
 
 #### Description
 
-Call number sums the number of calls. 
+Step count aggregates the number of steps. 
 
 #### Optional or required kwargs
 
@@ -15,12 +15,12 @@ Call number sums the number of calls.
 #### Data
 
 - `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
-- `value`: (int, units: None) the number of calls.
+- `value`: (int, units: None) the number of steps.
 
 #### Example
 
 ```markdown
-cortex.secondary.call_number.call_number(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.step_count.step_count(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
 ```
 Output:
 ```markdown
@@ -30,11 +30,11 @@ Output:
   'resolution': 86400000,
   'data': [
            {'timestamp': 1607072400000, 'value': 0},
-           {'timestamp': 1607331600000, 'value': 6},
+           {'timestamp': 1607331600000, 'value': 1027},
                  .
                  .
                  .
-           {'timestamp': 1609232400000, 'value': 3}
+           {'timestamp': 1609232400000, 'value': 13208}
           ]
 }
 ```
