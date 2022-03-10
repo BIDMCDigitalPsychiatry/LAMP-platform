@@ -23,6 +23,10 @@ os.environ['LAMP_SECRET_KEY'] = 'YOUR_PASSWORD'
 os.environ['LAMP_SERVER_ADDRESS'] = 'YOUR_SERVER_ADDRESS'
 ```
 
+## Source Code
+
+The source code can be found here: https://github.com/BIDMCDigitalPsychiatry/LAMP-cortex
+
 ## Example: Passive data features from Cortex
 The primary function of Cortex is to provide a set of features derived from pasive data. Data can be pulled either by calling Cortex functions directly, or by using the `cortex.run()` function to parse multiple participants or features simultaneously. For example, one feature of interest is screen_duration or the time spent with the phone "on".
 
