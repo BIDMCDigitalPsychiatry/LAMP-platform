@@ -766,6 +766,25 @@ The motion sensor gathers information on the device's physical movement. It incl
   }
 }
 ```
+### Sleep
+
+SensorSpec: lamp.sleep
+
+#### Description
+
+The sleep sensor reports sleep data stored on the phone, generally sourced from smartwatches such as an Apple Watch. If you plan on capturing data via an Android device, you may need to test to ensure the associated watch is high enough quality to regularly collect good data.
+
+#### Data
+
+- `timestamp: number`: the UNIX/Epoch timestamp in ms.
+- `sensor: string`: 'lamp.sleep'
+- `data: object`:
+    - `value: number`: 0, 1, or 2, if the user is in bed, asleep, or awake, respectively 
+    - `source: string`: the source of data, e.g. `com.apple.health`
+    - `duration: number`: the time in ms the specific activity (e.g. sleep) lasted
+    - `representation: string`: one of `in_bed`, `in_sleep`, or `in_awake`, reflecting the state of the user at the time of measurement
+
+
 
 ### SMS
 
@@ -910,9 +929,6 @@ The wifi sensor provides information about the devices to which the user's devic
     1. **phone_number**: string
     2. **length**: integer
     3. **sms_type**: string<sent, received>
-- **lamp.sleep:** records sleep duration with start and stop times.
-    1. **value**: number
-    2. **units**: string
 - **lamp.weight:** records self-reported weight, or weight from an external connected monitor.
     1. **value**: number
     2. **units**: string
