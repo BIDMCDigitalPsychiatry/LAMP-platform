@@ -12,7 +12,7 @@ Survey results computes the mean score per resolution bin for a given category. 
 - `start`: (int, units: ms) the start time.
 - `end`: (int, units: ms) the end time.
 - `resolution`: (int, units: ms) the resolution over which to compute features.
-- `category`: (str) a survey category to average.
+- `question_or_category`: (str) a survey category / question to average.
 
 #### Data
 
@@ -41,7 +41,8 @@ scoring_dict = {
         "Nearly every day": 3
     },
 }
-cortex.secondary.survey_results.survey_results(id="U1234567890", start=0, end=cortex.now(), resolution=86400000, scoring_dict=scoring_dict, category="GAD-7")
+cortex.secondary.survey_results.survey_results(id="U1234567890", start=0, end=cortex.now(), resolution=86400000,
+        scoring_dict=scoring_dict, question_or_category="GAD-7")
 ```
 Output:
 ```markdown

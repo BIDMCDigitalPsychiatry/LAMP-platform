@@ -10,6 +10,7 @@ Computes survey scores from raw survey data.
 
 - `start`: (int, units: ms) the start time.
 - `end`: (int, units: ms) the end time.
+- `return_ind_ques`: (boolean, default: False) whether to return individual question scores (or just category scores)
 - `scoring_dict`: (dictionary) dictionary holding scoring information in the following form:
 ```
 scoring_dict = {
@@ -88,7 +89,7 @@ scoring_dict = {
         "Strongly agree": 4
     }
 }
-cortex.primary.survey_scores.survey_scores(id="U1234567890", start=0, end=cortex.now(), scoring_dict=scoring_dict)
+cortex.primary.survey_scores.survey_scores(id="U1234567890", start=0, end=cortex.now(), return_ind_ques=1, scoring_dict=scoring_dict)
 ```
 Output:
 ```markdown
@@ -96,12 +97,12 @@ Output:
   'timestamp': 0,
   'duration': 1627067480000,
   'data': [
-           {'start': 1639759199227, 'end': 1639777579969, 'category': 'GAD-7', 'score': 7},
-           {'start': 1639759199227, 'end': 1639777579969, 'category': 'DWAI', 'score': 6},
+           {'start': 1639759199227, 'end': 1639777579969, 'category': 'GAD-7', 'question': 'GAD-7', 'score': 7},
+           {'start': 1639759199227, 'end': 1639777579969, 'category': 'DWAI', 'question': 'DWAI', 'score': 6},
            .
            .
            .
-           {'start': 1639426388269, 'end': 1639426610663, 'category': 'Daily_sleep_qual', 'score': 3},
+           {'start': 1639426388269, 'end': 1639426610663, 'category': 'Daily_sleep_qual', 'question': 'How did you sleep last night?', score': 1},
           ],
   'has_raw_data': 1,
 }
