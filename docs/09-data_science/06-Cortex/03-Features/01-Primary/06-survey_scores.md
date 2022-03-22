@@ -101,7 +101,7 @@ Output:
            .
            .
            .
-           {'start': 1639426388269, 'end': 1639426610663, 'category': 'Daily_sleep_qual', score': 1},
+           {'start': 1639426388269, 'end': 1639426610663, 'category': 'Daily_sleep_qual', 'score': 1},
           ],
   'has_raw_data': 1,
 }
