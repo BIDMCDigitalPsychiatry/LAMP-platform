@@ -89,7 +89,7 @@ scoring_dict = {
         "Strongly agree": 4
     }
 }
-cortex.primary.survey_scores.survey_scores(id="U1234567890", start=0, end=cortex.now(), scoring_dict=scoring_dict)
+cortex.primary.survey_scores.survey_scores(id="U1234567890", start=0, end=cortex.now(), return_ind_ques=0, scoring_dict=scoring_dict)
 ```
 Output:
 ```markdown
