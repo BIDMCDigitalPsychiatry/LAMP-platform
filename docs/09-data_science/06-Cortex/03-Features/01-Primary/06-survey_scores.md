@@ -10,6 +10,7 @@ Computes survey scores from raw survey data.
 
 - `start`: (int, units: ms) the start time.
 - `end`: (int, units: ms) the end time.
+- `return_ind_ques`: (boolean, default=False) whether to return individual question scores or only category sum scores.
 - `scoring_dict`: (dictionary) dictionary holding scoring information in the following form:
 ```
 scoring_dict = {
@@ -46,6 +47,7 @@ Please see the example below for an example of a scoring_dict.
 - `start`: (int, units: ms) the start time of a given survey entry.
 - `end`: (int, units: ms) the end time of a given survey entry.
 - `category`: (str) the category of the given survey entry.
+- `question`: (str) the question, will be the same as category for category sum scores.
 - `score`: (float) the sum of the scores for all questions in the survey entry.
   - Note: Only questions that are in the entry will be added to the score. Please ensure that all questions you wish to be added to your score are available in the participant data. (i.e. if you are trying to sum the results of "question 1" and "question 2" but participant X only has "question 2" the category score for particiapnt X will be only the "question 2" score.)
 
@@ -88,7 +90,7 @@ scoring_dict = {
         "Strongly agree": 4
     }
 }
-cortex.primary.survey_scores.survey_scores(id="U1234567890", start=0, end=cortex.now(), scoring_dict=scoring_dict)
+cortex.primary.survey_scores.survey_scores(id="U1234567890", start=0, end=cortex.now(), scoring_dict=scoring_dict, return_ind_ques=False)
 ```
 Output:
 ```markdown
