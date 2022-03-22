@@ -10,6 +10,7 @@ Computes survey scores from raw survey data.
 
 - `start`: (int, units: ms) the start time.
 - `end`: (int, units: ms) the end time.
+- `return_ind_ques`: (boolean, default: False) whether to return individual question scores (as well as category scores)
 - `scoring_dict`: (dictionary) dictionary holding scoring information in the following form:
 ```
 scoring_dict = {
