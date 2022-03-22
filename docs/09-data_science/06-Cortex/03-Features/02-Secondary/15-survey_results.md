@@ -41,7 +41,8 @@ scoring_dict = {
         "Nearly every day": 3
     },
 }
-cortex.secondary.survey_results.survey_results(id="U1234567890", start=0, end=cortex.now(), resolution=86400000, scoring_dict=scoring_dict, question_or_category="GAD-7")
+cortex.secondary.survey_results.survey_results(id="U1234567890", start=0, end=cortex.now(), resolution=86400000,
+        scoring_dict=scoring_dict, question_or_category="GAD-7")
 ```
 Output:
 ```markdown
