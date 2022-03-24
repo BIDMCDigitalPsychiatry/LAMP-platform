@@ -47,6 +47,7 @@ Please see the example below for an example of a scoring_dict.
 - `start`: (int, units: ms) the start time of a given survey entry.
 - `end`: (int, units: ms) the end time of a given survey entry.
 - `category`: (str) the category of the given survey entry.
+- `question`: (str) the question of the given survey entry, same as category for sum scores.
 - `score`: (float) the sum of the scores for all questions in the survey entry.
   - Note: Only questions that are in the entry will be added to the score. Please ensure that all questions you wish to be added to your score are available in the participant data. (i.e. if you are trying to sum the results of "question 1" and "question 2" but participant X only has "question 2" the category score for particiapnt X will be only the "question 2" score.)
 
