@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.lamp.digital/blog</id>
     <title>LAMP Platform Blog</title>
-    <updated>2022-03-07T00:00:00.000Z</updated>
+    <updated>2022-03-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.lamp.digital/blog"/>
     <subtitle>LAMP Platform Blog</subtitle>
@@ -10,7 +10,15 @@
     <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
     <entry>
         <title type="html"><![CDATA[]]></title>
-        <id>https://docs.lamp.digital/blog/2022/03/07/</id>
+        <id>/2022/03/22/</id>
+        <link href="https://docs.lamp.digital/blog/2022/03/22/"/>
+        <updated>2022-03-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[New features and fixes for cortex]]></summary>
+        <content type="html"><![CDATA[<h2>New features and fixes for cortex</h2><ul><li>Data quality visualizations</li><li>Updated survey scoring</li><li>Step count</li><li>Healthkit sleep</li><li>Inactive duration (a proxy for sleep)</li></ul><h3>Details:</h3><ul><li>Data quality visualizations include activity counts, passive data quality, and features (home time, screen duration, and step counts). These graphs will be attached to the Data Portal. </li><li>The secondary feature <code>step_count</code> unifies iOS and Android steps.</li><li>Sleep information is gathered through Healthkit from watches. This data is aggregated in the secondary feature <code>healthkit_sleep_duration</code>. Duration of &quot;in_bed&quot;, &quot;in_sleep&quot;, or &quot;in_awake&quot; time can be computed.</li><li>Survey scoring has been refactored to allow for grouping of questions and more advanced scoring. A scoring dictionary is passed to map questions to categories. Users can also provide mappings from responses to integers for scoring.</li><li><code>inactive_duration</code> is an early iteration of our newest sleep algorithm. It searches for the longest bouts without any spikes in accelerometer or screen activity. Inactive duration will continue to be revised in future releases.</li></ul><p>For further information, please visit our documentation <a href="https://docs.lamp.digital/data_science/Cortex/cortex">here</a>.</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[]]></title>
+        <id>/2022/03/07/</id>
         <link href="https://docs.lamp.digital/blog/2022/03/07/"/>
         <updated>2022-03-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features & Improvements]]></summary>
@@ -22,7 +30,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[]]></title>
-        <id>https://docs.lamp.digital/blog/2022/2/15/</id>
+        <id>/2022/2/15/</id>
         <link href="https://docs.lamp.digital/blog/2022/2/15/"/>
         <updated>2022-02-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features & Improvements]]></summary>
@@ -34,7 +42,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2022 User Interface Improvements]]></title>
-        <id>2022 User Interface Improvements</id>
+        <id>/2022/1/11/</id>
         <link href="https://docs.lamp.digital/blog/2022/1/11/"/>
         <updated>2022-01-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Server administrators MUST upgrade from2022 versions in the Docker configuration. Please contact us on the forum if there are any questions.]]></summary>
@@ -46,7 +54,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[New features, stability fixes, and improvements]]></title>
-        <id>New features, stability fixes, and improvements</id>
+        <id>/2021/12/16/</id>
         <link href="https://docs.lamp.digital/blog/2021/12/16/"/>
         <updated>2021-12-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[- Questions created in the survey builder can now be toggled between to have optional or required responses. By default, they will begin as required but can be checked to be optional]]></summary>
@@ -58,7 +66,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[New, fully functional Clinical-specific use for mindLAMP!]]></title>
-        <id>New, fully functional Clinical-specific use for mindLAMP!</id>
+        <id>/2021/11/22/</id>
         <link href="https://docs.lamp.digital/blog/2021/11/22/"/>
         <updated>2021-11-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[mindLAMP now features a variety of new features to support a clinical-only team if there is no need for specialized researcher functions or if a simpler and streamlined UI is preferred. See our documentation here for greater details.]]></summary>
@@ -70,7 +78,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Scheduled Routine mindLAMP AWS Maintenance]]></title>
-        <id>Scheduled Routine mindLAMP AWS Maintenance</id>
+        <id>/2021/09/13/</id>
         <link href="https://docs.lamp.digital/blog/2021/09/13/"/>
         <updated>2021-09-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hi all,]]></summary>
@@ -82,7 +90,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Visualization & Activity Updates]]></title>
-        <id>Visualization &amp; Activity Updates</id>
+        <id>/2021/08/25/</id>
         <link href="https://docs.lamp.digital/blog/2021/08/25/"/>
         <updated>2021-08-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Updates]]></summary>
@@ -94,7 +102,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Minor Stability Updates and Bug Fixes]]></title>
-        <id>Minor Stability Updates and Bug Fixes</id>
+        <id>/2021/08/09/</id>
         <link href="https://docs.lamp.digital/blog/2021/08/09/"/>
         <updated>2021-08-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Updates]]></summary>
@@ -106,7 +114,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Significant Performance Improvements & UI Overhaul]]></title>
-        <id>Significant Performance Improvements &amp; UI Overhaul</id>
+        <id>/2021/04/22/</id>
         <link href="https://docs.lamp.digital/blog/2021/04/22/"/>
         <updated>2021-04-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This is a significant update -- please review the bolded disclaimer text!]]></summary>
@@ -118,7 +126,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Documentation Overhaul]]></title>
-        <id>Documentation Overhaul</id>
+        <id>/2021/04/01/</id>
         <link href="https://docs.lamp.digital/blog/2021/04/01/"/>
         <updated>2021-04-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the brand new documentation site!]]></summary>
@@ -130,7 +138,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Patient Profile & New Cognitive Tests]]></title>
-        <id>Patient Profile &amp; New Cognitive Tests</id>
+        <id>/2021/02/12/</id>
         <link href="https://docs.lamp.digital/blog/2021/02/12/"/>
         <updated>2021-02-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
@@ -142,7 +150,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Stability & Performance Improvements]]></title>
-        <id>Stability &amp; Performance Improvements</id>
+        <id>/2021/01/11/</id>
         <link href="https://docs.lamp.digital/blog/2021/01/11/"/>
         <updated>2021-01-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Improvements]]></summary>
@@ -155,7 +163,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Ease of Use Improvements]]></title>
-        <id>Ease of Use Improvements</id>
+        <id>/2020/12/17/</id>
         <link href="https://docs.lamp.digital/blog/2020/12/17/"/>
         <updated>2020-12-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
@@ -167,7 +175,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Cortex Visualizations & Activity Updates]]></title>
-        <id>Cortex Visualizations &amp; Activity Updates</id>
+        <id>/2020/12/01/</id>
         <link href="https://docs.lamp.digital/blog/2020/12/01/"/>
         <updated>2020-12-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
@@ -179,7 +187,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Ease of Use Improvements]]></title>
-        <id>Ease of Use Improvements</id>
+        <id>/2020/11/06/</id>
         <link href="https://docs.lamp.digital/blog/2020/11/06/"/>
         <updated>2020-11-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bug Fixes]]></summary>
@@ -191,7 +199,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Stability & Performance Improvements]]></title>
-        <id>Stability &amp; Performance Improvements</id>
+        <id>/2020/11/05/</id>
         <link href="https://docs.lamp.digital/blog/2020/11/05/"/>
         <updated>2020-11-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Improvements]]></summary>
@@ -203,7 +211,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Clinical Customization Updates]]></title>
-        <id>Clinical Customization Updates</id>
+        <id>/2020/10/23/</id>
         <link href="https://docs.lamp.digital/blog/2020/10/23/"/>
         <updated>2020-10-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
@@ -215,7 +223,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[User Experience Upgrades]]></title>
-        <id>User Experience Upgrades</id>
+        <id>/2020/10/15/</id>
         <link href="https://docs.lamp.digital/blog/2020/10/15/"/>
         <updated>2020-10-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
@@ -227,7 +235,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[General Availability of mindLAMP 2]]></title>
-        <id>General Availability of mindLAMP 2</id>
+        <id>/2020/10/05/</id>
         <link href="https://docs.lamp.digital/blog/2020/10/05/"/>
         <updated>2020-10-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
@@ -239,7 +247,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Stability & Infrastructure Upgrades]]></title>
-        <id>Stability &amp; Infrastructure Upgrades</id>
+        <id>/2020/08/25/</id>
         <link href="https://docs.lamp.digital/blog/2020/08/25/"/>
         <updated>2020-08-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Improvements]]></summary>
