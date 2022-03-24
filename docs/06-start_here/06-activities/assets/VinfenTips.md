@@ -179,7 +179,7 @@ Examples of Distraction Techniques include:
 
 Practice Distraction Techniques once a day or more at times when you are feeling well and not distressed. This will help you learn the skill better so you will be able to use Distractions Techniques in harder situations when you really need it. The more you practice, the more using your Distraction Technique becomes second nature and you can use it anytime, with ease.
 
-_Reference: [understandingcbt.com](www.understandingcbt.com)_
+_Reference: [understandingcbt.com](https://www.understandingcbt.com/)_
 
 _Category: EBP – CBT - Skills Training / Relapse Reduction | © Vinfen 2020_
 

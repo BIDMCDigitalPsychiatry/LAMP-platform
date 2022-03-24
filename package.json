@@ -3,22 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.9",
-    "@docusaurus/preset-classic": "2.0.0-beta.9",
-    "@docusaurus/utils": "^2.0.0-beta.9",
+    "@docusaurus/core": "2.0.0-beta.14",
+    "@docusaurus/preset-classic": "2.0.0-beta.14",
+    "@docusaurus/utils": "2.0.0-beta.14",
     "@easyops-cn/docusaurus-search-local": "^0.20.0",
     "@monaco-editor/react": "^4.3.1",
-    "docusaurus-plugin-openapi": "^0.1.1",
+    "docusaurus-preset-openapi": "^0.5.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "yamljs": "^0.3.0"
+    "react-dom": "^17.0.2",
+    "url": "^0.11.0"
   },
   "scripts": {
-    "fix-config": "echo \"module.exports = require('./package.json').docusaurus; module.exports.plugins[0][1].openapiPath = require.resolve(module.exports.plugins[0][1].openapiPath);\" > docusaurus.config.js",
-    "gen-openapi": "yaml2json ./LAMP-protocol/openapi.yml > ./openapi.json",
-    "prebuild": "npm run gen-openapi && npm run fix-config",
+    "fix-config": "echo \"module.exports = require('./package.json').docusaurus\" > docusaurus.config.js",
+    "prebuild": "npm run fix-config",
     "prestart": "npm run prebuild",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
@@ -27,7 +24,9 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "dev": "docusaurus start"
+    "dev": "docusaurus start",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "babel": {
     "compact": true,
@@ -90,9 +89,6 @@
       "disableSwitch": false,
       "respectPrefersColorScheme": true,
       "image": "logo.png",
-      "googleAnalytics": {
-        "trackingID": "UA-192736629-1"
-      },
       "languageTabs": [
         {
           "tabName": "cURL",
@@ -172,8 +168,12 @@
     },
     "presets": [
       [
-        "@docusaurus/preset-classic",
+        "docusaurus-preset-openapi",
         {
+          "api": {
+            "routeBasePath": "api",
+            "path": "./LAMP-protocol/openapi.yml"
+          },
           "docs": {
             "routeBasePath": "/",
             "showLastUpdateAuthor": true,
@@ -190,18 +190,14 @@
               "type": "all",
               "copyright": "© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
             }
+          },
+          "googleAnalytics": {
+            "trackingID": "UA-192736629-1"
           }
         }
       ]
     ],
     "plugins": [
-      [
-        "docusaurus-plugin-openapi",
-        {
-          "routeBasePath": "api",
-          "openapiPath": "./openapi.json"
-        }
-      ],
       [
         "@easyops-cn/docusaurus-search-local",
         {
