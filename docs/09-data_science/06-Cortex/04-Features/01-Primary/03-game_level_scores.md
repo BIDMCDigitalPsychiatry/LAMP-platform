@@ -25,6 +25,7 @@ The other return values depend on which game is being scored.
 - `avg_pumps` (game: balloon_risk): (float) the average number of balloon pumps.
 - `avg_tap_time` (game: cats_and_dogs, jewels_a, jewels_b, spatial_span): (float) the average tap time.
 - `avg_perc_correct` (game: cats_and_dogs, jewels_a, jewels_b, spatial_span): (float) the average percent of correct taps.
+Please note that currently there is information missing from the API, so the pop_the_bubbles scores will not be accurate.
 
 #### Example
 
