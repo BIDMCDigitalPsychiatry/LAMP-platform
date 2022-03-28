@@ -24,27 +24,8 @@ The "score" is based on `avg_pumps` for `balloon_risk`, `avg_NO_go_perc_correct`
 #### Example
 
 ```markdown
-scoring_dict = {
-    "category_list": ["GAD-7"],
-    "questions": {
-            "Over the past week, I have felt nervous, anxious, or on edge.": {"category": "GAD-7", "scoring": "value_map"},
-            "Over the past week, I have not been able to stop or control worrying.": {"category": "GAD-7", "scoring": "value_map"},
-            "Over the past week, I have been worrying too much about different things.": {"category": "GAD-7", "scoring": "value_map"},
-            "Over the past week, I have had trouble relaxing.": {"category": "GAD-7", "scoring": "value_map"},
-            "Over the past week, I have felt so restless that it's hard to sit still.": {"category": "GAD-7", "scoring": "value_map"},
-            "Over the past week, I have felt myself becoming easily annoyed or irritable.": {"category": "GAD-7", "scoring": "value_map"},
-            "Over the past week, I have felt afraid as if something awful might happen.": {"category": "GAD-7", "scoring": "value_map"},
-        },
-    "value_map": {
-        "Not at all": 0,
-        "Several days": 1,
-        "More than half the days": 2,
-        "Over half the days": 2,
-        "Nearly every day": 3
-    },
-}
-cortex.secondary.survey_results.survey_results(id="U1234567890", start=0, end=cortex.now(), resolution=86400000,
-        scoring_dict=scoring_dict, question_or_category="GAD-7")
+cortex.secondary.game_results.game_results(id="U1234567890", start=0, end=cortex.now(), resolution=86400000,
+        name_of_game="jewels_b")
 ```
 Output:
 ```markdown
@@ -53,12 +34,12 @@ Output:
   'duration': 4524000000,
   'resolution': 86400000,
   'data': [
-           {'timestamp': 1607072400000, 'value': 5},
+           {'timestamp': 1607072400000, 'value': 1002.2},
            {'timestamp': 1607331600000, 'value': None},
                  .
                  .
                  .
-           {'timestamp': 1609232400000, 'value': 2.5}
+           {'timestamp': 1609232400000, 'value': 1527.82}
           ]
 }
 ```
