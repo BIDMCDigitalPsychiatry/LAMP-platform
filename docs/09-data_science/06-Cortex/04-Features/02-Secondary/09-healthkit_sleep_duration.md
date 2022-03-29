@@ -21,7 +21,7 @@ Healthkit sleep duration sums the durations from the `lamp.sleep` sensor. The "i
 #### Example
 
 ```markdown
-cortex.secondary.healthkit_sleep_duration.healthkit_sleep_duration(id="U1234567890", start=0, end=cortex.now(), resolution=86400000, duration_type="in_bed")
+cortex.secondary.healthkit_sleep_duration.healthkit_sleep_duration(id="U1234567890", start=1607072400000, end=1609232400001, resolution=86400000, duration_type="in_bed")
 ```
 Output:
 ```markdown
