@@ -21,7 +21,7 @@ Trip Distance is the total distance traveled on all trips in a period of time.
 #### Example
 
 ```markdown
-cortex.secondary.trip_distance.trip_distance(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.trip_distance.trip_distance(id="U1234567890", start=1607072400000, end=1609232400001, resolution=86400000)
 ```
 Output:
 ```markdown

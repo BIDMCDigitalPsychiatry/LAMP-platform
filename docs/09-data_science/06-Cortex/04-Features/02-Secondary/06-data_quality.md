@@ -24,7 +24,7 @@ _Note: Data quality in one of two ways 1) by pulling all raw data from 'start' t
 #### Example
 
 ```markdown
-cortex.secondary.data_quality.data_quality(id="U1234567890", start=0, end=cortex.now(), resolution=86400000, feature="gps", bin_size=10000)
+cortex.secondary.data_quality.data_quality(id="U1234567890", start=1607072400000, end=1609232400001, resolution=86400000, feature="gps", bin_size=10000)
 ```
 Output:
 ```markdown

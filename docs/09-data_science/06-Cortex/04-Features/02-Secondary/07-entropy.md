@@ -23,7 +23,7 @@ Entropy is a measure of how much a participant moves around to different locatio
 #### Example
 
 ```markdown
-cortex.secondary.entropy.entropy(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.entropy.entropy(id="U1234567890", start=1607072400000, end=1609232400000, resolution=86400000)
 ```
 Output:
 ```markdown

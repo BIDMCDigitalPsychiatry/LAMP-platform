@@ -21,7 +21,7 @@ Screen duration is the sum of the time spent with the screen "on".
 #### Example
 
 ```markdown
-cortex.secondary.screen_duration.screen_duration(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.screen_duration.screen_duration(id="U1234567890", start=1607072400000, end=1609232400001, resolution=86400000)
 ```
 Output:
 ```markdown

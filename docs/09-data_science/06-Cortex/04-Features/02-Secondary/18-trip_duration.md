@@ -21,7 +21,7 @@ Trip Duration is the total duration of all trips in a period of time.
 #### Example
 
 ```markdown
-cortex.secondary.trip_duration.trip_duration(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.trip_duration.trip_duration(id="U1234567890", start=1607072400000, end=1609232400001, resolution=86400000)
 ```
 Output:
 ```markdown
