@@ -20,7 +20,7 @@ SMS number sums the number of incoming texts. Note that many types of phones no 
 #### Example
 
 ```markdown
-cortex.secondary.sms_number.sms_number(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.sms_number.sms_number(id="U1234567890", start=1607072400000, end=1609232400001, resolution=86400000)
 ```
 Output:
 ```markdown
