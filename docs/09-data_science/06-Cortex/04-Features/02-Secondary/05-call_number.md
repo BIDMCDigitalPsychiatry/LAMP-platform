@@ -20,7 +20,7 @@ Call number sums the number of calls.
 #### Example
 
 ```markdown
-cortex.secondary.call_number.call_number(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.call_number.call_number(id="U1234567890", start=1607072400000, end=1609232400001, resolution=86400000)
 ```
 Output:
 ```markdown
