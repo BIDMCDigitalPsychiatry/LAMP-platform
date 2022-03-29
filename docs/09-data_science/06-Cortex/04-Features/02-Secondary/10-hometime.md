@@ -21,7 +21,7 @@ The time spent at the most visited (i.e. greatest number of GPS points collected
 #### Example
 
 ```markdown
-cortex.secondary.hometime.hometime(id="U1234567890", start=0, end=cortex.now(), resolution=86400000)
+cortex.secondary.hometime.hometime(id="U1234567890", start=1607072400000, end=1609232400000, resolution=86400000)
 ```
 Output:
 ```markdown
