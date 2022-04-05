@@ -29,31 +29,16 @@ Customizable surveys. Available question types currently include:
     - `text` : A string to display to the user
     - `type` : The question type. One of `text`,`boolean`,`list`,`multiselect`,`slider`,`short`,`rating`,`time`
     - `required`: True or False. Whether the question must be completed to advance.
-    - <details>
-        <summary>List</summary>
-    
-        - `options` : An array of strings each corresponding to one option
-        </details>
-    - <details>
-        <summary>Multi-Select</summary>
-    
-        - `options` : An array of strings each corresponding to one option 
-        </details>
-    - <details>
-        <summary>Slider</summary>
-    
-        - `options` : An array of numbers each corresponding to one option
-        </details>
-    - <details>
-        <summary>Rating</summary>
-    
-        - `options` : An array of numbers each corresponding to one option
-        </details>
-    - <details>
-        <summary>Time</summary>
-    
-        - `options` : An object with one key-value pair: `timepattern`: One of `standard` or `ampm` corresponding to the time selection method
-        </details>
+    - List
+      - `options` : An array of strings each corresponding to one option
+    - Multi-Select
+      - `options` : An array of strings each corresponding to one option 
+    - Slider
+      - `options` : An array of numbers each corresponding to one option
+    - Rating
+      - `options` : An array of numbers each corresponding to one option  
+    - Time
+      - `options` : An object with one key-value pair: `timepattern`: One of `standard` or `ampm` corresponding to the time selection method
 
 Example
             
