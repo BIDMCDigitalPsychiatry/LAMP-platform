@@ -12,23 +12,111 @@ ActivitySpec: `lamp.survey`
 
 #### Description
 
-Customizable surveys.
+Customizable surveys. Available question types currently include:
+
+ - Text: A free-entry text box
+ - Boolean: A choice between "True" and "False"
+ - List: A radio button style list where a maximum of one option can be chosen
+ - Multi-Select: A checkbox style list where multiple options can be chosen
+ - Slider: A draggable slider to select one option from a numerical range
+ - Short Answer: A smaller, free entry text box
+ - Rating: A question which asks the participant to rate something on a numerical scale
+ - Time: A interactive dropdown which allows the user to select a time. Choose between AM/PM and military options
 
 #### Settings
+ - `name`: A string title to display to the user
+ - `settings`: An array of objects, one for each question
+    - `text` : A string to display to the user
+    - `type` : The question type. One of `text`,`boolean`,`list`,`multiselect`,`slider`,`short`,`rating`,`time`
+    - `required`: True or False. Whether the question must be completed to advance.
+    - <details>
+        <summary>List</summary>
+    
+        - `options` : An array of strings each corresponding to one option
+        </details>
+    - <details>
+        <summary>Multi-Select</summary>
+    
+        - `options` : An array of strings each corresponding to one option 
+        </details>
+    - <details>
+        <summary>Slider</summary>
+    
+        - `options` : An array of numbers each corresponding to one option
+        </details>
+    - <details>
+        <summary>Rating</summary>
+    
+        - `options` : An array of numbers each corresponding to one option
+        </details>
+    - <details>
+        <summary>Time</summary>
+    
+        - `options` : An object with one key-value pair
+            - `timepattern`: One of `standard` or `ampm` corresponding to the time selection method
+        </details>
+
+Example
+            
+```
+            {'category': ['assess'],
+             'id': '5ha5qf49shjzmasrcrah',
+             'name': 'Rating Test',
+             'schedule': [],
+             'settings': [{'required': True, 'text': 'Text Question', 'type': 'text'},
+                          {'required': True, 'text': 'Boolean', 'type': 'boolean'},
+                          {'options': ['Option 1', 'Option 2'],
+                           'required': True,
+                           'text': 'List',
+                           'type': 'list'},
+                          {'options': ['Option 1', 'Option 2'],
+                           'required': True,
+                           'text': 'Multi-Select',
+                           'type': 'multiselect'},
+                          {'options': [0, 1],
+                           'required': True,
+                           'text': 'Slider',
+                           'type': 'slider'},
+                          {'required': True, 'text': 'Short Answer', 'type': 'short'},
+                          {'options': [0, 1],
+                           'required': True,
+                           'text': 'Rating',
+                           'type': 'rating'},
+                          {'options': {'timePattern': 'standard'},
+                           'required': True,
+                           'text': 'Time',
+                           'type': 'time'}],
+             'spec': 'lamp.survey'}    
+```
+          
 
 #### Data 
 
 - `static_data`: Unused.
 - `temporal_slices`:
-    - `item`: (string) The question text (or index).
-    - `value`: (string) The selected question option text (or index).
+    - `item`: (string) The question text.
+    - `value`: (string) The selected question option text.
     - `type`: Unused.
     - `duration`: The time taken to answer a question in the survey.
     - `level`: Unused.
 
 #### Example
 
-```json
+```
+{'timestamp': 1634047106612,
+   'activity': 'e2wxcekbb0typzdtz0pb',
+   'static_data': {},
+   'temporal_slices': [{'item': 'Question 1',
+     'value': '1',
+     'type': None,
+     'level': None,
+     'duration': 2500},
+    {'item': 'Question 2',
+     'value': '1',
+     'type': None,
+     'level': None,
+     'duration': 1235}],
+   'duration': 0}
 ```
 
 ### 3D Figure Copy
