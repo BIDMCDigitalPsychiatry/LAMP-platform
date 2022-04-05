@@ -52,8 +52,7 @@ Customizable surveys. Available question types currently include:
     - <details>
         <summary>Time</summary>
     
-        - `options` : An object with one key-value pair
-            - `timepattern`: One of `standard` or `ampm` corresponding to the time selection method
+        - `options` : An object with one key-value pair: `timepattern`: One of `standard` or `ampm` corresponding to the time selection method
         </details>
 
 Example
