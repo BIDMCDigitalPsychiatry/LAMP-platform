@@ -13,6 +13,8 @@ The cortex.run() function is the easiest way to run multiple cortex features on 
 - `resolution`: (int, units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
 - `path_to_save`: (string, default: "") a filepath to a directory for the features. Folders will be created for each feature and participant data will be saved in individual pickle files.
 - `run_part_and_features`: (string, default: "") a path to a csv file with "participant" and "feature" columns to run only certain features for certain participants.
+- `cache`: (boolean, default: False) whether or not to cache the raw data.
+- `print_logs`: (boolean, default: False) whether to print logs. Otherwise the log level will be set to warning.
 
 #### Data
 
