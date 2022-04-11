@@ -1,5 +1,10 @@
 # Advanced Usage
 
+## Cortex cache
+Since passive data can be large (GPS can be sampled at 1 Hz and accelerometer at 5 Hz) some Cortex functions will take time to run. However, you may want to repeat calculations on a participant's raw data. Therefore, we have created two methods to save data locally to accelerate computation.
+1) Attachments are used in primary features for saving intermediate computations or values. This may be useful if you develop features for Cortex.
+2) The cache is used to save raw data to accelerate the analysis. The default is `cache=False` to prevent unwanted data collecting on your machine. If you set `cache=True` you will need to set the environment variable "CORTEX_CACHE_DIR" to the path to your directory. Then, raw data will be saved there.
+
 ## Case Example: Anomaly Detection
 It's easy to get started with more advanced analysis on data collected from mindLAMP. In this example, we'll walk through using [Cortex](https://docs.lamp.digital/cortex) with [Luminol](https://github.com/linkedin/luminol), an anomaly detection library, and [Altair](https://altair-viz.github.io), an interactive visualization library, to tag and visualize survey scores for a particular patient.
 
