@@ -1,5 +1,3 @@
-# get activity names
-
 # Activity functions
 
 ## `utils.useful_functions.propagate_activity`
@@ -35,6 +33,6 @@ A dataframe with the ActivityEvent data with additional columns called "name" an
 utils.useful_functions.get_activity_names("U1234567890")
 ```
 Output:
-
+![](assets/activity_names.png)
 
 
