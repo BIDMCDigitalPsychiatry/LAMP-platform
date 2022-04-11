@@ -1,6 +1,6 @@
-# Cortex
+# What is Cortex?
 
-## **What is Cortex?**
+## **Overview**
 
 The Cortex data analysis toolkit is part of the LAMP Platform, enabling researchers and clinicians with a variety of backgrounds to use pre-built tools to analyze their data and build analysis pipelines. 
 
