@@ -58,7 +58,7 @@ The participant ID if it was found, else -1.
 #### Example
 
 ```markdown
-utils.useful_functions.get_part_id_from_name(name="patient 27", parts=["U1234567890", "rdfgkd12345"])
+utils.useful_functions.get_part_id_from_name(name="patient 27", parts=["U1234567890", "U2222222222"])
 ```
 Output:
 ```markdown
