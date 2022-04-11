@@ -11,7 +11,7 @@ The Cortex data analysis toolkit is part of the LAMP Platform, enabling research
 
 ![](assets/cortex_diagram.svg)
 
-_Categories of Activity and Sensor data types alongside Cortex features synthesized from raw data streams. Availability of Wearable Sensors depends on the device type used and supported API._
+_Categories of Activity and Sensor data types alongside Cortex features synthesized from raw data streams. Availability of Wearable Sensors depends on the device type used and supported API. You may use cortex.all_features() to list all features._
 
 
 ## **Why Cortex?**
