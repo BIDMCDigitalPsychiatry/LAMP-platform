@@ -1,0 +1,1 @@
+# delete sensors, add sensor
