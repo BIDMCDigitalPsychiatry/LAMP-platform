@@ -2,7 +2,7 @@
 
 # Overview
 
-To offer a way to store persistent, easily accessible data, the LAMP platform has implemented a feature known as attachments (sometimes also called tags). Using this feature, you can attach data to any element of LAMP for easy retrieval, including:
+To offer a way to store persistent, easily accessible data, the LAMP platform has implemented a feature known as attachments (sometimes also called tags). You can use tags to store any json-formatted data. Using this feature, you can attach data to any element of LAMP including:
 
 - Participants
 - Studies
@@ -41,12 +41,13 @@ Given a LAMP id and an existing tag, this function returns the currently set val
 ```
 LAMP.Type.get_attachment("ffmz65mn1gtav5fq3bhq",'lamp.test')['data']
 
-'test'
+{'test_data_key': 21283,
+ 'my_list_of_data': ["Android", "iOS"]}
 ```
 
 ### LAMP.Type.set_attachment('parent','target','tag_name','body')
 
-This function is used to set the value of a tag. 'Target' here is the LAMP element the tag will be attached to - while 'parent' is the agent setting the tag (such as a Researcher, Study, or even a Participant). An element can also use the shorthand `'me'` to set a tag on itself - e.g. a Researcher targeting themself. This function can also be used to delete a tag by setting `body` as `None`
+This function is used to set the value of a tag. 'Target' here is the LAMP element the tag will be attached to - while 'parent' is the agent setting the tag (such as a Researcher, Study, or even a Participant). An element can also use the shorthand `'me'` to set a tag on itself - e.g. a Researcher targeting themself. This function can also be used to delete a tag by setting `body` as `None`.
 ```
 LAMP.Type.set_attachment("ffmz65mn1gtav5fq3bhq",'U0591253803','lamp.test','This is a test tag')['data']
 
