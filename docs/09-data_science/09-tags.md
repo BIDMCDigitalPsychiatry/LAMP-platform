@@ -9,7 +9,6 @@ To offer a way to store persistent, easily accessible data, the LAMP platform ha
 - Researchers
 - Activities
 
-<hr>
 
 ## Functions
 
@@ -60,7 +59,6 @@ LAMP.Type.set_attachment("ffmz65mn1gtav5fq3bhq","me",'lamp.test','This is also a
 LAMP.Type.get_attachment("ffmz65mn1gtav5fq3bhq",'lamp.test')['data']
 'This is also a test tag'
 ```
-<hr>
 
 ## Authority
 
@@ -106,3 +104,4 @@ LAMP.Type.get_attachment('U0591253803', 'lamp.test')['data']
 'Set by Study'
 ```
 
+ 
