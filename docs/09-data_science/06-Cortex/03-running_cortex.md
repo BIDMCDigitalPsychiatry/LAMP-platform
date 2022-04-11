@@ -9,7 +9,7 @@ The cortex.run() function is the easiest way to run multiple cortex features on 
 - `feature_params`: (dict, default={}) a dictionary holding any other parameters to pass to the feature functions.
 - `start`: (int, units: ms, default=None) the start time.
 - `end`: (int, units: ms, default=None) the end time.
-    - Note: If start or end is set to None, the first / last timestamp with raw data for that feature will be determined and it will be shifted to 9am EST.
+    - Note: If start or end is set to None, the first / last timestamp with raw data for that feature will be determined. If resolution is additionally set to the number of miliseconds in a day then these timestamps will be shifted to 9am EST.
 - `resolution`: (int, units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
 - `path_to_save`: (string, default: "") a filepath to a directory for the features. Folders will be created for each feature and participant data will be saved in individual pickle files.
 - `run_part_and_features`: (string, default: "") a path to a csv file with "participant" and "feature" columns to run only certain features for certain participants.
