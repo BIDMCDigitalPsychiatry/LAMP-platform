@@ -43,3 +43,24 @@ Output:
 1649721600000
 ```
 1649680020000 is 4/11/22 at 8:27am. We set shift=20 (8pm in military time) so the output is 1649721600000 (4/11/22 at 8pm).
+
+## `utils.useful_functions.get_part_id_from_name`
+Tries to find the participant with the attachment "lamp.name" set to a certain value.
+
+#### Args
+
+- `name`: (string) the name to look for.
+- `parts`: (list of strings) the list of participant IDs.
+
+#### Returns
+The participant ID if it was found, else -1. 
+
+#### Example
+
+```markdown
+utils.useful_functions.get_part_id_from_name(name="patient 27", parts=["U1234567890", "rdfgkd12345"])
+```
+Output:
+```markdown
+"U1234567890"
+```
