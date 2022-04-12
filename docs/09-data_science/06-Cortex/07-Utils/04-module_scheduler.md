@@ -1,6 +1,6 @@
 # Module scheduler
 
-The module scheduling code allows researchers to specify a set of activities as a "module" which can then be used to easily schedule sets of activities for participants. The functions in this file can be used either individually to create your own module scheduling system or to automatically schedule based on participant attachments set by your study system.
+The module scheduling code allows researchers to specify a set of activities as a "module" which can then be used to easily schedule sets of activities for participants. The functions in this file can be used either individually to create your own module scheduling system or to automatically schedule via participant attachments.
 
 First, the researcher must specify what activities consitutes an activity. Modules should be specified in a json file. Each module must include the name (which should be the key in the dictionary) and will have a dictionary containing:
 - "activities": the list of names of activities for the module
