@@ -1,7 +1,7 @@
 # Activity functions
 
 ## `utils.useful_functions.propagate_activity`
-Propagate activity takes an activity from a "base user" and copies the information to all other users in the list. New activities will not be created, but the information from the base user's activity will be copied into the activity with the same name in other participants if it exists.
+Propagate activity takes an activity from a "base user" and copies the information to all other users in the list. New activities will not be created, but the information from the base user's activity will be copied into the activity with the same name in other participants if it exists. This is useful, for example, if you would like to use the dashboard to correct a typo in a survey. You can correct the typo in one user, and then use this function to propagate the change to all other active users in your study.
 
 #### Args
 
