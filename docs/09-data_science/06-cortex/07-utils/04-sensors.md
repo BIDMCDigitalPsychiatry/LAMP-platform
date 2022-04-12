@@ -1,4 +1,4 @@
-# General functions
+# Sensor functions
 
 ## `utils.useful_functions.delete_sensors`
 Remove all sensors from a participant to stop data collection. 
