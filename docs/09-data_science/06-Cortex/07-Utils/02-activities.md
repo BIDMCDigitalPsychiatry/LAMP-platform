@@ -18,7 +18,7 @@ utils.useful_functions.propagate_activity(base_user="U1234567890", activity_name
 
 
 ## `utils.useful_functions.get_activity_names`
-Match the ActivityEvents and names / specs from Activities for a participant.
+Match the ActivityEvents to the Activity name / spec.
 
 #### Args
 
