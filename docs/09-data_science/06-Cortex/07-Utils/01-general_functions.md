@@ -27,7 +27,7 @@ Take a timestamp and shift it to a certain time that same day.
 
 #### Args
 
-- `curr_time`: (int) the current time (or time that should be shifted) in ms.
+- `curr_time`: (int, unit: ms) the current time (or time that should be shifted) in ms.
 - `shift`: (int, default: 18 (ie 6pm)) the time to shift to in military time.
 
 #### Returns
