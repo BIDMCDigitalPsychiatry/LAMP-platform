@@ -10,8 +10,8 @@ For some sensors, the data that is returned is different for iOS versus Android 
 |----------------|---------------------------| ---------------
 | Analytics      | lamp.analytics            | |
 | Location       | lamp.gps                  | |
-| Device Motion  | lamp.device_motion        | |
-|                | lamp.accelerometer        | |
+| Device Motion  | lamp.accelerometer       | |
+|                | lamp.device_motion       | |
 | Screen         | lamp.device_state  | |
 | Pedometer      | lamp.steps                | |
 | Bluetooth & WiFi | lamp.nearby_device      | |
@@ -42,6 +42,44 @@ For some sensors, the data that is returned is different for iOS versus Android 
 |  | lamp.wifi      | |
 | Weight | lamp.weight      | |
 | Height | lamp.height      | |
+
+### Location
+
+SensorSpec: lamp.gps
+Cortex: cortex.raw.gps
+
+#### Description
+
+The location sensor records the device's current GPS coordinates. Depending on the device operating system and device battery level, the source of the data from this sensor may alternate between GPS antennae (high accuracy), cellular tower triangulation (moderate accuracy), WiFi triangulation (poor accuracy), or a combination of these. 
+
+#### Settings
+
+- `frequency`: (number, units: Hz) the required location measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system. The maximum frequency is 1 Hz.
+
+#### Data
+
+- `latitude`: (float, units: degrees) the coordinate's latitude.
+- `longitude`: (float, units: degrees) the coordinate's longitude.
+- `altitude`: (float, units: meters) the coordinate's altitude, relative to sea level.
+- `accuracy`:  (float, units: meters) the coordinate's estimated accuracy representing the radius of a circle formed around the reported latitude/longitude pair, [for which there is **AT LEAST** a 68% probability that the true coordinate is contained within.](https://en.wikipedia.org/wiki/Circular_error_probable)
+    - `0.0`: no accuracy could be determined.
+
+*Unsupported event properties:* `bearing` *and* `speed`*.*
+
+#### Example
+
+```markdown
+{
+  "timestamp": 1234567890,
+  "sensor": "lamp.gps",
+  "data": {
+    "latitude": 80.4827,
+    "longitude": 46.28344,
+    "altitude": 12.12455,
+    "accuracy": 48
+  }
+}
+```
 
 ### Accelerometer
 
@@ -74,7 +112,72 @@ The triaxial accelerometer measures acceleration applied to the device. Each mea
   }
 }
 ```
+### Device Motion
 
+SensorSpec: lamp.accelerometer.device_motion
+
+#### Description
+
+The motion sensor gathers information on the device's physical movement. It includes metrics on device tilt, rotation, experienced gravity, acceleration, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
+
+#### Data
+
+- `motion`: (dict)
+    - `x`: (float) the x-component of motion
+    - `y`: (float) the y-component of motion
+    - `z`: (float) the z-component of motion
+- `magnetic`: (dict)
+    - `x`: (float, units: micro T) the geomagnetic field strength along the device's x-axis, where the x-axis runs from left to right, across the front screen
+    - `y`: (float, units: micro T) the geomagnetic field strength along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
+    - `z`: (float, units: micro T) the geomagnetic field strength along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
+- `altitude`: (dict)
+    - `x`: (float) the x-component of altitude
+    - `y`: (float) the x-component of altitude
+    - `z`: (float) the y-component of altitude
+- `gravity`: (dict)
+    - `x`: (float) the force of gravity along the device's x-axis, where the x-axis runs from left to right, across the front screen
+    - `y`: (float) the force of gravity along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
+    - `z`: (float) the force of gravity along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
+- `rotation`: (dict)
+    - `x`: (float) the rotation vector component around the x-axis, which points tangentially along the ground, to the East: `x * sin(theta/2)`
+    - `y`: (float) the rotation vector component around the y-axis, which points tangent along the ground, to the North: `y * sin(theta/2)`
+    - `z`: (float) the rotation vector component around the z-axis, which points towards the sky, perpendicular to the ground: `z * sin(theta/2)`
+
+#### Example
+
+```markdown
+{
+  'sensor': 'lamp.device_motion',
+  'data': {
+    'motion': {
+      'x': -0.0017750263214111328,
+      'y': 0.004897803068161009,
+      'z': -0.00017660856246948242
+     },
+    'magnetic': {
+      'x': 3.450927734375,
+      'y': 8.881887435913086,
+      'z': 53.096649169921875
+     },
+    'attitude': {
+      'x': 2.9586798819128934,
+      'y': 0.1373790520467436,
+      'z': -0.9628289634642353
+     },
+    'gravity': {
+       'x': 0.18018077313899994,
+       'y': -0.13694733381271362,
+       'z': 0.9740535616874695
+      },
+     'rotation': {
+       'x': 0.001726057380437851,
+       'y': -0.008104033768177036,
+       'z': 0.004878027364611627
+      }
+    },
+   'timestamp': 1647386641091
+}
+```
 ### Blood Pressure
 
 SensorSpec: lamp.blood_pressure
@@ -234,95 +337,6 @@ The gyroscope sensors measures the rate of rotation around each of a device's x,
 }
 ```
 
-### Location
-
-SensorSpec: lamp.gps
-
-#### Description
-
-The location sensor records the device's current GPS coordinates. Depending on the device operating system and device battery level, the source of the data from this sensor may alternate between GPS antennae (high accuracy), cellular tower triangulation (moderate accuracy), WiFi triangulation (poor accuracy), or a combination of these. 
-
-#### Settings
-
-- `frequency: number`: (units: Hz) the required location measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system. The maximum frequency is 1 Hz.
-
-#### Data
-
-- `latitude: number`: (units: degrees) the coordinate's latitude.
-- `longitude: number`: (units: degrees) the coordinate's longitude.
-- `altitude: number`: (units: meters) the coordinate's altitude, relative to sea level.
-- `accuracy: number`:  (units: meters) the coordinate's estimated accuracy representing the radius of a circle formed around the reported latitude/longitude pair, [for which there is **AT LEAST** a 68% probability that the true coordinate is contained within.](https://en.wikipedia.org/wiki/Circular_error_probable)
-    - `0.0`: no accuracy could be determined.
-
-*Unsupported event properties:* `bearing` *and* `speed`*.*
-
-#### Example
-
-```markdown
-# **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.gps")**
-{
-  "timestamp": 1234567890,
-  "sensor": "lamp.gps",
-  "data": {
-    "latitude": 80.4827,
-    "longitude": 46.28344,
-    "altitude": 12.12455,
-    "accuracy": 48
-  }
-}
-```
-
-### Device Motion
-
-SensorSpec: lamp.accelerometer.device_motion
-
-#### Description
-
-The motion sensor gathers information on the device's physical movement. It includes metrics on device tilt, rotation, experienced gravity, acceleration, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
-
-#### Data
-
-- `tilt: object`
-    - 
-- `rotation: object`
-    - `x: number`: the rotation vector component around the x-axis, which points tangentially along the ground, to the East: `x * sin(theta/2)`
-    - `y: number`: the rotation vector component around the y-axis, which points tangent along the ground, to the North: `y * sin(theta/2)`
-    - `z: number`: the rotation vector component around the z-axis, which points towards the sky, perpendicular to the ground: `z * sin(theta/2)`
-
-- `gravity: object`
-    - `x: number`: the force of gravity along the device's x-axis, where the x-axis runs from left to right, across the front screen
-    - `y: number`: the force of gravity along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
-    - `z: number`: the force of gravity along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
-- `user_accel: object`:
-    - `x: number`: the device's acceleration along its x-axis, where the x-axis runs from left to right, across the front screen
-    - `y: number`: the device's acceleration along its y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
-    - `z: number`: the device's acceleration along its z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
-- `magnetic_field: object`:
-    - `x: number` : (units: micro T) the geomagnetic field strength along the device's x-axis, where the x-axis runs from left to right, across the front screen
-    - `y: number`: (units: micro T) the geomagnetic field strength along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
-    - `z: number`: (units: micro T) the geomagnetic field strength along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
-    - `calibration_accuracy: number` : the sensor's accuracy level. One of:
-        - `-1`: invalid; the sensor is reporting data but is not connected to its environment.
-        - `0`: none; the sensor is reporting data that is not calibrated and cannot be trusted.
-        - `1`: low; the sensor is reporting data at poor accuracy, and environmental calibration is required.
-        - `2`: medium; the sensor is reporting data at an average accuracy, and environmental calibration of the device may improve data.
-        - `3`: high; the sensor is reporting data at maximal accuracy and is correctly calibrated.
-
-#### Example
-
-```markdown
-# **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.accelerometer")**
-{
-  "timestamp": 1234567890,
-  "sensor": "lamp.accelerometer",
-  "data": {
-    "x": 0.19378492,
-    "y": 1.28473749,
-    "z": -0.19384932,
-    "accuracy": 2
-  }
-}
-```
 ### Sleep
 
 SensorSpec: lamp.sleep
