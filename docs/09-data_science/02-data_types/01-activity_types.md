@@ -1,10 +1,9 @@
-# Data Types
+# Activity Types
 
-All event streams in the LAMP API are catalogued by a timestamp and specific "blueprints" (schema) of what kind of data they hold. For example, a sensor event that occurred 20 minutes ago would carry that instant's timestamp, along with a link to what kind of sensor it was, and that sensor's measurement as a payload of data. The kinds of activities and sensors available are declared below, along with the blueprint you can expect their events' data to follow. 
+All event streams in the LAMP API are catalogued by a timestamp and specific "blueprints" (schema) of what kind of data they hold. For example, a sensor event that occurred 20 minutes ago would carry that instant's timestamp, along with a link to what kind of sensor it was, and that sensor's measurement as a payload of data. The kinds of activities available are declared below, along with the blueprint you can expect their events' data to follow. 
 
-## Activity Types
 
-In the case of activities (active data) completed by the participant or patient, the activity declares two types of blueprints: **static data**, or data that relates to the overall session, and **temporal slices**, data that provides millisecond precision and carries information about each action or intention the participant or patient might have. Furthermore, activities that can be customized will also have **settings** blueprints, but these won't actually appear in the event data (and are omitted from the fields listed below).
+In the case of activities (active data) completed by the participant or patient, the activity declares two types of blueprints: **static data**, or data that relates to the overall session, and **temporal slices**, data that provides millisecond precision and carries information about each action the participant took. Activities that can be customized will also have **settings** blueprints, but these won't actually appear in the event data (and are omitted from the fields listed below).
 
 ### Survey
 
@@ -103,33 +102,6 @@ Example
    'duration': 0}
 ```
 
-### 3D Figure Copy
-
-ActivitySpec: `lamp.3d_figure_copy`
-
-#### Description
-
-The 3D Figure drawing game.
-
-#### Settings
-
-#### Data 
-
-- `static_data`: 
-    - `point`: The associated point value with the completed session.	
-    - `drawn_file_name`: The link to the file containing the drawn image.	
-    - `game_name`: The unique game name for the drawing session.
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
 
 ### Balloon Risk 
 
@@ -201,28 +173,69 @@ ActivitySpec: `lamp.cats_and_dogs` & `lamp.cats_and_dogs_new`
 
 #### Description
 
-The Cats and Dogs game.
+The Cats and Dogs game. Participants are shown a field of 10 boxes arranged in a fixed random pattern (does not change from test to test), which raise to reveal either an image of a cat, an image of a dog, or neither in a random pattern. Over the course of three levels and 45 trials, participants are told to:
+
+1. Click on all dogs (only dogs and blanks are shown)
+2. Click on all dogs (dogs, cats, and blanks are shown)
+3. Click on all cats (dogs, cats, and blanks are shown)
 
 #### Settings
+
+Currently no settings are available for this activity.
 
 #### Data 
 
 - `static_data`:
-    - `point`: The associated point value with the completed session.	
-    - `rating`:	The associated rating of the completed session.	
+    - `point`: The associated point value with the completed session. 2 if all 45 trials were answered perfectly, else 1.	
     - `correct_answers`: The total number of correct answers made in the session.	
     - `wrong_answers`: The total number of incorrect answers made in the session.	
-    - `total_questions`: The total number of questions encountered during the session.    
+    - `score`: The percentage of trials answered correctly, converted to an integer. 
 - `temporal_slices`:
-    - `item`: Unused.
+    - `item`: 1-10 depending on the box chosen
     - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
+    - `type`: True if the tap was correct, false otherwise
+    - `duration`: Time elapsed since the last tap or trial start
+    - `level`: 1-3 corresponding to the numbered levels above
 
 #### Example
 
-```json
+```
+{'duration': 445841,
+  'static_data': {'StartTime': None,
+   'correct_answers': 22,
+   'point': 1,
+   'score': 49,
+   'type': 1,
+   'wrong_answers': 1},
+  'temporal_slices': [{'duration': 5243,
+    'item': 9,
+    'level': 1,
+    'type': True,
+    'value': None},
+   {'duration': 2611, 'item': 5, 'level': 1, 'type': True, 'value': None},
+   {'duration': 1125, 'item': 8, 'level': 1, 'type': True, 'value': None},
+   {'duration': 2688, 'item': 2, 'level': 1, 'type': True, 'value': None},
+   {'duration': 946, 'item': 3, 'level': 1, 'type': True, 'value': None},
+   {'duration': 1000, 'item': 4, 'level': 1, 'type': True, 'value': None},
+   {'duration': 4568, 'item': 4, 'level': 1, 'type': True, 'value': None},
+   {'duration': 1035, 'item': 6, 'level': 1, 'type': True, 'value': None},
+   {'duration': 843, 'item': 3, 'level': 1, 'type': True, 'value': None},
+   {'duration': 798, 'item': 2, 'level': 1, 'type': True, 'value': None},
+   {'duration': 4298, 'item': 1, 'level': 1, 'type': True, 'value': None},
+   {'duration': 854, 'item': 8, 'level': 1, 'type': True, 'value': None},
+   {'duration': 1397, 'item': 5, 'level': 1, 'type': True, 'value': None},
+   {'duration': 885, 'item': 9, 'level': 1, 'type': True, 'value': None},
+   {'duration': 4338, 'item': 10, 'level': 1, 'type': True, 'value': None},
+   {'duration': 624, 'item': 9, 'level': 1, 'type': True, 'value': None},
+   {'duration': 2846, 'item': 3, 'level': 1, 'type': True, 'value': None},
+   {'duration': 2002, 'item': 8, 'level': 2, 'type': False, 'value': None},
+   {'duration': 1981, 'item': 5, 'level': 2, 'type': True, 'value': None},
+   {'duration': 731, 'item': 3, 'level': 2, 'type': True, 'value': None},
+   {'duration': 4555, 'item': 4, 'level': 2, 'type': True, 'value': None},
+   {'duration': 1608, 'item': 3, 'level': 2, 'type': True, 'value': None},
+   {'duration': 910, 'item': 5, 'level': 2, 'type': True, 'value': None}],
+  'timestamp': 1649447701749,
+  'activity': 'sjfvrd7jpjyjzbkgwex4'}
 ```
 
 
@@ -531,6 +544,41 @@ The Visual Association test.
     - `total_attempts`:	The total number of attempts made during the session.	
     - `total_questions`: The total number of questions encountered during the session.	
     - `version`: The version of the test played.
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+---
+
+## Coming Soon
+
+The following activities are not currently implemented in LAMP but are actively being worked on (or ported, for activities that were available in mindLAMP v1)
+
+
+### 3D Figure Copy
+
+ActivitySpec: `lamp.3d_figure_copy`
+
+#### Description
+
+The 3D Figure drawing game.
+
+#### Settings
+
+#### Data 
+
+- `static_data`: 
+    - `point`: The associated point value with the completed session.	
+    - `drawn_file_name`: The link to the file containing the drawn image.	
+    - `game_name`: The unique game name for the drawing session.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
