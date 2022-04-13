@@ -25,9 +25,28 @@ Additional data can come in the form of "global" data or data that holds true ac
 Other local features are "local" in time. These features look just like survey or passive data in that they will have a timestamp column (in ms) as well as columns for each feature. The file can be named anything, and the name of the file may or may not be in the columns. Using this filename, files will be saved in SURVEY_DIR as participantID_filename.csv. OTHER_LOCAL_FEATS should be a list of all of these file names. Then you must specify which columns in each file that should be usef in analysis. An example of how to do this in OTHER_LOCAL_SUBFEATS is shown below.
 
 ### Analysis
+For example, we could look at GAD-7 questions, sleep duration, and some passive data features from one of our studies. These example features are listed below.
+
+![](assets/corr_key.png)
 
 #### Correlations
+Using these features, we could then produce a correlation map. The * indicate signficant correlations (p < 0.05, corrected for multiple comparisons).
+
+![](assets/corr_example.png)
 
 #### Comparison across groups
+We could then look at whether these features differed among participants that improved over the course of the study. Significantly different groups based on a t-test (p < 0.05, corrected for multiple comparisons) are marked with *. Entropy, home time, and GPS data quality differ between the group that did and did not improve. 
+
+![](assets/comp_feats.png)
 
 #### Logistic regression model
+Finally, we fit a logistic regression model to predict which participants improved. The model achieved an AUC of 0.862 and had three non-zero coefficients:
+
+ Feature | Coefficient
+---------|------------
+ entropy | 0.468
+ screen_duration | 0.212
+sleep_duration | 0.223
+
+From here, we can take a deeper look at why some features may be different across groups or investigate the relationships between correlated variables. The goal of these visualizations is to provide a starting point for further analysis.
+
