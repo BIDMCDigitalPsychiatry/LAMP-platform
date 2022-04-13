@@ -29,19 +29,19 @@ For some sensors, the data that is returned is different for iOS versus Android 
 | Respiratory Rate | lamp.respiratory_rate   | Y |
 
 **Deprecated sensors:**
-| Name           | SensorSpec                | Requires watch / other device |
-|----------------|---------------------------| ---------------
-| Device Motion  | lamp.gyroscope       | |
-|  | lamp.magnetometer       | |
-| Location       | lamp.distance                  | |
-| Pedometer | lamp.flights      | |
-| Screen         | lamp.screen_state         | |
-| Calls & Texts  | lamp.calls           | |
-|   | lamp.sms          | |
-| Bluetooth & WiFi | lamp.bluetooth      | |
-|  | lamp.wifi      | |
-| Weight | lamp.weight      | |
-| Height | lamp.height      | |
+| Name           | SensorSpec                | Replaced by|Requires watch / other device |
+|----------------|---------------------------| ---------------|--------------
+| Device Motion  | lamp.gyroscope       | lamp.device_motion | |
+|  | lamp.magnetometer       | lamp.device_motion| |
+| Location       | lamp.distance                  | | |
+| Pedometer | lamp.flights      | | |
+| Screen         | lamp.screen_state         | lamp.device_state | |
+| Calls & Texts  | lamp.calls           | lamp.telephony | |
+|   | lamp.sms          | | |
+| Bluetooth & WiFi | lamp.bluetooth      | | |
+|  | lamp.wifi      | lamp.nearby_device | |
+| Weight | lamp.weight      | | |
+| Height | lamp.height      | | |
 
 
 ### Analytics
