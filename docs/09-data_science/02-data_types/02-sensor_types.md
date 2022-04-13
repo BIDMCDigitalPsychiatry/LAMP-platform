@@ -43,6 +43,91 @@ For some sensors, the data that is returned is different for iOS versus Android 
 | Weight | lamp.weight      | |
 | Height | lamp.height      | |
 
+
+### Analytics
+
+SensorSpec: lamp.analytics
+
+#### Description
+
+Analytics records events such as page opens, notification receipts, or login sessions.
+
+#### Data
+The data parameters depend on which type of event is recorded.
+
+Login analytics event:
+- `action`: (string) 'login'
+- `device_token`: (string) the device token of the phone
+- `device_type`: (string) either 'Android' or 'iOS'
+- `user_agent`: (string) app version; OS version; phone type
+
+Page open event:
+- `type`: (string) the type of action (ex: 'open_page')
+- `page`: (string) the page that was opened (ie 'learn', 'assess', 'manage', 'portal')
+- `activity`: (string) the activity being completed, if applicable
+
+Notification event:
+- `action`: (string) the type of action (ex: 'notification')
+- `device_type`: (string) either 'Android' or 'iOS'
+- `content`: (dict) the content and parameters of the notification
+- `actions`: (list) the user actions
+- 
+#### Example
+
+Login analytics event:
+```markdown
+{
+    'data': {
+        'action': 'login',
+        'device_token': 'dCKEicz3TYyq-Zl4ScWZmc:APA91bGdIV0FSnalZ8nU_Z_ewdESw3PuYo2o6F3CZ9sAid4FNVNr7ox5GB11Hge18FGUCizO4FqytZPZMjd_gGC6bd0kaoBmdur3zn25ACuW_-X8xPCvHxQPYVzft18L6m0rQdMeB1iC',
+        'device_type': 'Android',
+        'user_agent': 'NativeCore 2022.0.27; Android 10; OnePlus; HD1905'
+    },
+    'sensor': 'lamp.analytics',
+    'timestamp': 1649859212042
+}
+```
+Page open event:
+```markdown
+{
+    'timestamp': 1649859218887,
+    'sensor': 'lamp.analytics',
+    'data': {
+        'type': 'open_page',
+        'page': 'learn',
+        'activity': None
+    }
+}
+```
+Notificaiton event:
+```markdown
+{
+    'timestamp': 1649505601383,
+    'sensor': 'lamp.analytics',
+    'data': {
+        'action': 'notification',
+        'device_type': 'iOS',
+        'content': {
+            'expiry': 21600000,
+            'notificationId': '511545',
+            'page': '/participant/U1753020007/activity/agmgnjynhqkyqq55gegd',
+            'aps': {
+                'expiration': 10,
+                'badge': 0,
+                'push-type': 'alert',
+                'sound': 'default',
+                'content-available': 1,
+                'alert': 'You have a mindLAMP activity waiting for you: Morning Daily Survey..',
+                'mutable-content': 1,
+                'collapse-id': '511545'
+            },
+        'actions': [{'name': 'Open App', 'page': '/participant/U1753020007/activity/agmgnjynhqkyqq55gegd'}]
+        },
+    'user_agent': 'NativeCore 2022.2.28; iOS 15.3.1; iPhone iPhone10,4'
+    }
+}
+```
+
 ### Location
 
 SensorSpec: lamp.gps
@@ -196,10 +281,6 @@ The device state sensor records when the screen was turned on or off, when the d
 
 This sensor **DOES NOT** record the amount of time spent within specific apps on the device or how many notifications were received.
 
-#### Settings
-
-- None
-
 #### Data
 
 - `screen_state`: (int) the current device screen / lock state.
@@ -233,32 +314,27 @@ Cortex: cortex.raw.steps
 
 #### Description
 
-The step sensor records step count information. The format is different for iOS and Android.
-
-#### Settings
+The step sensor records the number of steps since the last reading.
 
 #### Data
 
-- `screen_state`: (int) the current device screen / lock state.
-    - `0`: screen_on; the screen was turned on, either by the user or by a notification.
-    - `1`: screen_off; the screen was turned off, either by the user or by screen timeout.
-    - `2`: device_locked; the device was locked, either by the user or by device timeout.
-    - `3`: device_unlocked; the device was unlocked by the user.
-    - `4`: battery_charging; the device was plugged in to charge by the user.
-    - `5`: battery_unplugged; the device was unplugged from the charger by the user.
-- `battery_level`: (float, units: percentage) the current battery level of the device.
+- `source`: (string) the source of the data. If the source is not available, it will be set to null.
+- `type`: (string) the type of data (ex: "step_count", "speed", "distance").
+- `unit`: (string) the units of the data.
+- `value`: (float) the value of the data.
 
 #### Example
 
 ```markdown
 {
-    'sensor': 'lamp.device_state',
-    'data': {
-        'value': 1,
-        'representation': 'screen_off',
-        'battery_level': 0.07000000029802322
+    "data": {
+        "source": "com.google.android.gms",
+        "type": "step_count",
+        "unit": "count",
+        "value": 13
     },
-   'timestamp': 1649465295573
+    "sensor": "lamp.steps",
+    "timestamp": 1649842803515
 }
 ```
 
@@ -364,7 +440,57 @@ Records blood pressure from an external connected monitor.
 - `value`: (float) the blood pressure reading.
 - `units`: (string) the units of the reading.
 
-#### Example
+### Respiratory Rate
+
+SensorSpec: lamp.respiratory_rate
+
+### Description
+Records respiratory rate from an external connected monitor.
+
+#### Data
+- `value`: (float) the respiratory rate reading.
+- `units`: (string) the units of the reading.
+
+### Heart Rate
+
+SensorSpec: lamp.heart_rate
+
+### Description
+Records heart rate from an external connected monitor.
+
+#### Data
+- `value`: (float) the heart rate reading.
+- `units`: (string) the units of the reading.
+
+### Segment
+
+SensorSpec: lamp.segment
+
+### Description
+Records workout segment duration and length.
+
+### Activity Recognition
+
+SensorSpec: lamp.activity_recognition
+
+### Description
+Performs segmentation of activity types.
+
+### Nutrition
+
+SensorSpec: lamp.nutrition
+
+### Blood Glucose
+
+SensorSpec: lamp.blood_glucose
+
+### Body temperature
+
+SensorSpec: lamp.body_temperature
+
+### Heart rate variability
+
+SensorSpec: lamp.heartratevariability_sdnn
 
 ## Deprecated sensors
 ### Bluetooth
@@ -401,34 +527,6 @@ The bluetooth sensor logs information about the device's Bluetooth sensor and ab
         }
 }
 ```
-
-#### Example
-
-(Sample code to generate a plot of number of unique addresses encountered per day per patient.)
-
-```python
-import cortex
-import altair as alt 
-
-# Generate an Altair chart with Cortex data source:
-alt.Chart(
-
-    # Obtain patient U123's bluetooth data.
-    cortex.run("U123", ["bluetooth"])
-
-        # Resample (aggregate/group-by) the data per-day.
-        .resample('D')
-
-        # Count the number of unique entries (address) encountered per day.
-        .nunique()
-
-        # Revert the df index to a column for Altair to access it.
-        .reset_index())
-
-# Encode "timestamp vs. address (unique count)" as a line plot.
-.mark_line().encode(x='timestamp', y='address')
-```
-![](../assets/bt_plot.png)
 
 ### Calls
 
@@ -508,7 +606,6 @@ The gyroscope sensors measures the rate of rotation around each of a device's x,
 }
 ```
 
-
 ### SMS
 
 SensorSpec: lamp.sms
@@ -535,10 +632,6 @@ The screen state sensor records when the screen was turned on or off, when the d
 This sensor **DOES NOT** record the amount of time spent within specific apps on the device or how many notifications were received.
 
 lamp.screen_state has been replaced with lamp.device_state
-
-#### Settings
-
-- None
 
 #### Data
 
@@ -569,17 +662,9 @@ lamp.screen_state has been replaced with lamp.device_state
 
 SensorSpec: lamp.weight
 
-#### Description
-
-#### Data
-
 ### Height
 
 SensorSpec: lamp.height
-
-#### Description
-
-#### Data
 
 ### WiFi
 
@@ -607,27 +692,38 @@ The wifi sensor provides information about the devices to which the user's devic
 }
 ```
 
+### Flights
 
-- **lamp.analytics:** records events such as page opens, notification receipt, or login sessions.
-    1. **This data type is currently for internal use only.**
-    2. **event_name**: string
-    3. **event_payload**: any
-- **lamp.flights:** records stairs of flights climbed.
-    1. **value**: number
-    2. **units**: string
-- **lamp.magnetometer:** records triaxial magnetic field changes.
-    1. **x**: number
-    2. **y**: number
-    3. **z**: number
-- **lamp.respiratory_rate: r**ecords respiratory rate from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
-- **lamp.heart_rate:** records heart rate from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
-- **lamp.segment:** records workout segment duration and length.
-    1. **value**: number
-    2. **units**: string
-- **lamp.steps:** records number of steps taken since last such event, or the start of the day.
-    1. **value**: number
-    2. **units**: string
+SensorSpec: lamp.flights
+
+#### Description
+
+Records stairs of flights climbed.
+
+### Magnetometer
+
+SensorSpec: lamp.magnetometer
+
+#### Description
+
+Records triaxial magnetic field changes. This sensor has been replaced by lamp.device_motion.
+
+#### Data
+
+- `x`: (float, units: micro T) the geomagnetic field strength along the device's x-axis, where the x-axis runs from left to right, across the front screen
+- `y`: (float, units: micro T) the geomagnetic field strength along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
+- `z`: (float, units: micro T) the geomagnetic field strength along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
+
+
+#### Example
+```
+{
+    'timestamp': 1609796944931,
+    'sensor': 'lamp.magnetometer',
+    'data': {
+        'x': -25.963943481445312,
+        'y': -2.191162109375,
+        'z': -403.3388977050781
+    }
+}
+```
