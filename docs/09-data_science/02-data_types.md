@@ -544,7 +544,7 @@ The Visual Association test.
 ```
 ## Sensor Types
 
-Active sensor events are produced on a rolling basis via interactions by a Participant. They are transferred to the **Platform Server** automatically by using the Activity API written in JavaScript. By “beginning” and “ending” a recording of these interactions, as well as “emitting” temporal data during the interaction, an ActivityEvent can be captured and sent to the **Platform Server**. A list of existing Sensors is provided below with name and description; a live server instance must be consulted for data schema information (see GET /sensor_spec). Implementations for these hardware sensors are provided in the GitHub repository.
+Active sensor events are produced on a rolling basis in the background via interactions by a Participant. They are transferred to the **Platform Server** automatically by using the Activity API written in JavaScript. A list of existing Sensors is provided below with name and description; a live server instance must be consulted for data schema information (see GET /sensor_spec). Implementations for these hardware sensors are provided in the GitHub repository.
 
 | Name           | SensorSpec                | 
 |----------------|---------------------------| 
