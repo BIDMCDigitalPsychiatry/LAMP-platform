@@ -29,6 +29,7 @@ For some sensors, the data that is returned is different for iOS versus Android 
 | Respiratory Rate | lamp.respiratory_rate   | Y |
 
 **Deprecated sensors:**
+
 | Name           | SensorSpec                | Replaced by | Requires watch / other device |
 |----------------|---------------------------|---------------|--------------
 | Device Motion  | lamp.gyroscope       | lamp.device_motion | |
