@@ -224,6 +224,66 @@ This sensor **DOES NOT** record the amount of time spent within specific apps on
 }
 ```
 
+### Nearby device
+
+SensorSpec: lamp.nearby_device
+
+#### Description
+
+The nearby device sensor records wifi connections. 
+
+#### Data
+- `bssid`: (string) BSSID of WiFi event
+- `ssid`: (string) SSID of WiFi event
+- `rssi`: (int, units: DB) WiFI signal strength.
+    > RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
+
+| Signal Strength | TL;DR                | 
+|-----------------|---------------------------| 
+| -30 dBm |     Amazing        | 
+| -67 dBm        |    Very Good               | 
+| -70 dBm    |     Okay    | 
+| -80 dBm              |    Not Good    | 
+| -90 dBm     | Unusable |
+
+
+#### Example
+
+```markdown
+{
+    'data': {
+        'bssid': 'e4:c3:2a:d5:d7:0b',
+        'rssi': -94,
+        'ssid': 'willet'},
+   'sensor': 'lamp.nearby_device',
+   'timestamp': 1649866397374
+}
+```
+
+### Telephony
+
+SensorSpec: lamp.telephony
+
+#### Description
+
+The telephony records phone call information.
+
+#### Data
+- `duration`: (float, units: s) the duration of the call
+- `type`: (string) "incoming" or "outgoing"
+
+#### Example
+```
+{
+    'data': {
+        'duration': 24,
+        'type': 'incoming'
+    },
+    'sensor': 'lamp.telephony',
+    'timestamp': 1649864919743
+}
+```
+
 
 ### Sleep
 
@@ -340,7 +400,7 @@ SensorSpec: lamp.calls
 
 The calls sensor measures information on phone calls made and received by the user. Each event is a single phone call, with information on its type (incoming, outgoing, missed, etc), duration, and trace (the other device which the user connected with during the call). 
 
-Call type options differ between Android and iOS devices.
+Call type options differ between Android and iOS devices. This sensor has been replaced by lamp.telephony.
 
 #### Data
 
