@@ -187,6 +187,7 @@ For Android, the data format is different than for iOS. The device_motion inform
 ### Device State
 
 SensorSpec: lamp.device_state
+
 Cortex: cortex.raw.screen_state
 
 #### Description
@@ -198,6 +199,43 @@ This sensor **DOES NOT** record the amount of time spent within specific apps on
 #### Settings
 
 - None
+
+#### Data
+
+- `screen_state`: (int) the current device screen / lock state.
+    - `0`: screen_on; the screen was turned on, either by the user or by a notification.
+    - `1`: screen_off; the screen was turned off, either by the user or by screen timeout.
+    - `2`: device_locked; the device was locked, either by the user or by device timeout.
+    - `3`: device_unlocked; the device was unlocked by the user.
+    - `4`: battery_charging; the device was plugged in to charge by the user.
+    - `5`: battery_unplugged; the device was unplugged from the charger by the user.
+- `battery_level`: (float, units: percentage) the current battery level of the device.
+
+#### Example
+
+```markdown
+{
+    'sensor': 'lamp.device_state',
+    'data': {
+        'value': 1,
+        'representation': 'screen_off',
+        'battery_level': 0.07000000029802322
+    },
+   'timestamp': 1649465295573
+}
+```
+
+### Steps
+
+SensorSpec: lamp.steps
+
+Cortex: cortex.raw.steps
+
+#### Description
+
+The step sensor records step count information. The format is different for iOS and Android.
+
+#### Settings
 
 #### Data
 
