@@ -1,35 +1,52 @@
-# Data Types
+# Sensor Types
 
 All event streams in the LAMP API are catalogued by a timestamp and specific "blueprints" (schema) of what kind of data they hold. For example, a sensor event that occurred 20 minutes ago would carry that instant's timestamp, along with a link to what kind of sensor it was, and that sensor's measurement as a payload of data. The kinds of activities and sensors available are declared below, along with the blueprint you can expect their events' data to follow. 
 
-## Sensor Types
-
 Active sensor events are produced on a rolling basis in the background via interactions by a Participant. They are transferred to the **Platform Server** automatically by using the Activity API written in JavaScript. A list of existing Sensors is provided below with name and description; a live server instance must be consulted for data schema information (see GET /sensor_spec). Implementations for these hardware sensors are provided in the GitHub repository.
 
-| Name           | SensorSpec                | 
-|----------------|---------------------------| 
-| Analytics      | lamp.analytics            | 
-| Location       | lamp.gps                  | 
-| Device Motion  | lamp.device_motion        | 
-|                | lamp.accelerometer        | 
-| Pedometer      | lamp.steps                | 
-| Sleep          | lamp.sleep                | 
-| Nutrition      | lamp.nutrition            | 
-| Workouts       | lamp.segment              | 
-| Screen         | lamp.screen_state         | 
-| Bluetooth & WiFi | lamp.nearby_device      | 
-| Calls & Texts  | lamp.telephony            | 
-| Blood Pressure | lamp.blood_pressure       | 
-| Blood Glucose  | lamp.blood_glucose        | 
-| Oxygen Saturation | lamp.oxygen_saturation | 
-| Body Temperature | lamp.body_temperature   | 
-| Heart Rate & HRV | lamp.heart_rate         | 
-| Respiratory Rate | lamp.respiratory_rate   | 
-| Activity Recognition | lamp.activity_recognition | 
+For some sensors, the data that is returned is different for iOS versus Android phones. This is documented below.
+
+| Name           | SensorSpec                | Requires watch / other device |
+|----------------|---------------------------| ---------------
+| Analytics      | lamp.analytics            | |
+| Location       | lamp.gps                  | |
+| Device Motion  | lamp.device_motion        | |
+|                | lamp.accelerometer        | |
+| Screen         | lamp.device_state  | |
+| Pedometer      | lamp.steps                | |
+| Bluetooth & WiFi | lamp.nearby_device      | |
+| Calls & Texts  | lamp.telephony            | |
+| Sleep          | lamp.sleep                | Y |
+| Workouts       | lamp.segment              | Y |
+| Activity Recognition | lamp.activity_recognition | Y |
+| Nutrition      | lamp.nutrition            | Y |
+| Blood Glucose  | lamp.blood_glucose        | Y |
+| Oxygen Saturation | lamp.oxygen_saturation | Y |
+| Body Temperature | lamp.body_temperature   | Y |
+| Blood Pressure | lamp.blood_pressure       | Y |
+| Heart Rate & HRV | lamp.heart_rate         | Y |
+|                  | lamp.heartratevariability_sdnn | Y|
+| Respiratory Rate | lamp.respiratory_rate   | Y |
+
+### Deprecated sensors:
+| Name           | SensorSpec                | Requires watch / other device |
+|----------------|---------------------------| ---------------
+| Device Motion  | lamp.gyroscope       | |
+|  | lamp.magnetometer       | |
+| Location       | lamp.distance                  | |
+| Pedometer | lamp.flights      | |
+| Screen         | lamp.screen_state         | |
+| Calls & Texts  | lamp.calls           | |
+|   | lamp.sms          | |
+| Bluetooth & WiFi | lamp.bluetooth      | |
+|  | lamp.wifi      | |
+| Weight | lamp.weight      | |
+| Height | lamp.height      | |
 
 ### Accelerometer
 
-SensorSpec: lamp.accelerometer
+SensorSpec: lamp.accelerometer<br>
+Cortex: cortex.raw.accelerometer
 
 #### Description
 
@@ -37,24 +54,16 @@ The triaxial accelerometer measures acceleration applied to the device. Each mea
 
 #### Settings
 
-- `frequency: number`: (units: Hz) the required accelerometer measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system.
+- `frequency: number`: (units: Hz) the required accelerometer measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system. The current maximum frequency is 5 Hz. 
 
 #### Data
 
-- `x: number`: (units: G) the X-axis coordinate.
-- `y: number`: (units: G) the Y-axis coordinate.
-- `z: number`: (units: G) the Z-axis coordinate.
-- `accuracy: number`:  (units: None) the data accuracy level, or `null` if unavailable.
-    - `-1`: invalid; the sensor is reporting data but is not connected to its environment.
-    - `0`: none; the sensor is reporting data that is not calibrated and cannot be trusted.
-    - `1`: low; the sensor is reporting data at poor accuracy, and environmental calibration is required.
-    - `2`: medium; the sensor is reporting data at an average accuracy, and environmental calibration of the device may improve data.
-    - `3`: high; the sensor is reporting data at maximal accuracy and is correctly calibrated.
+- `x`: (float, units: G) the X-axis coordinate.
+- `y`: (float, units: G) the Y-axis coordinate.
+- `z`: (float, units: G) the Z-axis coordinate.
 
 #### Example
-
 ```markdown
-# **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.accelerometer")**
 {
   "timestamp": 1234567890,
   "sensor": "lamp.accelerometer",
@@ -62,7 +71,6 @@ The triaxial accelerometer measures acceleration applied to the device. Each mea
     "x": 0.19378492,
     "y": 1.28473749,
     "z": -0.19384932,
-    "accuracy": 2
   }
 }
 ```
@@ -71,15 +79,20 @@ The triaxial accelerometer measures acceleration applied to the device. Each mea
 
 SensorSpec: lamp.blood_pressure
 
-Blood pressure is 
+### Description
+Records blood pressure from an external connected monitor.
 
-- **lamp.blood_pressure:** records blood pressure from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
+#### Settings
 
+#### Data
+- `value`: (float) the blood pressure reading.
+- `units`: (string) the units of the reading.
+
+#### Example
+
+## Deprecated sensors
 ### Bluetooth
-
-Cortex: cortex.raw.bluetooth
+SensorSpec: lamp.bluetooth
 
 #### Description
 
@@ -87,9 +100,8 @@ The bluetooth sensor logs information about the device's Bluetooth sensor and ab
 
 #### Data
 
-- `timestamp: number`:  UTC timestamp of the Bluetooth event
-- `bt_address: string`: Address of Bluetooth event 
-- `bt_rssi: number`: (units: DB) WiFI signal strength
+- `bt_address`: (string) address of Bluetooth event.
+- `bt_rssi`: (int, units: DB) WiFI signal strength.
     > RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
 
 | Signal Strength | TL;DR                | 
@@ -101,27 +113,17 @@ The bluetooth sensor logs information about the device's Bluetooth sensor and ab
 | -90 dBm     | Unusable |
 
 
+#### Example
 ```
- {'timestamp': 1616172913842,
-   'sensor': 'lamp.bluetooth',
-   'data': {'bt_rssi': -88,
-    'bt_address': 'CCF087D3-A0FC-0FDF-D7F9-1285211653FB'}},
-  {'timestamp': 1616172858929,
-   'sensor': 'lamp.bluetooth',
-   'data': {'bt_rssi': -91,
-    'bt_address': 'CCF087D3-A0FC-0FDF-D7F9-1285211653FB'}},
-  {'timestamp': 1616170339651,
-   'sensor': 'lamp.bluetooth',
-   'data': {'bt_rssi': -98,
-    'bt_address': 'CCF087D3-A0FC-0FDF-D7F9-1285211653FB'}},
-  {'timestamp': 1616022127303,
-   'sensor': 'lamp.bluetooth',
-   'data': {'bt_rssi': -94,
-    'bt_address': 'CCF087D3-A0FC-0FDF-D7F9-1285211653FB'}},
-  {'timestamp': 1616022112113,
-   'sensor': 'lamp.bluetooth',
-   'data': {'bt_rssi': -95,
-    'bt_address': 'CCF087D3-A0FC-0FDF-D7F9-1285211653FB'}}
+{
+    'timestamp': 1616172858929,
+    'sensor': 'lamp.bluetooth',
+    'data': 
+        {
+            'bt_rssi': -91,
+            'bt_address': 'CCF087D3-A0FC-0FDF-D7F9-1285211653FB'
+        }
+}
 ```
 
 #### Example
@@ -164,18 +166,43 @@ Call type options differ between Android and iOS devices.
 
 #### Data
 
-- `call_trace: string`: the SHA-1-encrypted source/target of the call. A device will have a consistent trace.
-- `call_type: number`: integer label for the call type
-    - Android
+- `call_trace`: (string) the SHA-1-encrypted source/target of the call. A device will have a consistent trace.
+- `call_type`: (int): integer label for the call type
         - `1`: incoming; the call was received by the user
         - `2`: outgoing; the call was made by the user
-        - `3`: missed; the call was meant to be received by the user, but missed it
-        - `4`: busy; the user's phone was busy
-- `call_duration`: (units: seconds) the length of the call session
+- `call_duration`: (int, units: seconds) the length of the call session.
+
+#### Example
+```
+{
+    'timestamp': 1609711564846,
+    'sensor': 'lamp.calls',
+    'data': {
+        'call_trace': '4DE07C9D-6496-41B5-B9F9-DCFDA746FE49',
+        'call_type': 2,
+        'call_duration': 23
+    }
+}
+```
 
 ### Distance
 
 SensorSpec: lamp.distance
+
+#### Data
+
+- `value`: (float) the distance.
+
+#### Example
+```
+{
+    'timestamp': 1609791149998,
+    'sensor': 'lamp.distance',
+    'data': {
+        'value': 6685.931218739017
+    }
+}
+```
 
 ### Gyroscope
 
@@ -183,29 +210,27 @@ SensorSpec: lamp.gyroscope
 
 #### Description
 
-The gyroscope sensors measures the rate of rotation around each of a device's x, y and z axes. Rotation values are in radians/second. Positive values indicate counter-clockwise rotation; negative values indicate clockwise rotation. These are raw values—i.e. they do not correct for nosie or drift.
+The gyroscope sensors measures the rate of rotation around each of a device's x, y and z axes. Rotation values are in radians/second. Positive values indicate counter-clockwise rotation; negative values indicate clockwise rotation. These are raw values—i.e. they do not correct for nosie or drift. This sensor has been replaced by lamp.device_motion.
 
 #### Settings
 
 #### Data
 
-- `x: number` (units: rad/s) the rotational velocity around the x-axis. The x-axis goes from left to right, across the device's screen face
-- `y: number` (units: rad/s) the rotational velocity around the y-axis. The y-axis is vertical and points up
-- `z: number` (units: rad/s) the rotational velocity around the z-axis. The z-axis is horizontal and points out from the front screen (towards the user looking at the screen)
+- `x`: (float, units: rad/s) the rotational velocity around the x-axis. The x-axis goes from left to right, across the device's screen face
+- `y`: (float, units: rad/s) the rotational velocity around the y-axis. The y-axis is vertical and points up
+- `z`: (float, units: rad/s) the rotational velocity around the z-axis. The z-axis is horizontal and points out from the front screen (towards the user looking at the screen)
 
 #### Example
 
 ```markdown
-# **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.accelerometer")**
 {
-  "timestamp": 1234567890,
-  "sensor": "lamp.accelerometer",
-  "data": {
-    "x": 0.19378492,
-    "y": 1.28473749,
-    "z": -0.19384932,
-    "accuracy": 2
-  }
+    'timestamp': 1609796944931,
+    'sensor': 'lamp.gyroscope',
+    'data': {
+        'x': -0.018976621329784393,
+        'y': -0.0030131004750728616,
+        'z': -0.01834332011640072
+    }
 }
 ```
 
@@ -219,7 +244,7 @@ The location sensor records the device's current GPS coordinates. Depending on t
 
 #### Settings
 
-- `frequency: number`: (units: Hz) the required location measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system.
+- `frequency: number`: (units: Hz) the required location measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system. The maximum frequency is 1 Hz.
 
 #### Data
 
@@ -247,9 +272,9 @@ The location sensor records the device's current GPS coordinates. Depending on t
 }
 ```
 
-### Motion
+### Device Motion
 
-SensorSpec: lamp.accelerometer.motion
+SensorSpec: lamp.accelerometer.device_motion
 
 #### Description
 
