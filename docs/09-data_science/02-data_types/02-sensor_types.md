@@ -10,8 +10,8 @@ For some sensors, the data that is returned is different for iOS versus Android 
 |----------------|---------------------------| ---------------
 | Analytics      | lamp.analytics            | |
 | Location       | lamp.gps                  | |
-| Device Motion  | lamp.device_motion        | |
-|                | lamp.accelerometer        | |
+| Device Motion  | lamp.accelerometer       | |
+|                | lamp.device_motion       | |
 | Screen         | lamp.device_state  | |
 | Pedometer      | lamp.steps                | |
 | Bluetooth & WiFi | lamp.nearby_device      | |
@@ -28,20 +28,144 @@ For some sensors, the data that is returned is different for iOS versus Android 
 |                  | lamp.heartratevariability_sdnn | Y|
 | Respiratory Rate | lamp.respiratory_rate   | Y |
 
-### Deprecated sensors:
-| Name           | SensorSpec                | Requires watch / other device |
-|----------------|---------------------------| ---------------
-| Device Motion  | lamp.gyroscope       | |
-|  | lamp.magnetometer       | |
-| Location       | lamp.distance                  | |
-| Pedometer | lamp.flights      | |
-| Screen         | lamp.screen_state         | |
-| Calls & Texts  | lamp.calls           | |
-|   | lamp.sms          | |
-| Bluetooth & WiFi | lamp.bluetooth      | |
-|  | lamp.wifi      | |
-| Weight | lamp.weight      | |
-| Height | lamp.height      | |
+**Deprecated sensors:**
+| Name           | SensorSpec                | Replaced by|Requires watch / other device |
+|----------------|---------------------------| ---------------|--------------
+| Device Motion  | lamp.gyroscope       | lamp.device_motion | |
+|  | lamp.magnetometer       | lamp.device_motion| |
+| Location       | lamp.distance                  | | |
+| Pedometer | lamp.flights      | | |
+| Screen         | lamp.screen_state         | lamp.device_state | |
+| Calls & Texts  | lamp.calls           | lamp.telephony | |
+|   | lamp.sms          | | |
+| Bluetooth & WiFi | lamp.bluetooth      | | |
+|  | lamp.wifi      | lamp.nearby_device | |
+| Weight | lamp.weight      | | |
+| Height | lamp.height      | | |
+
+
+### Analytics
+
+SensorSpec: lamp.analytics
+
+#### Description
+
+Analytics records events such as page opens, notification receipts, or login sessions.
+
+#### Data
+The data parameters depend on which type of event is recorded.
+
+Login analytics event:
+- `action`: (string) 'login'
+- `device_token`: (string) the device token of the phone
+- `device_type`: (string) either 'Android' or 'iOS'
+- `user_agent`: (string) app version; OS version; phone type
+
+Page open event:
+- `type`: (string) the type of action (ex: 'open_page')
+- `page`: (string) the page that was opened (ie 'learn', 'assess', 'manage', 'portal')
+- `activity`: (string) the activity being completed, if applicable
+
+Notification event:
+- `action`: (string) the type of action (ex: 'notification')
+- `device_type`: (string) either 'Android' or 'iOS'
+- `content`: (dict) the content and parameters of the notification
+- `actions`: (list) the user actions
+- 
+#### Example
+
+Login analytics event:
+```markdown
+{
+    'data': {
+        'action': 'login',
+        'device_token': 'dCKEicz3TYyq-Zl4ScWZmc:APA91bGdIV0FSnalZ8nU_Z_ewdESw3PuYo2o6F3CZ9sAid4FNVNr7ox5GB11Hge18FGUCizO4FqytZPZMjd_gGC6bd0kaoBmdur3zn25ACuW_-X8xPCvHxQPYVzft18L6m0rQdMeB1iC',
+        'device_type': 'Android',
+        'user_agent': 'NativeCore 2022.0.27; Android 10; OnePlus; HD1905'
+    },
+    'sensor': 'lamp.analytics',
+    'timestamp': 1649859212042
+}
+```
+Page open event:
+```markdown
+{
+    'timestamp': 1649859218887,
+    'sensor': 'lamp.analytics',
+    'data': {
+        'type': 'open_page',
+        'page': 'learn',
+        'activity': None
+    }
+}
+```
+Notificaiton event:
+```markdown
+{
+    'timestamp': 1649505601383,
+    'sensor': 'lamp.analytics',
+    'data': {
+        'action': 'notification',
+        'device_type': 'iOS',
+        'content': {
+            'expiry': 21600000,
+            'notificationId': '511545',
+            'page': '/participant/U1753020007/activity/agmgnjynhqkyqq55gegd',
+            'aps': {
+                'expiration': 10,
+                'badge': 0,
+                'push-type': 'alert',
+                'sound': 'default',
+                'content-available': 1,
+                'alert': 'You have a mindLAMP activity waiting for you: Morning Daily Survey..',
+                'mutable-content': 1,
+                'collapse-id': '511545'
+            },
+        'actions': [{'name': 'Open App', 'page': '/participant/U1753020007/activity/agmgnjynhqkyqq55gegd'}]
+        },
+    'user_agent': 'NativeCore 2022.2.28; iOS 15.3.1; iPhone iPhone10,4'
+    }
+}
+```
+
+### Location
+
+SensorSpec: lamp.gps
+
+Cortex: cortex.raw.gps
+
+#### Description
+
+The location sensor records the device's current GPS coordinates. Depending on the device operating system and device battery level, the source of the data from this sensor may alternate between GPS antennae (high accuracy), cellular tower triangulation (moderate accuracy), WiFi triangulation (poor accuracy), or a combination of these. 
+
+#### Settings
+
+- `frequency`: (number, units: Hz) the required location measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system. The maximum frequency is 1 Hz.
+
+#### Data
+
+- `latitude`: (float, units: degrees) the coordinate's latitude.
+- `longitude`: (float, units: degrees) the coordinate's longitude.
+- `altitude`: (float, units: meters) the coordinate's altitude, relative to sea level.
+- `accuracy`:  (float, units: meters) the coordinate's estimated accuracy representing the radius of a circle formed around the reported latitude/longitude pair, [for which there is **AT LEAST** a 68% probability that the true coordinate is contained within.](https://en.wikipedia.org/wiki/Circular_error_probable)
+    - `0.0`: no accuracy could be determined.
+
+*Unsupported event properties:* `bearing` *and* `speed`*.*
+
+#### Example
+
+```markdown
+{
+  "timestamp": 1234567890,
+  "sensor": "lamp.gps",
+  "data": {
+    "latitude": 80.4827,
+    "longitude": 46.28344,
+    "altitude": 12.12455,
+    "accuracy": 48
+  }
+}
+```
 
 ### Accelerometer
 
@@ -52,6 +176,8 @@ Cortex: cortex.raw.accelerometer
 #### Description
 
 The triaxial accelerometer measures acceleration applied to the device. Each measurement is measured in Gs and is taken relative to the coordinate plane of the device, screen facing upwards. For example, a device resting face-up on a flat surface will report a measurement with the coordinate values `<0, 0, 1>`.
+
+For Android, the data format is different than for iOS. The device_motion information (motion, magnetic, altitude, gravity, rotation) dictionary holds only motion for lamp.accelerometer and only rotation for lamp.device_state. The data format for iOS is described below.
 
 #### Settings
 
@@ -75,6 +201,233 @@ The triaxial accelerometer measures acceleration applied to the device. Each mea
   }
 }
 ```
+### Device Motion
+
+SensorSpec: lamp.accelerometer.device_motion
+
+#### Description
+
+The motion sensor gathers information on the device's physical movement. It includes metrics on device rotation, experienced gravity, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
+
+For Android, the data format is different than for iOS. The device_motion information (motion, magnetic, altitude, gravity, rotation) dictionary holds only motion for lamp.accelerometer and only rotation for lamp.device_state. The data format for iOS is described below.
+
+#### Data
+
+- `motion`: (dict)
+    - `x`: (float) the x-component of motion
+    - `y`: (float) the y-component of motion
+    - `z`: (float) the z-component of motion
+- `magnetic`: (dict)
+    - `x`: (float, units: micro T) the geomagnetic field strength along the device's x-axis, where the x-axis runs from left to right, across the front screen
+    - `y`: (float, units: micro T) the geomagnetic field strength along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
+    - `z`: (float, units: micro T) the geomagnetic field strength along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
+- `altitude`: (dict)
+    - `x`: (float) the x-component of altitude
+    - `y`: (float) the x-component of altitude
+    - `z`: (float) the y-component of altitude
+- `gravity`: (dict)
+    - `x`: (float) the force of gravity along the device's x-axis, where the x-axis runs from left to right, across the front screen
+    - `y`: (float) the force of gravity along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
+    - `z`: (float) the force of gravity along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
+- `rotation`: (dict)
+    - `x`: (float) the rotation vector component around the x-axis, which points tangentially along the ground, to the East: `x * sin(theta/2)`
+    - `y`: (float) the rotation vector component around the y-axis, which points tangent along the ground, to the North: `y * sin(theta/2)`
+    - `z`: (float) the rotation vector component around the z-axis, which points towards the sky, perpendicular to the ground: `z * sin(theta/2)`
+
+#### Example
+
+```markdown
+{
+  'sensor': 'lamp.device_motion',
+  'data': {
+    'motion': {
+      'x': -0.0017750263214111328,
+      'y': 0.004897803068161009,
+      'z': -0.00017660856246948242
+     },
+    'magnetic': {
+      'x': 3.450927734375,
+      'y': 8.881887435913086,
+      'z': 53.096649169921875
+     },
+    'attitude': {
+      'x': 2.9586798819128934,
+      'y': 0.1373790520467436,
+      'z': -0.9628289634642353
+     },
+    'gravity': {
+       'x': 0.18018077313899994,
+       'y': -0.13694733381271362,
+       'z': 0.9740535616874695
+      },
+     'rotation': {
+       'x': 0.001726057380437851,
+       'y': -0.008104033768177036,
+       'z': 0.004878027364611627
+      }
+    },
+   'timestamp': 1647386641091
+}
+```
+### Device State
+
+SensorSpec: lamp.device_state
+
+Cortex: cortex.raw.screen_state
+
+#### Description
+
+The device state sensor records when the screen was turned on or off, when the device was locked or unlocked, and changes in battery level from charging or discharging the device. 
+
+This sensor **DOES NOT** record the amount of time spent within specific apps on the device or how many notifications were received.
+
+#### Data
+
+- `screen_state`: (int) the current device screen / lock state.
+    - `0`: screen_on; the screen was turned on, either by the user or by a notification.
+    - `1`: screen_off; the screen was turned off, either by the user or by screen timeout.
+    - `2`: device_locked; the device was locked, either by the user or by device timeout.
+    - `3`: device_unlocked; the device was unlocked by the user.
+    - `4`: battery_charging; the device was plugged in to charge by the user.
+    - `5`: battery_unplugged; the device was unplugged from the charger by the user.
+- `battery_level`: (float, units: percentage) the current battery level of the device.
+
+#### Example
+
+```markdown
+{
+    'sensor': 'lamp.device_state',
+    'data': {
+        'value': 1,
+        'representation': 'screen_off',
+        'battery_level': 0.07000000029802322
+    },
+   'timestamp': 1649465295573
+}
+```
+
+### Steps
+
+SensorSpec: lamp.steps
+
+Cortex: cortex.raw.steps
+
+#### Description
+
+The step sensor records the number of steps since the last reading.
+
+#### Data
+
+- `source`: (string) the source of the data. If the source is not available, it will be set to null.
+- `type`: (string) the type of data (ex: "step_count", "speed", "distance").
+- `unit`: (string) the units of the data.
+- `value`: (float) the value of the data.
+
+#### Example
+
+```markdown
+{
+    "data": {
+        "source": "com.google.android.gms",
+        "type": "step_count",
+        "unit": "count",
+        "value": 13
+    },
+    "sensor": "lamp.steps",
+    "timestamp": 1649842803515
+}
+```
+
+### Nearby device
+
+SensorSpec: lamp.nearby_device
+
+#### Description
+
+The nearby device sensor records wifi connections. 
+
+#### Data
+- `bssid`: (string) BSSID of WiFi event
+- `ssid`: (string) SSID of WiFi event
+- `rssi`: (int, units: DB) WiFI signal strength.
+    > RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
+
+| Signal Strength | TL;DR                | 
+|-----------------|---------------------------| 
+| -30 dBm |     Amazing        | 
+| -67 dBm        |    Very Good               | 
+| -70 dBm    |     Okay    | 
+| -80 dBm              |    Not Good    | 
+| -90 dBm     | Unusable |
+
+
+#### Example
+
+```markdown
+{
+    'data': {
+        'bssid': 'e4:c3:2a:d5:d7:0b',
+        'rssi': -94,
+        'ssid': 'willet'},
+   'sensor': 'lamp.nearby_device',
+   'timestamp': 1649866397374
+}
+```
+
+### Telephony
+
+SensorSpec: lamp.telephony
+
+#### Description
+
+The telephony records phone call information.
+
+#### Data
+- `duration`: (float, units: s) the duration of the call
+- `type`: (string) "incoming" or "outgoing"
+
+#### Example
+```
+{
+    'data': {
+        'duration': 24,
+        'type': 'incoming'
+    },
+    'sensor': 'lamp.telephony',
+    'timestamp': 1649864919743
+}
+```
+
+
+### Sleep
+
+SensorSpec: lamp.sleep
+
+Cortex: cortex.raw.sleep
+
+#### Description
+
+The sleep sensor reports sleep data stored on the phone, generally sourced from smartwatches such as an Apple Watch. If you plan on capturing data via an Android device, you may need to test to ensure the associated watch is high enough quality to regularly collect good data.
+
+#### Data
+- `value`: (int) 0, 1, or 2, if the user is in bed, asleep, or awake, respectively 
+- `source`: (string) the source of data, e.g. `com.apple.health`
+- `duration`: (int, unit: ms) the time in ms the specific activity (e.g. sleep) lasted
+- `representation`: (string) one of `in_bed`, `in_sleep`, or `in_awake`, reflecting the state of the user at the time of measurement
+
+#### Example
+```
+{
+    'sensor': 'lamp.sleep',
+    'data': {
+        'value': 0,
+        'source': 'com.apple.health.CACD64E0-EE17-4430-9B0B-5255F09075DE',
+        'representation': 'in_bed',
+        'duration': 12523000
+    }
+    'timestamp': 1636639670000
+}
+```
 
 ### Blood Pressure
 
@@ -83,13 +436,61 @@ SensorSpec: lamp.blood_pressure
 ### Description
 Records blood pressure from an external connected monitor.
 
-#### Settings
-
 #### Data
 - `value`: (float) the blood pressure reading.
 - `units`: (string) the units of the reading.
 
-#### Example
+### Respiratory Rate
+
+SensorSpec: lamp.respiratory_rate
+
+### Description
+Records respiratory rate from an external connected monitor.
+
+#### Data
+- `value`: (float) the respiratory rate reading.
+- `units`: (string) the units of the reading.
+
+### Heart Rate
+
+SensorSpec: lamp.heart_rate
+
+### Description
+Records heart rate from an external connected monitor.
+
+#### Data
+- `value`: (float) the heart rate reading.
+- `units`: (string) the units of the reading.
+
+### Segment
+
+SensorSpec: lamp.segment
+
+### Description
+Records workout segment duration and length.
+
+### Activity Recognition
+
+SensorSpec: lamp.activity_recognition
+
+### Description
+Performs segmentation of activity types.
+
+### Nutrition
+
+SensorSpec: lamp.nutrition
+
+### Blood Glucose
+
+SensorSpec: lamp.blood_glucose
+
+### Body temperature
+
+SensorSpec: lamp.body_temperature
+
+### Heart rate variability
+
+SensorSpec: lamp.heartratevariability_sdnn
 
 ## Deprecated sensors
 ### Bluetooth
@@ -127,34 +528,6 @@ The bluetooth sensor logs information about the device's Bluetooth sensor and ab
 }
 ```
 
-#### Example
-
-(Sample code to generate a plot of number of unique addresses encountered per day per patient.)
-
-```python
-import cortex
-import altair as alt 
-
-# Generate an Altair chart with Cortex data source:
-alt.Chart(
-
-    # Obtain patient U123's bluetooth data.
-    cortex.run("U123", ["bluetooth"])
-
-        # Resample (aggregate/group-by) the data per-day.
-        .resample('D')
-
-        # Count the number of unique entries (address) encountered per day.
-        .nunique()
-
-        # Revert the df index to a column for Altair to access it.
-        .reset_index())
-
-# Encode "timestamp vs. address (unique count)" as a line plot.
-.mark_line().encode(x='timestamp', y='address')
-```
-![](../assets/bt_plot.png)
-
 ### Calls
 
 SensorSpec: lamp.calls
@@ -163,7 +536,7 @@ SensorSpec: lamp.calls
 
 The calls sensor measures information on phone calls made and received by the user. Each event is a single phone call, with information on its type (incoming, outgoing, missed, etc), duration, and trace (the other device which the user connected with during the call). 
 
-Call type options differ between Android and iOS devices.
+Call type options differ between Android and iOS devices. This sensor has been replaced by lamp.telephony.
 
 #### Data
 
@@ -213,8 +586,6 @@ SensorSpec: lamp.gyroscope
 
 The gyroscope sensors measures the rate of rotation around each of a device's x, y and z axes. Rotation values are in radians/second. Positive values indicate counter-clockwise rotation; negative values indicate clockwise rotation. These are raw values—i.e. they do not correct for nosie or drift. This sensor has been replaced by lamp.device_motion.
 
-#### Settings
-
 #### Data
 
 - `x`: (float, units: rad/s) the rotational velocity around the x-axis. The x-axis goes from left to right, across the device's screen face
@@ -235,115 +606,6 @@ The gyroscope sensors measures the rate of rotation around each of a device's x,
 }
 ```
 
-### Location
-
-SensorSpec: lamp.gps
-
-#### Description
-
-The location sensor records the device's current GPS coordinates. Depending on the device operating system and device battery level, the source of the data from this sensor may alternate between GPS antennae (high accuracy), cellular tower triangulation (moderate accuracy), WiFi triangulation (poor accuracy), or a combination of these. 
-
-#### Settings
-
-- `frequency: number`: (units: Hz) the required location measurement frequency; the sensor will make a best effort to match the requested `frequency` but no guarantees are made by the device hardware or operating system. The maximum frequency is 1 Hz.
-
-#### Data
-
-- `latitude: number`: (units: degrees) the coordinate's latitude.
-- `longitude: number`: (units: degrees) the coordinate's longitude.
-- `altitude: number`: (units: meters) the coordinate's altitude, relative to sea level.
-- `accuracy: number`:  (units: meters) the coordinate's estimated accuracy representing the radius of a circle formed around the reported latitude/longitude pair, [for which there is **AT LEAST** a 68% probability that the true coordinate is contained within.](https://en.wikipedia.org/wiki/Circular_error_probable)
-    - `0.0`: no accuracy could be determined.
-
-*Unsupported event properties:* `bearing` *and* `speed`*.*
-
-#### Example
-
-```markdown
-# **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.gps")**
-{
-  "timestamp": 1234567890,
-  "sensor": "lamp.gps",
-  "data": {
-    "latitude": 80.4827,
-    "longitude": 46.28344,
-    "altitude": 12.12455,
-    "accuracy": 48
-  }
-}
-```
-
-### Device Motion
-
-SensorSpec: lamp.accelerometer.device_motion
-
-#### Description
-
-The motion sensor gathers information on the device's physical movement. It includes metrics on device tilt, rotation, experienced gravity, acceleration, and magnetic field. The acceleration measure here differs from `lamp.accelerometer` in that this measure does not correct for gravity.
-
-#### Data
-
-- `tilt: object`
-    - 
-- `rotation: object`
-    - `x: number`: the rotation vector component around the x-axis, which points tangentially along the ground, to the East: `x * sin(theta/2)`
-    - `y: number`: the rotation vector component around the y-axis, which points tangent along the ground, to the North: `y * sin(theta/2)`
-    - `z: number`: the rotation vector component around the z-axis, which points towards the sky, perpendicular to the ground: `z * sin(theta/2)`
-
-- `gravity: object`
-    - `x: number`: the force of gravity along the device's x-axis, where the x-axis runs from left to right, across the front screen
-    - `y: number`: the force of gravity along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
-    - `z: number`: the force of gravity along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
-- `user_accel: object`:
-    - `x: number`: the device's acceleration along its x-axis, where the x-axis runs from left to right, across the front screen
-    - `y: number`: the device's acceleration along its y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
-    - `z: number`: the device's acceleration along its z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
-- `magnetic_field: object`:
-    - `x: number` : (units: micro T) the geomagnetic field strength along the device's x-axis, where the x-axis runs from left to right, across the front screen
-    - `y: number`: (units: micro T) the geomagnetic field strength along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
-    - `z: number`: (units: micro T) the geomagnetic field strength along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
-    - `calibration_accuracy: number` : the sensor's accuracy level. One of:
-        - `-1`: invalid; the sensor is reporting data but is not connected to its environment.
-        - `0`: none; the sensor is reporting data that is not calibrated and cannot be trusted.
-        - `1`: low; the sensor is reporting data at poor accuracy, and environmental calibration is required.
-        - `2`: medium; the sensor is reporting data at an average accuracy, and environmental calibration of the device may improve data.
-        - `3`: high; the sensor is reporting data at maximal accuracy and is correctly calibrated.
-
-#### Example
-
-```markdown
-# **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.accelerometer")**
-{
-  "timestamp": 1234567890,
-  "sensor": "lamp.accelerometer",
-  "data": {
-    "x": 0.19378492,
-    "y": 1.28473749,
-    "z": -0.19384932,
-    "accuracy": 2
-  }
-}
-```
-### Sleep
-
-SensorSpec: lamp.sleep
-
-#### Description
-
-The sleep sensor reports sleep data stored on the phone, generally sourced from smartwatches such as an Apple Watch. If you plan on capturing data via an Android device, you may need to test to ensure the associated watch is high enough quality to regularly collect good data.
-
-#### Data
-
-- `timestamp: number`: the UNIX/Epoch timestamp in ms.
-- `sensor: string`: 'lamp.sleep'
-- `data: object`:
-    - `value: number`: 0, 1, or 2, if the user is in bed, asleep, or awake, respectively 
-    - `source: string`: the source of data, e.g. `com.apple.health`
-    - `duration: number`: the time in ms the specific activity (e.g. sleep) lasted
-    - `representation: string`: one of `in_bed`, `in_sleep`, or `in_awake`, reflecting the state of the user at the time of measurement
-
-
-
 ### SMS
 
 SensorSpec: lamp.sms
@@ -354,8 +616,8 @@ The sms sensor measures information on text messages sent and received by the us
 
 #### Data
 
-- `trace: string`: the SHA-1-encrypted source/target of the text message. A device will have a consistent trace.
-- `type: number`: integer label for the message type
+- `trace` (string): the SHA-1-encrypted source/target of the text message. A device will have a consistent trace.
+- `type`: (int): integer label for the message type
     - `1`: received; the message was received by the user
     - `2`: sent; the message was sent by the user
 
@@ -369,32 +631,30 @@ The screen state sensor records when the screen was turned on or off, when the d
 
 This sensor **DOES NOT** record the amount of time spent within specific apps on the device or how many notifications were received.
 
-#### Settings
-
-- None
+lamp.screen_state has been replaced with lamp.device_state
 
 #### Data
 
-- `screen_state: number`: (units: N/A) the current device screen and lock state.
-    - `0`: screen_off; the screen was turned off, either by the user or by a notification.
-    - `1`: screen_on; the screen was turned on, either by the user or by screen timeout.
+- `screen_state`: (int) the current device screen / lock state.
+    - `0`: screen_on; the screen was turned on, either by the user or by a notification.
+    - `1`: screen_off; the screen was turned off, either by the user or by screen timeout.
     - `2`: device_locked; the device was locked, either by the user or by device timeout.
     - `3`: device_unlocked; the device was unlocked by the user.
     - `4`: battery_charging; the device was plugged in to charge by the user.
     - `5`: battery_unplugged; the device was unplugged from the charger by the user.
-- `battery_level: number`: (units: percentage) the current battery level of the device.
+- `battery_level`: (float, units: percentage) the current battery level of the device.
 
 #### Example
 
 ```markdown
-# **LAMP.SensorEvent.all_by_participant("U1234567890", "lamp.screen_state")**
 {
-  "timestamp": 1234567890,
-  "sensor": "lamp.screen_state",
-  "data": {
-    "screen_state": 2,
-    "battery_level": 0.68
-  }
+    'sensor': 'lamp.screen_state',
+    'data': {
+        'value': 1,
+        'representation': 'screen_off',
+        'battery_level': 0.07000000029802322
+    },
+   'timestamp': 1649465295573
 }
 ```
 
@@ -402,98 +662,68 @@ This sensor **DOES NOT** record the amount of time spent within specific apps on
 
 SensorSpec: lamp.weight
 
-#### Description
+### Height
 
-#### Data
+SensorSpec: lamp.height
 
 ### WiFi
 
+SensorSpec: lamp.wifi
 Cortex: cortex.raw.wifi
 
 #### Description
 
-The wifi sensor provides information about the devices to which the user's device connects via wifi. 
+The wifi sensor provides information about the devices to which the user's device connects via wifi. The new version of this sensor is lamp.nearby_device.
 
 #### Data
 
-- `timestamp: number`: UTC timestamp of WiFi event
-- `bssid: string`: BSSID of WiFi event
-- `ssid: string`: SSID of WiFi event
+- `bssid`: (string) BSSID of WiFi event
+- `ssid`: (string) SSID of WiFi event
 
-- **lamp.accelerometer.motion:** records processed triaxial motion, triaxial rotation, triaxial gravity, and triaxial magnetic field data.
-    1. **tilt**
-        1. **roll**: number
-        2. **pitch**: number
-        3. **yaw**: number
-    2. **rotation**
-        1. **x**: number
-        2. **y**: number
-        3. **z**: number
-    3. **gravity**
-        1. **x**: number
-        2. **y**: number
-        3. **z**: number
-    4. **user_accel**
-        1. **x**: number
-        2. **y**: number
-        3. **z**: number
-    5. **magnetic_field**
-        1. **x**: number
-        2. **y**: number
-        3. **z**: number
-        4. **calibration**: number
-- **lamp.analytics:** records events such as page opens, notification receipt, or login sessions.
-    1. **This data type is currently for internal use only.**
-    2. **event_name**: string
-    3. **event_payload**: any
-- **lamp.blood_pressure:** records blood pressure from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
-- **lamp.calls:** records calls after encrypting the phone number.
-    1. **phone_number**: string
-    2. **duration**: number
-    3. **call_type**: string<incoming, outgoing, missed, busy>
-- **lamp.distance:** records total distance moved.
-    1. **value**: number
-    2. **units**: string
-- **lamp.bluetooth:** records bluetooth devices within range as well as signal strength.
-    1. **device_id**: string
-    2. **frequency**: number
-    3. **rssi**: number
-- **lamp.flights:** records stairs of flights climbed.
-    1. **value**: number
-    2. **units**: string
-- **lamp.height:** records self-reported height.
-    1. **value**: number
-    2. **units**: string
-- **lamp.magnetometer:** records triaxial magnetic field changes.
-    1. **x**: number
-    2. **y**: number
-    3. **z**: number
-- **lamp.respiratory_rate: r**ecords respiratory rate from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
-- **lamp.heart_rate:** records heart rate from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
-- **lamp.segment:** records workout segment duration and length.
-    1. **value**: number
-    2. **units**: string
-- **lamp.gyroscope:** records unprocessed triaxial gyroscope data.
-    1. **x**: number
-    2. **y**: number
-    3. **z**: number
-- **lamp.sms:** records text messages after encrypting the phone number.
-    1. **phone_number**: string
-    2. **length**: integer
-    3. **sms_type**: string<sent, received>
-- **lamp.weight:** records self-reported weight, or weight from an external connected monitor.
-    1. **value**: number
-    2. **units**: string
-- **lamp.steps:** records number of steps taken since last such event, or the start of the day.
-    1. **value**: number
-    2. **units**: string
-- **lamp.wifi:** records encrypted wireless hotspots as well as signal strength.
-    1. **device_id**: string
-    2. **frequency**: number
-    3. **rssi**: number
+#### Example
+```
+{
+    'timestamp': 1609796928526,
+    'sensor': 'lamp.wifi',
+    'data': {
+        'bssid': 'a4:2b:b2:d3:d:52',
+        'ssid': 'RB_Tiger'
+    }
+}
+```
+
+### Flights
+
+SensorSpec: lamp.flights
+
+#### Description
+
+Records stairs of flights climbed.
+
+### Magnetometer
+
+SensorSpec: lamp.magnetometer
+
+#### Description
+
+Records triaxial magnetic field changes. This sensor has been replaced by lamp.device_motion.
+
+#### Data
+
+- `x`: (float, units: micro T) the geomagnetic field strength along the device's x-axis, where the x-axis runs from left to right, across the front screen
+- `y`: (float, units: micro T) the geomagnetic field strength along the device's y-axis, where the y-axis runs vertically from the bottom to the top of the device's screen
+- `z`: (float, units: micro T) the geomagnetic field strength along the device's z-axis, where the z-axis runs towards the outside of the device's screen (toward the user)
+
+
+#### Example
+```
+{
+    'timestamp': 1609796944931,
+    'sensor': 'lamp.magnetometer',
+    'data': {
+        'x': -25.963943481445312,
+        'y': -2.191162109375,
+        'z': -403.3388977050781
+    }
+}
+```
