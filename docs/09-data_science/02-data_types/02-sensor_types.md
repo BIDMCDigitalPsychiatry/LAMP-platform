@@ -45,7 +45,8 @@ For some sensors, the data that is returned is different for iOS versus Android 
 
 ### Accelerometer
 
-SensorSpec: lamp.accelerometer<br>
+SensorSpec: lamp.accelerometer
+
 Cortex: cortex.raw.accelerometer
 
 #### Description
