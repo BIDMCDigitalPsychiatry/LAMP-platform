@@ -29,19 +29,19 @@ For some sensors, the data that is returned is different for iOS versus Android 
 | Respiratory Rate | lamp.respiratory_rate   | Y |
 
 **Deprecated sensors:**
-| Name           | SensorSpec                | Replaced by|Requires watch / other device |
-|----------------|---------------------------| ---------------|--------------
+| Name           | SensorSpec                | Replaced by | Requires watch / other device |
+|----------------|---------------------------|---------------|--------------
 | Device Motion  | lamp.gyroscope       | lamp.device_motion | |
-|  | lamp.magnetometer       | lamp.device_motion| |
+|                | lamp.magnetometer       | lamp.device_motion| |
 | Location       | lamp.distance                  | | |
-| Pedometer | lamp.flights      | | |
+| Pedometer      | lamp.flights      | | |
 | Screen         | lamp.screen_state         | lamp.device_state | |
 | Calls & Texts  | lamp.calls           | lamp.telephony | |
-|   | lamp.sms          | | |
+|                | lamp.sms          | | |
 | Bluetooth & WiFi | lamp.bluetooth      | | |
-|  | lamp.wifi      | lamp.nearby_device | |
-| Weight | lamp.weight      | | |
-| Height | lamp.height      | | |
+|                | lamp.wifi      | lamp.nearby_device | |
+| Weight         | lamp.weight      | | |
+| Height         | lamp.height      | | |
 
 
 ### Analytics
@@ -99,7 +99,7 @@ Page open event:
     }
 }
 ```
-Notificaiton event:
+Notification event:
 ```markdown
 {
     'timestamp': 1649505601383,
@@ -429,68 +429,21 @@ The sleep sensor reports sleep data stored on the phone, generally sourced from 
 }
 ```
 
-### Blood Pressure
+### Sensors requiring extra devices
+There are several sensors that require external hardware to collect data. These sensors should be fully tested before usage. This includes:
+- lamp.blood_pressure
+- lamp.respiratory_rate
+- lamp.heart_rate
+- lamp.segment (workout segmentation)
+- lamp.activity_recognition
+- lamp.nutrition
+- lamp.blood_glucose
+- lamp.body_temperature
+- lamp.heartratevariability_sdnn
 
-SensorSpec: lamp.blood_pressure
-
-### Description
-Records blood pressure from an external connected monitor.
-
-#### Data
-- `value`: (float) the blood pressure reading.
-- `units`: (string) the units of the reading.
-
-### Respiratory Rate
-
-SensorSpec: lamp.respiratory_rate
-
-### Description
-Records respiratory rate from an external connected monitor.
-
-#### Data
-- `value`: (float) the respiratory rate reading.
-- `units`: (string) the units of the reading.
-
-### Heart Rate
-
-SensorSpec: lamp.heart_rate
-
-### Description
-Records heart rate from an external connected monitor.
-
-#### Data
-- `value`: (float) the heart rate reading.
-- `units`: (string) the units of the reading.
-
-### Segment
-
-SensorSpec: lamp.segment
-
-### Description
-Records workout segment duration and length.
-
-### Activity Recognition
-
-SensorSpec: lamp.activity_recognition
-
-### Description
-Performs segmentation of activity types.
-
-### Nutrition
-
-SensorSpec: lamp.nutrition
-
-### Blood Glucose
-
-SensorSpec: lamp.blood_glucose
-
-### Body temperature
-
-SensorSpec: lamp.body_temperature
-
-### Heart rate variability
-
-SensorSpec: lamp.heartratevariability_sdnn
+Data from these sensors will be of the form:
+- `value` (float): the value of the sensor.
+- `unit` (string): the units of the data.
 
 ## Deprecated sensors
 ### Bluetooth
