@@ -150,7 +150,7 @@ alt.Chart(
 # Encode "timestamp vs. address (unique count)" as a line plot.
 .mark_line().encode(x='timestamp', y='address')
 ```
-![](assets/bt_plot.png)
+![](../assets/bt_plot.png)
 
 ### Calls
 
