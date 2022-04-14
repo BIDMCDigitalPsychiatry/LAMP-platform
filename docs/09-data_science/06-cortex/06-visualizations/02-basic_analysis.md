@@ -1,4 +1,4 @@
-## Basic Analysis
+# Basic Analysis
 
 There are some basic analyses that are useful for exploring study data. The Jupyter Notebook cortex/visualizations/correlation_plots.ipynb has code to:
 1. Score survey data and save it into a user specified directory.
