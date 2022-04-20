@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkLAMP_documentation=self.webpackChunkLAMP_documentation||[]).push([[6326],{22400:function(e){e.exports=JSON.parse('{"permalink":"/blog/page/14","page":14,"postsPerPage":1,"totalPages":21,"totalCount":21,"previousPage":"/blog/page/13","nextPage":"/blog/page/15","blogDescription":"The LAMP Platform documentation.","blogTitle":"LAMP Platform"}')}}]);
