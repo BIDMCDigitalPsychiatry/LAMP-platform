@@ -26,6 +26,25 @@ Result
 U0591253803 updated. Moved participant from study Second Study - (dynp0g0530xkahnzh0xc) to study LAMP Testing (Internal - Luke) - (ef0b54h281vfmhc0515d)
 ```
 
+## `utils.db.get_survey_names`
+Get the survey names and specs for all ActivityEvents for a participant. Use the database to get deleted survey ids as well.
+
+#### Args
+
+- `participant_id`: (string) the participant id.
+- `db`: (string, default: 'LAMP') the database.
+- `client_url`: (string) a valid mongodb URL with login info.
+- `client`: (object) a valid pymongo client
+
+#### Example
+
+```markdown
+YOUR_MONGO_URL = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]"
+utils.db.get_survey_names("U1234567890", client_url=YOUR_MONGO_URL)
+```
+Output:
+![](assets/db_activity_names.png)
+
 ## `utils.db.list_deleted_activities`
 Returns a list of dictionaries, each reflecting a deleted activity, with an `id` and `name` key.
 #### Args
@@ -149,22 +168,3 @@ The following activities are deleted
 0:Jewels A testing:qa0k8arrv8cx1brp724d
 1:Test Survey:fgqyjzspc92n2nwb8d7d
 ```
-
-## `utils.db.get_survey_names`
-Get the survey names and specs for all ActivityEvents for a participant. Use the database to get deleted survey ids as well.
-
-#### Args
-
-- `participant_id`: (string) the participant id.
-- `db`: (string, default: 'LAMP') the database.
-- `client_url`: (string) a valid mongodb URL with login info.
-- `client`: (object) a valid pymongo client
-
-#### Example
-
-```markdown
-YOUR_MONGO_URL = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]"
-utils.db.get_survey_names("U1234567890", client_url=YOUR_MONGO_URL)
-```
-Output:
-![](assets/db_activity_names.png)
