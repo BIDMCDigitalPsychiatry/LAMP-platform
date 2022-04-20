@@ -13,6 +13,9 @@
     "react-dom": "^17.0.2",
     "url": "^0.11.0"
   },
+  "overrides": {
+    "postman-collection": "4.1.1"
+  },
   "scripts": {
     "fix-config": "echo \"module.exports = require('./package.json').docusaurus\" > docusaurus.config.js",
     "prebuild": "npm run fix-config",
