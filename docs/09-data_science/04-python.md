@@ -134,7 +134,7 @@ participant_accel_tr = LAMP.SensorEvent.all_by_participant(participant_1,
 participant_accel_tr['data']
 ```
 
-### Query sensor data
+### Query activity event data
 
 Surveys are ActivityEvents, with each survey type defined as an Activity
 
