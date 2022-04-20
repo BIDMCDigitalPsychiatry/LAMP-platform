@@ -16,3 +16,5 @@ Get the survey names and specs for all ActivityEvents for a participant. Use the
 YOUR_MONGO_URL = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]"
 utils.db.get_survey_names("U1234567890", client_url=YOUR_MONGO_URL)
 ```
+Output:
+![](assets/db_activity_names.png)
