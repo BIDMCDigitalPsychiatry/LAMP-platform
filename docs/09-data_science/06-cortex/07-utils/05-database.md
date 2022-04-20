@@ -1,4 +1,7 @@
 # Database functions
+
+**Warning: Directly interacting with the database can carry some risk. Please read the documentation carefully.**
+
 These functions provide a way to directly interact with a LAMP MongoDB database and add some functionality that is not currently present in the LAMP API, such as restoring deleted activities or participants. These functions include safeguards that should prevent unintended consequences, but directly interacting with the database can carry some risk, so please read the documentation for these functions carefully before using them. Please report any issues to community.lamp.digital.
 
 Please note: if you are using an older version of LAMP, e.g. one using CouchDB, these functions may not work.
@@ -35,6 +38,9 @@ Get the survey names and specs for all ActivityEvents for a participant. Use the
 - `db`: (string, default: 'LAMP') the database.
 - `client_url`: (string) a valid mongodb URL with login info.
 - `client`: (object) a valid pymongo client
+
+#### Returns
+A dataframe containing the ActivityEvent data for this participant with two additional columns: "name" and "spec".
 
 #### Example
 
