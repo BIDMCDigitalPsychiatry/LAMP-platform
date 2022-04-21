@@ -1,7 +1,7 @@
 # Notifications
 
 These functions provide code for sending email, slack, and push notifications (to participants or study personnel). In order to use them you must configure either a Slack webhook (for Slack) or push API key and push gateway (for device notifcations and email).
-For slack, please refer to the instructions on creating a webhook [here](https://www.notion.so/digitalpsychiatry/Study-info-9f9855efc3e745209a636c6e9d85232c).
+For slack, please refer to the instructions on creating a webhook [here](https://slack.com/help/articles/115005265063-Incoming-webhooks-for-Slack).
 
 ## `utils.notifications.push_email`
 Send an email. Support email, push API key, and push gateway must be set for sending emails.
