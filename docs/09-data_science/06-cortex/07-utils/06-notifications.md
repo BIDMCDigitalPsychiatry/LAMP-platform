@@ -24,7 +24,7 @@ Send a push notification to a participant. Push API key and push gateway must be
 
 #### Args
 - `device`: (str) the device to send the message to. This information can be found using `LAMP.analytics` (please see the example).
-- `content`: (str) the content of the message. Subject and body should be split by a new line (ex: "email subject\nemail text").
+- `content`: (str) the content of the message. 
 - `push_api_key`: (str, default: None) the API key, will be pulled from the environment variable ('PUSH_API_KEY') if None.
 - `push_gateway`: (str, default: None) the gateway, will be pulled from the environment variable ('PUSH_GATEWAY') if None.
 - `expiry`: (int, units: ms, default: 86400000): how long before the notification expires.
@@ -44,7 +44,7 @@ Send a slack. Slack webhook must be set for sending slack messages.
 
 #### Args
 - `message` (str): the content of the message.
-- 'slack_webhook`: (str, default: None) the slack webhook, will be pulled from the environment variable ('SLACK_WEBHOOK') if None.
+- `slack_webhook`: (str, default: None) the slack webhook, will be pulled from the environment variable ('SLACK_WEBHOOK') if None.
 
 #### Example
 ```markdown
