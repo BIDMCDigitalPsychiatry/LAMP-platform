@@ -317,65 +317,6 @@ A sustained attention task where the user is instructed to pop various sequences
    'activity': '3ztmvcbragc20a6sew4b'}
 ```
 
-### Serial 7s
-
-ActivitySpec: `lamp.serial_7s`
-
-#### Description
-
-The Serial 7s test.
-
-#### Settings
-
-#### Data 
-
-- `static_data`: Unused.
-    - `rating`: The associated rating of the completed session.	
-    - `score`: The computed score for the completed session.	
-    - `total_attempts`: The total number of attempts made during the session.	
-    - `total_questions`: The total number of questions encountered during the session.	
-    - `version`: The version of the test played.  
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
-
-### Simple Memory
-
-ActivitySpec: `lamp.simple_memory`
-
-#### Description
-
-The Simple Memory test.
-
-#### Settings
-
-#### Data 
-
-- `static_data`:
-    - `score`: The computed score for the completed session. 
-    - `correct_answers`: The total number of correct answers made in the session.
-    - `wrong_answers`: The total number of incorrect answers made in the session.
-    - `total_questions`: The total number of questions encountered during the session.
-    - `version`: The version of the test played.
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
 
 ### Spatial Span
 
@@ -407,95 +348,6 @@ The Spatial Span test, with Forward and Backward variants.
 ```json
 ```
 
-### Temporal Order
-
-ActivitySpec: `lamp.temporal_order`
-
-#### Description
-
-The Temporal Order test.
-
-#### Settings
-
-#### Data 
-
-- `static_data`:
-    - `rating`: The associated rating of the completed session.	
-    - `score`: The computed score for the completed session.	
-    - `correct_answers`: The total number of correct answers made in the session.	
-    - `wrong_answers`: The total number of incorrect answers made in the session.	
-    - `version`: The version of the test played.  
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
-
-### Trails B
-
-ActivitySpec: `lamp.trails_b` & `lamp.trails_b_new` & `lamp.trails_b_dot_touch`
-
-#### Description
-
-The new dot-touch variant of the Trails B test.
-
-#### Settings
-
-#### Data 
-
-- `static_data`: 
-    -  `point`: The associated point value with the completed session.	
-    -  `rating`: The associated rating of the completed session.
-    -  `score`: The computed score for the completed session.	
-    -  `total_attempts`: The total number of attempts made during the session.		
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
-
-
-### Visual Association
-
-ActivitySpec: `lamp.visual_association`
-
-#### Description
-
-The Visual Association test.
-
-#### Settings
-
-#### Data 
-
-- `static_data`:
-    - `rating`: The associated rating of the completed session.	
-    - `score`: The computed score for the completed session.	
-    - `total_attempts`:	The total number of attempts made during the session.	
-    - `total_questions`: The total number of questions encountered during the session.	
-    - `version`: The version of the test played.
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
 
 ---
 
@@ -581,6 +433,158 @@ The NBack test.
     - `wrong_answers`: The total number of incorrect answers made in the session.
     - `total_questions`: The total number of questions encountered during the session.	
     - `version`: The version of the test played.  
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+
+### Serial 7s
+
+ActivitySpec: `lamp.serial_7s`
+
+#### Description
+
+The Serial 7s test.
+
+#### Settings
+
+#### Data 
+
+- `static_data`: Unused.
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `total_attempts`: The total number of attempts made during the session.	
+    - `total_questions`: The total number of questions encountered during the session.	
+    - `version`: The version of the test played.  
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+
+### Simple Memory
+
+ActivitySpec: `lamp.simple_memory`
+
+#### Description
+
+The Simple Memory test.
+
+#### Settings
+
+#### Data 
+
+- `static_data`:
+    - `score`: The computed score for the completed session. 
+    - `correct_answers`: The total number of correct answers made in the session.
+    - `wrong_answers`: The total number of incorrect answers made in the session.
+    - `total_questions`: The total number of questions encountered during the session.
+    - `version`: The version of the test played.
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+
+### Temporal Order
+
+ActivitySpec: `lamp.temporal_order`
+
+#### Description
+
+The Temporal Order test.
+
+#### Settings
+
+#### Data 
+
+- `static_data`:
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.	
+    - `version`: The version of the test played.  
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+### Trails B
+
+ActivitySpec: `lamp.trails_b` & `lamp.trails_b_new` & `lamp.trails_b_dot_touch`
+
+#### Description
+
+The new dot-touch variant of the Trails B test.
+
+#### Settings
+
+#### Data 
+
+- `static_data`: 
+    -  `point`: The associated point value with the completed session.	
+    -  `rating`: The associated rating of the completed session.
+    -  `score`: The computed score for the completed session.	
+    -  `total_attempts`: The total number of attempts made during the session.		
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+### Visual Association
+
+ActivitySpec: `lamp.visual_association`
+
+#### Description
+
+The Visual Association test.
+
+#### Settings
+
+#### Data 
+
+- `static_data`:
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `total_attempts`:	The total number of attempts made during the session.	
+    - `total_questions`: The total number of questions encountered during the session.	
+    - `version`: The version of the test played.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
