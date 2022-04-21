@@ -30,7 +30,7 @@ Cortex is an open source analysis package. If you would like to contribute your 
     
         git add .
         git commit -m "i added a cool feature"
-        git push -u origin my_new_feature
+        git push --set-upstream origin my_new_feature
     
     </details>
     
