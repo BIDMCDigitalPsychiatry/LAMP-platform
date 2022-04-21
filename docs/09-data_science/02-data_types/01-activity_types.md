@@ -270,36 +270,6 @@ The Jewels game, with variants A & B.
 ```json
 ```
 
-### N-Back
-
-ActivitySpec: `lamp.nback` & `lamp.nback_new`
-
-#### Description
-
-The NBack test.
-
-#### Settings
-
-#### Data 
-
-- `static_data`:
-    - `score`: The computed score for the completed session.
-    - `correct_answers`: The total number of correct answers made in the session.	
-    - `wrong_answers`: The total number of incorrect answers made in the session.
-    - `total_questions`: The total number of questions encountered during the session.	
-    - `version`: The version of the test played.  
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
-
 ### Pop The Bubbles
 
 ActivitySpec: `lamp.pop_the_bubbles`
@@ -580,6 +550,37 @@ The Digit Span test, with Forward and Backward variants.
     - `correct_answers`: The total number of correct answers made in the session.	
     - `wrong_answers`: The total number of incorrect answers made in the session.	
     - `type`: The integer indicating forward or backward variant.
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+
+### N-Back
+
+ActivitySpec: `lamp.nback` & `lamp.nback_new`
+
+#### Description
+
+The NBack test.
+
+#### Settings
+
+#### Data 
+
+- `static_data`:
+    - `score`: The computed score for the completed session.
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.
+    - `total_questions`: The total number of questions encountered during the session.	
+    - `version`: The version of the test played.  
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
