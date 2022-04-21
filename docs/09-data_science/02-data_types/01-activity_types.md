@@ -239,35 +239,6 @@ Currently no settings are available for this activity.
 ```
 
 
-### Digit Span
-
-ActivitySpec: `lamp.digit_span`
-
-#### Description
-
-The Digit Span test, with Forward and Backward variants.
-
-#### Settings
-
-#### Data 
-
-- `static_data`: 
-    - `rating`: The associated rating of the completed session.	
-    - `score`: The computed score for the completed session.	
-    - `correct_answers`: The total number of correct answers made in the session.	
-    - `wrong_answers`: The total number of incorrect answers made in the session.	
-    - `type`: The integer indicating forward or backward variant.
-- `temporal_slices`:
-    - `item`: Unused.
-    - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
-
-#### Example
-
-```json
-```
 
 
 ### Jewels
@@ -579,6 +550,36 @@ The 3D Figure drawing game.
     - `point`: The associated point value with the completed session.	
     - `drawn_file_name`: The link to the file containing the drawn image.	
     - `game_name`: The unique game name for the drawing session.
+- `temporal_slices`:
+    - `item`: Unused.
+    - `value`: Unused.
+    - `type`: Unused.
+    - `duration`: Unused.
+    - `level`: Unused.
+
+#### Example
+
+```json
+```
+
+### Digit Span
+
+ActivitySpec: `lamp.digit_span`
+
+#### Description
+
+The Digit Span test, with Forward and Backward variants. 
+
+#### Settings
+
+#### Data 
+
+- `static_data`: 
+    - `rating`: The associated rating of the completed session.	
+    - `score`: The computed score for the completed session.	
+    - `correct_answers`: The total number of correct answers made in the session.	
+    - `wrong_answers`: The total number of incorrect answers made in the session.	
+    - `type`: The integer indicating forward or backward variant.
 - `temporal_slices`:
     - `item`: Unused.
     - `value`: Unused.
