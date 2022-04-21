@@ -22,7 +22,7 @@ Cortex is an open source analysis package. If you would like to contribute your 
     
 2. Write your code. 
 3. Add your file to run_pylint.sh to make sure you are following the python style guidelines. Please include good comments and docstrings.
-4. Add unittests for your code to the /tests folder. Add your file to run_tests.sh to show code coverage.
+4. Add unit tests for your code to the /tests folder. Add your file to run_tests.sh to show code coverage.
 5. Add any new dependencies to pyproject.toml (if applicable).
 6. Push your code.
     <details>
