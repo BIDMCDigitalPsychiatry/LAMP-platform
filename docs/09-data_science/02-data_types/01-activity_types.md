@@ -190,6 +190,7 @@ Currently no settings are available for this activity.
     - `correct_answers`: The total number of correct answers made in the session.	
     - `wrong_answers`: The total number of incorrect answers made in the session.	
     - `score`: The percentage of trials answered correctly, converted to an integer. 
+    - `total_questions`: The total number of trials given to the participant. Currently always 45.
 - `temporal_slices`:
     - `item`: 1-10 depending on the box chosen
     - `value`: Unused.
