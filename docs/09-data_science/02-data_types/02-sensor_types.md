@@ -391,8 +391,9 @@ The telephony records phone call information.
 ```
 {
     'data': {
-        'duration': 24,
         'type': 'incoming'
+        'duration': 24,
+        'trace': '22F222FF-F2F2-4000-92F3-293049DC4FEC',
     },
     'sensor': 'lamp.telephony',
     'timestamp': 1649864919743
