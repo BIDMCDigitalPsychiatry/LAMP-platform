@@ -448,29 +448,61 @@ ActivitySpec: `lamp.spatial_span`
 
 #### Description
 
-The Spatial Span test, with Forward and Backward variants.
+The Spatial Span test, with Forward and Backward variants. Participants see a grid of 16 squares (4 x 4) which light up in a specific order. Participants are then told to click, either in the original order (Forward) or reverse order (Backward), the boxes that lit up. Ends after two consecutive sequences where one or more incorrect answers was entered.
 
 #### Settings
+
+- `reverse_tapping`: (boolean) If true, participants see the Backwards variant. If false, participants get the Forwards variant.
 
 #### Data 
 
 - `static_data`:
-    - `rating`: The associated rating of the completed session.	
-    - `score`: The computed score for the completed session.	
-    - `correct_answers`: The total number of correct answers made in the session.	
-    - `wrong_answers`: The total number of incorrect answers made in the session.	
-    - `type`: The integer indicating forward or backward variant.
+    - `StartTime`: (string) Human readable timestamp of the start of the activity
+    - `EndTime`: (string) Human readable timestamp of the end of the activity
+    - `point`: (number) 2 if every trial was answered correctly, else 1.
+    - `score`: (number) Percentage of stages answered correctly, rounded to 0 decimal spaces.	
+    - `correct_answers`: (number) The total number of correct answers made in the session.	
+    - `wrong_answers`: (number) The total number of incorrect answers made in the session.	
+    - `type`: (number) 1
 - `temporal_slices`:
-    - `item`: Unused.
+    - `item`: The index of the box tapped (1-16) (1-4 across the top, 5-8 in the second level from the top, and so on)
     - `value`: Unused.
-    - `type`: Unused.
-    - `duration`: Unused.
-    - `level`: Unused.
+    - `type`: (boolean) Whether the tap was correct or not.
+    - `duration`: (number) Time since previous tap or the beginning of the level. The first duration includes the length of time used to show the sequence of boxes to tap.
+    - `level`: (number) The current level (advances by 1 at the end of each sequence).
 
 #### Example
 
-```json
 ```
+{'duration': 48366,
+  'static_data': {'EndTime': '2022-04-21T17:31:33.825Z',
+   'StartTime': '2022-04-21T17:30:46.062Z',
+   'correct_answers': 7,
+   'point': 1,
+   'score': 50,
+   'type': 1,
+   'wrong_answers': 6},
+  'temporal_slices': [{'duration': 5107,
+    'item': 4,
+    'level': 1,
+    'type': True,
+    'value': None},
+   {'duration': 876, 'item': 7, 'level': 1, 'type': True, 'value': None},
+   {'duration': 6024, 'item': 7, 'level': 2, 'type': True, 'value': None},
+   {'duration': 674, 'item': 12, 'level': 2, 'type': True, 'value': None},
+   {'duration': 650, 'item': 5, 'level': 2, 'type': True, 'value': None},
+   {'duration': 8419, 'item': 4, 'level': 3, 'type': False, 'value': None},
+   {'duration': 706, 'item': 3, 'level': 3, 'type': False, 'value': None},
+   {'duration': 959, 'item': 13, 'level': 3, 'type': False, 'value': None},
+   {'duration': 701, 'item': 6, 'level': 3, 'type': True, 'value': None},
+   {'duration': 7751, 'item': 5, 'level': 3, 'type': False, 'value': None},
+   {'duration': 728, 'item': 9, 'level': 3, 'type': False, 'value': None},
+   {'duration': 598, 'item': 10, 'level': 3, 'type': False, 'value': None},
+   {'duration': 895, 'item': 1, 'level': 3, 'type': True, 'value': None}],
+  'timestamp': 1650562293825,
+  'activity': '10rp8he6aa3hqbr5c7v9'}
+```
+
 
 
 ---
