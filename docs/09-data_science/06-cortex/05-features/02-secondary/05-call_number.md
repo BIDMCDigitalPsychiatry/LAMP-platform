@@ -11,6 +11,7 @@ Call number sums the number of calls.
 - `start`: (int, units: ms) the start time.
 - `end`: (int, units: ms) the end time.
 - `resolution`: (int, units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
+- `incoming`: (boolean, default: True) whether to compute for incoming (True) or outgoing (False) calls.
 
 #### Data
 
