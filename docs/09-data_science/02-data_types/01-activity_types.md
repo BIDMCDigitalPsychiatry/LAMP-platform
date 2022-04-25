@@ -242,33 +242,156 @@ Currently no settings are available for this activity.
 
 
 
+
 ### Jewels
 
 ActivitySpec: `lamp.jewels_a` & `lamp.jewels_b`
 
 #### Description
 
-The Jewels game, with variants A & B.
+The Jewels game, with variants A & B. The Jewels game is similar to the Trail-Making Test which measures processing speed and task switching.
+
+During the Jewels game, participants view a field of sequentially numbered jewels. In the "A" variant, participants click on the jewels in order. In the "B" variant, multiple jewel shapes may appear and the user must click on the same-numbered jewels in a predetermined order (e.g. clicking first on a square jewel numbered 1, then a round jewel numbered 1, then a square jewel numbered 2, and so on).
+
+Except for the first trial (see Settings below), the maximum number of jewels is 25. The number of shapes will increase up to a maximum of 4.
+
+The algorithm that calculates the number of jewels shown (15-25 by default) and shapes shown (1-4 by default) is rather complicated - we recommend leaving the non-timing settings as the default for this reason.
+
+<details>
+    <summary>Increase Explanation</summary>
+    
+    1. At the end of each successfully completed level a certain number of bonus points is assigned, equal to the remaining time minus 2 times the number of errors made.
+   
+    
+    2. The running total of bonus points is then divided by the `bonus_point_count` setting and floored.
+    
+    3. If the number from step 2 is greater than 1, `level`-1, divided by the `x_changes_in_level_count` then multiplied by `x_diamond_count`  is used to determine how many extra jewels should be added, to maximum of 25 total jewels. If `level` is less than or equal to 1, nothing happens. The same applies for the number of shapes shown, but the maximum number of shapes is 4 and the parameters are `y_changes_in_level_count` and `y_shape_count`, respectively.
+</details>
 
 #### Settings
+
+- `mode`: (number) Difficulty (1-easy, 4-expert)
+- `shape_count`:(number) Starting number of shapes, default is 1. Do not set above 8.
+- `variant`:  (string) If set to `trails_b`, the number of shapes will increase.
+- `beginner_seconds`: (number) the number of seconds allowed if difficulty is set to 1.
+- `intermediate_seconds`: (number) the number of seconds allowed if difficulty is set to 2.
+- `advanced_seconds`: (number) the number of seconds allowed if difficulty is set to 3.
+- `expert_seconds`: (number) the number of seconds allowed if difficulty is set to 4.
+- `diamond_count`: (number) starting diamond count (default 15). After the first trial, the max is 25.
+- `bonus_point_count`: (number) Default is 50. The number of bonus points (remaining time minus errors\*2) required to increase the number of jewels or shapes.
+- `x_changes_in_level_count`: (number) Once enough bonus points are accumulated, changes the number of jewels by `x_diamond_count` times this (ceiling 25).
+- `x_diamond_count`: (number) See above.
+- `y_changes_in_level_count`: (number) Once enough bonus points are accumulated, changes the number of shapes by `x_diamond_count` times this (ceiling 4).
+- `y_shape_count`: (number) see above.
 
 #### Data 
 
 - `static_data`: 
-    - `point`: (number) The associated point value with the completed session. 
-    - `rating`: (number) The associated rating of the completed session.
-    - `score`: (number) The computed score for the completed session.
+    - `point`: (number) The associated point value with the completed session. 1 if the participant timed out on a trial. 2 if they voluntarily returned to the dashboard via the back button.
+    - `score`: (number) The percentage of correct trials, rounded to two decimal places.
     - `total_attempts`: (number) The total number of attempts made during the session.
+    - `total_bonus_collected`: (number) The total bonus accumulated (time remaining when a trial is finished - 2\*errors). Can be negative.
+    - `total_jewels_collected`: (number) The total number of jewels correctly clicked on.
 - `temporal_slices`:
-    - `item`: (number) Unused.
-    - `value`: (string) The alphanumeric index of the item tapped.
-    - `type`: (string) Whether the correct item was tapped or not ("correct" or "none").
-    - `duration`: (number) Unused.
-    - `level`: (number) Unused.
+    - `item`: (number) The number of the jewel clicked.
+    - `value`: Unused.
+    - `type`: (boolean) Whether the correct item was tapped or not (True or False).
+    - `duration`: (number) Time since the previous jewel was tapped.
+    - `level`: (number) The trial level. Increases by 1 at the start of each new trial unless the accumulated bonus points divided by `bonus_point_count` is equal to the current level when floored.
 
 #### Example
 
-```json
+The following data is Jewels B Data
+```
+{'static_data': {'point': 2,
+  'score': '97.37',
+  'total_attempts': 76,
+  'total_bonus_collected': 239,
+  'total_jewels_collected': 74},
+ 'temporal_slices': [{'duration': 0,
+   'item': 1,
+   'level': 1,
+   'type': True,
+   'value': None},
+  {'duration': 1852, 'item': 2, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1211, 'item': 3, 'level': 1, 'type': True, 'value': None},
+  {'duration': 858, 'item': 4, 'level': 1, 'type': True, 'value': None},
+  {'duration': 954, 'item': 5, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1892, 'item': 6, 'level': 1, 'type': True, 'value': None},
+  {'duration': 958, 'item': 7, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1043, 'item': 8, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1172, 'item': 9, 'level': 1, 'type': True, 'value': None},
+  {'duration': 2933, 'item': 10, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1048, 'item': 11, 'level': 1, 'type': True, 'value': None},
+  {'duration': 526, 'item': 12, 'level': 1, 'type': True, 'value': None},
+  {'duration': 573, 'item': 13, 'level': 1, 'type': True, 'value': None},
+  {'duration': 712, 'item': 14, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1212, 'item': 15, 'level': 1, 'type': True, 'value': None},
+  {'duration': 0, 'item': 1, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1049, 'item': 2, 'level': 1, 'type': True, 'value': None},
+  {'duration': 2958, 'item': 3, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1001, 'item': 4, 'level': 1, 'type': True, 'value': None},
+  {'duration': 832, 'item': 5, 'level': 1, 'type': True, 'value': None},
+  {'duration': 685, 'item': 6, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1393, 'item': 7, 'level': 1, 'type': True, 'value': None},
+  {'duration': 876, 'item': 8, 'level': 1, 'type': True, 'value': None},
+  {'duration': 701, 'item': 9, 'level': 1, 'type': True, 'value': None},
+  {'duration': 2651, 'item': 10, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1554, 'item': 11, 'level': 1, 'type': True, 'value': None},
+  {'duration': 762, 'item': 12, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1228, 'item': 13, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1419, 'item': 14, 'level': 1, 'type': True, 'value': None},
+  {'duration': 1236, 'item': 15, 'level': 1, 'type': True, 'value': None},
+  {'duration': 0, 'item': 1, 'level': 2, 'type': True, 'value': None},
+  {'duration': 3476, 'item': 2, 'level': 2, 'type': True, 'value': None},
+  {'duration': 1256, 'item': 3, 'level': 2, 'type': True, 'value': None},
+  {'duration': 6022, 'item': 4, 'level': 2, 'type': True, 'value': None},
+  {'duration': 3205, 'item': 5, 'level': 2, 'type': True, 'value': None},
+  {'duration': 742, 'item': 6, 'level': 2, 'type': True, 'value': None},
+  {'duration': 1890, 'item': 8, 'level': 2, 'type': False, 'value': None},
+  {'duration': 1563, 'item': 7, 'level': 2, 'type': True, 'value': None},
+  {'duration': 1069, 'item': 8, 'level': 2, 'type': True, 'value': None},
+  {'duration': 1113, 'item': 9, 'level': 2, 'type': True, 'value': None},
+  {'duration': 3184, 'item': 10, 'level': 2, 'type': True, 'value': None},
+  {'duration': 2339, 'item': 11, 'level': 2, 'type': True, 'value': None},
+  {'duration': 2521, 'item': 12, 'level': 2, 'type': True, 'value': None},
+  {'duration': 2564, 'item': 13, 'level': 2, 'type': True, 'value': None},
+  {'duration': 911, 'item': 14, 'level': 2, 'type': True, 'value': None},
+  {'duration': 957, 'item': 15, 'level': 2, 'type': True, 'value': None},
+  {'duration': 919, 'item': 16, 'level': 2, 'type': True, 'value': None},
+  {'duration': 1579, 'item': 17, 'level': 2, 'type': True, 'value': None},
+  {'duration': 1281, 'item': 18, 'level': 2, 'type': True, 'value': None},
+  {'duration': 1215, 'item': 19, 'level': 2, 'type': True, 'value': None},
+  {'duration': 0, 'item': 1, 'level': 3, 'type': True, 'value': None},
+  {'duration': 1518, 'item': 1, 'level': 3, 'type': True, 'value': None},
+  {'duration': 7255, 'item': 2, 'level': 3, 'type': True, 'value': None},
+  {'duration': 1192, 'item': 2, 'level': 3, 'type': True, 'value': None},
+  {'duration': 3634, 'item': 3, 'level': 3, 'type': True, 'value': None},
+  {'duration': 3519, 'item': 3, 'level': 3, 'type': True, 'value': None},
+  {'duration': 3996, 'item': 4, 'level': 3, 'type': True, 'value': None},
+  {'duration': 2013, 'item': 4, 'level': 3, 'type': True, 'value': None},
+  {'duration': 2249, 'item': 5, 'level': 3, 'type': True, 'value': None},
+  {'duration': 1022, 'item': 5, 'level': 3, 'type': True, 'value': None},
+  {'duration': 1306, 'item': 6, 'level': 3, 'type': True, 'value': None},
+  {'duration': 3250, 'item': 6, 'level': 3, 'type': True, 'value': None},
+  {'duration': 1947, 'item': 7, 'level': 3, 'type': True, 'value': None},
+  {'duration': 2047, 'item': 8, 'level': 3, 'type': False, 'value': None},
+  {'duration': 1307, 'item': 7, 'level': 3, 'type': True, 'value': None},
+  {'duration': 798, 'item': 8, 'level': 3, 'type': True, 'value': None},
+  {'duration': 718, 'item': 8, 'level': 3, 'type': True, 'value': None},
+  {'duration': 1371, 'item': 9, 'level': 3, 'type': True, 'value': None},
+  {'duration': 813, 'item': 9, 'level': 3, 'type': True, 'value': None},
+  {'duration': 718, 'item': 10, 'level': 3, 'type': True, 'value': None},
+  {'duration': 924, 'item': 10, 'level': 3, 'type': True, 'value': None},
+  {'duration': 1834, 'item': 11, 'level': 3, 'type': True, 'value': None},
+  {'duration': 528, 'item': 11, 'level': 3, 'type': True, 'value': None},
+  {'duration': 954, 'item': 12, 'level': 3, 'type': True, 'value': None},
+  {'duration': 832, 'item': 12, 'level': 3, 'type': True, 'value': None},
+  {'duration': 764, 'item': 13, 'level': 3, 'type': True, 'value': None}],
+ 'duration': 166494,
+ 'activity': 'zezv4mhv2p6v8n60f5dq',
+ 'timestamp': 1650900108188}
+
 ```
 
 ### Pop The Bubbles
