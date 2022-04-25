@@ -1,4 +1,5 @@
 # Sleep Periods
+***To use this feature, please use Cortex version 2022.03.11 or earlier.***
 
 computed from raw feature: `cortex.raw.accelerometer`
 
