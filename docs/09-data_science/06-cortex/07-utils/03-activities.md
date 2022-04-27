@@ -23,7 +23,8 @@ Match the ActivityEvents to the Activity name / spec.
 #### Args
 
 - `part_id`: (string) the participant id.
-- `days_ago`: (float, default: -1) the number of previous days of data to include. (ex: days_ago=5 means return only data from the last 5 days)
+- `sample_length`: (float, default: -1, unit=days) the number of previous days of data to include. (ex: days_ago=5 means return only data from the last 5 days)
+- `end_of_window`: (float, default: current time in ms, unit=ms) the timestamp of the end of the window.
 
 #### Returns
 A dataframe with the ActivityEvent data with additional columns called "name" and "spec".
