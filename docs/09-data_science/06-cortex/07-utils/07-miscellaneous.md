@@ -8,7 +8,9 @@ Attempts to parse the lamp.analytics data to get the phone OS, version and devic
 - `participant_id`: (string) the participant id.
 
 #### Returns
-A dictionary comtaining "device_type", "os_version", and "phone_type" if they are found. Each parameter will be None if it cannot be parsed. None will be returned if there is no analytics data. 
+A dictionary comtaining "device_type", "os_version", and "phone_type". Each parameter will be None if it cannot be parsed or if there is no lamp.analytics data.
+
+Please note that the lamp.analytics 'user_agent' information was updated in Spring 2022. This code will not work with older data.
 
 #### Example
 
