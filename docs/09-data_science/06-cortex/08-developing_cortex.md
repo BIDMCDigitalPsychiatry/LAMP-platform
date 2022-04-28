@@ -22,7 +22,7 @@ Cortex is an open source analysis package. If you would like to contribute your 
     
 2. Write your code. 
 3. Add your file to run_pylint.sh to make sure you are following the python style guidelines. Please include good comments and docstrings.
-4. Add unit tests for your code to the /tests folder. Add your file to run_tests.sh to show code coverage.
+4. Add unit tests for your code to the /tests folder. Add your file to run_tests.sh to show code coverage. Please note that if you are not a BIDMC user the existing tests will not work as you do not have access to our data. However, this code can be used as an example for testing your own code. 
 5. Add any new dependencies to pyproject.toml (if applicable).
 6. Push your code.
     <details>
