@@ -1,5 +1,7 @@
 # Step Count
 
+***This feature uses the new version of the lamp.steps sensor data from April 2022. To use this feature with older data, please use Cortex version 2022.03.11 or earlier.***
+
 computed from raw feature: `cortex.raw.steps`
 
 #### Description
@@ -16,7 +18,7 @@ Step count aggregates the number of steps.
 
 - `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
 - `value`: (int, units: None) the number of steps.
-
+(_Warning: Step data may be cummulative which may result in inaccurate results._)
 #### Example
 
 ```markdown
