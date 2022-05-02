@@ -8,7 +8,7 @@ Learning modules, surveys, cognitive tests, and interventions all use the same A
 
 Any Javascript-based code can be added the LAMP Platform using the ActivitySpec API, as long as it uses `window.postMessage()` and `window.addEventListener()` API to receive the Activity settings and submit the ActivityEvent once complete. 
 
-With approximately ~40 lines of JavaScript + React code, shown on the left, produces a naïve implementation of the Jewels game, shown on the right.
+Approximately ~40 lines of JavaScript + React code, shown on the left produces a naïve implementation of the Jewels game, shown on the right.
 
 ![](assets/Screen_Shot_2019-04-16_at_12.12.16_PM.png)
 
@@ -24,7 +24,7 @@ To do this, you can run this command on your html file:
 `$ cat index.html | base64 > index.html.b64`
 
 In your Activity Spec DB document it should have an **executable** and a **settings** attribute.
-Shold look something similiar to this:
+Should look something similiar to this:
 ```
 "executable": "https://path/to/your/index.html.b64"
 "settings": {
@@ -66,10 +66,10 @@ Shold look something similiar to this:
   },
 ```
 
-# Cutom Activity HTML file
+# Custom Activity HTML file
 
 ## Back Button Function in Activity
-In your html document, Include a function where the user can revert back to LAMP. The *onclick* attribute should then call a parent postMessage.
+In your HTML document, include a function where the user can revert back to LAMP. The *onclick* attribute should then call a parent postMessage.
 
 Something like this:
 
