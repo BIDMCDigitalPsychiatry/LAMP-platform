@@ -1,6 +1,6 @@
 # Miscellaneous
 
-## `utils.useful_functions_misc.get_os_version`
+## `utils.misc_functions.get_os_version`
 Attempts to parse the lamp.analytics data to get the phone OS, version and device type information.
 
 #### Args
