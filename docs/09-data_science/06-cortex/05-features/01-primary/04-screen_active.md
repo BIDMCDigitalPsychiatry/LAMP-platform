@@ -1,12 +1,17 @@
 # Screen Active
 
-computed from raw feature: `cortex.raw.screen_state`
+computed from raw feature: `cortex.raw.device_state`
+
+_Note: "lamp.screen_state" is now deprecated and has been replaced by "lamp.device_state". To preserve backwards compatability, Cortex will pull both "lamp.screen_state" and "lamp.device_state" events and merge them into the single raw data stream `cortex.raw.device_state`._
 
 #### Description
 
-Using `screen_state` metrics, bouts of time where the screen_state is continously in the "on" state are computed. `cortex.raw.analytics` is used to determine whether the user has an iOS or Android device (default iOS if this information is not available). For iOS, on events have a value of 0 and off events have a value of 1 or 2. For Android, on events have a value of 0 or 3 and off events have a value of 1 or 2.
+Using `screen_state` metrics, bouts of time where the screen_state is continously in the "on" state are computed. The value --> representation mapping is as follows:
+- 0 --> "screen_on"
+- 1 --> "screen_off"
+- 2 --> "locked"
+- 3 --> "unlocked"
 
-_Note: "lamp.screen_state" is now deprecated and has been replaced by "lamp.device_state". To ensure both new and old data are pulled properly, Cortex will pull both "lamp.screen_state" and "lamp.device_state" events and merge them into the single raw data stream `cortex.raw.screen_state`._
 
 #### Optional or required kwargs
 
