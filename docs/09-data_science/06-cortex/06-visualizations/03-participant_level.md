@@ -44,6 +44,8 @@ Previous data was found. 168 chunks were excluded.
 Scatterplot:
 
 ![](assets/passive_scatter.png)
+
+
 Heatmap:
 
 ![](assets/passive_heatmap.png)
