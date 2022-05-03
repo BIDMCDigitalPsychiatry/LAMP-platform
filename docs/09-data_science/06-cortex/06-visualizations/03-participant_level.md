@@ -42,8 +42,10 @@ Previous data was found. 168 chunks were excluded.
 ```
 
 Scatterplot:
+
 ![](assets/passive_scatter.png)
 Heatmap:
+
 ![](assets/passive_heatmap.png)
 
 ## Active Data Quality
@@ -74,6 +76,7 @@ This function produces a graph intended to help assess participant interaction w
 ```
 cortex.visualizations.participant.active('U1978824471',attach_graphs=True,days_ago=160,sample_length=30)
 ```
+
 
 ![](assets/active_plot.png)
 
