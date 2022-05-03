@@ -51,5 +51,5 @@ N.B.
 - To install additional modules not included with the standard python3.8 image (for example), you may wish to run pip install commands through a shell script.
 - Use swarm.cronjob.schedule to enter your [cron string](https://crontab.guru/)
 
-After you update the stack, the script should begin running as scheduled. The service above, for instance, will run at daily at 3 AM.
+Do this step for each service you plan to create. After you update the stack, the script should begin running as scheduled. The service above, for instance, will run at daily at 3 AM.
 
