@@ -23,7 +23,7 @@ If `path_to_save` is not set, a dictionary with keys for each feature will be cr
 #### Example
 
 ```markdown
-cortex.run(id="dhfiej29384",
+cortex.run("dhfiej29384",
            features=['screen_duration', 'data_quality'],
            feature_params={'screen_duration': {}, 'data_quality': {"feature":"gps", "bin_size":3600000}},
            start=1638248400000,
