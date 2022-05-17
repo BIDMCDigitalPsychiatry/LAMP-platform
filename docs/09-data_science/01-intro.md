@@ -1,7 +1,7 @@
 # Introduction
 
 **The API sandbox (in the menu bar at the top of this page) allows you to test the raw HTTP REST API against a live server to see how to work with the low-level API itself.** 
-If you're interested in working in Ry, Python, or JS, we recommend you try out our programming libraries instead. 
+If you're interested in working in R, Python, or JS, we recommend you try out our programming libraries instead. 
 
 ## LAMP Protocol
 The `LAMP Protocol`, or Application Programming Interface (API), is the formalized inter-component language used by any app or tool connecting to the `LAMP Platform`. It consists of major "surfaces" that describe types of data, actions that may be performed on these types of data, and access and manipulation control of these data. These "surfaces" are designed to be compatible with the Health Level 7 (HL7) organization's Fast Healthcare Interoperability Resources (FHIR) standard resources as well as compliant with the Health Insurance Portability and Accountability Act (HIPAA).
