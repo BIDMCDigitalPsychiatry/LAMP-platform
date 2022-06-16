@@ -6,10 +6,11 @@ computed from raw feature: `cortex.raw.gps` or `cortex.raw.accelerometer`
 
 Data quality computes the percent of the time that a feature achieved a certain data quality. This feature currently supports accelerometer and gps. 
 
-_Note: Data quality in one of two ways 1) by pulling all raw data from 'start' to 'end' and the looping over each time bin to determine if a datapoint with that timestamp in the bin exists or 2) by looping over each time bin and trying to pull a single datapoint from that time bin using the API to determine if a timestamp in that bin exists. The threshold for switching between these methods has been set to 150 bins (ie less than 150 and method #2 will be used, else method #1) to try to increase processing speed._
+_Note: Data quality in one of two ways 1) by pulling all raw data from 'start' to 'end' and looping over each time bin to determine if a datapoint with that timestamp in the bin exists or 2) by looping over each time bin and trying to pull a single datapoint from that time bin using the API to determine if a timestamp in that bin exists. The threshold for switching between these methods has been set to 150 bins (ie less than 150 and method #2 will be used, else method #1) to try to increase processing speed._
 
 #### Optional or required kwargs
 
+- `id`: (str) participant id.
 - `start`: (units: ms) the start time.
 - `end`: (units: ms) the end time.
 - `resolution`: (units: ms) the resolution over which to compute features.
