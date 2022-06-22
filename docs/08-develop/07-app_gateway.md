@@ -1,4 +1,4 @@
-# Generating API Keys for the App Gateway
+# App Gateway
 
 :::note
 
