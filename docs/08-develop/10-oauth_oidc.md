@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The OAuth2/OIDC integration for the LAMP Platform allows 3rd party identity services systems your organization may already be using (such as **Azure Active Directory** or **AWS Cognito**) to be used for authentication and authorization. 
+The OAuth2/OIDC integration for the LAMP Platform allows 3rd party identity services systems your organization may already be using (such as **Azure Active Directory** or **AWS Cognito**) to be used for authentication and authorization. This integration works by **binding an existing mindLAMP ID** (such as a Participant ID or Researcher ID) **to an existing or new IdP identity** (that is, the Participant ID within mindLAMP must still be managed manually from the dashboard at this time). Additionally, when using IdPs such as Azure Active Directory, this integration also supports B2C identities; for example, if your hospital organization already has Azure configured and has just set up the LAMP Platform, patients will be able to use their personal Gmail or Twitter accounts (if allowed by your organization) to sign into mindLAMP on their personal devices.
 
 :::note
 
