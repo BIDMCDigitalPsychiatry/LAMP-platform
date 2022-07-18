@@ -79,7 +79,7 @@ SensorSpec: lamp.sms
 The sms sensor measures information on text messages sent and received by the user. Each event is a single message, with information on its type (incoming, outgoing) and trace (the other device involved in the messaging exchange). 
 
 ## Screen
-SensorSpec: lamp.screen_state
+SensorSpec: lamp.device_state (previous version: lamp.screen_state)
 
 ### Description
 The screen state sensor records when the screen was turned on or off, when the device was locked or unlocked, and changes in battery level from charging or discharging the device.
