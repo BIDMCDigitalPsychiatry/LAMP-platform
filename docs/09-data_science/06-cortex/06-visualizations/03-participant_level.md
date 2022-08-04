@@ -108,7 +108,7 @@ This function produces a graph intended to help assess how participant's cortex 
 ### Code Example
 
 ```
-cortex.visualizations.participant.cortex_tertiles(['U1978824471'],attach_graphs=True,use_cache)
+cortex.visualizations.participant.cortex_tertiles(['U1978824471'],attach_graphs=True,use_cache=True)
 ```
 
 ![](assets/entropy.png)
