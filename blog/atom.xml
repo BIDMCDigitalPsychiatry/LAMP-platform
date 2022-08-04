@@ -2,12 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.lamp.digital/blog</id>
     <title>LAMP Platform Blog</title>
-    <updated>2022-04-23T00:00:00.000Z</updated>
+    <updated>2022-08-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.lamp.digital/blog"/>
     <subtitle>LAMP Platform Blog</subtitle>
     <icon>https://docs.lamp.digital/./docs/assets/logo.png</icon>
     <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
+    <entry>
+        <title type="html"><![CDATA[Release 2022.8.4]]></title>
+        <id>/2022/8/4/</id>
+        <link href="https://docs.lamp.digital/blog/2022/8/4/"/>
+        <updated>2022-08-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- [iOS] Resolved an issue where the iOS app would erroneously request location permission even when it was denied.]]></summary>
+        <content type="html"><![CDATA[<ul><li>[iOS]<!-- --> Resolved an issue where the iOS app would erroneously request location permission even when it was denied.</li><li>[Dashboard]<!-- --> Resolved an issue where a portion of the dashboard header at the top of the page was not clickable.</li><li>[Dashboard]<!-- --> Resolved an issue where the language selection dropdown menu on the login screen of the app and dashboard were erroneously empty.</li><li>[Activities]<!-- --> Implementation of temporal order test cognitive game.</li><li>[Activities]<!-- --> Optimized Jewels task screen size.</li><li>[Server]<!-- --> Enhanced the security of the API response headers.</li><li>[Android]<!-- --> Changed accelerometer data query response format to match that of iOS.</li><li>[Server]<!-- --> Changed lamp analytics response keys to maintain consistency.</li><li>[iOS]<!-- --> Resolved an issue regarding the iOS app spontaneously logging users out.</li><li>[Activities]<!-- --> Resolved an issue with Pop the Bubbles.</li><li>[Server]<!-- --> Changed SensorEvent response format for consistency across device types.</li><li>[Dashboard]<!-- --> Resolved an issue where 12 could not be picked in time picker. </li><li>[Dashboard]<!-- --> Resolved an issue with incorrectly queried elements in data portal. </li><li>[Activities]<!-- --> Adjusted Cats and Dogs docs and code so that the static data takes the same format. </li><li>[Android]<!-- --> Resolved issue where telephony sensor was not integrated. </li><li>[Dashboard]<!-- --> Resolved issue where tips files could not be deleted. </li><li>[Dashboard]<!-- --> Resolved survey visualization error where x-axis was one day off. </li><li>[Activities]<!-- --> Resolved issue where dialogue box was popping up unnecessarily when trying to edit an activity.</li><li>[Dashboard]<!-- --> Resolved issues with the matrix survey interface.</li><li>[Dashboard]<!-- --> Added separate Toggle filters to select a date range for every subsection of the diary card.</li><li>[Activities]<!-- --> Updated the Matrix survey design.</li><li>[Android]<!-- --> Resolved an issue where the Android app would erroneously request access to phone call data.</li><li>[Dashboard]<!-- --> Created a dropdown for domains at login.</li><li>[Dashboard]<!-- --> Resolved app slowdown issues when editing or completing activities.</li><li>[Dashboard]<!-- --> Resolved issue about extended loading times when loading schedules.</li><li>[Server]<!-- --> Resolved an issue where notifications were being sent after logging out of a study.</li></ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release 2022.4.23]]></title>
         <id>/2022/04/23/</id>
