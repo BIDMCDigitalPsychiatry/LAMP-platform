@@ -345,14 +345,15 @@ SensorSpec: lamp.nearby_device
 
 #### Description
 
-The nearby device sensor records wifi connections. 
+The nearby device sensor records bluetooth and wifi connections. 
 
 #### Data
-- `bssid`: (string) BSSID of WiFi event
-- `ssid`: (string) SSID of WiFi event
-- `rssi`: (int, units: DB) WiFI signal strength.
-    > RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
+- `type`: (string) Type of connection (WiFi or bluetooth)
+- `name`: (string) Name of the device
+- `address`: (string) Address of connected device
+- `strength`: (int, units: DB) WiFI or bluetooth signal strength.
 
+RSSI is a term used to measure the relative quality of a received signal to a client device, but has no absolute value. […] Cisco, for example, uses a 0-100 scale, while Atheros uses 0-60. It’s all up to the manufacturer (which is why RSSI is a relative index), but you can infer that the higher the RSSI value is, the better the signal is. […] There’s a lot of math we could get into, but basically, the closer to 0 dBm, the better the signal is. [-- Source](https://www.metageek.com/training/resources/understanding-rssi.html)
 | Signal Strength | TL;DR                | 
 |-----------------|---------------------------| 
 | -30 dBm |     Amazing        | 
@@ -367,11 +368,21 @@ The nearby device sensor records wifi connections.
 ```markdown
 {
     'data': {
-        'bssid': 'e4:c3:2a:d5:d7:0b',
-        'rssi': -94,
-        'ssid': 'willet'},
+        'strength': '-95',
+        'type': 'bluetooth',
+        'name': 'device1',
+        'address': '3FC6C779-D79C-E00A-B711-5B2C8CA3D313'},
    'sensor': 'lamp.nearby_device',
    'timestamp': 1649866397374
+},
+{
+   'data': {
+        'strength': 0,
+        'type': 'wifi',
+        'name': 'CNW-WLAN',
+        'address': 'e2:cc:ac:be:67:4d'},
+   'sensor': 'lamp.nearby_device',
+   'timestamp': 1659729455051},
 }
 ```
 
