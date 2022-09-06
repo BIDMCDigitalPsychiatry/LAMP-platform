@@ -15,7 +15,7 @@ Please note that the lamp.analytics 'user_agent' information was updated in Spri
 #### Example
 
 ```markdown
-utils.useful_functions_misc.get_os_version("U1234567890")
+cortex.utils.misc_functions.get_os_version("U1234567890")
 ```
 Output:
 ```markdown
