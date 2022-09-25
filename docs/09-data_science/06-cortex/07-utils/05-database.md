@@ -2,7 +2,7 @@
 
 **Warning: Directly interacting with the database can carry some risk. Please read the documentation carefully.**
 
-These functions provide a way to directly interact with a LAMP MongoDB database and add some functionality that is not currently present in the LAMP API, such as restoring deleted activities or participants. These functions include safeguards that should prevent unintended consequences, but directly interacting with the database can carry some risk, so please read the documentation for these functions carefully before using them. Please report any issues to community.lamp.digital.
+These functions provide a way to directly interact with a LAMP MongoDB database and add some functionality that is not currently present in the LAMP API, such as restoring deleted activities or participants. Deleting a patient or activity through the mindLAMP dashboard does not actually erase their data from a server. Rather, it applies the 'delete' FLAG to them. As such, these functions include safeguards that should prevent unintended consequences, but directly interacting with the database can carry some risk, so please read the documentation for these functions carefully before using them. Please report any issues to community.lamp.digital. 
 
 Please note: if you are using an older version of LAMP, e.g. one using CouchDB, these functions may not work.
 
