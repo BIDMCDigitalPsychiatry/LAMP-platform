@@ -11,7 +11,7 @@ There are different ways for your organization to self-deploy the LAMP Platform,
 **Backend**
 
 - **Database**
-    - The noSQL database used for modern sensor data collection is CouchDB, but currently for legacy data support, Microsoft SQL Server must also be configured as part of deployment.
+    - The noSQL databases used for modern sensor data collection are CouchDB and MongoDB.
     - Data backup must be manually configured as different organizations will expect different sizes and frequency of data storage, along with variance in data policies.
     - These database components are not built or maintained as part of the LAMP Platform but are required for its usage.
 - **Server**

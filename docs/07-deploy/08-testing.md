@@ -4,11 +4,16 @@ Once you've deployed the `LAMP-server` and `LAMP-database`, you'll be able to us
 
 All data is encrypted before communication between your browser or the app to and from your newly deployed server. No data will be communicated with any other server, including the default API server at [api.lamp.digital](http://api.lamp.digital) or other third party services.
 
-1. Verify the status of the CouchDB database.
+1. Verify the status of the database.
 
     ```bash
     curl -k https://admin:DB_PASSSWORD_HERE@db.example.com/
     ```
+    or 
+    ```bash
+    mongo 'mongodb://username:password@databaselocation:port/databasename'
+    ```
+    If the `mongo` command cannot be found, you can also try `mongosh`
 
 2. Verify the status of the LAMP Platform API Server.
 
