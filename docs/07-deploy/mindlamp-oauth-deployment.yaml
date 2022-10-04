@@ -1,0 +1,275 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mindlamp
+---
+#This will deploy the dashboard image to our AKS Cluster
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mindlamp-dashboard
+  namespace: mindlamp
+  labels:
+    app: mindlamp-dashboard 
+spec:
+  replicas: 1
+  strategy: 
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: mindlamp-dashboard # Important to remember this, as it will be used later on
+  template:
+    metadata:
+      labels:
+        app: mindlamp-dashboard
+    spec:
+      containers:
+      - image: # <LINK TO OUR DOCKER IMAGE>
+        imagePullPolicy: Always
+        name: mindlamp-dashboard
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "2000Mi"
+          requests:
+            cpu: "50m"
+            memory: "100Mi"
+        ports:
+        - containerPort: 80
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+---
+# This file will create a public entry point (IP address) for our application
+- apiVersion: v1
+  kind: Service
+  metadata:
+    name: dashboard-service
+    namespace: mindlamp
+  spec:
+    type: LoadBalancer # Could be ClusterIP if we're using an ingress controller (Need to expand on this)
+    ports:
+      - targetPort: 80
+        name: port80
+        port: 80
+        protocol: TCP
+    selector:
+      app: mindlamp-dashboard # This name here has to match with the one on the deployment file
+---
+# NATS deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: message-queue
+  name: message-queue
+  namespace: mindlamp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: message-queue
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: message-queue
+    spec:
+      containers:
+        - name: message-queue
+          image: nats:2.1.9-alpine3.12
+          imagePullPolicy: "Always"
+          ports:
+          - containerPort: 4222
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "1000Mi"
+            requests:
+              cpu: "50m"
+              memory: "100Mi"
+  restartPolicy: Always
+  serviceAccountName: ""
+  volumes: null
+---
+# NATS internal service, to communicate with the server
+- apiVersion: v1
+  kind: Service
+  metadata:
+    name: message-queue-service
+    namespace: mindlamp
+  spec:
+    type: ClusterIP
+    ports:
+      - targetPort: 4222
+        name: port4222
+        port: 4222
+        protocol: TCP
+    selector:
+      app: message-queue
+---
+# REDIS DEPLOYMENT
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app: cache
+  name: cache
+  namespace: mindlamp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cache
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+      labels:
+        app: cache
+    spec:
+      containers:
+      - name: cache
+        image: redis:6.0.8-alpine
+        imagePullPolicy: ""
+        ports:
+        - containerPort: 6379
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "1000Mi"
+          requests:
+            cpu: "50m"
+            memory: "100Mi"
+        livenessProbe:
+          exec:
+            command:
+            - redis-cli 
+            - ping
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+---
+# REDIS Service
+- apiVersion: v1
+  kind: Service
+  metadata:
+    name: redis # It is important that this name is single word, or else it won't connect. Working on fixing this bug
+    namespace: mindlamp
+  spec:
+    type: ClusterIP
+    ports:
+      - targetPort: 6379
+        name: port6379
+        port: 6379
+        protocol: TCP
+    selector:
+      app: cache
+---
+# MINDLAMP Server Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mindlamp-server
+  labels:
+    app: mindlamp-server
+  namespace: mindlamp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mindlamp-server
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: mindlamp-server
+    spec:
+      containers:
+      - name: mindlamp-server
+        image: # <LINK TO OUR DOCKER IMAGE>
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        resources: 
+          limits:
+            cpu: "1000m"
+            memory: "2000Mi"
+          requests:
+            cpu: "50m"
+            memory: "100Mi"
+        env:
+        - name: DB
+          value: "<DB_CONNECTION_STRING>" # Connection string for our mongoDB compatible database.
+        - name: NATS_SERVER # This only needs to be changed if you modified any of the names for the services
+          value: message-queue-service:4222
+        - name: REDIS_HOST # This only needs to be changed if you modified any of the names for the services
+          value: redis://redis:6379
+        - name: HTTPS
+          value: "off"
+        - name: ROOT_KEY # Bits to encrypt data
+          value: "<ROOT_KEY>" # For example, 2646294A404E635166546A576E5A7234753778214125442A472D4B6150645367
+        - name: OAUTH_AUTH_URL # URL To start the OAuth 2.0 login Flow.
+          value: <OAUTH_AUTH_URL> # For Microsoft, it looks like this: https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/authorize
+        - name: OAUTH_TOKEN_URL # URL to redeem the Access Token
+          value: <OAUTH_TOKEN_URL> # For Microsoft, it looks like this https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/token
+        - name: OAUTH_LOGOUT_URL # This parameter is optional. If set, before logging out of microsoft we will be directed here to close the OAuth provider session
+          value: <OAUTH_LOGOUT_URL> # For Microsoft, it looks like this https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/logout?post_logout_redirect_uri=REDIRECT_URL
+        - name: OAUTH_CLIENT_ID
+          value: "<OAUTH_CLIENT_ID>" # For Microsoft, this is also our App Registration ID
+        - name: OAUTH_CLIENT_SECRET
+          value: "<APP_REGISTRATION_CLIENT_SECRET>"
+        - name: TOKEN_SECRET # Bits to sign our access tokens with
+          value: "<TOKEN_SECRET>" # For example, QfTjWnZq4t7w!z%C*F-JaNdRgUkXp2s5u8x/A?D(G+KbPeShVmYq3t6w9y$B&E)H
+        - name: OAUTH_REDIRECT_URI # This URL needs to be the dashboard URL. If our dashboard is hosted on https:/mindlamp.dashboard.com
+                                   # then that is the value we set here
+          value: "<REDIRECT_URL>"  # This URL needs to be configured in our app regitration 
+        - name: OAUTH_SCOPE
+          value: "offline_access email openid" # Basic permissions for login
+        - name: OAUTH
+          value: "on"
+        - name: DB_ADMIN_USERNAME
+          value: "<ADMINISTRATOR_MAIL>" # mcurbelo@orangeloops.com in my case
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+---
+# MINDLAMP Server Service 
+# This file will create a public entry point (IP address) for our application
+- apiVersion: v1
+  kind: Service
+  metadata:
+    name: server-service
+    namespace: mindlamp
+  spec:
+    type: LoadBalancer # Could be ClusterIP if we're using an ingress controller
+    ports:
+      - targetPort: 3000
+        name: port80
+        port: 80
+        protocol: TCP
+    selector:
+      app: mindlamp-server # This name here has to match with the one on the deployment file
