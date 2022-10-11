@@ -5,7 +5,7 @@ computed from raw feature: 'cortex.raw.gps'
 
 #### Description
 
-The time spent at the most visited (i.e. greatest number of GPS points collected there) location (assumed to be home). For this computation, significant locations defaults to 'mode' which means that the most common locations will be based on the mode for the time period of the resolution given. Therefore, it is possible that the true "home" location may not be preserved over days. 
+The time spent at the most visited (i.e. greatest number of GPS points collected there) location (assumed to be home). For this computation, significant locations defaults to 'mode' which means that the most common locations will be based on the mode for the time period of the resolution given. Therefore, it is possible that the true "home" location may not be preserved over days. Note: On iOS, the accuracy of this feature may be improved by enabling "precise location" in permissions settings for mindLAMP. Without this toggle, this feature may be unreliable.
 
 #### Optional or required kwargs
 
