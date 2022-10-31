@@ -28,7 +28,7 @@ Sometimes, the app may log you out on its own. If this is the case, please try t
 
 ## App Won't Load
 
-If the app won't load there are two strategies. First, verify the strength of the wifi network you are using, as well as your cell Service. Sometimes the app buffering is simply a result of a poor connection. If there is not an issue with your device connectivity, you can always access the app through [your online browser](https://dashboard.lamp.digital/#/).
+If the app won't load there are two strategies. First, verify the strength of the wifi network you are using, as well as your cell Service. Sometimes the app buffering is simply a result of a poor connection. If there is not an issue with your device connectivity, you can always access the app through [the online dashboard](https://dashboard.lamp.digital/#/).
 
 <head>
   <meta name="google-site-verification" content="MDFm8izKofwRdAnUbqg2muDPnSlHISr1EVApzHUI-Z4" />
