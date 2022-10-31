@@ -26,6 +26,10 @@ For Android users, please go to settings, then apps & notifications. Proceed to 
 
 Sometimes, the app may log you out on its own. If this is the case, please try to give us as detailed of response as to when this happened and what other activities you may have been doing at the time you noticed the logout. We are currently investigating this issue, but because of the complexity of people having various phones, scenarios when logged out, and activities on their account, it will be a work in progress. If you experience any issues or have any feedback regarding this issue, please contact as at team@digitalpsych.org
 
+## App Won't Load
+
+If the app won't load there are two strategies. First, verify the strength of the wifi network you are using, as well as your cell Service. Sometimes the app buffering is simply a result of a poor connection. If there is not an issue with your device connectivity, you can always access the app through [your online browser](https://dashboard.lamp.digital/#/).
+
 <head>
   <meta name="google-site-verification" content="MDFm8izKofwRdAnUbqg2muDPnSlHISr1EVApzHUI-Z4" />
 </head>
