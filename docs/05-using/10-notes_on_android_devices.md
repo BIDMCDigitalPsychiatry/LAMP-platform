@@ -16,6 +16,6 @@ Certain mobile devices and software are recommended and discouraged for the use 
 These devices are RECOMMENDED for mindLAMP. While many other devices can and will operate mindLAMP, the following devices will produce the lowest bug output. 
 
 - iPhone 
-- Samsung Galaxy S, M & A Series
+- Samsung Galaxy A, M & S Series
 - Google Pixel 
 
