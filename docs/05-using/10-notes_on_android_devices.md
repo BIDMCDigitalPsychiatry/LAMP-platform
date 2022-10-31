@@ -12,5 +12,10 @@ Certain mobile devices and software are recommended and discouraged for the use 
 - mindLAMP cannot support android devices operating any android version older than Android 8. mindLAMP cannot support android devices operating Android Go, or android devices with low cpu/memory.
 
 **Whitelisted Devices**
-Coming soon.
+
+These devices are RECOMMENDED for mindLAMP. While many other devices can and will operate mindLAMP, the following devices will produce the lowest bug output. 
+
+- iPhone 
+- Samsung Galaxy S, M & A Series
+- Google Pixel 
 
