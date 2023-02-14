@@ -123,7 +123,7 @@ docker stack deploy --compose-file traefik.yml router
 Create a `/data` folder in the node that will be hosting the database(s).
 
 ```bash
-mkdir -p /data/couchdb
+mkdir -p /data/db
 ```
 
 You must first generate two cryptographically secure hexadecimal strings. Substitute these strings in the stack file below as indicated by the environment variables after the `#`.
@@ -153,7 +153,7 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
         environment:
           HTTPS: 'off'
           ROOT_KEY: '32_BIT_ENCRYPTION_KEY_HERE'
-          CDB: 'http://admin:DB_PASSSWORD_HERE@database:5984/'
+          DB: 'mongodb://admin:DB_PASSSWORD_HERE@database:27017/'
           PUSH_API_GATEWAY: 'https://app-gateway.lamp.digital/'
           PUSH_API_KEY: 'YOUR_PUSH_KEY_HERE'
           DASHBOARD_URL: 'dashboard.lamp.digital'
@@ -182,14 +182,12 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
             constraints:
               - node.role == manager
       database:
-        image: apache/couchdb:3.1
-        healthcheck:
-          test: curl --fail --silent http://localhost:5984/_up || exit 1
+        image: mongo:6.0.4
         environment:
-          COUCHDB_USER: 'admin'
-          COUCHDB_PASSWORD: 'DB_PASSWORD_HERE'
+          MONGO_INITDB_ROOT_USERNAME: 'admin'
+          MONGO_INITDB_ROOT_PASSWORD: 'DB_PASSWORD_HERE'
         volumes:
-          - /data/couchdb:/opt/couchdb/data
+          - /data/db:/data/db
         networks:
           - public
         deploy:
@@ -197,12 +195,6 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
           update_config:
             order: stop-first
             failure_action: rollback
-          labels:
-            traefik.enable: 'true'
-            traefik.http.routers.lamp_database.entryPoints: 'websecure'
-            traefik.http.routers.lamp_database.rule: 'Host(`db.example.com`)'
-            traefik.http.routers.lamp_database.tls.certresolver: 'default'
-            traefik.http.services.lamp_database.loadbalancer.server.port: 5984
           placement:
             constraints:
               - node.role == manager
