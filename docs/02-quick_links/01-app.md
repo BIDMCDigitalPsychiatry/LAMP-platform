@@ -18,7 +18,7 @@ slug: /app
 2. Open it and sign into the patient’s account. 
 3. **Agree to all permissions dialogs that prompt the user.**
 
-    **EVERY SINGLE PERMISSION MUST BE ACCEPTED OTHERWISE NO SENSOR DATA WILL BE COLLECTED.**
+    **GPS COLLECTION PERMISSION MUST SET TO "ALWAYS" TO COLLECT HIGH FREQUENCY SENSOR DATA.**
 
 4. Once signed in and viewing the Feed tab, leave the app.
 5. Open Settings app and scroll down to the “mindLAMP” item.
