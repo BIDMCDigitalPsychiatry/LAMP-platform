@@ -7,6 +7,9 @@ There are different ways for your organization to self-deploy the LAMP Platform,
 **→** *Be sure to open the toggles on the left-hand side to learn more about what each component does.*
 
 ---
+**Consortium**
+
+To deploy mindLAMP and to receive support from BIDMC, we require all interested parties to become official collaborators by joining the **mindLAMP consortium**. Becoming an official partner will require IRB approval and a data sharing agreement between your institution and BIDMC.
 
 **Backend**
 
