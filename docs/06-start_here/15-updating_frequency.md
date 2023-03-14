@@ -1,4 +1,4 @@
-Modifying a the frequency of a sensor's data collection
+# Modifying a the frequency of a sensor's data collection
 
 Sensors collect at default frequencies unless otherwise specified. Modifying the frequency can either increase density (higher Hz) or decrease data burden and storage costs (lower Hz).
 
