@@ -29,7 +29,7 @@ To create a new User Admin or Practice Lead, follow the steps below:
 
 If accessing the mindLAMP dashboard from a user (specifically a researcher or clinician) standpoint, there are an additional two new views at this user level: **Simple Mode** and **Advanced Mode**
 
-This can be found by looking in the top right corner, in which there will be a small, oval-shaped button that can toggle between "Simple Mode" and "Advanced Mode". See the images below for a visual. Simple mode simplifies the view so that only the users tab is visible in case a clinician as no need for the extra features and the advanced view is for researchers who require the full usage of LAMP's research capabilities. By default, views will start off in Simple Mode.
+This can be found by looking in the top right corner, in which there will be a small, oval-shaped button that can toggle between "Simple Mode" and "Advanced Mode". See the images below for a visual. Simple mode simplifies the view so that only the users tab is visible in case a clinician as no need for the extra features and the advanced view is for researchers who require the full usage of LAMP's research capabilities. By default, views will start off in Advanced Mode.
 
 | Simple Mode  | Advanced Mode |
 | ----------- | ----------- |
