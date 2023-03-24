@@ -8,6 +8,14 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 
 :::
 
+
+### Digital Futures in Mind: Reflecting on Technological Experiments in Mental Health & Crisis Support
+
+```
+Jonah Bossewitch, Lydia X. Z. Brown, Piers Gooding, Leah Harris, James Horton, Simon Katterl, Keris Myrick, Kelechi Ubozoh and Alberto Vasquez. Digital Futures in Mind: Reflecting on Technological Experiments in Mental Health & Crisis Support. (2023)
+```
+
+
 ### Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample.
 
 [![](assets/Springer.1.19.2022.png)](assets/Springer.1.19.2022.pdf)
@@ -15,7 +23,6 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 ```
 Gansner, M., Nisenson, M., Lin, V. et al. Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample. Child Psychiatry Hum Dev (2022). https://doi.org/10.1007/s10578-022-01313-y
 ```
-
 
 ### Global Collaboration Around Digital Mental Health: The LAMP Consortium.
 
