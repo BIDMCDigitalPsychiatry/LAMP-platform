@@ -6,11 +6,12 @@ To use Google OAuth we’ll need to generate credentials for MindLAMP
 1.	Create a Project in Google Cloud App as explained here: https://developers.google.com/identity/protocols/oauth2/web-server#enable-apis
 2.	Create an OAuth Client in the Credentials section as explained here:
 https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred
-    a.	Note that you’ll need to add the dashboard url in the authorized urls. 
-(FE: https://dashboard.lamp.digital)
-    b.	As redirect url you’ll need to add the OAuth entry point of the app. That’s the dashboard url followed by “/oauth”.
-(FE: https://dashboard.lamp.digital/oauth)
-    3.	Copy the client id and the client secret as we’ll need the to configure the server.
+
+    a.	Note that you’ll need to add the dashboard url in the authorized urls. (FE: https://dashboard.lamp.digital)
+
+    b.	As redirect url you’ll need to add the OAuth entry point of the app. That’s the dashboard url followed by “/oauth”. (FE: https://dashboard.lamp.digital/oauth)
+ 
+ 3.	Copy the client id and the client secret as we’ll need the to configure the server.
 
 Configure OAuth in the MindLAMP server:
 
