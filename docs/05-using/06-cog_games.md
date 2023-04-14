@@ -23,9 +23,10 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 
 </details>
 
+
 ### Jewels A (left) and B (right) Sample Game Play 
 
-![Jewels Samples](https://user-images.githubusercontent.com/82968538/130969826-0f467610-b988-451b-a57d-207827208986.png)
+![Jewels](https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png)
 
 
 ### Customization
@@ -37,7 +38,7 @@ The digitized version offers the opportunity to customize Jewels, using the Acti
 1. **Variant:** Here, clinicians and researchers can define which Variant, A or B, they would like patients to play. 
 2. **Mode:** The game can be played at four different difficulty modes - Beginner, Intermediate, Advanced, or Expert. Clinicians can customize which difficulty mode they would like patients to play, by selecting from the Mode category.
     a. Each mode varies by the Duration the player has to complete the trail. This can also be changed for each mode, by changing the various Durations, in seconds. 
-3. **Initial Diamond Count:** This can be used to determine the number of jewels that appear at the Level 1.
+3. **Initial Diamond Count:** This can be used to determine the number of jewels that appear at the Level 1, the maximum is 25.
 4. **Initial Shape Count:** If so desired, the game can present not 1 or 2 different shapes of jewels, as it would for Trails A and B respectively, but any number of shapes. 
 5. **Bonus points:** As an additional gamification strategy, bonus points can be awarded for each level completed.
 
@@ -96,6 +97,17 @@ Each trial allows the user to play 5 levels as a default. Researchers and clinic
 **Forward Spatial Span:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the same order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
 
 **Backwards Spatial Span:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the REVERSE order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
+
+## Spin the Wheel
+
+Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-making and risk-taking behavior. The game presents the user with a wheel that can be spun by selecting one of four buttons at the bottom of the screen. Each spin can result in a win or loss of money, and the total amount remaining is displayed at the top of the screen. Participants start with $2000 and have 20 spins per game by default. 
+
+### Spin the Wheel Sample Game Play 
+![igt](https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png)
+
+### Customization 
+The task can be customized by the clinician or researcher in the Activity settings, to adjust the number of spins each game and the probability of the wheels stopping at different amounts to create different risk levels.
+![igt_dashboard](https://user-images.githubusercontent.com/103677721/232078729-1b21ca6b-6939-43a1-9935-262a2cdaf1fe.png)
 
 
 ## Cats and Dogs
