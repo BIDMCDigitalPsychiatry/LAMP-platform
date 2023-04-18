@@ -132,7 +132,6 @@ You must first generate two cryptographically secure hexadecimal strings. Substi
 openssl rand -hex 8 # DB_PASSWORD_HERE
 openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
 ```
-
 - **Docker Stack:** `**lamp.yml**`
 
     **You MUST replace the following configuration variables in your copy of this file:**
@@ -143,8 +142,6 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
     4. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
     5. `db.example.com` Your internal database management domain.
     6. `dashboard.example.com` The address you will use to access the LAMP dashboard.
-
-If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
     ```yaml
     version: '3.7'
@@ -256,6 +253,8 @@ If you are deploying more than one stack, please be sure that all traefik variab
       public:
         external: true
     ```
+    
+Note: If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
 If you've deployed the **Swarm Management Console**, log into your swarm cluster and navigate to the `Stack` tab on the left sidebar. Paste the contents of the stack file into the editor pane and tap "Deploy", instead of running the command below. 
 
