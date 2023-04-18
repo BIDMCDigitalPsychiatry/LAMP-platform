@@ -136,12 +136,11 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
 
     **You MUST replace the following configuration variables in your copy of this file:**
 
-    1. `32_BIT_ENCRYPTION_KEY_HERE` See above. Plese confirm that this key has the correct number of characters (64).
-    2. `DB_PASSSWORD_HERE` See above.
-    3. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)**
-    4. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
-    5. `db.example.com` Your internal database management domain.
-    6. `dashboard.example.com` The address you will use to access the LAMP dashboard.
+    1. `dashboard.example.com` The address you will use to access the LAMP dashboard.
+    2. `32_BIT_ENCRYPTION_KEY_HERE` See above. Plese confirm that this key has the correct number of characters (64).
+    3. `DB_PASSSWORD_HERE` See above.
+    4. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)**
+    5. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
 
     ```yaml
     version: '3.7'
