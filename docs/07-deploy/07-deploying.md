@@ -126,7 +126,7 @@ Create a `/data` folder in the node that will be hosting the database(s).
 mkdir -p /data/db
 ```
 
-You must first generate two cryptographically secure hexadecimal strings. Substitute these strings in the stack file below as indicated by the environment variables after the `#`.
+You must first generate two cryptographically secure hexadecimal strings. Substitute these strings in the stack file below as indicated by the environment variables after the `#`. The strings must be of the correct length, or deployment will not work.
 
 ```bash
 openssl rand -hex 8 # DB_PASSWORD_HERE
@@ -137,15 +137,45 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
 
     **You MUST replace the following configuration variables in your copy of this file:**
 
-    1. `32_BIT_ENCRYPTION_KEY_HERE` See above.
+    1. `32_BIT_ENCRYPTION_KEY_HERE` See above. Plese confirm that this key has the correct number of characters (64).
     2. `DB_PASSSWORD_HERE` See above.
     3. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)**
     4. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
     5. `db.example.com` Your internal database management domain.
+    6. `dashboard.example.com` The address you will use to access the LAMP dashboard.
+
+If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
     ```yaml
     version: '3.7'
     services:
+      dashboard:
+        image: ghcr.io/bidmcdigitalpsychiatry/lamp-dashboard:2023
+        logging:
+            driver: "json-file"
+            options:
+              max-size: "50m"
+        environment:
+          REACT_APP_LAMP_RESEARCHER_ALIAS: 'Investigator'
+        networks:
+          - public
+        healthcheck:
+          test: wget --no-verbose --tries=1 --spider http://localhost:80 || exit 1
+        deploy:
+          mode: replicated
+          update_config:
+            order: start-first
+            failure_action: rollback
+          labels:
+            portainer.autodeploy: 'true'
+            traefik.enable: 'true'
+            traefik.http.routers.lamp_dashboard.entryPoints: 'websecure'
+            traefik.http.routers.lamp_dashboard.rule: 'Host(`dashboard.example.com`)'
+            traefik.http.routers.lamp_dashboard.tls.certresolver: 'default'
+            traefik.http.services.lamp_dashboard.loadbalancer.server.port: 80
+          placement:
+            constraints:
+              - node.role == manager
       server:
         image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2022
         healthcheck:
