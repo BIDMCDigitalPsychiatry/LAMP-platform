@@ -142,8 +142,11 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
     4. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)**
     5. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
 
-If you do not plan to self-host the LAMP dashboard:
+It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital) or to self-host the dashboard. Self-hosting will require the addition of a dashboard service to the LAMP stack.
 
+1. If you do not plan to self-host the LAMP dashboard:
+
+    ```yaml
     version: '3.7'
     services:
       server:
@@ -225,9 +228,11 @@ If you do not plan to self-host the LAMP dashboard:
     networks:
       public:
         external: true
+    ```yaml
     
-If you plan to self-host the LAMP dashboard:
+2. If you plan to self-host the LAMP dashboard:
 
+    ```yaml
     version: '3.7'
     services:
       dashboard:
@@ -336,6 +341,7 @@ If you plan to self-host the LAMP dashboard:
     networks:
       public:
         external: true
+    ```yaml
 
 Note: If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
