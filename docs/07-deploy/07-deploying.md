@@ -144,7 +144,6 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
 
 If you do not plan to self-host the LAMP dashboard:
 
-    ```yaml
     version: '3.7'
     services:
       server:
@@ -226,11 +225,9 @@ If you do not plan to self-host the LAMP dashboard:
     networks:
       public:
         external: true
-    ```
     
 If you plan to self-host the LAMP dashboard:
 
-    ```yaml
     version: '3.7'
     services:
       dashboard:
@@ -339,7 +336,6 @@ If you plan to self-host the LAMP dashboard:
     networks:
       public:
         external: true
-    ```
 
 Note: If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
