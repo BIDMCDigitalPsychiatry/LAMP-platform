@@ -136,11 +136,99 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
 
     **You MUST replace the following configuration variables in your copy of this file:**
 
-    1. `dashboard.example.com` The address you will use to access the LAMP dashboard.
+    1. `dashboard.example.com` The address you will use to access the LAMP dashboard. (If deploying the dashboard)
     2. `32_BIT_ENCRYPTION_KEY_HERE` See above. Plese confirm that this key has the correct number of characters (64).
     3. `DB_PASSSWORD_HERE` See above.
     4. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)**
     5. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
+
+If you do not plan to self-host the LAMP dashboard:
+
+    ```yaml
+    version: '3.7'
+    services:
+      server:
+        image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2022
+        healthcheck:
+          test: wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
+        environment:
+          HTTPS: 'off'
+          ROOT_KEY: '32_BIT_ENCRYPTION_KEY_HERE'
+          DB: 'mongodb://admin:DB_PASSSWORD_HERE@database:27017/'
+          PUSH_API_GATEWAY: 'https://app-gateway.lamp.digital/'
+          PUSH_API_KEY: 'YOUR_PUSH_KEY_HERE'
+          DASHBOARD_URL: 'dashboard.lamp.digital'
+          REDIS_HOST: 'redis://cache:6379/0'
+          NATS_SERVER: 'message_queue:4222'
+        networks:
+          - default
+          - public
+        logging:
+          options:
+            max-size: "10m"
+            max-file: "3"
+        deploy:
+          mode: replicated
+          update_config:
+            order: start-first
+            failure_action: rollback
+          labels:
+            traefik.enable: 'true'
+            traefik.docker.network: 'public'
+            traefik.http.routers.lamp_server.entryPoints: 'websecure'
+            traefik.http.routers.lamp_server.rule: 'Host(`api.example.com`)'
+            traefik.http.routers.lamp_server.tls.certresolver: 'default'
+            traefik.http.services.lamp_server.loadbalancer.server.port: 3000
+          placement:
+            constraints:
+              - node.role == manager
+      database:
+        image: mongo:6.0.4
+        environment:
+          MONGO_INITDB_ROOT_USERNAME: 'admin'
+          MONGO_INITDB_ROOT_PASSWORD: 'DB_PASSWORD_HERE'
+        volumes:
+          - /data/db:/data/db
+        networks:
+          - public
+        deploy:
+          mode: replicated
+          update_config:
+            order: stop-first
+            failure_action: rollback
+          placement:
+            constraints:
+              - node.role == manager
+      cache:
+        image: redis:6.0.8-alpine
+        healthcheck:
+          test: redis-cli ping
+        deploy:
+          mode: replicated
+          update_config:
+            order: stop-first
+            failure_action: rollback
+          placement:
+            constraints:
+              - node.role == manager
+      message_queue:
+        image: nats:2.1.9-alpine3.12
+        healthcheck:
+          test: wget --no-verbose --tries=1 --spider http://localhost:8222/varz || exit 1
+        deploy:
+          mode: replicated
+          update_config:
+            order: start-first
+            failure_action: rollback
+          placement:
+            constraints:
+              - node.role == manager
+    networks:
+      public:
+        external: true
+    ```
+    
+If you plan to self-host the LAMP dashboard:
 
     ```yaml
     version: '3.7'
@@ -252,7 +340,7 @@ openssl rand -hex 32 # 32_BIT_ENCRYPTION_KEY_HERE
       public:
         external: true
     ```
-    
+
 Note: If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
 If you've deployed the **Swarm Management Console**, log into your swarm cluster and navigate to the `Stack` tab on the left sidebar. Paste the contents of the stack file into the editor pane and tap "Deploy", instead of running the command below. 
