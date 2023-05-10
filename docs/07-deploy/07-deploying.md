@@ -278,3 +278,5 @@ docker stack deploy --compose-file lamp.yml lamp
 ## Maintaining and Updating the LAMP Platform
 
 If you are using this Docker Stack provided, you will only need to run a `docker service update` command on the API Server to pull the latest image. Because Docker image versioning is calendar-based, at the moment you will manually need to update from `2022` to `2023`, and so on.
+
+If you are deploying multiple LAMP stacks, **please ensure the `traefik` router rules have been renamed!** (i.e. Ensure `traefik.http.routers.lamp_dashboard.rule` and `traefik.http.routers.lamp_dashboard_2.rule` are distinct.) If two or more instances of the same rule exist, the router will overwrite the first instance. 
