@@ -228,7 +228,7 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
     networks:
       public:
         external: true
-    ```yaml
+    ```
     
 2. If you plan to self-host the LAMP dashboard, please add the service below to your modified stack file as well:
 
@@ -265,7 +265,7 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
     networks:
       public:
         external: true
-    ```yaml
+    ```
 
 Note: If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
