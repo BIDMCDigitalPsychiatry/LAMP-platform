@@ -39,6 +39,7 @@
 - [ ]  Does the device have a SIM card? (Is it connected to Cellular data?)
 - [ ]  Is the device powered on at all times of the day?
 - [ ]  Are all permissions granted for mindLAMP in the Settings app?
+- [ ]  Is Precise Location turned on (found under Location Access)?
 
 ### Beta
 
@@ -91,6 +92,7 @@ If you'd like to test the beta version of the app, please follow the instruction
 - [ ]  Does the device have a SIM card? (Is it connected to Cellular data?)
 - [ ]  Is the device powered on at all times of the day?
 - [ ]  Are the required permissions (above) granted correctly in the Settings app?
+- [ ]  Are they signed in to Google Fit?
 
 <details>
 
