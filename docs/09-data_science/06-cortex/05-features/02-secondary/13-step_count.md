@@ -13,12 +13,13 @@ Step count aggregates the number of steps.
 - `start`: (int, units: ms) the start time.
 - `end`: (int, units: ms) the end time.
 - `resolution`: (int, units: ms, default: 1 day = 86400000 ms) the resolution over which to compute features.
+- `data_type`: (str; values: `health`, `pedometer`, `watch`; default: `health`) the source from which the step data is collected. `health` is from the Health app (Apple) or GoogleFit app (Android); `pedometer` is from the phone's accelerometer sensor and only works on Apple phones; and `watch` is from an Apple watch device. 
 
 #### Data
 
 - `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
 - `value`: (int, units: None) the number of steps.
-(_Warning: Step data may be cummulative which may result in inaccurate results._)
+(_Warning: Step data, particularly step data collected prior to the version `2023.5.2`,  may be cummulative which may result in inaccurate results._)
 #### Example
 
 ```markdown
