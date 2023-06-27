@@ -137,7 +137,7 @@ openssl rand -hex 32 # ROOT_ENCRYPTION_KEY_HERE
     **You MUST replace the following configuration variables in your copy of this file:**
 
     1. `dashboard.example.com` The address you will use to access the LAMP dashboard. (If deploying the dashboard)
-    2. `64_BIT_ENCRYPTION_KEY_HERE` See above. Plese confirm that this key has the correct number of characters (64).
+    2. `ROOT_ENCRYPTION_KEY_HERE` See above. Please confirm that this key has the correct number of characters (64).
     3. `DB_PASSSWORD_HERE` See above.
     4. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)**
     5. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
