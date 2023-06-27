@@ -130,7 +130,7 @@ You must first generate two cryptographically secure hexadecimal strings. Substi
 
 ```bash
 openssl rand -hex 8 # DB_PASSWORD_HERE
-openssl rand -hex 64 # 64_BIT_ENCRYPTION_KEY_HERE
+openssl rand -hex 32 # ROOT_ENCRYPTION_KEY_HERE
 ```
 - **Docker Stack:** `**lamp.yml**`
 
@@ -155,7 +155,7 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
           test: wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
         environment:
           HTTPS: 'off'
-          ROOT_KEY: '64_BIT_ENCRYPTION_KEY_HERE'
+          ROOT_KEY: 'ROOT_ENCRYPTION_KEY_HERE'
           DB: 'mongodb://admin:DB_PASSSWORD_HERE@database:27017/'
           PUSH_API_GATEWAY: 'https://app-gateway.lamp.digital/'
           PUSH_API_KEY: 'YOUR_PUSH_KEY_HERE'
