@@ -3,8 +3,8 @@
 
 Certain mobile devices and software are recommended and discouraged for the use of mindLAMP. When implementing mindLAMP, keep the following guidelines in mind when trying to avoid technical difficulties or optimize app efficacy. 
 
-- Android devices are more likely to experience errors with mindLAMP relative to iOS. Android is common parlance for non-iOS devices, encompassing a wider range of smartphones, with vary levels of quality control.
-- Android devices typically remain ‘usable’ for longer periods compared to iOS devices, but this does not mean mindLAMP runs well on old devices. We do not recommend operating systems older than Android 8 be used with mindLAMP (as of 10/28/2022). Device age is pertinent to software, as some older android devices CANNOT be upgraded to more recent versions. Specific device age cutoffs TBA.
+- Android devices are more likely to experience errors with mindLAMP relative to iOS. Android is common parlance for non-iOS devices, encompassing a wider range of smartphones, with varying levels of quality control.
+- Android devices typically remain ‘usable’ for longer periods compared to iOS devices, but this does not mean mindLAMP runs well on old devices. We do not recommend operating systems older than Android 8 be used with mindLAMP (as of 10/28/2022). Device age is pertinent to software, as some older android devices CANNOT be upgraded to more recent versions. 
 - A new, high-end android device such as Samsung Galaxy or Google Pixel will operate mindLAMP comparably to a new, high-end iOS device.
 
 **Devices and Software to Avoid**
