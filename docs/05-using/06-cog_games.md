@@ -196,8 +196,20 @@ Participants are given points based on the number of taps they made before they 
 *Tap the button to 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
 
 
-## Coming Soon: Maze Task
-The Maze task can be used to measure motor control and problem solving. Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases each level.  
+## Maze Task
+The Maze task can be used to measure motor control and problem solving. Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases with each level (more balls, more intricate puzzle designs).
 
 ### Sample Game Play
 ![Screenshot 2023-04-19 144815](https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png)
+
+### Customizations
+
+The game automatically progresses as levels are completed. There are no researcher-defined customizations necessary.
+
+### Scoring
+
+Participants are scored by the time taken to complete each level as well as the number of levels completed.
+
+### Sample Instructions
+
+*In this game, you can til your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
