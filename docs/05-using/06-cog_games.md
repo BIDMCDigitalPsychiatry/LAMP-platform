@@ -114,7 +114,7 @@ The task can be customized by the clinician or researcher in the Activity settin
 
 Cats and Dogs is a task that tests multiple domains at once: visual and working memory, attention, response control, and set-shifting. Users must remember the location of multiple stimuli, remember which stimuli to respond to and which to ignore, reproduce the location of the response stimuli from memory, and switch between which stimuli to pay attention to. 
 
-In this task, participants are first shown a pattern of boxes. The boxes temporarily lift, to reveal the image of a dog or a cat behind some of them. Participants are asked to select the boxes which have . At higher levels, participants must switch whether to respond to the the cat or the dog. 
+In this task, participants are first shown a pattern of boxes. The boxes temporarily lift, to reveal the image of a dog or a cat behind some of them. Participants are asked to select the boxes which a cat or dog behind them. At higher levels, participants must switch whether to respond to the the cat or the dog. 
 
 The cat and dog cues assess response control and set-shifting as go/no-go stimuli: participants must respond to one, but not the other, and then change which to respond to and which to ignore when instructed.
 
@@ -135,6 +135,9 @@ The animal stimuli and the box together assess visual memory, working memory, an
 
 ![C D Rules](https://user-images.githubusercontent.com/82968538/130973343-b1a41782-c9a2-493d-9a37-748e4900cd93.png)
 
+### Customization
+
+The game automatically progresses as levels are completed. There are no researcher-defined customizations necessary.
 
 ### Sample Instructions
 
