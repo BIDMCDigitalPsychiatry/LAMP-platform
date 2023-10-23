@@ -212,4 +212,4 @@ Participants are scored by the time taken to complete each level as well as the 
 
 ### Sample Instructions
 
-*In this game, you can til your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
+*In this game, you can tilt your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
