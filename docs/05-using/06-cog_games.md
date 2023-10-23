@@ -197,6 +197,7 @@ Participants are given points based on the number of taps they made before they 
 
 
 ## Maze Task
+
 The Maze task can be used to measure motor control and problem solving. Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases with each level (more balls, more intricate puzzle designs).
 
 ### Sample Game Play
@@ -213,3 +214,25 @@ Participants are scored by the time taken to complete each level as well as the 
 ### Sample Instructions
 
 *In this game, you can tilt your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
+
+
+## Symbol-Digital Substitution
+
+The symbol-digital substitution task assesses motor abilities, attention, the visuospatial sketchpad, and short-term memory. Participants are shown a series of symbols. They are also shown a grid which maps various symbols to other symbols. For each successive symbol, participants are required to press a button containing the symbol which corresponds to the symbol shown (according to the map).
+
+### Sample Game Play
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/103652751/49d1b537-66e9-47e8-8025-fc99ec951356
+
+### Customizations
+
+**Number of symbols**: The researcher can choose the number of symbols to appear
+
+**Duration**: The number of seconds the task will last
+
+### Scoring
+
+Participants are scored according to the total number of correct symbols pressed given the timeframe.
+
+### Sample Instructions
+
+*In this game, you will be shown a symbol in the center of the screen. This symbol will correspond to another symbol. Check the symbol-mapping shown at the top of the screen and look for your symbol. Identify the symbol which corresponds to your symbol. Once you find the corresponding symbol, select the corresponding symbol at the bottom of the screen. The faster you move, the more points you will accrue.*
