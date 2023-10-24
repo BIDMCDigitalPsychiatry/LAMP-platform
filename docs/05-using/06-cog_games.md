@@ -241,4 +241,4 @@ Participants are scored according to the total number of correct symbols pressed
 
 ### Sample Instructions
 
-*In this game, you will be shown a symbol in the center of the screen. This symbol will correspond to another symbol. Check the symbol-mapping shown at the top of the screen and look for your symbol. Identify the symbol which corresponds to your symbol. Once you find the corresponding symbol, select the corresponding symbol at the bottom of the screen. The faster you move, the more points you will accrue.*
+
