@@ -221,13 +221,11 @@ Participants are scored by the time taken to complete each level as well as the 
 
 ## Symbol-Digital Substitution
 
-The symbol-digital substitution task assesses motor abilities, attention, the visuospatial sketchpad, and short-term memory. Participants are shown a series of symbols (greek letter). They are also shown a grid which maps various symbols to digits (1-9). For each successive symbol, participants are required to press the button containing the corresponding digit. Example: Participant is shown greek letter alpha. According to the map, alpha corresponds to "4". The participant then selects the "4" button.
+The symbol-digital substitution task assesses motor abilities, attention, the visuospatial sketchpad, and short-term memory. Participants are shown a series of symbols (greek letter). They are also shown a grid which maps various symbols to digits (1-9). For each successive symbol, participants are required to press the button containing the corresponding digit. Example: Participant is shown greek letter α. According to the map, α corresponds to "4". The participant then selects the "4" button.
 
 ### Sample Game Play
 
 Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2".
-<img width="1439" alt="Screen Shot 2023-10-23 at 2 04 54 PM" src="https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/103652751/c237848f-1e67-4fea-b844-ecec79740067">
-
 
 ### Customizations
 
