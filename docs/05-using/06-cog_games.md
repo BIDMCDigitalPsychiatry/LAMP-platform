@@ -227,7 +227,7 @@ The symbol-digital substitution task assesses motor abilities, attention, the vi
 
 Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2".
 
-![Screenshot 2023-10-24](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/103652751/d3ce3c9f-1615-405d-95b6-a1a4c4fe46ee.png")
+![Screenshot 2023-10-24](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/103652751/d3ce3c9f-1615-405d-95b6-a1a4c4fe46ee.png)
 
 
 ### Customizations
