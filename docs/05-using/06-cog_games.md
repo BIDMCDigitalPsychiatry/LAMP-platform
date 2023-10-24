@@ -221,7 +221,7 @@ Participants are scored by the time taken to complete each level as well as the 
 
 ## Symbol-Digital Substitution
 
-The symbol-digital substitution task assesses motor abilities, attention, the visuospatial sketchpad, and short-term memory. Participants are shown a series of symbols (greek letter). They are also shown a grid which maps various symbols to digits (1-9). For each successive symbol, participants are required to press the button containing the corresponding digit. Example: Participant is shown greek letter α. According to the map, α corresponds to "4". The participant then selects the "4" button.
+The symbol-digital substitution task assesses motor abilities, attention, the visuospatial sketchpad, and short-term memory. Participants are shown a series of symbols (greek letter). They are also shown a grid which maps various symbols to digits (1-9). For each successive symbol, participants are required to press the button containing the corresponding digit. Example: Participant is shown greek letter alpha. According to the map, alpha corresponds to "4". The participant then selects the "4" button.
 
 ### Sample Game Play
 
