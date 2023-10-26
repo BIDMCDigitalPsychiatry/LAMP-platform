@@ -26,6 +26,16 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 
 ### Jewels A (left) and B (right) Sample Game Play 
 
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/a2645e7b-d879-427a-83e2-6292bc719c69
+
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/47be9da1-ab0c-4299-9811-af855981b963
+
+
+
 ![Jewels](https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png)
 
 
@@ -61,6 +71,11 @@ Spatial Span is a task that assess visuospatial working memory and memory capaci
 The recall and reproduce task requires the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, the increasing number of squares to remember measures memory capacity.
 
 ### Sample Game Play
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/5ec461b3-73f1-43d1-a593-78969ff36843
+
+
 #### Forward Spatial Span
 ##### Level 1
 
@@ -85,6 +100,10 @@ The recall and reproduce task requires the visuospatial working memory. The back
 ![Trial 2 A](https://user-images.githubusercontent.com/82968538/131180581-3dfc3e79-4525-4def-9639-1e43bc679089.png)
 ![SS Trial 2B](https://user-images.githubusercontent.com/82968538/131180598-0d8797da-e145-49cc-939d-7f8ee9e44da9.png)
 
+### Scoring 
+
+Total score is based on how many times participants can correctly complete the task within the time limit at the top of the screen. 
+
 ### Customization 
 
 Each trial allows the user to play 5 levels as a default. Researchers and clinicians can designate whether the game is to be ordered Forward or Backward.
@@ -103,12 +122,25 @@ Each trial allows the user to play 5 levels as a default. Researchers and clinic
 Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-making and risk-taking behavior. The game presents the user with a wheel that can be spun by selecting one of four buttons at the bottom of the screen. Each spin can result in a win or loss of money, and the total amount remaining is displayed at the top of the screen. Participants start with $2000 and have 20 spins per game by default. 
 
 ### Spin the Wheel Sample Game Play 
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/1faa7e8e-1f28-4394-9060-f4622b06552c
+
+
 ![igt](https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png)
 
 ### Customization 
 The task can be customized by the clinician or researcher in the Activity settings, to adjust the number of spins each game and the probability of the wheels stopping at different amounts to create different risk levels.
 ![igt_dashboard](https://user-images.githubusercontent.com/103677721/232078729-1b21ca6b-6939-43a1-9935-262a2cdaf1fe.png)
 
+
+### Scoring 
+
+Player score is represented by the amount of money held at the end of a 20 spin game.
+
+### Sample Instructions
+
+*"The game presents you with two wheels that can be spun by selecting one of four buttons at the bottom of the screen. The colors of the buttons do not correspond to the colors on the wheel. Each spin can result in a win or loss of money, with the wheel at the top displaying the money you won and the bottom displaying the money lost. The total amount remaining is displayed at the top of the screen. You start with $2000 and have 20 spins per game by default. Points at the end of a session are represented in the amount of money you have."*
 
 ## Cats and Dogs
 
@@ -121,6 +153,10 @@ The cat and dog cues assess response control and set-shifting as go/no-go stimul
 The animal stimuli and the box together assess visual memory, working memory, and attention: each cue is only briefly visible 'behind' the boxes, so participants must attend to the cues, remember the position of each stimulus, and then recall the position to select the correct boxes. They must also remember increasingly more cues at each subsequent trial within a level.
 
 ### Sample Game Play
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/a76aa6ad-b33a-4b9a-9f9e-8f9bc176fc3d
+
 
 #### Trial 1
 ![C D Trial 1A](https://user-images.githubusercontent.com/82968538/130972978-b96e9129-df46-4a80-8176-93639f1758e4.png)
@@ -139,6 +175,10 @@ The animal stimuli and the box together assess visual memory, working memory, an
 
 The game automatically progresses as levels are completed. There are no researcher-defined customizations necessary.
 
+### Scoring 
+
+Scoring is based on the number of correct boxes selected within the timeframe of the game.
+
 ### Sample Instructions
 
 *"In this game, you will see a screen with many boxes. These boxes will 'lift', revealing either a dog, cat, or nothing behind them. Your task is to tap the correct boxes, based on what is behind each box. The instructions for which boxes are correct will change depending on the level, so pay attention to the animals!"*
@@ -148,6 +188,17 @@ The game automatically progresses as levels are completed. There are no research
 Pop the Bubbles is a type of go/no-go task that can measure sustained attention and response control. Go/no-go tasks typically require a response to one stimulus, and response inhibition to another stimulus. 
 
 mindLAMP offers a task with multiple stimuli in the form of bubbles, which participants must  'pop' or ignore. Participants must pay attention the rules for each level to know which bubbles to pop and which to ignore. In addition to color-based responses, higher levels also demand pattern-based responses. 
+
+
+### Sample Game Play
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/4452a690-5e45-465e-971b-1d7c655fc763
+
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/d62d9f0c-cd22-41de-946e-fc7d0b06198c
+
 
 
 ### Examples of Rule Changes at Subsequent Levels
@@ -164,21 +215,25 @@ The task can be customized by the clinician or researcher in the Activity settin
 
 ### Scoring
 
-Final scores on based on the number of bubbles successfully popped, the number of incorrectly missed bubbles, the number of correctly-ignored bubbles and the number of incorrectly popped bubbles, as shown below:
+Final scores on based on the percentage of bubbles successfully popped, the percentage of incorrectly missed bubbles, the percentage of correctly-ignored bubbles and the percentage of incorrectly popped bubbles, as shown below:
 
 ![Pop Score (1)](https://user-images.githubusercontent.com/82968538/130975605-572b2c88-89cd-4121-a2cd-22e1bced2656.png)
 
 
 ### Sample Instructions   
 
-*"In this game, you will see lots of different colored bubbles, one at a time. Your task is to "pop" the correctly colored bubbles, while ignoring the incorrect ones. Pay attention to the instructions for each level to know which colored bubbles you should tap, and which ones you should ignore."*
+*"In this game, you will see lots of different colored bubbles, one at a time. Your task is to "pop" the correctly colored bubbles, while ignoring the incorrect ones. Pay attention to the instructions for each level to know which colored bubbles you should tap, and which ones you should ignore. Your score is based on the percentage of balloons shown that you correctly tapped, minus the percentage of balloons shown that you incorrectly tapped, with a perfect score being 100%."*
 
 
 ## Balloon Risk
 
-Balloon Risk, or the Balloon Analog Risk Task is a risk-reward task, in which participants must tap to inflate a balloon to the largest possible size without it bursting. The task has been successfully used as a computerized assessment for risk-taking behavior.
+Balloon Risk, or the Balloon Analog Risk Task is a risk-reward assessment task, in which participants must tap to inflate a balloon to the largest possible size without it bursting. The task has been successfully used as a computerized assessment for risk-taking behavior. Every time the participant taps the balloon their potential points will increase. Every time they hit ‘collect points’, those points are added to the total. However, if the balloon is pumped too much, the balloon will pop. The number of points at which the balloon pops will change with each game. 
 
 ### Sample Game Play
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/f4bf7d65-38c6-4ad8-befa-7813239ae4e3
+
 
 ![Balloon Risk T1](https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png)
 
@@ -204,6 +259,11 @@ Participants are given points based on the number of taps they made before they 
 The Maze task can be used to measure motor control and problem solving. Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases with each level (more balls, more intricate puzzle designs).
 
 ### Sample Game Play
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/524fbe85-9eb6-4f32-a728-2af57b4588d6
+
+
 ![Screenshot 2023-04-19 144815](https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png)
 
 ### Customizations
@@ -225,7 +285,11 @@ The symbol-digital substitution task assesses motor abilities, attention, the vi
 
 ### Sample Game Play
 
-Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2".
+Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2". The symbols will be matched to different numbers in different rounds of the game.
+
+
+https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/92973f33-5c6f-426d-8bab-5cea2eb864d5
+
 
 ![Screenshot 2023-10-24](https://i.imgur.com/HGQkrOW.png)
 
@@ -242,6 +306,6 @@ Participants are scored according to the total number of correct symbols pressed
 
 ### Sample Instructions
 
-*In this game, you will be shown a symbol in the center of the screen. This symbol will correspond to another symbol. Check the symbol-mapping shown at the top of the screen and look for your symbol. Identify the symbol which corresponds to your symbol. Once you find the corresponding symbol, select the corresponding symbol at the bottom of the screen. After you make the correct selection, you will move on to a new symbol, and the process will repeat until time runs out. The faster you move, the more points you will accrue.*
+*In this game, you will be shown a symbol in the center of the screen. This symbol will correspond to a number. Check the symbol-mapping shown at the top of the screen and look for your symbol. Identify the symbol which corresponds to your symbol. Once you find the corresponding symbol, select the corresponding number at the bottom of the screen. After you make the correct selection, you will move on to a new symbol, and the process will repeat until time runs out. The faster you move, the more points you will accrue.*
 
 
