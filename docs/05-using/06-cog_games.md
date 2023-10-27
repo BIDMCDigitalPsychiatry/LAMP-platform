@@ -27,15 +27,6 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 ### Jewels A (left) and B (right) Sample Game Play 
 
 
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/a2645e7b-d879-427a-83e2-6292bc719c69
-
-
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/47be9da1-ab0c-4299-9811-af855981b963
-
-
-
 ![Jewels](https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png)
 
 
@@ -71,10 +62,6 @@ Spatial Span is a task that assess visuospatial working memory and memory capaci
 The recall and reproduce task requires the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, the increasing number of squares to remember measures memory capacity.
 
 ### Sample Game Play
-
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/5ec461b3-73f1-43d1-a593-78969ff36843
-
 
 #### Forward Spatial Span
 ##### Level 1
@@ -123,10 +110,6 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 
 ### Spin the Wheel Sample Game Play 
 
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/1faa7e8e-1f28-4394-9060-f4622b06552c
-
-
 ![igt](https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png)
 
 ### Customization 
@@ -153,10 +136,6 @@ The cat and dog cues assess response control and set-shifting as go/no-go stimul
 The animal stimuli and the box together assess visual memory, working memory, and attention: each cue is only briefly visible 'behind' the boxes, so participants must attend to the cues, remember the position of each stimulus, and then recall the position to select the correct boxes. They must also remember increasingly more cues at each subsequent trial within a level.
 
 ### Sample Game Play
-
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/a76aa6ad-b33a-4b9a-9f9e-8f9bc176fc3d
-
 
 #### Trial 1
 ![C D Trial 1A](https://user-images.githubusercontent.com/82968538/130972978-b96e9129-df46-4a80-8176-93639f1758e4.png)
@@ -193,14 +172,6 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 ### Sample Game Play
 
 
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/4452a690-5e45-465e-971b-1d7c655fc763
-
-
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/d62d9f0c-cd22-41de-946e-fc7d0b06198c
-
-
-
 ### Examples of Rule Changes at Subsequent Levels
 
 ![Pop Levels](https://user-images.githubusercontent.com/82968538/130975328-392de105-18c6-4272-bc13-2c0200773205.png)
@@ -231,10 +202,6 @@ Balloon Risk, or the Balloon Analog Risk Task is a risk-reward assessment task, 
 
 ### Sample Game Play
 
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/f4bf7d65-38c6-4ad8-befa-7813239ae4e3
-
-
 ![Balloon Risk T1](https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png)
 
 ### Customizations
@@ -260,10 +227,6 @@ The Maze task can be used to measure motor control and problem solving. Particip
 
 ### Sample Game Play
 
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/524fbe85-9eb6-4f32-a728-2af57b4588d6
-
-
 ![Screenshot 2023-04-19 144815](https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png)
 
 ### Customizations
@@ -286,9 +249,6 @@ The symbol-digital substitution task assesses motor abilities, attention, the vi
 ### Sample Game Play
 
 Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2". The symbols will be matched to different numbers in different rounds of the game.
-
-
-https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/assets/104088715/92973f33-5c6f-426d-8bab-5cea2eb864d5
 
 
 ![Screenshot 2023-10-24](https://i.imgur.com/HGQkrOW.png)
