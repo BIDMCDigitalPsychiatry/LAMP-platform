@@ -27,6 +27,10 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 ### Jewels A (left) and B (right) Sample Game Play 
 
 
+<iframe width="560" height="315" src="https://youtu.be/qVdbbUZJTgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://youtu.be/qVdbbUZJTgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ![Jewels](https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png)
 
 
@@ -62,6 +66,8 @@ Spatial Span is a task that assess visuospatial working memory and memory capaci
 The recall and reproduce task requires the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, the increasing number of squares to remember measures memory capacity.
 
 ### Sample Game Play
+
+<iframe width="560" height="315" src="https://youtu.be/gn9gyoi8G0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Forward Spatial Span
 ##### Level 1
@@ -110,6 +116,8 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 
 ### Spin the Wheel Sample Game Play 
 
+<iframe width="560" height="315" src="https://youtu.be/65pG23pwAmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ![igt](https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png)
 
 ### Customization 
@@ -136,6 +144,8 @@ The cat and dog cues assess response control and set-shifting as go/no-go stimul
 The animal stimuli and the box together assess visual memory, working memory, and attention: each cue is only briefly visible 'behind' the boxes, so participants must attend to the cues, remember the position of each stimulus, and then recall the position to select the correct boxes. They must also remember increasingly more cues at each subsequent trial within a level.
 
 ### Sample Game Play
+
+<iframe width="560" height="315" src="https://youtu.be/1EXixCUWfSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Trial 1
 ![C D Trial 1A](https://user-images.githubusercontent.com/82968538/130972978-b96e9129-df46-4a80-8176-93639f1758e4.png)
@@ -171,6 +181,7 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 
 ### Sample Game Play
 
+<iframe width="560" height="315" src="https://youtu.be/C-rctV4syp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Examples of Rule Changes at Subsequent Levels
 
@@ -202,6 +213,8 @@ Balloon Risk, or the Balloon Analog Risk Task is a risk-reward assessment task, 
 
 ### Sample Game Play
 
+<iframe width="560" height="315" src="https://youtu.be/NL8X5Jyl0cM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ![Balloon Risk T1](https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png)
 
 ### Customizations
@@ -227,6 +240,8 @@ The Maze task can be used to measure motor control and problem solving. Particip
 
 ### Sample Game Play
 
+<iframe width="560" height="315" src="https://youtu.be/ROXLDutOhxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ![Screenshot 2023-04-19 144815](https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png)
 
 ### Customizations
@@ -250,6 +265,7 @@ The symbol-digital substitution task assesses motor abilities, attention, the vi
 
 Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2". The symbols will be matched to different numbers in different rounds of the game.
 
+<iframe width="560" height="315" src="https://youtu.be/tiqKDGtdyKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![Screenshot 2023-10-24](https://i.imgur.com/HGQkrOW.png)
 
