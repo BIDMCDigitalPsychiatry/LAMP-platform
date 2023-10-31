@@ -13,7 +13,7 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 <details>
     <summary> References </summary>
     
-    1. Soo-Yong Park & Nadja Schott (2021) The trail-making-test: Comparison between paper-and-pencil and computerized versions in young and healthy older adults,          Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2020.1864374 [https://doi.org/10.1080/23279095.2020.1864374]              (https://doi.org/10.1080/23279095.2020.1864374)
+    1. Soo-Yong Park & Nadja Schott (2021) The trail-making-test: Comparison between paper-and-pencil and computerized versions in young and healthy older adults,          Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2020.1864374 [https://doi.org/10.1080/23279095.2020.1864374](https://doi.org/10.1080/23279095.2020.1864374)
    
     2. Chanda Simfukwe, Young Chul Youn, Sang Yun Kim & Seong Soo An (2021) Digital trail making test-black and white: Normal vs MCI, Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2021.1871615 [https://doi.org/10.1080/23279095.2021.1871615](https://doi.org/10.1080/23279095.2021.1871615)
 
@@ -61,9 +61,22 @@ Scoring for both Jewels variants are out of a 100, with each incorrect jewel ear
 
 ## Spatial Span
 
-Spatial Span is a task that assess visuospatial working memory and memory capacity. In this game, white squares are arranged in a grid. Squares will 'light up' or change color to green, and then return to white, one square at a time. Participants are required to recall and reproduce the order in which squares in the grid light up. The task can be customized such that the patterns must be reproduced in the same order as cued, or in reverse of the order cued. At every subsequent level, the number of squares that light up increases.
+Spatial Span is a task that assess visuospatial memory, derived from a computerized spatial span test, and iterating upon the commonly used Corsi Block Test and Wechsler Spatial Span tests (1). Spatial span assessments have been used in a variety of populations, including idividuals with autism, psychosis, and depression (2, 3, 4). In this game, white squares are arranged in a grid. Squares will 'light up' or change color to green, and then return to white, one square at a time. Participants are required to recall and reproduce the order in which squares in the grid light up. The task can be customized such that the patterns must be reproduced in the same order as cued, or in reverse of the order cued. At every subsequent level, the number of squares that light up increases.
 
 The recall and reproduce task requires the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, the increasing number of squares to remember measures memory capacity.
+
+<details>
+    <summary> References </summary>
+    
+    1. Woods, D. L., Wyma, J. M., Herron, T. J., & Yund, E. W. (2016). An improved spatial span test of visuospatial memory. Memory, 24(8), 1142-1155. DOI: 10.1080/09658211.2015.1076849
+
+    2. Wang, Y., Zhang, Y. B., Liu, L. L., Cui, J. F., Wang, J., Shum, D. H., ... & Chan, R. C. (2017). A meta-analysis of working memory impairments in autism spectrum disorders. Neuropsychology review, 27, 46-61.
+
+    3. Sheffield, J. M., Karcher, N. R., & Barch, D. M. (2018). Cognitive deficits in psychotic disorders: a lifespan perspective. Neuropsychology review, 28, 509-533. DOI: 10.1007/s11065-018-9388-2
+
+    4. Douglas, K. M., Gallagher, P., Robinson, L. J., Carter, J. D., McIntosh, V. V., Frampton, C. M., ... & Porter, R. J. (2018). Prevalence of cognitive impairment in major depression and bipolar disorder. Bipolar disorders, 20(3), 260-274. DOI: 10.1111/bdi.12602
+
+</details>
 
 ### Sample Game Play
 
@@ -112,7 +125,19 @@ Each trial allows the user to play 5 levels as a default. Researchers and clinic
 
 ## Spin the Wheel
 
-Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-making and risk-taking behavior. The game presents the user with a wheel that can be spun by selecting one of four buttons at the bottom of the screen. Each spin can result in a win or loss of money, and the total amount remaining is displayed at the top of the screen. Participants start with $2000 and have 20 spins per game by default. 
+Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-making and risk-taking behavior (1). The Iowa Gambling Task has been effectively used in studying clinical conditions such as substance abuse, pathological gambling, and schizophrenia (2). The task has been effectively computerized, with no discernable difference between digital and analogue versions (2, 3). The game presents the user with a wheel that can be spun by selecting one of four buttons at the bottom of the screen. Each spin can result in a win or loss of money, and the total amount remaining is displayed at the top of the screen. Participants start with $2000 and have 20 spins per game by default. 
+
+<details>
+    <summary> References </summary>
+    
+    1. Bechara, A., Damasio, A. R., Damasio, H., & Anderson, S. W. (1994). Insensitivity to future consequences following damage to human prefrontal cortex. Cognition, 50(1-3), 7-15. DOI: 10.1016/0010-0277(94)90018-3
+
+    2. Bechara A. (2007). Iowa Gambling Task Professional Manual. Version 1, ed Raton B. (Lutz: Psychological Assessment Resources, Inc.).
+
+    3. Bowman, C. H., Evans, C. E. Y., & Turnbull, O. H. (2005). Artificial time constraints on the Iowa gambling task: the effects of behavioural performance and subjective experience. Brain and Cognition, 57, 21–25. DOI: 10.1016/j.bandc.2004.08.015
+
+</details>
+
 
 ### Spin the Wheel Sample Game Play 
 
@@ -135,13 +160,20 @@ Player score is represented by the amount of money held at the end of a 20 spin 
 
 ## Cats and Dogs
 
-Cats and Dogs is a task that tests multiple domains at once: visual and working memory, attention, response control, and set-shifting. Users must remember the location of multiple stimuli, remember which stimuli to respond to and which to ignore, reproduce the location of the response stimuli from memory, and switch between which stimuli to pay attention to. 
+Cats and Dogs is a digital task, originally developed for the assessment of early stage Parkinson's disease, which tests multiple domains at once: visual and working memory, attention, response control, and set-shifting (1). Users must remember the location of multiple stimuli, remember which stimuli to respond to and which to ignore, reproduce the location of the response stimuli from memory, and switch between which stimuli to pay attention to. 
 
 In this task, participants are first shown a pattern of boxes. The boxes temporarily lift, to reveal the image of a dog or a cat behind some of them. Participants are asked to select the boxes which a cat or dog behind them. At higher levels, participants must switch whether to respond to the the cat or the dog. 
 
 The cat and dog cues assess response control and set-shifting as go/no-go stimuli: participants must respond to one, but not the other, and then change which to respond to and which to ignore when instructed.
 
 The animal stimuli and the box together assess visual memory, working memory, and attention: each cue is only briefly visible 'behind' the boxes, so participants must attend to the cues, remember the position of each stimulus, and then recall the position to select the correct boxes. They must also remember increasingly more cues at each subsequent trial within a level.
+
+<details>
+    <summary> References </summary>
+    
+    1. Weil, R. S., Pappa, K., Schade, R. N., Schrag, A. E., Bahrami, B., Schwarzkopf, D. S., ... & Morris, H. R. (2017). The cats‐and‐dogs test: a tool to identify visuoperceptual deficits in Parkinson's disease. Movement Disorders, 32(12), 1789-1790. DOI: 10.1002/mds.27176.
+
+</details>
 
 ### Sample Game Play
 
@@ -174,10 +206,17 @@ Scoring is based on the number of correct boxes selected within the timeframe of
 
 ## Pop the Bubbles
 
-Pop the Bubbles is a type of go/no-go task that can measure sustained attention and response control. Go/no-go tasks typically require a response to one stimulus, and response inhibition to another stimulus. 
+Pop the Bubbles is a go/no-go task that can measure sustained attention and response control. Go/no-go tasks typically require a response to one stimulus, and response inhibition to another stimulus. 
 
 mindLAMP offers a task with multiple stimuli in the form of bubbles, which participants must  'pop' or ignore. Participants must pay attention the rules for each level to know which bubbles to pop and which to ignore. In addition to color-based responses, higher levels also demand pattern-based responses. 
 
+
+<details>
+    <summary> References </summary>
+    
+    1. Perochon, S., Matias Di Martino, J., Carpenter, K. L., Compton, S., Davis, N., Espinosa, S., ... & Dawson, G. (2023). A tablet-based game for the assessment of visual motor skills in autistic children. NPJ digital medicine, 6(1), 17. DOI: 10.1038/s41746-023-00762-6
+
+</details>
 
 ### Sample Game Play
 
@@ -209,7 +248,18 @@ Final scores on based on the percentage of bubbles successfully popped, the perc
 
 ## Balloon Risk
 
-Balloon Risk, or the Balloon Analog Risk Task is a risk-reward assessment task, in which participants must tap to inflate a balloon to the largest possible size without it bursting. The task has been successfully used as a computerized assessment for risk-taking behavior. Every time the participant taps the balloon their potential points will increase. Every time they hit ‘collect points’, those points are added to the total. However, if the balloon is pumped too much, the balloon will pop. The number of points at which the balloon pops will change with each game. 
+Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-reward assessment task (1). The BART has shown to be significantly correlated to self report scores on risk related constructs such as sensation seeking, impulsivity and behavioral constraint, as well as real world risk behaviors such as drug use, gambling, and sexually risky behavior (1, 2, 3). The Users must tap to inflate a balloon to the largest possible size without it bursting. The task has been successfully used as a computerized assessment for risk-taking behavior. Every time the participant taps the balloon their potential points will increase. Every time they hit ‘collect points’, those points are added to the total. However, if the balloon is pumped too much, the balloon will pop. The number of points at which the balloon pops will change with each game. 
+
+<details>
+    <summary> References </summary>
+    
+    1. Lejuez, C. W., Read, J. P., Kahler, C. W., Richards, J. B., Ramsey, S. E., Stuart, G. L., ... & Brown, R. A. (2002). Evaluation of a behavioral measure of risk taking: the Balloon Analogue Risk Task (BART). Journal of Experimental Psychology: Applied, 8(2), 75. DOI: 10.1037//1076-898X.8.2.75
+
+    2. Hunt, M. K., Hopko, D. R., Bare, R., Lejuez, C. W., & Robinson, E. V. (2005). Construct validity of the balloon analog risk task (BART) associations with psychopathy and impulsivity. Assessment, 12(4), 416-428. DOI: 10.1177/1073191105278740
+
+    3. Lauriola, M., Panno, A., Levin, I. P., & Lejuez, C. W. (2014). Individual differences in risky decision making: A meta‐analysis of sensation seeking and impulsivity with the balloon analogue risk task. Journal of Behavioral Decision Making, 27(1), 20-36. DOI: 10.1002/bdm.1784
+
+</details>
 
 ### Sample Game Play
 
@@ -236,7 +286,19 @@ Participants are given points based on the number of taps they made before they 
 
 ## Maze Task
 
-The Maze task can be used to measure motor control and problem solving. Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases with each level (more balls, more intricate puzzle designs).
+The Maze task can be used to measure motor control, and spatial problem solving. Though there is not a gold standard model, digital maze games have been utilized in the assessment of visual cognition and problem solving in individuals with neurodegenerative disorders, brain injury, and schizophrenia (1, 2, 3). Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases with each level (more balls, more intricate puzzle designs).
+
+<details>
+    <summary> References </summary>
+    
+    1. Jin, R., Pilozzi, A., & Huang, X. (2020). Current cognition tests, potential virtual reality applications, and serious games in cognitive assessment and non-pharmacological therapy for neurocognitive disorders. Journal of Clinical Medicine, 9(10), 3287. DOI: 10.3390/jcm9103287
+
+    2. Livingstone, S. A., & Skelton, R. W. (2007). Virtual environment navigation tasks and the assessment of cognitive deficits in individuals with brain injury. Behavioural brain research, 185(1), 21-31. DOI: 10.1016/j.bbr.2007.07.015
+
+    3. Wilkins, L. K., Girard, T. A., Herdman, K. A., Christensen, B. K., King, J., Kiang, M., & Bohbot, V. D. (2017). Hippocampal activation and memory performance in schizophrenia depend on strategy use in a virtual maze. Psychiatry Research: Neuroimaging, 268, 1-8. DOI: 10.1016/j.pscychresns.2017.07.007
+
+</details>
+
 
 ### Sample Game Play
 
@@ -257,9 +319,20 @@ Participants are scored by the time taken to complete each level as well as the 
 *In this game, you can tilt your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
 
 
-## Symbol-Digital Substitution
+## Digit Symbol Substitution Test
 
-The symbol-digital substitution task assesses motor abilities, attention, the visuospatial sketchpad, and short-term memory. Participants are shown a series of symbols (greek letter). They are also shown a grid which maps various symbols to digits (1-9). For each successive symbol, participants are required to press the button containing the corresponding digit. Example: Participant is shown greek letter α. According to the map, α corresponds to "4". The participant then selects the "4" button.
+The symbol-digit substitution task has been used to evaluate motor speed, attention, associative thinking (1). Initially developed as part of the Wechsler Adult Intelligence Scale and later digitized, the task is one of the most frequently used assessment in neuropsychological testing (1, 2, 3). The measure has shown to be valid and sensitive to change in major depressive disorder, age related cognitive decline, alcoholism and a variety of other conditions (3). Participants are shown a series of symbols (greek letter). They are also shown a grid which maps various symbols to digits (digits shown are 1-9). For each successive symbol, participants are required to press the button containing the corresponding digit. Example: Participant is shown greek letter α. According to the map, α corresponds to "4". The participant then selects the "4" button.
+
+<details>
+    <summary> References </summary>
+    
+    1. Wechsler, D. (1955). Wechsler adult intelligence scale--. Archives of Clinical Neuropsychology. DOI: 10.1037/t15169-000
+
+    2. McLeod, D. R., Griffiths, R. R., Bigelow, G. E., & Yingling, J. (1982). An automated version of the digit symbol substitution test (DSST). Behavior Research Methods & Instrumentation, 14(5), 463-466. DOI: 10.3758/BF03203313
+
+    3. Jaeger, J. (2018). Digit symbol substitution test: the case for sensitivity over specificity in neuropsychological testing. Journal of clinical psychopharmacology, 38(5), 513. DOI: 10.1097/JCP.0000000000000941
+
+</details>
 
 ### Sample Game Play
 
