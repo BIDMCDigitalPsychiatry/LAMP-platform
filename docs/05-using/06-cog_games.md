@@ -24,7 +24,7 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 </details>
 
 
-### Jewels A (left) and B (right) Sample Game Play 
+### Jewels A and B Sample Game Play 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ynDuquI8Kuc?si=CqjuNFC0bJWhiND1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
