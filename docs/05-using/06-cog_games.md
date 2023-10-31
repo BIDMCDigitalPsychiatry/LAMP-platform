@@ -27,9 +27,9 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 ### Jewels A (left) and B (right) Sample Game Play 
 
 
-<iframe width="560" height="315" src="https://youtu.be/qVdbbUZJTgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ynDuquI8Kuc?si=CqjuNFC0bJWhiND1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://youtu.be/qVdbbUZJTgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qVdbbUZJTgM?si=9L_5l4NkxBSIVxaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ![Jewels](https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png)
 
@@ -67,7 +67,7 @@ The recall and reproduce task requires the visuospatial working memory. The back
 
 ### Sample Game Play
 
-<iframe width="560" height="315" src="https://youtu.be/gn9gyoi8G0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gn9gyoi8G0M?si=tQrlz3QqRJW1meCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Forward Spatial Span
 ##### Level 1
@@ -116,7 +116,7 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 
 ### Spin the Wheel Sample Game Play 
 
-<iframe width="560" height="315" src="https://youtu.be/65pG23pwAmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/65pG23pwAmY?si=aaD8at4H6v6vRojd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ![igt](https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png)
 
@@ -145,7 +145,7 @@ The animal stimuli and the box together assess visual memory, working memory, an
 
 ### Sample Game Play
 
-<iframe width="560" height="315" src="https://youtu.be/1EXixCUWfSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1EXixCUWfSQ?si=Ar06fr-daP7VCzNO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Trial 1
 ![C D Trial 1A](https://user-images.githubusercontent.com/82968538/130972978-b96e9129-df46-4a80-8176-93639f1758e4.png)
@@ -181,7 +181,7 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 
 ### Sample Game Play
 
-<iframe width="560" height="315" src="https://youtu.be/C-rctV4syp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C-rctV4syp0?si=xrQm1Rkzfrgg9a1x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Examples of Rule Changes at Subsequent Levels
 
@@ -213,7 +213,7 @@ Balloon Risk, or the Balloon Analog Risk Task is a risk-reward assessment task, 
 
 ### Sample Game Play
 
-<iframe width="560" height="315" src="https://youtu.be/NL8X5Jyl0cM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NL8X5Jyl0cM?si=yhWMnokG_f0sndHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ![Balloon Risk T1](https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png)
 
@@ -240,7 +240,7 @@ The Maze task can be used to measure motor control and problem solving. Particip
 
 ### Sample Game Play
 
-<iframe width="560" height="315" src="https://youtu.be/ROXLDutOhxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ROXLDutOhxo?si=XsMLskiTP0P8jell" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ![Screenshot 2023-04-19 144815](https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png)
 
@@ -265,7 +265,7 @@ The symbol-digital substitution task assesses motor abilities, attention, the vi
 
 Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2". The symbols will be matched to different numbers in different rounds of the game.
 
-<iframe width="560" height="315" src="https://youtu.be/tiqKDGtdyKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tiqKDGtdyKo?si=EixF6CQYp4cOINns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ![Screenshot 2023-10-24](https://i.imgur.com/HGQkrOW.png)
 
