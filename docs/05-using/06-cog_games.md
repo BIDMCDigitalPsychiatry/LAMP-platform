@@ -14,11 +14,8 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
     <summary> References </summary>
     
     1. Soo-Yong Park & Nadja Schott (2021) The trail-making-test: Comparison between paper-and-pencil and computerized versions in young and healthy older adults,          Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2020.1864374 [https://doi.org/10.1080/23279095.2020.1864374](https://doi.org/10.1080/23279095.2020.1864374)
-   
     2. Chanda Simfukwe, Young Chul Youn, Sang Yun Kim & Seong Soo An (2021) Digital trail making test-black and white: Normal vs MCI, Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2021.1871615 [https://doi.org/10.1080/23279095.2021.1871615](https://doi.org/10.1080/23279095.2021.1871615)
-
     3. Magdalene R. Bracken, Anya Mazur-Mosiewicz & Kuba Glazek (2019) Trail Making Test: Comparison of paper-and-pencil and electronic versions, Applied Neuropsychology: Adult, 26:6, 522-532, DOI: 10.1080/23279095.2018.1460371 [https://doi.org/10.1080/23279095.2018.1460371](https://doi.org/10.1080/23279095.2018.1460371)
-    
     4. Robert P. Fellows, Jessamyn Dahmen, Diane Cook & Maureen Schmitter-Edgecombe (2017) Multicomponent analysis of a digital Trail Making Test, The Clinical Neuropsychologist, 31:1, 154-167, DOI: 10.1080/13854046.2016.1238510 [https://doi.org/10.1080/13854046.2016.1238510](https://doi.org/10.1080/13854046.2016.1238510)
 
 </details>
@@ -69,11 +66,8 @@ The recall and reproduce task requires the visuospatial working memory. The back
     <summary> References </summary>
     
     1. Woods, D. L., Wyma, J. M., Herron, T. J., & Yund, E. W. (2016). An improved spatial span test of visuospatial memory. Memory, 24(8), 1142-1155. DOI: 10.1080/09658211.2015.1076849
-
     2. Wang, Y., Zhang, Y. B., Liu, L. L., Cui, J. F., Wang, J., Shum, D. H., ... & Chan, R. C. (2017). A meta-analysis of working memory impairments in autism spectrum disorders. Neuropsychology review, 27, 46-61.
-
     3. Sheffield, J. M., Karcher, N. R., & Barch, D. M. (2018). Cognitive deficits in psychotic disorders: a lifespan perspective. Neuropsychology review, 28, 509-533. DOI: 10.1007/s11065-018-9388-2
-
     4. Douglas, K. M., Gallagher, P., Robinson, L. J., Carter, J. D., McIntosh, V. V., Frampton, C. M., ... & Porter, R. J. (2018). Prevalence of cognitive impairment in major depression and bipolar disorder. Bipolar disorders, 20(3), 260-274. DOI: 10.1111/bdi.12602
 
 </details>
@@ -131,9 +125,7 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
     <summary> References </summary>
     
     1. Bechara, A., Damasio, A. R., Damasio, H., & Anderson, S. W. (1994). Insensitivity to future consequences following damage to human prefrontal cortex. Cognition, 50(1-3), 7-15. DOI: 10.1016/0010-0277(94)90018-3
-
     2. Bechara A. (2007). Iowa Gambling Task Professional Manual. Version 1, ed Raton B. (Lutz: Psychological Assessment Resources, Inc.).
-
     3. Bowman, C. H., Evans, C. E. Y., & Turnbull, O. H. (2005). Artificial time constraints on the Iowa gambling task: the effects of behavioural performance and subjective experience. Brain and Cognition, 57, 21–25. DOI: 10.1016/j.bandc.2004.08.015
 
 </details>
@@ -210,14 +202,6 @@ Pop the Bubbles is a go/no-go task that can measure sustained attention and resp
 
 mindLAMP offers a task with multiple stimuli in the form of bubbles, which participants must  'pop' or ignore. Participants must pay attention the rules for each level to know which bubbles to pop and which to ignore. In addition to color-based responses, higher levels also demand pattern-based responses. 
 
-
-<details>
-    <summary> References </summary>
-    
-    1. Perochon, S., Matias Di Martino, J., Carpenter, K. L., Compton, S., Davis, N., Espinosa, S., ... & Dawson, G. (2023). A tablet-based game for the assessment of visual motor skills in autistic children. NPJ digital medicine, 6(1), 17. DOI: 10.1038/s41746-023-00762-6
-
-</details>
-
 ### Sample Game Play
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C-rctV4syp0?si=xrQm1Rkzfrgg9a1x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -254,9 +238,7 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
     <summary> References </summary>
     
     1. Lejuez, C. W., Read, J. P., Kahler, C. W., Richards, J. B., Ramsey, S. E., Stuart, G. L., ... & Brown, R. A. (2002). Evaluation of a behavioral measure of risk taking: the Balloon Analogue Risk Task (BART). Journal of Experimental Psychology: Applied, 8(2), 75. DOI: 10.1037//1076-898X.8.2.75
-
     2. Hunt, M. K., Hopko, D. R., Bare, R., Lejuez, C. W., & Robinson, E. V. (2005). Construct validity of the balloon analog risk task (BART) associations with psychopathy and impulsivity. Assessment, 12(4), 416-428. DOI: 10.1177/1073191105278740
-
     3. Lauriola, M., Panno, A., Levin, I. P., & Lejuez, C. W. (2014). Individual differences in risky decision making: A meta‐analysis of sensation seeking and impulsivity with the balloon analogue risk task. Journal of Behavioral Decision Making, 27(1), 20-36. DOI: 10.1002/bdm.1784
 
 </details>
@@ -292,9 +274,7 @@ The Maze task can be used to measure motor control, and spatial problem solving.
     <summary> References </summary>
     
     1. Jin, R., Pilozzi, A., & Huang, X. (2020). Current cognition tests, potential virtual reality applications, and serious games in cognitive assessment and non-pharmacological therapy for neurocognitive disorders. Journal of Clinical Medicine, 9(10), 3287. DOI: 10.3390/jcm9103287
-
     2. Livingstone, S. A., & Skelton, R. W. (2007). Virtual environment navigation tasks and the assessment of cognitive deficits in individuals with brain injury. Behavioural brain research, 185(1), 21-31. DOI: 10.1016/j.bbr.2007.07.015
-
     3. Wilkins, L. K., Girard, T. A., Herdman, K. A., Christensen, B. K., King, J., Kiang, M., & Bohbot, V. D. (2017). Hippocampal activation and memory performance in schizophrenia depend on strategy use in a virtual maze. Psychiatry Research: Neuroimaging, 268, 1-8. DOI: 10.1016/j.pscychresns.2017.07.007
 
 </details>
@@ -327,9 +307,7 @@ The symbol-digit substitution task has been used to evaluate motor speed, attent
     <summary> References </summary>
     
     1. Wechsler, D. (1955). Wechsler adult intelligence scale--. Archives of Clinical Neuropsychology. DOI: 10.1037/t15169-000
-
     2. McLeod, D. R., Griffiths, R. R., Bigelow, G. E., & Yingling, J. (1982). An automated version of the digit symbol substitution test (DSST). Behavior Research Methods & Instrumentation, 14(5), 463-466. DOI: 10.3758/BF03203313
-
     3. Jaeger, J. (2018). Digit symbol substitution test: the case for sensitivity over specificity in neuropsychological testing. Journal of clinical psychopharmacology, 38(5), 513. DOI: 10.1097/JCP.0000000000000941
 
 </details>
