@@ -13,9 +13,9 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 <details>
     <summary> References </summary>
     
-    1. Soo-Yong Park & Nadja Schott (2021) The trail-making-test: Comparison between paper-and-pencil and computerized versions in young and healthy older adults,          Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2020.1864374 [https://doi.org/10.1080/23279095.2020.1864374](https://doi.org/10.1080/23279095.2020.1864374)
-    2. Chanda Simfukwe, Young Chul Youn, Sang Yun Kim & Seong Soo An (2021) Digital trail making test-black and white: Normal vs MCI, Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2021.1871615 [https://doi.org/10.1080/23279095.2021.1871615](https://doi.org/10.1080/23279095.2021.1871615)
-    3. Magdalene R. Bracken, Anya Mazur-Mosiewicz & Kuba Glazek (2019) Trail Making Test: Comparison of paper-and-pencil and electronic versions, Applied Neuropsychology: Adult, 26:6, 522-532, DOI: 10.1080/23279095.2018.1460371 [https://doi.org/10.1080/23279095.2018.1460371](https://doi.org/10.1080/23279095.2018.1460371)
+    1. Soo-Yong Park & Nadja Schott (2021) The trail-making-test: Comparison between paper-and-pencil and computerized versions in young and healthy older adults, Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2020.1864374 [https://doi.org/10.1080/23279095.2020.1864374](https://doi.org/10.1080/23279095.2020.1864374) 
+    2. Chanda Simfukwe, Young Chul Youn, Sang Yun Kim & Seong Soo An (2021) Digital trail making test-black and white: Normal vs MCI, Applied Neuropsychology: Adult, DOI: 10.1080/23279095.2021.1871615 [https://doi.org/10.1080/23279095.2021.1871615](https://doi.org/10.1080/23279095.2021.1871615) 
+    3. Magdalene R. Bracken, Anya Mazur-Mosiewicz & Kuba Glazek (2019) Trail Making Test: Comparison of paper-and-pencil and electronic versions, Applied Neuropsychology: Adult, 26:6, 522-532, DOI: 10.1080/23279095.2018.1460371 [https://doi.org/10.1080/23279095.2018.1460371](https://doi.org/10.1080/23279095.2018.1460371) 
     4. Robert P. Fellows, Jessamyn Dahmen, Diane Cook & Maureen Schmitter-Edgecombe (2017) Multicomponent analysis of a digital Trail Making Test, The Clinical Neuropsychologist, 31:1, 154-167, DOI: 10.1080/13854046.2016.1238510 [https://doi.org/10.1080/13854046.2016.1238510](https://doi.org/10.1080/13854046.2016.1238510)
 
 </details>
@@ -65,10 +65,10 @@ The recall and reproduce task requires the visuospatial working memory. The back
 <details>
     <summary> References </summary>
     
-    1. Woods, D. L., Wyma, J. M., Herron, T. J., & Yund, E. W. (2016). An improved spatial span test of visuospatial memory. Memory, 24(8), 1142-1155. DOI: 10.1080/09658211.2015.1076849
-    2. Wang, Y., Zhang, Y. B., Liu, L. L., Cui, J. F., Wang, J., Shum, D. H., ... & Chan, R. C. (2017). A meta-analysis of working memory impairments in autism spectrum disorders. Neuropsychology review, 27, 46-61.
-    3. Sheffield, J. M., Karcher, N. R., & Barch, D. M. (2018). Cognitive deficits in psychotic disorders: a lifespan perspective. Neuropsychology review, 28, 509-533. DOI: 10.1007/s11065-018-9388-2
-    4. Douglas, K. M., Gallagher, P., Robinson, L. J., Carter, J. D., McIntosh, V. V., Frampton, C. M., ... & Porter, R. J. (2018). Prevalence of cognitive impairment in major depression and bipolar disorder. Bipolar disorders, 20(3), 260-274. DOI: 10.1111/bdi.12602
+    1. Woods, D. L., Wyma, J. M., Herron, T. J., & Yund, E. W. (2016). An improved spatial span test of visuospatial memory. Memory, 24(8), 1142-1155. DOI: 10.1080/09658211.2015.1076849 
+    2. Wang, Y., Zhang, Y. B., Liu, L. L., Cui, J. F., Wang, J., Shum, D. H., ... & Chan, R. C. (2017). A meta-analysis of working memory impairments in autism spectrum disorders. Neuropsychology review, 27, 46-61. DOI: 10.1007/s11065-016-9336-y 
+    3. Sheffield, J. M., Karcher, N. R., & Barch, D. M. (2018). Cognitive deficits in psychotic disorders: a lifespan perspective. Neuropsychology review, 28, 509-533. DOI: 10.1007/s11065-018-9388-2 
+    4. Douglas, K. M., Gallagher, P., Robinson, L. J., Carter, J. D., McIntosh, V. V., Frampton, C. M., ... & Porter, R. J. (2018). Prevalence of cognitive impairment in major depression and bipolar disorder. Bipolar disorders, 20(3), 260-274. DOI: 10.1111/bdi.12602 
 
 </details>
 
