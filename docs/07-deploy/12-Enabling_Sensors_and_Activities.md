@@ -16,5 +16,5 @@ To see a full list of ActivitySpec names, check here: https://docs.lamp.digital/
 For example, you will see that the SensorSpec for the accelerometer sensor is called "lamp.accelerometer".
 6. Scroll down to the "Body" text box. Replace the field with `{"name":<sensorspec>}`. For example,
 to add the "accelerometer" sensor, use: `{"name":"lamp.accelerometer"}`
-7. Scroll down to the tect box that says "api.lamp.digital". Replace this tect with your server's address.
+7. Scroll down to the text box that says "api.lamp.digital". Replace this text with your server's address.
 8. Select "execute". Check back in the dashboard for an updated dropdown list!
