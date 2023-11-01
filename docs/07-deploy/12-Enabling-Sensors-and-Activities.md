@@ -13,7 +13,8 @@ Steps to add a SensorSpec (or ActivitySpec):
 4. Figure out the SensorSpec (ActivitySpec) of the sensor (activity) you would like to enable.
 To see a full list of SensorSpec, check here: https://docs.lamp.digital/data_science/data_types/sensor_types.
 To see a full list of ActivitySpec names, check here: https://docs.lamp.digital/data_science/data_types/activity_types.
-5. Scroll down to the "Body" text box. Replace the field with `{"name":<sensorspec>}`. For example,
+For example, you will see that the SensorSpec for the accelerometer sensor is called "lamp.accelerometer".
+6. Scroll down to the "Body" text box. Replace the field with `{"name":<sensorspec>}`. For example,
 to add the "accelerometer" sensor, use: `{"name":"lamp.accelerometer"}`
-6. Scroll down to the tect box that says "api.lamp.digital". Replace this tect with your server's address.
-7. Select "execute". Check back in the dashboard for an updated dropdown list!
+7. Scroll down to the tect box that says "api.lamp.digital". Replace this tect with your server's address.
+8. Select "execute". Check back in the dashboard for an updated dropdown list!
