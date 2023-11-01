@@ -1,4 +1,4 @@
-## Configuring your server to add Sensors and Activities ##
+# Configuring your server to add Sensors and Activities
 
 By default, you will not be able to add any sensors or activities to your server. 
 At first, when you try to add activities and sensors in the dashboard, none are available in the dropdown.
