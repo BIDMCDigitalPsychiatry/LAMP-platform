@@ -173,3 +173,5 @@ Finally a few environment variables need to be added to the MindLAMP server. Her
 Hostname needs to be the same as specified in the `docker-compose.yaml` file. The `OAUTH_LOGOUT_URL` is not mandatory, but it is needed so that the user is automatically logged out from Keycloak when they log out from the dashboard.
 
 Remember that `OAUTH_REDIRECT_URI` must be exactly the same as the redirect URI the client was set up with.
+
+For further specifications on configuring Oauth for Google see the documentation here: https://docs.lamp.digital/deploy/configure_oauth_google
