@@ -1,5 +1,7 @@
 # Configure OAuth for Google #
 
+For Oauth integration more broadly, please follow the documentation linked here: https://docs.lamp.digital/develop/oauth_oidc/
+
 Configure the Google Cloud App for MindLAMP:
 
 To use Google OAuth we’ll need to generate credentials for MindLAMP
@@ -27,3 +29,4 @@ Now that we have the credentials we’ll need to add a few environment variables
     TOKEN_SECRET="<LAMP defined secret here>"
 
 Remember that `OAUTH_REDIRECT_URI` must be exactly the same as the redirect URI the client was set up with.
+
