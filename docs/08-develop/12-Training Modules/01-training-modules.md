@@ -963,7 +963,7 @@ You'll also need to understand how URLs work, as they are part of the HTTP stand
 
 Enjoy this 20+ year old easter egg in the HTTP standard:
 
-![](assets/unnamed.png)
+![](assets/unnamed2.png)
 
 ---
 
