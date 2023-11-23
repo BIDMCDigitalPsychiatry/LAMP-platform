@@ -1,4 +1,4 @@
-﻿# Training Modules
+# Training Modules
 
 <aside>
 💡 For the best experience viewing these modules, tap the module icon below and use the `[Open as page]` button in the top left toolbar.
@@ -109,9 +109,7 @@ Some commands will require files like "file.txt" to be present — you can creat
 
 [Learn X in Y minutes Where X=bash](https://learnxinyminutes.com/docs/bash/)
 
-This page contains list of the **most useful or important commands our research group uses in real life**. Take a look at them and try some of them out!
-
-[**Useful Linux Commands** ](UNIX%20&%20Shell%209bae43662f154ce987c463a7bb5c9256/Useful%20Linux%20Commands%20007908ba5781496fab16c3f906f434b8.md)
+This section below contains list of the **most useful or important commands our research group uses in real life**. Take a look at them and try some of them out!
 
 ---
 
@@ -709,7 +707,7 @@ Length: 55 minutes
 
 How do we release software, such as the LAMP Platform, or even our own data analysis (such as feature extraction or analysis methods), in such a way that there are no issues to the patient or research experience? How do multiple scientists or developers collaborate on one large project without stepping on each others' toes and causing massive issues? DevOps is the answer. ([By the way, this is a great app if you need to use Git on your Mac.](https://gitup.co))
 
-![DevOps%20&%20Git%200e1fe9200e944a84a52aca8b01ffcf34/2ialma4xoiv41.jpg](DevOps%20&%20Git%200e1fe9200e944a84a52aca8b01ffcf34/2ialma4xoiv41.jpg)
+![](assets/2ialma4xoiv41.jpg)
 
 ---
 
@@ -799,7 +797,7 @@ Continuous pipelines are the bread and butter of DevOps, automating the entire w
 
 **The pipeline explained in a simple diagram:**
 
-![https://erikbern.com/assets/programming_loops.png](https://erikbern.com/assets/programming_loops.png)
+![](https://erikbern.com/assets/programming_loops.png)
 
 ---
 
@@ -839,7 +837,7 @@ We use the terms "continuous deployment" and "continuous delivery" interchangeab
 
 Now enjoy this meme about developer experience vs. testing in production. You'll start off naively testing in production, then learn enough to know that testing in production is terrible, but then eventually realize that life is too short to concern yourself with that, and then you'll test in production anyways. 🙂
 
-![DevOps%20&%20Git%200e1fe9200e944a84a52aca8b01ffcf34/Untitled.png](DevOps%20&%20Git%200e1fe9200e944a84a52aca8b01ffcf34/Untitled.png)
+![](assets/Untitled.png)
 
 [https://www.youtube.com/watch?v=eB0nUzAI7M8&list=PLr08WV22QsVihYD7pkWl14ENWgom6mqVb&index=18&t=2s](https://www.youtube.com/watch?v=eB0nUzAI7M8&list=PLr08WV22QsVihYD7pkWl14ENWgom6mqVb&index=18&t=2s)
 
@@ -859,7 +857,7 @@ If you would like to follow along on the terminal, see the guide below:
 
 ---
 
-![[**— GoatOps.**](http://www.goatops.com)](DevOps%20&%20Git%200e1fe9200e944a84a52aca8b01ffcf34/Screen_Shot_2021-05-06_at_8.14.31_AM.png)
+![[**— GoatOps.**](http://www.goatops.com)](assets/Screen_Shot_2021-05-06_at_8.14.31_AM.png)
 
 [**— GoatOps.**](http://www.goatops.com)
 
@@ -965,7 +963,7 @@ You'll also need to understand how URLs work, as they are part of the HTTP stand
 
 Enjoy this 20+ year old easter egg in the HTTP standard:
 
-![Databases%20&%20APIs%20d764e3e581ad46118f9b584302928894/unnamed2.png](Databases%20&%20APIs%20d764e3e581ad46118f9b584302928894/unnamed.png)
+![](assets/unnamed.png)
 
 ---
 
@@ -1021,7 +1019,7 @@ While R is a supported language, our lab prefers and primarily only uses Python 
 
 ---
 
-![Pandas%20&%20Vega%20b14684994b9c4f219b645a761302a15a/self_driving_2x.png](Pandas%20&%20Vega%20b14684994b9c4f219b645a761302a15a/self_driving_2x.png)
+![](assets/self_driving_2x.png)
 
 ## Data Frames
 
@@ -1088,7 +1086,7 @@ Once you've watched this video, working with Altair may look a little bit comple
 
 ---
 
-![[To learn how to use UpSetR plots in Altair, see the example code here.](https://github.com/hms-dbmi/upset-altair-notebook)](Pandas%20&%20Vega%20b14684994b9c4f219b645a761302a15a/Screen_Shot_2021-04-20_at_2.33.55_PM.png)
+![[To learn how to use UpSetR plots in Altair, see the example code here.](https://github.com/hms-dbmi/upset-altair-notebook)](assets/Screen_Shot_2021-04-20_at_2.33.55_PM.png)
 
 [To learn how to use UpSetR plots in Altair, see the example code here.](https://github.com/hms-dbmi/upset-altair-notebook)
 
@@ -1180,7 +1178,7 @@ When performing data analysis on a LARGE quantity of data, either from the LAMP 
 
 If you're curious how much better Pickles are, check this comparison out, and also keep in mind that Pickles are native to Python and can embed billions of arbitrary objects into one file, where in contrast for CSV files, you'll need to write custom code for managing thousands of files.
 
-![[→ Original Source Article](https://towardsdatascience.com/stop-persisting-pandas-data-frames-in-csvs-f369a6440af5)](Pandas%20&%20Vega%20b14684994b9c4f219b645a761302a15a/Untitled2.png)
+![[→ Original Source Article](https://towardsdatascience.com/stop-persisting-pandas-data-frames-in-csvs-f369a6440af5)](assets/Untitled2.png)
 
 [→ Original Source Article](https://towardsdatascience.com/stop-persisting-pandas-data-frames-in-csvs-f369a6440af5)
 
@@ -1197,7 +1195,7 @@ Length: 100 minutes
 
 While Python or R make sense for data analysis and scientific/statistical computing, it's not possible to build a website or app user interface in those languages. And while Python allows you to build backend systems, it may not be the best choice in some cases. This is where TypeScript and React come in — one unified language for all frontend and backend development. From patient and clinician dashboards, to automated gift card scripts, to cognitive tests, almost everything non-analysis in our research group is written in TypeScript.
 
-![TypeScript%20&%20React%20ac1a9eb096f54ff7b235bf6217dc82db/unnamed.jpg](TypeScript%20&%20React%20ac1a9eb096f54ff7b235bf6217dc82db/unnamed.jpg)
+![](assets/unnamed.jpg)
 
 <aside>
 💡 This module expects you have BASIC experience with Python or a similar programming language. If you do not, please complete the tutorial below. 
@@ -1440,7 +1438,7 @@ At the most fundamental level beyond the infrastructure or packages or libraries
 
 It's important to know how to describe what your code is doing. For example, one way to describe something Cortex does is "it saves the data after you compute the feature functions that follow the same rules for a long time" and a more accurate way of summarizing that is "it provides an abstraction to memoize idempotent features."
 
-![Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/workflow-1.png](Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/workflow-1.png)
+![](assets/workflow-1.png)
 
 ---
 
@@ -1473,7 +1471,7 @@ Read the articles below after the short video. Some articles focus on specific t
 
 ---
 
-![Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/good_code.png](Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/good_code.png)
+![](assets/good_code.png)
 
 ### Technical Debt
 
@@ -1501,7 +1499,7 @@ And of course, use the code you've written yourself **FIRST**, before telling ot
 
 ---
 
-![Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/2.gif](Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/2.gif)
+![](assets/2.gif)
 
 ### Code Reviews
 
@@ -1511,7 +1509,7 @@ When your teammates create a pull request, it's the whole team's responsibility 
 
 [https://www.freecodecamp.org/news/a-zen-manifesto-for-effective-code-reviews-e30b5c95204a/](https://www.freecodecamp.org/news/a-zen-manifesto-for-effective-code-reviews-e30b5c95204a/)
 
-![Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/pkcsunr302m61.jpg](Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/pkcsunr302m61.jpg)
+![](assets/pkcsunr302m61.jpg)
 
 ---
 
@@ -1539,7 +1537,7 @@ While these two videos show you how to use the functional programming paradigms 
 
 Google realized this and developed `MapReduce`, and the below example shows how the task of counting word occurrences in a body of literature could be processed in this framework. (For a simple array, splitting is part of the mapping process, and shuffling is part of the reducing process.)
 
-![**→** [To learn more about Apache Spark or Hadoop/MapReduce, read this article.](https://www.ibm.com/cloud/learn/apache-spark)](Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/a11.png)
+![**→** [To learn more about Apache Spark or Hadoop/MapReduce, read this article.](https://www.ibm.com/cloud/learn/apache-spark)](assets/a11.png)
 
 **→** [To learn more about Apache Spark or Hadoop/MapReduce, read this article.](https://www.ibm.com/cloud/learn/apache-spark)
 
@@ -1551,7 +1549,7 @@ Google realized this and developed `MapReduce`, and the below example shows how 
 
 Both Python and Javascript support asynchronous functions to enable concurrent execution of tasks. This is different than parallel execution of tasks, as explained in the diagram below.
 
-![Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/ParallelConcurrency.001-1024x768.jpeg](Code%20Etiquette%20&%20Review%20f6f8ba7fc8b84a899bec29f4eaf4e7c9/ParallelConcurrency.001-1024x768.jpeg)
+![](assets/ParallelConcurrency.001-1024x768.jpeg)
 
 ---
 
@@ -1729,7 +1727,7 @@ Instead of setting up the Action to trigger on created release or merged pull re
 
 ---
 
-[Team-specific%20Resources%201257ae9781c04cce8eb484c7c0d856e6/Screen_Recording_2021-04-29_at_2.36.05_PM.mov](Team-specific%20Resources%201257ae9781c04cce8eb484c7c0d856e6/Screen_Recording_2021-04-29_at_2.36.05_PM.mov)
+[Recording](assets/Screen_Recording_2021-04-29_at_2.36.05_PM.mov)
 
 ## Managing Team AWS Services
 
@@ -1825,7 +1823,7 @@ Be sure to take a peek and familiarize yourself with what S3 buckets we've provi
 
 ---
 
-[Team-specific%20Resources%201257ae9781c04cce8eb484c7c0d856e6/Screen_Recording_2021-05-11_at_11.43.06_AM.mov](Team-specific%20Resources%201257ae9781c04cce8eb484c7c0d856e6/Screen_Recording_2021-05-11_at_11.43.06_AM.mov)
+[Recording](assets/Screen_Recording_2021-05-11_at_11.43.06_AM.mov)
 
 ### Debugging in Notebooks
 
