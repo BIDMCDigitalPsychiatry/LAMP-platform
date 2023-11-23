@@ -175,3 +175,82 @@ Hostname needs to be the same as specified in the `docker-compose.yaml` file. Th
 Remember that `OAUTH_REDIRECT_URI` must be exactly the same as the redirect URI the client was set up with.
 
 For further specifications on configuring Oauth for Google see the documentation here: https://docs.lamp.digital/deploy/configure_oauth_google
+
+## Kubernetes Example
+
+```yaml title="mindlamp-server.yml"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mindlamp-server
+  labels:
+    app: mindlamp-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mindlamp-server
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: mindlamp-server
+    spec:
+      containers:
+      - name: server
+        image: {redactedValue}/mindlamp_server:latest
+        imagePullPolicy: Always
+        resources: 
+          limits:
+            cpu: "1000m"
+            memory: "2000Mi"
+          requests:
+            cpu: "50m"
+            memory: "100Mi"
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - "wget --no-verbose --tries=1 --spider http://localhost:3000  || exit 1"
+        env:
+        - name: CDB
+          value: "http://admin:varDbPass@couchdb-internal:5984/"
+        - name: NATS_SERVER
+          value: message-queue:4222
+        - name: REDIS_HOST
+          value: redis://cache:6379/0
+        - name: HTTPS
+          value: "off"
+        - name: PUSH_API_GATEWAY
+          value: "https://app-gateway.lamp.digital/push"
+        - name: PUSH_API_KEY
+          value: "varPushAPIKey"
+        - name: ROOT_KEY
+          value: "varRootKey"
+        - name: OAUTH_AUTH_URL
+          value: "https://login.microsoftonline.com/*7BredactedValue*7D/oauth2/v2.0/authorize"
+        - name: OAUTH_TOKEN_URL
+          value: "https://login.microsoftonline.com/common/v2.0/oauth2/token"
+        - name: OAUTH_LOGOUT_URL
+          value: "https://login.microsoftonline.com/common/oauth2/v2.0/logout?post_logout_redirect_uri=api:**B7BredactedValue*7D"
+        - name: OAUTH_CLIENT_ID
+          value: "varOauthClientId"
+        - name: OAUTH_CLIENT_SECRET
+          value: "varOauthClientSecret"
+        - name: TOKEN_SECRET
+          value: "varOauthTokenSecret"
+        - name: OAUTH_REDIRECT_URI
+          value: "{redactedValue}"
+        - name: OAUTH_SCOPE
+          value: "openid offline_access"
+        - name: OAUTH
+          value: "on"
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+```
