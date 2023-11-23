@@ -315,7 +315,7 @@ Cortex: cortex.raw.steps
 
 #### Description
 
-The step sensor records the number of steps since the last reading. On iOS, the behavior may be that each event fetches the current running count of steps during the calendar day specified by `timestamp` (in this case, `source` will be `null`).
+The step sensor records the number of steps since the last reading. On iOS, the behavior may be that each event fetches the current running count of steps during the calendar day specified by `timestamp` (in this case, `source` will be `null`). If fetching `HealthKit` data (i.e. `source` is **NOT** `null`), the events will instead capture number of steps since the last recorded event (which may be the desired behavior).
 
 #### Data
 
