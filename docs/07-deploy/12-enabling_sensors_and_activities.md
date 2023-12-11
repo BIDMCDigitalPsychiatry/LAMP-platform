@@ -1,9 +1,9 @@
 # Configuring your server to add Sensors and Activities
 
-By default, you will not be able to add any sensors or activities to your server. 
+By default, you will not be able to assign any activities or sensors to your participants (or groups of participants). 
 At first, when you try to add activities and sensors in the dashboard, none are available in the dropdown.
 This is because not every mindLAMP deployment needs all of the sensors or activities that are available.
-Instead, you must select each sensor or activity type you will need.
+Instead, you must individually enable each sensor or activity type you will need.
 This process is called "adding an ActivitySpec" or "adding a SensorSpec".
 
 Steps to add a SensorSpec (or ActivitySpec):
