@@ -21,27 +21,27 @@ For applicable sensors, the frequency parameter is customizable. To change the f
 
 For some sensors, the data that is returned is different for iOS versus Android phones. This is documented below.
 
-| Name           | SensorSpec                | Requires watch / other device |
-|----------------|---------------------------| ---------------
-| Analytics      | lamp.analytics            | |
-| Location       | lamp.gps                  | |
-| Device Motion  | lamp.accelerometer       | |
-|                | lamp.device_motion       | |
-| Screen         | lamp.device_state  | |
-| Pedometer      | lamp.steps                | |
-| Bluetooth & WiFi | lamp.nearby_device      | |
-| Calls & Texts  | lamp.telephony            | |
-| Sleep          | lamp.sleep                | Y |
-| Workouts       | lamp.segment              | Y |
-| Activity Recognition | lamp.activity_recognition | Y |
-| Nutrition      | lamp.nutrition            | Y |
-| Blood Glucose  | lamp.blood_glucose        | Y |
-| Oxygen Saturation | lamp.oxygen_saturation | Y |
-| Body Temperature | lamp.body_temperature   | Y |
-| Blood Pressure | lamp.blood_pressure       | Y |
-| Heart Rate & HRV | lamp.heart_rate         | Y |
-|                  | lamp.heartratevariability_sdnn | Y|
-| Respiratory Rate | lamp.respiratory_rate   | Y |
+| Name           | SensorSpec                | Sampling Type | Requires watch / other device |
+|----------------|---------------------------| --------------|-------------------------------
+| Analytics      | lamp.analytics            | Continuous | |
+| Location       | lamp.gps                  | Discrete| |
+| Accelerometer  | lamp.accelerometer       | Discrete | |
+| Device Motion  | lamp.device_motion       | Discrete| |
+| Screen         | lamp.device_state  | Continuous| |
+| Pedometer      | lamp.steps                | Interval | |
+| Bluetooth & WiFi | lamp.nearby_device      | Discrete | |
+| Calls & Texts  | lamp.telephony            | Continuous | |
+| Sleep          | lamp.sleep                | Continuous | Y |
+| Workouts       | lamp.segment              | Continuous | Y |
+| Activity Recognition | lamp.activity_recognition | Continuous | Y |
+| Nutrition      | lamp.nutrition            | Continuous | Y |
+| Blood Glucose  | lamp.blood_glucose        | Continuous | Y |
+| Oxygen Saturation | lamp.oxygen_saturation | Continuous | Y |
+| Body Temperature | lamp.body_temperature   | Continuous | Y |
+| Blood Pressure | lamp.blood_pressure       | Continuous | Y |
+| Heart Rate | lamp.heart_rate         | Continuous | Y |
+| Heart Rate Variability | lamp.heartratevariability_sdnn | Continuous | Y|
+| Respiratory Rate | lamp.respiratory_rate | Continuous | Y |
 
 **Deprecated sensors:**
 
