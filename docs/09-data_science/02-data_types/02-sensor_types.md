@@ -15,7 +15,9 @@ Active sensor events are produced on a rolling basis in the background via inter
 Different sensors collect and report data at different frequencies. The data sampling rate of most sensors falls into one of three broad categories:
 1. Continuous: All data is collected and uploaded with a timestamp equal to the moment it occurred. 
 2. Discrete: Not all data is collected and uploaded to the server. The available data is sampled every _n_ seconds as defined by a `frequency` parameter. 
-3. Interval: The available data over the course of _n_ minutes is compiled into a report describing the events in that span. There will be a single data point every _n_ minutes. 
+3. Interval: The available data over the course of _n_ minutes is compiled into a report describing the events in that span. There will be a single data point every _n_ minutes.
+
+For applicable sensors, the frequency parameter is customizable. To change the frequency, see: docs.lamp.digital/start_here/updating_frequency
 
 For some sensors, the data that is returned is different for iOS versus Android phones. This is documented below.
 
