@@ -150,7 +150,7 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
     version: '3.7'
     services:
       server:
-        image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2022
+        image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2023
         healthcheck:
           test: wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
         environment:
@@ -230,13 +230,13 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
         external: true
     ```
     
-2. If you plan to self-host the LAMP dashboard, please add the service below to your modified stack file as well:
+2. If you plan to self-host the LAMP dashboard, please add the service below to your modified stack file as well (be sure to replace `dashboard.example.com` with your domain):
 
     ```yaml
     version: '3.7'
     services:
       dashboard:
-        image: ghcr.io/bidmcdigitalpsychiatry/lamp-dashboard:2023
+        image: ghcr.io/bidmcdigitalpsychiatry/lamp-dashboard:2024
         logging:
             driver: "json-file"
             options:
