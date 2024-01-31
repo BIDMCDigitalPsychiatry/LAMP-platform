@@ -1,5 +1,9 @@
 # Preparing Resources on AWS
 
+:::warning
+Although AWS is not strictly required, it is highly recommended. If you choose not to use AWS resources, members from the mindLAMP team will not be able to provide support or answer questions.
+:::
+
 The following instructions will result in a Docker Swarm setup prepared to deploy LAMP. You will need to continue following the instructions after this phase to successfully configure LAMP.
 
 ![](assets/Untitled_AWS.png)
