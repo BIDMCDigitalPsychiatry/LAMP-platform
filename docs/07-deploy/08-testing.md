@@ -21,17 +21,15 @@ All data is encrypted before communication between your browser or the app to an
     curl -k https://api.example.com/
     ```
 
-    - Generate your server administrator password.
-
-        ```bash
-        curl -k https://api.example.com/researcher -H 'Authorization: Basic admin:admin'
-        ```
-
     - Check the Docker service logs for `LAMP_server` to locate your generated server administrator password.
 
         ```bash
         docker service logs LAMP_server
         ```
+
+      :::caution
+      The logs will only print the administrator password once. Restarting the service will not reveal the password again. If you did not save the password when you initialized the database, you can find the password by decrypting the secret key found in the `credential` collection using your root key.
+      :::
 
     - Verify that the newly generated password (`GENERATED_PASSWORD_HERE`) works.
 
