@@ -47,7 +47,7 @@ If any of the above steps fails to complete successfully you will not be able to
 
 If you need to manually encrypt/decrypt your secret key, see the below script. You can execute this script via terminal with `node <script_name> <encrypt:decrypt> <secret_key>`. Please replace `<ROOT_KEY>` with the root key used in your lamp-server service.
 
-```
+```bash
 #!/usr/bin/env node
 const PRIVATE_KEY = <ROOT_KEY> // DO NOT SHARE!
 
