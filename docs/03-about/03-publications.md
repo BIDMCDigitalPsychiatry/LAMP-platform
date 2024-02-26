@@ -140,5 +140,9 @@ Vaidyam A, Roux S, Torous J. Patient Innovation in Investigating the Effects of 
 ```
 Wisniewski Hannah, Henson Philip, Torous John. Using a Smartphone App to Identify Clinically Relevant Behavior Trends via Symptom Report, Cognition Scores, and Exercise Levels: A Case Series. Frontiers in Psychiatry. 10-2019-652. doi:10.3389/fpsyt.2019.00652
 ```
+### Digital Phenotyping for Spinal Cord Injury: Smartphone-based monitors for clinical utility
 
+[![](assets/frontiers2019.png)](assets/fpsyt-10-00652.pdf)
+
+```
 
