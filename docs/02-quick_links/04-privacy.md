@@ -8,7 +8,7 @@ slug: /privacy
 
 “Your information” is the information we request when you initially download and launch the app. It is then accessible from your user profile under ‘Settings.’ This information includes, but is not limited to your user name and user profile you had used to register for the app. We also receive other types of information about you that is customarily gathered by web and mobile applications:
 
-We receive data about you whenever you interact with the mindLAMP app, such as when you launch the application, click on, view or otherwise interact with a feature. This may include date and time of the request, the feature requested, and completion status of the request. We receive data from the mobile phone you use to launch mindLAMP app. We receive data about your answers to surveys and cognitive tests. If you opt in, we receive geospatial data that can tell us where you are nearby when you interact with the app. If you opt in, we receive data about your step count and other information provided by Apple Health Kit or Google Fit.
+We receive data about you whenever you interact with the mindLAMP app, such as when you launch the application, click on, view or otherwise interact with a feature. This may include date and time of the request, the feature requested, and completion status of the request. We receive data from the mobile phone you use to launch mindLAMP app. We receive data about your answers to surveys and cognitive tests. If you opt in, we receive geospatial data that can tell us where you are nearby when you interact with the app. If you opt in, we receive data about your step count and other information provided by Apple Health Kit or Google HealthConnect.
 
 ## How We Use Your Personal Information
 
@@ -16,9 +16,31 @@ Your personal information may be used to support internal operations, including 
 
 The Division of Digital Psychiatry at the Beth Israel Deaconess Medical Center will never access your data without prior consent and permission. If self-deploying the LAMP Platform, you will be in sole control and ownership of all data consumed or produced by the LAMP platform. We do not by default request, use, or store any personally identifiable information, and strongly recommend against using the user-facing utilities to do so.
 
+## Google HealthConnect Data
+
+mindLAMP has access to read information from the following Google HealthConnect sensors (though permission can be revoked for any individual sensor at the discretion of either the researcher or participant):
+- Heart Rate
+- Steps
+- Speed
+- Calories Burned
+- Basal Metabolic Rate
+- Distance
+- Body Fat
+- Hydration
+- Nutrition
+- Blood Glucode
+- Blood Pressure
+- Oxygen Saturation
+- Body Temperature
+- Steps Cadence
+- Sleep
+- Respiratory Rate
+
+The use of information received from Health Connect will adhere to the Health Connect Permissions Policy, including the Limited Use requirements.
+
 ## Information We Share With Others
 
-We do not sell, trade, or otherwise transfer to outside parties any information we receive. We may release information we collect to judicial, law enforcement or other government agencies when we believe release is appropriate to comply with a governmental or court order, or the law, to enforce our own policies, or to protect ours or others’ rights, property or safety. We may share aggregate statistics about our visitors, general traffic patterns, app usage, survey answers, cognitive test results, and phone collected data like step count, geospatial location, flights of steps climbed (and other Apple Healthkit and Google Fit data) for purely research purposes. If used for research, your data will be only used in an aggregate form. We will never use your data for marketing or commercial purposes.
+We do not sell, trade, or otherwise transfer to outside parties any information we receive. We may release information we collect to judicial, law enforcement or other government agencies when we believe release is appropriate to comply with a governmental or court order, or the law, to enforce our own policies, or to protect ours or others’ rights, property or safety. We may share aggregate statistics about our visitors, general traffic patterns, app usage, survey answers, cognitive test results, and phone collected data like step count, geospatial location, flights of steps climbed (and other Apple Healthkit and Google HealthConnect data) for purely research purposes. If used for research, your data will be only used in an aggregate form. We will never use your data for marketing or commercial purposes.
 
 ## How We Protect Your Information
 
