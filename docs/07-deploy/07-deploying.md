@@ -1,5 +1,10 @@
 # Deploying the LAMP Platform
 
+:::warning
+Although some steps are possible to complete using other methods, please follow these instructions as closely as possible.
+Deviaion from these deployment recommendations means support from BIDMC will not be possible.
+:::
+
 **You must have a configured Docker Swarm cluster to continue.**
 Please follow all steps below in the exact order specified, though you may skip optional steps.
 
@@ -230,43 +235,6 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
         external: true
     ```
     
-2. If you plan to self-host the LAMP dashboard, please add the service below to your modified stack file as well (be sure to replace `dashboard.example.com` with your domain):
-
-    ```yaml
-    version: '3.7'
-    services:
-      dashboard:
-        image: ghcr.io/bidmcdigitalpsychiatry/lamp-dashboard:2024
-        logging:
-            driver: "json-file"
-            options:
-              max-size: "50m"
-        environment:
-          REACT_APP_LAMP_RESEARCHER_ALIAS: 'Investigator'
-        networks:
-          - public
-        healthcheck:
-          test: wget --no-verbose --tries=1 --spider http://localhost:80 || exit 1
-        deploy:
-          mode: replicated
-          update_config:
-            order: start-first
-            failure_action: rollback
-          labels:
-            portainer.autodeploy: 'true'
-            traefik.enable: 'true'
-            traefik.http.routers.lamp_dashboard.entryPoints: 'websecure'
-            traefik.http.routers.lamp_dashboard.rule: 'Host(`dashboard.example.com`)'
-            traefik.http.routers.lamp_dashboard.tls.certresolver: 'default'
-            traefik.http.services.lamp_dashboard.loadbalancer.server.port: 80
-          placement:
-            constraints:
-              - node.role == manager
-    networks:
-      public:
-        external: true
-    ```
-
 Note: If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
 If you've deployed the **Swarm Management Console**, log into your swarm cluster and navigate to the `Stack` tab on the left sidebar. Paste the contents of the stack file into the editor pane and tap "Deploy", instead of running the command below. 
