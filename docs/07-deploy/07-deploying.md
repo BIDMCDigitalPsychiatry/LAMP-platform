@@ -2,7 +2,7 @@
 
 :::caution
 Although some steps are able to completed using other methods, please follow these instructions as closely as possible.
-Deviation from these deployment recommendations means BIDMC staff cannot provide support.
+Deviation from these deployment recommendations means BIDMC staff cannot provide technical support.
 :::
 
 **You must have a configured Docker Swarm cluster to continue.**
