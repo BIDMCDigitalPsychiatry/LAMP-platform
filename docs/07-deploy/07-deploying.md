@@ -1,8 +1,8 @@
 # Deploying the LAMP Platform
 
-:::warning
-Although some steps are possible to complete using other methods, please follow these instructions as closely as possible.
-Deviaion from these deployment recommendations means support from BIDMC will not be possible.
+:::caution
+Although some steps are able to completed using other methods, please follow these instructions as closely as possible.
+Deviation from these deployment recommendations means BIDMC staff cannot provide support.
 :::
 
 **You must have a configured Docker Swarm cluster to continue.**
