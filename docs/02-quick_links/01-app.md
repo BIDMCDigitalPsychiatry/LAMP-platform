@@ -59,7 +59,7 @@ If you'd like to test the beta version of the app, please follow the instruction
 
 1. [Download the Google Fit app from the Play Store.](https://play.google.com/store/apps/details?id=com.google.android.apps.fitness)
 2. Sign into Google Fit using a Google account.
-3. [**Download the mindLAMP app from the Play Store.**](https://play.google.com/apps/details?id=digital.lamp.mindlamp) 
+3. [**Download the mindLAMP app from the Play Store.**](https://play.google.com/store/apps/details?id=digital.lamp.mindlamp) 
 4. Open it and sign into the patient’s account. 
 5. **Agree to all permissions dialogs that prompt the user.**
 
