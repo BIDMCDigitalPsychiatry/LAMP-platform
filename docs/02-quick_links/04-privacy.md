@@ -48,7 +48,7 @@ We make every reasonable effort to protect your information against unauthorized
 
 ## Deleting Your Account
 
-Your account may be deleted via the app through the delete my account button. You may delete your account at any time. When you delete your account you will be asked if you want us to delete your data as well.
+Your account may be deleted via the app through the delete my account button. You may delete your account at any time. You may also request to delete your account externally via the following Google form: https://forms.gle/rb7wSWgHBNwU1cQ78
 
 ### **Can I delete data stored by the LAMP Platform?**
 
