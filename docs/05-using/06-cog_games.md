@@ -102,7 +102,7 @@ The recall and reproduce task requires the visuospatial working memory. The back
 
 ### Scoring 
 
-Total score is based on how many times participants can correctly complete the task within the time limit at the top of the screen. 
+Total score is based on how many times participants can correctly complete the task within the time limit at the top of the screen, with six possible levels. 
 
 ### Customization 
 
