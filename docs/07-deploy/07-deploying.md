@@ -125,117 +125,109 @@ docker stack deploy --compose-file traefik.yml router
 
 **This step is required.** 
 
-Create a `/data` folder in the node that will be hosting the database(s).
+- **Docker Stack:** `**lamp.yml**`
 
-```bash
-mkdir -p /data/db
-```
+    **You MUST replace the following configuration variables in your copy of this file:**
+  
+    1. `ROOT_ENCRYPTION_KEY_HERE`: A random 32-bit hexadecimal string. See below
+    2. `DB_PASSSWORD_HERE`: An random 8-bit hexadecimal string. See below
+    3. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)** (optional)
+    4. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
 
-You must first generate two cryptographically secure hexadecimal strings. Substitute these strings in the stack file below as indicated by the environment variables after the `#`. The strings must be of the correct length, or deployment will not work.
+The first two passwords must be two cryptographically secure hexadecimal strings. Below are commands you can run to generate these two strings.
 
 ```bash
 openssl rand -hex 8 # DB_PASSWORD_HERE
 openssl rand -hex 32 # ROOT_ENCRYPTION_KEY_HERE
 ```
-- **Docker Stack:** `**lamp.yml**`
 
-    **You MUST replace the following configuration variables in your copy of this file:**
+After generating these strings and obtaining your LAMP Platform API server domain, substitute them into the following YAML file and deploy the file.
 
-    1. `dashboard.example.com` The address you will use to access the LAMP dashboard. (If deploying the dashboard)
-    2. `ROOT_ENCRYPTION_KEY_HERE` See above. Please confirm that this key has the correct number of characters (64).
-    3. `DB_PASSSWORD_HERE` See above.
-    4. `YOUR_PUSH_KEY_HERE` → **[Please contact us to enable push notifications.](mailto:team@digitalpsych.org)**
-    5. `api.example.com` Your LAMP Platform API Server domain shared with others to use.
-
-It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital) or to self-host the dashboard. Self-hosting will require the addition of a dashboard service to the LAMP stack.
-
-1. If you do not plan to self-host the LAMP dashboard:
-
-    ```yaml
-    version: '3.7'
-    services:
-      server:
-        image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2023
-        healthcheck:
-          test: wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
-        environment:
-          HTTPS: 'off'
-          ROOT_KEY: 'ROOT_ENCRYPTION_KEY_HERE'
-          DB: 'mongodb://admin:DB_PASSSWORD_HERE@database:27017/'
-          PUSH_API_GATEWAY: 'https://app-gateway.lamp.digital/'
-          PUSH_API_KEY: 'YOUR_PUSH_KEY_HERE'
-          DASHBOARD_URL: 'dashboard.lamp.digital'
-          REDIS_HOST: 'redis://cache:6379/0'
-          NATS_SERVER: 'message_queue:4222'
-        networks:
-          - default
-          - public
-        logging:
-          options:
-            max-size: "10m"
-            max-file: "3"
-        deploy:
-          mode: replicated
-          update_config:
-            order: start-first
-            failure_action: rollback
-          labels:
-            traefik.enable: 'true'
-            traefik.docker.network: 'public'
-            traefik.http.routers.lamp_server.entryPoints: 'websecure'
-            traefik.http.routers.lamp_server.rule: 'Host(`api.example.com`)'
-            traefik.http.routers.lamp_server.tls.certresolver: 'default'
-            traefik.http.services.lamp_server.loadbalancer.server.port: 3000
-          placement:
-            constraints:
-              - node.role == manager
-      database:
-        image: mongo:6.0.4
-        environment:
-          MONGO_INITDB_ROOT_USERNAME: 'admin'
-          MONGO_INITDB_ROOT_PASSWORD: 'DB_PASSWORD_HERE'
-        volumes:
-          - mongo_data:/data/db
-        networks:
-          - public
-        deploy:
-          mode: replicated
-          update_config:
-            order: stop-first
-            failure_action: rollback
-          placement:
-            constraints:
-              - node.role == manager
-      cache:
-        image: redis:6.0.8-alpine
-        healthcheck:
-          test: redis-cli ping
-        deploy:
-          mode: replicated
-          update_config:
-            order: stop-first
-            failure_action: rollback
-          placement:
-            constraints:
-              - node.role == manager
-      message_queue:
-        image: nats:2.1.9-alpine3.12
-        healthcheck:
-          test: wget --no-verbose --tries=1 --spider http://localhost:8222/varz || exit 1
-        deploy:
-          mode: replicated
-          update_config:
-            order: start-first
-            failure_action: rollback
-          placement:
-            constraints:
-              - node.role == manager
-    volumes:
-        mongo_data:
+```yaml
+version: '3.7'
+services:
+  server:
+    image: ghcr.io/bidmcdigitalpsychiatry/lamp-server:2023
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
+    environment:
+      HTTPS: 'off'
+      ROOT_KEY: 'ROOT_ENCRYPTION_KEY_HERE'
+      DB: 'mongodb://admin:DB_PASSSWORD_HERE@database:27017/'
+      PUSH_API_GATEWAY: 'https://app-gateway.lamp.digital/'
+      PUSH_API_KEY: 'YOUR_PUSH_KEY_HERE'
+      DASHBOARD_URL: 'dashboard.lamp.digital'
+      REDIS_HOST: 'redis://cache:6379/0'
+      NATS_SERVER: 'message_queue:4222'
     networks:
-      public:
-        external: true
-    ```
+      - default
+      - public
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      mode: replicated
+      update_config:
+        order: start-first
+        failure_action: rollback
+      labels:
+        traefik.enable: 'true'
+        traefik.docker.network: 'public'
+        traefik.http.routers.lamp_server.entryPoints: 'websecure'
+        traefik.http.routers.lamp_server.rule: 'Host(`api.example.com`)'
+        traefik.http.routers.lamp_server.tls.certresolver: 'default'
+        traefik.http.services.lamp_server.loadbalancer.server.port: 3000
+      placement:
+        constraints:
+          - node.role == manager
+  database:
+    image: mongo:6.0.4
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: 'admin'
+      MONGO_INITDB_ROOT_PASSWORD: 'DB_PASSWORD_HERE'
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - public
+    deploy:
+      mode: replicated
+      update_config:
+        order: stop-first
+        failure_action: rollback
+      placement:
+        constraints:
+          - node.role == manager
+  cache:
+    image: redis:6.0.8-alpine
+    healthcheck:
+      test: redis-cli ping
+    deploy:
+      mode: replicated
+      update_config:
+        order: stop-first
+        failure_action: rollback
+      placement:
+        constraints:
+          - node.role == manager
+  message_queue:
+    image: nats:2.1.9-alpine3.12
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:8222/varz || exit 1
+    deploy:
+      mode: replicated
+      update_config:
+        order: start-first
+        failure_action: rollback
+      placement:
+        constraints:
+          - node.role == manager
+volumes:
+    mongo_data:
+networks:
+  public:
+    external: true
+```
     
 Note: If you are deploying more than one stack, please be sure that all traefik variables (for example, `traefik.http.routers.lamp_dashboard.rule`) under "labels" are unique. Otherwise, this will cause issues with both the deployment of this container and the other containers that contain the duplicate variables.
 
