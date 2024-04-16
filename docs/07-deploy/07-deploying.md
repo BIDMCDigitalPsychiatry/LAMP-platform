@@ -195,7 +195,7 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
           MONGO_INITDB_ROOT_USERNAME: 'admin'
           MONGO_INITDB_ROOT_PASSWORD: 'DB_PASSWORD_HERE'
         volumes:
-          - /data/db:/data/db
+          - mongo_data:/data/db
         networks:
           - public
         deploy:
@@ -230,6 +230,8 @@ It is possible to use the LAMP dashboard hosted by BIDMC (dashboard.lamp.digital
           placement:
             constraints:
               - node.role == manager
+    volumes:
+        mongo_data:
     networks:
       public:
         external: true
