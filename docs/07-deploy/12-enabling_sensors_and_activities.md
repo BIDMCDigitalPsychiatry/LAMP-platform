@@ -25,24 +25,26 @@ to add the "accelerometer" sensor, use: `{"name":"lamp.accelerometer"}`
 import LAMP
 
 ACTIVITY_SPEC_LIST = [
-	"lamp.balloon_risk",
-	"lamp.breathe",
+	"lamp.spatial_span",
 	"lamp.cats_and_dogs",
-	"lamp.cats_and_dogs_new",
-	"lamp.dbt_diary_card",
-	"lamp.digit_span",
 	"lamp.jewels_a",
 	"lamp.jewels_b",
-	"lamp.journal",
+	"lamp.dbt_diary_card",
+	"lamp.balloon_risk",
 	"lamp.pop_the_bubbles",
-	"lamp.scratch_image",
-	"lamp.simple_memory",
-	"lamp.spatial_span",
-	"lamp.spin_wheel",
+	"lamp.journal",
+	"lamp.breathe",
+	"lamp.recording",
 	"lamp.survey",
+	"lamp.scratch_image",
 	"lamp.tips",
-	"lamp.visual_association",
-	"lamp.recording"
+	"lamp.goals",
+	"lamp.medications",
+	"lamp.memory_game",
+	"lamp.spin_wheel",
+	"lamp.maze_game",
+	"lamp.emotion_recognition",
+	"lamp.symbol_digit_substitution"
 ]
 
 SENSOR_SPEC_LIST = [
