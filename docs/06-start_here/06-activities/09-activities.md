@@ -80,7 +80,7 @@
 ## Manage
 
 ### Goal Setting
-![](assets/goal_setting.png
+![](assets/goal_setting.png)
 
 ### Medication Tracker
 ![](assets/medication_ex.png)
