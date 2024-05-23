@@ -17,6 +17,9 @@
 ### Jewels
 ![](assets/jewels_ex.png)
 
+### Emotion Recognition
+![](assets/Emo_recon_act.png)
+
 ### Balloon Risk
 
 ### Pop the Bubbles
