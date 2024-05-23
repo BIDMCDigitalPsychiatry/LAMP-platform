@@ -339,6 +339,9 @@ Participants are scored according to the total number of correct symbols pressed
 The emotion recognition task is designed to allow researchers to upload up to 50 pictures of faces and test whether the user can select the emotion that each image represents from a preset list of emotions (namely, happiness, sadness, fear, anger, and neutral). 
 When a user takes this assessment, they are presented with a random subset of 10 images from the images provided by the researchers. If the researchers provided fewer than 10 images, all images will be displayed in a random order. To progress through this assessment, participants first click on the emotion they feel best applies to the image and then on "Save" to move onto the next question.
 
+### Sample game play
+The user progresses through a series of up to 10 screens in which they are presented with an image and must select the corresponding emotion from a list of options.
+
 ### Customizations
 Researchers must provide a dataset of up to 50 facial images for the emotion recognition and assign each image with the appropriate image.
 Currently, the emotions that can be assigned to an image are restricted to happiness, sadness, fear, anger, and neutral.
