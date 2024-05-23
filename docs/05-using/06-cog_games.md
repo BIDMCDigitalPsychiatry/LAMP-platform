@@ -335,4 +335,17 @@ Participants are scored according to the total number of correct symbols pressed
 
 *In this game, you will be shown a symbol in the center of the screen. This symbol will correspond to a number. Check the symbol-mapping shown at the top of the screen and look for your symbol. Identify the symbol which corresponds to your symbol. Once you find the corresponding symbol, select the corresponding number at the bottom of the screen. After you make the correct selection, you will move on to a new symbol, and the process will repeat until time runs out. The faster you move, the more points you will accrue.*
 
+## Emotion Recognition
+The emotion recognition task is designed to allow researchers to upload up to 50 pictures of faces and test whether the user can select the emotion that each image represents from a preset list of emotions (namely, happiness, sadness, fear, anger, and neutral). 
+When a user takes this assessment, they are presented with a random subset of 10 images from the images provided by the researchers. If the researchers provided fewer than 10 images, all images will be displayed in a random order. To progress through this assessment, participants first click on the emotion they feel best applies to the image and then on "Save" to move onto the next question.
 
+### Customizations
+Researchers must provide a dataset of up to 50 facial images for the emotion recognition and assign each image with the appropriate image.
+Currently, the emotions that can be assigned to an image are restricted to happiness, sadness, fear, anger, and neutral.
+
+### Scoring
+Participants are scored by whether they correctly identified the emotion expressed by the image or not.
+
+### Sample Instructions
+
+*In this task you will be presented with up to 10 facial images and asked to identify the emotion expressed by each one from a list of 5 emotions.*
