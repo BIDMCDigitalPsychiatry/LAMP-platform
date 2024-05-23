@@ -343,7 +343,7 @@ When a user takes this assessment, they are presented with a random subset of 10
 The user progresses through a series of up to 10 screens in which they are presented with an image and must select the corresponding emotion from a list of options.
 
 ### Customizations
-Researchers must provide a dataset of up to 50 facial images for the emotion recognition and assign each image with the appropriate image.
+Researchers must provide a dataset of up to 50 facial images for the emotion recognition and assign each image with the appropriate emotion.
 Currently, the emotions that can be assigned to an image are restricted to happiness, sadness, fear, anger, and neutral.
 
 ### Scoring
