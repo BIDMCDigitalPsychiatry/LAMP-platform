@@ -7,7 +7,7 @@
     <link rel="alternate" href="https://docs.lamp.digital/blog"/>
     <subtitle>LAMP Platform Blog</subtitle>
     <icon>https://docs.lamp.digital/./docs/assets/logo.png</icon>
-    <rights>© $'{new Date().getFullYear()}' LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
+    <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
     <entry>
         <title type="html"><![CDATA[Release 2022.8.4]]></title>
         <id>/2022/8/4/</id>

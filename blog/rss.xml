@@ -7,7 +7,7 @@
         <lastBuildDate>Thu, 04 Aug 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <copyright>© $'{new Date().getFullYear()}' LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
+        <copyright>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
         <item>
             <title><![CDATA[Release 2022.8.4]]></title>
             <link>https://docs.lamp.digital/blog/2022/8/4/</link>
