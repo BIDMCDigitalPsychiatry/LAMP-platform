@@ -27,7 +27,6 @@
 ![](assets/maze.png)
 
 ### Memory game
-![]()
 
 ### Pop the Bubbles
 ![](assets/Pop_the_bubbles.png)
