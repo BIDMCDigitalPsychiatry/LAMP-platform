@@ -2,11 +2,8 @@
 
 ## Assess
 
-### Surveys
-![](assets/survey_ex.png)
-
-### DBT Diary Card
-![](assets/dbt_ex.png)
+### Balloon Risk
+![](assets/Balloon_risk.png)
 
 ### Box Game/Spatial Span
 ![](assets/spatial_span_ex.png)
@@ -14,17 +11,43 @@
 ### Cats and Dogs
 ![](assets/cats_n_dogs_ex.png)
 
-### Jewels
-![](assets/jewels_ex.png)
+### DBT Diary Card
+![](assets/dbt_ex.png)
 
 ### Emotion Recognition
 ![](assets/Emo_recon_act.png)
 
-### Balloon Risk
+### Jewels A
+![](assets/jewels_a.png)
+
+### Jewels B
+![](assets/jewels_b.png)
+
+### Maze
+![](assets/maze.png)
+
+### Memory game
+![]()
 
 ### Pop the Bubbles
+![](assets/Pop_the_bubbles.png)
+
+### Spin the Wheel
+![](assets/spin_the_wheel)
+
+### Surveys
+![](assets/survey_ex.png)
+
+### Symbol-digit substitution
+![](assets/symbol_digit_sub.png)
+
+### Voice recording
+![](assets/voice_recording.png)
 
 ## Manage
+
+### Journal
+![](assets/jounral_ex.png)
 
 ### Mindfulness/Breathe
 - Anchoring Ambience
@@ -40,39 +63,35 @@
 - Nature Relaxation
 ![](assets/breathe_ex.png)
 
-### Scratch Image
+### Scratch Card
 ![](assets/scratch_ex.png)
-
-### Journal
-![](assets/jounral_ex.png)
 
 # Activities Coming Soon
 
 ## Assess
+### 3D Figure Copy
+![](assets/3D_fig_ex.png)
+
+### Digit Span
+![](assets/digital_span.png)
 
 ### N-Back
 ![](assets/nback_ex.png)
 
-### Simple Memory
-![](assets/simple_memory_ex.png)
-
 ### Serial 7s
 ![](assets/serial_ex.png)
 
-### 3D Figure Copy
-![](assets/3D_fig_ex.png)
+### Simple Memory
+![](assets/simple_memory_ex.png)
+
+### Temporal Order
+![](assets/temp_order.png)
 
 ### Trails B
 ![](assets/trails_b_ex.png)
 
 ### Trails B Dot Touch
 ![](assets/trails_b_dot_ex.png)
-
-### Temporal Order
-![](assets/temp_order.png)
-
-### Digit Span
-![](assets/digital_span.png)
 
 ### Visual Association
 ![](assets/visual_assoc.png)
@@ -82,8 +101,8 @@
 ### Goal Setting
 ![](assets/goal_setting.png)
 
-### Medication Tracker
-![](assets/medication_ex.png)
-
 ### Hope Box
 ![](assets/hope_box_ex.png)
+
+### Medication Tracker
+![](assets/medication_ex.png)
