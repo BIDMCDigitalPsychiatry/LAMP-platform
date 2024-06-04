@@ -166,7 +166,7 @@
       "footer": {
         "style": "dark",
         "links": [],
-        "copyright": "© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
+        "copyright": "© ${new Date().getFullYear()}$ LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
       }
     },
     "presets": [
