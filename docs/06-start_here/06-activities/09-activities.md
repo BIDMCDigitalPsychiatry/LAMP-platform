@@ -33,7 +33,7 @@
 ![](assets/Pop_the_bubbles.png)
 
 ### Spin the Wheel
-![](assets/spin_the_wheel)
+![](assets/spin_the_wheel.png)
 
 ### Surveys
 ![](assets/survey_ex.png)
