@@ -7,9 +7,9 @@ There are different ways for your organization to self-deploy the LAMP Platform,
 **→** *Be sure to open the toggles on the left-hand side to learn more about what each component does.*
 
 ---
-**Consortium**
+**CORE SERVICE**
 
-To deploy mindLAMP and to receive support from BIDMC, we require all interested parties to become official collaborators by joining the *mindLAMP consortium*. Before becoming an official collaborator and consortium partner, we will require IRB approval and a data sharing agreement between your institution and BIDMC.
+To deploy mindLAMP and to receive support from BIDMC, we require all interested parties to use the Core Service. Cores are referred to as “specialized service facilities,” where they are work units that provide goods and services that facilitate research activity by providing scientific services and resources, both internal and external. Operating expenses are charged to research cores then recovered through user fees charged. The mindLAMP Core provides a way for users to help support to upkeep and maintenance of the software while receiving user support. No data sharing is necessary if mindLAMP is to be hosted outside of BIDMC. If desired and with a data sharing agreement, the mindLAMP Core can help support data hosting.
 
 **Backend**
 
@@ -33,8 +33,6 @@ To deploy mindLAMP and to receive support from BIDMC, we require all interested 
 **Prerequisites:** Your organization will need to provision computing resources and encrypted snapshot storage and dedicate personnel to maintenance, updates, and security (i.e. data breach detection). 
 
 **Options:** You can use a **Backend** hosted by your institution with your customized **Native App** or **Frontend** or the current Division of Digital Psychiatry version. 
-
-At this time it is not possible to use the BIDMC server to host your data. 
 
 ---
 
