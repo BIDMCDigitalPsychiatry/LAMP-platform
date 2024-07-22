@@ -44,6 +44,8 @@ When selecting the question type, please note the following:
 - `SLIDER` questions act exactly like `LIST` questions, except they display a slider of options.
 - `SHORT ANSWER` questions act exactly like `TEXT` questions, except they have a shorter character limit (about a sentence).
 - `RATING` questions allows the individual to rate their response on a custom like `LIST` questions, except they only display numerical rating options.
+- `TIME` questions prompt the individual with a box in which only text for hours and minutes "HH:MM" is accepted, either in military time or in standard time,
+- `MATRIX` questions allow several survey items to be grouped together in a table with the same set of instructions and answer choices.
 
 # Delete an Individual Option in Your Question's List of Options:
 
