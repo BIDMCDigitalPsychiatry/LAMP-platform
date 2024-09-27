@@ -356,6 +356,38 @@ The task can be customized by the clinician or researcher in the Activity settin
 
 Player score is represented by the amount of money held at the end of a 20 spin game.
 
+
+
 ### Sample Instructions
 
 *"The game presents you with two wheels that can be spun by selecting one of four buttons at the bottom of the screen. The colors of the buttons do not correspond to the colors on the wheel. Each spin can result in a win or loss of money, with the wheel at the top displaying the money you won and the bottom displaying the money lost. The total amount remaining is displayed at the top of the screen. You start with $2000 and have 20 spins per game by default. Points at the end of a session are represented in the amount of money you have."*
+
+## D-Cog
+
+Similar to Cats and Dogs, D-Cog is a digital task, which tests visual and working memory as well as attention. Users must remember the location of multiple stimuli and reproduce the location of the response stimuli from memory. 
+
+In this task, participants are first shown a pattern of boxes. The boxes temporarily lift, to reveal the image of a dog behind some of them. Participants are asked to select the boxes with a dog behind them.
+
+The dog stimuli and the box together assess visual memory, working memory, and attention: each cue is only briefly visible "behind" the boxes, so participants must attend to the cues, remember the position of each stimulus, and then recall the position to select the correct boxes. They must also remember increasingly more cues at each subsequent trial. 
+
+<details>
+    <summary> References </summary>
+    (To be added)
+</details>
+
+### Sample Game Play
+(To be added)
+
+### Customization
+
+The game automatically progresses as levels are completed. There are no researcher-defined customizations necessary.
+
+### Scoring 
+
+Scoring is based on the highest number of correct boxes selected within the timeframe of the game.
+
+### Sample Instructions
+
+*"When the squares turn white, tap where the dogs were."*
+
+
