@@ -17,7 +17,7 @@ jobs:
           node-version: '16.x'
       - name: Install & Build
         run: |
-          npm install
+          npm install  --legacy-peer-deps
           npm run build
   gh-release:
     if: github.event_name == 'push'
@@ -31,7 +31,7 @@ jobs:
           node-version: '16.x'
       - name: Install & Build
         run: |
-          npm install
+          npm install  --legacy-peer-deps
           npm run build
       - uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
