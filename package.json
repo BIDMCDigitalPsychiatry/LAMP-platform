@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.14",
-    "@docusaurus/preset-classic": "2.0.0-beta.14",
-    "@docusaurus/utils": "2.0.0-beta.14",
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
+    "@docusaurus/utils": "^3.5.2",
     "@easyops-cn/docusaurus-search-local": "^0.20.0",
     "@monaco-editor/react": "^4.3.1",
     "docusaurus-preset-openapi": "^0.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "url": "^0.11.0"
   },
   "overrides": {
@@ -18,8 +18,8 @@
   },
   "scripts": {
     "fix-config": "echo \"module.exports = require('./package.json').docusaurus\" > docusaurus.config.js",
-    "prebuild": "npm run fix-config",
-    "prestart": "npm run prebuild",
+    "prebuild": "",
+    "prestart": "",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
     "build": "docusaurus build --no-minify",
