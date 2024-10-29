@@ -11,7 +11,7 @@ package-lock.json
 .cache-loader
 openapi.json
 sidebar.json
-docusaurus.config.js
+# docusaurus.config.js
 
 # Misc
 .DS_Store

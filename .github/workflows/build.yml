@@ -14,10 +14,10 @@ jobs:
           submodules: true
       - uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '20.x'
       - name: Install & Build
         run: |
-          npm install
+          npm install  --legacy-peer-deps
           npm run build
   gh-release:
     if: github.event_name == 'push'
@@ -28,10 +28,10 @@ jobs:
           submodules: true
       - uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '20.x'
       - name: Install & Build
         run: |
-          npm install
+          npm install  --legacy-peer-deps
           npm run build
       - uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
