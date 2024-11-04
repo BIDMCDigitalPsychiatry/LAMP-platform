@@ -1,25 +1,41 @@
-# LAMP Platform
+# Website
 
-| Frontend | Backend | Native Core | Data Science | Programming Libraries |
-|-|-|-|-|-|
-| [Dashboard](https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard) | [API Server](https://github.com/BIDMCDigitalPsychiatry/LAMP-server) | [iOS](https://github.com/BIDMCDigitalPsychiatry/LAMP-core-ios) | [Cortex](https://github.com/BIDMCDigitalPsychiatry/LAMP-cortex) | [R](https://github.com/BIDMCDigitalPsychiatry/LAMP-r) |
-| [Activities](https://github.com/BIDMCDigitalPsychiatry/LAMP-activities) | [App Gateway](https://github.com/BIDMCDigitalPsychiatry/LAMP-app-gateway) | [Android](https://github.com/BIDMCDigitalPsychiatry/LAMP-core-android) | [CollegeStudy](https://github.com/BIDMCDigitalPsychiatry/LAMP-college-study) | [JS](https://github.com/BIDMCDigitalPsychiatry/LAMP-js) |
-| | | | | [Python](https://github.com/BIDMCDigitalPsychiatry/LAMP-py) |
-| | | | | [Swift](https://github.com/BIDMCDigitalPsychiatry/LAMP-swift) |
-| | | | | [Kotlin](https://github.com/BIDMCDigitalPsychiatry/LAMP-kotlin) |
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+### Installation
 
-### Editing Documentation
-
-To edit and test documentation locally after cloning the repository, run `npm start`. 
-
-### Updating OpenAPI documentation
-
-The `LAMP-protocol` repository houses the OpenAPI specification for the LAMP Protocol. To update the interactive documentation, you need to update the git submodule:
-
-```shell
-git checkout https://github.com/BIDMCDigitalPsychiatry/LAMP-platform.git
-git pull --recurse-submodules
-git submodule update --remote --recursive
-git commit -am 'Fast-forward LAMP-protocol submodule'
 ```
+$ yarn
+```
+
+### Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

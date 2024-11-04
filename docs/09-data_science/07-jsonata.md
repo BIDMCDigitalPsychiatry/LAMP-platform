@@ -330,7 +330,8 @@ At the top level, we have an array rather than an object.  If we want to select 
   ```
   **Result**
   ```
-  { "ref": [ 1,2 ] }
+ `{ "ref": [ 1, 2 ] }`
+
   ```
 
 - `.ref` here returns the entire internal array
@@ -382,7 +383,7 @@ At any step in a location path, the selected items can be filtered using a predi
   ```
   **Result**
   ```
-  { "type": "mobile",  "number": "077 7700 1234" }
+  `{ "type": "mobile",  "number": "077 7700 1234" }`
   ```
 
 - Select the mobile phone number
@@ -547,9 +548,7 @@ __Examples__
 
 Consider the following JSON document:
 ```
-{
-  "Numbers": [1, 2.4, 3.5, 10, 20.9, 30]
-}
+`{"Numbers": [1, 2.4, 3.5, 10, 20.9, 30]}`
 ```
 
 | Expression | Output | Comments
@@ -669,16 +668,17 @@ __Examples__
   
   **Query**
   ```
-  Phone.{type: number}
+  `Phone.{type: number}`
   ```
   **Result**
   ```
+  ```json
   [
   { "home": "0203 544 1234" }, 
   { "office": "01962 001234" }, 
   { "office": "01962 001235" }, 
   { "mobile": "077 7700 1234"  } 
-]
+]`
   ```
 
 - Combines the key/value pairs into a single object.  See [Grouping using object key expression](#sorting-grouping) for more details.
@@ -688,8 +688,9 @@ __Examples__
   Phone{type: number}
   ```
   **Result**
-  ```
-  {
+  ```  
+```json
+{
   "home": "0203 544 1234",
   "office": [
     "01962 001234",
@@ -707,7 +708,8 @@ __Examples__
   ```
   **Result**
   ```
-  {
+```json
+{
   "home": [
     "0203 544 1234"
   ],
@@ -783,7 +785,8 @@ __Examples__
   ```
   **Result**
   ```
-  {
+```json
+{
   "Bowler Hat": [ 34.45, 34.45 ],
   "Trilby hat": 21.67,
   "Cloak": 107.99
@@ -800,6 +803,7 @@ __Examples__
   ```
   **Result**
   ```
+  ```json
   {
   "Bowler Hat": {
     "Price": [ 34.45, 34.45 ],
@@ -822,6 +826,7 @@ Note in the above example, the value expression grouped all of the prices togeth
   ```
   **Result**
   ```
+  ```json
   {
   "Bowler Hat": [
     { "Price": 34.45, "Qty": 2 },
@@ -840,7 +845,8 @@ Note in the above example, the value expression grouped all of the prices togeth
   ```
   **Result**
   ```
-  {
+```json
+{
   "Bowler Hat": [ 68.9, 137.8 ],
   "Trilby hat": 21.67,
   "Cloak": 107.99
@@ -855,7 +861,8 @@ Note in the above example, the value expression grouped all of the prices togeth
   ```
   **Result**
   ```
-  {
+```json
+{
   "Bowler Hat": 206.7,
   "Trilby hat": 21.67,
   "Cloak": 107.99
@@ -1330,6 +1337,7 @@ which produces the result `720`.  The Greek lambda (λ) symbol can be used in pl
 The first part of this above expression is an implementation of the [Y-combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed_point_combinators_in_lambda_calculus) in this language.  We could assign it to a variable and apply it to other recursive anonymous functions:
 
 ```
+```json
 (
   $Y := λ($f) { λ($x) { $x($x) }( λ($g) { $f( (λ($a) {$g($g)($a)}))})};
   [1,2,3,4,5,6,7,8,9] . $Y(λ($f) { λ($n) { $n <= 1 ? $n : $f($n-1) + $f($n-2) } }) ($)
@@ -1399,6 +1407,7 @@ Evaluation of the regex returns a function, and this has been bound to a variabl
 This returns the following JSONata object (JSON, but also with a function property):
 
 ```
+```json
 {
   "match": "man",
   "start": 2,
@@ -1417,7 +1426,7 @@ This contains information of the first matching substring within this famous pal
 
 In this example, invoking `next()` will return:
 
-```
+``````json
 {
   "match": "canal",
   "start": 17,
