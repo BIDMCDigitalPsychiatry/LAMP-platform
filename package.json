@@ -1,70 +1,33 @@
 {
-  "name": "LAMP-documentation",
-  "version": "1.0.0",
+  "name": "lamp-platform",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@docusaurus/core": "^3.5.2",
-    "@docusaurus/preset-classic": "^3.5.2",
-    "@docusaurus/utils": "^3.5.2",
-    "@easyops-cn/docusaurus-search-local": "^0.20.0",
-    "@monaco-editor/react": "^4.3.1",
-    "ajv": "^8.17.1",
-    "ajv-keywords": "^5.1.0",
-    "docusaurus-preset-openapi": "^0.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "url": "^0.11.0"
-  },
-  "overrides": {
-    "postman-collection": "4.1.1"
-  },
   "scripts": {
-    "fix-config": "echo \"module.exports = require('./package.json').docusaurus\" > docusaurus.config.js",
-    "prebuild": "",
-    "prestart": "",
     "docusaurus": "docusaurus",
-    "start": "docusaurus start --host 0.0.0.0 --no-open --poll",
-    "build": "docusaurus build --no-minify",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "dev": "docusaurus start",
+    "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc"
   },
-  "babel": {
-    "compact": true,
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "useBuiltIns": "entry",
-          "loose": true,
-          "corejs": "3",
-          "modules": false,
-          "exclude": [
-            "transform-typeof-symbol"
-          ]
-        }
-      ],
-      "@babel/preset-react",
-      "@babel/preset-typescript"
-    ],
-    "plugins": [
-      [
-        "@babel/plugin-transform-runtime",
-        {
-          "corejs": false,
-          "helpers": false,
-          "regenerator": true,
-          "useESModules": true
-        }
-      ],
-      "@babel/plugin-syntax-dynamic-import",
-      "@babel/plugin-proposal-optional-chaining",
-      "@babel/plugin-proposal-nullish-coalescing-operator"
-    ]
+  "dependencies": {
+    "@docusaurus/core": "3.6.0",
+    "@docusaurus/preset-classic": "3.6.0",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.6.0",
+    "@docusaurus/tsconfig": "3.6.0",
+    "@docusaurus/types": "3.6.0",
+    "typescript": "~5.6.2"
   },
   "browserslist": {
     "production": [
@@ -73,22 +36,25 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=18.0"
   },
   "docusaurus": {
     "title": "LAMP Platform",
     "tagline": "The LAMP Platform documentation.",
-    "url": "https://docs.lamp.digital",
+    "url": "http://localhost:3000",
     "favicon": "./docs/assets/logo.png",
     "organizationName": "BIDMCDigitalPsychiatry",
     "projectName": "LAMP-platform",
-    "baseUrl": "/",
-    "onBrokenLinks": "error",
-    "onDuplicateRoutes": "error",
-    "onBrokenMarkdownLinks": "error",
+    "baseUrl": "/docs",
+    "onBrokenLinks": "throw",
+    "onDuplicateRoutes": "throw",
+    "onBrokenMarkdownLinks": "throw",
     "themeConfig": {
       "defaultMode": "light",
       "disableSwitch": false,

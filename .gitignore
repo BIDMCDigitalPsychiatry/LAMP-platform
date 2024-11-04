@@ -1,17 +1,12 @@
 # Dependencies
 /node_modules
-package-lock.json
 
 # Production
 /build
 
 # Generated files
 .docusaurus
-.ipynb_checkpoints
 .cache-loader
-openapi.json
-sidebar.json
-# docusaurus.config.js
 
 # Misc
 .DS_Store
@@ -20,7 +15,6 @@ sidebar.json
 .env.test.local
 .env.production.local
 
-# Log Files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

@@ -160,12 +160,12 @@ A few settings need to be set up for the new client to work with MindLAMP.
 Finally a few environment variables need to be added to the MindLAMP server. Here's an example of what the OAuth section of the `.env` file could look like:
 
     OAUTH="on"
-    OAUTH_AUTH_URL="https://<hostname here>/realms/<realm name>/protocol/openid-connect/auth"
-    OAUTH_TOKEN_URL="https://<hostname here>/realms/<realm name>/protocol/openid-connect/token"
-    OAUTH_LOGOUT_URL="https://<hostname here>/realms/<realm name>/protocol/openid-connect/logout"
-    OAUTH_CLIENT_ID="<client name here>"
-    OAUTH_CLIENT_SECRET="<client secret here>"
-    OAUTH_REDIRECT_URI="<dashboard URL here>"
+    OAUTH_AUTH_URL="https://<i>hostname here</i>>/realms/<i>realm name</i>/protocol/openid-connect/auth"
+    OAUTH_TOKEN_URL="https://<i>hostname here</i>/realms/<i>realm name</i>/protocol/openid-connect/token"
+    OAUTH_LOGOUT_URL="https://<i>hostname here</i>/realms/<i>realm name</i>/protocol/openid-connect/logout"
+    OAUTH_CLIENT_ID="<i>client name here</i>"
+    OAUTH_CLIENT_SECRET="<i>client secret here</i>"
+    OAUTH_REDIRECT_URI="<i>dashboard URL here</i>"
     OAUTH_SCOPE="openid offline_access"
     OAUTH_STATE="12345"
     OAUTH_NONCE="67890"

@@ -22,11 +22,11 @@ Now that we have the credentials we’ll need to add a few environment variables
     OAUTH="on"
     OAUTH_AUTH_URL="https://accounts.google.com/o/oauth2/v2/auth"
     OAUTH_TOKEN_URL=" https://oauth2.googleapis.com/token "
-    OAUTH_CLIENT_ID="<client id here>"
-    OAUTH_CLIENT_SECRET="<client secret here>"
-    OAUTH_REDIRECT_URI="<dashboard URL here>/oauth"
+    OAUTH_CLIENT_ID="<i>client id here</i>"
+    OAUTH_CLIENT_SECRET="<i>client secret here</i>"
+    OAUTH_REDIRECT_URI="<i>dashboard URL here</i>/oauth"
     OAUTH_SCOPE="https://www.googleapis.com/auth/userinfo.email"
-    TOKEN_SECRET="<LAMP defined secret here>"
+    TOKEN_SECRET="<i>LAMP defined secret here</i>"
 
 Remember that `OAUTH_REDIRECT_URI` must be exactly the same as the redirect URI the client was set up with.
 
