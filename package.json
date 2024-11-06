@@ -104,11 +104,6 @@
             ]
           },
           {
-            "label": "API",
-            "position": "left",
-            "to": "/api"
-          },
-          {
             "label": "What's New",
             "position": "left",
             "to": "/blog"
