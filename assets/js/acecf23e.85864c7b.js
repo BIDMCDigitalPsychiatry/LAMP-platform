@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklamp_platform=self.webpackChunklamp_platform||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"LAMP Platform","authorsListPath":"/blog/authors"}')}}]);

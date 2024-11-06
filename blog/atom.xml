@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://docs.lamp.digital/docs/blog</id>
+    <id>https://docs.lamp.digital/blog</id>
     <title>LAMP Platform Blog</title>
     <updated>2022-08-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://docs.lamp.digital/docs/blog"/>
+    <link rel="alternate" href="https://docs.lamp.digital/blog"/>
     <subtitle>LAMP Platform Blog</subtitle>
-    <icon>https://docs.lamp.digital/docs/./docs/assets/logo.png</icon>
+    <icon>https://docs.lamp.digital/./docs/assets/logo.png</icon>
     <rights>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</rights>
     <entry>
         <title type="html"><![CDATA[Release 2022.8.4]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2022/8/4/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2022/8/4/"/>
+        <id>https://docs.lamp.digital/blog/2022/8/4/</id>
+        <link href="https://docs.lamp.digital/blog/2022/8/4/"/>
         <updated>2022-08-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[- [iOS] Resolved an issue where the iOS app would erroneously request location permission even when it was denied.]]></summary>
         <content type="html"><![CDATA[<ul>
@@ -49,11 +49,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Release 2022.4.23]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2022/04/23/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2022/04/23/"/>
+        <id>https://docs.lamp.digital/blog/2022/04/23/</id>
+        <link href="https://docs.lamp.digital/blog/2022/04/23/"/>
         <updated>2022-04-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features & Improvements]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/docs/blog/2022/04/23/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/blog/2022/04/23/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
 <ul>
 <li><code>[LAMP-dashboard]</code> Added support for custom <code>ActivitySpec</code> definitions, including custom configuration, text, icons, and script contents.</li>
 <li><code>[LAMP-dashboard]</code> Added a warning popup to require the user select a group to create an activity or sensor under if none specified.</li>
@@ -75,7 +75,7 @@
 <li><code>[LAMP-core-android]</code> Added user-facing crash report to allow users to quickly screenshot or screen record bugs and app crashes.</li>
 <li><code>[LAMP-core-android]</code> Added support for a new schedule repeat-type <code>every two weeks</code>.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2022/04/23/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2022/04/23/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <ul>
 <li><code>[LAMP-dashboard]</code> Resolved an issue where certain Activity configuration text boxes (i.e. Tips) were not resizable.</li>
 <li><code>[LAMP-dashboard]</code> Resolved an issue where the back button did not work in certain activities (i.e. Tips) when opened from a notification.</li>
@@ -119,11 +119,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2022/03/22/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2022/03/22/"/>
+        <id>https://docs.lamp.digital/blog/2022/03/22/</id>
+        <link href="https://docs.lamp.digital/blog/2022/03/22/"/>
         <updated>2022-03-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[New features and fixes for cortex]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features-and-fixes-for-cortex">New features and fixes for cortex<a href="https://docs.lamp.digital/docs/blog/2022/03/22/#new-features-and-fixes-for-cortex" class="hash-link" aria-label="Direct link to New features and fixes for cortex" title="Direct link to New features and fixes for cortex">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features-and-fixes-for-cortex">New features and fixes for cortex<a href="https://docs.lamp.digital/blog/2022/03/22/#new-features-and-fixes-for-cortex" class="hash-link" aria-label="Direct link to New features and fixes for cortex" title="Direct link to New features and fixes for cortex">​</a></h2>
 <ul>
 <li>Data quality visualizations</li>
 <li>Updated survey scoring</li>
@@ -131,7 +131,7 @@
 <li>Healthkit sleep</li>
 <li>Inactive duration (a proxy for sleep)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details:<a href="https://docs.lamp.digital/docs/blog/2022/03/22/#details" class="hash-link" aria-label="Direct link to Details:" title="Direct link to Details:">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details:<a href="https://docs.lamp.digital/blog/2022/03/22/#details" class="hash-link" aria-label="Direct link to Details:" title="Direct link to Details:">​</a></h3>
 <ul>
 <li>Data quality visualizations include activity counts, passive data quality, and features (home time, screen duration, and step counts). These graphs will be attached to the Data Portal.</li>
 <li>The secondary feature <code>step_count</code> unifies iOS and Android steps.</li>
@@ -143,11 +143,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2022/03/07/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2022/03/07/"/>
+        <id>https://docs.lamp.digital/blog/2022/03/07/</id>
+        <link href="https://docs.lamp.digital/blog/2022/03/07/"/>
         <updated>2022-03-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features & Improvements]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/docs/blog/2022/03/07/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/blog/2022/03/07/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
 <ul>
 <li>iOS and Android app updates are now available that primarily resolve notification timezone issues. Clinical and research coordinators should ensure their patients update the app to reflect these changes.</li>
 </ul>]]></content>
@@ -158,11 +158,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2022/2/15/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2022/2/15/"/>
+        <id>https://docs.lamp.digital/blog/2022/2/15/</id>
+        <link href="https://docs.lamp.digital/blog/2022/2/15/"/>
         <updated>2022-02-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features & Improvements]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/docs/blog/2022/2/15/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/blog/2022/2/15/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
 <ul>
 <li>Added the ability to load ActivitySpec executables directly from the API (BETA).</li>
 <li>Added new configuration parameters for Voice Diary prompts.</li>
@@ -174,7 +174,7 @@
 <p>::: error</p>
 <p>Please note that when upgrading to the latest version of the LAMP dashboard or server (<code>2022.2.14</code>), clinicians are required to re-save all activity schedules to update GMT-scheduling to local timezone scheduling. If this step is not performed, patients may receive notifications early or late.</p>
 <p>:::</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2022/2/15/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2022/2/15/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <ul>
 <li>Resolved several issues with weekly filters for DBT Diary Card visualizations that were not synchronized.</li>
 <li>Resolved visibility issues with DBT Diary Card visualizations including font and text placement.</li>
@@ -196,8 +196,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2022 User Interface Improvements]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2022/1/11/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2022/1/11/"/>
+        <id>https://docs.lamp.digital/blog/2022/1/11/</id>
+        <link href="https://docs.lamp.digital/blog/2022/1/11/"/>
         <updated>2022-01-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Server administrators MUST upgrade from2022 versions in the Docker configuration. Please contact us on the forum if there are any questions.]]></summary>
         <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>Server administrators MUST upgrade from <code>:2021</code> to <code>:2022</code> versions in the Docker configuration. Please contact us on the forum if there are any questions.</p></div></div>
@@ -211,7 +211,7 @@
 <li>Resolves minor issues with the Matrix survey option.</li>
 <li>Resolves issues with the back button in Tips.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://docs.lamp.digital/docs/blog/2022/1/11/#known-issues" class="hash-link" aria-label="Direct link to Known Issues" title="Direct link to Known Issues">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://docs.lamp.digital/blog/2022/1/11/#known-issues" class="hash-link" aria-label="Direct link to Known Issues" title="Direct link to Known Issues">​</a></h2>
 <ul>
 <li>The matrix survey data format is not finalized; while the data will be recorded, it may not be compatible with Cortex and other API facilities.</li>
 <li>The Tips sub-tip duration is currently not recorded when the back button is pressed.</li>
@@ -228,8 +228,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[New features, stability fixes, and improvements]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/12/16/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/12/16/"/>
+        <id>https://docs.lamp.digital/blog/2021/12/16/</id>
+        <link href="https://docs.lamp.digital/blog/2021/12/16/"/>
         <updated>2021-12-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[- Questions created in the survey builder can now be toggled between to have optional or required responses. By default, they will begin as required but can be checked to be optional]]></summary>
         <content type="html"><![CDATA[<h1>New Features</h1>
@@ -260,8 +260,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[New, fully functional Clinical-specific use for mindLAMP!]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/11/22/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/11/22/"/>
+        <id>https://docs.lamp.digital/blog/2021/11/22/</id>
+        <link href="https://docs.lamp.digital/blog/2021/11/22/"/>
         <updated>2021-11-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[mindLAMP now features a variety of new features to support a clinical-only team if there is no need for specialized researcher functions or if a simpler and streamlined UI is preferred. See our documentation here for greater details.]]></summary>
         <content type="html"><![CDATA[<p>mindLAMP now features a variety of new features to support a clinical-only team if there is no need for specialized researcher functions or if a simpler and streamlined UI is preferred. See our documentation <a href="https://docs.lamp.digital/using/clin_vs_res" target="_blank" rel="noopener noreferrer">here</a> for greater details.</p>
@@ -292,8 +292,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Scheduled Routine mindLAMP AWS Maintenance]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/09/13/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/09/13/"/>
+        <id>https://docs.lamp.digital/blog/2021/09/13/</id>
+        <link href="https://docs.lamp.digital/blog/2021/09/13/"/>
         <updated>2021-09-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hi all,]]></summary>
         <content type="html"><![CDATA[<p>Hi all,</p>
@@ -305,18 +305,18 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Visualization & Activity Updates]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/08/25/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/08/25/"/>
+        <id>https://docs.lamp.digital/blog/2021/08/25/</id>
+        <link href="https://docs.lamp.digital/blog/2021/08/25/"/>
         <updated>2021-08-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Updates]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="updates">Updates<a href="https://docs.lamp.digital/docs/blog/2021/08/25/#updates" class="hash-link" aria-label="Direct link to Updates" title="Direct link to Updates">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="updates">Updates<a href="https://docs.lamp.digital/blog/2021/08/25/#updates" class="hash-link" aria-label="Direct link to Updates" title="Direct link to Updates">​</a></h2>
 <ul>
 <li>DBT Diary card now has split colors based on effective/ineffective behaviors</li>
 <li>DBT Diary card renamed some sections to be more clear of section's purpose (i.e. "Target behaviors" renamed to "Target Effective Behaviors")</li>
 <li>Cognitive games tests tab added to docs <a href="https://docs.lamp.digital/start_here/cog_games" target="_blank" rel="noopener noreferrer">here</a></li>
 <li>Minor documentation edits</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/08/25/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2021/08/25/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved an issue where if a reserarcher duplicated a study group and created a new user, the icons associated with the duplicated group's activities would not carry over to the new group</li>
 <li>Fixed an issue in which markdown was not working for embedding links</li>
@@ -331,15 +331,15 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Minor Stability Updates and Bug Fixes]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/08/09/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/08/09/"/>
+        <id>https://docs.lamp.digital/blog/2021/08/09/</id>
+        <link href="https://docs.lamp.digital/blog/2021/08/09/"/>
         <updated>2021-08-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Updates]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="updates">Updates<a href="https://docs.lamp.digital/docs/blog/2021/08/09/#updates" class="hash-link" aria-label="Direct link to Updates" title="Direct link to Updates">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="updates">Updates<a href="https://docs.lamp.digital/blog/2021/08/09/#updates" class="hash-link" aria-label="Direct link to Updates" title="Direct link to Updates">​</a></h2>
 <ul>
 <li>Android 8 now required for the usage of mindLAMP for Android devices</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/08/09/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2021/08/09/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved an issue where the graphs for a DBT diary card would display "NaN" on the x-axis</li>
 <li>Resolved an issue where Jewels would time out before completion</li>
@@ -355,28 +355,28 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Significant Performance Improvements & UI Overhaul]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/04/22/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/04/22/"/>
+        <id>https://docs.lamp.digital/blog/2021/04/22/</id>
+        <link href="https://docs.lamp.digital/blog/2021/04/22/"/>
         <updated>2021-04-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This is a significant update -- please review the bolded disclaimer text!]]></summary>
         <content type="html"><![CDATA[<p>This is a significant update -- please review the bolded disclaimer text!</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="frontend">Frontend<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#frontend" class="hash-link" aria-label="Direct link to Frontend" title="Direct link to Frontend">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="frontend">Frontend<a href="https://docs.lamp.digital/blog/2021/04/22/#frontend" class="hash-link" aria-label="Direct link to Frontend" title="Direct link to Frontend">​</a></h2>
 <div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p><strong>This release of the Frontend REQUIRES the Backend to be updated first. If you are using the <code>dashboard.lamp.digital</code> link, please ask your system administrator to upgrade your backend immediately.</strong></p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/blog/2021/04/22/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
 <ul>
 <li>Overhauled activity creation for automatic validation, descriptions, min/max guides for numeric values.</li>
 <li>Added a new tab item for Sensors management and a new tab item for Studies management when logged in as a clinician.</li>
 <li>Added a new patient list creation option to auto-create a study based on a template with a single patient.</li>
 <li>Added the ability to configure multiple system administrator-level accounts from the API and the dashboard.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/blog/2021/04/22/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h3>
 <ul>
 <li>Added the ability to search by patient alias or study name.</li>
 <li>Added page navigation to make it easier to track and sort activities or patients.</li>
 <li>Updated the layout to a larger and more readable grid.</li>
 <li>Significant performance improvements across the clinician dashboard that support up multiple clinics/studies containing a total of up to 1000 patients.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2021/04/22/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <ul>
 <li>Resolved an issue where the last patient in the patient list would be hidden underneath the navigation bar.</li>
 <li>Resolved an issue where tips would disappear from the Learn tab once viewed.</li>
@@ -391,25 +391,25 @@
 <li>Resolved an issue where sensor data would not upload correctly for Samsung devices if the URL included a '/'.</li>
 <li>Resolved an issue where Activity Groups erroneously had a disabled incorrect schedule automatically added.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend">Backend<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#backend" class="hash-link" aria-label="Direct link to Backend" title="Direct link to Backend">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-1">Features<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#features-1" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend">Backend<a href="https://docs.lamp.digital/blog/2021/04/22/#backend" class="hash-link" aria-label="Direct link to Backend" title="Direct link to Backend">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-1">Features<a href="https://docs.lamp.digital/blog/2021/04/22/#features-1" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
 <ul>
 <li>Added support for MongoDB in addition to CouchDB, including enterprise managed solutions such as AWS DocumentDB and Azure CosmosDB.</li>
 <li>Added the ability to configure multiple system administrator-level accounts from the API and the dashboard.</li>
 <li>Added a brand new visualization and data extraction query system.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes-1">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#bug-fixes-1" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes-1">Bug Fixes<a href="https://docs.lamp.digital/blog/2021/04/22/#bug-fixes-1" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <ul>
 <li>Resolved several memory leak related issues for the LISTEN and push notificatons API.</li>
 <li>Resolved an issue with MongoDB backends where queries could run indefinitely and bottleneck the backend processes.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="native-core-ios--android">Native Core (iOS &amp; Android)<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#native-core-ios--android" class="hash-link" aria-label="Direct link to Native Core (iOS &amp; Android)" title="Direct link to Native Core (iOS &amp; Android)">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="native-core-ios--android">Native Core (iOS &amp; Android)<a href="https://docs.lamp.digital/blog/2021/04/22/#native-core-ios--android" class="hash-link" aria-label="Direct link to Native Core (iOS &amp; Android)" title="Direct link to Native Core (iOS &amp; Android)">​</a></h2>
 <div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p><strong>This release of the Native Core apps (iOS, Android, Apple Watch, Google wearOS) REQUIRES the Backend to be updated first. If you are NOT using the <code>api.lamp.digital</code> link, please ask your system administrator to upgrade your backend immediately.</strong></p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features-2">Features<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#features-2" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features-2">Features<a href="https://docs.lamp.digital/blog/2021/04/22/#features-2" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
 <ul>
 <li>Sensors are now configurable (enable/disable specific sensor types) using the new Frontend and Backend components.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes-2">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#bug-fixes-2" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes-2">Bug Fixes<a href="https://docs.lamp.digital/blog/2021/04/22/#bug-fixes-2" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <ul>
 <li>Resolved an issue where cached sensor data would sometimes fail to upload.</li>
 <li>Resolved an issue on iOS where the app would crash in the background and halt the sensor data collection process.</li>
@@ -422,8 +422,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Documentation Overhaul]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/04/01/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/04/01/"/>
+        <id>https://docs.lamp.digital/blog/2021/04/01/</id>
+        <link href="https://docs.lamp.digital/blog/2021/04/01/"/>
         <updated>2021-04-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the brand new documentation site!]]></summary>
         <content type="html"><![CDATA[<p>Welcome to the brand new documentation site!</p>]]></content>
@@ -434,26 +434,26 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Patient Profile & New Cognitive Tests]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/02/12/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/02/12/"/>
+        <id>https://docs.lamp.digital/blog/2021/02/12/</id>
+        <link href="https://docs.lamp.digital/blog/2021/02/12/"/>
         <updated>2021-02-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="patient-profile-ui">Patient Profile UI<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#patient-profile-ui" class="hash-link" aria-label="Direct link to Patient Profile UI" title="Direct link to Patient Profile UI">​</a></h3>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/blog/2021/02/12/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="patient-profile-ui">Patient Profile UI<a href="https://docs.lamp.digital/blog/2021/02/12/#patient-profile-ui" class="hash-link" aria-label="Direct link to Patient Profile UI" title="Direct link to Patient Profile UI">​</a></h3>
 <ul>
 <li>The new Patient profile interface allows quick and easy management of activities, sensors, and conversations in one place.</li>
 <li>You are now able to add, remove, and configure specific sensors for data collection across studies. (Support for this feature requires the upcoming smartphone and wearable app release.)</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2021-02-12_at_11.54.43_AM-f36dfdcee6c416807af60e250994b8b3.png" width="2418" height="1517" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2021-02-12_at_11.54.48_AM-0c22c51006eec943674a316ee35423cc.png" width="2418" height="1430" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2021-02-12_at_11.55.09_AM-0e41050f60b7894ccd31c3a4b08fff77.png" width="1189" height="870" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pop-the-bubbles--balloon-risk">Pop The Bubbles &amp; Balloon Risk<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#pop-the-bubbles--balloon-risk" class="hash-link" aria-label="Direct link to Pop The Bubbles &amp; Balloon Risk" title="Direct link to Pop The Bubbles &amp; Balloon Risk">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2021-02-12_at_11.54.43_AM-f36dfdcee6c416807af60e250994b8b3.png" width="2418" height="1517" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2021-02-12_at_11.54.48_AM-0c22c51006eec943674a316ee35423cc.png" width="2418" height="1430" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2021-02-12_at_11.55.09_AM-0e41050f60b7894ccd31c3a4b08fff77.png" width="1189" height="870" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pop-the-bubbles--balloon-risk">Pop The Bubbles &amp; Balloon Risk<a href="https://docs.lamp.digital/blog/2021/02/12/#pop-the-bubbles--balloon-risk" class="hash-link" aria-label="Direct link to Pop The Bubbles &amp; Balloon Risk" title="Direct link to Pop The Bubbles &amp; Balloon Risk">​</a></h3>
 <ul>
 <li>The new "Pop The Bubbles" and "Balloon Risk" cognitive test activities are available for configuration and usage (in specific installations only; consult your system administrator).</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Untitled_A-4500e5e513b087376a3339cfdba010d9.png" width="2520" height="1576" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improved-native-apps"><strong>Improved Native Apps</strong><a href="https://docs.lamp.digital/docs/blog/2021/02/12/#improved-native-apps" class="hash-link" aria-label="Direct link to improved-native-apps" title="Direct link to improved-native-apps">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Untitled_A-4500e5e513b087376a3339cfdba010d9.png" width="2520" height="1576" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/blog/2021/02/12/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improved-native-apps"><strong>Improved Native Apps</strong><a href="https://docs.lamp.digital/blog/2021/02/12/#improved-native-apps" class="hash-link" aria-label="Direct link to improved-native-apps" title="Direct link to improved-native-apps">​</a></h3>
 <ul>
 <li>Updated and refactored the iOS and Android apps for higher performance and support for new enhanced features.<!-- -->
 <ul>
@@ -463,12 +463,12 @@
 </li>
 <li>Updated push notifications to collect metadata about notifications and user interactions as a new sensor type.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improved-native-apps-1"><strong>Improved Native Apps</strong><a href="https://docs.lamp.digital/docs/blog/2021/02/12/#improved-native-apps-1" class="hash-link" aria-label="Direct link to improved-native-apps-1" title="Direct link to improved-native-apps-1">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improved-native-apps-1"><strong>Improved Native Apps</strong><a href="https://docs.lamp.digital/blog/2021/02/12/#improved-native-apps-1" class="hash-link" aria-label="Direct link to improved-native-apps-1" title="Direct link to improved-native-apps-1">​</a></h3>
 <ul>
 <li>Updated graphing code to be higher performance and restored Step Count graphs.</li>
 <li>Updated error boundaries to display errors to the user instead of crashing to an unhelpful blank screen, and added a version number.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hardened-security-requirements">Hardened Security Requirements<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#hardened-security-requirements" class="hash-link" aria-label="Direct link to Hardened Security Requirements" title="Direct link to Hardened Security Requirements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hardened-security-requirements">Hardened Security Requirements<a href="https://docs.lamp.digital/blog/2021/02/12/#hardened-security-requirements" class="hash-link" aria-label="Direct link to Hardened Security Requirements" title="Direct link to Hardened Security Requirements">​</a></h3>
 <ul>
 <li>Hardened security requirements for enterprise deployments will be rolling out in the coming weeks.<!-- -->
 <ul>
@@ -477,7 +477,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2021/02/12/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved minor labeling and functionality issues with the DBT Diary Card activity.</li>
 <li>Resolved an issue where the backend message queue would not accept large payloads and inadvertently crash the API Server.</li>
@@ -496,18 +496,18 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Stability & Performance Improvements]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2021/01/11/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2021/01/11/"/>
+        <id>https://docs.lamp.digital/blog/2021/01/11/</id>
+        <link href="https://docs.lamp.digital/blog/2021/01/11/"/>
         <updated>2021-01-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Improvements]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2021/01/11/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/blog/2021/01/11/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
 <p><strong>Server Administrators:
 Please begin to migrate your Docker image tags for <code>LAMP-server</code> and <code>LAMP-dashboard</code> from <code>2020</code> to <code>2021</code> to prepare for major upcoming releases.</strong></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="analytics-api">Analytics API<a href="https://docs.lamp.digital/docs/blog/2021/01/11/#analytics-api" class="hash-link" aria-label="Direct link to Analytics API" title="Direct link to Analytics API">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="analytics-api">Analytics API<a href="https://docs.lamp.digital/blog/2021/01/11/#analytics-api" class="hash-link" aria-label="Direct link to Analytics API" title="Direct link to Analytics API">​</a></h3>
 <ul>
 <li>Added support for patient analytics (tab open, notification receipt). (See the <code>lamp.analytics</code> <code>SensorSpec</code>.)</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/01/11/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2021/01/11/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved an issue with the Feed tab incorrectly displaying weekly/monthly schedules.</li>
 <li>Resolved several issues with activity icon uploads and configuration/settings.</li>
@@ -525,12 +525,12 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Ease of Use Improvements]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2020/12/17/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2020/12/17/"/>
+        <id>https://docs.lamp.digital/blog/2020/12/17/</id>
+        <link href="https://docs.lamp.digital/blog/2020/12/17/"/>
         <updated>2020-12-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="app-toolbar">App Toolbar<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#app-toolbar" class="hash-link" aria-label="Direct link to App Toolbar" title="Direct link to App Toolbar">​</a></h3>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/blog/2020/12/17/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="app-toolbar">App Toolbar<a href="https://docs.lamp.digital/blog/2020/12/17/#app-toolbar" class="hash-link" aria-label="Direct link to App Toolbar" title="Direct link to App Toolbar">​</a></h3>
 <ul>
 <li>We've added a new toolbar at the top of the screen that helps you keep track of where you are in the app.<!-- -->
 <ul>
@@ -538,14 +538,14 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
 </ul>
 </li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-17_at_2.38.10_PM-a906a27365d79867e1ffeb3d0afc98f3.png" width="1384" height="732" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-17_at_2.38.31_PM-aec0fc8a2042faf4115f6d291c0bcf6b.png" width="1384" height="342" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="study-management">Study Management<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#study-management" class="hash-link" aria-label="Direct link to Study Management" title="Direct link to Study Management">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-17_at_2.38.10_PM-a906a27365d79867e1ffeb3d0afc98f3.png" width="1384" height="732" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-17_at_2.38.31_PM-aec0fc8a2042faf4115f6d291c0bcf6b.png" width="1384" height="342" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="study-management">Study Management<a href="https://docs.lamp.digital/blog/2020/12/17/#study-management" class="hash-link" aria-label="Direct link to Study Management" title="Direct link to Study Management">​</a></h3>
 <ul>
 <li>We've added a studies management panel for researchers to better keep track of their studies, rename, or delete them.</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-17_at_2.41.03_PM-5c3009139c1e43ea97a066501f6331ce.png" width="678" height="562" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="real-time-event-subscription-api">Real-time Event Subscription API<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#real-time-event-subscription-api" class="hash-link" aria-label="Direct link to Real-time Event Subscription API" title="Direct link to Real-time Event Subscription API">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-17_at_2.41.03_PM-5c3009139c1e43ea97a066501f6331ce.png" width="678" height="562" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="real-time-event-subscription-api">Real-time Event Subscription API<a href="https://docs.lamp.digital/blog/2020/12/17/#real-time-event-subscription-api" class="hash-link" aria-label="Direct link to Real-time Event Subscription API" title="Direct link to Real-time Event Subscription API">​</a></h3>
 <ul>
 <li>We've added a powerful new (pre-release) real-time event subscription API for the upcoming logic/automations features that work closely with the Cortex data analysis pipeline.<!-- -->
 <ul>
@@ -553,14 +553,14 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="miscellaneous">Miscellaneous<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#miscellaneous" class="hash-link" aria-label="Direct link to Miscellaneous" title="Direct link to Miscellaneous">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/blog/2020/12/17/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="miscellaneous">Miscellaneous<a href="https://docs.lamp.digital/blog/2020/12/17/#miscellaneous" class="hash-link" aria-label="Direct link to Miscellaneous" title="Direct link to Miscellaneous">​</a></h3>
 <ul>
 <li>Added support for displaying custom Activity Groups in the Assess tab along with the Feed tab.</li>
 <li>Improved HealthKit and Google Fit sensor (i.e. step count) data collection fidelity; this change will be rolling out over the next week for iOS and Android.</li>
 <li>Improved visualization of DBT Diary Card data in the Prevent tab, including dynamic charts and patients' free responses.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2020/12/17/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved a <strong>significant</strong> issue where some patients were unable to log in on iOS or Android with valid credentials due to server login latency.</li>
 <li>Resolved an issue where certain survey question text was not displaying for specific surveys.</li>
@@ -579,12 +579,12 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Cortex Visualizations & Activity Updates]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2020/12/01/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2020/12/01/"/>
+        <id>https://docs.lamp.digital/blog/2020/12/01/</id>
+        <link href="https://docs.lamp.digital/blog/2020/12/01/"/>
         <updated>2020-12-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cortex--enhanced-visualizations">Cortex &amp; Enhanced Visualizations<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#cortex--enhanced-visualizations" class="hash-link" aria-label="Direct link to Cortex &amp; Enhanced Visualizations" title="Direct link to Cortex &amp; Enhanced Visualizations">​</a></h3>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/blog/2020/12/01/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cortex--enhanced-visualizations">Cortex &amp; Enhanced Visualizations<a href="https://docs.lamp.digital/blog/2020/12/01/#cortex--enhanced-visualizations" class="hash-link" aria-label="Direct link to Cortex &amp; Enhanced Visualizations" title="Direct link to Cortex &amp; Enhanced Visualizations">​</a></h3>
 <ul>
 <li>We've added support for displaying real-time visualizations generated by the Cortex data analysis pipeline in both the app and management console.<!-- -->
 <ul>
@@ -592,7 +592,7 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
 </ul>
 </li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.07.35_AM-dd62d56930f39b4a23905c48f07134a6.png" width="1690" height="960" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-01_at_10.07.35_AM-dd62d56930f39b4a23905c48f07134a6.png" width="1690" height="960" class="img_ev3q"></p>
 <ul>
 <li>We've added support for user-specified dynamic Vega charts in both the app and management console.<!-- -->
 <ul>
@@ -600,29 +600,29 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
 </ul>
 </li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.09.53_AM-b01996cc86bc754ccaa98a9722584fa4.png" width="866" height="1130" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="localization--internationalization">Localization &amp; Internationalization<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#localization--internationalization" class="hash-link" aria-label="Direct link to Localization &amp; Internationalization" title="Direct link to Localization &amp; Internationalization">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-01_at_10.09.53_AM-b01996cc86bc754ccaa98a9722584fa4.png" width="866" height="1130" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/blog/2020/12/01/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="localization--internationalization">Localization &amp; Internationalization<a href="https://docs.lamp.digital/blog/2020/12/01/#localization--internationalization" class="hash-link" aria-label="Direct link to Localization &amp; Internationalization" title="Direct link to Localization &amp; Internationalization">​</a></h3>
 <ul>
 <li>Added an "empty tab" message and optimized interface text.</li>
 <li>Updated support for Hindi (<code>hi-IN</code>).</li>
 <li>Updated support for Spanish (<code>es-ES</code>).</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="activities--surveys">Activities &amp; Surveys<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#activities--surveys" class="hash-link" aria-label="Direct link to Activities &amp; Surveys" title="Direct link to Activities &amp; Surveys">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="activities--surveys">Activities &amp; Surveys<a href="https://docs.lamp.digital/blog/2020/12/01/#activities--surveys" class="hash-link" aria-label="Direct link to Activities &amp; Surveys" title="Direct link to Activities &amp; Surveys">​</a></h3>
 <ul>
 <li>Added the <code>SHORT ANSWER</code> question type with description text.</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.14.19_AM-57c8650bb6cf8afbb47287213924a201.png" width="592" height="246" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-01_at_10.14.19_AM-57c8650bb6cf8afbb47287213924a201.png" width="592" height="246" class="img_ev3q"></p>
 <ul>
 <li>Added the <code>RATING SCALE</code> question type with description text.</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.14.58_AM-ba205b16d3646580d5dcdb997122b89c.png" width="592" height="262" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-01_at_10.14.58_AM-ba205b16d3646580d5dcdb997122b89c.png" width="592" height="262" class="img_ev3q"></p>
 <ul>
 <li>Added custom icon support for surveys and activity groups.</li>
 <li>Added automatic question settings validation for certain question types.</li>
 <li>Updated Jewels settings to support multiple modes (<code>beginner</code>, <code>intermediate</code>, <code>advanced</code>, <code>expert</code>) and variants (<code>trails_a</code>, <code>trails_b</code>).</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.18.34_AM-9ca26e0e4a60c7d3efb79c7604a45be3.png" width="1770" height="1138" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-01_at_10.18.34_AM-9ca26e0e4a60c7d3efb79c7604a45be3.png" width="1770" height="1138" class="img_ev3q"></p>
 <ul>
 <li>Added support for <strong>Markdown-formatted text</strong> in Tips (coming soon to other activity types, including surveys).<!-- -->
 <ul>
@@ -630,8 +630,8 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
 </ul>
 </li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.32.56_AM-249263bceddd92c54e8751080da5af37.png" width="652" height="2152" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-12-01_at_10.32.56_AM-249263bceddd92c54e8751080da5af37.png" width="652" height="2152" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2020/12/01/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved an issue in the Breathe activity where the duration of the exercise did not correctly match the length of the audio, if one was uploaded or specified.</li>
 <li>Resolved an issue where adding a vector image (SVG) as a custom activity icon caused the icon to be erroneously compressed and pixelated.</li>
@@ -644,11 +644,11 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Ease of Use Improvements]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2020/11/06/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2020/11/06/"/>
+        <id>https://docs.lamp.digital/blog/2020/11/06/</id>
+        <link href="https://docs.lamp.digital/blog/2020/11/06/"/>
         <updated>2020-11-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bug Fixes]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/11/06/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2020/11/06/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved an issue where introduction tooltips for each tab (Learn, Assess, Manage, Prevent) continued to appear when logged in as a patient even after being dismissed once.</li>
 <li>Resolved an issue where Automations visualizations were limited to 320 x 320 pixels in size.</li>
@@ -664,26 +664,26 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Stability & Performance Improvements]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2020/11/05/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2020/11/05/"/>
+        <id>https://docs.lamp.digital/blog/2020/11/05/</id>
+        <link href="https://docs.lamp.digital/blog/2020/11/05/"/>
         <updated>2020-11-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Improvements]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="survey-slider-options--description">Survey Slider Options &amp; Description<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#survey-slider-options--description" class="hash-link" aria-label="Direct link to Survey Slider Options &amp; Description" title="Direct link to Survey Slider Options &amp; Description">​</a></h3>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/blog/2020/11/05/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="survey-slider-options--description">Survey Slider Options &amp; Description<a href="https://docs.lamp.digital/blog/2020/11/05/#survey-slider-options--description" class="hash-link" aria-label="Direct link to Survey Slider Options &amp; Description" title="Direct link to Survey Slider Options &amp; Description">​</a></h3>
 <ul>
 <li>Customize the slider question type with as many or as few stops, and now add descriptions for each stop along the slider that will show below the slider for when a patient makes a selection.</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-11-05_at_3.34.00_PM-2a2c3c65bc6e5acc1cd604bc716647cf.png" width="756" height="444" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-11-05_at_3.34.00_PM-2a2c3c65bc6e5acc1cd604bc716647cf.png" width="756" height="444" class="img_ev3q"></p>
 <ul>
 <li>Survey and other activities now support custom descriptions and icons.</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-11-05_at_3.34.30_PM-cda7c73e872f06447c50527b755b0fed.png" width="668" height="870" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="upload-guided-meditation-audio">Upload Guided Meditation Audio<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#upload-guided-meditation-audio" class="hash-link" aria-label="Direct link to Upload Guided Meditation Audio" title="Direct link to Upload Guided Meditation Audio">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-11-05_at_3.34.30_PM-cda7c73e872f06447c50527b755b0fed.png" width="668" height="870" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="upload-guided-meditation-audio">Upload Guided Meditation Audio<a href="https://docs.lamp.digital/blog/2020/11/05/#upload-guided-meditation-audio" class="hash-link" aria-label="Direct link to Upload Guided Meditation Audio" title="Direct link to Upload Guided Meditation Audio">​</a></h3>
 <ul>
 <li>Breathe now supports uploading custom mp3 files for guided meditation, as well as using other mp3 files that are publicly available on the internet.</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-11-05_at_3.31.00_PM-29ec230d83e8c0ed90f0284e6fc3decb.png" width="1744" height="1308" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/assets/images/Screen_Shot_2020-11-05_at_3.31.00_PM-29ec230d83e8c0ed90f0284e6fc3decb.png" width="1744" height="1308" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2020/11/05/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved an issue where the descriptions of activities/surveys would show the text <code>(10 minutes)</code> erroneously regardless of survey length or expected activity duration.</li>
 <li>Resolved an issue where devices running Android 10 had inconsistent app behavior, including crashing or opening to a white screen.</li>
@@ -700,18 +700,18 @@ Please begin to migrate your Docker image tags for <code>LAMP-server</code> and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Clinical Customization Updates]]></title>
-        <id>https://docs.lamp.digital/docs/blog/2020/10/23/</id>
-        <link href="https://docs.lamp.digital/docs/blog/2020/10/23/"/>
+        <id>https://docs.lamp.digital/blog/2020/10/23/</id>
+        <link href="https://docs.lamp.digital/blog/2020/10/23/"/>
         <updated>2020-10-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2020/10/23/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customizable-activities">Customizable Activities<a href="https://docs.lamp.digital/docs/blog/2020/10/23/#customizable-activities" class="hash-link" aria-label="Direct link to Customizable Activities" title="Direct link to Customizable Activities">​</a></h3>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/blog/2020/10/23/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customizable-activities">Customizable Activities<a href="https://docs.lamp.digital/blog/2020/10/23/#customizable-activities" class="hash-link" aria-label="Direct link to Customizable Activities" title="Direct link to Customizable Activities">​</a></h3>
 <ul>
 <li>Activities like <strong>Jewels</strong>, <strong>Breathe</strong>, and <strong>Tips</strong> now have their own customization editors, just like <strong>Surveys</strong> do.</li>
 <li>Upload your own audio files (mp3) to create multiple breathing and meditation exercises.</li>
 <li>Upload your own content and images to create unique Tips or resources for participants or patients to see.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/10/23/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/blog/2020/10/23/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
 <ul>
 <li>Resolved activity importing issues that caused activities such as surveys to not successfully import in accounts with multiple studies.</li>
 <li>Resolved survey interface alignment issues that made it difficult to read and answer questions.</li>
