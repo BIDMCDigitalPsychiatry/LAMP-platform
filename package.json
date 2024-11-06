@@ -16,12 +16,10 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.6.0",
-    "@docusaurus/plugin-content-docs": "^3.6.0",
-    "@docusaurus/preset-classic": "3.6.0",
+    "@docusaurus/preset-classic": "^3.6.0",
     "@easyops-cn/docusaurus-search-local": "^0.45.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
-    "docusaurus-preset-openapi": "^0.7.5",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -51,7 +49,7 @@
   "docusaurus": {
     "title": "LAMP Platform",
     "tagline": "The LAMP Platform documentation.",
-    "url": "https://docs.lamp.digital",
+    "url": "http://localhost:3000",
     "favicon": "./docs/assets/logo.png",
     "organizationName": "BIDMCDigitalPsychiatry",
     "projectName": "LAMP-platform",
@@ -143,12 +141,8 @@
     },
     "presets": [
       [
-        "docusaurus-preset-openapi",
+        "@docusaurus/preset-classic",
         {
-          "api": {
-            "routeBasePath": "api",
-            "path": "./LAMP-protocol/openapi.yml"
-          },
           "docs": {
             "routeBasePath": "/",
             "showLastUpdateAuthor": true,
