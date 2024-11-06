@@ -50,7 +50,7 @@
     "title": "LAMP Platform",
     "tagline": "The LAMP Platform documentation.",
     "url": "https://docs.lamp.digital",
-    "favicon": "./static/logo.png",
+    "favicon": "/logo.png",
     "organizationName": "BIDMCDigitalPsychiatry",
     "projectName": "LAMP-platform",
     "baseUrl": "/",
