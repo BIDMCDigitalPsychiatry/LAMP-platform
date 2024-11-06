@@ -53,7 +53,7 @@
     "favicon": "./docs/assets/logo.png",
     "organizationName": "BIDMCDigitalPsychiatry",
     "projectName": "LAMP-platform",
-    "baseUrl": "/docs",
+    "baseUrl": "/",
     "onBrokenLinks": "warn",
     "onDuplicateRoutes": "warn",
     "onBrokenMarkdownLinks": "warn",
