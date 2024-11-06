@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>LAMP Platform Blog</title>
+        <link>https://docs.lamp.digital/docs/blog</link>
+        <description>LAMP Platform Blog</description>
+        <lastBuildDate>Thu, 04 Aug 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <copyright>© ${new Date().getFullYear()} LAMP Consortium &amp; Division of Digital Psychiatry @ BIDMC</copyright>
+        <item>
+            <title><![CDATA[Release 2022.8.4]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2022/8/4/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2022/8/4/</guid>
+            <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[- [iOS] Resolved an issue where the iOS app would erroneously request location permission even when it was denied.]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>[iOS] Resolved an issue where the iOS app would erroneously request location permission even when it was denied.</li>
+<li>[Dashboard] Resolved an issue where a portion of the dashboard header at the top of the page was not clickable.</li>
+<li>[Dashboard] Resolved an issue where the language selection dropdown menu on the login screen of the app and dashboard were erroneously empty.</li>
+<li>[Activities] Implementation of temporal order test cognitive game.</li>
+<li>[Activities] Optimized Jewels task screen size.</li>
+<li>[Server] Enhanced the security of the API response headers.</li>
+<li>[Android] Changed accelerometer data query response format to match that of iOS.</li>
+<li>[Server] Changed lamp analytics response keys to maintain consistency.</li>
+<li>[iOS] Resolved an issue regarding the iOS app spontaneously logging users out.</li>
+<li>[Activities] Resolved an issue with Pop the Bubbles.</li>
+<li>[Server] Changed SensorEvent response format for consistency across device types.</li>
+<li>[Dashboard] Resolved an issue where 12 could not be picked in time picker.</li>
+<li>[Dashboard] Resolved an issue with incorrectly queried elements in data portal.</li>
+<li>[Activities] Adjusted Cats and Dogs docs and code so that the static data takes the same format.</li>
+<li>[Android] Resolved issue where telephony sensor was not integrated.</li>
+<li>[Dashboard] Resolved issue where tips files could not be deleted.</li>
+<li>[Dashboard] Resolved survey visualization error where x-axis was one day off.</li>
+<li>[Activities] Resolved issue where dialogue box was popping up unnecessarily when trying to edit an activity.</li>
+<li>[Dashboard] Resolved issues with the matrix survey interface.</li>
+<li>[Dashboard] Added separate Toggle filters to select a date range for every subsection of the diary card.</li>
+<li>[Activities] Updated the Matrix survey design.</li>
+<li>[Android] Resolved an issue where the Android app would erroneously request access to phone call data.</li>
+<li>[Dashboard] Created a dropdown for domains at login.</li>
+<li>[Dashboard] Resolved app slowdown issues when editing or completing activities.</li>
+<li>[Dashboard] Resolved issue about extended loading times when loading schedules.</li>
+<li>[Server] Resolved an issue where notifications were being sent after logging out of a study.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Release 2022.4.23]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2022/04/23/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2022/04/23/</guid>
+            <pubDate>Sat, 23 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features & Improvements]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/docs/blog/2022/04/23/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
+<ul>
+<li><code>[LAMP-dashboard]</code> Added support for custom <code>ActivitySpec</code> definitions, including custom configuration, text, icons, and script contents.</li>
+<li><code>[LAMP-dashboard]</code> Added a warning popup to require the user select a group to create an activity or sensor under if none specified.</li>
+<li><code>[LAMP-dashboard]</code> Reduced background network requests when polling for new clinician-sent messages.</li>
+<li><code>[LAMP-dashboard]</code> Reduced background network requests for sensor data when only viewing the home screen of the app.</li>
+<li><code>[LAMP-dashboard]</code> Reduced background network requests for analytics when logged in as a researcher instead of a patient.</li>
+<li><code>[LAMP-activities]</code> The Matrix options type is now fully available for Surveys, with full data export support for every type of question.</li>
+<li><code>[LAMP-core-ios]</code> Added full support for detection of ambient light and sound, wearable/watch positioning and accelerometer, aggregated daily travel routines, detailed keyboard typing metrics, text message and phone call usage with third-party app support, cross-browser website and cross-device app usage/screen time and notification pickups data, through the new Apple SensorKit framework.<!-- -->
+<ul>
+<li><strong>Not available for use outside of BIDMC-approved studies; requires developer entitlements which necessitate a legal contract with Apple Inc. and BIDMC; contact us for questions about SensorKit.</strong></li>
+</ul>
+</li>
+<li><code>[LAMP-core-ios]</code> Reduced background callbacks when sensor data collection is disabled to preserve battery life.</li>
+<li><code>[LAMP-core-ios]</code> Enforced strict data collection rules to match organization-level requirements when sensors are configured.</li>
+<li><code>[LAMP-core-ios]</code> Added support for a new schedule repeat-type <code>every two weeks</code>.</li>
+<li><code>[LAMP-core-android]</code> Added support for Battery Saver (i.e. Low Power Mode on iOS) detection to assist with imputation of missing sensor data.</li>
+<li><code>[LAMP-core-android]</code> Reduced background callbacks when sensor data collection is disabled to preserve battery life.</li>
+<li><code>[LAMP-core-android]</code> Eliminated App Not Responding issues; the app now crashes instead of hanging indefinitely and slowing down the phone.</li>
+<li><code>[LAMP-core-android]</code> Added user-facing crash report to allow users to quickly screenshot or screen record bugs and app crashes.</li>
+<li><code>[LAMP-core-android]</code> Added support for a new schedule repeat-type <code>every two weeks</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2022/04/23/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<ul>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where certain Activity configuration text boxes (i.e. Tips) were not resizable.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where the back button did not work in certain activities (i.e. Tips) when opened from a notification.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where it was not possible to exit certain activities (i.e. Tips) when opened from the mobile app.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where the Activity scheduler interface would not recognize typed date/times, requiring users to slowly manually select them via clock/calendar interface.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where the Activity scheduler would not allow scheduling activities on the first of the month.</li>
+<li><code>[LAMP-dashboard]</code> Resolved a <strong>SIGNIFICANT</strong> issue where grouped activities would always display in an infinite loop for certain users.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where tab page headings would display in all lowercase.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where the Save button of the Activity configuration page would obscure the configuration form itself.</li>
+<li><code>[LAMP-dashboard]</code> Resolved a <strong>SIGNIFICANT</strong> issue where surveys and voice recordings would not load under certain configuration parameters.</li>
+<li><code>[LAMP-dashboard]</code> Resolved a <strong>SIGNIFICANT</strong> issue where users would be automatically logged out erroneously when opening an activity from a notification without network connection.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where certain mobile devices would clip parts of the activity interface, preventing successful completion of the activity.</li>
+<li><code>[LAMP-dashboard]</code> Resolved an issue where a single data point would not display or display incorrectly as a mini tile in the Prevent tab.</li>
+<li><code>[LAMP-activities]</code> Resolved an issue where the Goal Tracker and Medication Tracker activities (not officially available for public usage) did not connect to the <code>ActivitySpec</code> API correctly and would not work with the dashboard.</li>
+<li><code>[LAMP-activities]</code> Resolved an issue for the DBT Diary Card where the <code>Actions</code> graph did not display a date range picker.</li>
+<li><code>[LAMP-activities]</code> Resolved an issue where images were not center-aligned for the Scratch Card activity.</li>
+<li><code>[LAMP-activities]</code> Resolved an issue where time picker questions in Surveys would display the wrong time format (AM/PM vs. 24hr).</li>
+<li><code>[LAMP-activities]</code> Resolved an issue with Pop the Bubbles where certain bubbles would overlap and remain fixed in the center of the screen.</li>
+<li><code>[LAMP-activities]</code> Resolved an issue where bubbles in Pop the Bubbles had reduced sensitivity to taps.</li>
+<li><code>[LAMP-activities]</code> Resolved an issue where bubbles in Pop the Bubbles would sometimes display on the edges of the screen, making it difficult to see or tap them.</li>
+<li><code>[LAMP-core-ios]</code> Resolved an issue where local notifications (i.e. offline non-push without server involvement) sent notifications with an incorrect timezone.</li>
+<li><code>[LAMP-core-ios]</code> Resolved an issue where local notifications would fail with unhandled schedule repeat-types.</li>
+<li><code>[LAMP-core-ios]</code> Resolved an issue where <code>lamp.device_state</code> data would be saved under the legacy name <code>lamp.screen_state</code>.</li>
+<li><code>[LAMP-core-ios]</code> Resolved a <strong>SIGNIFICANT</strong> issue where tapping on an activity from a notification would lead to a white screen.</li>
+<li><code>[LAMP-core-android]</code> Resolved an issue where local notifications (i.e. offline non-push without server involvement) sent notifications with an incorrect timezone.</li>
+<li><code>[LAMP-core-android]</code> Resolved an issue where toggling battery saver mode when not logged into the mindLAMP app would crash the app.</li>
+<li><code>[LAMP-core-android]</code> Resolved an issue where if no sensors were configured, all sensor data would be collected for a user.</li>
+<li><code>[LAMP-core-android]</code> Resolved an issue where sensor data collection maximum frequencies were not the same between iOS and Android.</li>
+<li><code>[LAMP-core-android]</code> Resolved an issue where the WearOS app would be out-of-date with the Android app due to a GitHub workflow issue.</li>
+<li><code>[LAMP-core-android]</code> Resolved an issue where Android analytics data would not match the format of the iOS analytics data.</li>
+<li><code>[LAMP-core-android]</code> Resolved an issue where <code>lamp.device_state</code> data did not match the same data format as iOS.</li>
+<li><code>[LAMP-core-android]</code> Resolved a <strong>SIGNIFICANT</strong> issue where tapping on an activity from a notification would lead to a white screen.</li>
+<li><code>[LAMP-server]</code> Resolved an issue where <code>SensorEvents</code> would not be flushed from the cache to the database correctly.</li>
+<li><code>[LAMP-server]</code> Resolved an issue where the <code>ActivitySpec</code> schema provided incorrect parameter names.</li>
+<li><code>[LAMP-worker]</code> Resolved an issue where push notifications would be sent to users even if the device had logged out of the mindLAMP app.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <link>https://docs.lamp.digital/docs/blog/2022/03/22/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2022/03/22/</guid>
+            <pubDate>Tue, 22 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[New features and fixes for cortex]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features-and-fixes-for-cortex">New features and fixes for cortex<a href="https://docs.lamp.digital/docs/blog/2022/03/22/#new-features-and-fixes-for-cortex" class="hash-link" aria-label="Direct link to New features and fixes for cortex" title="Direct link to New features and fixes for cortex">​</a></h2>
+<ul>
+<li>Data quality visualizations</li>
+<li>Updated survey scoring</li>
+<li>Step count</li>
+<li>Healthkit sleep</li>
+<li>Inactive duration (a proxy for sleep)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details:<a href="https://docs.lamp.digital/docs/blog/2022/03/22/#details" class="hash-link" aria-label="Direct link to Details:" title="Direct link to Details:">​</a></h3>
+<ul>
+<li>Data quality visualizations include activity counts, passive data quality, and features (home time, screen duration, and step counts). These graphs will be attached to the Data Portal.</li>
+<li>The secondary feature <code>step_count</code> unifies iOS and Android steps.</li>
+<li>Sleep information is gathered through Healthkit from watches. This data is aggregated in the secondary feature <code>healthkit_sleep_duration</code>. Duration of "in_bed", "in_sleep", or "in_awake" time can be computed.</li>
+<li>Survey scoring has been refactored to allow for grouping of questions and more advanced scoring. A scoring dictionary is passed to map questions to categories. Users can also provide mappings from responses to integers for scoring.</li>
+<li><code>inactive_duration</code> is an early iteration of our newest sleep algorithm. It searches for the longest bouts without any spikes in accelerometer or screen activity. Inactive duration will continue to be revised in future releases.</li>
+</ul>
+<p>For further information, please visit our documentation <a href="https://docs.lamp.digital/data_science/Cortex/cortex" target="_blank" rel="noopener noreferrer">here</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <link>https://docs.lamp.digital/docs/blog/2022/03/07/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2022/03/07/</guid>
+            <pubDate>Mon, 07 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features & Improvements]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/docs/blog/2022/03/07/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
+<ul>
+<li>iOS and Android app updates are now available that primarily resolve notification timezone issues. Clinical and research coordinators should ensure their patients update the app to reflect these changes.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <link>https://docs.lamp.digital/docs/blog/2022/2/15/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2022/2/15/</guid>
+            <pubDate>Tue, 15 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features & Improvements]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features--improvements">Features &amp; Improvements<a href="https://docs.lamp.digital/docs/blog/2022/2/15/#features--improvements" class="hash-link" aria-label="Direct link to Features &amp; Improvements" title="Direct link to Features &amp; Improvements">​</a></h3>
+<ul>
+<li>Added the ability to load ActivitySpec executables directly from the API (BETA).</li>
+<li>Added new configuration parameters for Voice Diary prompts.</li>
+<li>Added customizable Streak text and the ability toggle Streaks on and off.</li>
+<li>Added the ability to modify the <code>CACHE_SIZE</code> variable to adjust SensorEvent cache flushing thresholds.</li>
+<li>Resolved a connection stability issue when using the Android app to connect to a LAMP server.</li>
+<li>Added the ability to schedule notifications in the patient's local timezone.</li>
+</ul>
+<p>::: error</p>
+<p>Please note that when upgrading to the latest version of the LAMP dashboard or server (<code>2022.2.14</code>), clinicians are required to re-save all activity schedules to update GMT-scheduling to local timezone scheduling. If this step is not performed, patients may receive notifications early or late.</p>
+<p>:::</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2022/2/15/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<ul>
+<li>Resolved several issues with weekly filters for DBT Diary Card visualizations that were not synchronized.</li>
+<li>Resolved visibility issues with DBT Diary Card visualizations including font and text placement.</li>
+<li>Resolved an issue with DBT Diary Card visualizations where a single data point did not appear (it now draws a line).</li>
+<li>Resolved an issue with DBT Diary Card graphs rendering incorrect dates or time ranges.</li>
+<li>Resolved an issue where all notes from past DBT Diary Cards did not appear when viewing data.</li>
+<li>Resolved an issue with erroneous character limits applied to matrix survey questions (BETA).</li>
+<li>Resolved an issue where the back button would not work for exiting Tips.</li>
+<li>Resolved an issue where the back button did not capture data for Journal and Tips.</li>
+<li>Resolved several issues capturing Breathe and Tips data when being used by patients.</li>
+<li>Resolved out-of-order and skipping issues with activities sequentially placed in groups.</li>
+<li>Resolved out-of-order dates on the Feed tab.</li>
+<li>Resolved a crash issue when loading the Feed tab in certain conditions.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2022 User Interface Improvements]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2022/1/11/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2022/1/11/</guid>
+            <pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Server administrators MUST upgrade from2022 versions in the Docker configuration. Please contact us on the forum if there are any questions.]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>Server administrators MUST upgrade from <code>:2021</code> to <code>:2022</code> versions in the Docker configuration. Please contact us on the forum if there are any questions.</p></div></div>
+<h1>Frontend</h1>
+<ul>
+<li>Streaks now display after all activities in a group have completed instead of in between them.</li>
+<li>Streaks now apply per-activity, and can be customized.</li>
+<li>Password rules are now supported per-server (please contact us for specifics on usage).</li>
+<li>Filter/sort is now enabled in the clinician user dashboard with alphabetical and reverse alphabetical options.</li>
+<li>Matrix survey options are supported. (BETA)</li>
+<li>Resolves minor issues with the Matrix survey option.</li>
+<li>Resolves issues with the back button in Tips.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://docs.lamp.digital/docs/blog/2022/1/11/#known-issues" class="hash-link" aria-label="Direct link to Known Issues" title="Direct link to Known Issues">​</a></h2>
+<ul>
+<li>The matrix survey data format is not finalized; while the data will be recorded, it may not be compatible with Cortex and other API facilities.</li>
+<li>The Tips sub-tip duration is currently not recorded when the back button is pressed.</li>
+</ul>
+<h1>Backend</h1>
+<ul>
+<li>Resolves a vulnerability in alpine.</li>
+<li>Minor changes to creation of Redis connections.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New features, stability fixes, and improvements]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/12/16/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/12/16/</guid>
+            <pubDate>Thu, 16 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[- Questions created in the survey builder can now be toggled between to have optional or required responses. By default, they will begin as required but can be checked to be optional]]></description>
+            <content:encoded><![CDATA[<h1>New Features</h1>
+<ul>
+<li>Questions created in the survey builder can now be toggled between to have optional or required responses. By default, they will begin as required but can be checked to be optional</li>
+<li>Activities can now be customized in the dashboard to appear in any of the tabs among Learn, Assess, Manage, and Prevent</li>
+</ul>
+<h1>Updates</h1>
+<ul>
+<li>Activities in the Portal page are now automatically expanded</li>
+<li>DBT Diary card has had visuals rearranged for better user viewing</li>
+<li>DBT Diary cards now feature a filterable grid-based visualization for skills used</li>
+</ul>
+<h1>Bux Fixes</h1>
+<ul>
+<li>Resolved in issue where surveys with slider questions would default to the first value. This has been fixed so that these questions will now begin with a null value</li>
+<li>Resolved an issue in the Android version where apps were not opening due to an infinite loading screen</li>
+<li>Resolved an issue where certain created credentials were not working upon logging in</li>
+<li>Fixed an issue where labels were overlapping with icons for activities in the mobile version</li>
+<li>Fixed an issue where the DBT diary card would allow a streak badge to popup even when the DBT diary card activities was exited</li>
+<li>Resolved an issue where activities completed in the Feed tab would automatically mark themselves as incomplete after completion</li>
+<li>Fixed an issue where activities completed through the Feed tab would lead to undefined entries through API calls</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New, fully functional Clinical-specific use for mindLAMP!]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/11/22/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/11/22/</guid>
+            <pubDate>Mon, 22 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[mindLAMP now features a variety of new features to support a clinical-only team if there is no need for specialized researcher functions or if a simpler and streamlined UI is preferred. See our documentation here for greater details.]]></description>
+            <content:encoded><![CDATA[<p>mindLAMP now features a variety of new features to support a clinical-only team if there is no need for specialized researcher functions or if a simpler and streamlined UI is preferred. See our documentation <a href="https://docs.lamp.digital/using/clin_vs_res" target="_blank" rel="noopener noreferrer">here</a> for greater details.</p>
+<h1>New Features</h1>
+<ul>
+<li>Admins can now administer a new set of hierarchies for researcher roles. They can be assigned researchers as is or System Admins, but for different restricted permissions, you can create new Practice Lead and User Admin roles. See the documentation <a href="https://docs.lamp.digital/using/clin_vs_res" target="_blank" rel="noopener noreferrer">here</a> for greater details.</li>
+<li>New Simple Mode and Advanced mode views in the dashboard for researcher and clinician preference. See documentation <a href="https://docs.lamp.digital/start_here/users_vs_activities" target="_blank" rel="noopener noreferrer">here</a></li>
+<li>The dashboard now features a select and deselect all button to streamline filtering for users</li>
+<li>The survey builder now features a time picker option, allowing for custom PM/AM entries and military time</li>
+</ul>
+<h1>Updates</h1>
+<ul>
+<li>DBT Diary Card visualizations in the Portal tab now feature a streamlined, filterable grid-based visual for skills used</li>
+<li>The dashboard now features alphabetical sorting for group creating/duplication</li>
+</ul>
+<h1>Bux Fixes</h1>
+<ul>
+<li>Graphs in the Portal page will now dynamically render to fit phone screens</li>
+<li>Labels are no longer overlapping on icons</li>
+<li>In dashboard, activity scheduling no longer requires refreshing to view the set schedule</li>
+<li>Learn tab nested tip labels have been updated to have cleaner text formatting</li>
+<li>No longer collecting deprecated sensors gps.contextual and accelerometer.motion</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Scheduled Routine mindLAMP AWS Maintenance]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/09/13/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/09/13/</guid>
+            <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hi all,]]></description>
+            <content:encoded><![CDATA[<p>Hi all,</p>
+<p>mindLAMP will go down for a few hours <em>early EST</em> on <strong>Friday, October 1, 2021</strong> for scheduled AWS maintenance. This will make the LAMP app and dashboard unavailable for the time being for most users, researchers, clinicians, and users alike. If the platform is not back up late Friday, please let us know and feel free to reach out.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Visualization & Activity Updates]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/08/25/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/08/25/</guid>
+            <pubDate>Wed, 25 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Updates]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="updates">Updates<a href="https://docs.lamp.digital/docs/blog/2021/08/25/#updates" class="hash-link" aria-label="Direct link to Updates" title="Direct link to Updates">​</a></h2>
+<ul>
+<li>DBT Diary card now has split colors based on effective/ineffective behaviors</li>
+<li>DBT Diary card renamed some sections to be more clear of section's purpose (i.e. "Target behaviors" renamed to "Target Effective Behaviors")</li>
+<li>Cognitive games tests tab added to docs <a href="https://docs.lamp.digital/start_here/cog_games" target="_blank" rel="noopener noreferrer">here</a></li>
+<li>Minor documentation edits</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/08/25/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved an issue where if a reserarcher duplicated a study group and created a new user, the icons associated with the duplicated group's activities would not carry over to the new group</li>
+<li>Fixed an issue in which markdown was not working for embedding links</li>
+<li>Fixed an issue where duplicate sensor events were being collected</li>
+<li>Resolved an issue where scheduled activities were not appearing at the activities</li>
+<li>Resolved an issue where scheduled activities would not lead to the respective activity</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Minor Stability Updates and Bug Fixes]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/08/09/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/08/09/</guid>
+            <pubDate>Mon, 09 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Updates]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="updates">Updates<a href="https://docs.lamp.digital/docs/blog/2021/08/09/#updates" class="hash-link" aria-label="Direct link to Updates" title="Direct link to Updates">​</a></h2>
+<ul>
+<li>Android 8 now required for the usage of mindLAMP for Android devices</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/08/09/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved an issue where the graphs for a DBT diary card would display "NaN" on the x-axis</li>
+<li>Resolved an issue where Jewels would time out before completion</li>
+<li>Resolved an issue where steps data would be calculated incorrectly</li>
+<li>Resolved an issue where links Help &amp; Support, LAMP Community, and Contact Us were not working</li>
+<li>Resolved an issue where activities were available on the dashboard inside browsers but not on mobile app</li>
+<li>Resolved an issue where the Back button was not functioning correctly for activities in the Feed tab</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Significant Performance Improvements & UI Overhaul]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/04/22/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/04/22/</guid>
+            <pubDate>Thu, 22 Apr 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is a significant update -- please review the bolded disclaimer text!]]></description>
+            <content:encoded><![CDATA[<p>This is a significant update -- please review the bolded disclaimer text!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="frontend">Frontend<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#frontend" class="hash-link" aria-label="Direct link to Frontend" title="Direct link to Frontend">​</a></h2>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p><strong>This release of the Frontend REQUIRES the Backend to be updated first. If you are using the <code>dashboard.lamp.digital</code> link, please ask your system administrator to upgrade your backend immediately.</strong></p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
+<ul>
+<li>Overhauled activity creation for automatic validation, descriptions, min/max guides for numeric values.</li>
+<li>Added a new tab item for Sensors management and a new tab item for Studies management when logged in as a clinician.</li>
+<li>Added a new patient list creation option to auto-create a study based on a template with a single patient.</li>
+<li>Added the ability to configure multiple system administrator-level accounts from the API and the dashboard.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h3>
+<ul>
+<li>Added the ability to search by patient alias or study name.</li>
+<li>Added page navigation to make it easier to track and sort activities or patients.</li>
+<li>Updated the layout to a larger and more readable grid.</li>
+<li>Significant performance improvements across the clinician dashboard that support up multiple clinics/studies containing a total of up to 1000 patients.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<ul>
+<li>Resolved an issue where the last patient in the patient list would be hidden underneath the navigation bar.</li>
+<li>Resolved an issue where tips would disappear from the Learn tab once viewed.</li>
+<li>Resolved an issue where survey questions with longer text would be entirely cut off or require scrolling to view the full text.</li>
+<li>Resolved an issue where Activity Groups would incorrectly appear in the Prevent tab.</li>
+<li>Resolved consistency issues with the DBT Diary Card component.</li>
+<li>Resolved an issue where scheduled activities would sometimes not correctly appear in the Feed tab.</li>
+<li>Resolved an issue where icons for tips would not appear.</li>
+<li>Resolved an issue where Jewels would sometimes be hidden underneath the bottom bar of the Jewels game.</li>
+<li>Resolved an issue where the login email address field auto-capitalized text on mobile devices.</li>
+<li>Resolved an issue where the back/next buttons for surveys on mobile devices would hide the actual question.</li>
+<li>Resolved an issue where sensor data would not upload correctly for Samsung devices if the URL included a '/'.</li>
+<li>Resolved an issue where Activity Groups erroneously had a disabled incorrect schedule automatically added.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend">Backend<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#backend" class="hash-link" aria-label="Direct link to Backend" title="Direct link to Backend">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-1">Features<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#features-1" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<ul>
+<li>Added support for MongoDB in addition to CouchDB, including enterprise managed solutions such as AWS DocumentDB and Azure CosmosDB.</li>
+<li>Added the ability to configure multiple system administrator-level accounts from the API and the dashboard.</li>
+<li>Added a brand new visualization and data extraction query system.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes-1">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#bug-fixes-1" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<ul>
+<li>Resolved several memory leak related issues for the LISTEN and push notificatons API.</li>
+<li>Resolved an issue with MongoDB backends where queries could run indefinitely and bottleneck the backend processes.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="native-core-ios--android">Native Core (iOS &amp; Android)<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#native-core-ios--android" class="hash-link" aria-label="Direct link to Native Core (iOS &amp; Android)" title="Direct link to Native Core (iOS &amp; Android)">​</a></h2>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p><strong>This release of the Native Core apps (iOS, Android, Apple Watch, Google wearOS) REQUIRES the Backend to be updated first. If you are NOT using the <code>api.lamp.digital</code> link, please ask your system administrator to upgrade your backend immediately.</strong></p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features-2">Features<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#features-2" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
+<ul>
+<li>Sensors are now configurable (enable/disable specific sensor types) using the new Frontend and Backend components.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes-2">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/04/22/#bug-fixes-2" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
+<ul>
+<li>Resolved an issue where cached sensor data would sometimes fail to upload.</li>
+<li>Resolved an issue on iOS where the app would crash in the background and halt the sensor data collection process.</li>
+<li>Resolved an issue where sleep duration from wearable sensors would not be collected correctly.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Documentation Overhaul]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/04/01/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/04/01/</guid>
+            <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the brand new documentation site!]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the brand new documentation site!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Patient Profile & New Cognitive Tests]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/02/12/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/02/12/</guid>
+            <pubDate>Fri, 12 Feb 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="patient-profile-ui">Patient Profile UI<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#patient-profile-ui" class="hash-link" aria-label="Direct link to Patient Profile UI" title="Direct link to Patient Profile UI">​</a></h3>
+<ul>
+<li>The new Patient profile interface allows quick and easy management of activities, sensors, and conversations in one place.</li>
+<li>You are now able to add, remove, and configure specific sensors for data collection across studies. (Support for this feature requires the upcoming smartphone and wearable app release.)</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2021-02-12_at_11.54.43_AM-f36dfdcee6c416807af60e250994b8b3.png" width="2418" height="1517" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2021-02-12_at_11.54.48_AM-0c22c51006eec943674a316ee35423cc.png" width="2418" height="1430" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2021-02-12_at_11.55.09_AM-0e41050f60b7894ccd31c3a4b08fff77.png" width="1189" height="870" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pop-the-bubbles--balloon-risk">Pop The Bubbles &amp; Balloon Risk<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#pop-the-bubbles--balloon-risk" class="hash-link" aria-label="Direct link to Pop The Bubbles &amp; Balloon Risk" title="Direct link to Pop The Bubbles &amp; Balloon Risk">​</a></h3>
+<ul>
+<li>The new "Pop The Bubbles" and "Balloon Risk" cognitive test activities are available for configuration and usage (in specific installations only; consult your system administrator).</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Untitled_A-4500e5e513b087376a3339cfdba010d9.png" width="2520" height="1576" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improved-native-apps"><strong>Improved Native Apps</strong><a href="https://docs.lamp.digital/docs/blog/2021/02/12/#improved-native-apps" class="hash-link" aria-label="Direct link to improved-native-apps" title="Direct link to improved-native-apps">​</a></h3>
+<ul>
+<li>Updated and refactored the iOS and Android apps for higher performance and support for new enhanced features.<!-- -->
+<ul>
+<li>mindLAMP now requires a minimum version of iOS 14 or watchOS 6.</li>
+<li>This update will be rolling out in the coming weeks once approved by Apple and Google.</li>
+</ul>
+</li>
+<li>Updated push notifications to collect metadata about notifications and user interactions as a new sensor type.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improved-native-apps-1"><strong>Improved Native Apps</strong><a href="https://docs.lamp.digital/docs/blog/2021/02/12/#improved-native-apps-1" class="hash-link" aria-label="Direct link to improved-native-apps-1" title="Direct link to improved-native-apps-1">​</a></h3>
+<ul>
+<li>Updated graphing code to be higher performance and restored Step Count graphs.</li>
+<li>Updated error boundaries to display errors to the user instead of crashing to an unhelpful blank screen, and added a version number.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hardened-security-requirements">Hardened Security Requirements<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#hardened-security-requirements" class="hash-link" aria-label="Direct link to Hardened Security Requirements" title="Direct link to Hardened Security Requirements">​</a></h3>
+<ul>
+<li>Hardened security requirements for enterprise deployments will be rolling out in the coming weeks.<!-- -->
+<ul>
+<li>Clinicians will need to request their system administrator to be added to a clinic/study and system administrators may generate a password of sufficient complexity as required by organizational policies.</li>
+<li>Patients and study participants will need to request their clinician or research coordinators to reset their password or add additional care team members.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/02/12/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved minor labeling and functionality issues with the DBT Diary Card activity.</li>
+<li>Resolved an issue where the backend message queue would not accept large payloads and inadvertently crash the API Server.</li>
+<li>Resolved an issue where Breathe exercises did not record duration spent correctly.</li>
+<li>Resolved issues in rare cases with embedded activities (i.e. Jewels) not receiving the correct language code for translations support at runtime.</li>
+<li>Resolved an issue where Activity Groups appeared in the Prevent tab incorrectly.</li>
+<li>Resolved an issue where tapping a notification could lead to a blank page instead of an embedded activity.</li>
+<li>Resolved an issue where loading patients' data could erroneously take twice as long as expected.</li>
+<li>We are aware of an issue with scrolling being temporarily locked on Safari browsers when viewing the Patient or Activity tabs in the dashboard; a temporary workaround is to resize the browser window, after which scrolling will resume normally.</li>
+<li>We are aware of an issue leading to slower than expected performance and speed when using the Patient tab of the dashboard across all browsers; a resolution for this issue is in progress.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Stability & Performance Improvements]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2021/01/11/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2021/01/11/</guid>
+            <pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Improvements]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2021/01/11/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<p><strong>Server Administrators:
+Please begin to migrate your Docker image tags for <code>LAMP-server</code> and <code>LAMP-dashboard</code> from <code>2020</code> to <code>2021</code> to prepare for major upcoming releases.</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="analytics-api">Analytics API<a href="https://docs.lamp.digital/docs/blog/2021/01/11/#analytics-api" class="hash-link" aria-label="Direct link to Analytics API" title="Direct link to Analytics API">​</a></h3>
+<ul>
+<li>Added support for patient analytics (tab open, notification receipt). (See the <code>lamp.analytics</code> <code>SensorSpec</code>.)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2021/01/11/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved an issue with the Feed tab incorrectly displaying weekly/monthly schedules.</li>
+<li>Resolved several issues with activity icon uploads and configuration/settings.</li>
+<li>Resolved a theme inconsistency when logged in as a system administrator.</li>
+<li>Resolved a cursor glitch issue when hovering over the desktop sidebar icons.</li>
+<li>Resolved an issue where the conversations icon would always show an indicator even if previously viewed.</li>
+<li>Resolved an issue where launching a survey from a scheduled activity group on the Feed tab would prevent correctly saving the data.</li>
+<li>Resolved several display issues with the DBT Diary Card clinician-facing graphs.</li>
+<li>Resolved minor notification-related issues on the backend.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ease of Use Improvements]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2020/12/17/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2020/12/17/</guid>
+            <pubDate>Thu, 17 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="app-toolbar">App Toolbar<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#app-toolbar" class="hash-link" aria-label="Direct link to App Toolbar" title="Direct link to App Toolbar">​</a></h3>
+<ul>
+<li>We've added a new toolbar at the top of the screen that helps you keep track of where you are in the app.<!-- -->
+<ul>
+<li>Viewing a patient when logged in as a clinician now has a gentle border around the app to remind you of which patient you're viewing, along with a helpful back button to return to the clinician view.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-17_at_2.38.10_PM-a906a27365d79867e1ffeb3d0afc98f3.png" width="1384" height="732" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-17_at_2.38.31_PM-aec0fc8a2042faf4115f6d291c0bcf6b.png" width="1384" height="342" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="study-management">Study Management<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#study-management" class="hash-link" aria-label="Direct link to Study Management" title="Direct link to Study Management">​</a></h3>
+<ul>
+<li>We've added a studies management panel for researchers to better keep track of their studies, rename, or delete them.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-17_at_2.41.03_PM-5c3009139c1e43ea97a066501f6331ce.png" width="678" height="562" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="real-time-event-subscription-api">Real-time Event Subscription API<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#real-time-event-subscription-api" class="hash-link" aria-label="Direct link to Real-time Event Subscription API" title="Direct link to Real-time Event Subscription API">​</a></h3>
+<ul>
+<li>We've added a powerful new (pre-release) real-time event subscription API for the upcoming logic/automations features that work closely with the Cortex data analysis pipeline.<!-- -->
+<ul>
+<li>Information on this API will be added to the documentation in the coming weeks, and the API endpoints are currently subject to change.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="miscellaneous">Miscellaneous<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#miscellaneous" class="hash-link" aria-label="Direct link to Miscellaneous" title="Direct link to Miscellaneous">​</a></h3>
+<ul>
+<li>Added support for displaying custom Activity Groups in the Assess tab along with the Feed tab.</li>
+<li>Improved HealthKit and Google Fit sensor (i.e. step count) data collection fidelity; this change will be rolling out over the next week for iOS and Android.</li>
+<li>Improved visualization of DBT Diary Card data in the Prevent tab, including dynamic charts and patients' free responses.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/12/17/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved a <strong>significant</strong> issue where some patients were unable to log in on iOS or Android with valid credentials due to server login latency.</li>
+<li>Resolved an issue where certain survey question text was not displaying for specific surveys.</li>
+<li>Resolved an issue where the message entry field for the Conversations UI cut off the message being typed by the user.</li>
+<li>Resolved an issue where survey slider question types sometimes showed incorrect option ranges.</li>
+<li>Resolved an issue where the Feed tab did not display schedule indicators correctly on days with scheduled activities.</li>
+<li>Resolved an issue where the "Last Active" and "Data Quality" (renamed "Last Passive") indicators were misleading and presented inaccurate information.</li>
+<li>Resolved an issue where after editing an activity for one study, activities from other studies would temporarily disappear from the Activity tab.</li>
+<li>Resolved an issue where push notifications on iOS and Android would not open to the specific activity's UI, instead showing a blank screen.</li>
+<li>Resolved an issue where sensor data collection would be erroneously paused or data cache would be cleared on certain Android 11 devices.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cortex Visualizations & Activity Updates]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2020/12/01/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2020/12/01/</guid>
+            <pubDate>Tue, 01 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cortex--enhanced-visualizations">Cortex &amp; Enhanced Visualizations<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#cortex--enhanced-visualizations" class="hash-link" aria-label="Direct link to Cortex &amp; Enhanced Visualizations" title="Direct link to Cortex &amp; Enhanced Visualizations">​</a></h3>
+<ul>
+<li>We've added support for displaying real-time visualizations generated by the Cortex data analysis pipeline in both the app and management console.<!-- -->
+<ul>
+<li>We've optimized and streamlined the Prevent tab of the app</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.07.35_AM-dd62d56930f39b4a23905c48f07134a6.png" width="1690" height="960" class="img_ev3q"></p>
+<ul>
+<li>We've added support for user-specified dynamic Vega charts in both the app and management console.<!-- -->
+<ul>
+<li>This feature is currently limited to the DBT Diary Card activity, but will soon be available for other activities.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.09.53_AM-b01996cc86bc754ccaa98a9722584fa4.png" width="866" height="1130" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="localization--internationalization">Localization &amp; Internationalization<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#localization--internationalization" class="hash-link" aria-label="Direct link to Localization &amp; Internationalization" title="Direct link to Localization &amp; Internationalization">​</a></h3>
+<ul>
+<li>Added an "empty tab" message and optimized interface text.</li>
+<li>Updated support for Hindi (<code>hi-IN</code>).</li>
+<li>Updated support for Spanish (<code>es-ES</code>).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="activities--surveys">Activities &amp; Surveys<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#activities--surveys" class="hash-link" aria-label="Direct link to Activities &amp; Surveys" title="Direct link to Activities &amp; Surveys">​</a></h3>
+<ul>
+<li>Added the <code>SHORT ANSWER</code> question type with description text.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.14.19_AM-57c8650bb6cf8afbb47287213924a201.png" width="592" height="246" class="img_ev3q"></p>
+<ul>
+<li>Added the <code>RATING SCALE</code> question type with description text.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.14.58_AM-ba205b16d3646580d5dcdb997122b89c.png" width="592" height="262" class="img_ev3q"></p>
+<ul>
+<li>Added custom icon support for surveys and activity groups.</li>
+<li>Added automatic question settings validation for certain question types.</li>
+<li>Updated Jewels settings to support multiple modes (<code>beginner</code>, <code>intermediate</code>, <code>advanced</code>, <code>expert</code>) and variants (<code>trails_a</code>, <code>trails_b</code>).</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.18.34_AM-9ca26e0e4a60c7d3efb79c7604a45be3.png" width="1770" height="1138" class="img_ev3q"></p>
+<ul>
+<li>Added support for <strong>Markdown-formatted text</strong> in Tips (coming soon to other activity types, including surveys).<!-- -->
+<ul>
+<li><em>Currently does not support Table formatting.</em></li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-12-01_at_10.32.56_AM-249263bceddd92c54e8751080da5af37.png" width="652" height="2152" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/12/01/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved an issue in the Breathe activity where the duration of the exercise did not correctly match the length of the audio, if one was uploaded or specified.</li>
+<li>Resolved an issue where adding a vector image (SVG) as a custom activity icon caused the icon to be erroneously compressed and pixelated.</li>
+<li>Resolved an issue with the Activity and Participant tabs of the management console displaying information slowly and in the wrong or random order.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ease of Use Improvements]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2020/11/06/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2020/11/06/</guid>
+            <pubDate>Fri, 06 Nov 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Bug Fixes]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/11/06/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved an issue where introduction tooltips for each tab (Learn, Assess, Manage, Prevent) continued to appear when logged in as a patient even after being dismissed once.</li>
+<li>Resolved an issue where Automations visualizations were limited to 320 x 320 pixels in size.</li>
+<li>Resolved an issue where longer Journal entries could not be viewed later and were instead clipped to 700 characters max.</li>
+<li>Resolved an issue where the Likert survey option was not configurable and was limited to only four static response choices; <strong>you must now manually specify</strong> your Likert scale using the List option type.</li>
+<li>Resolved an issue where Spatial Span was not configurable to select between the Forwards and Backwards variants.</li>
+<li>Please note that if you have exported learn or manage tab Activities from a previous version of the dashboard, you may need to re-export them with this new version.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Stability & Performance Improvements]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2020/11/05/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2020/11/05/</guid>
+            <pubDate>Thu, 05 Nov 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Improvements]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="survey-slider-options--description">Survey Slider Options &amp; Description<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#survey-slider-options--description" class="hash-link" aria-label="Direct link to Survey Slider Options &amp; Description" title="Direct link to Survey Slider Options &amp; Description">​</a></h3>
+<ul>
+<li>Customize the slider question type with as many or as few stops, and now add descriptions for each stop along the slider that will show below the slider for when a patient makes a selection.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-11-05_at_3.34.00_PM-2a2c3c65bc6e5acc1cd604bc716647cf.png" width="756" height="444" class="img_ev3q"></p>
+<ul>
+<li>Survey and other activities now support custom descriptions and icons.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-11-05_at_3.34.30_PM-cda7c73e872f06447c50527b755b0fed.png" width="668" height="870" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="upload-guided-meditation-audio">Upload Guided Meditation Audio<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#upload-guided-meditation-audio" class="hash-link" aria-label="Direct link to Upload Guided Meditation Audio" title="Direct link to Upload Guided Meditation Audio">​</a></h3>
+<ul>
+<li>Breathe now supports uploading custom mp3 files for guided meditation, as well as using other mp3 files that are publicly available on the internet.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://docs.lamp.digital/docs/assets/images/Screen_Shot_2020-11-05_at_3.31.00_PM-29ec230d83e8c0ed90f0284e6fc3decb.png" width="1744" height="1308" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/11/05/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved an issue where the descriptions of activities/surveys would show the text <code>(10 minutes)</code> erroneously regardless of survey length or expected activity duration.</li>
+<li>Resolved an issue where devices running Android 10 had inconsistent app behavior, including crashing or opening to a white screen.</li>
+<li>Resolved an issue where opening the Manage tab would cause the app to crash if there were no Manage activities enabled for a patient.</li>
+<li>Resolved several areas where push notifications were inconsistent, either sending no notification or many (~50) duplicate notifications to logged in devices.</li>
+<li>Resolved an issue where logging out of one account and into another account caused the device to erroneously continue receive notifications for the previous account.</li>
+<li>Resolved an issue where the user interface was very slow when managing more than ten studies.</li>
+</ul>
+<p>Please note that we are currently investigating an issue regarding inconsistent data collection from HealthKit (such as step count) on Apple iOS devices when paired to an Apple Watch, when compared to the Apple Health app.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Clinical Customization Updates]]></title>
+            <link>https://docs.lamp.digital/docs/blog/2020/10/23/</link>
+            <guid>https://docs.lamp.digital/docs/blog/2020/10/23/</guid>
+            <pubDate>Fri, 23 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Features]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.lamp.digital/docs/blog/2020/10/23/#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customizable-activities">Customizable Activities<a href="https://docs.lamp.digital/docs/blog/2020/10/23/#customizable-activities" class="hash-link" aria-label="Direct link to Customizable Activities" title="Direct link to Customizable Activities">​</a></h3>
+<ul>
+<li>Activities like <strong>Jewels</strong>, <strong>Breathe</strong>, and <strong>Tips</strong> now have their own customization editors, just like <strong>Surveys</strong> do.</li>
+<li>Upload your own audio files (mp3) to create multiple breathing and meditation exercises.</li>
+<li>Upload your own content and images to create unique Tips or resources for participants or patients to see.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://docs.lamp.digital/docs/blog/2020/10/23/#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h2>
+<ul>
+<li>Resolved activity importing issues that caused activities such as surveys to not successfully import in accounts with multiple studies.</li>
+<li>Resolved survey interface alignment issues that made it difficult to read and answer questions.</li>
+<li>Resolved an issue with creating a survey where slider question types were not customizable.</li>
+<li>Resolved an issue where it was not possible for an account to create new studies.</li>
+</ul>
+<p>Please note that we are currently investigating an issue regarding inconsistent data collection from HealthKit (such as step count) on Apple iOS devices when paired to an Apple Watch, when compared to the Apple Health app.</p>
+<p>Please note that we are aware of an issue with some Android 10 devices being unable to open and use the mindLAMP app.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
