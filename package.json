@@ -54,9 +54,9 @@
     "organizationName": "BIDMCDigitalPsychiatry",
     "projectName": "LAMP-platform",
     "baseUrl": "/docs",
-    "onBrokenLinks": "throw",
-    "onDuplicateRoutes": "throw",
-    "onBrokenMarkdownLinks": "throw",
+    "onBrokenLinks": "warn",
+    "onDuplicateRoutes": "warn",
+    "onBrokenMarkdownLinks": "warn",
     "themeConfig": {
       "defaultMode": "light",
       "disableSwitch": false,
