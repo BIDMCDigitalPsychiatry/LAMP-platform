@@ -49,7 +49,7 @@
   "docusaurus": {
     "title": "LAMP Platform",
     "tagline": "The LAMP Platform documentation.",
-    "url": "http://localhost:3000",
+    "url": "https://docs.lamp.digital",
     "favicon": "./docs/assets/logo.png",
     "organizationName": "BIDMCDigitalPsychiatry",
     "projectName": "LAMP-platform",
