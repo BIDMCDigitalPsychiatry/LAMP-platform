@@ -1,9 +1,8 @@
 # Admin Checklist
-- [ ] Download the LAMP app
-- [ ] Log into LAMP
-- [ ] Create a researcher or clinician
-- [ ] Reset researcher or clinicain credentials
-- [ ] Create a study
+- [ ] Download mindLAMP app
+- [ ] Log into dashboard.lamp.digital
+- [ ] Create Credentials for a researcher or clinician
+- [ ] Create a group (formerly, study)
 - [ ] Create a _Learn_ tip
 - [ ] Create an _Assess_ activity like Jewels
 - [ ] Create a Survey
