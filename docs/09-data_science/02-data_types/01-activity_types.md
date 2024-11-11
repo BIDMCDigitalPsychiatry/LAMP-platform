@@ -239,6 +239,51 @@ Currently no settings are available for this activity.
 ```
 
 
+### Emotion Recognition 
+
+ActivitySpec: `lamp.emotion_recognition`
+
+#### Description
+
+The Emotion Recognition task. Participants are presented with a random subset of up to 10 images and must identify the emotion expressed in each one (e.g. "Happiness", "Sadness", "Neutral", "Fear", "Anger").
+
+
+#### Settings
+NA.
+
+#### Data 
+
+- `static_data`:
+    - NA.
+- `temporal_slices`:
+    - `item`: Question number.
+    - `value`: Happiness, Sadness, Fear, Anger, Neutral
+    - `type`: False (incorrect); True (correct).
+    - `duration`: Time elapsed in s since last event.
+    - `level`: Question prompt.
+
+#### Example
+
+```
+{'temporal_slices': [{'duration': 0.833,
+'item': 1,
+'level': 'Which emotion best describes this face?',
+'type': False,
+'value': 'Fear'},
+{'duration': 0.798, 'item': 2, 'level': 'Which emotion best describes this face?', 'type': False, 'value': 'Anger'},
+{'duration': 2.354, 'item': 3, 'level': 'Which emotion best describes this face?', 'type': False, 'value': 'Fear'},
+{'duration': 1.407, 'item': 4, 'level': 'Which emotion best describes this face?', 'type': False, 'value': 'Neutral'},
+{'duration': 1.886, 'item': 5, 'level': 'Which emotion best describes this face?', 'type': False, 'value': 'Neutral'},
+{'duration': 1.059, 'item': 6, 'level': 'Which emotion best describes this face?', 'type': True, 'value': 'Neutral'},
+{'duration': 0.923, 'item': 7, 'level': 'Which emotion best describes this face?', 'type': False, 'value': 'Neutral'},
+{'duration': 0.948, 'item': 8, 'level': 'Which emotion best describes this face?', 'type': False, 'value': 'Neutral'},
+{'duration': 0.91, 'item': 9, 'level': 'Which emotion best describes this face?', 'type': False, 'value': 'Neutral'}],
+'timestamp': 1731005505839,
+'date': '2024-11-07 18:51:45.839000',
+'game': 'emotion_recognition'}
+```    
+
+
 
 
 
