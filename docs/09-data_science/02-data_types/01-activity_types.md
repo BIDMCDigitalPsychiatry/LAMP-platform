@@ -650,9 +650,68 @@ NA.
 
 
 
+### Symbol Digit Substitution
+
+ActivitySpec: `lamp.symbol_digit_substitution`
+
+#### Description
+
+Participants are presented with a grid which maps various symbols to digits (digits shown are 1-9). For each successive symbol, participants are required to press the button containing the corresponding digit.
+
+#### Settings
+
+- NA.
+
+#### Data 
+
+- `static_data`:
+    - `score`:
+    - `number_of_symbols`: ? 	
+    - `number_of_correct_responses`:
+    - `number_of_incorrect_responses`:	
+    - `avg_correct_response_time`:
+    - `avg_incorrect_response_time`:
+- `temporal_slices`:
+    - `item`: NA
+    - `value`: True (correct); False (incorrect).
+    - `type`: ?
+    - `duration`: Time elapsed in s.
+    - `level`: None
+
+#### Example
+
+```
+{'static_data': {'score': 15,
+    'number_of_symbols': 30,
+    'number_of_correct_responses': 29,
+    'number_of_incorrect_responses': 0,
+    'avg_correct_response_time': 4,
+    'avg_incorrect_response_time': 0},
+    'temporal_slices': [{'duration': 5.701,
+    'level': None,
+    'value': True,
+    'type': 10},
+    {'duration': 4.568, 'level': None, 'value': True, 'type': 3},
+    {'duration': 3.505, 'level': None, 'value': True, 'type': 4},
+    {'duration': 4.632, 'level': None, 'value': True, 'type': 7},
+    {'duration': 3.363, 'level': None, 'value': True, 'type': 10},
+    {'duration': 3.655, 'level': None, 'value': True, 'type': 1},
+    {'duration': 4.083, 'level': None, 'value': True, 'type': 3},
+    {'duration': 3.475, 'level': None, 'value': True, 'type': 2},
+    {'duration': 3.614, 'level': None, 'value': True, 'type': 10},
+    {'duration': 3.825, 'level': None, 'value': True, 'type': 8},
+    {'type': 'manual_exit', 'value': False}],
+    'activity': '3w2a3wrbk9efxb4km8bp',
+    'timestamp': 1728688811241,
+    'duration': 122207,
+    '_parent': ''}
+```
+
+
+
 ---
 
-## Coming Soon
+## Coming Soon:
 
 The following activities are not currently implemented in LAMP but are actively being worked on (or ported, for activities that were available in mindLAMP v1)
 
@@ -891,7 +950,7 @@ The Visual Association test.
     - `value`: Unused.
     - `type`: Unused.
     - `duration`: Unused.
-    - `level`: Unused.
+    - `level`: Unused.)
 
 #### Example
 
