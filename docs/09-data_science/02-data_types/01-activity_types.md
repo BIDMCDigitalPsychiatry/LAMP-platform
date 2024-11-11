@@ -438,6 +438,49 @@ The following data is Jewels B Data
 
 ```
 
+
+### Maze Task 
+
+ActivitySpec: `lamp.maze_game`
+
+#### Description
+
+The Maze task assesses measure motor control and spatial problem solving by having participants tilt their phone to move a ball and complete a series of mazes that increase in diificulty.
+
+#### Settings
+NA.
+
+#### Data 
+
+- `static_data`:
+    - NA.
+- `temporal_slices`:
+    - `item`: ?
+    - `value`: time elapsed in ms
+    - `type`: False (not completed); True (completed).
+    - `duration`: Time elapsed in s since last event.
+    - `level`: ?
+
+#### Example
+
+```
+{'duration': 62613,
+'temporal_slices': [{'duration': 46.909,
+   'item': 2,
+   'level': 1,
+   'type': True,
+   'value': 46909},
+   {'duration': 9.596, 'item': 3, 'level': 2, 'type': True, 'value': 9596},
+   {'type': 'manual_exit', 'value': False}],
+   'static_data': {},
+   'activity': 'r7dyn2cf8qpb09ygtffq',
+   'timestamp': 1729203092208,
+   '_parent': 'U0043275074'}
+```    
+
+
+
+
 ### Pop The Bubbles
 
 ActivitySpec: `lamp.pop_the_bubbles`
