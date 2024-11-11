@@ -123,8 +123,8 @@ The Balloon Risk test is a computerized assessment of risk-taking behavior. Part
     - `points`: The associated point value with the completed session.  
 - `temporal_slices`:
     - `item`: Pump number.
-    - `value`: 1 (exploded); 0 (unexploded).
-    - `type`: True (exploded); False (unexploded).
+    - `value`: 0 (exploded); 1 (unexploded).
+    - `type`: False (exploded); True (unexploded).
     - `duration`: Time elapsed in s since last event.
     - `level`: Balloon number.
 
