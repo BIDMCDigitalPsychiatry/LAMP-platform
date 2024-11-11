@@ -475,7 +475,7 @@ NA.
    'static_data': {},
    'activity': 'r7dyn2cf8qpb09ygtffq',
    'timestamp': 1729203092208,
-   '_parent': 'U0043275074'}
+   '_parent': ''}
 ```    
 
 
@@ -589,6 +589,64 @@ The Spatial Span test, with Forward and Backward variants. Participants see a gr
   'timestamp': 1650562293825,
   'activity': '10rp8he6aa3hqbr5c7v9'}
 ```
+
+
+### Spin the Wheel 
+
+ActivitySpec: `lamp.spin_wheel`
+
+#### Description
+
+Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-making and risk-taking behavior. Participants start with $2000 and have 20 spins per game by default; to spin the wheel, participants select one of four buttons.
+
+#### Settings
+NA.
+
+#### Data 
+
+- `static_data`:
+    - NA. 
+- `temporal_slices`:
+    - `item`: Spin number.
+    - `value`: ?
+    - `type`: Score
+    - `duration`: Time elapsed in s since last event (TODO: remove "s").
+    - `level`: ?
+
+#### Example
+
+```
+{'duration': 61822,
+    'temporal_slices': [{'duration': '0s',
+    'item': 1,
+    'level': 1,
+    'type': 2000,
+    'value': 0},
+    {'duration': '0.9s', 'item': 2, 'level': 3, 'type': 2100, 'value': 1},
+    {'duration': '0.897s', 'item': 3, 'level': 4, 'type': 2200, 'value': 1},
+    {'duration': '0.894s', 'item': 4, 'level': 4, 'type': 1950, 'value': 1},
+    {'duration': '0.938s', 'item': 5, 'level': 2, 'type': 2000, 'value': 0},
+    {'duration': '0.892s', 'item': 6, 'level': 3, 'type': 2100, 'value': 1},
+    {'duration': '0.89s', 'item': 7, 'level': 4, 'type': 2200, 'value': 1},
+    {'duration': '1.006s', 'item': 8, 'level': 1, 'type': 2200, 'value': 0},
+    {'duration': '0.91s', 'item': 9, 'level': 2, 'type': 2200, 'value': 0},
+    {'duration': '0.909s', 'item': 10, 'level': 3, 'type': 2050, 'value': 1},
+    {'duration': '0.949s', 'item': 11, 'level': 4, 'type': 1800, 'value': 1},
+    {'duration': '0.938s', 'item': 12, 'level': 4, 'type': 1900, 'value': 1},
+    {'duration': '0.994s', 'item': 13, 'level': 4, 'type': 1900, 'value': 1},
+    {'duration': '0.895s', 'item': 14, 'level': 3, 'type': 1900, 'value': 1},
+    {'duration': '0.886s', 'item': 15, 'level': 1, 'type': 1900, 'value': 0},
+    {'duration': '0.829s', 'item': 16, 'level': 2, 'type': 1900, 'value': 0},
+    {'duration': '0.9s', 'item': 17, 'level': 3, 'type': 1650, 'value': 1},
+    {'duration': '0.944s', 'item': 18, 'level': 4, 'type': 1400, 'value': 1},
+    {'duration': '0.958s', 'item': 19, 'level': 4, 'type': 1400, 'value': 1},
+    {'duration': '0.883s', 'item': 20, 'level': 1, 'type': 1400, 'value': 0},
+    {'type': 'manual_exit', 'value': False}],
+    'static_data': {},
+    'activity': 'g0q7yn340nmjfbh1k694',
+    'timestamp': 1728688950735,
+    '_parent': ''}
+```    
 
 
 
