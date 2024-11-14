@@ -13,8 +13,8 @@ See this page for a list of the following standardized assessments administered 
 <li> 'The app encourages me to accomplish tasks and make progress'
 <li> 'I agree that the tasks within the app are important for my goals'
 <li> 'The app is easy to use and operate'
-<li> 'The app supports me to overcome challenges'
-<ol>
+<li> 'The app supports me to overcome challenges' </li>
+</ol>
 </details>
 
  
@@ -25,7 +25,7 @@ Answer choices:
       <li> 0 - Not at all
       <li> 1 - Several days
       <li> 2 - More than half the days 
-      <li> 3 - Nearly every day
+      <li> 3 - Nearly every day </li>
  </ul> 
 <ol>
 <li> 'Over the past week, I have felt nervous, anxious, or on edge.'
@@ -34,8 +34,8 @@ Answer choices:
 <li> 'Over the past week, I have had trouble relaxing.'
 <li> 'Over the past week, I have felt so restless that it's hard to sit still.'
 <li> 'Over the past week, I have felt myself becoming easily annoyed or irritable.'
-<li> 'Over the past week, I have felt afraid as if something awful might happen.'
-<ol>
+<li> 'Over the past week, I have felt afraid as if something awful might happen.' </li>
+</ol>
 </details>
 
 
@@ -47,7 +47,7 @@ Answer choices:
       <li> 0 - Not at all
       <li> 1 - Several days
       <li> 2 - More than half the days 
-      <li> 3 - Nearly every day
+      <li> 3 - Nearly every day </li>
  </ul> 
 <ol>
 <li> 'Over the past week, I have felt little interest or pleasure in doing things'
@@ -58,8 +58,7 @@ Answer choices:
 <li> 'Over the past week, I have felt bad about myself, or that I am a failure or have let down myself or my family.'
 <li> 'Over the past week, I have had trouble concentrating on things such as reading the newspaper or watching television.'
 <li> 'Over the past week, I have found myself moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that I have been moving around a lot more than usual.'
-<li> 'Over the past week, I have had thoughts that I would be better off dead, or thoughts of hurting myself.'
-### You can add a header
+<li> 'Over the past week, I have had thoughts that I would be better off dead, or thoughts of hurting myself.' </li>
 </ol>
 </details>
  
@@ -78,8 +77,8 @@ Answer choices:
 <li> 'In the last week, how often have you been able to control irritations in  your life?'
 <li> 'In the last week, how often have you felt that you were on top of things?'
 <li> 'In the last week, how often have you been angered because of things that  happened that were outside of your control?' 
-<li> 'In the last week, how often have you felt difficulties were piling up so high that  you could not overcome them?'
-<ol>
+<li> 'In the last week, how often have you felt difficulties were piling up so high that  you could not overcome them?' </li>
+</ol>
 </details>
 
 
@@ -104,8 +103,8 @@ Answer choices:
 <li> 'I have heard things other people can't hear like voices of people whispering or talking.'
 <li> 'I often feel that others have it in for me.'
 <li> 'I have had the sense that some person or force is around me, even though I could not see anyone.'
-<li> 'I feel that parts of my body have changed in some way, or that parts of my body are working differently than before.'
-<ol>
+<li> 'I feel that parts of my body have changed in some way, or that parts of my body are working differently than before.' </li>
+</ol>
 </details>
 
  
@@ -127,8 +126,8 @@ Answer choices:
 <li> 'How often have you had trouble sleeping because you have bad dreams'
 <li> 'How often have you had trouble sleeping because you have pain'
 <li> 'During the past week, how often have you had trouble staying awake while driving, eating meals, or engaging in social activity?'
-<li> 'During the past week, how much of a problem has it been for you to keep up enthusiasm to get things done?'
-<ol>
+<li> 'During the past week, how much of a problem has it been for you to keep up enthusiasm to get things done?'</li>
+</ol>
 </details>
 
  
@@ -157,8 +156,8 @@ Answer choices:
 <li> 'I am unhappy being so withdrawn'
 <li> 'It is difficult for me to make friends'
 <li> 'I feel shut out and excluded by others'
-<li> 'People are around me but not with me'
-<ol>
+<li> 'People are around me but not with me' </li>
+</ol>
 </details>
  
 
