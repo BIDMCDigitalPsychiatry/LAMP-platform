@@ -81,7 +81,7 @@ Submit any bugs or feature requests here: [Report a Bug or Request a Feature](/b
 
 ### Is mindLAMP 2 available in other languages?
 
-The mindLAMP app currently supports Hindi and Spanish.
+In addition to English, the mindLAMP app currently supports Chinese (Simplified and Traditional), Danish, French, German, Hindi, Italian, Korean, and Spanish.
 
 ### Is there a page for quick troubleshooting?
 
