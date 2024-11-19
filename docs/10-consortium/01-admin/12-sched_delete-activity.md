@@ -25,4 +25,4 @@
     **All data saved under that survey activity is deleted for every patient in your clinic.** 
     Once deleted, a survey activity and any deleted data cannot be recovered. 
 
-![](../../06-start_here/06-activities/assets/delete_activities.jpg)
+![](../../06-start_here/06-activities/assets/delete_activities_new.jpg)
