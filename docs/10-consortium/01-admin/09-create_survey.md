@@ -13,4 +13,4 @@
 7. Please double check and ensure you have no typos or errors when saving the new survey. Once you press the `[Save]` button, you will be returned to the screen displaying the list of Activities in your clinic or study, now with the newly added survey. 
 
 ![](../../06-start_here/06-activities/assets/activity_menu.jpg)
-![](../../06-start_here/06-activities/assets/survey_edit.jpg)
+![](../../06-start_here/06-activities/assets/survey_edit_new.jpg)
