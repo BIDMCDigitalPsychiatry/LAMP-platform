@@ -32,4 +32,4 @@ It is not recommended to use full names or other identifying text when referring
 
 ![](../../06-start_here/assets/rename_new.jpg)
 
-Though it appears that the patient has been “renamed,” this new alias is only visible to you, as a clinician or researcher, and not to the user, or anywhere in the data when saved or exported. 
+Though it appears that the patient has been “renamed,” this new alias is only visible to you, as a clinician or researcher, and not to the user, or anywhere in the data when saved or exported.
