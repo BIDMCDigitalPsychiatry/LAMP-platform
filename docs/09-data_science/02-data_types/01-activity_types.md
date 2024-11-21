@@ -445,7 +445,7 @@ ActivitySpec: `lamp.maze_game`
 
 #### Description
 
-The Maze task assesses measure motor control and spatial problem solving by having participants tilt their phone to move a ball and complete a series of mazes that increase in diificulty.
+The Maze task assesses measure motor control and spatial problem solving by having participants tilt their phone to move a ball and complete a series of mazes that increase in difficulty.
 
 #### Settings
 NA.
@@ -455,11 +455,11 @@ NA.
 - `static_data`:
     - NA.
 - `temporal_slices`:
-    - `item`: ?
+    - `item`: number of circles in the maze (starting from 2)
     - `value`: time elapsed in ms
     - `type`: False (not completed); True (completed).
     - `duration`: Time elapsed in s since last event.
-    - `level`: ?
+    - `level`: level of game
 
 #### Example
 
@@ -608,10 +608,10 @@ NA.
     - NA. 
 - `temporal_slices`:
     - `item`: Spin number.
-    - `value`: ?
+    - `value`: 1 (high risk); else 0
     - `type`: Score
     - `duration`: Time elapsed in s since last event (TODO: remove "s").
-    - `level`: ?
+    - `level`: button pressed
 
 #### Example
 
@@ -674,7 +674,7 @@ Participants are presented with a grid which maps various symbols to digits (dig
 - `temporal_slices`:
     - `item`: NA
     - `value`: True (correct); False (incorrect).
-    - `type`: ?
+    - `type`: digit corresponding to symbol
     - `duration`: Time elapsed in s.
     - `level`: None
 
