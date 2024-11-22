@@ -239,6 +239,39 @@ Currently no settings are available for this activity.
 ```
 
 
+### Dcog
+
+ActivitySpec: `lamp.dcog`
+
+#### Description
+
+(To be added).
+
+#### Settings
+
+Currently, no settings are available for this activity.
+
+#### Data 
+
+- `static_data`:
+    -  correct_answers: Number of correct taps
+    -  point: if score = 100 then 2 else 1
+    -  total_questions: number of dogs shown
+    -  score: score of the game ((correct answers/total questions) * 100)
+    -  wrong_answers:  number of wrong taps
+- `temporal_slices`:
+    - `item`: box number tapped
+    - `value`: Unused.
+    - `type`: True if the tap was correct, false otherwise
+    - `duration`: Time elapsed since the last tap
+    - `level`: level of game
+
+#### Example
+
+(To be added)
+
+
+
 ### Emotion Recognition 
 
 ActivitySpec: `lamp.emotion_recognition`
