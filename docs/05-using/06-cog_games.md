@@ -20,7 +20,7 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NL8X5Jyl0cM?si=yhWMnokG_f0sndHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png" width="640"/>
 </p>
 
 ### Customization
@@ -28,7 +28,7 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 **Breakpoint Mean and Standard Deviation:** The level of risk can be adjusted by changing the mean number and standard deviation of taps required to burst the balloon.
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/131181080-a61d2e72-1af7-4497-9d20-def6e5becb31.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/131181080-a61d2e72-1af7-4497-9d20-def6e5becb31.png" alt="drawing" width="640"/>
 </p>
 
 ### Scoring
@@ -59,7 +59,7 @@ The animal stimuli and the box together assess visual memory, working memory, an
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1EXixCUWfSQ?si=Ar06fr-daP7VCzNO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/130973004-e035e322-7804-49d2-838e-211d8a49bf29.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/130973004-e035e322-7804-49d2-838e-211d8a49bf29.png" alt="drawing" width="640"/>
 </p>
 
 ### Customization
@@ -95,7 +95,7 @@ Game begins with a symbol to map (greek letter). Select the correct mapped digit
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tiqKDGtdyKo?si=EixF6CQYp4cOINns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
-<img src=https://i.imgur.com/HGQkrOW.png alt="drawing" width="640"/>
+<img src="https://i.imgur.com/HGQkrOW.png" alt="drawing" width="640"/>
 </p>
 
 ### Customization
@@ -103,7 +103,7 @@ Game begins with a symbol to map (greek letter). Select the correct mapped digit
 **Duration**: The researcher can set how long the task lasts in seconds. 
 
 <p align="center">
-<img src=https://github.com/user-attachments/assets/da27e155-ab4d-4189-b3f5-2aa879780275 alt="drawing" width="640"/>
+<img src="https://github.com/user-attachments/assets/da27e155-ab4d-4189-b3f5-2aa879780275" alt="drawing" width="640"/>
 </p>
 
 ### Scoring
@@ -121,7 +121,7 @@ When a user takes this assessment, they are presented with a random subset of 10
 The user progresses through a series of up to 10 screens in which they are presented with an image and must select the corresponding emotion from a list of options.
 Video to be added soon.
 <p align="center">
-<img src=https://github.com/user-attachments/assets/cc16970d-4d6a-4097-9fbc-b13b11a600b1 alt="drawing" width="640"/>
+<img src="https://github.com/user-attachments/assets/cc16970d-4d6a-4097-9fbc-b13b11a600b1" alt="drawing" width="640"/>
 </p>
 
 
@@ -129,7 +129,7 @@ Video to be added soon.
 Researchers must provide a dataset of up to 50 facial images for the emotion recognition and label each image with the corresponding emotion. Currently, the emotions that researchers can use to label an image are restricted to happiness, sadness, fear, anger, and neutral.
 
 <p align="center">
-<img src=https://github.com/user-attachments/assets/5c4291bd-afee-47e6-9814-5ca4dd454487 alt="drawing" width="640"/>
+<img src="https://github.com/user-attachments/assets/5c4291bd-afee-47e6-9814-5ca4dd454487" alt="drawing" width="640"/>
 </p>
 
 ### Scoring
@@ -169,7 +169,7 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qVdbbUZJTgM?si=9L_5l4NkxBSIVxaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png" alt="drawing" width="640"/>
 </p>
 
 ### Customization
@@ -180,12 +180,12 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 **Bonus points:** To further with gamification, researchers can award bonus points for each level the user completes. 
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/130677807-298add5e-43ce-4f6c-8e14-c842eec5e1dc.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/130677807-298add5e-43ce-4f6c-8e14-c842eec5e1dc.png" alt="drawing" width="640"/>
 </p>
 *For more advanced settings, please contact our research team for assistance.*
 Researchers can also decide to include a pop-up at the conclusion of the activity such as the following:
 <p align="center">
-<img src=https://github.com/user-attachments/assets/2eb45a0c-f181-4842-aacf-5ee231ff9716 alt="drawing" width="320"/>
+<img src="https://github.com/user-attachments/assets/2eb45a0c-f181-4842-aacf-5ee231ff9716" alt="drawing" width="320"/>
 </p>
 
 ### Scoring
@@ -218,7 +218,7 @@ The Maze task can be used to measure motor control, and spatial problem solving.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ROXLDutOhxo?si=XsMLskiTP0P8jell" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png" alt="drawing" width="640"/>
 </p>
 
 ### Customization
@@ -227,7 +227,7 @@ The game automatically progresses as levels are completed. No researcher-defined
 Researchers and clinicians can decide to include a pop-up at the conclusion of the activity such as the following:
 
 <p align="center">
-<img src=https://github.com/user-attachments/assets/2b99033f-69b4-4330-83bf-872fb71bb973 alt="drawing" width="320"/>
+<img src="https://github.com/user-attachments/assets/2b99033f-69b4-4330-83bf-872fb71bb973" alt="drawing" width="320"/>
 </p>
 
 ### Scoring
@@ -250,7 +250,7 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 
 ### Examples of Rule Changes at Subsequent Levels
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/130975328-392de105-18c6-4272-bc13-2c0200773205.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/130975328-392de105-18c6-4272-bc13-2c0200773205.png" alt="drawing" width="640"/>
 </p>
 
 ### Customization
@@ -259,14 +259,14 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 **Intertrial Duration:** The researcher can set the time in seconds betweens trials.
 **Bubble Duration:** The researcher can set how long in seconds bubbles stay on the screen once they appear.
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/130858903-f4e6efc1-1e62-4551-8ece-488611a61c27.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/130858903-f4e6efc1-1e62-4551-8ece-488611a61c27.png" alt="drawing" width="640"/>
 </p>
 
 ### Scoring
 
 Scoring is based on the percentage of bubbles successfully popped, the percentage of incorrectly missed bubbles, the percentage of correctly-ignored bubbles and the percentage of incorrectly popped bubbles, as shown below:
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/130975605-572b2c88-89cd-4121-a2cd-22e1bced2656.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/130975605-572b2c88-89cd-4121-a2cd-22e1bced2656.png" alt="drawing" width="640"/>
 </p>
 
 ### Sample Instructions   
@@ -295,11 +295,11 @@ The recall and reproduce task requires the visuospatial working memory. The back
 
 #### Forward Spatial Span
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/131180452-ac22d260-7f9b-4f86-8229-8c278d69744f.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/131180452-ac22d260-7f9b-4f86-8229-8c278d69744f.png" alt="drawing" width="640"/>
 </p>
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/131180463-351b12c1-55a9-4979-b395-25903dab89ff.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/131180463-351b12c1-55a9-4979-b395-25903dab89ff.png" alt="drawing" width="640"/>
 </p>
 
 ### Scoring 
@@ -309,12 +309,12 @@ Scoring is based on how many times participants can correctly complete the task 
 **Tap Order**: The researcher can choose between the Forward Spatial Span and Backward Spatial Span.
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/131180976-c5f81535-a293-4162-9f1f-df38c0b520b1.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/82968538/131180976-c5f81535-a293-4162-9f1f-df38c0b520b1.png" alt="drawing" width="640"/>
 </p>
 
 Researchers and clinicians can decide to include a pop-up at the conclusion of the activity such as the following:
 <p align="center">
-<img src=https://github.com/user-attachments/assets/90d717cb-b4c5-4f99-abb7-33ce782614c0 alt="drawing" width="640"/>
+<img src="https://github.com/user-attachments/assets/90d717cb-b4c5-4f99-abb7-33ce782614c0" alt="drawing" width="640"/>
 </p>
 
 ### Sample Instructions
@@ -342,7 +342,7 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/65pG23pwAmY?si=aaD8at4H6v6vRojd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png" alt="drawing" width="640"/>
 </p>
 
 ### Customization 
@@ -351,7 +351,7 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 **Sum**: The researcher can select whether the sum added or subtracted from the user's balance is 50, 100, or 250.
 **Probability**: The researcher can choose the probability of a spin landing on a given sum from the following values: 0, 25%, 50%, or 75%.
 <p align="center">
-<img src=https://user-images.githubusercontent.com/103677721/232078729-1b21ca6b-6939-43a1-9935-262a2cdaf1fe.png alt="drawing" width="640"/>
+<img src="https://user-images.githubusercontent.com/103677721/232078729-1b21ca6b-6939-43a1-9935-262a2cdaf1fe.png" alt="drawing" width="640"/>
 </p>
 
 ### Scoring 
