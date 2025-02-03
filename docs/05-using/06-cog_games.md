@@ -24,10 +24,9 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 <p align="center">
 <img src=https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png alt="drawing" width="640" align="center"/>
 </p>
+
 ### Customization
-
 **Balloon Count:** The number of trials required to complete the task can be adjusted by changing the number of balloons. 
-
 **Breakpoint Mean and Standard Deviation:** The level of risk can be adjusted by changing the mean number and standard deviation of taps required to burst the balloon.
 
 <img src=https://user-images.githubusercontent.com/82968538/131181080-a61d2e72-1af7-4497-9d20-def6e5becb31.png alt="drawing" width="640"/>
@@ -37,8 +36,6 @@ Scoring is based on whether the balloon bursts: if the balloon does not burst, u
 
 ### Sample Instructions
 *Tap the button labled 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
-
-
 
 ## Cats and Dogs
 
@@ -100,10 +97,9 @@ Game begins with a symbol to map (greek letter). Select the correct mapped digit
 <p align="center">
 <img src=https://i.imgur.com/HGQkrOW.png alt="drawing" width="640"/>
 </p>
+
 ### Customization
-
 **Number of symbols**: The researcher can specify how many symbols should appear in the game.
-
 **Duration**: The researcher can set how long the task lasts in seconds. 
 
 <p align="center">
@@ -292,11 +288,10 @@ The recall and reproduce task requires the visuospatial working memory. The back
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gn9gyoi8G0M?si=tQrlz3QqRJW1meCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Forward Spatial Span
-##### Level 1
-
 <p align="center">
 <img src=https://user-images.githubusercontent.com/82968538/131180452-ac22d260-7f9b-4f86-8229-8c278d69744f.png alt="drawing" width="640"/>
 </p>
+
 <p align="center">
 <img src=https://user-images.githubusercontent.com/82968538/131180463-351b12c1-55a9-4979-b395-25903dab89ff.png alt="drawing" width="640"/>
 </p>
@@ -306,9 +301,11 @@ Scoring is based on how many times participants can correctly complete the task 
 
 ### Customization 
 **Tap Order**: The researcher can choose between the Forward Spatial Span and Backward Spatial Span.
+
 <p align="center">
 <img src=https://user-images.githubusercontent.com/82968538/131180976-c5f81535-a293-4162-9f1f-df38c0b520b1.png alt="drawing" width="640"/>
 </p>
+
 Researchers and clinicians can decide to include a pop-up at the conclusion of the activity such as the following:
 <p align="center">
 <img src=https://github.com/user-attachments/assets/90d717cb-b4c5-4f99-abb7-33ce782614c0 alt="drawing" width="640"/>
@@ -337,6 +334,7 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 ### Spin the Wheel Sample Game Play 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/65pG23pwAmY?si=aaD8at4H6v6vRojd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <p align="center">
 <img src=https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png alt="drawing" width="640"/>
 </p>
