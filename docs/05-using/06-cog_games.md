@@ -1,6 +1,6 @@
 # Cognitive Games and Assessments
 
-mindLAMP offers a variety of neurocognitive assessments in the form of games, which are native to the app. These will show up on the **Assess** page of the app, and performance scores can be displayed on the **Prevent** page.
+mindLAMP offers a variety of neurocognitive assessments in the form of games, which are native to the app. These will show up on the **Assess** page of the app, and performance scores can be displayed on the **Portal** page.
 
 
 
@@ -21,23 +21,22 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NL8X5Jyl0cM?si=yhWMnokG_f0sndHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![Balloon Risk T1](https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png)
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png alt="drawing" width="640" align="center"/>
+</p>
+### Customization
 
-### Customizations
+**Balloon Count:** The number of trials required to complete the task can be adjusted by changing the number of balloons. 
 
-**Balloon Count:** This will change the number of balloon trials required to complete the task. 
+**Breakpoint Mean and Standard Deviation:** The level of risk can be adjusted by changing the mean number and standard deviation of taps required to burst the balloon.
 
-**Breakpoint Mean and Standard Deviation:** The task can be customized to alter the mean number of taps required to burst the balloon, as well as the standard deviation for the number of taps required. These can be used to adjust the level of risk. 
-
-![Screen Shot 2021-08-23 at 3 24 53 PM](https://user-images.githubusercontent.com/82968538/131181080-a61d2e72-1af7-4497-9d20-def6e5becb31.png)
+<img src=https://user-images.githubusercontent.com/82968538/131181080-a61d2e72-1af7-4497-9d20-def6e5becb31.png alt="drawing" width="640"/>
 
 ### Scoring
-
-Participants are given points based on the number of taps they made before they stopped inflating the balloon, or no points if the balloon burst.
+Scoring is based on whether the balloon bursts: if the balloon does not burst, users receives as many as points as the number of taps made before they stopped inflating the balloon; if the balloon does burst, they receive 0 points. 
 
 ### Sample Instructions
-
-*Tap the button to 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
+*Tap the button labled 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
 
 
 
@@ -62,25 +61,15 @@ The animal stimuli and the box together assess visual memory, working memory, an
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1EXixCUWfSQ?si=Ar06fr-daP7VCzNO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-#### Trial 1
-![C D Trial 1A](https://user-images.githubusercontent.com/82968538/130972978-b96e9129-df46-4a80-8176-93639f1758e4.png)
-![C D Trial 1B](https://user-images.githubusercontent.com/82968538/130972986-f74a39ef-9465-491f-8a37-23dd2a30bd6b.png)
-
-
-#### Trial 2
-![C D Trial 2](https://user-images.githubusercontent.com/82968538/130973004-e035e322-7804-49d2-838e-211d8a49bf29.png)
-
-
-### Examples of Rule Changes at Subsequent Levels
-
-![C D Rules](https://user-images.githubusercontent.com/82968538/130973343-b1a41782-c9a2-493d-9a37-748e4900cd93.png)
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/130973004-e035e322-7804-49d2-838e-211d8a49bf29.png alt="drawing" width="640"/>
+</p>
 
 ### Customization
 
-The game automatically progresses as levels are completed. There are no researcher-defined customizations necessary.
+The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
 
 ### Scoring 
-
 Scoring is based on the number of correct boxes selected within the timeframe of the game.
 
 ### Sample Instructions
@@ -108,18 +97,21 @@ Game begins with a symbol to map (greek letter). Select the correct mapped digit
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tiqKDGtdyKo?si=EixF6CQYp4cOINns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![Screenshot 2023-10-24](https://i.imgur.com/HGQkrOW.png)
+<p align="center">
+<img src=https://i.imgur.com/HGQkrOW.png alt="drawing" width="640"/>
+</p>
+### Customization
 
+**Number of symbols**: The researcher can specify how many symbols should appear in the game.
 
-### Customizations
+**Duration**: The researcher can set how long the task lasts in seconds. 
 
-**Number of symbols**: The researcher can choose the number of symbols to appear
-
-**Duration**: The number of seconds the task will last
+<p align="center">
+<img src=https://github.com/user-attachments/assets/da27e155-ab4d-4189-b3f5-2aa879780275 alt="drawing" width="640"/>
+</p>
 
 ### Scoring
-
-Participants are scored according to the total number of correct symbols pressed given the timeframe.
+Scoring is based on the total number of correct symbols selected within the given timeframe.
 
 ### Sample Instructions
 
@@ -132,12 +124,15 @@ When a user takes this assessment, they are presented with a random subset of 10
 ### Sample game play
 The user progresses through a series of up to 10 screens in which they are presented with an image and must select the corresponding emotion from a list of options.
 
-### Customizations
-Researchers must provide a dataset of up to 50 facial images for the emotion recognition and assign each image with the appropriate emotion.
-Currently, the emotions that can be assigned to an image are restricted to happiness, sadness, fear, anger, and neutral.
+### Customization
+Researchers must provide a dataset of up to 50 facial images for the emotion recognition and label each image with the corresponding emotion. Currently, the emotions that researchers can use to label an image are restricted to happiness, sadness, fear, anger, and neutral.
+
+<p align="center">
+<img src=https://github.com/user-attachments/assets/5c4291bd-afee-47e6-9814-5ca4dd454487 alt="drawing" width="640"/>
+</p>
 
 ### Scoring
-Participants are scored by whether they correctly identified the emotion expressed by the image or not.
+Scoring is based on whether the user correctly identifies the emotion expressed by the image or not.
 
 ### Sample Instructions
 
@@ -172,30 +167,29 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qVdbbUZJTgM?si=9L_5l4NkxBSIVxaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![Jewels](https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png)
-
+<p align="center">
+<img src=https://user-images.githubusercontent.com/103677721/232081525-c48fcb2b-0c37-4396-bce5-a8b4da672508.png alt="drawing" width="640"/>
+</p>
 
 ### Customization
+**Variant:** Researchers can specify whether they would like for users to play Trials A or Trials B.
+**Mode:** Researchers can set the game's difficulty as Beginner, Intermediate, Advanced, or Expert: as the difficulty increases, the time in seconds the user has to complete the trail decreases. The duration for each difficulty mode can also be set directly by the researchers.
+**Initial Diamond Count:** Researchers can set the number of jewels that appear in Level 1, up to 25.
+**Initial Shape Count:** If desired, the game can present any number of shapes, beyond the number of shapes typically used for Trails A and B.
+**Bonus points:** To further with gamification, researchers can award bonus points for each level the user completes. 
 
-The digitized version offers the opportunity to customize Jewels, using the Activity settings: 
-
-![Screen Shot 2021-08-23 at 3 27 32 PM](https://user-images.githubusercontent.com/82968538/130677807-298add5e-43ce-4f6c-8e14-c842eec5e1dc.png)
-
-1. **Variant:** Here, clinicians and researchers can define which Variant, A or B, they would like patients to play. 
-2. **Mode:** The game can be played at four different difficulty modes - Beginner, Intermediate, Advanced, or Expert. Clinicians can customize which difficulty mode they would like patients to play, by selecting from the Mode category.
-    a. Each mode varies by the Duration the player has to complete the trail. This can also be changed for each mode, by changing the various Durations, in seconds. 
-3. **Initial Diamond Count:** This can be used to determine the number of jewels that appear at the Level 1, the maximum is 25.
-4. **Initial Shape Count:** If so desired, the game can present not 1 or 2 different shapes of jewels, as it would for Trails A and B respectively, but any number of shapes. 
-5. **Bonus points:** As an additional gamification strategy, bonus points can be awarded for each level completed.
-
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/130677807-298add5e-43ce-4f6c-8e14-c842eec5e1dc.png alt="drawing" width="640"/>
+</p>
 *For more advanced settings, please contact our research team for assistance.*
-Researchers and clinicians can also decide to include a pop-up at the conclusion of the activity such as the following:
-![jewelsa](https://github.com/user-attachments/assets/2eb45a0c-f181-4842-aacf-5ee231ff9716)
-
+Researchers can also decide to include a pop-up at the conclusion of the activity such as the following:
+<p align="center">
+<img src=https://github.com/user-attachments/assets/2eb45a0c-f181-4842-aacf-5ee231ff9716 alt="drawing" width="320"/>
+</p>
 
 ### Scoring
 
-Scoring for both Jewels variants are out of a 100, with each incorrect jewel earning -2 point
+Scoring for both invariants is based on the number of incorrect jewels selected: scoring is out of 100 points, with each incorrect jewel resulting in a deduction of 2 points.
 
 ### Sample Instructions
 
@@ -222,17 +216,21 @@ The Maze task can be used to measure motor control, and spatial problem solving.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ROXLDutOhxo?si=XsMLskiTP0P8jell" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![Screenshot 2023-04-19 144815](https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png)
+<p align="center">
+<img src=https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png alt="drawing" width="640"/>
+</p>
+### Customization
 
-### Customizations
-
-The game automatically progresses as levels are completed. There are no researcher-defined customizations necessary.
+The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
 Researchers and clinicians can decide to include a pop-up at the conclusion of the activity such as the following:
-![mazes](https://github.com/user-attachments/assets/2b99033f-69b4-4330-83bf-872fb71bb973)
+
+<p align="center">
+<img src=https://github.com/user-attachments/assets/2b99033f-69b4-4330-83bf-872fb71bb973 alt="drawing" width="320"/>
+</p>
 
 ### Scoring
 
-Participants are scored by the time taken to complete each level as well as the number of levels completed.
+Scoring is based on the time taken to complete each level as well as the number of levels completed.
 
 ### Sample Instructions
 
@@ -249,23 +247,25 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C-rctV4syp0?si=xrQm1Rkzfrgg9a1x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Examples of Rule Changes at Subsequent Levels
-
-![Pop Levels](https://user-images.githubusercontent.com/82968538/130975328-392de105-18c6-4272-bc13-2c0200773205.png)
-
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/130975328-392de105-18c6-4272-bc13-2c0200773205.png alt="drawing" width="640"/>
+</p>
 
 ### Customization
-
-The task can be customized by the clinician or researcher in the Activity settings, to adjust the speed at which each bubble is presented, the number of bubbles shown for a given level, and the duration between bubbles.
-
-![Screen Shot 2021-08-23 at 3 23 36 PM](https://user-images.githubusercontent.com/82968538/130858903-f4e6efc1-1e62-4551-8ece-488611a61c27.png)
-
+**Level Count:** The researcher can specify how many bubbles of a given color (i.e. pink, blue, or yellow) are shown in a given level.
+**Level Speed:** The researcher can specify how fast bubbles of a given color (i.e. pink, blue, or yellow) appear in a given level.
+**Intertrial Duration:** The researcher can set the time in seconds betweens trials.
+**Bubble Duration:** The researcher can set how long in seconds bubbles stay on the screen once they appear.
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/130858903-f4e6efc1-1e62-4551-8ece-488611a61c27.png alt="drawing" width="640"/>
+</p>
 
 ### Scoring
 
-Final scores on based on the percentage of bubbles successfully popped, the percentage of incorrectly missed bubbles, the percentage of correctly-ignored bubbles and the percentage of incorrectly popped bubbles, as shown below:
-
-![Pop Score (1)](https://user-images.githubusercontent.com/82968538/130975605-572b2c88-89cd-4121-a2cd-22e1bced2656.png)
-
+Scoring is based on the percentage of bubbles successfully popped, the percentage of incorrectly missed bubbles, the percentage of correctly-ignored bubbles and the percentage of incorrectly popped bubbles, as shown below:
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/130975605-572b2c88-89cd-4121-a2cd-22e1bced2656.png alt="drawing" width="640"/>
+</p>
 
 ### Sample Instructions   
 
@@ -294,41 +294,25 @@ The recall and reproduce task requires the visuospatial working memory. The back
 #### Forward Spatial Span
 ##### Level 1
 
-![FSS Trial 0](https://user-images.githubusercontent.com/82968538/131180452-ac22d260-7f9b-4f86-8229-8c278d69744f.png)
-![FSS Trial 0B](https://user-images.githubusercontent.com/82968538/131180463-351b12c1-55a9-4979-b395-25903dab89ff.png)
-
-##### Level 2
-
-![FSS Trial 1 ](https://user-images.githubusercontent.com/82968538/131180486-d31bf6d8-4b62-4855-a207-4141636d095a.png)
-![FSS Trial1B](https://user-images.githubusercontent.com/82968538/131180519-7886ec94-acef-4e5b-a30c-17a8192a4ddb.png)
-
-#### Backward Spatial Span 
-
-##### Level 1
-
-![SS Trial 1](https://user-images.githubusercontent.com/82968538/131180554-8c6410b2-00be-4620-b769-a94934c49b31.png)
-![Trial 1B](https://user-images.githubusercontent.com/82968538/131180563-47f75b56-bb54-47a4-866c-42f0f9ef2624.png)
-
-
-##### Level 2 
-
-![Trial 2 A](https://user-images.githubusercontent.com/82968538/131180581-3dfc3e79-4525-4def-9639-1e43bc679089.png)
-![SS Trial 2B](https://user-images.githubusercontent.com/82968538/131180598-0d8797da-e145-49cc-939d-7f8ee9e44da9.png)
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/131180452-ac22d260-7f9b-4f86-8229-8c278d69744f.png alt="drawing" width="640"/>
+</p>
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/131180463-351b12c1-55a9-4979-b395-25903dab89ff.png alt="drawing" width="640"/>
+</p>
 
 ### Scoring 
-
-Total score is based on how many times participants can correctly complete the task within the time limit at the top of the screen, with six possible levels. 
+Scoring is based on how many times participants can correctly complete the task within the time limit at the top of the screen. 
 
 ### Customization 
-
-Each trial allows the user to play 5 levels as a default. Researchers and clinicians can designate whether the game is to be ordered Forward or Backward.
-
-![Screen Shot 2021-08-23 at 3 30 50 PM](https://user-images.githubusercontent.com/82968538/131180976-c5f81535-a293-4162-9f1f-df38c0b520b1.png)
-
-Researchers and clinicians, similarly, can decide to include a pop-up at the conclusion of the activity such as the following:
-![spatial_span](https://github.com/user-attachments/assets/90d717cb-b4c5-4f99-abb7-33ce782614c0)
-
-
+**Tap Order**: The researcher can choose between the Forward Spatial Span and Backward Spatial Span.
+<p align="center">
+<img src=https://user-images.githubusercontent.com/82968538/131180976-c5f81535-a293-4162-9f1f-df38c0b520b1.png alt="drawing" width="640"/>
+</p>
+Researchers and clinicians can decide to include a pop-up at the conclusion of the activity such as the following:
+<p align="center">
+<img src=https://github.com/user-attachments/assets/90d717cb-b4c5-4f99-abb7-33ce782614c0 alt="drawing" width="640"/>
+</p>
 
 ### Sample Instructions
 
@@ -353,17 +337,21 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 ### Spin the Wheel Sample Game Play 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/65pG23pwAmY?si=aaD8at4H6v6vRojd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-![igt](https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png)
+<p align="center">
+<img src=https://user-images.githubusercontent.com/103677721/232077972-93a0b777-0d46-49f1-b11b-62e5162e0f48.png alt="drawing" width="640"/>
+</p>
 
 ### Customization 
-The task can be customized by the clinician or researcher in the Activity settings, to adjust the number of spins each game and the probability of the wheels stopping at different amounts to create different risk levels.
-![igt_dashboard](https://user-images.githubusercontent.com/103677721/232078729-1b21ca6b-6939-43a1-9935-262a2cdaf1fe.png)
-
+**Spins per game**: The researcher can set how many spins it takes for the game to end.
+**Starting balance**: The researcher can set the initial balance the user has.
+**Sum**: The researcher can select whether the sum added or subtracted from the user's balance is 50, 100, or 250.
+**Probability**: The researcher can choose the probability of a spin landing on a given sum from the following values: 0, 25%, 50%, or 75%.
+<p align="center">
+<img src=https://user-images.githubusercontent.com/103677721/232078729-1b21ca6b-6939-43a1-9935-262a2cdaf1fe.png alt="drawing" width="640"/>
+</p>
 
 ### Scoring 
-
-Player score is represented by the amount of money held at the end of a 20 spin game.
+Scoring is based on the amount of money the user has at the end of the game.
 
 ### Sample Instructions
 
