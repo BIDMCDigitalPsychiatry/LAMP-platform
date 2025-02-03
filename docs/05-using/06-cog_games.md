@@ -74,6 +74,24 @@ Scoring is based on the number of correct boxes selected within the timeframe of
 *"In this game, you will see a screen with many boxes. These boxes will 'lift', revealing either a dog, cat, or nothing behind them. Your task is to tap the correct boxes, based on what is behind each box. The instructions for which boxes are correct will change depending on the level, so pay attention to the animals!"*
 
 
+## DCog
+
+<details>
+    <summary> References </summary>
+    1. Weil, R. S., Pappa, K., Schade, R. N., Schrag, A. E., Bahrami, B., Schwarzkopf, D. S., ... & Morris, H. R. (2017). The cats‐and‐dogs test: a tool to identify visuoperceptual deficits in Parkinson's disease. Movement Disorders, 32(12), 1789-1790. DOI: 10.1002/mds.27176.
+</details>
+
+
+### Sample Game Play
+<iframe width="560" height="315" src="https://github.com/user-attachments/assets/a2acd00f-e4c1-432e-992a-460490ec7696" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+### Customization
+The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
+### Scoring
+To be added.
+### Sample Instructions
+To be added.
 
 ## Digit Symbol Substitution Test
 
