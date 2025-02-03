@@ -189,6 +189,9 @@ The digitized version offers the opportunity to customize Jewels, using the Acti
 5. **Bonus points:** As an additional gamification strategy, bonus points can be awarded for each level completed.
 
 *For more advanced settings, please contact our research team for assistance.*
+Researchers and clinicians can also decide to include a pop-up at the conclusion of the activity such as the following:
+![jewelsa](https://github.com/user-attachments/assets/2eb45a0c-f181-4842-aacf-5ee231ff9716)
+
 
 ### Scoring
 
@@ -224,6 +227,8 @@ The Maze task can be used to measure motor control, and spatial problem solving.
 ### Customizations
 
 The game automatically progresses as levels are completed. There are no researcher-defined customizations necessary.
+Researchers and clinicians can decide to include a pop-up at the conclusion of the activity such as the following:
+![mazes](https://github.com/user-attachments/assets/2b99033f-69b4-4330-83bf-872fb71bb973)
 
 ### Scoring
 
@@ -319,6 +324,10 @@ Total score is based on how many times participants can correctly complete the t
 Each trial allows the user to play 5 levels as a default. Researchers and clinicians can designate whether the game is to be ordered Forward or Backward.
 
 ![Screen Shot 2021-08-23 at 3 30 50 PM](https://user-images.githubusercontent.com/82968538/131180976-c5f81535-a293-4162-9f1f-df38c0b520b1.png)
+
+Researchers and clinicians, similarly, can decide to include a pop-up at the conclusion of the activity such as the following:
+![spatial_span](https://github.com/user-attachments/assets/90d717cb-b4c5-4f99-abb7-33ce782614c0)
+
 
 
 ### Sample Instructions
