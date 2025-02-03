@@ -2,8 +2,6 @@
 
 mindLAMP offers a variety of neurocognitive assessments in the form of games, which are native to the app. These will show up on the **Assess** page of the app, and performance scores can be displayed on the **Portal** page.
 
-
-
 ## Balloon Risk
 
 Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-reward assessment task (1). The BART has shown to be significantly correlated to self report scores on risk related constructs such as sensation seeking, impulsivity and behavioral constraint, as well as real world risk behaviors such as drug use, gambling, and sexually risky behavior (1, 2, 3). The Users must tap to inflate a balloon to the largest possible size without it bursting. The task has been successfully used as a computerized assessment for risk-taking behavior. Every time the participant taps the balloon their potential points will increase. Every time they hit ‘collect points’, those points are added to the total. However, if the balloon is pumped too much, the balloon will pop. The number of points at which the balloon pops will change with each game. 
@@ -22,14 +20,16 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NL8X5Jyl0cM?si=yhWMnokG_f0sndHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png alt="drawing" width="640" align="center"/>
+<img src=https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png alt="drawing" width="640"/>
 </p>
 
 ### Customization
 **Balloon Count:** The number of trials required to complete the task can be adjusted by changing the number of balloons. 
 **Breakpoint Mean and Standard Deviation:** The level of risk can be adjusted by changing the mean number and standard deviation of taps required to burst the balloon.
 
+<p align="center">
 <img src=https://user-images.githubusercontent.com/82968538/131181080-a61d2e72-1af7-4497-9d20-def6e5becb31.png alt="drawing" width="640"/>
+</p>
 
 ### Scoring
 Scoring is based on whether the balloon bursts: if the balloon does not burst, users receives as many as points as the number of taps made before they stopped inflating the balloon; if the balloon does burst, they receive 0 points. 
@@ -119,6 +119,11 @@ When a user takes this assessment, they are presented with a random subset of 10
 
 ### Sample game play
 The user progresses through a series of up to 10 screens in which they are presented with an image and must select the corresponding emotion from a list of options.
+Video to be added soon.
+<p align="center">
+<img src=https://github.com/user-attachments/assets/cc16970d-4d6a-4097-9fbc-b13b11a600b1 alt="drawing" width="640"/>
+</p>
+
 
 ### Customization
 Researchers must provide a dataset of up to 50 facial images for the emotion recognition and label each image with the corresponding emotion. Currently, the emotions that researchers can use to label an image are restricted to happiness, sadness, fear, anger, and neutral.
@@ -215,6 +220,7 @@ The Maze task can be used to measure motor control, and spatial problem solving.
 <p align="center">
 <img src=https://user-images.githubusercontent.com/103677721/233171665-5a82e07f-3df5-4fc7-9457-caad8962c88d.png alt="drawing" width="640"/>
 </p>
+
 ### Customization
 
 The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
