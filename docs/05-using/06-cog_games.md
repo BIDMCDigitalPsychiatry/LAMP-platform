@@ -75,7 +75,7 @@ Scoring is based on the number of correct boxes selected within the timeframe of
 *"In this game, you will see a screen with many boxes. These boxes will 'lift', revealing either a dog, cat, or nothing behind them. Your task is to tap the correct boxes, based on what is behind each box. The instructions for which boxes are correct will change depending on the level, so pay attention to the animals!"*
 
 
-## DCog
+## DCog (coming soon!)
 Similar to the Cats and Dogs game, the Dcog game presents the user with an array of boxes and, after briefly revealing what is hidden between them, asks the user to click on the boxes behind which dogs are hidden; the game itself is similar to its iBOCA3 counterpart. If the user correctly selects all of the boxes with dogs behind them, the next level has 2 additional boxes and 1 more dog; if, on the other hand, the user does not correctly select all of the boxes with dogs behind them, the next level has 2 fewer boxes and 1 less dog. The number of boxes on the screen caps at 10. 
 
 <details>
