@@ -25,6 +25,7 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 
 ### Customization
 **Balloon Count:** The number of trials required to complete the task can be adjusted by changing the number of balloons. 
+
 **Breakpoint Mean and Standard Deviation:** The level of risk can be adjusted by changing the mean number and standard deviation of taps required to burst the balloon.
 
 <p align="center">
@@ -75,23 +76,30 @@ Scoring is based on the number of correct boxes selected within the timeframe of
 
 
 ## DCog
+Similar to the Cats and Dogs game, the Dcog game presents the user with an array of boxes and, after briefly revealing what is hidden between them, asks the user to click on the boxes behind which dogs are hidden; the game itself is similar to its iBOCA3 counterpart. If the user correctly selects all of the boxes with dogs behind them, the next level has 2 additional boxes and 1 more dog; if, on the other hand, the user does not correctly select all of the boxes with dogs behind them, the next level has 2 fewer boxes and 1 less dog. The number of boxes on the screen caps at 10. 
 
 <details>
     <summary> References </summary>
     1. Weil, R. S., Pappa, K., Schade, R. N., Schrag, A. E., Bahrami, B., Schwarzkopf, D. S., ... & Morris, H. R. (2017). The cats‐and‐dogs test: a tool to identify visuoperceptual deficits in Parkinson's disease. Movement Disorders, 32(12), 1789-1790. DOI: 10.1002/mds.27176.
 </details>
 
-
 ### Sample Game Play
-<iframe width="560" height="315" src="https://github.com/user-attachments/assets/a2acd00f-e4c1-432e-992a-460490ec7696" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p align="center">
+<img width="640" alt="Dcog" src="https://github.com/user-attachments/assets/16a5e6cc-4295-426f-b2d1-4a3feb3db063" />
+</p>
 
+<p align="center">
+<img width="640" alt="DC_end" src="https://github.com/user-attachments/assets/38354481-7b85-4dd9-9208-722bceb050b6" />
+</p>
 
 ### Customization
 The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
+
 ### Scoring
-To be added.
+Scoring is based on the number of correct boxes selected within the timeframe of the game.
+
 ### Sample Instructions
-To be added.
+*When the squares turn white, tap where the dogs were.*
 
 ## Digit Symbol Substitution Test
 
@@ -118,6 +126,7 @@ Game begins with a symbol to map (greek letter). Select the correct mapped digit
 
 ### Customization
 **Number of symbols**: The researcher can specify how many symbols should appear in the game.
+
 **Duration**: The researcher can set how long the task lasts in seconds. 
 
 <p align="center">
@@ -158,7 +167,65 @@ Scoring is based on whether the user correctly identifies the emotion expressed 
 *In this task you will be presented with up to 10 facial images and asked to identify the emotion expressed by each one from a list of 5 emotions.*
 
 
+## Fragmented Letters (coming soon!)
+In the Fragmented Letters game, the user is presented with letters of the alphabet written in black ink on a white background that have been slightly "fragmented", in that some parts of the letters blend in with the background. Fragmentation is understood as the number of pixels in the letter that are white instead of black, out of the total number of pixels normally in the letter. The user must attempt to verbally identify the fragmented letter: if the user correctly identifies the letter, the next letter in the sequence is even more fragmented by 5%; if the user, however, does not correctly identify the letter, the next letter in the sequence is less fragmented by 5%. The game concludes after the user has made two errors.
 
+<details>
+    <summary> References </summary>
+    1. Warrington EK, James M. The Visual Object and Space Perception Battery: Thames Valley Test Company; 1991.
+</details>
+
+
+### Sample game play
+Video to be added.
+
+<p align="center">
+<img width="640" alt="FL" src="https://github.com/user-attachments/assets/dde5573d-4028-4674-87c0-abc9e58ae32c"/>
+</p>
+
+### Customization
+**Starting Fragmentation**: The researcher can choose the initial degree of fragmentation from 30%, 40%, and 50%.
+
+### Scoring
+Scoring is based on the the number of letters the user correctly identifies.
+
+### Sample Instructions
+To be added.
+
+
+## Funny Memory Game (coming soon!)
+The Funny Memory Game, similarly to the iBOCA3 Associative Memory Game, tests the user's associative memory by presenting a series of images in pairs and asking the user (1) to verbally identify the items in the images during the initial exposure phase; (2) to verbally recall the images during the recall phase, following a delay of between 1 to 5 minutes, during which the user completes some memory surveys; and (3) to verbally recognize either what is missing from a given image or which image had been presented before.  
+
+### Sample game play
+Video to be added.
+<p align="center">
+<img width="640" alt="FM" src="https://github.com/user-attachments/assets/3825e291-a37b-438d-926c-86f369c8d035" />
+</p>
+
+<p align="center">
+<img width="640" alt="FM1" src="https://github.com/user-attachments/assets/0021ff1c-468b-4e61-9ede-6bd030386364" />
+</p>
+
+<p align="center">
+<img width="640" alt="FM3" src="https://github.com/user-attachments/assets/a981d1a7-cba9-4d9a-8eb0-15c28e1adc56" />
+</p>
+
+<p align="center">
+<img width="640" alt="FM4" src="https://github.com/user-attachments/assets/d7fb03b3-db0e-4e6e-a970-d818b2e860c7" />
+</p>
+
+### Customization
+Details and pictures to be added.
+
+
+### Scoring
+Scoring is based on the following metrics:
+    - The number of correct pairs recalled, out of 6
+    - The number of correct items recalled, out of 12
+    - The number of items recognized, out of 6
+
+### Sample Instructions
+*You will see a series of pictures. Please say out loud the 2 items in each picture.*
 
 ## Jewels
 
@@ -192,9 +259,13 @@ mindLAMP offers its own digitized version of both version of the Trail Making Te
 
 ### Customization
 **Variant:** Researchers can specify whether they would like for users to play Trials A or Trials B.
+
 **Mode:** Researchers can set the game's difficulty as Beginner, Intermediate, Advanced, or Expert: as the difficulty increases, the time in seconds the user has to complete the trail decreases. The duration for each difficulty mode can also be set directly by the researchers.
+
 **Initial Diamond Count:** Researchers can set the number of jewels that appear in Level 1, up to 25.
+
 **Initial Shape Count:** If desired, the game can present any number of shapes, beyond the number of shapes typically used for Trails A and B.
+
 **Bonus points:** To further with gamification, researchers can award bonus points for each level the user completes. 
 
 <p align="center">
@@ -256,6 +327,37 @@ Scoring is based on the time taken to complete each level as well as the number 
 
 *In this game, you can tilt your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
 
+## Memory Game (coming soon!)
+The memory game presents the user with a sequence of images and prompts the user to recreate the sequence given by selecting the appropriate boxes in order.
+
+### Sample game play
+Video to be added.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/829b9ea9-5a5d-4c00-b214-7c49bb1ecf05" alt="drawing" width="640"/>
+</p>
+
+<p align="center">
+<img  src="https://github.com/user-attachments/assets/5a5a7c9b-66f5-406e-82b1-6c80c289454b" alt="drawing" width="640"/>
+</p>
+
+### Customization
+**Foils**: The researcher can select how many foils are presented, either 3 from 9 or 4 from 12. 
+
+**Animation interval**: The researcher can set how long the animation takes in seconds.
+
+**Animation persistence**: The researcher can set how long the animation stays on screen in seconds.
+
+<p align="center">
+<img src="(https://github.com/user-attachments/assets/bd70fd77-8e38-4b46-92eb-31b936704269" alt="drawing" width="640"/>
+</p>
+
+### Scoring
+To be added.
+
+### Sample Instructions
+*You will see a short sequence of pictures appear in the gray boxes. Please remember the pictures and their locations in order.*
+
 ## Pop the Bubbles
 
 Pop the Bubbles is a go/no-go task that can measure sustained attention and response control. Go/no-go tasks typically require a response to one stimulus, and response inhibition to another stimulus. 
@@ -266,15 +368,17 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C-rctV4syp0?si=xrQm1Rkzfrgg9a1x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### Examples of Rule Changes at Subsequent Levels
 <p align="center">
 <img src="https://user-images.githubusercontent.com/82968538/130975328-392de105-18c6-4272-bc13-2c0200773205.png" alt="drawing" width="640"/>
 </p>
 
 ### Customization
 **Level Count:** The researcher can specify how many bubbles of a given color (i.e. pink, blue, or yellow) are shown in a given level.
+
 **Level Speed:** The researcher can specify how fast bubbles of a given color (i.e. pink, blue, or yellow) appear in a given level.
+
 **Intertrial Duration:** The researcher can set the time in seconds betweens trials.
+
 **Bubble Duration:** The researcher can set how long in seconds bubbles stay on the screen once they appear.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/82968538/130858903-f4e6efc1-1e62-4551-8ece-488611a61c27.png" alt="drawing" width="640"/>
@@ -341,6 +445,24 @@ Researchers and clinicians can decide to include a pop-up at the conclusion of t
 
 **Backwards Spatial Span:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the REVERSE order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
 
+## Speech Recording (coming soon!)
+The Speech Recording presents the user with a series of prompt and records the user's responses.
+
+### Sample game play
+Video to be added.
+<p align="center">
+<img src="https://github.com/user-attachments/assets/e149fc9b-d00e-4cb7-9092-6c59efc64bfe" alt="drawing" width="640"/>
+</p>
+
+### Customization
+Description and image to be added.
+
+### Scoring
+To be added.
+
+### Sample Instructions
+To be added.
+
 ## Spin the Wheel
 
 Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-making and risk-taking behavior (1). The Iowa Gambling Task has been effectively used in studying clinical conditions such as substance abuse, pathological gambling, and schizophrenia (2). The task has been effectively computerized, with no discernable difference between digital and analogue versions (2, 3). The game presents the user with a wheel that can be spun by selecting one of four buttons at the bottom of the screen. Each spin can result in a win or loss of money, and the total amount remaining is displayed at the top of the screen. Participants start with $2000 and have 20 spins per game by default. 
@@ -355,7 +477,7 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 </details>
 
 
-### Spin the Wheel Sample Game Play 
+### Sample Game Play 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/65pG23pwAmY?si=aaD8at4H6v6vRojd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -365,8 +487,11 @@ Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-
 
 ### Customization 
 **Spins per game**: The researcher can set how many spins it takes for the game to end.
+
 **Starting balance**: The researcher can set the initial balance the user has.
+
 **Sum**: The researcher can select whether the sum added or subtracted from the user's balance is 50, 100, or 250.
+
 **Probability**: The researcher can choose the probability of a spin landing on a given sum from the following values: 0, 25%, 50%, or 75%.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/103677721/232078729-1b21ca6b-6939-43a1-9935-262a2cdaf1fe.png" alt="drawing" width="640"/>
@@ -378,3 +503,32 @@ Scoring is based on the amount of money the user has at the end of the game.
 ### Sample Instructions
 
 *"The game presents you with two wheels that can be spun by selecting one of four buttons at the bottom of the screen. The colors of the buttons do not correspond to the colors on the wheel. Each spin can result in a win or loss of money, with the wheel at the top displaying the money you won and the bottom displaying the money lost. The total amount remaining is displayed at the top of the screen. You start with $2000 and have 20 spins per game by default. Points at the end of a session are represented in the amount of money you have."*
+
+
+## Trails B (coming soon!)
+Part of the Trails Making Test, Trails B presents the user with an array of dots containing numbers and letters and requires the user to select the dots in ascending order, tapping on numbers and letters in alternation. Unlike its paper-and-pencil counterpart, this digital adaptation allows the user to discretely tap each of the dots, without having to maintain constant contact with the phone screen.
+
+### Sample game play
+Video to be added.
+<p align="center">
+<img width="640" alt="DT" src="https://github.com/user-attachments/assets/48d1283c-1c86-4617-a708-d9f015b051c6" />
+</p>
+
+
+### Customization
+**Number of dots for Level 1**: The researcher can set the number of dots to either 10 or 12. 
+
+**Timeout period for Level 1**: The researcher can set the time limit in seconds for Level 1.
+
+**Number of dots for Level 2**: The researcher can set the number of dots to either 20 or 24. 
+
+**Timeout period for Level 2**: The researcher can set the time limit in seconds for Level 2.
+
+<p align="center">
+<img width="640" alt="DT" src="https://github.com/user-attachments/assets/d35aec2d-35ec-41e3-b370-f33cdc199993"/>
+</p>
+### Scoring
+To be added.
+
+### Sample Instructions
+*For this game, you will alternate between tapping on numbers and letters in increasing order: for instance, 1-A-2-B etc.*
