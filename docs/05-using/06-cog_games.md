@@ -1,10 +1,10 @@
 # Cognitive Games and Assessments
 
-mindLAMP offers a variety of neurocognitive assessments in the form of games, which are native to the app. These will show up on the **Assess** page of the app, and performance scores can be displayed on the **Portal** page.
+mindLAMP offers a variety of neurocognitive assessments in the form of games, all of which are native to the app. These neurocognitive assessments appear under the **Assess** tab of the app, and performance scores can be viewed on the **Portal** tab.
 
 ## Balloon Risk
 
-Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-reward assessment task (1). The BART has shown to be significantly correlated to self report scores on risk related constructs such as sensation seeking, impulsivity and behavioral constraint, as well as real world risk behaviors such as drug use, gambling, and sexually risky behavior (1, 2, 3). The Users must tap to inflate a balloon to the largest possible size without it bursting. The task has been successfully used as a computerized assessment for risk-taking behavior. Every time the participant taps the balloon their potential points will increase. Every time they hit ‘collect points’, those points are added to the total. However, if the balloon is pumped too much, the balloon will pop. The number of points at which the balloon pops will change with each game. 
+Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-reward assessment task (1). The BART has shown to be significantly correlated to self report scores on risk related constructs such as sensation seeking, impulsivity and behavioral constraint, as well as real world risk behaviors such as drug use, gambling, and sexually risky behavior (1, 2, 3). The user must tap to inflate a balloon as many times as possible without popping it. The task has been successfully used as a computerized assessment for risk-taking behavior. Every time the user taps to inflate the balloon, the potential number of points the user can receive increases: if the user clicks on "collect points," these points are added to the user's current total; if, however, the user pops the balloon before clicking on "collect points," no points are added to the user's current total. The number of taps it takes for the balloon to pop is different for each balloon.
 
 <details>
     <summary> References </summary>
@@ -33,20 +33,14 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 </p>
 
 ### Scoring
-Scoring is based on whether the balloon bursts: if the balloon does not burst, users receives as many as points as the number of taps made before they stopped inflating the balloon; if the balloon does burst, they receive 0 points. 
+Scoring is based on whether or not the balloon pops: if the balloon does not pop and the user clicks on "collect points", the number of points the user receives is the number of times the user has inflated the balloon without it popping; if the balloon does pop, the user receives 0 points.
 
 ### Sample Instructions
-*Tap the button labled 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
+*Tap the button labeled 'Pump Up Balloon' to inflate it as large as you can, before the balloon bursts. When you feel like you can't inflate it anymore without it bursting, tap the button to 'Collect Points'. The number of times you pumped up the balloon will be equal to the number of points you get. If the balloon bursts, you get no points!*
 
 ## Cats and Dogs
 
-Cats and Dogs is a digital task, originally developed for the assessment of early stage Parkinson's disease, which tests multiple domains at once: visual and working memory, attention, response control, and set-shifting (1). Users must remember the location of multiple stimuli, remember which stimuli to respond to and which to ignore, reproduce the location of the response stimuli from memory, and switch between which stimuli to pay attention to. 
-
-In this task, participants are first shown a pattern of boxes. The boxes temporarily lift, to reveal the image of a dog or a cat behind some of them. Participants are asked to select the boxes which a cat or dog behind them. At higher levels, participants must switch whether to respond to the the cat or the dog. 
-
-The cat and dog cues assess response control and set-shifting as go/no-go stimuli: participants must respond to one, but not the other, and then change which to respond to and which to ignore when instructed.
-
-The animal stimuli and the box together assess visual memory, working memory, and attention: each cue is only briefly visible 'behind' the boxes, so participants must attend to the cues, remember the position of each stimulus, and then recall the position to select the correct boxes. They must also remember increasingly more cues at each subsequent trial within a level.
+Originally developed for the assessment of early-stage Parkinson's disease, Cats and Dogs is a digital task that tests multiple domains at once: in particular, visual and working memory, attention, response control, and set-shifting (1). The user must remember the location of multiple stimuli, remember which stimuli to respond to and which to ignore, reproduce the location of the response stimuli from memory, and switch between which stimuli to pay attention to. In this task, the user is presented with an array of boxes. The boxes temporarily disappear, revealing a dog or a cat behind some of them. After the boxes reappear, the user must select the boxes with a cat or dog behind them. As the game progresses, the instructions change to assess response control and set-shifting, and the user must select either cats or dogs, which collectively function as go/no-go stimuli. For later trials with a fixed level, the user will be required to remember more cues.
 
 <details>
     <summary> References </summary>
@@ -68,7 +62,7 @@ The animal stimuli and the box together assess visual memory, working memory, an
 The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
 
 ### Scoring 
-Scoring is based on the number of correct boxes selected within the timeframe of the game.
+Scoring is based on the number of correct cats or dogs selected within the timeframe of the game.
 
 ### Sample Instructions
 
@@ -76,7 +70,7 @@ Scoring is based on the number of correct boxes selected within the timeframe of
 
 
 ## DCog (coming soon!)
-Similar to the Cats and Dogs game, the Dcog game presents the user with an array of boxes and, after briefly revealing what is hidden between them, asks the user to click on the boxes behind which dogs are hidden; the game itself is similar to its iBOCA3 counterpart. If the user correctly selects all of the boxes with dogs behind them, the next level has 2 additional boxes and 1 more dog; if, on the other hand, the user does not correctly select all of the boxes with dogs behind them, the next level has 2 fewer boxes and 1 less dog. The number of boxes on the screen caps at 10. 
+Similar to the Cats and Dogs game, the Dcog game presents the user with an array of boxes and, after briefly revealing what is hidden between them, asks the user to click on the boxes behind which dogs are hidden; the game itself is similar to its iBOCA3 counterpart. If the user correctly selects all of the boxes with dogs behind them, the next level has 2 additional boxes and 1 more dog; if, on the other hand, the user does not correctly select all of the boxes with dogs behind them, the next level has 2 fewer boxes and 1 less dog. The number of boxes on the screen caps at 10, and the game lasts no longer than 2 minutes. 
 
 <details>
     <summary> References </summary>
@@ -96,14 +90,14 @@ Similar to the Cats and Dogs game, the Dcog game presents the user with an array
 The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
 
 ### Scoring
-Scoring is based on the number of correct boxes selected within the timeframe of the game.
+Scoring is based on the number of dogs remembered correctly across trials.
 
 ### Sample Instructions
 *When the squares turn white, tap where the dogs were.*
 
 ## Digit Symbol Substitution Test
 
-The symbol-digit substitution task has been used to evaluate motor speed, attention, associative thinking (1). Initially developed as part of the Wechsler Adult Intelligence Scale and later digitized, the task is one of the most frequently used assessment in neuropsychological testing (1, 2, 3). The measure has shown to be valid and sensitive to change in major depressive disorder, age related cognitive decline, alcoholism and a variety of other conditions (3). Participants are shown a series of symbols (greek letter). They are also shown a grid which maps various symbols to digits (digits shown are 1-9). For each successive symbol, participants are required to press the button containing the corresponding digit. Example: Participant is shown greek letter α. According to the map, α corresponds to "4". The participant then selects the "4" button.
+The symbol-digit substitution task has been used to evaluate motor speed, attention, associative thinking (1). Initially developed as part of the Wechsler Adult Intelligence Scale and later digitized, the task is one of the most frequently used assessment in neuropsychological testing (1, 2, 3). The measure has shown to be valid and sensitive to change in major depressive disorder, age-related cognitive decline, alcoholism and a variety of other conditions (3). Given a mapping of various symbols to numbers 1-9, the user is presented with a symbol and required to tap the corresponding number.
 
 <details>
     <summary> References </summary>
@@ -115,9 +109,6 @@ The symbol-digit substitution task has been used to evaluate motor speed, attent
 </details>
 
 ### Sample Game Play
-
-Game begins with a symbol to map (greek letter). Select the correct mapped digit (1-9) to continue. Participant must keep making attempts until correct symbol is chosen. Example: Participant is shown Ɛ. Ɛ is mapped to "2". Participant must select "2". The symbols will be matched to different numbers in different rounds of the game.
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tiqKDGtdyKo?si=EixF6CQYp4cOINns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
@@ -141,8 +132,7 @@ Scoring is based on the total number of correct symbols selected within the give
 *In this game, you will be shown a symbol in the center of the screen. This symbol will correspond to a number. Check the symbol-mapping shown at the top of the screen and look for your symbol. Identify the symbol which corresponds to your symbol. Once you find the corresponding symbol, select the corresponding number at the bottom of the screen. After you make the correct selection, you will move on to a new symbol, and the process will repeat until time runs out. The faster you move, the more points you will accrue.*
 
 ## Emotion Recognition
-The emotion recognition task is designed to allow researchers to upload up to 50 pictures of faces and test whether the user can select the emotion that each image represents from a preset list of emotions (namely, happiness, sadness, fear, anger, and neutral). 
-When a user takes this assessment, they are presented with a random subset of 10 images from the images provided by the researchers. If the researchers provided fewer than 10 images, all images will be displayed in a random order. To progress through this assessment, participants first click on the emotion they feel best applies to the image and then on "Save" to move onto the next question.
+The emotion recognition task is designed to allow researchers to upload up to 50 pictures of faces and test whether the user can select the emotion that each image represents from a preset list of emotions (namely, happiness, sadness, fear, anger, and neutral). When a user takes this assessment, they are presented with a random subset of 10 images from the images provided by the researchers. If the researchers provided fewer than 10 images, all images will be displayed in a random order. To progress through this assessment, participants first click on the emotion they feel best applies to the image and then on "Save" to move onto the next question.
 
 ### Sample game play
 The user progresses through a series of up to 10 screens in which they are presented with an image and must select the corresponding emotion from a list of options.
@@ -229,11 +219,7 @@ Scoring is based on the following metrics:
 
 ## Jewels
 
-Jewels replicates the Trail Making Tests, in which participants are asked to sequentially select numbered jewels in the correct ascending order. 
-
-The Trail Making Test, with its two subtypes A and B, typically used to screen for dementia and assess cognition. It evaluates visual and motor abilities, executive functioning, and set shifting (1). Evidence suggests that digital and computerized version of the pen-and-paper Trail Making Test reliably assess the same cognitive domains. (2, 3, 4). Trails A requires a patient to make a 'trail' connecting numbered circles, placed randomly on a single page, in ascending order. Trails B requires a patient to make a similar trail, but alternate between numbered and alphabetized circles.
-
-mindLAMP offers its own digitized version of both version of the Trail Making Test, called Jewels. Here, the numbered circles are replaced by numbered jewels in both Jewels A and B. For Jewels B, instead of having alternating numbers and alphabets, the sets alternate between two differently shaped jewels. participants must select jewels starting from 1 in ascending order, within a given time limit. Participants are indicated which jewel shape they must begin at number 1 with. Here is an example of both Jewels A and B.
+A test in which the user must sequentially select numbered jewels in ascending order, Jewels is based on the Trail Making Tests which are typically used to screen for dementia and assess cognition, evaluating visual and motor abilities, executive functioning, and set shifting (1): Trails A requires the user to make a "trail" connecting numbered circles placed randomly on a single page in ascending order; Trails B requires the user to make a similar trail, alternating between numbered and alphabetized circles. Evidence suggests that digital and computerized version of the pen-and-paper Trail Making Test reliably assess the same cognitive domains. (2, 3, 4). For Jewels B, instead of having alternating numbers and alphabets, the sets alternate between two differently shaped jewels.
 
 <details>
     <summary> References </summary>
@@ -279,7 +265,7 @@ Researchers can also decide to include a pop-up at the conclusion of the activit
 
 ### Scoring
 
-Scoring for both invariants is based on the number of incorrect jewels selected: scoring is out of 100 points, with each incorrect jewel resulting in a deduction of 2 points.
+Scoring for both variants is based on the number of incorrect jewels selected: scoring is out of 100 points, with each incorrect jewel resulting in a deduction of 2 points.
 
 ### Sample Instructions
 
@@ -328,7 +314,7 @@ Scoring is based on the time taken to complete each level as well as the number 
 *In this game, you can tilt your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
 
 ## Memory Game (coming soon!)
-The memory game presents the user with a sequence of images and prompts the user to recreate the sequence given by selecting the appropriate boxes in order.
+The memory game assesses spatial and temporal memory by present the user with a sequence of images and prompts the user to recreate the sequence given by selecting the appropriate boxes in order.
 
 ### Sample game play
 Video to be added.
@@ -342,27 +328,26 @@ Video to be added.
 </p>
 
 ### Customization
-**Foils**: The researcher can select how many foils are presented, either 3 from 9 or 4 from 12. 
+**Foils**: The researcher can select how many "foils," or incorrect images, are presented: either 3 out of 9 images can be foils, or 4 out of 12. 
 
-**Animation interval**: The researcher can set how long the animation takes in seconds.
+**Animation interval**: The researcher can set how much time in seconds passes between consecutive images in a sequence.
 
-**Animation persistence**: The researcher can set how long the animation stays on screen in seconds.
+**Animation persistence**: The researcher can set how long in seconds the entire sequence remains on screen once all images have been displayed.
 
 <p align="center">
 <img src="(https://github.com/user-attachments/assets/bd70fd77-8e38-4b46-92eb-31b936704269" alt="drawing" width="640"/>
 </p>
 
 ### Scoring
-To be added.
+Scoring is based on the number of sequences correctly recreated by the user.
 
 ### Sample Instructions
 *You will see a short sequence of pictures appear in the gray boxes. Please remember the pictures and their locations in order.*
 
 ## Pop the Bubbles
 
-Pop the Bubbles is a go/no-go task that can measure sustained attention and response control. Go/no-go tasks typically require a response to one stimulus, and response inhibition to another stimulus. 
 
-mindLAMP offers a task with multiple stimuli in the form of bubbles, which participants must  'pop' or ignore. Participants must pay attention the rules for each level to know which bubbles to pop and which to ignore. In addition to color-based responses, higher levels also demand pattern-based responses. 
+An instance of a go/no-go task in which the user must respond to one stimulus and ignore another, Pop the Bubbles presents multiple stimuli in the form of bubbles of 3 different colors (i.e. pink, blue, and yellow), which the user must either "pop" by clicking on them or ignore. The user must pay attention to the rules for each level in order to know which bubbles to pop and which to ignore. In addition to color-based responses, higher levels also require pattern-based responses. 
 
 ### Sample Game Play
 
@@ -373,9 +358,9 @@ mindLAMP offers a task with multiple stimuli in the form of bubbles, which parti
 </p>
 
 ### Customization
-**Level Count:** The researcher can specify how many bubbles of a given color (i.e. pink, blue, or yellow) are shown in a given level.
+**Level Count:** The researcher can specify how many bubbles are shown in level 1, 2, and 3, respectively.
 
-**Level Speed:** The researcher can specify how fast bubbles of a given color (i.e. pink, blue, or yellow) appear in a given level.
+**Level Speed:** The researcher can specify how fast bubbles appear in level 1, 2, and 3, respectively.
 
 **Intertrial Duration:** The researcher can set the time in seconds betweens trials.
 
@@ -397,9 +382,7 @@ Scoring is based on the percentage of bubbles successfully popped, the percentag
 
 ## Spatial Span
 
-Spatial Span is a task that assess visuospatial memory, derived from a computerized spatial span test, and iterating upon the commonly used Corsi Block Test and Wechsler Spatial Span tests (1). Spatial span assessments have been used in a variety of populations, including idividuals with autism, psychosis, and depression (2, 3, 4). In this game, white squares are arranged in a grid. Squares will 'light up' or change color to green, and then return to white, one square at a time. Participants are required to recall and reproduce the order in which squares in the grid light up. The task can be customized such that the patterns must be reproduced in the same order as cued, or in reverse of the order cued. At every subsequent level, the number of squares that light up increases.
-
-The recall and reproduce task requires the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, the increasing number of squares to remember measures memory capacity.
+Spatial Span is a task that assess visuospatial memory, derived from a computerized spatial span test, and iterating upon the commonly used Corsi Block Test and Wechsler Spatial Span tests (1). Spatial span assessments have been used in a variety of populations, including idividuals with autism, psychosis, and depression (2, 3, 4). In this game, white squares are arranged in a grid. Squares will "light up" or change to green, and then return to white, one square at a time. The user must recall and reproduce the order in which squares in the grid light up. The task can be customized such that the patterns must be reproduced in the same order as cued, or in reverse of the order cued. At every subsequent level, the number of squares that light up increases. The recall and reproduce task utilizes the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, memory capacity is assessed by increasing the number of squares to the user must remember.
 
 <details>
     <summary> References </summary>
@@ -446,7 +429,7 @@ Researchers and clinicians can decide to include a pop-up at the conclusion of t
 **Backwards Spatial Span:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the REVERSE order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
 
 ## Speech Recording (coming soon!)
-The Speech Recording presents the user with a series of prompt and records the user's responses.
+The Speech Recording presents the user with a series of prompt specified by the researcher and records the user's responses; the user can record up to 1 minute of audio.
 
 ### Sample game play
 Video to be added.
@@ -458,7 +441,7 @@ Video to be added.
 Description and image to be added.
 
 ### Scoring
-To be added.
+To be determined.
 
 ### Sample Instructions
 To be added.
@@ -528,7 +511,7 @@ Video to be added.
 <img width="640" alt="DT" src="https://github.com/user-attachments/assets/d35aec2d-35ec-41e3-b370-f33cdc199993"/>
 </p>
 ### Scoring
-To be added.
+Scoring is based on the accuracy with which the user taps out each sequence.
 
 ### Sample Instructions
 *For this game, you will alternate between tapping on numbers and letters in increasing order: for instance, 1-A-2-B etc.*
