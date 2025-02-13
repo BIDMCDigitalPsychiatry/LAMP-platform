@@ -17,7 +17,7 @@ Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-rewa
 
 ### Sample Game Play
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NL8X5Jyl0cM?si=yhWMnokG_f0sndHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NL8X5Jyl0cM?si=yhWMnokG_f0sndHv" title= "YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/82968538/131180830-892e1ce4-5c22-404f-93e0-1693f7bcc590.png" width="640"/>
@@ -78,10 +78,6 @@ Similar to the Cats and Dogs game, the Dcog game presents the user with an array
 </details>
 
 ### Sample Game Play
-<iframe width="560" height="315" src="https://github.com/user-attachments/assets/583b2877-9c44-48bb-b016-16c1e9d69070"></iframe>
-
-
-
 <p align="center">
 <img width="640" alt="Dcog" src="https://github.com/user-attachments/assets/16a5e6cc-4295-426f-b2d1-4a3feb3db063" />
 </p>
@@ -512,9 +508,6 @@ Part of the Trails Making Test, Trails B presents the user with an array of dots
 </details>
 
 ### Sample game play
-<iframe width="560" height="315" src="https://github.com/user-attachments/assets/cdb37788-463c-4eac-9bd0-cde95b6f7655"></iframe>
-
-
 <p align="center">
 <img width="640" alt="DT" src="https://github.com/user-attachments/assets/48d1283c-1c86-4617-a708-d9f015b051c6" />
 </p>
