@@ -78,6 +78,10 @@ Similar to the Cats and Dogs game, the Dcog game presents the user with an array
 </details>
 
 ### Sample Game Play
+<iframe width="560" height="315" src="https://github.com/user-attachments/assets/583b2877-9c44-48bb-b016-16c1e9d69070"></iframe>
+
+
+
 <p align="center">
 <img width="640" alt="Dcog" src="https://github.com/user-attachments/assets/16a5e6cc-4295-426f-b2d1-4a3feb3db063" />
 </p>
@@ -492,7 +496,9 @@ Scoring is based on the amount of money the user has at the end of the game.
 Part of the Trails Making Test, Trails B presents the user with an array of dots containing numbers and letters and requires the user to select the dots in ascending order, tapping on numbers and letters in alternation. Unlike its paper-and-pencil counterpart, this digital adaptation allows the user to discretely tap each of the dots, without having to maintain constant contact with the phone screen.
 
 ### Sample game play
-Video to be added.
+<iframe width="560" height="315" src="https://github.com/user-attachments/assets/cdb37788-463c-4eac-9bd0-cde95b6f7655"></iframe>
+
+
 <p align="center">
 <img width="640" alt="DT" src="https://github.com/user-attachments/assets/48d1283c-1c86-4617-a708-d9f015b051c6" />
 </p>
