@@ -5,7 +5,7 @@ mindLAMP offers a variety of neurocognitive assessments in the form of games, al
 ## Balloon Risk
 
 Balloon Risk, or the Balloon Analog Risk Task (BART) is a computerized risk-reward assessment task (1). The BART has shown to be significantly correlated to self report scores on risk related constructs such as sensation seeking, impulsivity and behavioral constraint, as well as real world risk behaviors such as drug use, gambling, and sexually risky behavior (1, 2, 3). The user must tap to inflate a balloon as many times as possible without popping it. The task has been successfully used as a computerized assessment for risk-taking behavior. Every time the user taps to inflate the balloon, the potential number of points the user can receive increases: if the user clicks on "collect points," these points are added to the user's current total; if, however, the user pops the balloon before clicking on "collect points," no points are added to the user's current total. The number of taps it takes for the balloon to pop is different for each balloon.
-
+**Domain assessed: risk-taking behavior**
 <details>
     <summary> References </summary>
     
@@ -40,8 +40,8 @@ Scoring is based on whether or not the balloon pops: if the balloon does not pop
 
 ## Cats and Dogs
 
-Originally developed for the assessment of early-stage Parkinson's disease, Cats and Dogs is a digital task that tests multiple domains at once: in particular, visual and working memory, attention, response control, and set-shifting (1). The user must remember the location of multiple stimuli, remember which stimuli to respond to and which to ignore, reproduce the location of the response stimuli from memory, and switch between which stimuli to pay attention to. In this task, the user is presented with an array of boxes. The boxes temporarily disappear, revealing a dog or a cat behind some of them. After the boxes reappear, the user must select the boxes with a cat or dog behind them. As the game progresses, the instructions change to assess response control and set-shifting, and the user must select either cats or dogs, which collectively function as go/no-go stimuli. For later trials with a fixed level, the user will be required to remember more cues.
-
+Originally developed for the assessment of early-stage Parkinson's disease, Cats and Dogs requires the user to remember where different stimuli are and which stimuli to respond to, reproduce the location of the response stimuli from memory, and switch between which stimuli to pay attention to. The boxes on the screen temporarily disappear, revealing a dog or a cat behind some of them. After the boxes reappear, the user must select the boxes with a cat or dog behind them. As the game progresses, the instructions change to assess response control and set-shifting, and the user must select either cats or dogs, which collectively function as go/no-go stimuli. For later trials with a fixed level, the user will be required to remember more cues.
+**Domains assessed: visual and working memory, attention, response control, and set-shifting**
 <details>
     <summary> References </summary>
     
@@ -71,7 +71,7 @@ Scoring is based on the number of correct cats or dogs selected within the timef
 
 ## DCog (coming soon!)
 Similar to the Cats and Dogs game, the Dcog game presents the user with an array of boxes and, after briefly revealing what is hidden between them, asks the user to click on the boxes behind which dogs are hidden; the game itself is similar to its iBOCA3 counterpart. If the user correctly selects all of the boxes with dogs behind them, the next level has 2 additional boxes and 1 more dog; if, on the other hand, the user does not correctly select all of the boxes with dogs behind them, the next level has 2 fewer boxes and 1 less dog. The number of boxes on the screen caps at 10, and the game lasts no longer than 2 minutes. 
-
+**Domains assessed: visual and working memory, attention, response control, and set-shifting**
 <details>
     <summary> References </summary>
     1. Weil, R. S., Pappa, K., Schade, R. N., Schrag, A. E., Bahrami, B., Schwarzkopf, D. S., ... & Morris, H. R. (2017). The cats‐and‐dogs test: a tool to identify visuoperceptual deficits in Parkinson's disease. Movement Disorders, 32(12), 1789-1790. DOI: 10.1002/mds.27176.
@@ -100,9 +100,8 @@ Scoring is based on the number of dogs remembered correctly across trials.
 *When the squares turn white, tap where the dogs were.*
 
 ## Digit Symbol Substitution Test
-
-The symbol-digit substitution task has been used to evaluate motor speed, attention, associative thinking (1). Initially developed as part of the Wechsler Adult Intelligence Scale and later digitized, the task is one of the most frequently used assessment in neuropsychological testing (1, 2, 3). The measure has shown to be valid and sensitive to change in major depressive disorder, age-related cognitive decline, alcoholism and a variety of other conditions (3). Given a mapping of various symbols to numbers 1-9, the user is presented with a symbol and required to tap the corresponding number.
-
+Initially developed as part of the Wechsler Adult Intelligence Scale and later digitized, the symbol-digit substitution task is one of the most frequently used assessment in neuropsychological testing (1, 2, 3). The measure has shown to be valid and sensitive to change in major depressive disorder, age-related cognitive decline, alcoholism and a variety of other conditions (3). Given a mapping of various symbols to numbers 1-9, the user is presented with a symbol and required to tap the corresponding number.
+**Domains assessed: motor speed, attention, associative thinking**
 <details>
     <summary> References </summary>
     
@@ -137,6 +136,7 @@ Scoring is based on the total number of correct symbols selected within the give
 
 ## Emotion Recognition
 The emotion recognition task is designed to allow researchers to upload up to 50 pictures of faces and test whether the user can select the emotion that each image represents from a preset list of emotions (namely, happiness, sadness, fear, anger, and neutral). When a user takes this assessment, they are presented with a random subset of 10 images from the images provided by the researchers. If the researchers provided fewer than 10 images, all images will be displayed in a random order. To progress through this assessment, participants first click on the emotion they feel best applies to the image and then on "Save" to move onto the next question.
+**Domain assessed: social cognition**
 
 ### Sample game play
 The user progresses through a series of up to 10 screens in which they are presented with an image and must select the corresponding emotion from a list of options.
@@ -163,6 +163,7 @@ Scoring is based on whether the user correctly identifies the emotion expressed 
 
 ## Fragmented Letters (coming soon!)
 In the Fragmented Letters game, the user is presented with letters of the alphabet written in black ink on a white background that have been slightly "fragmented", in that some parts of the letters blend in with the background. Fragmentation is understood as the number of pixels in the letter that are white instead of black, out of the total number of pixels normally in the letter. The user must attempt to verbally identify the fragmented letter: if the user correctly identifies the letter, the next letter in the sequence is even more fragmented by 5%; if the user, however, does not correctly identify the letter, the next letter in the sequence is less fragmented by 5%. The game concludes after the user has made two errors.
+**Domains assessed: Visual/perceptual** 
 
 <details>
     <summary> References </summary>
@@ -189,6 +190,7 @@ To be added.
 
 ## Funny Memory Game (coming soon!)
 The Funny Memory Game, similarly to the iBOCA3 Associative Memory Game, tests the user's associative memory by presenting a series of images in pairs and asking the user (1) to verbally identify the items in the images during the initial exposure phase; (2) to verbally recall the images during the recall phase, following a delay of between 1 to 5 minutes, during which the user completes some memory surveys; and (3) to verbally recognize either what is missing from a given image or which image had been presented before.  
+**Domains assessed: associative memory**
 
 ### Sample game play
 Video to be added.
@@ -223,8 +225,8 @@ Scoring is based on the following metrics:
 
 ## Jewels
 
-A test in which the user must sequentially select numbered jewels in ascending order, Jewels is based on the Trail Making Tests which are typically used to screen for dementia and assess cognition, evaluating visual and motor abilities, executive functioning, and set shifting (1): Trails A requires the user to make a "trail" connecting numbered circles placed randomly on a single page in ascending order; Trails B requires the user to make a similar trail, alternating between numbered and alphabetized circles. Evidence suggests that digital and computerized version of the pen-and-paper Trail Making Test reliably assess the same cognitive domains. (2, 3, 4). For Jewels B, instead of having alternating numbers and alphabets, the sets alternate between two differently shaped jewels.
-
+Based on the Trail Making Tests which are typically used to screen for dementia and assess cognition, Jewels is a test in which the user must sequentially select numbered jewels in ascending order: Trails A requires the user to make a "trail" connecting numbered circles placed randomly on a single page in ascending order; Trails B requires the user to make a similar trail, alternating between numbered and alphabetized circles. Evidence suggests that digital and computerized version of the pen-and-paper Trail Making Test reliably assess the same cognitive domains (2, 3, 4). For Jewels B, instead of having alternating numbers and alphabets, the sets alternate between two differently shaped jewels.
+**Domains assessed: visual and motor abilities, executive functioning, and set shifting**
 <details>
     <summary> References </summary>
     
@@ -280,8 +282,8 @@ Scoring for both variants is based on the number of incorrect jewels selected: s
 
 ## Maze Task
 
-The Maze task can be used to measure motor control, and spatial problem solving. Though there is not a gold standard model, digital maze games have been utilized in the assessment of visual cognition and problem solving in individuals with neurodegenerative disorders, brain injury, and schizophrenia (1, 2, 3). Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases with each level (more balls, more intricate puzzle designs).
-
+The Maze task can be used to measure motor control and spatial problem solving. Though there is not a gold standard model, digital maze games have been utilized in the assessment of visual cognition and problem solving in individuals with neurodegenerative disorders, brain injury, and schizophrenia (1, 2, 3). Participants can tilt their phone to move the ball and exit the maze. The first level starts with one ball and two rings, and the difficulty increases with each level (more balls, more intricate puzzle designs).
+**Domains assessed: visual cognition and problem solving**
 <details>
     <summary> References </summary>
     
@@ -319,6 +321,12 @@ Scoring is based on the time taken to complete each level as well as the number 
 
 ## Memory Game (coming soon!)
 The memory game assesses spatial and temporal memory by present the user with a sequence of images and prompts the user to recreate the sequence given by selecting the appropriate boxes in order.
+<details>
+    <summary> References </summary>
+    1. Lindeboom, J., Schmand, B., Tulner, L., Walstra, G., & Jonker, C. (2002). Visual association test to detect early dementia of the Alzheimer type. Journal of Neurology, Neurosurgery & Psychiatry, 73(2), 126-133.
+</details>
+
+**Domains assessed: spatial and temporal memory**
 
 ### Sample game play
 Video to be added.
@@ -349,9 +357,8 @@ Scoring is based on the number of sequences correctly recreated by the user.
 *You will see a short sequence of pictures appear in the gray boxes. Please remember the pictures and their locations in order.*
 
 ## Pop the Bubbles
-
-
 An instance of a go/no-go task in which the user must respond to one stimulus and ignore another, Pop the Bubbles presents multiple stimuli in the form of bubbles of 3 different colors (i.e. pink, blue, and yellow), which the user must either "pop" by clicking on them or ignore. The user must pay attention to the rules for each level in order to know which bubbles to pop and which to ignore. In addition to color-based responses, higher levels also require pattern-based responses. 
+**Domains assessed: attention**
 
 ### Sample Game Play
 
@@ -387,6 +394,7 @@ Scoring is based on the percentage of bubbles successfully popped, the percentag
 ## Spatial Span
 
 Spatial Span is a task that assess visuospatial memory, derived from a computerized spatial span test, and iterating upon the commonly used Corsi Block Test and Wechsler Spatial Span tests (1). Spatial span assessments have been used in a variety of populations, including idividuals with autism, psychosis, and depression (2, 3, 4). In this game, white squares are arranged in a grid. Squares will "light up" or change to green, and then return to white, one square at a time. The user must recall and reproduce the order in which squares in the grid light up. The task can be customized such that the patterns must be reproduced in the same order as cued, or in reverse of the order cued. At every subsequent level, the number of squares that light up increases. The recall and reproduce task utilizes the visuospatial working memory. The backward variation also measures working memory, as some processing must be done before reproducing the pattern. Finally, memory capacity is assessed by increasing the number of squares to the user must remember.
+**Domain assessed: visuospatial memory**
 
 <details>
     <summary> References </summary>
@@ -434,6 +442,7 @@ Researchers and clinicians can decide to include a pop-up at the conclusion of t
 
 ## Speech Recording (coming soon!)
 The Speech Recording presents the user with a series of prompt specified by the researcher and records the user's responses; the user can record up to 1 minute of audio.
+**Domain assessed: verbal**
 
 ### Sample game play
 Video to be added.
@@ -453,6 +462,7 @@ To be added.
 ## Spin the Wheel
 
 Spin the Wheel is based on the Iowa Gambling Task that aims to measure decision-making and risk-taking behavior (1). The Iowa Gambling Task has been effectively used in studying clinical conditions such as substance abuse, pathological gambling, and schizophrenia (2). The task has been effectively computerized, with no discernable difference between digital and analogue versions (2, 3). The game presents the user with a wheel that can be spun by selecting one of four buttons at the bottom of the screen. Each spin can result in a win or loss of money, and the total amount remaining is displayed at the top of the screen. Participants start with $2000 and have 20 spins per game by default. 
+**Domains assessed: decision-making and risk-taking behavior**
 
 <details>
     <summary> References </summary>
@@ -494,6 +504,12 @@ Scoring is based on the amount of money the user has at the end of the game.
 
 ## Trails B (coming soon!)
 Part of the Trails Making Test, Trails B presents the user with an array of dots containing numbers and letters and requires the user to select the dots in ascending order, tapping on numbers and letters in alternation. Unlike its paper-and-pencil counterpart, this digital adaptation allows the user to discretely tap each of the dots, without having to maintain constant contact with the phone screen.
+**Domain assessed: frontoexecutive**
+
+<details>
+    <summary> References </summary>
+    1. Army Individual Test Battery (1984)
+</details>
 
 ### Sample game play
 <iframe width="560" height="315" src="https://github.com/user-attachments/assets/cdb37788-463c-4eac-9bd0-cde95b6f7655"></iframe>
