@@ -6,14 +6,11 @@ slug: /
 
 ![](assets/LAMP_Overview.png)
 
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGWeY93Azc/qdGUUfYRs_CSA8ysbL4lCg/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGWeY93Azc&#x2F;qdGUUfYRs_CSA8ysbL4lCg&#x2F;watch?utm_content=DAGWeY93Azc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Welcome to the mindLAMP Tour</a> by Division of Digital Psychiatry at BIDMC
+
+
+https://github.com/user-attachments/assets/6045bf70-ae76-479f-99c7-f649bfa8bd43
+
+
 
 
 The **LAMP Platform** is a neuropsychiatric research and clinical care management platform designed to help you manage your research studies and digitally-enabled clinics. The many robust components of the platform work together to automate your workflows and simplify clinic and data management. Today, the **LAMP Platform** is indexed in the World Health Organizations Digital Health Atlas, used around the globe by many research groups, and implemented in busy community clinics, including at major **Harvard Medical School** teaching hospitals. The LAMP Platform functions as 4 pieces, the App, the Dashboard, the Database, and Cortex.
