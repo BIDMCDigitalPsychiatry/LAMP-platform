@@ -7,7 +7,7 @@ slug: /
 ![](assets/LAMP_Overview.png)
 
 
-<video src='https://github.com/user-attachments/assets/6045bf70-ae76-479f-99c7-f649bfa8bd43' width=560/>
+<iframe width="560" height="315" src="https://www.canva.com/design/DAGWeY93Azc/qdGUUfYRs_CSA8ysbL4lCg/watch" title= "Canva video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 
