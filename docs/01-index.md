@@ -7,8 +7,7 @@ slug: /
 ![](assets/LAMP_Overview.png)
 
 
-
-https://github.com/user-attachments/assets/6045bf70-ae76-479f-99c7-f649bfa8bd43
+<video src='https://github.com/user-attachments/assets/6045bf70-ae76-479f-99c7-f649bfa8bd43' width=560/>
 
 
 
