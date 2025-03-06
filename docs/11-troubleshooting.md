@@ -1,8 +1,8 @@
 # Troubleshooting
 
-In case your app is running into issues or you have questions regarding setting up, see this section to see if the solutions listed help! If you are a collaborator or a researcher using mindLAMP, please post on our community forums [here](https://mindlamp.discourse.group/). If you are still in need of further assistance, please file a report through our bug reporting form [here](https://docs.google.com/forms/d/e/1FAIpQLSdy354xNzQVekizuSMePWk_F7YGl9ENencXKJ-T0oo4ZTNkaA/viewform).
+In case your app is running into issues or you have questions regarding setting up, see this section to see if the solutions listed help! If you are still in need of further assistance, please file a report through our bug reporting form [here](https://docs.google.com/forms/d/e/1FAIpQLSdyt4olypT86pN9GLoueuawR_XUJwlDLo_HhSpIGTZ2Q7sn2g/viewform?usp=dialog).
 
-You can also access these links from within the app after logging in and clicking the person icon in the top right corner. Clicking on 'Help and Support' will take you to this documentation page and clicking 'LAMP Community' will take you to the community forums if you are a collaborator and having problems with the app. The 'Contact Us' button will allow you to email us in case you are encountering a unique issue that was unable to be solved after viewing the documentation and posting on the community forums. See the image of where to click to access these links below.
+You can also access these links from within the app after logging in and clicking the person icon in the top right corner. Clicking on 'Help and Support' will take you to this documentation page. The 'Contact Us' button will allow you to email us in case you are encountering a unique issue that was unable to be solved after viewing the documentation. See the image of where to click to access these links below.
 
 ![](assets/profile.png)
 

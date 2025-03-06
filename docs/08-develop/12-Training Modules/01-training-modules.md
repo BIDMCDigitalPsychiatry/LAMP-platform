@@ -1644,7 +1644,7 @@ We use the following scheme to manage issues and releases:
 4. **Release**: Represents two sprints worth of issues (work items) that constitute a monthly release of each of the components of the LAMP Platform.
     1. When creating a release (i.e. on `LAMP-server`), collect all the pull requests/commits merged since the last release and create a well-formatted summary list of changes.
     2. The release version MUST be the current date in the format `YYYY.MM.DD` (e.g. `2021.6.1`).
-    3. The CI/CD pipeline will take care of the rest! Be sure to post the update to the [docs.lamp.digital](http://docs.lamp.digital) What's New page, as well as to the community forum (below).
+    3. The CI/CD pipeline will take care of the rest! Be sure to post the update to the [docs.lamp.digital](http://docs.lamp.digital) What's New page.
 5. **Project**: Represents the evolving nature of the entire LAMP Platform, encompassing all past and future releases. 
     1. The GitHub Project board should contain all triaged issues (work items) that are actively important for our team to take care of, but not ones that are not important to us.
 
@@ -1652,16 +1652,6 @@ We use the following scheme to manage issues and releases:
 🌟 Tip: linking a GitHub issue or PR in one repository from another entirely separate repository allows GitHub to show that in-line with the comments.
 
 </aside>
-
----
-
-### Using the LAMP Community Forum
-
-`~5 minutes`
-
-If you're assisting with triaging issues/working with collaborators, or doing data analysis using the LAMP Platform, **be sure to register for an account on the forum here.** In case collaborators post questions, it's important we answer them. 
-
-[LAMP Consortium](https://mindlamp.discourse.group)
 
 ---
 

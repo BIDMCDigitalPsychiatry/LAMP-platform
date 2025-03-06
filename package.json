@@ -122,10 +122,6 @@
             "position": "right",
             "items": [
               {
-                "label": "Forum",
-                "href": "https://mindlamp.discourse.group/"
-              },
-              {
                 "label": "GitHub",
                 "href": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/"
               },
