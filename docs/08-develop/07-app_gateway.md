@@ -42,7 +42,7 @@ External collaborators are **NOT PERMITTED** to use `mailto:`, `sms:`, or `slack
 
 To allow external collaborators to send push notifications to users' iOS and Android devices, the following steps must be completed: 
 1. collaborator organization must complete the consortium enrollment form
-2. collaborator organization must make the request for an API Key **on the community forum** (emailed requests **ARE NOT PERMITTED**)
+2. collaborator organization must make the request for an API Key
 3. a BIDMC team member must save this information to the `Projects → LAMP Platform → Documents → People Pipeline → Consortium Members` database in the internal team Notion.
 4. the BIDMC team member must generate a new API Key in the terminal using this command: `openssl rand -base64 12`
      1. An API Key is actually just a randomly generated string to uniquely identify an external collaborator, and contains no other information.
