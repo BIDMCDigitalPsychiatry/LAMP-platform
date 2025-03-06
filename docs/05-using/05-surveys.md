@@ -3,7 +3,7 @@
 See this page for a list of the following standardized assessments administered through mindLAMP, the symptom they assess, and the list of the questions contained in the assessment.
 
 <details>
-    <summary> D-WAI (App Engagement) </summary>
+    <summary>D-WAI (App Engagement)</summary>
     Answer choices: (to be added)
      
     1. 'I trust the app to guide me towards my personal goals' 
@@ -16,7 +16,7 @@ See this page for a list of the following standardized assessments administered 
 
  
 <details>
-    <summary> GAD-7 (Anxiety) </summary>
+    <summary>GAD-7 (Anxiety)</summary>
     Answer choices:
         0 - Not at all 
         1 - Several days 
@@ -34,7 +34,7 @@ See this page for a list of the following standardized assessments administered 
 
 
 <details>
-    <summary> PHQ-9 (Mood) </summary>
+    <summary>PHQ-9 (Mood)</summary>
     Answer choices:
           0 - Not at all 
           1 - Several days 
@@ -53,7 +53,7 @@ See this page for a list of the following standardized assessments administered 
 </details>
  
 <details>
-    <summary> PSS (Stress) </summary>
+    <summary>PSS (Stress)</summary>
     Answer choices: (to be added)
      
     1. 'In the last week, how often have you been upset because of something that  happened unexpectedly?' 
@@ -70,7 +70,7 @@ See this page for a list of the following standardized assessments administered 
 
 
 <details>
-    <summary> PQ-16 (Prodromal) </summary>
+    <summary>PQ-16 (Prodromal)</summary>
     Answer choices: (to be added)
      
     1. 'I feel uninterested in the things I used to enjoy' 
@@ -93,7 +93,7 @@ See this page for a list of the following standardized assessments administered 
 
  
 <details>
-    <summary> PSQI (Sleep) </summary>
+    <summary>PSQI (Sleep)</summary>
      Answer choices: (to be added)
      
     1. 'During the past week, when have you usually gone to bed?' 
@@ -113,7 +113,7 @@ See this page for a list of the following standardized assessments administered 
 
  
 <details>
-    <summary> UCLA Loneliness (Loneliness) </summary>
+    <summary>UCLA Loneliness (Loneliness)</summary>
     Answer choices: (to be added)
      
     1. 'I am unhappy doing so many things alone' 
