@@ -18,7 +18,7 @@
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/plugin-content-docs": "3.6.0",
     "@docusaurus/preset-classic": "^3.7.0",
-    "@easyops-cn/docusaurus-search-local": "^0.48.5",
+    "@easyops-cn/docusaurus-search-local": "^0.45.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "docusaurus-plugin-openapi": "^0.7.6",
@@ -174,15 +174,6 @@
           "id": "api",
           "path": "./LAMP-protocol/openapi.yml",
           "routeBasePath": "api"
-        }
-      ],
-      [
-        "@easyops-cn/docusaurus-search-local",
-        {
-          "indexDocs": true,
-          "indexBlog": true,
-          "indexPages": true,
-          "hashed": true
         }
       ]
     ]
