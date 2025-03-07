@@ -175,6 +175,15 @@
           "path": "./LAMP-protocol/openapi.yml",
           "routeBasePath": "api"
         }
+      ],
+      [
+        "@easyops-cn/docusaurus-search-local",
+        {
+          "indexDocs": true,
+          "indexBlog": false,
+          "indexPages": false,
+          "hashed": true
+        }
       ]
     ]
   }
