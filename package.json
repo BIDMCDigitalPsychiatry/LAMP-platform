@@ -180,8 +180,8 @@
         "@easyops-cn/docusaurus-search-local",
         {
           "indexDocs": true,
-          "indexBlog": true,
-          "indexPages": true,
+          "indexBlog": false,
+          "indexPages": false,
           "hashed": true
         }
       ]
