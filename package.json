@@ -147,6 +147,7 @@
             "routeBasePath": "/",
             "showLastUpdateAuthor": true,
             "showLastUpdateTime": true,
+            "disableVersioning": true,
             "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/"
           },
           "blog": {
@@ -180,8 +181,8 @@
         "@easyops-cn/docusaurus-search-local",
         {
           "indexDocs": true,
-          "indexBlog": false,
-          "indexPages": false,
+          "indexBlog": true,
+          "indexPages": true,
           "hashed": true
         }
       ]
