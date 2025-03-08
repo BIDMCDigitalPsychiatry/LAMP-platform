@@ -2,6 +2,9 @@
   "name": "lamp-platform",
   "version": "0.0.0",
   "private": true,
+  "overrides": {
+    "@docusaurus/theme-common": "3.7.0"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
