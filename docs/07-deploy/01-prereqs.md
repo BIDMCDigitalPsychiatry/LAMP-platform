@@ -1,5 +1,9 @@
 # Prerequisites for Deploying the LAMP Platform
 
+:::warning
+BIDMC TVO will grant a free license for personal use of these materials. For use related to grants, healthcare, and non-profit institutions, please contact the BIDMC TVO. For use related to for-profit businesses, please also contact the BIDMC TVO. These materials may not be replicated, copied, shared directly on another website/database, adapted, or used with any large language model without the written permission of the BIDMC TVO.
+:::
+
 The mindLAMP app interfaces with the much broader LAMP Platform to provide all of the functionality and features you can interact with within the app. The [LAMP Platform is open source](https://github.com/BIDMCDigitalPsychiatry/) and its components are detailed below; to see technical materials such as source code or compiling/testing routines, please visit the components' corresponding repository. 
 
 There are different ways for your organization to self-deploy the LAMP Platform, and because these components are interoperable, your organization has the choice between only self-deploying one, a combination, or all of these components together. 
