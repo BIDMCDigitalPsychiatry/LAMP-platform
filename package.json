@@ -150,7 +150,10 @@
             "routeBasePath": "/",
             "showLastUpdateAuthor": true,
             "showLastUpdateTime": true,
-            "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/"
+            "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/",
+          "exclude": [
+            "07-deploy/**"
+          ]
           },
           "blog": {
             "blogTitle": "LAMP Platform",
