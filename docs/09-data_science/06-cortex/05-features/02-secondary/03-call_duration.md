@@ -19,7 +19,7 @@ Call duration sums the time spent on calls.
 #### Data
 
 - `timestamp`: (int, units: ms) the start time of each bin of size `kwargs['resolution']`.
-- `value`: (float, units: s) the call duration.
+- `value`: (float, units: ms) the call duration.
 
 #### Example
 
@@ -33,12 +33,12 @@ Output:
   'duration': 5616000000,
   'resolution': 86400000,
   'data': [
-           {'timestamp': 1607072400000, 'value': 111},
+           {'timestamp': 1607072400000, 'value': 11102},
            {'timestamp': 1607331600000, 'value': 0},
                  .
                  .
                  .
-           {'timestamp': 1609232400000, 'value': 7}
+           {'timestamp': 1609232400000, 'value': 173206}
           ]
 }
 ```
