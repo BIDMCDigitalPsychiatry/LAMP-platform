@@ -2,34 +2,51 @@
 slug: /
 ---
 
-# LAMP Platform
+# MindLAMP Platform
 
 ![](assets/LAMP_Overview.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wnFml3qrLHI?si=fPTF3D_mCg4NdIpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+**MindLAMP** (Learn, Assess, Manage, Portal) is a measurement-based care platform designed for neuropsychiatric research and digitally enabled clinics. Its four integrated components automate workflows— from data capture on the patient’s device to near-real-time insights for clinicians and researchers—simplifying both study execution and routine clinical care. Indexed in the World Health Organization’s Digital Health Atlas, MindLAMP is used worldwide by academic research groups and community clinics alike, including at major Harvard Medical School teaching hospitals.
 
+### Who Uses MindLAMP?
 
+**Patients & Participants**
 
+Individuals taking part in research studies or receiving digitally enabled care. They can complete customized activities and share passive sensor data, all in service of tracking and improving their mental health.
 
-The **LAMP Platform** is a neuropsychiatric research and clinical care management platform designed to help you manage your research studies and digitally-enabled clinics. The many robust components of the platform work together to automate your workflows and simplify clinic and data management. Today, the **LAMP Platform** is indexed in the World Health Organizations Digital Health Atlas, used around the globe by many research groups, and implemented in busy community clinics, including at major **Harvard Medical School** teaching hospitals. The LAMP Platform functions as 4 pieces, the App, the Dashboard, the Database, and Cortex.
+**Clinicians & Researchers**
 
+Professionals who design and run studies or manage patient care. They can configure and schedule custom activities for participant groups, monitor patient progress via interactive visualizations, and integrate MindLAMP data into their decision-making and research pipelines.
 
-### ① App
+**Administrators**
 
-The patient uses the **App**, taking surveys, playing cognitive games, accessing helpful tips and resources, or doing meditation and breathing exercises; when enabled and configured, the app collects sensor data from the mobile device's accelerometer, GPS, pedometer, and more in the background without interrupting the patient. It also collects metadata about the patient's use of the app, like how long certain questions took to answer in a survey, or which helpful tips they appreciated the most, and uploads the data securely to a server you or your organization owns.
+System administrators who deploy and maintain the MindLAMP backend. They hold the “admin keys,” create initial Clinician/Researcher accounts, and ensure secure, compliant operation of the platform.
 
-### ② Dashboard
+### How It Works
 
-Clinicians and Researchers can create, customize, and schedule activities for patients or participants to interact and receive notifications, and tap into near-real-time information about patients and better inform decision making. The dashboard also allows for unique interactive features for specialized research or clinical-specific use. Additionaly, the dashboard now has a fully functional **Data Portal** for an in-depth and comprehensive view of all patient and participant data. 
+The MindLAMP platform is built around four integrated components:
 
-### ③ Database
+**① App**
 
-The **Database** securely and chronologically indexes the data through the **LAMP Protocol** for programming and data science. It informs custom data analysis code in real-time that new patient data has arrived. Researchers can better build reusable tools, analysis pipelines, and conduct reproducible science, knowing that others around the globe using the **LAMP Platform** can easily work with their data or replicate their unique study.
+The MindLAMP2 App empowers participants to take an active role in their care by completing surveys, playing cognitive games, accessing helpful tips and resources, and engaging in meditation and breathing exercises. When configured, it unobtrusively gathers passive sensor data—accelerometer, GPS, pedometer, screen usage and more—in the background, as well as metadata about app use, such as how long each survey question takes to answer or which tips the user finds most valuable. All active and passive data streams are securely uploaded to an organization-owned server, enabling near-real-time monitoring and longitudinal tracking. 
 
-### ④ Cortex
+**② Dashboard**
 
-The **Cortex** data analysis pipeline is designed to easily hook into the **Database** and extract important and clinically useful secondary data features, such as sedentary behavior, time spent at home, device/screen usage, sleep estimates, and much more, from the terabytes of raw data. It can trigger custom just-in-time adaptive interventions and produce useful interactive visualizations viewable by patients and clinicians.
+Clinicians and researchers use the Dashboard to design, customize, and schedule activities for their participants, sending push notifications and messages as needed. A fully functional Data Portal provides comprehensive, downloadable views of all patient and participant data, which can be shared securely with clinicians, family members, or trusted collaborators.
+
+**③ Database**
+
+The Database securely and chronologically indexes the data through the LAMP Protocol for programming and data science. It informs custom data analysis code in real-time that new patient data has arrived. Researchers can better build reusable tools, analysis pipelines, and conduct reproducible science, knowing that others around the globe using the LAMP Platform can easily work with their data or replicate their unique study.
+
+**④ Cortex**
+
+The Cortex data analysis pipeline is designed to easily hook into the Database and extract important and clinically useful secondary data features, such as sedentary behavior, time spent at home, device/screen usage, sleep estimates, and much more, from the terabytes of raw data. It can trigger custom just-in-time adaptive interventions and produce useful interactive visualizations viewable by patients and clinicians.
+
+### Diagram of the LAMP Platform
+
+![](assets/LAMP_Diagrams.png)
 
 <head>
   <meta name="google-site-verification" content="MDFm8izKofwRdAnUbqg2muDPnSlHISr1EVApzHUI-Z4" />

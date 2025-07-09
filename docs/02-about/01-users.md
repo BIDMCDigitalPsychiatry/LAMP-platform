@@ -1,4 +1,4 @@
-﻿# Who's using LAMP?
+﻿# Who's Using MindLAMP?
 
 ## BIDMC Anesthesiology and Surgery
 

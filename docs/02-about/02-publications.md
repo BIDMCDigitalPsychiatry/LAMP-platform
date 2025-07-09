@@ -1,4 +1,4 @@
-# Publications with LAMP
+# Publications with MindLAMP
  
 :::note Citing the LAMP Platform
 
