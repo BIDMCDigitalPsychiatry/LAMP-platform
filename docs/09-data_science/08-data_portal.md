@@ -2,7 +2,7 @@
 
 # Overview
 
-As of late September 2021, the latest versions of the LAMP platform includes a data analysis platform that allows a researcher to do some basic analyses, download data, or view pre-made graphs.
+The latest versions of the LAMP platform includes a data analysis platform that allows a researcher to do some basic analyses, download data, or view pre-made graphs.
 
 The data portal is accessible in three ways:
 1. After logging in as an administrator, click the 'Data Portal' tab on the left or bottom of your screen.
@@ -85,4 +85,4 @@ Below are some examples and ideas to get you started using the LAMP Data Portal.
 **Example 4**: Use an array of charts to examine a participant's data in great detail. Here, find examples of summary graphs which show changes over time, correlation heatmaps which highlight connections between different LAMP measures (outlined in red), and the activity tracking functionality seen in example 3.  
 
 ### Help & Updates
-The LAMP data portal is currently in alpha, as is this documentation. We are actively seeking both feedback and requests about the usability and usefulness of the data portal and this documentation. Please give us any questions, comments, or feature requests either through our [community page](https://community.lamp.digital) or our public [GitHub repository](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues)
+The LAMP data portal is currently in alpha, as is this documentation. We are actively seeking both feedback and requests about the usability and usefulness of the data portal and this documentation. Please give us any questions, comments, or feature requests either through our [feedback form]([https://community.lamp.digital](https://docs.google.com/forms/d/e/1FAIpQLSdyt4olypT86pN9GLoueuawR_XUJwlDLo_HhSpIGTZ2Q7sn2g/viewform?usp=sharing&ouid=107803279657685480099)) or our public [GitHub repository](https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues)
