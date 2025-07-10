@@ -116,11 +116,6 @@
             "to": "/api"
           },
           {
-            "label": "What's New",
-            "position": "left",
-            "to": "/blog"
-          },
-          {
             "label": "Community",
             "position": "right",
             "items": [
@@ -155,17 +150,7 @@
             "07-deploy/**"
           ]
           },
-          "blog": {
-            "blogTitle": "LAMP Platform",
-            "blogDescription": "The LAMP Platform documentation.",
-            "blogSidebarTitle": "All updates",
-            "blogSidebarCount": 10000,
-            "postsPerPage": 1,
-            "feedOptions": {
-              "type": "all",
-              "copyright": "© ${new Date().getFullYear()} LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
-            }
-          },
+          "blog": false,
           "googleAnalytics": {
             "trackingID": "UA-192736629-1"
           }
