@@ -4,14 +4,16 @@
 
 ![](../../06-start_here/06-activities/assets/feed.jpg)
 
-Now that you've logged into mindLAMP, you'll immediately see the Feed. Along the tab bar, you'll find buttons that link you to all the things you can do within mindLAMP. They're organized into the following sections:
+Now that you've logged into mindLAMP, you'll immediately see the Feed. From here, you can easily view and click into any activities you have scheduled for the day.
+
+Your activities are also accessible to you at any time from the other pages within the app. These are organized into the following sections:
 
 1. **Learn:** You may find helpful tips to apply to your lifestyle here.
 2. **Assess:** You'll find check-in surveys and games to play here.
 3. **Manage:** You'll find relaxing activities to clear your headspace here.
-4. **Prevent:** You'll find resources to help receive care and manage your symptoms here.
+4. **Portal:** You'll find resources to help receive care and manage your symptoms here.
 
-In the Prevent tab you'll find data visualization tools.
+In the Portal tab you'll find data visualization tools.
 
 ### Step 2: Take a survey or use a relaxing Activity.
 
