@@ -12,7 +12,7 @@ This is the main section of the app where patients can read tips, take surveys, 
 
 This section of the app allows patients and clinicians to visualize different data, from surveys, games, and more, including sensors on the mobile device where mindLAMP is installed. **This feature is enabled by default.**
 
-![](assets/prevent.png)
+![](assets/portal.png)
 
 ![](/banner.png)
 

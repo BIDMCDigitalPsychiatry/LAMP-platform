@@ -34,7 +34,7 @@ You are able to either copy a URL and paste it into a breathe activity, or you c
 
 ### Journal
 
-Once you create your journal activity, it will show up in the Manage tab. However, you are only able to view the results in the Prevent tab.
+Once you create your journal activity, it will show up in the Manage tab. However, you are only able to view the results in the Portal tab.
 
 ![](assets/journal.jpg)
 

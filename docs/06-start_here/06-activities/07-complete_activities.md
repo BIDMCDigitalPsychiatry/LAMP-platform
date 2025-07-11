@@ -9,9 +9,9 @@ Now that you've logged into mindLAMP, you'll immediately see the Feed. Along the
 1. **Learn:** You may find helpful tips to apply to your lifestyle here.
 2. **Assess:** You'll find check-in surveys and games to play here.
 3. **Manage:** You'll find relaxing activities to clear your headspace here.
-4. **Prevent:** You'll find resources to help receive care and manage your symptoms here.
+4. **Portal:** You'll find resources to help receive care and manage your symptoms here.
 
-In the Prevent tab you'll find data visualization tools.
+In the Portal tab you'll find data visualization tools.
 
 ### Step 2: Take a survey or use a relaxing Activity.
 

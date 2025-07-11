@@ -110,7 +110,7 @@ Role: Researchers
 
 > We are planning a study in which we examine the association between sleep and cognition and would like to use LAMP to measure our cognitive performance.
 
-## Uninersity of Michigan Medicine
+## University of Michigan Medicine
 
 Location: Ann Arbor, Michigan, United States
 

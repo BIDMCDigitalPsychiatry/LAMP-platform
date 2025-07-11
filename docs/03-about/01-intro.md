@@ -1,6 +1,6 @@
 # How does LAMP Platform Work?
 
-LAMP stands for Learn, Assess, Manage, Prevent. It is a measurement based care platform designed for both research and clinical use. The core components are the app and the dashboard.
+LAMP stands for Learn, Assess, Manage, Portal. It is a measurement based care platform designed for both research and clinical use. The core components are the app and the dashboard.
 
 **Researchers** have read and write access to one or multiple studies with each study containing at least one **Participant.**
 

@@ -12,7 +12,7 @@ Patients and study participants can have customized surveys related to mood, sym
 | ----------- | ----------- | ----------- |
 | ![](assets/assess2.png)      | ![](assets/assess3.png) |![](assets/assess4.png)  |
 
-mindLAMP offers a variety of neurocognitive assessments in the form of **games** native to the app. These will show up on the Assess page of the app, and performance scores can be displayed on the Prevent page. These games include Jewels, Spatial Span, Cats and Dogs, Pop the Bubbles, and Balloon Risk. Further details and reading about each of these games can be read in the "Cognitive Games and Assessments" section of documentation. An example of the Jewels game is below:
+mindLAMP offers a variety of neurocognitive assessments in the form of **games** native to the app. These will show up on the Assess page of the app, and performance scores can be displayed on the Portal page. These games include Jewels, Spatial Span, Cats and Dogs, Pop the Bubbles, and Balloon Risk. Further details and reading about each of these games can be read in the "Cognitive Games and Assessments" section of documentation. An example of the Jewels game is below:
 
 Voice recordings is a new feature also available for specific cases of assessing differences in pitch or other audio factors based on active data scores like mood and anxiety. See example of the voice recording screen below:
 
