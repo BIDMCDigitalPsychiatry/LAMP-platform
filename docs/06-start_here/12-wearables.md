@@ -12,4 +12,4 @@ HealthKit data is only available with wearables with two exceptions: step count 
 
 ### How do I access raw data collected from wearables?
 
-Visualizations are can be displayed on the Prevent tab.
+Visualizations are can be displayed on the Portal tab.

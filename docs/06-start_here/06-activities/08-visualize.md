@@ -1,6 +1,6 @@
 # Visualize data
 
-If you would like to hide graphs on the Prevent page from patients or participants, [please contact us here.](mailto:team@digitalpsych.org)
+If you would like to hide graphs on the Portal page from patients or participants, [please contact us here.](mailto:team@digitalpsych.org)
 
 ## Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XJHzGU695YM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
