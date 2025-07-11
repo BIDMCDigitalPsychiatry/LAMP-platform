@@ -17,8 +17,8 @@ You are able to create custom surveys and  use surveys from the Division of Digi
 ## Manage
 You can customize existing activities in Manage such as Breathe by uploading your own audio files. 
 
-## Prevent
-You can use the existing visualizations in Prevent with the option to program new ones as well. You are also able to hide any visualizations from patients or participants.
+## Portal
+You can use the existing visualizations in Portal with the option to program new ones as well. You are also able to hide any visualizations from patients or participants.
 
 # Sensors
 You can toggle different types of sensors like heart rate or gps on and off. It is possible to toggle all sensors to be off.
