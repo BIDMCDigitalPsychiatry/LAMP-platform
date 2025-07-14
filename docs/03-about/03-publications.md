@@ -7,142 +7,104 @@ If you use the LAMP Platform in your projects or publications, please cite the l
 [![DOI](https://zenodo.org/badge/311382406.svg)](https://zenodo.org/badge/latestdoi/311382406)
 
 :::
+### 2025
+[Designing smartphone-based cognitive assessments for schizophrenia: Perspectives from a multisite study](https://doi.org/10.1016/j.scog.2025.100347)
 
+[mindLAMPVis as a Co-Designed Clinician-Facing Data Visualization Portal to Integrate Clinical Observations from Digital Phenotyping in Schizophrenia: User-Centered Design Process and Pilot Implementation](https://doi.org/10.2196/70073)
 
-### Digital Futures in Mind: Reflecting on Technological Experiments in Mental Health & Crisis Support
+[Is digital alliance associated with engagement & outcomes in guided digital interventions? An analysis of data from two studies](https://doi.org/10.1016/j.jad.2025.04.127)
 
-```
-Jonah Bossewitch, Lydia X. Z. Brown, Piers Gooding, Leah Harris, James Horton, Simon Katterl, Keris Myrick, Kelechi Ubozoh and Alberto Vasquez. Digital Futures in Mind: Reflecting on Technological Experiments in Mental Health & Crisis Support. (2023)
-```
+[Bridging Science and Hope: integrating and Communicating Lived experience in Accelerating Medicines Partnership® Schizophrenia Program](https://doi.org/10.1038/s41537-025-00572-7)
 
+### 2024
 
-### Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample.
+[Mobility-Based Smartphone Digital Phenotypes for Unobtrusively Capturing Everyday Cognition, Mood, and Community Life-Space in Older Adults: Feasibility, Acceptability, and Preliminary Validity Study](https://doi.org/10.2196/59974)
 
-[![](assets/Springer.1.19.2022.png)](assets/Springer.1.19.2022.pdf)
+[Transforming Digital Phenotyping Raw Data Into Actionable Biomarkers, Quality Metrics, and Data Visualizations Using Cortex Software Package: Tutorial](https://doi.org/10.2196/58502)
 
-```
-Gansner, M., Nisenson, M., Lin, V. et al. Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample. Child Psychiatry Hum Dev (2022). https://doi.org/10.1007/s10578-022-01313-y
-```
+[The Digital Clinic: Testing the Feasibility of an Innovative Digital Mental Health Care  Delivery Model Designed to Increase Access to Care](https://doi.org/10.2196/65222)
 
-### Global Collaboration Around Digital Mental Health: The LAMP Consortium.
+[The Digital Navigator: Standardizing Human Technology Support in App-Integrated Clinical Care](https://doi.org/10.1089/tmj.2024.0023)
 
-[![](assets/1.18.22springer.png)](assets/1.18.22springer.pdf)
+[Digital phenotyping data and anomaly detection methods to assess changes in mood and anxiety symptoms across a transdiagnostic clinical sample](https://doi.org/10.1111/acps.13712)
 
-```
-Bilden, R., Torous, J. Global Collaboration Around Digital Mental Health: The LAMP Consortium. J. technol. behav. sci. (2022). https://doi.org/10.1007/s41347-022-00240-y
-```
+[Applying continuous-time models to ecological momentary assessments: A practical introduction to the method and demonstration with clinical data](https://doi.org/10.1038/s44277-024-00004-x)
 
+### 2023
 
-### Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study.
+[Classifying and clustering mood disorder patients using smartphone data from a feasibility study](https://doi.org/10.1038/s41746-023-00977-7)
 
-[![](assets/covidpaperdocs.png)](assets/covidpaper.pdf)
+[Implementing Technologies to Enhance Coordinated Specialty Care Framework: Implementation Outcomes From a Development and Usability Study](https://doi.org/10.2196/46491)
 
-```
-Patel, S., & Torous, J. Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study. Frontiers in Psychiatry, 2517.
-```
+[The impact of guided versus supportive coaching on mental health app engagement and clinical outcomes](https://doi.org/10.1177/14604582231215872)
 
+[Exploring the Potential of Apple SensorKit and Digital Phenotyping Data as New Digital Biomarkers for Mental Health Research.](https://doi.org/10.1159/000530698)
 
-### Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study.
+[Monitoring sleep using smartphone data in a population of college students](https://doi.org/10.1038/s44184-023-00023-0)
 
-[![](assets/jmir1.7.22.png)](assets/jmir1.7.22.pdf)
+[Digital Phenotyping Data to Predict Symptom Improvement and Mental Health App Personalization in College Students: Prospective Validation of a Predictive Model](https://doi.org/10.2196/39258)
 
-```
-Vaidyam A, Halamka J, Torous J. Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study. JMIR Mhealth Uhealth. 2022 Jan 7;10(1):e30557. doi: 10.2196/30557. PMID: 34994710.
-```
+[Increasing the value of digital phenotyping through reducing missingness: a retrospective review and analysis of prior studies](https://doi.org/10.1136/bmjment-2023-300718)
 
+[Smartphone app engagement and clinical outcomes in a hybrid clinic](https://doi.org/10.1016/j.psychres.2022.115015)
 
-### Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia.
+[Relapse prediction in schizophrenia with smartphone digital phenotyping during COVID-19: a prospective, three-site, two-country, longitudinal study](https://doi.org/10.1038/s41537-023-00332-5)
 
-[![](assets/NPJ.Schiz.12.21.2021.png)](assets/NPJ.Schiz.12.21.2021.pdf)
+[An exploratory analysis of the effect size of the mobile mental health Application, mindLAMP](https://doi.org/10.1177/20552076231187244)
 
-```
-Shvetz C, Gu F, Drodge J, Torous J, Guimond S. Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia. NPJ Schizophr. 2021 Dec 21;7(1):64. doi: 10.1038/s41537-021-00194-9. PMID: 34934063; PMCID: PMC8692600.
-```
+### 2022
 
+[Digital Futures in Mind: Reflecting on Technological Experiments in Mental Health & Crisis](Supporthttps://doi.org/10.2139/ssrn.4215994)
 
-### Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology.
+[Usable Data Visualization for Digital Biomarkers: An Analysis of Usability, Data Sharing, and Clinician Contact. Digital Biomarkers](https://doi.org/10.1159/000525888)
 
-![image](https://user-images.githubusercontent.com/86117379/130236989-b6265676-e77c-444b-9ded-91d78cbada66.png)
+[Digital phenotyping correlations in larger mental health samples: analysis and replication](https://doi.org/10.1192/bjo.2022.507)
 
-```
-Li, H., Yang, S., Chi, H., Xu, L., Zhang, T., Singleton, G., Ting, Y., Stone, W.S. & Wang, J. (2021). Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology. Asian Journal of Psychiatry, 58, 102587. doi:10.1016/j.ajp.2021.102587
-```
+[The Appalachia Mind Health Initiative (AMHI): a pragmatic randomized clinical trial of adjunctive internet-based cognitive behavior therapy for treating major depressive disorder among primary care patients](https://doi.org/10.1186/s13063-022-06438-y)
 
+[Longitudinal symptom changes and association with home time in people with schizophrenia: An observational digital phenotyping study](https://doi.org/10.1016/j.schres.2022.02.031)
 
-### Smartphone-Based Neuropsychological Assessment in Parkinson’s Disease: Feasibility, Validity, and Contextually Driven Variability in Cognition
+[Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample](https://doi.org/10.1007/s10578-022-01313-y)
 
-[![](assets/weizenbaum_paper.jpg)](assets/Weizenbaum%20smartphone%20cognition%20PD%20JINS%20May%202021.pdf)
+[Global Collaboration Around Digital Mental Health: The LAMP Consortium](https://doi.org/10.1007/s41347-022-00240-y)
 
-```
-Weizenbaum, E., Fulford, D., Torous, J., Pinsky, E., Kolachalama, V., & Cronin-Golomb, A. (2021). Smartphone-Based Neuropsychological Assessment in Parkinson’s Disease: Feasibility, Validity, and Contextually Driven Variability in Cognition. Journal of the International Neuropsychological Society, 1-13. doi:10.1017/S1355617721000503
-```
+[Exploring the Neuropsychiatric Sequalae of Perceived COVID-19 Exposure in College Students: A Pilot Digital Phenotyping Study](https://doi.org/10.3389/fpsyt.2021.788926)
 
-### A pilot study using ecological momentary assessment via smartphone application to identify adolescent problematic internet use
+[Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study](https://doi.org/10.2196/30557)
 
-[![](assets/meredith2020.jpg)](assets/1-s2.0-S0165178120310313-main.pdf)
+### 2021
 
-```
-Gansner, M., Nisenson, M., Carson, N., & Torous, J. (2020). A pilot study using ecological momentary assessment via smartphone application to identify adolescent problematic internet use. Psychiatry Research, 293, 113428.
-```
+[Cross cultural and global uses of a digital mental health app: results of focus groups with clinicians, patients and family members in India and the United States](https://doi.org/10.1017/gmh.2021.28)
 
-### Actionable digital phenotyping: a framework for the delivery of just-in-time and longitudinal interventions in clinical healthcare
+[Validation of an ecological momentary assessment to measure processing speed and executive function in schizophrenia](https://doi.org/10.1038/s41537-021-00194-9)
 
-[![](assets/actionable2020.png)](assets/mh-05-2019.07.04.pdf)
+[Digital Phenotyping for Spinal Cord Injury: Smartphone-based monitors for clinical utility.](https://doi.org/10.1109/mass52906.2021.00080)
 
-```
-Vaidyam A, Halamka J, Torous J. Actionable digital phenotyping: a framework for the delivery of just-in-time and longitudinal interventions in clinical healthcare. Mhealth. 2019;5:25. Published 2019 Aug 12. doi:10.21037/mhealth.2019.07.04
-```
+[Smartphone-Based Neuropsychological Assessment in Parkinson’s Disease: Feasibility, Validity, and Contextually Driven Variability in Cognition](https://doi.org/10.1017/s1355617721000503)
 
-### Assessing the potential of longitudinal smartphone based cognitive assessment in schizophrenia: A naturalistic pilot study
+[Enhancing attention and memory of individuals at clinical high risk for psychosis with mHealth technology](https://doi.org/10.1016/j.ajp.2021.102587)
 
-[![](assets/szresearch2019.png)](assets/1-s2.0-S2215001319300101-main.pdf)
+[Investigating Associations Between Screen Time and Symptomatology in Individuals With Serious Mental Illness: Longitudinal Observational Study](https://doi.org/10.2196/23144)
 
-```
-Gang Liu, Philip Henson, Matcheri Keshavan, Jukka Pekka-Onnela, John Torous, Assessing the potential of longitudinal smartphone based cognitive assessment in schizophrenia: A naturalistic pilot study, Schizophrenia Research: Cognition, Volume 17, 2019, 100144, ISSN 2215-0013, https://doi.org/10.1016/j.scog.2019.100144.
-```
+[Smartphone Health Assessment for Relapse Prevention (SHARP): a digital solution toward global mental health](https://doi.org/10.1192/bjo.2020.142)
 
-### Creating a Digital Health Smartphone App and Digital Phenotyping Platform for Mental Health and Diverse Healthcare Needs: an Interdisciplinary and Collaborative Approach
+[Technology Enabled Clinical Care (TECC): Protocol for a Prospective Longitudinal Cohort Study of Smartphone-Augmented Mental Health Treatment](https://doi.org/10.2196/23771)
 
-[![](assets/jtibs2019.png)](assets/Torous2019_Article_CreatingADigitalHealthSmartpho.pdf)
+### 2020
+[Multiple uses of app instead of using multiple apps – a case for rethinking the digital health technology toolbox](https://doi.org/10.1017/s2045796020000013)
 
-```
-Torous, J., Wisniewski, H., Bird, B. et al. Creating a Digital Health Smartphone App and Digital Phenotyping Platform for Mental Health and Diverse Healthcare Needs: an Interdisciplinary and Collaborative Approach. J. technol. behav. sci. 4, 73–85 (2019). https://doi.org/10.1007/s41347-019-00095-w
-```
+[A pilot study using ecological momentary assessment via smartphone application to identify adolescent problematic internet use](https://doi.org/10.1016/j.psychres.2020.113428)
 
-### Feasibility and correlations of smartphone meta‐data toward dynamic understanding of depression and suicide risk in schizophrenia
+[Patient Innovation in Investigating the Effects of Environmental Pollution in Schizophrenia: Case Report of Digital Phenotyping Beyond Apps](https://doi.org/10.2196/19778)
 
-[![](assets/wiley2020.png)](assets/mpr.1825.pdf)
+[Feasibility and correlations of smartphone meta‐data toward dynamic understanding of depression and suicide risk in schizophrenia.](https://doi.org/10.1002/mpr.1825)
 
-```
-Henson, P, Torous, J. Feasibility and correlations of smartphone meta‐data toward dynamic understanding of depression and suicide risk in schizophrenia. Int J Methods Psychiatr Res. 2020; 29:e1825. https://doi.org/10.1002/mpr.1825
-```
+### 2019
 
-### Multiple uses of an app instead of using multiple apps – a case for rethinking the digital health technology toolbox
+[Assessing the potential of longitudinal smartphone based cognitive assessment in schizophrenia: A naturalistic pilot study.](https://doi.org/10.1016/j.scog.2019.100144)
 
-[![](assets/epidemiology2019.png)](assets/multiple_uses_of_app_instead_of_using_multiple_apps_a_case_for_rethinking_the_digital_health_technology_toolbox.pdf)
+[Using a Smartphone App to Identify Clinically Relevant Behavior Trends via Symptom Report, Cognition Scores, and Exercise Levels: A Case Series](https://doi.org/10.3389/fpsyt.2019.00652)
 
-```
-Torous, J., & Vaidyam, A. (2020). Multiple uses of app instead of using multiple apps – a case for rethinking the digital health technology toolbox. Epidemiology and Psychiatric Sciences, 29, E100. doi:10.1017/S2045796020000013
-```
+[Actionable digital phenotyping: a framework for the delivery of just-in-time and longitudinal interventions in clinical healthcare](https://doi.org/10.21037/mhealth.2019.07.04)
 
-### Patient Innovation in Investigating the Effects of Environmental Pollution in Schizophrenia: Case Report of Digital Phenotyping Beyond Apps
-
-[![](assets/jmir2020.png)](assets/pdf.pdf)
-
-```
-Vaidyam A, Roux S, Torous J. Patient Innovation in Investigating the Effects of Environmental Pollution in Schizophrenia: Case Report of Digital Phenotyping Beyond Apps. JMIR Ment Health 2020;7(8):e19778
-```
-
-### Using a Smartphone App to Identify Clinically Relevant Behavior Trends via Symptom Report, Cognition Scores, and Exercise Levels: A Case Series
-
-[![](assets/frontiers2019.png)](assets/fpsyt-10-00652.pdf)
-
-```
-Wisniewski Hannah, Henson Philip, Torous John. Using a Smartphone App to Identify Clinically Relevant Behavior Trends via Symptom Report, Cognition Scores, and Exercise Levels: A Case Series. Frontiers in Psychiatry. 10-2019-652. doi:10.3389/fpsyt.2019.00652
-```
-### Digital Phenotyping for Spinal Cord Injury: Smartphone-based monitors for clinical utility
-
-[![](assets/frontiers2019.png)](assets/fpsyt-10-00652.pdf)
-
-```
-
+[Creating a Digital Health Smartphone App and Digital Phenotyping Platform for Mental Health and Diverse Healthcare Needs: an Interdisciplinary and Collaborative Approach](https://doi.org/10.1007/s41347-019-00095-w)
