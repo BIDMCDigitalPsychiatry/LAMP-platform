@@ -26,6 +26,7 @@ slug: /app
     - Open the Location tab and ensure “Always” is selected and "Precise Location" is enabled.
     - Open the Notifications tab toggle "Allow Notifications".
 6. Go back to the main Settings page and click into Battery. **Instruct the patient to NEVER enable Low Power Mode.**
+7. **The patient should also avoid "force quitting" the app by swiping up out of it in the main menu; this will stop it from running in the background and collecting passive data.**
 
 ### Apple Watch
 
