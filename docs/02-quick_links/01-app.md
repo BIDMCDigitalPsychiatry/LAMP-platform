@@ -18,9 +18,6 @@ slug: /app
 2. Open it and sign into the patient’s account. Note that all
 values are CASE SENSITIVE.
 4. Agree to all permissions dialogs that prompt the user.
-
-    **GPS COLLECTION PERMISSION MUST SET TO "ALWAYS" TO COLLECT HIGH FREQUENCY SENSOR DATA.**
-
 5. Once signed in and viewing the Feed tab, leave the app.
 6. Open the Settings app and scroll down to or search for the “mindLAMP 2” item.
     - Enable "Motion & Fitness", "Background App Refresh", and "Cellular Data".
