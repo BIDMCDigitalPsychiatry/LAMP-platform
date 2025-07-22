@@ -44,6 +44,7 @@ slug: /app
 - [ ]  Does the device have a SIM card? (Is it connected to Cellular data?)
 - [ ]  Is the device powered on at all times of the day?
 - [ ]  Are all permissions granted for mindLAMP in the Settings app?
+- [ ]  Is the user avoiding "force-quitting" the app by swiping up out of it?
 
 ### Beta
 
