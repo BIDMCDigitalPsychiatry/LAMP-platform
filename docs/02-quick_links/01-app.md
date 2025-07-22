@@ -15,18 +15,19 @@ slug: /app
 ![https://www.pvamu.edu/cahs/wp-content/uploads/sites/27/app-store-icon.png](https://www.pvamu.edu/cahs/wp-content/uploads/sites/27/app-store-icon.png)
 
 1. [**Download the mindLAMP app from the App Store.**](https://apps.apple.com/us/app/mindlamp/id1495947054)
-2. Open it and sign into the patient’s account. 
-3. **Agree to all permissions dialogs that prompt the user.**
+2. Open it and sign into the patient’s account. Note that all
+values are CASE SENSITIVE.
+4. Agree to all permissions dialogs that prompt the user.
 
     **GPS COLLECTION PERMISSION MUST SET TO "ALWAYS" TO COLLECT HIGH FREQUENCY SENSOR DATA.**
 
-4. Once signed in and viewing the Feed tab, leave the app.
-5. Open the Settings app and scroll down to or search for the “mindLAMP 2” item.
+5. Once signed in and viewing the Feed tab, leave the app.
+6. Open the Settings app and scroll down to or search for the “mindLAMP 2” item.
     - Enable "Motion & Fitness", "Background App Refresh", and "Cellular Data".
     - Open the Location tab and ensure “Always” is selected and "Precise Location" is enabled.
     - Open the Notifications tab toggle "Allow Notifications".
-6. Go back to the main Settings page and click into Battery. **Instruct the patient to NEVER enable Low Power Mode.**
-7. **The patient should also avoid "force quitting" the app by swiping up out of it in the main menu; this will stop it from running in the background and collecting passive data.**
+7. Go back to the main Settings page and click into Battery. **Instruct the patient to NEVER enable Low Power Mode.**
+8. **The patient should also avoid "force quitting" the app by swiping up out of it in the main menu; this will stop it from running in the background and collecting passive data.**
 
 ### Apple Watch
 
