@@ -23,8 +23,7 @@ values are CASE SENSITIVE.
     - Enable "Motion & Fitness", "Background App Refresh", and "Cellular Data".
     - Open the Location tab and ensure “Always” is selected and "Precise Location" is enabled.
     - Open the Notifications tab toggle "Allow Notifications".
-7. Go back to the main Settings page and click into Battery. **Instruct the patient to NEVER enable Low Power Mode.**
-8. **The patient should also avoid "force quitting" the app by swiping up out of it in the main menu; this will stop it from running in the background and collecting passive data.**
+7. Go back to the main Settings page and click into Battery. Disable Low Power Mode.
 
 ### Apple Watch
 
@@ -36,12 +35,12 @@ values are CASE SENSITIVE.
 
 ### Troubleshooting
 
+- [ ]  Are all permissions granted for mindLAMP in the Settings app?
 - [ ]  Is low power mode turned off?
 - [ ]  Is airplane mode turned off?
 - [ ]  Is the device consistently connected to WiFi?
 - [ ]  Does the device have a SIM card? (Is it connected to Cellular data?)
 - [ ]  Is the device powered on at all times of the day?
-- [ ]  Are all permissions granted for mindLAMP in the Settings app?
 - [ ]  Is the user avoiding "force-quitting" the app by swiping up out of it?
 
 ### Beta
