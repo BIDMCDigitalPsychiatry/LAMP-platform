@@ -17,14 +17,12 @@ Activity groups can be created on the mindLAMP dashboard so that users receive a
 ![docgrp6](https://user-images.githubusercontent.com/104088715/173981403-406dc9cd-3740-4c2b-a37f-b5003def89f2.png)
 
 
-6. Click on the box located at the bottom left of the screen to select which activities should be grouped together. Additional activities can be added by clicking on the plus icon; the delete button can be used to eliminate any individual activity. Once created, activities can be dragged around to appear in whatever order is desired.
+4. Click on the box located at the bottom left of the screen to select which activities should be grouped together. Additional activities can be added by clicking on the plus icon; the delete button can be used to eliminate any individual activity. Once created, activities can be dragged around to appear in whatever order is desired.
 
 ![docgrp7](https://user-images.githubusercontent.com/104088715/173981417-fcb2dd8d-6428-4b27-af8a-7bd7e7fb07b8.png)
 
 
-7. Finally, save the activity group.
-
-![docgrp8](https://user-images.githubusercontent.com/104088715/173981445-d5efb073-7012-49a1-9f22-df41fd9d19ec.png) activity group.
+5. Finally, save the activity group.
 
 ![docgrp8](https://user-images.githubusercontent.com/104088715/173981445-d5efb073-7012-49a1-9f22-df41fd9d19ec.png)
 
