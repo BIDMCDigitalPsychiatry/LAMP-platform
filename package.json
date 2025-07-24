@@ -143,8 +143,8 @@
         {
           "docs": {
             "routeBasePath": "/",
-            "showLastUpdateAuthor": true,
-            "showLastUpdateTime": true,
+            "showLastUpdateAuthor": false,
+            "showLastUpdateTime": false,
             "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/",
           "exclude": [
             "07-deploy/**"
