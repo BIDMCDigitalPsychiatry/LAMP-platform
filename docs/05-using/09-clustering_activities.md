@@ -1,24 +1,16 @@
 # Creating Activity Groups
 
-Activity groups can be created on the mindLAMP dashboard so that users receive activities in a specific order .
+Activity groups can be created on the mindLAMP dashboard so that users receive activities in a specific order.
 
-1. Open an investigator on the dashboard. 
+1. Go to the Activities tab in your dashboard and click "Add" to create all of the activities you wish to be grouped together.
 
-![docgrp1](https://user-images.githubusercontent.com/104088715/173981242-62366cbb-e373-440c-9688-54e43146b111.png)
+![](assets/clustering_activities1.png)
 
-2. For the patient of interest, go to their "settings" page by clicking on the gear icon to the right of their name. 
-
-![docgrp2](https://user-images.githubusercontent.com/104088715/173981311-897d79ef-5ea4-4d21-9814-9c2569e6bf86.png)
-
-3. Select "Add" to create the activities you wish to be grouped together.
-
-![docgrp3](https://user-images.githubusercontent.com/104088715/173981328-219b08de-4ebe-4a2a-97d1-d8e3467bf99b.png)
-
-4. When creating each of the activities, select "Customize which Tab this Activity appears in". In the dropdown to the right, make sure all Tabs are __UNCHECKED__. 
+2. When creating each of the activities, select "Customize which Tab this Activity appears in". In the dropdown to the right, make sure all Tabs are __UNCHECKED__.
     
 ![docgrp4](https://user-images.githubusercontent.com/104088715/173981358-259bb6f1-cbf2-47ad-bdce-ef8f17f4c3f5.png)
     
-5. Create an activity group. Give it a name and select "Learn" __AND__ "Manage" as the home screen tabs.
+3. Create an activity group. Give it a name, upload an icon, and select the tabs where you would like the group to appear.
 
 ![docgrp5](https://user-images.githubusercontent.com/104088715/173981379-821b2a25-bc35-4b71-a57d-d6082e3ddcfd.png)
 
@@ -31,6 +23,8 @@ Activity groups can be created on the mindLAMP dashboard so that users receive a
 
 
 7. Finally, save the activity group.
+
+![docgrp8](https://user-images.githubusercontent.com/104088715/173981445-d5efb073-7012-49a1-9f22-df41fd9d19ec.png) activity group.
 
 ![docgrp8](https://user-images.githubusercontent.com/104088715/173981445-d5efb073-7012-49a1-9f22-df41fd9d19ec.png)
 
