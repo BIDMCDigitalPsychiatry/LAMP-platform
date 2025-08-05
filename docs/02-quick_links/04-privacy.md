@@ -117,6 +117,12 @@ Our team performs frequent risk analysis as part of our security management proc
 2. Determine the probability of a major security issue occuring.
 3. Frequent security updates to proactively prevent new threats to LAMP's security.
 
+July 2025: Echelon Risk + Cyber previously performed penetration testing against both the Mobile and Web Application for mindLAMP in a test environment located on BIDMC infrastructure. The observations they identified in testing have been addressed; however, due to the differences in infrastructure and configurations within other environments, we recommend having a penetration test performed prior to using the Mind Lamp application within your environment. We recommend Echelon Risk + Cyber for this testing because of their familiarity with the application.
+ 
+Contacts for Echelon Risk + Cyber:
+Greg DeLeonardis: greg.deleonardis@echeloncyber.com
+Steve Snider: steve.snider@echeloncyber.com
+
 ### Security Threat Protocol
 
 In the unlikely event of an active security threat, our team will take the following steps:
