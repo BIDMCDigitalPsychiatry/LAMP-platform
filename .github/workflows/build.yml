@@ -1,37 +1,55 @@
 name: Publish Documentation
-on: 
+on:
   pull_request:
     branches: [master]
   push:
-    branches: [master]
+    branches: [master, docs-v2]
+
 jobs:
   gh-test:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with: 
-          submodules: true
+        with: { submodules: true }
       - uses: actions/setup-node@v1
-        with:
-          node-version: '20.x'
-      - name: Install & Build
+        with: { node-version: '20.x' }
+      - name: Install & Build (PR test only)
         run: |
-          npm install  
+          npm install
           npm run build
-  gh-release:
-    if: github.event_name == 'push'
+
+  gh-staging:
+    if: github.ref == 'refs/heads/docs-v2'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with: 
-          submodules: true
+        with: { submodules: true }
       - uses: actions/setup-node@v1
-        with:
-          node-version: '20.x'
-      - name: Install & Build
+        with: { node-version: '20.x' }
+      - name: Install & Build (staging /v2)
         run: |
-          npm install  
+          npm install
+          npx docusaurus build --config docusaurus.config.v2.ts
+      - name: Deploy /v2 to gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: build
+          target-folder: v2
+          clean: false   # keep other previews/content on gh-pages
+
+  gh-release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with: { submodules: true }
+      - uses: actions/setup-node@v1
+        with: { node-version: '20.x' }
+      - name: Install & Build (production /)
+        run: |
+          npm install
           npm run build
       - uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
