@@ -1,0 +1,78 @@
+name: "New Feature Page"
+description: Propose or update documentation for a Feature in mindLAMP
+title: "[Feature] "
+labels: ["intake", "feature"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Feature title
+      placeholder: Journals, Surveys, Notifications, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options: ["live","beta","planned","deprecated"]
+
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms
+      options:
+        - label: mindLAMP (ios)
+        - label: mindLAMP (android)
+        - label: dashboard (web)
+        - label: database (server)
+        - label: cortex
+
+  - type: checkboxes
+    id: devices
+    attributes:
+      label: Devices
+      options:
+        - label: apple phone
+        - label: android phone
+        - label: apple wearable
+        - label: other wearable
+
+  - type: textarea
+    id: what-it-does
+    attributes:
+      label: What it does
+      description: Plain language description of the feature.
+
+  - type: textarea
+    id: data-captured
+    attributes:
+      label: Data captured
+      description: What events/objects are generated.
+
+  - type: textarea
+    id: known-issues
+    attributes:
+      label: Known issues & considerations
+
+  - type: textarea
+    id: how-to-use
+    attributes:
+      label: How to use it
+      description: Step-by-step usage instructions.
+
+  - type: textarea
+    id: verify
+    attributes:
+      label: How to verify (test plan)
+      description: Steps and expected outcomes.
+
+  - type: textarea
+    id: pubs
+    attributes:
+      label: Publications or references (links/DOIs)
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (screenshots, test logs, etc.)

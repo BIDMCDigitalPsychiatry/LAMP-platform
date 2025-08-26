@@ -1,0 +1,57 @@
+name: "New Workflow Page"
+description: Propose or update documentation for a Workflow in mindLAMP
+title: "[Workflow] "
+labels: ["intake", "workflow"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Workflow title
+      placeholder: Onboard Participants, Troubleshoot Data Quality, etc.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms
+      options:
+        - label: android
+        - label: ios
+        - label: web
+        - label: watch
+        - label: other
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Why and when to use this workflow.
+
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Accounts, permissions, devices required.
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: Step-by-step instructions with expected results.
+
+  - type: textarea
+    id: troubleshooting
+    attributes:
+      label: Troubleshooting
+      description: Common pitfalls and fixes.
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Features/Data Streams
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (screenshots, logs, test notes)
