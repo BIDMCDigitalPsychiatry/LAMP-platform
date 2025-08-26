@@ -1,41 +1,78 @@
-# Features
-This section documents the **mindLAMP features** that end-users interact with.
+name: "New Feature Page"
+description: Propose or update documentation for a Feature in mindLAMP
+title: "[Feature] "
+labels: ["intake", "feature"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Feature title
+      placeholder: Journals, Surveys, Notifications, etc.
+    validations:
+      required: true
 
-Examples of features you might document here:
-- Activities
-- Notifications
-- Messaging
-- Cognitive tests
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options: ["live","beta","planned","deprecated"]
 
-# Page Template
----
-type: feature
-title: Feature Name
-slug: /features/feature-name
-status: live | beta | planned | deprecated
-platforms: [mindLAMP (ios), mindLAMP (android), dashboard (web), database (server), cortex]
-devices: [apple phone, android phone, apple wearable, other wearable]
-owner: your-name
-lastReviewed: YYYY-MM-DD
-related: []
-evidence: []
-publications: []
-apiRefs: []
-tags: []
----
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms
+      options:
+        - label: mindLAMP (ios)
+        - label: mindLAMP (android)
+        - label: dashboard (web)
+        - label: database (server)
+        - label: cortex
 
-## What it does
-Explain in plain language what the feature is for and how it fits into the app.
+  - type: checkboxes
+    id: devices
+    attributes:
+      label: Devices
+      options:
+        - label: apple phone
+        - label: android phone
+        - label: apple wearable
+        - label: other wearable
 
-## Data captured
-Describe what data is generated (API objects, events, schemas, fields).
+  - type: textarea
+    id: what-it-does
+    attributes:
+      label: What it does
+      description: Plain language description of the feature.
 
-## Known issues & considerations
-List quirks, caveats, or platform-specific notes.
+  - type: textarea
+    id: data-captured
+    attributes:
+      label: Data captured
+      description: What events/objects are generated.
 
-## How to use it
-Step-by-step instructions with screenshots or videos if possible.
+  - type: textarea
+    id: known-issues
+    attributes:
+      label: Known issues & considerations.
 
-## How to verify (test plan)
-1. Action to perform…
-2. Expected outcome…
+  - type: textarea
+    id: how-to-use
+    attributes:
+      label: How to use it
+      description: Step-by-step usage instructions.
+
+  - type: textarea
+    id: verify
+    attributes:
+      label: How to verify (test plan)
+      description: Steps and expected outcomes.
+
+  - type: textarea
+    id: pubs
+    attributes:
+      label: Publications or references (links/DOIs)
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (screenshots, test logs, etc.)

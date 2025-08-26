@@ -1,47 +1,90 @@
-# Data Streams
+name: 'New Data Stream Page"
+description: Propose or update documentation for a Data Stream in mindLAMP
+title: "[Data] "
+labels: ["intake", "data_stream"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Data Stream title
+      placeholder: GPS, Accelerometer, EMA Responses, etc.
+    validations:
+      required: true
 
-This section covers **data streams** and **sensor inputs** available through mindLAMP.
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options: ["live","beta","planned","deprecated"]
 
-Examples of data streams you might document here:
-- Accelerometer
-- GPS
-- Screen time
-- Surveys / EMA responses
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms
+      options:
+        - label: mindLAMP (ios)
+        - label: mindLAMP (android)
+        - label: dashboard (web)
+        - label: database (server)
+        - label: cortex
 
-# Page Template
----
-type: data_stream
-title: Data Stream Name
-slug: /data_stream/data-stream-name
-status: live | beta | planned | deprecated
-platforms: [mindLAMP (ios), mindLAMP (android), dashboard (web), database (server), cortex]
-devices: [apple phone, android phone, apple wearable, other wearable]
-owner: your-name
-lastReviewed: YYYY-MM-DD
-related: []
-evidence: []
-publications: []
-apiRefs: []
-tags: []
----
+  - type: checkboxes
+    id: devices
+    attributes:
+      label: Devices
+      options:
+        - label: apple phone
+        - label: android phone
+        - label: apple wearable
+        - label: other wearable
 
-## What is collected
-Sensor or event type (e.g., GPS, Accelerometer, EMA responses).
+  - type: textarea
+    id: what-collected
+    attributes:
+      label: What is collected
+      description: Sensor or event type.
 
-## Data origin
-Explain how and from where the data is sourced.
+  - type: textarea
+    id: data-origin
+    attributes:
+      label: Data origin
+      description: Where the data comes from (OS APIs, backend, user input).
 
-## Sampling behavior
-Frequency, triggers, and differences across platforms.
+  - type: textarea
+    id: sampling
+    attributes:
+      label: Sampling behavior
+      description: Frequency, triggers, platform differences.
 
-## Schema
-List the keys/fields (include example JSON if possible).
+  - type: textarea
+    id: schema
+    attributes:
+      label: Schema
+      description: Keys/fields, example JSON if possible.
 
-## Analysis notes
-Guidance on how researchers typically use this data in Cortex or other pipelines.
+  - type: textarea
+    id: analysis
+    attributes:
+      label: Analysis notes
+      description: How researchers use this data.
 
-## Known limitations
-Accuracy, missing data issues, battery usage, OS restrictions.
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Known limitations
 
-## Verification
-Steps to confirm this data stream is active and accurate.
+  - type: textarea
+    id: verify
+    attributes:
+      label: Verification
+      description: Steps to confirm it’s collected correctly.
+
+  - type: textarea
+    id: pubs
+    attributes:
+      label: Publications or references
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
