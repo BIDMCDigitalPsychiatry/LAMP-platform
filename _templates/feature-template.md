@@ -1,13 +1,3 @@
-# Features
-This section documents the **mindLAMP features** that end-users interact with.
-
-Examples of features you might document here:
-- Activities
-- Notifications
-- Messaging
-- Cognitive tests
-
-# Page Template
 ---
 type: feature
 title: Feature Name

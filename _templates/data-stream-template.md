@@ -1,14 +1,3 @@
-# Data Streams
-
-This section covers **data streams** and **sensor inputs** available through mindLAMP.
-
-Examples of data streams you might document here:
-- Accelerometer
-- GPS
-- Screen time
-- Surveys / EMA responses
-
-# Page Template
 ---
 type: data_stream
 title: Data Stream Name

@@ -1,15 +1,3 @@
-# Workflows
-
-Workflows are **task-oriented guides** that walk through multi-step processes.
-
-Examples of workflows you might document here:
-- Onboarding participants into a study
-- Troubleshooting data quality
-- Configuring Cortex queries
-- Setting up activities for a protocol
-- Exporting and analyzing data
-
-# Page Template
 ---
 type: workflow
 title: Workflow Name
