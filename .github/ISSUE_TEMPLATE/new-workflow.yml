@@ -1,7 +1,7 @@
 name: "New Workflow Page"
 description: Propose or update documentation for a Workflow in mindLAMP
 title: "[Workflow] "
-labels: ["intake", "workflow"]
+labels: ["docs", "intake (docs)", "workflow (docs)"]
 body:
   - type: input
     id: title

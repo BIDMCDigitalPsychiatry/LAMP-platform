@@ -1,7 +1,7 @@
 name: "New Data Stream Page"
 description: Propose or update documentation for a Data Stream in mindLAMP
-title: "[Data] "
-labels: ["intake", "data_stream"]
+title: "[Data Stream] "
+labels: ["docs", "intake (docs)", "data stream (docs)"]
 body:
   - type: input
     id: title

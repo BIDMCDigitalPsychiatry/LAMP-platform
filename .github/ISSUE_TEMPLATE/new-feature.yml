@@ -1,7 +1,7 @@
 name: "New Feature Page"
 description: Propose or update documentation for a Feature in mindLAMP
 title: "[Feature] "
-labels: ["intake", "feature"]
+labels: ["docs", "intake (docs)", "feature (docs)"]
 body:
   - type: input
     id: title
