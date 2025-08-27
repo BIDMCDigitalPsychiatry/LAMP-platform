@@ -11,6 +11,23 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options: ["planned","beta","live","deprecated"]
+
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms
+      options:
+        - label: mindLAMP (ios)
+        - label: mindLAMP (android)
+        - label: dashboard (web)
+        - label: database (server)
+        - label: cortex
+
   - type: checkboxes
     id: platforms
     attributes:
