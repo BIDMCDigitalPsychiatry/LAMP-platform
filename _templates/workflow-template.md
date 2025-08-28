@@ -1,13 +1,14 @@
 ---
 type: workflow
-title: Workflow Name
-slug: /workflows/workflow-name
-platforms: [android, ios, web, watch, ...]
+title: ...
+sidebar_label: ...
+slug: /...
+audience: [participants, coordinators, administrators, data_scientists, developers]
+phase: [planning | getting_started | configuring | using | concluding]
+relatedFunctions: []
+relatedObjects: []
 owner: your-name
 lastReviewed: YYYY-MM-DD
-related: []
-evidence: []
-tags: []
 ---
 
 ## Purpose
@@ -23,6 +24,3 @@ Accounts, permissions, devices, or other setup required.
 
 ## Troubleshooting
 Common pitfalls and fixes.
-
-## Related
-Cross-links to relevant Features or Data Streams.
