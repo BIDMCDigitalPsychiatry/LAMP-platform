@@ -1,16 +1,8 @@
 ---
-type:
+type: general
 title: Security & Privacy Policy
+sidebar_label: Security & Privacy
 slug: /privacy
-status: live
-platforms:
-devices:
 owner: eden-rozenblit
-lastReviewed: YYYY-MM-DD
-audience: 
-related: []
-evidence: []
-publications: []
-apiRefs: []
-tags: []
+lastReviewed: 2025-09-05
 ---

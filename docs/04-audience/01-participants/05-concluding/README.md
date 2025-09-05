@@ -1,0 +1,2 @@
+- Logging Out
+- Deleting Account

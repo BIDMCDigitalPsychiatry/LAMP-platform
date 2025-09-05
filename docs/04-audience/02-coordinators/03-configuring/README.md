@@ -1,0 +1,90 @@
+- setting up coordinator credentials
+- logging in
+- **filtering, sorting, searching**
+- Users
+    - adding
+    - deleting
+    - show scheduled activities in the selected participant feed?
+    - name
+    - credentials
+    - **checking engagement (Last Passive, Last Active)**
+    - clicking into participant POV
+    - settings
+        - **messaging**
+        - editing activities
+- Activities
+    - adding
+        - importing
+    - exporting
+    - deleting
+    - configuring
+        - Uploading an Icon
+        - Group
+        - Name
+        - Duplicate
+        - Customize Tab
+        - Show activity in the participant feed
+        - Streak
+    - ACTIVITY TYPES
+        - Activity Group
+            - Survey Instrument
+            - Tip
+            - Cognitive Tests
+                - Balloon Risk
+                - Cats and Dogs
+                - Digit Span
+                - Jewels A
+                - Jewels B
+                - Pop the Bubbles
+                - Spatial Span
+                - Spin the Wheel
+                - Trails B
+                - Memory Game
+                - Maze Game
+                - Emotion Recognition
+                - Symbol-Digit Substitution
+                - D-Cog
+            - Other
+                - Breathe
+                - DBT Diary Card
+                - Journal
+                - Scratch Card
+                - Voice Recording
+- Sensors
+    - adding
+    - deleting
+    - updating
+    - SENSOR TYPES
+        - accelerometer
+        - blood_pressure
+        - gps
+        - heart_rate
+        - respiratory_rate
+        - segment
+        - sleep
+        - none
+        - device_motion
+        - body_temperature
+        - nearby_device
+        - oxygen_saturation
+        - device_state
+        - com.apple.sensorkit.device_usage
+        - steps
+        - blood_glucose
+        - nutrition
+        - screen_state
+        - telephony
+        - activity_recognition
+        - heartratevariability_sdnn
+        - com.apple.sensorkit.visits
+        - com.apple.sensorkit.phone_usage
+        - com.apple.sensorkit.messages_usage
+        - com.apple.sensorkit.ambient_light
+- Groups
+    - adding
+    - updating
+    - deleting
+- **Data Portal**
+    - viewing mode
+    - Terminal mode
+        - JSONata query
