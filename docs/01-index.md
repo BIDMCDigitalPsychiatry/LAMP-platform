@@ -6,4 +6,7 @@ slug: /
 owner: eden-rozenblit
 lastReviewed: 2025-09-05
 ---
-Welcome to the v2 staging site. This page exists so the build can run while we add new sections.
+
+- explain how mindLAMP is used in projects and to use it you have to be enrolled in one of those projects
+
+to learn more about mindLAMP and if it's right for you, see below;
