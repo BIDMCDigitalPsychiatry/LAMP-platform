@@ -147,7 +147,9 @@
             "showLastUpdateTime": false,
             "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/",
           "exclude": [
-            "07-deploy/**"
+            "07-deploy/**",
+            "10-consortium/**",
+            "03-about/**"
           ]
           },
           "blog": false,
