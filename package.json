@@ -91,26 +91,6 @@
         },
         "items": [
           {
-            "label": "User Guide",
-            "position": "left",
-            "to": "/",
-            "activeBaseRegex": "/([0-9a-zA-Z]+)",
-            "items": [
-              {
-                "label": "Download App",
-                "to": "/app"
-              },
-              {
-                "label": "Report Bug",
-                "to": "/bug"
-              },
-              {
-                "label": "FAQ",
-                "to": "/faq"
-              }
-            ]
-          },
-          {
             "label": "API",
             "position": "left",
             "to": "/api"
