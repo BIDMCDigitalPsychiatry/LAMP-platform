@@ -1,0 +1,44 @@
+All sensor events also contain the timestamp
+
+# Accelerometer
+The accelerometer measures acceleration applied to the device. Each measurement is measured in Gs and is taken relative to the coordinate plane of the device, screen facing upwards. For example, a device resting face-up on a flat surface will report a measurement with the coordinate values `<y:0, z:1, x:0>`.
+
+### SensorSpec
+`lamp.accelerometer`
+
+### Data
+`y`: (type: float, units: G) the Y-axis coordinate
+`z`: (type: float, units: G) the Z-axis coordinate
+`x`: (type: float, units: G) the X-axis coordinate
+
+### Data Source
+
+# GPS/Location
+The location sensor records the device's current GPS coordinates.
+
+### SensorSpec
+`lamp.gps`
+
+### Data
+`latitude`: (type: float, units: degrees) the coordinate's latitude
+`longitude`: (type: float, units: degrees) the coordinate's longitude
+`altitude`: (type: float, units: meters) the coordinate's altitude, relative to sea level
+`accuracy`: (type: float, units: meters) the coordinate's estimated accuracy representing the radius of a circle formed around the reported latitude/longitude pair, [for which there is AT LEAST a 68% probability that the true coordinate is contained within.](https://en.wikipedia.org/wiki/Circular_error_probable)
+- `0.0`: no accuracy could be determined
+
+### Data Source
+
+# Device State
+
+### SensorSpec
+``
+
+### Data
+
+# Steps/Pedometer
+ - has a bunch of pedometer data like floors ascended/descended, average active pace, distance, step count
+
+### SensorSpec
+``
+
+### Data
