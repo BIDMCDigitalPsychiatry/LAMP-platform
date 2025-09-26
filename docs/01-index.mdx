@@ -4,8 +4,6 @@ title: mindLAMP
 ---
 
 import Link from '@docusaurus/Link';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 # mindLAMP
 
@@ -19,52 +17,58 @@ mindLAMP is an **open-source platform** designed to improve how brain and behavi
 
 mindLAMP is built around four core components. Together they form a complete platform, but each can also be used independently depending on the needs of a study or clinical program.
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+<div className="row margin-top--md">
+  <div className="col col--6">
+    <div className="card">
+      <div className="card__header"><h3>The App</h3></div>
+      <div className="card__body">
+        <p>
+          A participant-facing tool for surveys, cognitive tasks, wellness activities, and — when enabled —
+          passive data collection in the background. Available on iOS and Android; customizable per project.
+        </p>
+        <p><Link to="/docs/app/using-app">Learn how to use the App →</Link></p>
+      </div>
+    </div>
+  </div>
+  <div className="col col--6">
+    <div className="card">
+      <div className="card__header"><h3>The Dashboard</h3></div>
+      <div className="card__body">
+        <p>
+          A web-based tool for researchers, clinicians, and project coordinators to configure studies,
+          manage participants, and review incoming data with structured views of activity and outcomes.
+        </p>
+        <p><Link to="/docs/dashboard/using-dashboard">Learn how to use the Dashboard →</Link></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<Card>
-  <CardHeader>
-    <CardTitle>The App</CardTitle>
-    <CardDescription>
-      A participant-facing tool for surveys, cognitive tasks, wellness activities, and — when enabled — passive data collection in the background.  
-      <br />  
-      <Link to="/docs/app/using-app">Learn how to use the App →</Link>
-    </CardDescription>
-  </CardHeader>
-</Card>
-
-<Card>
-  <CardHeader>
-    <CardTitle>The Dashboard</CardTitle>
-    <CardDescription>
-      A web-based tool for researchers, clinicians, and project coordinators to configure studies, manage participants, and review incoming data.  
-      <br />  
-      <Link to="/docs/dashboard/using-dashboard">Learn how to use the Dashboard →</Link>
-    </CardDescription>
-  </CardHeader>
-</Card>
-
-<Card>
-  <CardHeader>
-    <CardTitle>The Database</CardTitle>
-    <CardDescription>
-      Securely organizes all collected information using the **LAMP Protocol**, ensuring reproducibility and extensibility.  
-      <br />  
-      <Link to="/docs/developing-lamp">Read about Developing with LAMP →</Link>
-    </CardDescription>
-  </CardHeader>
-</Card>
-
-<Card>
-  <CardHeader>
-    <CardTitle>Cortex</CardTitle>
-    <CardDescription>
-      The data processing pipeline that transforms raw inputs into meaningful features and visualizations, enabling interpretation of complex signals.  
-      <br />  
-      <Link to="/docs/cortex-api">Explore Cortex & API →</Link>
-    </CardDescription>
-  </CardHeader>
-</Card>
-
+<div className="row margin-top--md">
+  <div className="col col--6">
+    <div className="card">
+      <div className="card__header"><h3>The Database</h3></div>
+      <div className="card__body">
+        <p>
+          Securely organizes all collected information using the <strong>LAMP Protocol</strong>, ensuring
+          reproducibility and extensibility. Foundation for programmatic access and custom tools.
+        </p>
+        <p><Link to="/docs/developing-lamp">Read about Developing with LAMP →</Link></p>
+      </div>
+    </div>
+  </div>
+  <div className="col col--6">
+    <div className="card">
+      <div className="card__header"><h3>Cortex</h3></div>
+      <div className="card__body">
+        <p>
+          Data processing pipeline that transforms raw inputs into meaningful features and visualizations,
+          enabling researchers and clinicians to interpret complex digital signals.
+        </p>
+        <p><Link to="/docs/cortex-api">Explore Cortex &amp; API →</Link></p>
+      </div>
+    </div>
+  </div>
 </div>
 
 ---
@@ -86,27 +90,27 @@ Strong connections between people — whether patients and clinicians or partici
 
 mindLAMP addresses these challenges through the concepts its components enable:
 
-- **Continuous Measurement** → integrates both active and passive data collection to capture daily life in real time.  
-- **Expanded Access** → delivers interventions, monitoring, and education directly through mobile devices.  
-- **Strengthened Connection** → creates shared environments where data, communication, and feedback flow both ways.
+- **Continuous Measurement** integrates active and passive data collection to capture daily life in real time.  
+- **Expanded Access** delivers interventions, monitoring, and education directly through mobile devices.  
+- **Strengthened Connection** creates shared environments where data, communication, and feedback flow both ways.
 
 ---
 
 ## Continuous Measurement
 
-**Digital Phenotyping** refers to the practice of using data from everyday digital devices to measure behavior, cognition, and context. In mindLAMP, this includes both **passive data** and **active data**:
+**Digital Phenotyping** is the practice of using data from everyday digital devices to measure behavior, cognition, and context. In mindLAMP, this includes both **passive data** and **active data**:
 
-- **Passive data** are collected in the background from device sensors, reflecting patterns of activity, mobility, and environment.  
-- **Active data** come from tasks, surveys, or cognitive activities completed directly by participants, providing insight into subjective experience and performance.  
+- <em>Passive data</em> are collected in the background from device sensors, reflecting patterns of activity, mobility, and environment.  
+- <em>Active data</em> come from tasks, surveys, or cognitive activities completed directly by participants, providing insight into subjective experience and performance.
 
-**Ecological Momentary Assessment (EMA)** is a form of active data collection where participants answer short surveys about their symptoms, feelings, or experiences in real time. mindLAMP supports EMA through customizable surveys, notifications, and metadata capture (timestamps, response times, engagement metrics).  
+**Ecological Momentary Assessment (EMA)** is a form of active data collection where participants answer short surveys about their symptoms, feelings, or experiences in real time. mindLAMP supports EMA through customizable surveys, notifications, and metadata capture (timestamps, response times, engagement metrics) via its analytics layer.
 
 By integrating passive and active data, mindLAMP creates a fuller, ecologically valid view of daily life. Passive data provide continuous context; active data capture lived experience; together, they give a more complete understanding.
 
-<div className="flex flex-col gap-2 my-4">
-  <Link to="/docs/sensors">Explore LAMP Sensors →</Link>
+<p className="margin-top--sm">
+  <Link to="/docs/sensors">Explore LAMP Sensors →</Link><br/>
   <Link to="/docs/activities">Learn about LAMP Activities →</Link>
-</div>
+</p>
 
 ---
 
@@ -114,15 +118,17 @@ By integrating passive and active data, mindLAMP creates a fuller, ecologically 
 
 mindLAMP lowers barriers by making care and research tools available on the devices people already use every day.
 
-- For **participants**, the App provides monitoring, self-management, and education — usable wherever they are.  
-- For **researchers, clinicians, and coordinators**, the Dashboard offers oversight of study protocols and workflows, with near real-time data to support responsive adjustments.  
-- For **multi-site studies**, protocols can be standardized while allowing local adaptations, ensuring consistency at scale without losing flexibility.
+For <strong>participants</strong>, the App provides monitoring, self-management, and education — usable wherever they are.
+
+For <strong>researchers, clinicians, and coordinators</strong>, the Dashboard offers oversight of study protocols and workflows, with near real-time data to support responsive adjustments.
+
+For <strong>multi-site studies</strong>, protocols can be standardized while allowing local adaptations, ensuring consistency at scale without losing flexibility.
 
 ---
 
 ## Strengthening Connection
 
-The App and Dashboard work together as two sides of the same environment: participants contribute data and engage with tools, while researchers and clinicians interpret, visualize, and act on that information.  
+The App and Dashboard work together as two sides of the same environment: participants contribute data and engage with tools, while researchers and clinicians interpret, visualize, and act on that information.
 
 This creates a feedback loop where both sides benefit: participants gain insight into their own patterns, and teams gain the information needed to guide care or adapt study design. Optional messaging and just-in-time interventions strengthen this connection further, ensuring participants remain active contributors rather than passive data sources.
 
@@ -132,18 +138,18 @@ This creates a feedback loop where both sides benefit: participants gain insight
 
 mindLAMP is built and sustained through collaboration. Researchers, clinicians, patients, and developers form a community with the shared goal of using digital tools to advance both science and care.
 
-Most teams implement mindLAMP through **LAMP CORE**, the service we provide to support research and clinical programs. CORE requires a business agreement and includes hosting, support, and consultation. This ensures that implementations are reliable, secure, and aligned with scientific and clinical goals.
+Most teams implement mindLAMP through <strong>LAMP CORE</strong>, the service we provide to support research and clinical programs. CORE requires a business agreement and includes hosting, support, and consultation. This ensures that implementations are reliable, secure, and aligned with scientific and clinical goals.
 
 Because mindLAMP is open source, teams may also adapt the code independently. Projects that take this path should still cite mindLAMP and let us know about their work. Independent implementations, however, are responsible for their own hosting, maintenance, and support.
 
 This balance — open and shareable, yet guided through CORE — has allowed mindLAMP to expand globally while staying rooted in community needs. Patients and participants engage with mindLAMP only through these research and clinical programs, using the App as part of their care or study involvement. This structure ensures that the platform evolves in ways that are scientifically rigorous, clinically relevant, and responsive to the people who use it.
 
-<div className="flex flex-col gap-2 my-4">
-  <Link to="/docs/core">Join LAMP CORE →</Link>
+<p className="margin-top--sm">
+  <Link to="/docs/core">Join LAMP CORE →</Link><br/>
   <Link to="https://github.com/BIDMCDigitalPsychiatry">View mindLAMP on GitHub →</Link>
-</div>
+</p>
 
-To see how this works in practice, explore our **case studies**, which describe different ways mindLAMP has been implemented across research and clinical settings.
+To see how this works in practice, explore our <strong>case studies</strong>, which describe how mindLAMP has been implemented across research and clinical settings.
 
 <Link to="/docs/case-studies">Read Case Studies →</Link>
 
@@ -151,13 +157,14 @@ To see how this works in practice, explore our **case studies**, which describe 
 
 ## Demo
 
-<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/wnFml3qrLHI?si=fPTF3D_mCg4NdIpg" 
-  title="YouTube video player" 
-  frameBorder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerPolicy="strict-origin-when-cross-origin" 
-  allowFullScreen>
-</iframe>
+<div className="video-responsive" style={{position:'relative', paddingBottom:'56.25%', height:0, overflow:'hidden', borderRadius:12}}>
+  <iframe
+    src="https://www.youtube.com/embed/wnFml3qrLHI?si=fPTF3D_mCg4NdIpg"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+    style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}
+  />
+</div>
