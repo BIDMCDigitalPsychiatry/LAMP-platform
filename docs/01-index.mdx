@@ -4,301 +4,160 @@ title: mindLAMP
 ---
 
 import Link from '@docusaurus/Link';
+import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
-{/*
-  This page is written in MDX so it can include JSX/React markup
-  while remaining compatible with Docusaurus `page.md` style pages.
-  It uses Docusaurus' built-in button utility classes for simple styling.
-*/}
+# mindLAMP
 
-{/* =========================== */}
-{/* Hero                        */}
-{/* =========================== */}
+## A Digital Platform for Brain and Behavioral Health
 
-<div className="hero hero--primary" style={{padding: '4rem 0'}}>
-  <div className="container">
-    <h1 className="hero__title">mindLAMP</h1>
-    <p className="hero__subtitle" style={{maxWidth: 820}}>
-      Digital Health, Measured & Accessible. mindLAMP helps researchers, clinicians,
-      and patients measure, understand, and support brain and behavioral health —
-      spanning mental health, cognition, and neurology — anywhere, anytime.
-    </p>
-    <div className="button-group" style={{display:'flex', gap:12, flexWrap:'wrap'}}>
-      <Link className="button button--secondary button--lg" to="https://github.com/BIDMCDigitalPsychiatry">Explore on GitHub</Link>
-      <Link className="button button--outline button--lg" to="#video">Watch Demo</Link>
-    </div>
-  </div>
+mindLAMP is an **open-source platform** designed to improve how brain and behavioral health is measured, understood, and supported. It brings together research and clinical care in a single, flexible framework. By combining digital data, mobile tools, and collaborative design, mindLAMP enables approaches that are both scientifically rigorous and immediately useful in practice.
+
+---
+
+## Platform Components
+
+mindLAMP is built around four core components. Together they form a complete platform, but each can also be used independently depending on the needs of a study or clinical program.
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+
+<Card>
+  <CardHeader>
+    <CardTitle>The App</CardTitle>
+    <CardDescription>
+      A participant-facing tool for surveys, cognitive tasks, wellness activities, and — when enabled — passive data collection in the background.  
+      <br />  
+      <Link to="/docs/app/using-app">Learn how to use the App →</Link>
+    </CardDescription>
+  </CardHeader>
+</Card>
+
+<Card>
+  <CardHeader>
+    <CardTitle>The Dashboard</CardTitle>
+    <CardDescription>
+      A web-based tool for researchers, clinicians, and project coordinators to configure studies, manage participants, and review incoming data.  
+      <br />  
+      <Link to="/docs/dashboard/using-dashboard">Learn how to use the Dashboard →</Link>
+    </CardDescription>
+  </CardHeader>
+</Card>
+
+<Card>
+  <CardHeader>
+    <CardTitle>The Database</CardTitle>
+    <CardDescription>
+      Securely organizes all collected information using the **LAMP Protocol**, ensuring reproducibility and extensibility.  
+      <br />  
+      <Link to="/docs/developing-lamp">Read about Developing with LAMP →</Link>
+    </CardDescription>
+  </CardHeader>
+</Card>
+
+<Card>
+  <CardHeader>
+    <CardTitle>Cortex</CardTitle>
+    <CardDescription>
+      The data processing pipeline that transforms raw inputs into meaningful features and visualizations, enabling interpretation of complex signals.  
+      <br />  
+      <Link to="/docs/cortex-api">Explore Cortex & API →</Link>
+    </CardDescription>
+  </CardHeader>
+</Card>
+
 </div>
 
-{/* =========================== */}
-{/* The Challenge               */}
-{/* =========================== */}
+---
 
-<section className="container margin-vert--lg">
-  <h2>The Challenge</h2>
+## Why It Matters
 
-  <div className="row">
-    <div className="col col--6">
-      <h3>Measurement</h3>
-      <p>
-        Conditions affecting the brain and behavior — including mental health,
-        cognition, and neurological disorders — are often assessed through self-report
-        questionnaires, interviews, and clinician observations. These methods, while
-        valuable, can be inconsistent, infrequent, and influenced by recall or response
-        bias. Symptoms frequently fluctuate daily or even hourly, yet traditional clinic
-        visits capture only isolated “snapshots” of experience. Critical patterns and
-        warning signs can go undetected.
-      </p>
-    </div>
-    <div className="col col--6">
-      <h3>Access to Care</h3>
-      <p>
-        Access to care is constrained by multiple systemic barriers: provider
-        shortages and high demand create long wait times; high costs and lack of
-        insurance coverage limit access; stigma discourages many from seeking support;
-        and geographic barriers — especially in rural or underserved areas — make
-        in-person treatment difficult. These challenges leave many without the care or
-        data they need.
-      </p>
-    </div>
-  </div>
-</section>
+### The limits of measurement
+Traditional approaches to understanding mental health, cognition, and neurology — interviews, questionnaires, and periodic clinical visits — are valuable but limited. They produce snapshots that often miss the daily fluctuations most relevant to outcomes. This gap makes it difficult to align research findings with lived experience, or to guide care based on real-world needs.
 
-{/* =========================== */}
-{/* The Solution                */}
-{/* =========================== */}
+### The challenge of access
+Even where high-quality care exists, it is out of reach for many. Shortages of providers, costs, long wait times, stigma, and geographic barriers make it difficult to connect with services. Care that does happen is often confined to short, infrequent encounters that leave little opportunity for ongoing monitoring, education, or support.
 
-<section className="container margin-vert--lg">
-  <h2>The Solution: mindLAMP</h2>
-  <p>
-    mindLAMP is an open‑source digital health platform designed to support a wide range
-    of use cases in psychiatry, psychology, neurology, and cognitive science. It
-    addresses challenges of both <strong>measurement</strong> and <strong>access to care</strong>.
-  </p>
-  <ul>
-    <li><strong>Better Measurement:</strong> Capture real‑time, high‑resolution insights through smartphone sensors, surveys, and cognitive tasks.</li>
-    <li><strong>Improved Access:</strong> Provide support, psychoeducation, and monitoring directly through a smartphone.</li>
-    <li><strong>Research–Clinical Synergy:</strong> Already deployed in clinics, ensuring innovations translate directly into patient care.</li>
-  </ul>
-  <p>
-    Today, mindLAMP is listed in the <strong>World Health Organization Digital Health Atlas</strong>, used worldwide by research groups, and implemented in busy community clinics, including <strong>Harvard Medical School teaching hospitals</strong>.
-  </p>
-</section>
+### The importance of connection
+Strong connections between people — whether patients and clinicians or participants and researchers — are critical. Yet between visits or study sessions, those connections are often weak. Clinicians and researchers may lack timely, meaningful data, while patients and participants may feel disengaged, uncertain of whether their contributions matter, or unsupported as their experiences change.
 
-{/* =========================== */}
-{/* Key Features                */}
-{/* =========================== */}
+---
 
-<section className="container margin-vert--lg">
-  <h2>Key Features</h2>
+## How mindLAMP Helps
 
-  <div className="row">
-    <div className="col col--4">
-      <h3>Measurement Tools</h3>
-      <ul>
-        <li>
-          <strong>Digital Phenotyping:</strong> Collect granular data about behaviors and
-          symptoms via smartphone and connected‑device sensors across operating systems.
-          The <strong>Cortex</strong> pipeline helps teams (1) assess data quality in real time,
-          (2) derive replicable clinical features (e.g., mobility, sleep), and
-          (3) generate easy‑to‑share visualizations. Example: computing
-          <em> hometime</em> from thousands of GPS points.
-        </li>
-        <li>
-          <strong>Ecological Momentary Assessment (EMA):</strong> Monitor behaviors and symptoms
-          in real time, including metadata about app engagement.
-        </li>
-        <li>
-          <strong>Customizable Surveys:</strong> Configure text, icons, schedules, and
-          notifications to capture the data you need.
-        </li>
-        <li>
-          <strong>Cognition:</strong> A suite of validated cognitive tasks studied across mental
-          health (e.g., depression, schizophrenia) and neurological conditions (e.g.,
-          Parkinson’s, Alzheimer’s), supporting research and clinical applications.
-        </li>
-      </ul>
-    </div>
+mindLAMP addresses these challenges through the concepts its components enable:
 
-    <div className="col col--4">
-      <h3>Clinical &amp; Research Support</h3>
-      <ul>
-        <li>
-          <strong>Dashboard:</strong> Design activities, deliver surveys, visualize near‑real‑time
-          data, and explore comprehensive datasets via the <strong>Data Portal</strong>.
-        </li>
-        <li>
-          <strong>Flexible Protocols:</strong> Run common study designs and add site‑specific
-          questions or schedules as needed.
-        </li>
-        <li>
-          <strong>Distributed Deployment:</strong> Store data centrally or locally to comply with
-          local, state, federal, and international laws; optionally deploy from a central
-          site for teams not wishing to manage infrastructure.
-        </li>
-      </ul>
-    </div>
+- **Continuous Measurement** → integrates both active and passive data collection to capture daily life in real time.  
+- **Expanded Access** → delivers interventions, monitoring, and education directly through mobile devices.  
+- **Strengthened Connection** → creates shared environments where data, communication, and feedback flow both ways.
 
-    <div className="col col--4">
-      <h3>Patient Engagement</h3>
-      <ul>
-        <li>
-          <strong>Mobile App (iOS &amp; Android):</strong> Surveys, cognitive games, meditation,
-          breathing exercises, psychoeducation, and stress‑management resources.
-        </li>
-        <li>
-          <strong>Optional Passive Sensing:</strong> Accelerometer, GPS, pedometer, and more —
-          running unobtrusively in the background when enabled.
-        </li>
-        <li>
-          <strong>Care Team Connection:</strong> Optional in‑app messaging and clinician dashboards
-          to connect patients and care teams.
-        </li>
-        <li>
-          <strong>Flexible Hosting:</strong> Secure upload to servers owned by your organization
-          (or hosted by CORE). All content and sensors can be fully customized and
-          toggled on/off to fit use cases ranging from medication reminders to full
-          digital‑phenotyping suites.
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+---
 
-{/* =========================== */}
-{/* Platform Components         */}
-{/* =========================== */}
+## Continuous Measurement
 
-<section className="container margin-vert--lg">
-  <h2>Platform Components</h2>
-  <p><img src="assets/LAMP_Overview.png" alt="LAMP Platform Overview" style={{maxWidth:'100%'}}/></p>
+**Digital Phenotyping** refers to the practice of using data from everyday digital devices to measure behavior, cognition, and context. In mindLAMP, this includes both **passive data** and **active data**:
 
-  <div className="row">
-    <div className="col col--6">
-      <h3>① Dashboard</h3>
-      <p>
-        Create, customize, and schedule activities; deliver notifications and
-        interventions; access near‑real‑time data; and use the <strong>Data Portal</strong> for
-        in‑depth exploration of multi‑modal data. The CORE team can support custom
-        dashboards and reporting or help you use the flexible default.
-      </p>
-    </div>
-    <div className="col col--6">
-      <h3>② App</h3>
-      <p>
-        Participants complete surveys, cognitive games, mindfulness activities, and
-        psychoeducation; optional background sensing collects data without disruption.
-        Data are securely uploaded to servers you control (or hosted by CORE). The app
-        can be adapted for use cases from simple reminders to comprehensive digital
-        phenotyping.
-      </p>
-    </div>
-  </div>
+- **Passive data** are collected in the background from device sensors, reflecting patterns of activity, mobility, and environment.  
+- **Active data** come from tasks, surveys, or cognitive activities completed directly by participants, providing insight into subjective experience and performance.  
 
-  <div className="row">
-    <div className="col col--6">
-      <h3>③ Database</h3>
-      <p>
-        A secure, chronological index of all data built on the <strong>LAMP Protocol</strong>.
-        It enables reproducible, shareable science and real‑time triggers for custom
-        analyses. Host locally or have CORE support a private, secure deployment.
-      </p>
-    </div>
-    <div className="col col--6">
-      <h3>④ Cortex</h3>
-      <p>
-        An open‑source pipeline that connects to the database to derive clinically
-        meaningful features (e.g., sedentary behavior, hometime, device usage, sleep
-        estimates), produce interactive visualizations, and support just‑in‑time
-        adaptive interventions. Run default or custom analyses per your needs.
-      </p>
-    </div>
-  </div>
-</section>
+**Ecological Momentary Assessment (EMA)** is a form of active data collection where participants answer short surveys about their symptoms, feelings, or experiences in real time. mindLAMP supports EMA through customizable surveys, notifications, and metadata capture (timestamps, response times, engagement metrics).  
 
-{/* =========================== */}
-{/* Open Source & Community     */}
-{/* =========================== */}
+By integrating passive and active data, mindLAMP creates a fuller, ecologically valid view of daily life. Passive data provide continuous context; active data capture lived experience; together, they give a more complete understanding.
 
-<section className="container margin-vert--lg">
-  <h2>Open Source &amp; Community</h2>
-  <p>
-    mindLAMP is fully open source and actively maintained. The codebase is available on
-    <Link to="https://github.com/BIDMCDigitalPsychiatry"> GitHub</Link>, and research teams
-    worldwide are building adapted versions. This transparent, collaborative ecosystem
-    ensures research outputs become real‑world tools that are replicable, customizable,
-    and scalable.
-  </p>
-</section>
+<div className="flex flex-col gap-2 my-4">
+  <Link to="/docs/sensors">Explore LAMP Sensors →</Link>
+  <Link to="/docs/activities">Learn about LAMP Activities →</Link>
+</div>
 
-{/* =========================== */}
-{/* Demo                        */}
-{/* =========================== */}
+---
 
-<section className="container margin-vert--lg" id="video">
-  <h2>Demo</h2>
-  <div className="video-responsive" style={{position:'relative', paddingBottom:'56.25%', height:0, overflow:'hidden', borderRadius:12}}>
-    <iframe
-      src="https://www.youtube.com/embed/wnFml3qrLHI?si=fPTF3D_mCg4NdIpg"
-      title="YouTube video player"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allowFullScreen
-      style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}
-    />
-  </div>
-</section>
+## Expanding Access
 
-{/* =========================== */}
-{/* Get Started                 */}
-{/* =========================== */}
+mindLAMP lowers barriers by making care and research tools available on the devices people already use every day.
 
-<section className="container margin-vert--lg">
-  <h2>Get Started</h2>
-  <div className="row">
-    <div className="col col--4">
-      <div className="card">
-        <div className="card__header"><h3>For Collaborators</h3></div>
-        <div className="card__body">
-          <p>Learn how LAMP CORE supports hosting, customization, and study design for research teams and clinics.</p>
-        </div>
-        <div className="card__footer">
-          <Link className="button button--primary button--block" to="#">Learn about LAMP CORE</Link>
-        </div>
-      </div>
-    </div>
+- For **participants**, the App provides monitoring, self-management, and education — usable wherever they are.  
+- For **researchers, clinicians, and coordinators**, the Dashboard offers oversight of study protocols and workflows, with near real-time data to support responsive adjustments.  
+- For **multi-site studies**, protocols can be standardized while allowing local adaptations, ensuring consistency at scale without losing flexibility.
 
-    <div className="col col--4">
-      <div className="card">
-        <div className="card__header"><h3>For Developers</h3></div>
-        <div className="card__body">
-          <p>Access open‑source code, API references, and guides to build on and adapt the platform.</p>
-        </div>
-        <div className="card__footer">
-          <Link className="button button--secondary button--block" to="#">View Documentation</Link>
-        </div>
-      </div>
-    </div>
+---
 
-    <div className="col col--4">
-      <div className="card">
-        <div className="card__header"><h3>For Users &amp; Patients</h3></div>
-        <div className="card__body">
-          <p>See how the app supports symptom tracking, cognitive tools, and daily support.</p>
-        </div>
-        <div className="card__footer">
-          <Link className="button button--outline button--block" to="#video">Watch the Demo</Link>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+## Strengthening Connection
 
-{/* =========================== */}
-{/* SEO (optional)              */}
-{/* =========================== */}
+The App and Dashboard work together as two sides of the same environment: participants contribute data and engage with tools, while researchers and clinicians interpret, visualize, and act on that information.  
 
-<head>
-  <meta name="google-site-verification" content="MDFm8izKofwRdAnUbqg2muDPnSlHISr1EVApzHUI-Z4" />
-</head>
+This creates a feedback loop where both sides benefit: participants gain insight into their own patterns, and teams gain the information needed to guide care or adapt study design. Optional messaging and just-in-time interventions strengthen this connection further, ensuring participants remain active contributors rather than passive data sources.
+
+---
+
+## Proof & Community
+
+mindLAMP is built and sustained through collaboration. Researchers, clinicians, patients, and developers form a community with the shared goal of using digital tools to advance both science and care.
+
+Most teams implement mindLAMP through **LAMP CORE**, the service we provide to support research and clinical programs. CORE requires a business agreement and includes hosting, support, and consultation. This ensures that implementations are reliable, secure, and aligned with scientific and clinical goals.
+
+Because mindLAMP is open source, teams may also adapt the code independently. Projects that take this path should still cite mindLAMP and let us know about their work. Independent implementations, however, are responsible for their own hosting, maintenance, and support.
+
+This balance — open and shareable, yet guided through CORE — has allowed mindLAMP to expand globally while staying rooted in community needs. Patients and participants engage with mindLAMP only through these research and clinical programs, using the App as part of their care or study involvement. This structure ensures that the platform evolves in ways that are scientifically rigorous, clinically relevant, and responsive to the people who use it.
+
+<div className="flex flex-col gap-2 my-4">
+  <Link to="/docs/core">Join LAMP CORE →</Link>
+  <Link to="https://github.com/BIDMCDigitalPsychiatry">View mindLAMP on GitHub →</Link>
+</div>
+
+To see how this works in practice, explore our **case studies**, which describe different ways mindLAMP has been implemented across research and clinical settings.
+
+<Link to="/docs/case-studies">Read Case Studies →</Link>
+
+---
+
+## Demo
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/wnFml3qrLHI?si=fPTF3D_mCg4NdIpg" 
+  title="YouTube video player" 
+  frameBorder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerPolicy="strict-origin-when-cross-origin" 
+  allowFullScreen>
+</iframe>
