@@ -30,6 +30,7 @@ jobs:
       - name: Install & Build (staging /v2)
         run: |
           npm install
+          npm i --no-save @docusaurus/theme-mermaid@^3.7.0
           npx docusaurus build --config docusaurus.config.v2.ts
       - name: Deploy /v2 to gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
