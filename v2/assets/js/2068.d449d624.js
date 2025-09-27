@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklamp_platform=self.webpackChunklamp_platform||[]).push([[2068],{32068:(e,a,p)=>{p.d(a,{createInfoServices:()=>l.v});var l=p(41366);p(58198)}}]);
