@@ -20,7 +20,10 @@ mindLAMP is built around four core components. Together they form a complete pla
 <div className="row margin-top--md">
   <div className="col col--6">
     <div className="card">
-      <div className="card__header"><h3>The App</h3></div>
+      <div className="card__header">
+        <h3 className="margin-bottom--xs">The App</h3>
+        <small>For Participants</small>
+      </div>
       <div className="card__body">
         <p>
           A participant-facing tool for surveys, cognitive tasks, wellness activities, and — when enabled —
@@ -30,12 +33,16 @@ mindLAMP is built around four core components. Together they form a complete pla
       </div>
     </div>
   </div>
+
   <div className="col col--6">
     <div className="card">
-      <div className="card__header"><h3>The Dashboard</h3></div>
+      <div className="card__header">
+        <h3 className="margin-bottom--xs">The Dashboard</h3>
+        <small>For Coordinators & Researchers</small>
+      </div>
       <div className="card__body">
         <p>
-          A web-based tool for researchers, clinicians, and project coordinators to configure studies,
+          A web-based tool for coordinators to configure their research or clinicial implementations,
           manage participants, and review incoming data with structured views of activity and outcomes.
         </p>
         <p><Link to="/docs/dashboard/using-dashboard">Learn how to use the Dashboard →</Link></p>
@@ -47,7 +54,10 @@ mindLAMP is built around four core components. Together they form a complete pla
 <div className="row margin-top--md">
   <div className="col col--6">
     <div className="card">
-      <div className="card__header"><h3>The Database</h3></div>
+      <div className="card__header">
+        <h3 className="margin-bottom--xs">The Database</h3>
+        <small>For Developers</small>
+      </div>
       <div className="card__body">
         <p>
           Securely organizes all collected information using the <strong>LAMP Protocol</strong>, ensuring
@@ -57,9 +67,13 @@ mindLAMP is built around four core components. Together they form a complete pla
       </div>
     </div>
   </div>
+
   <div className="col col--6">
     <div className="card">
-      <div className="card__header"><h3>Cortex</h3></div>
+      <div className="card__header">
+        <h3 className="margin-bottom--xs">Cortex</h3>
+        <small>For Data Analysts</small>
+      </div>
       <div className="card__body">
         <p>
           Data processing pipeline that transforms raw inputs into meaningful features and visualizations,
@@ -70,67 +84,107 @@ mindLAMP is built around four core components. Together they form a complete pla
     </div>
   </div>
 </div>
-
 ---
 
-## Why It Matters
+## Challenges & Responses
 
-### The limits of measurement
-Traditional approaches to understanding mental health, cognition, and neurology — interviews, questionnaires, and periodic clinical visits — are valuable but limited. They produce snapshots that often miss the daily fluctuations most relevant to outcomes. This gap makes it difficult to align research findings with lived experience, or to guide care based on real-world needs.
+<div className="margin-top--lg">
 
-### The challenge of access
-Even where high-quality care exists, it is out of reach for many. Shortages of providers, costs, long wait times, stigma, and geographic barriers make it difficult to connect with services. Care that does happen is often confined to short, infrequent encounters that leave little opportunity for ongoing monitoring, education, or support.
+  {/* === Measurement === */}
+  <div className="row margin-bottom--lg">
+    <div className="col col--6">
+      <div className="card">
+        <div className="card__header"><h3 className="margin-bottom--xs">Measurement</h3><small>What’s hard today</small></div>
+        <div className="card__body">
+          <p>
+            Interviews, questionnaires, and brief visits are valuable—but they are <em>snapshots</em>. They are infrequent, rely on recall, and often miss the day-to-day dynamics that matter most for outcomes in mental health, cognition, and neurology.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="col col--6">
+      <div className="card">
+        <div className="card__header"><h3 className="margin-bottom--xs">How mindLAMP responds</h3><small>Continuous, ecologically valid data</small></div>
+        <div className="card__body">
+          <p>
+            mindLAMP enables <strong>digital phenotyping</strong>—real-world, real-time measurement that integrates <strong>passive data</strong> (background signals from devices that reflect patterns of mobility, activity, and context) with <strong>active data</strong> (participant-initiated tasks and surveys).
+          </p>
+          <p>
+            Within active data, <strong>Ecological Momentary Assessment (EMA)</strong> delivers short, timely prompts; the platform records responses and metadata (timestamps, completion times) via its analytics layer. Together, passive and active streams provide a more complete, lived-experience view than clinic snapshots alone.
+          </p>
+          <p className="margin-top--sm">
+            <Link to="/docs/sensors">Explore LAMP Sensors →</Link><br/>
+            <Link to="/docs/activities">Learn about LAMP Activities (incl. EMA) →</Link>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-### The importance of connection
-Strong connections between people — whether patients and clinicians or participants and researchers — are critical. Yet between visits or study sessions, those connections are often weak. Clinicians and researchers may lack timely, meaningful data, while patients and participants may feel disengaged, uncertain of whether their contributions matter, or unsupported as their experiences change.
+  {/* === Access to Care === */}
+  <div className="row margin-bottom--lg">
+    <div className="col col--6">
+      <div className="card">
+        <div className="card__header"><h3 className="margin-bottom--xs">Access to Care</h3><small>What’s hard today</small></div>
+        <div className="card__body">
+          <p>
+            Many people face provider shortages, waitlists, costs, stigma, and geographic barriers. Even when care is available, it’s often limited to brief, infrequent encounters with little ongoing monitoring or support between visits.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="col col--6">
+      <div className="card">
+        <div className="card__header"><h3 className="margin-bottom--xs">How mindLAMP responds</h3><small>Care beyond the visit</small></div>
+        <div className="card__body">
+          <p>
+            mindLAMP extends care and research to the smartphone. The <strong>App</strong> gives participants a place to engage with surveys, cognitive tasks, and wellness tools wherever they are. The <strong>Dashboard</strong> lets coordinators, researchers, and clinicians configure protocols and review data in near real time, enabling responsive adjustments between appointments.
+          </p>
+          <p>
+            For multi-site work, protocols can be standardized for consistency and adapted locally when needed—making implementations scalable without losing flexibility.
+          </p>
+          <p className="margin-top--sm">
+            <Link to="/docs/app/using-app">How to use the App →</Link><br/>
+            <Link to="/docs/dashboard/using-dashboard">How to use the Dashboard →</Link>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
----
+  {/* === Connection === */}
+  <div className="row">
+    <div className="col col--6">
+      <div className="card">
+        <div className="card__header"><h3 className="margin-bottom--xs">Connection</h3><small>What’s hard today</small></div>
+        <div className="card__body">
+          <p>
+            Between visits or study sessions, connections can weaken. Teams may lack timely data to guide decisions; participants may not see how their contributions matter or receive meaningful feedback.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="col col--6">
+      <div className="card">
+        <div className="card__header"><h3 className="margin-bottom--xs">How mindLAMP responds</h3><small>A shared data environment</small></div>
+        <div className="card__body">
+          <p>
+            The App and Dashboard form two sides of the same environment: participants contribute and learn from their data; teams interpret, visualize, and act on it. Optional messaging and just-in-time prompts close the loop so participants are active contributors rather than passive data sources.
+          </p>
+          <p>
+            Under the hood, the <strong>Database</strong> (via the LAMP Protocol) provides reliable structure and access, and <strong>Cortex</strong> turns raw signals into features and visualizations that are easier to reason about.
+          </p>
+          <p className="margin-top--sm">
+            <Link to="/docs/developing-lamp">Developing with LAMP (Database) →</Link><br/>
+            <Link to="/docs/cortex-api">Cortex &amp; API →</Link><br/>
+            <Link to="/docs/case-studies">See this in practice (Case Studies) →</Link>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-## How mindLAMP Helps
-
-mindLAMP addresses these challenges through the concepts its components enable:
-
-- **Continuous Measurement** integrates active and passive data collection to capture daily life in real time.  
-- **Expanded Access** delivers interventions, monitoring, and education directly through mobile devices.  
-- **Strengthened Connection** creates shared environments where data, communication, and feedback flow both ways.
-
----
-
-## Continuous Measurement
-
-**Digital Phenotyping** is the practice of using data from everyday digital devices to measure behavior, cognition, and context. In mindLAMP, this includes both **passive data** and **active data**:
-
-- <em>Passive data</em> are collected in the background from device sensors, reflecting patterns of activity, mobility, and environment.  
-- <em>Active data</em> come from tasks, surveys, or cognitive activities completed directly by participants, providing insight into subjective experience and performance.
-
-**Ecological Momentary Assessment (EMA)** is a form of active data collection where participants answer short surveys about their symptoms, feelings, or experiences in real time. mindLAMP supports EMA through customizable surveys, notifications, and metadata capture (timestamps, response times, engagement metrics) via its analytics layer.
-
-By integrating passive and active data, mindLAMP creates a fuller, ecologically valid view of daily life. Passive data provide continuous context; active data capture lived experience; together, they give a more complete understanding.
-
-<p className="margin-top--sm">
-  <Link to="/docs/sensors">Explore LAMP Sensors →</Link><br/>
-  <Link to="/docs/activities">Learn about LAMP Activities →</Link>
-</p>
-
----
-
-## Expanding Access
-
-mindLAMP lowers barriers by making care and research tools available on the devices people already use every day.
-
-For <strong>participants</strong>, the App provides monitoring, self-management, and education — usable wherever they are.
-
-For <strong>researchers, clinicians, and coordinators</strong>, the Dashboard offers oversight of study protocols and workflows, with near real-time data to support responsive adjustments.
-
-For <strong>multi-site studies</strong>, protocols can be standardized while allowing local adaptations, ensuring consistency at scale without losing flexibility.
-
----
-
-## Strengthening Connection
-
-The App and Dashboard work together as two sides of the same environment: participants contribute data and engage with tools, while researchers and clinicians interpret, visualize, and act on that information.
-
-This creates a feedback loop where both sides benefit: participants gain insight into their own patterns, and teams gain the information needed to guide care or adapt study design. Optional messaging and just-in-time interventions strengthen this connection further, ensuring participants remain active contributors rather than passive data sources.
+</div>
 
 ---
 
@@ -168,3 +222,151 @@ To see how this works in practice, explore our <strong>case studies</strong>, wh
     style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}
   />
 </div>
+
+```mermaid
+flowchart TB
+  %% LAYER 1: CHALLENGES
+  subgraph L1[Challenges]
+    M[Measurement\n(infrequent, biased snapshots)\n— Researchers · Analysts]
+    A[Access to Care\n(costs, waitlists, geography, stigma)\n— Clinicians · Coordinators · Participants]
+    C[Connection\n(weak feedback between visits)\n— Everyone]
+  end
+
+  %% LAYER 2: PLATFORM COMPONENTS (tools)
+  subgraph L2[Platform Components]
+    APP[App]
+    DASH[Dashboard]
+    DB[(Database\nLAMP Protocol)]
+    CTX[Cortex\n(features & visuals)]
+  end
+
+  %% LAYER 3: DATA STREAMS (concepts)
+  subgraph L3[Data Streams]
+    PASS[Passive Data\n(background signals)]
+    ACT[Active Data\n(tasks, surveys, cognition)]
+    EMA[EMA\n(real-time prompts)\n(Active subtype)]
+  end
+
+  %% LAYER 4: OUTCOMES
+  subgraph L4[Outcomes]
+    O1[Continuous Measurement]
+    O2[Expanded Access]
+    O3[Strengthened Connection]
+  end
+
+  %% MAPPINGS: Challenges → Components
+  M --> APP
+  M --> DB
+  M --> CTX
+
+  A --> APP
+  A --> DASH
+
+  C --> APP
+  C --> DASH
+  C --> CTX
+  C --> DB
+
+  %% Components → Data Streams
+  APP --> PASS
+  APP --> ACT
+  ACT --> EMA
+  DB --- PASS
+  DB --- ACT
+  CTX --> O1
+
+  %% Data Streams → Outcomes
+  PASS --> O1
+  ACT --> O1
+  EMA --> O1
+
+  %% Components → Outcomes (access/connection)
+  APP --> O2
+  DASH --> O2
+  DASH --> O3
+  CTX --> O3
+  DB --> O3
+
+  %% Helpful doc links (as labels)
+  click APP "/docs/app/using-app" "How to use the App"
+  click DASH "/docs/dashboard/using-dashboard" "How to use the Dashboard"
+  click DB "/docs/developing-lamp" "Developing with LAMP"
+  click CTX "/docs/cortex-api" "Cortex & API"
+```
+
+
+```mermaid
+flowchart TB
+  CORE([LAMP CORE\nSupport · Hosting · Guidance])
+
+  APP[App\nPrimary: Participants]
+  DASH[Dashboard\nPrimary: Coordinators · Clinicians · Researchers]
+  DB[(Database\nLAMP Protocol\nPrimary: Developers)]
+  CTX[Cortex\nPrimary: Data Analysts · Researchers]
+
+  CORE --- APP
+  CORE --- DASH
+  CORE --- DB
+  CORE --- CTX
+
+  %% secondary relationships
+  APP --> DASH
+  DASH --> CTX
+  DB --> CTX
+  APP --> DB
+
+  %% challenges solved around the rim
+  MEAS[Measurement]
+  ACCESS[Access]
+  CONN[Connection]
+
+  MEAS -. addressed by .-> APP
+  MEAS -. addressed by .-> DB
+  MEAS -. addressed by .-> CTX
+
+  ACCESS -. addressed by .-> APP
+  ACCESS -. addressed by .-> DASH
+
+  CONN -. addressed by .-> APP
+  CONN -. addressed by .-> DASH
+  CONN -. supported by .-> CTX
+
+  %% links
+  click CORE "/docs/core" "Join LAMP CORE"
+  click APP "/docs/app/using-app" "How to use the App"
+  click DASH "/docs/dashboard/using-dashboard" "How to use the Dashboard"
+  click DB "/docs/developing-lamp" "Developing with LAMP"
+  click CTX "/docs/cortex-api" "Cortex & API"
+```
+
+
+```mermaid
+flowchart LR
+  subgraph P[Participants (via App)]
+    AP[Engage with App\nActive: surveys, tasks, EMA\nPassive: background signals]
+  end
+
+  subgraph D[Data Backbone]
+    DB[(Database\nLAMP Protocol\nsecure, structured)]
+    CTX[Cortex\nfeatures · visuals · triggers]
+  end
+
+  subgraph T[Teams (via Dashboard)]
+    DH[Dashboard\nCoordinators · Clinicians · Researchers]
+  end
+
+  %% forward flow
+  AP -- Active & Passive Data --> DB
+  DB --> CTX
+  CTX --> DH
+
+  %% feedback loop
+  DH -- insights · protocol changes · messages --> AP
+  CTX -- just-in-time prompts --> AP
+
+  %% docs links
+  click AP "/docs/app/using-app" "How to use the App"
+  click DH "/docs/dashboard/using-dashboard" "How to use the Dashboard"
+  click DB "/docs/developing-lamp" "Developing with LAMP"
+  click CTX "/docs/cortex-api" "Cortex & API"
+```
