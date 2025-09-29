@@ -12,12 +12,16 @@ import TabItem from '@theme/TabItem';
 
 # MindLAMP
 
-## A Digital Platform for Behavioral Research & Care 
+## A Digital Platform for Behavioral Research & Care
 
 MindLAMP is an **open-source platform** that enables teams to study, adapt, and support behavioral health in ways that are scientifically rigorous and immediately useful in practice. It is designed to support **rich measurement**, **flexible delivery**, and **reciprocal engagement** all within one ecosystem, allowing for transformative advancements in digital research and care.
+
 ---
+
 ## Addressing Challenges in Research & Care
-Traditioanl research and care face three persistent challenges, for which MindLAMP is solution:
+
+Traditional research and care face three persistent challenges, for which MindLAMP is solution:
+
 <Tabs groupId="challenge" defaultValue="measurement" values={[
   {label: 'Measurement', value: 'measurement'},
   {label: 'Flexibility', value: 'flexibility'},
@@ -93,7 +97,7 @@ Traditioanl research and care face three persistent challenges, for which MindLA
     <div className="card">
       <div className="card__header">
         <span className="badge badge--secondary">The Challenge</span>
-        <h3 className="margin-top--xs">Connection</h3>
+        <h3 className="margin-top--xs">Engagement Gaps</h3>
       </div>
       <div className="card__body">
         <p>
@@ -209,151 +213,4 @@ Because mindLAMP is open source, teams may also adapt the code independently. Pr
 This balance — open and shareable, yet guided through CORE — has allowed mindLAMP to expand globally while staying rooted in community needs. Patients and participants engage with mindLAMP only through these research and clinical programs, using the App as part of their care or study involvement. This structure ensures that the platform evolves in ways that are scientifically rigorous, clinically relevant, and responsive to the people who use it. To see how this works in practice, explore our <strong>case studies</strong>, which describe how mindLAMP has been implemented across research and clinical settings.
 
 <Link to="/docs/02-users.md">Read Case Studies →</Link>
-
-```mermaid
-flowchart TB
-  %% LAYER 1: CHALLENGES
-  subgraph L1[Challenges]
-    M[Measurement\n(infrequent, biased snapshots)\n— Researchers · Analysts]
-    A[Access to Care\n(costs, waitlists, geography, stigma)\n— Clinicians · Coordinators · Participants]
-    C[Connection\n(weak feedback between visits)\n— Everyone]
-  end
-
-  %% LAYER 2: PLATFORM COMPONENTS (tools)
-  subgraph L2[Platform Components]
-    APP[App]
-    DASH[Dashboard]
-    DB[(Database\nLAMP Protocol)]
-    CTX[Cortex\n(features & visuals)]
-  end
-
-  %% LAYER 3: DATA STREAMS (concepts)
-  subgraph L3[Data Streams]
-    PASS[Passive Data\n(background signals)]
-    ACT[Active Data\n(tasks, surveys, cognition)]
-    EMA[EMA\n(real-time prompts)\n(Active subtype)]
-  end
-
-  %% LAYER 4: OUTCOMES
-  subgraph L4[Outcomes]
-    O1[Continuous Measurement]
-    O2[Expanded Access]
-    O3[Strengthened Connection]
-  end
-
-  %% MAPPINGS: Challenges → Components
-  M --> APP
-  M --> DB
-  M --> CTX
-
-  A --> APP
-  A --> DASH
-
-  C --> APP
-  C --> DASH
-  C --> CTX
-  C --> DB
-
-  %% Components → Data Streams
-  APP --> PASS
-  APP --> ACT
-  ACT --> EMA
-  DB --- PASS
-  DB --- ACT
-  CTX --> O1
-
-  %% Data Streams → Outcomes
-  PASS --> O1
-  ACT --> O1
-  EMA --> O1
-
-  %% Components → Outcomes (access/connection)
-  APP --> O2
-  DASH --> O2
-  DASH --> O3
-  CTX --> O3
-  DB --> O3
-
-  %% Helpful doc links (as labels)
-  click APP "/docs/app/using-app" "How to use the App"
-  click DASH "/docs/dashboard/using-dashboard" "How to use the Dashboard"
-  click DB "/docs/developing-lamp" "Developing with LAMP"
-  click CTX "/docs/cortex-api" "Cortex & API"
-```
-
-
-```mermaid
-flowchart TB
-  CORE([LAMP CORE\nSupport · Hosting · Guidance])
-
-  APP[App\nPrimary: Participants]
-  DASH[Dashboard\nPrimary: Coordinators · Clinicians · Researchers]
-  DB[(Database\nLAMP Protocol\nPrimary: Developers)]
-  CTX[Cortex\nPrimary: Data Analysts · Researchers]
-
-  CORE --- APP
-  CORE --- DASH
-  CORE --- DB
-  CORE --- CTX
-
-  %% secondary relationships
-  APP --> DASH
-  DASH --> CTX
-  DB --> CTX
-  APP --> DB
-
-  %% challenges solved around the rim
-  MEAS[Measurement]
-  ACCESS[Access]
-  CONN[Connection]
-
-  MEAS -. addressed by .-> APP
-  MEAS -. addressed by .-> DB
-  MEAS -. addressed by .-> CTX
-
-  ACCESS -. addressed by .-> APP
-  ACCESS -. addressed by .-> DASH
-
-  CONN -. addressed by .-> APP
-  CONN -. addressed by .-> DASH
-  CONN -. supported by .-> CTX
-
-  %% links
-  click CORE "/docs/core" "Join LAMP CORE"
-  click APP "/docs/app/using-app" "How to use the App"
-  click DASH "/docs/dashboard/using-dashboard" "How to use the Dashboard"
-  click DB "/docs/developing-lamp" "Developing with LAMP"
-  click CTX "/docs/cortex-api" "Cortex & API"
-```
-
-
-```mermaid
-flowchart LR
-  subgraph P[Participants (via App)]
-    AP[Engage with App\nActive: surveys, tasks, EMA\nPassive: background signals]
-  end
-
-  subgraph D[Data Backbone]
-    DB[(Database\nLAMP Protocol\nsecure, structured)]
-    CTX[Cortex\nfeatures · visuals · triggers]
-  end
-
-  subgraph T[Teams (via Dashboard)]
-    DH[Dashboard\nCoordinators · Clinicians · Researchers]
-  end
-
-  %% forward flow
-  AP -- Active & Passive Data --> DB
-  DB --> CTX
-  CTX --> DH
-
-  %% feedback loop
-  DH -- insights · protocol changes · messages --> AP
-  CTX -- just-in-time prompts --> AP
-
-  %% docs links
-  click AP "/docs/app/using-app" "How to use the App"
-  click DH "/docs/dashboard/using-dashboard" "How to use the Dashboard"
-  click DB "/docs/developing-lamp" "Developing with LAMP"
-  click CTX "/docs/cortex-api" "Cortex & API"
 ```
