@@ -99,8 +99,6 @@ If you'd like to test the beta version of the app, please follow the instruction
 
 <summary> Some Android manufacturers make it difficult for mindLAMP to collect data in the background.</summary>
 
-![](assets/dont_kill_my_app.png)
-
 Read more at [https://dontkillmyapp.com](https://dontkillmyapp.com/)
 
 > **UPDATE 2021:** Despite Android team's promise to enforce OEMs to be transparent about non-standard app killing, in Android 11 **Samsung has introduced a new severe (default ON) restriction**. Apps can no longer hold wake lock in foreground services. This breaks many use-cases, for instance **health apps are now unable to gather sensoric data for their users**.
