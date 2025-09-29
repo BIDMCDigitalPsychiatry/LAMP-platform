@@ -9,7 +9,7 @@ The Cortex data analysis toolkit is part of the LAMP Platform, enabling research
 - It obviates the need for individual analyses tied to custom code for specific sensor types across various devices.
 - It provides a companion IDE based on JupyterLab and VSCode that abstracts away login and security issues by securely injecting an authenticated connection to the server into Cortex and resulting analysis notebooks.
 
-![](assets/cortex_diagram.svg)
+![](/assets/cortex_diagram.svg){width=600 height=400}
 
 _Categories of Activity and Sensor data types alongside Cortex features synthesized from raw data streams. Availability of Wearable Sensors depends on the device type used and supported API. You may use cortex.all_features() to list all features._
 
