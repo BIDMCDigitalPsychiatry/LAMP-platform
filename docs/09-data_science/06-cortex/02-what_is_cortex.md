@@ -9,7 +9,7 @@ The Cortex data analysis toolkit is part of the LAMP Platform, enabling research
 - It obviates the need for individual analyses tied to custom code for specific sensor types across various devices.
 - It provides a companion IDE based on JupyterLab and VSCode that abstracts away login and security issues by securely injecting an authenticated connection to the server into Cortex and resulting analysis notebooks.
 
-![](assets/cortex_diagram.png)
+![](assets/cortex_diagram.svg)
 
 _Categories of Activity and Sensor data types alongside Cortex features synthesized from raw data streams. Availability of Wearable Sensors depends on the device type used and supported API. You may use cortex.all_features() to list all features._
 
@@ -35,7 +35,7 @@ It's easy to use existng features to create your own novel features, or start en
 
 Features in Cortex need not handle pre-processing for variation in sensor data between Android and iOS, because the LAMP Platform harmonizes the data, accounting for various differences in functionality and recording between Apple and Android devices. For example, accelerometer measurements taken on Apple devices are measured in G's (unit of gravity) with a frame of reference experiencing -1G in the downward-facing axis, whereas measurements on Android are measured in meters per second squared (m/s^2) without a frame of reference provided. Because the platform automatically applies this harmonization step, data analysis code and Cortex feature code need not have an intrinsic understanding of the source of the data. 
 
-![](assets/cortex_caching.png)
+![](assets/cortex_caching.svg)
 
 _A sample execution plan for Cortex:_
 1. The clinician or researcher creates an aggregate operation.
