@@ -18,161 +18,164 @@ MindLAMP is an **open-source platform** that enables teams to study, adapt, and 
 
 ---
 
-## Addressing Challenges in Research & Care
+<div className="padding-vert--lg margin-vert--lg" style={{ backgroundColor: "#f9fafb" }}>
+  ## Addressing Challenges in Research & Care
 
-Research and clinical care face three persistent challenges that limit our ability to understand and support individuals effectively. MindLAMP addresses each through innovative digital solutions:
+  Research and clinical care face three persistent challenges that limit our ability to understand and support individuals effectively. MindLAMP addresses each through innovative digital solutions:
 
-<Tabs groupId="challenge" defaultValue="measurement" values={[
-  {label: 'Measurement', value: 'measurement'},
-  {label: 'Flexibility', value: 'flexibility'},
-  {label: 'Engagement', value: 'engagement'},
-]}>
-  <TabItem value="measurement">
-    <div className="card">
-      <div className="card__header">
-        <span className="badge badge--secondary">The Challenge</span>
-        <h3 className="margin-top--xs">Measurement Gaps</h3>
+  <Tabs groupId="challenge" defaultValue="measurement" values={[
+    {label: 'Measurement', value: 'measurement'},
+    {label: 'Flexibility', value: 'flexibility'},
+    {label: 'Engagement', value: 'engagement'},
+  ]}>
+    <TabItem value="measurement">
+      <div className="card">
+        <div className="card__header">
+          <span className="badge badge--secondary">The Challenge</span>
+          <h3 className="margin-top--xs">Measurement Gaps</h3>
+        </div>
+        <div className="card__body">
+          <p>
+            Traditional assessment relies on infrequent clinical visits that capture only snapshots of a person's experience. Symptoms and behaviors fluctuate daily, yet measurement depends heavily on self-report questionnaires and clinical observations that may be inconsistent, biased, or miss critical trends between appointments.
+          </p>
+        </div>
       </div>
-      <div className="card__body">
-        <p>
-          Traditional assessment relies on infrequent clinical visits that capture only snapshots of a person's experience. Symptoms and behaviors fluctuate daily, yet measurement depends heavily on self-report questionnaires and clinical observations that may be inconsistent, biased, or miss critical trends between appointments.
-        </p>
+
+      <div className="card margin-top--md">
+        <div className="card__header">
+          <span className="badge badge--secondary">MindLAMP's Solution</span>
+          <h3 className="margin-top--xs">Rich Measurement</h3>
+        </div>
+        <div className="card__body">
+          <p>
+            MindLAMP captures a comprehensive picture through multiple data streams that work together to fill measurement gaps:
+          </p>
+          
+          <p>
+            <strong>Digital Phenotyping:</strong> Real-time monitoring of behavioral patterns through smartphone sensors and self-reported experiences, providing continuous insight into a person's daily life rather than isolated snapshots. This approach combines both active and passive data collection methods.
+          </p>
+
+          <p>
+            <strong>Active Data:</strong> Information collected when individuals actively engage with the app, including:
+          </p>
+          <ul>
+            <li><strong>Surveys:</strong> Structured questionnaires and assessment instruments that, when combined with scheduling flexibility and contextual sensor data, enable Ecological Momentary Assessments (EMAs)—brief, repeated sampling of experiences and symptoms in real-time within natural environments, capturing how people feel and function as they go about their daily lives</li>
+            <li><strong>Cognitive Assessments:</strong> Tasks evaluating domains including memory, attention, processing speed, executive function, and emotion recognition</li>
+            <li><strong>Therapeutic Activities:</strong> Interactive exercises such as journaling, skill-building tools, wellness practices, and psychoeducation</li>
+            <li><strong>Metadata:</strong> Detailed information about how people interact with these activities—such as response patterns, completion times, engagement timing, and content preferences—offering additional insights into participation and experience</li>
+          </ul>
+
+          <p>
+            <strong>Passive Data:</strong> Information gathered automatically in the background through smartphone sensors without requiring any effort from the user, revealing behavioral and health patterns that individuals might not notice or report themselves. Sensors can capture:
+          </p>
+          <ul>
+            <li>Location and movement patterns (GPS, device motion, accelerometer)</li>
+            <li>Physical activity (step count, activity recognition, workouts)</li>
+            <li>Sleep patterns</li>
+            <li>Device usage (screen time, app analytics)</li>
+            <li>Social and environmental context (Bluetooth and WiFi proximity, calls and texts)</li>
+            <li>Physiological measures (heart rate and variability, blood pressure, blood glucose, oxygen saturation, body temperature, respiratory rate)</li>
+            <li>Nutrition tracking</li>
+          </ul>
+
+          <p>
+            Together, these measurement approaches transform sparse clinical data into rich, continuous understanding of health and behavioral patterns.
+          </p>
+
+          <p className="margin-top--sm">
+            <Link to="https://docs.lamp.digital/using/sensors">Explore LAMP Sensors →</Link><br/>
+            <Link to="https://docs.lamp.digital/start_here/activities/activities">Explore LAMP Activities →</Link>
+          </p>
+        </div>
       </div>
-    </div>
+    </TabItem>
 
-    <div className="card margin-top--md">
-      <div className="card__header">
-        <span className="badge badge--success">MindLAMP's Solution</span>
-        <h3 className="margin-top--xs">Rich Measurement</h3>
+    <TabItem value="flexibility">
+      <div className="card">
+        <div className="card__header">
+          <span className="badge badge--secondary">The Challenge</span>
+          <h3 className="margin-top--xs">Flexibility Gaps</h3>
+        </div>
+        <div className="card__body">
+          <p>
+            Research protocols and clinical interventions often follow rigid, one-size-fits-all approaches that can't adapt to diverse study designs, institutional requirements, or individual needs. Different sites may have unique data governance requirements, while various studies need different configurations of assessments and interventions.
+          </p>
+        </div>
       </div>
-      <div className="card__body">
-        <p>
-          MindLAMP captures a comprehensive picture through multiple data streams that work together to fill measurement gaps:
-        </p>
-        
-        <p>
-          <strong>Digital Phenotyping:</strong> Real-time monitoring of behavioral patterns through smartphone sensors and self-reported experiences, providing continuous insight into a person's daily life rather than isolated snapshots. This approach combines both active and passive data collection methods.
-        </p>
 
-        <p>
-          <strong>Active Data:</strong> Information collected when individuals actively engage with the app, including:
-        </p>
-        <ul>
-          <li><strong>Surveys:</strong> Structured questionnaires and assessment instruments that, when combined with scheduling flexibility and contextual sensor data, enable Ecological Momentary Assessments (EMAs)—brief, repeated sampling of experiences and symptoms in real-time within natural environments, capturing how people feel and function as they go about their daily lives</li>
-          <li><strong>Cognitive Assessments:</strong> Tasks evaluating domains including memory, attention, processing speed, executive function, and emotion recognition</li>
-          <li><strong>Therapeutic Activities:</strong> Interactive exercises such as journaling, skill-building tools, wellness practices, and psychoeducation</li>
-          <li><strong>Metadata:</strong> Detailed information about how people interact with these activities—such as response patterns, completion times, engagement timing, and content preferences—offering additional insights into participation and experience</li>
-        </ul>
+      <div className="card margin-top--md">
+        <div className="card__header">
+          <span className="badge badge--secondary">MindLAMP's Solution</span>
+          <h3 className="margin-top--xs">Flexible Delivery</h3>
+        </div>
+        <div className="card__body">
+          <p>
+            MindLAMP's architecture is built for adaptability at every level:
+          </p>
+          
+          <ul>
+            <li><strong>API Schema & Backend:</strong> The flexible, customizable backend allows each research site or clinic to easily implement common protocols while adding site-specific content, schedules, or features as needed. Data can be stored centrally or locally to comply with institutional, state, federal, and international regulations—enabling distributed deployment or centralized administration depending on organizational needs.</li>
+            <li><strong>Configurable Components:</strong> Activities and sensors can be added, removed, and configured based on study or clinical requirements. Surveys, educational content, interventions, and sensor collection can all be tailored to specific use cases—ranging from lightweight symptom tracking to intensive multimodal data collection.</li>
+            <li><strong>Scalable Infrastructure:</strong> The platform seamlessly accommodates varying numbers of participants and study groups, with customizable notification schedules configured at the group level to align with research protocols and study design.</li>
+            <li><strong>Cortex Data Pipeline:</strong> This open-source analysis pipeline connects to the server to derive clinically useful insights from raw data—transforming streams of sensor information into meaningful metrics or extracting behavioral patterns from device data. Cortex enables specialized features and custom analysis functions that generate deeper data insights and produce interactive visualizations.</li>
+          </ul>
 
-        <p>
-          <strong>Passive Data:</strong> Information gathered automatically in the background through smartphone sensors without requiring any effort from the user, revealing behavioral and health patterns that individuals might not notice or report themselves. Sensors can capture:
-        </p>
-        <ul>
-          <li>Location and movement patterns (GPS, device motion, accelerometer)</li>
-          <li>Physical activity (step count, activity recognition, workouts)</li>
-          <li>Sleep patterns</li>
-          <li>Device usage (screen time, app analytics)</li>
-          <li>Social and environmental context (Bluetooth and WiFi proximity, calls and texts)</li>
-          <li>Physiological measures (heart rate and variability, blood pressure, blood glucose, oxygen saturation, body temperature, respiratory rate)</li>
-          <li>Nutrition tracking</li>
-        </ul>
+          <p>
+            This flexibility ensures MindLAMP can meet diverse research and clinical needs without compromising scientific rigor or data security.
+          </p>
 
-        <p>
-          Together, these measurement approaches transform sparse clinical data into rich, continuous understanding of health and behavioral patterns.
-        </p>
-
-        <p className="margin-top--sm">
-          <Link to="https://docs.lamp.digital/using/sensors">Explore LAMP Sensors →</Link><br/>
-          <Link to="https://docs.lamp.digital/start_here/activities/activities">Explore LAMP Activities →</Link>
-        </p>
+          <p className="margin-top--sm">
+            <Link to="https://docs.lamp.digital/api">Explore LAMP API Documentation →</Link><br/>
+            <Link to="https://docs.lamp.digital/data_science/cortex/what_is_cortex">Explore Cortex Documentation →</Link>
+          </p>
+        </div>
       </div>
-    </div>
-  </TabItem>
+    </TabItem>
 
-  <TabItem value="flexibility">
-    <div className="card">
-      <div className="card__header">
-        <span className="badge badge--secondary">The Challenge</span>
-        <h3 className="margin-top--xs">Flexibility Gaps</h3>
+    <TabItem value="engagement">
+      <div className="card">
+        <div className="card__header">
+          <span className="badge badge--secondary">The Challenge</span>
+          <h3 className="margin-top--xs">Engagement Gaps</h3>
+        </div>
+        <div className="card__body">
+          <p>
+            Sustained participation in research studies and ongoing clinical monitoring is difficult to maintain. Traditional approaches require repeated in-person visits, create burdens for participants, and provide limited feedback to individuals about their own data—reducing motivation to stay engaged over time.
+          </p>
+        </div>
       </div>
-      <div className="card__body">
-        <p>
-          Research protocols and clinical interventions often follow rigid, one-size-fits-all approaches that can't adapt to diverse study designs, institutional requirements, or individual needs. Different sites may have unique data governance requirements, while various studies need different configurations of assessments and interventions.
-        </p>
-      </div>
-    </div>
 
-    <div className="card margin-top--md">
-      <div className="card__header">
-        <span className="badge badge--success">MindLAMP's Solution</span>
-        <h3 className="margin-top--xs">Flexible Delivery</h3>
-      </div>
-      <div className="card__body">
-        <p>
-          MindLAMP's architecture is built for adaptability at every level:
-        </p>
-        
-        <ul>
-          <li><strong>API Schema & Backend:</strong> The flexible, customizable backend allows each research site or clinic to easily implement common protocols while adding site-specific content, schedules, or features as needed. Data can be stored centrally or locally to comply with institutional, state, federal, and international regulations—enabling distributed deployment or centralized administration depending on organizational needs.</li>
-          <li><strong>Configurable Components:</strong> Activities and sensors can be added, removed, and configured based on study or clinical requirements. Surveys, educational content, interventions, and sensor collection can all be tailored to specific use cases—ranging from lightweight symptom tracking to intensive multimodal data collection.</li>
-          <li><strong>Scalable Infrastructure:</strong> The platform seamlessly accommodates varying numbers of participants and study groups, with customizable notification schedules configured at the group level to align with research protocols and study design.</li>
-          <li><strong>Cortex Data Pipeline:</strong> This open-source analysis pipeline connects to the server to derive clinically useful insights from raw data—transforming streams of sensor information into meaningful metrics or extracting behavioral patterns from device data. Cortex enables specialized features and custom analysis functions that generate deeper data insights and produce interactive visualizations.</li>
-        </ul>
+      <div className="card margin-top--md">
+        <div className="card__header">
+          <span className="badge badge--secondary">MindLAMP's Solution</span>
+          <h3 className="margin-top--xs">Reciprocal Engagement</h3>
+        </div>
+        <div className="card__body">
+          <p>
+            MindLAMP creates a two-way flow of information that keeps participants and patients actively invested:
+          </p>
+          
+          <ul>
+            <li><strong>Universal Accessibility:</strong> Available as native Android and iOS apps, MindLAMP meets people where they are—on devices they already carry. This anywhere, anytime access is especially valuable for individuals in remote or underserved areas where in-person care is limited, and accommodates diverse participant needs and preferences.</li>
+            <li><strong>Immediate Visibility:</strong> Both the mobile app and web-based dashboard provide real-time access to collected data. Participants can review their own patterns and progress, while clinicians and researchers gain near-real-time insights to inform decision-making. This transparency helps individuals understand their data and see the value of their participation.</li>
+            <li><strong>Interactive Features:</strong> The patient portal allows individuals to review all captured data, while the dashboard enables care teams to view trends and communicate with participants through an integrated messaging function in the app and dashboard. Psychoeducation content, skill-building exercises, wellness activities, and self-reflection tools offer immediate value to participants beyond data collection.</li>
+            <li><strong>Meaningful Feedback:</strong> Interactive visualizations make complex data understandable and actionable for both clinical teams and individuals, transforming raw numbers into insights about daily patterns, symptom trends, and behavioral changes.</li>
+          </ul>
 
-        <p>
-          This flexibility ensures MindLAMP can meet diverse research and clinical needs without compromising scientific rigor or data security.
-        </p>
+          <p>
+            This reciprocal relationship—where participants both contribute data and receive valuable insights and support in return—sustains engagement far beyond what traditional approaches achieve, making long-term monitoring and support genuinely feasible.
+          </p>
 
-        <p className="margin-top--sm">
-          <Link to="https://docs.lamp.digital/api">Explore LAMP API Documentation →</Link><br/>
-          <Link to="https://docs.lamp.digital/data_science/cortex/what_is_cortex">Explore Cortex Documentation →</Link>
-        </p>
+          <p className="margin-top--sm">
+            <Link to="https://dashboard.lamp.digital/#/researcher/researcher1/users/">Demo the Dashboard as a Researcher→</Link><br/>
+            <Link to="https://dashboard.lamp.digital/#/participant/U123456789/portal">Demo the App as a Participant→</Link>
+          </p>
+        </div>
       </div>
-    </div>
-  </TabItem>
+    </TabItem>
+  </Tabs>
+</div>
 
-  <TabItem value="engagement">
-    <div className="card">
-      <div className="card__header">
-        <span className="badge badge--secondary">The Challenge</span>
-        <h3 className="margin-top--xs">Engagement Gaps</h3>
-      </div>
-      <div className="card__body">
-        <p>
-          Sustained participation in research studies and ongoing clinical monitoring is difficult to maintain. Traditional approaches require repeated in-person visits, create burdens for participants, and provide limited feedback to individuals about their own data—reducing motivation to stay engaged over time.
-        </p>
-      </div>
-    </div>
-
-    <div className="card margin-top--md">
-      <div className="card__header">
-        <span className="badge badge--success">MindLAMP's Solution</span>
-        <h3 className="margin-top--xs">Reciprocal Engagement</h3>
-      </div>
-      <div className="card__body">
-        <p>
-          MindLAMP creates a two-way flow of information that keeps participants and patients actively invested:
-        </p>
-        
-        <ul>
-          <li><strong>Universal Accessibility:</strong> Available as native Android and iOS apps, MindLAMP meets people where they are—on devices they already carry. This anywhere, anytime access is especially valuable for individuals in remote or underserved areas where in-person care is limited, and accommodates diverse participant needs and preferences.</li>
-          <li><strong>Immediate Visibility:</strong> Both the mobile app and web-based dashboard provide real-time access to collected data. Participants can review their own patterns and progress, while clinicians and researchers gain near-real-time insights to inform decision-making. This transparency helps individuals understand their data and see the value of their participation.</li>
-          <li><strong>Interactive Features:</strong> The patient portal allows individuals to review all captured data, while the dashboard enables care teams to view trends and communicate with participants through an integrated messaging function in the app and dashboard. Psychoeducation content, skill-building exercises, wellness activities, and self-reflection tools offer immediate value to participants beyond data collection.</li>
-          <li><strong>Meaningful Feedback:</strong> Interactive visualizations make complex data understandable and actionable for both clinical teams and individuals, transforming raw numbers into insights about daily patterns, symptom trends, and behavioral changes.</li>
-        </ul>
-
-        <p>
-          This reciprocal relationship—where participants both contribute data and receive valuable insights and support in return—sustains engagement far beyond what traditional approaches achieve, making long-term monitoring and support genuinely feasible.
-        </p>
-
-        <p className="margin-top--sm">
-          <Link to="https://dashboard.lamp.digital/#/researcher/researcher1/users/">Demo the Dashboard as a Researcher→</Link><br/>
-          <Link to="https://dashboard.lamp.digital/#/participant/U123456789/portal">Demo the App as a Participant→</Link>
-        </p>
-      </div>
-    </div>
-  </TabItem>
-</Tabs>
 ---
 
 ## Platform Components
