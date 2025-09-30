@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklamp_platform=self.webpackChunklamp_platform||[]).push([[2498],{92498:(e,a,r)=>{r.d(a,{createArchitectureServices:()=>c.S});var c=r(73009);r(58198)}}]);
