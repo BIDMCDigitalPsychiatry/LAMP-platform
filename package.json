@@ -158,7 +158,18 @@
           "indexPages": true,
           "hashed": true
         }
-      ]
+      ],
+          [
+      "@docusaurus/plugin-client-redirects",
+      {
+        "redirects": [
+          {
+            "from": "/docs/02-quick_links/publications",
+            "to": "https://www.digitalpsych.org/mindlamp-publications.html"
+          }
+        ]
+      }
+    ]
     ]
   }
 }
