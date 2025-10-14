@@ -3,8 +3,12 @@ title: Publications with LAMP
 sidebar_label: Publications with LAMP
 ---
 
-<script>
-  if (typeof window !== 'undefined') {
-    window.location.href = 'https://www.digitalpsych.org/mindlamp-publications.html';
-  }
-</script>
+import React, {useEffect} from 'react';
+
+function ExternalRedirect() {
+  useEffect(() => {
+    window.location.replace('https://www.digitalpsych.org/mindlamp-publications.html');
+  }, []);
+}
+
+<ExternalRedirect />
