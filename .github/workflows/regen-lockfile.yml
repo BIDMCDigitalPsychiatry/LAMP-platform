@@ -26,13 +26,12 @@ jobs:
       - name: Create/refresh package-lock.json
         run: npm install --package-lock-only
 
-      # Open a PR if the lockfile changed (works with protected branches)
       - name: Create PR if lockfile changed
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: chore: refresh package-lock.json (sync @docusaurus to 3.7.0)
-          title: chore: refresh package-lock.json (sync @docusaurus to 3.7.0)
-          body: Automated lockfile refresh for the Docusaurus 3.7.0 update.
+          commit-message: "chore: refresh package-lock.json (sync @docusaurus to 3.7.0)"
+          title: "chore: refresh package-lock.json (sync @docusaurus to 3.7.0)"
+          body: "Automated lockfile refresh for the Docusaurus 3.7.0 update."
           branch: chore/refresh-lockfile-docusaurus-3.7.0
           base: master
           add-paths: |
