@@ -164,7 +164,7 @@
       {
         "redirects": [
           {
-            "from": "/docs/02-quick_links/publications",
+            "from": "/publications",
             "to": "https://www.digitalpsych.org/mindlamp-publications.html"
           }
         ]
