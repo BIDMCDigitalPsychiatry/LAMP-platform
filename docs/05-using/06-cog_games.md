@@ -69,7 +69,7 @@ Scoring is based on the number of correct cats or dogs selected within the timef
 *"In this game, you will see a screen with many boxes. These boxes will 'lift', revealing either a dog, cat, or nothing behind them. Your task is to tap the correct boxes, based on what is behind each box. The instructions for which boxes are correct will change depending on the level, so pay attention to the animals!"*
 
 
-## DCog (coming soon!)
+## DCog
 Similar to the Cats and Dogs game, the Dcog game presents the user with an array of boxes and, after briefly revealing what is hidden between them, asks the user to click on the boxes behind which dogs are hidden; the game itself is similar to its iBOCA3 counterpart. If the user correctly selects all of the boxes with dogs behind them, the next level has 2 additional boxes and 1 more dog; if, on the other hand, the user does not correctly select all of the boxes with dogs behind them, the next level has 2 fewer boxes and 1 less dog. The number of boxes on the screen caps at 10, and the game lasts no longer than 2 minutes. 
 **Domains assessed: visual and working memory, attention, response control, and set-shifting**
 <details>
@@ -157,7 +157,7 @@ Scoring is based on whether the user correctly identifies the emotion expressed 
 *In this task you will be presented with up to 10 facial images and asked to identify the emotion expressed by each one from a list of 5 emotions.*
 
 
-## Fragmented Letters (coming soon!)
+## Fragmented Letters
 In the Fragmented Letters game, the user is presented with letters of the alphabet written in black ink on a white background that have been slightly "fragmented", in that some parts of the letters blend in with the background. Fragmentation is understood as the number of pixels in the letter that are white instead of black, out of the total number of pixels normally in the letter. The user must attempt to verbally identify the fragmented letter: if the user correctly identifies the letter, the next letter in the sequence is even more fragmented by 5%; if the user, however, does not correctly identify the letter, the next letter in the sequence is less fragmented by 5%. The game concludes after the user has made two errors.
 **Domains assessed: Visual/perceptual** 
 
@@ -184,7 +184,7 @@ Scoring is based on the the number of letters the user correctly identifies.
 To be added.
 
 
-## Funny Memory Game (coming soon!)
+## Funny Memory Game
 The Funny Memory Game, similarly to the iBOCA3 Associative Memory Game, tests the user's associative memory by presenting a series of images in pairs and asking the user (1) to verbally identify the items in the images during the initial exposure phase; (2) to verbally recall the images during the recall phase, following a delay of between 1 to 5 minutes, during which the user completes some memory surveys; and (3) to verbally recognize either what is missing from a given image or which image had been presented before.  
 **Domains assessed: associative memory**
 
@@ -315,7 +315,7 @@ Scoring is based on the time taken to complete each level as well as the number 
 
 *In this game, you can tilt your phone to control a small ball seen on your screen. Try to navigate the ball out of the center of the maze and into the open space. The faster you escape, the more points you will accrue.*
 
-## Memory Game (coming soon!)
+## Memory Game
 The memory game assesses spatial and temporal memory by present the user with a sequence of images and prompts the user to recreate the sequence given by selecting the appropriate boxes in order.
 <details>
     <summary> References </summary>
@@ -436,8 +436,8 @@ Researchers and clinicians can decide to include a pop-up at the conclusion of t
 
 **Backwards Spatial Span:** "*You will see a grid of boxes. The boxes in a grid will light up in a certain order. Remember that order, and then tap the boxes in the REVERSE order in which they lit up. Each level will have more boxes light up in the sequence. See how far you can get!"*
 
-## Speech Recording (coming soon!)
-The Speech Recording presents the user with a series of prompt specified by the researcher and records the user's responses; the user can record up to 1 minute of audio.
+## Speech Recording
+The Speech Recording presents the user with a series of prompt specified by the researcher and records the user's responses; the user can record up to 4 minutes of audio, and can pause and play the recording as needed. If the user is not satisfied with their recording, they can press the ‘Clear’ button and re-record their audio. If they are satisfied with their recording, they can press the ‘Upload’ button.
 **Domain assessed: verbal**
 
 ### Sample game play
@@ -447,7 +447,7 @@ Video to be added.
 </p>
 
 ### Customization
-Description and image to be added.
+Researchers can change the wording of the instruction for recording and re-recording the audio. By default, it says “Press the microphone to record” and “Click upload or clear to record again”.
 
 ### Scoring
 To be determined.
@@ -498,7 +498,7 @@ Scoring is based on the amount of money the user has at the end of the game.
 *"The game presents you with two wheels that can be spun by selecting one of four buttons at the bottom of the screen. The colors of the buttons do not correspond to the colors on the wheel. Each spin can result in a win or loss of money, with the wheel at the top displaying the money you won and the bottom displaying the money lost. The total amount remaining is displayed at the top of the screen. You start with $2000 and have 20 spins per game by default. Points at the end of a session are represented in the amount of money you have."*
 
 
-## Trails B (coming soon!)
+## Trails B
 Part of the Trails Making Test, Trails B presents the user with an array of dots containing numbers and letters and requires the user to select the dots in ascending order, tapping on numbers and letters in alternation. Unlike its paper-and-pencil counterpart, this digital adaptation allows the user to discretely tap each of the dots, without having to maintain constant contact with the phone screen.
 **Domain assessed: frontoexecutive**
 
