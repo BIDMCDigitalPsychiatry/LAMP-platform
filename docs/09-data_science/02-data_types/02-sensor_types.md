@@ -4,12 +4,6 @@ All event streams in the LAMP API are catalogued by a timestamp and specific "bl
 
 Active sensor events are produced on a rolling basis in the background via interactions by a Participant. They are transferred to the **Platform Server** automatically by using the Activity API written in JavaScript. A list of existing Sensors is provided below with name and description; a live server instance must be consulted for data schema information (see GET /sensor_spec). Implementations for these hardware sensors are provided in the GitHub repository.
 
-:::warning
-
-**All permission requests must be accepted on both iOS and Android mobile apps, regardless of whether the appropriate `Sensor` is activated.** (i.e. `Call & Text` access must be approved by the user even if `lamp.sms` and `lamp.calls` is not added for the study or clinic.)
-
-:::
-
 ## Sensor Sampling Rates
 
 Different sensors collect and report data at different frequencies. The data sampling rate of most sensors falls into one of three broad categories:
