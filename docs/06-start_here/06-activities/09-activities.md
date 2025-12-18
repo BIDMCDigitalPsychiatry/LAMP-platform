@@ -43,6 +43,12 @@
 ### Voice recording
 ![](assets/voice_recording.png)
 
+### Digit Span
+![](assets/digital_span.png)
+
+### Trails B
+![](assets/trails_b_ex.png)
+
 ## Manage
 
 ### Journal
@@ -65,43 +71,4 @@
 ### Scratch Card
 ![](assets/scratch_ex.png)
 
-# Activities Coming Soon
 
-## Assess
-### 3D Figure Copy
-![](assets/3D_fig_ex.png)
-
-### Digit Span
-![](assets/digital_span.png)
-
-### N-Back
-![](assets/nback_ex.png)
-
-### Serial 7s
-![](assets/serial_ex.png)
-
-### Simple Memory
-![](assets/simple_memory_ex.png)
-
-### Temporal Order
-![](assets/temp_order.png)
-
-### Trails B
-![](assets/trails_b_ex.png)
-
-### Trails B Dot Touch
-![](assets/trails_b_dot_ex.png)
-
-### Visual Association
-![](assets/visual_assoc.png)
-
-## Manage
-
-### Goal Setting
-![](assets/goal_setting.png)
-
-### Hope Box
-![](assets/hope_box_ex.png)
-
-### Medication Tracker
-![](assets/medication_ex.png)
