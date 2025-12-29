@@ -12,7 +12,7 @@ The Core is responsible for:
 - Maintaining shared infrastructure and analytics
 - Supporting teams throughout the full lifecycle of a project
 
-The Core supports teams across five phases:
+The Core requires a business agreement (established after Phase 1) to support teams throughout their project timeline:
 
 ### Phase 1: Study & Clinical Design Consultation (free, pre-contracting)
 
@@ -23,7 +23,7 @@ The Core supports teams across five phases:
 - Flagging study designs associated with missing, low-quality, or non-comparable data
 - Advising on appropriate use cases for mindLAMP based on prior deployments
 
-### Phase 2: Protocol Optimization & Participant-Centered Design (after contracting)
+### Phase 2: Protocol Optimization & Participant-Centered Design
 
 - Advising on EMA frequency and timing
 - Advising on expected engagement patterns and drop-off points
