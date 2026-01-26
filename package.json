@@ -55,8 +55,8 @@
     "node": ">=18.0"
   },
   "docusaurus": {
-    "title": "LAMP Platform",
-    "tagline": "The LAMP Platform documentation.",
+    "title": "mindLAMP",
+    "tagline": "One platform. Infinite configurations.",
     "url": "https://docs.lamp.digital",
     "favicon": "/logo.png",
     "organizationName": "BIDMCDigitalPsychiatry",
@@ -84,13 +84,18 @@
         }
       ],
       "navbar": {
-        "title": "LAMP Platform",
+        "title": "mindLAMP",
         "hideOnScroll": false,
         "logo": {
-          "alt": "LAMP Platform",
-          "src": "logo.png"
+          "alt": "mindLAMP",
+          "src": "img/logo.svg"
         },
         "items": [
+          {
+            "label": "Documentation",
+            "position": "left",
+            "to": "/docs"
+          },
           {
             "label": "API",
             "position": "left",
@@ -134,6 +139,9 @@
           ]
           },
           "blog": false,
+          "theme": {
+            "customCss": "./src/css/custom.css"
+          },
           "googleAnalytics": {
             "trackingID": "UA-192736629-1"
           }

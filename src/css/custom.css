@@ -1,0 +1,46 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+.navbar-bold {
+  font-weight: 700;
+}
+
+/* mindLAMP Color Scheme */
+:root {
+  /* Primary - Darker Blue #5b9bfc */
+  --ifm-color-primary: #5b9bfc;
+  --ifm-color-primary-dark: #4890fc;
+  --ifm-color-primary-darker: #2878fc;
+  --ifm-color-primary-darkest: #0344b8;
+  --ifm-color-primary-light: #80b2fd;
+  --ifm-color-primary-lighter: #a5c9fe;
+  --ifm-color-primary-lightest: #e7f1ff;
+
+  /* Secondary/Accent colors */
+  --mindlamp-mint: #3dbf8f;
+  --mindlamp-yellow: #fcc419;
+  --mindlamp-coral: #fc6b52;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(91, 155, 252, 0.1);
+}
+
+/* Dark mode - slightly brighter primary for better contrast */
+[data-theme='dark'] {
+  --ifm-color-primary: #80b2fd;
+  --ifm-color-primary-dark: #5b9bfc;
+  --ifm-color-primary-darker: #4890fc;
+  --ifm-color-primary-darkest: #2878fc;
+  --ifm-color-primary-light: #a5c9fe;
+  --ifm-color-primary-lighter: #b8d4fe;
+  --ifm-color-primary-lightest: #e7f1ff;
+
+  --docusaurus-highlighted-code-line-bg: rgba(91, 155, 252, 0.2);
+}
+
+/* Hide sidebar items with hidden-sidebar class */
+.hidden-sidebar {
+  display: none;
+}
