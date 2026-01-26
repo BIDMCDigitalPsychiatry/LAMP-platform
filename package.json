@@ -58,7 +58,7 @@
     "title": "mindLAMP",
     "tagline": "One platform. Infinite configurations.",
     "url": "https://docs.lamp.digital",
-    "favicon": "/logo.png",
+    "favicon": "/img/logo.svg",
     "organizationName": "BIDMCDigitalPsychiatry",
     "projectName": "LAMP-platform",
     "baseUrl": "/",
@@ -69,7 +69,7 @@
       "defaultMode": "light",
       "disableSwitch": false,
       "respectPrefersColorScheme": true,
-      "image": "logo.png",
+      "image": "img/logo.svg",
       "languageTabs": [
         {
           "tabName": "cURL",
