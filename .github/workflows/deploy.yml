@@ -43,6 +43,8 @@ jobs:
         run: npm run sync:publications
 
       - name: Build website
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: npm run build
 
       - name: Setup Pages
