@@ -20,7 +20,7 @@ function HeroSection() {
           studies and clinical workflows, with data stored in a uniform schema for cross-study comparison.
         </p>
         <div className={styles.heroButtons}>
-          <Link className={styles.btnPrimary} to="/quick_links/interest">
+          <Link className={styles.btnPrimary} to="/get-started">
             Request Consultation
           </Link>
           <Link className={styles.btnSecondary} to="/docs">
@@ -745,7 +745,7 @@ function CoreSection() {
         </div>
 
         <div className={styles.textCenter}>
-          <Link className={styles.btnLight} to="/quick_links/interest">
+          <Link className={styles.btnLight} to="/get-started">
             Learn About Core Services
           </Link>
         </div>
@@ -767,7 +767,7 @@ function CtaSection() {
           <div className={styles.ctaOption}>
             <h3>Request a Consultation</h3>
             <p>Discuss your needs, see examples from similar projects, and determine fit.</p>
-            <Link className={styles.ctaOptionButton} to="/quick_links/interest">
+            <Link className={styles.ctaOptionButton} to="/get-started">
               Schedule Free Consultation
             </Link>
           </div>

@@ -96,14 +96,15 @@
         },
         "items": [
           {
+            "label": "Get Started",
+            "position": "left",
+            "to": "/get-started",
+            "className": "navbar-bold"
+          },
+          {
             "label": "Documentation",
             "position": "left",
             "to": "/docs"
-          },
-          {
-            "label": "API",
-            "position": "left",
-            "to": "/api"
           },
           {
             "label": "Publications",
@@ -111,25 +112,29 @@
             "to": "/publications"
           },
           {
-            "label": "Community",
-            "position": "right",
-            "items": [
-              {
-                "label": "GitHub",
-                "href": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/"
-              },
-              {
-                "label": "Contact",
-                "href": "mailto:team@digitalpsych.org"
-              }
-            ]
+            "label": "API",
+            "position": "left",
+            "to": "/api"
           }
         ]
       },
       "footer": {
         "style": "dark",
-        "links": [],
-        "copyright": "2025 LAMP Consortium & Division of Digital Psychiatry @ BIDMC"
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/BIDMCDigitalPsychiatry"
+          },
+          {
+            "label": "Lab Website",
+            "href": "https://www.digitalpsych.org"
+          },
+          {
+            "label": "Contact Us",
+            "href": "mailto:team@digitalpsych.org"
+          }
+        ],
+        "copyright": "Copyright © 2026 <a href=\"https://www.digitalpsych.org\" target=\"_blank\" rel=\"noopener noreferrer\">Division of Digital Psychiatry @ BIDMC</a>"
       }
     },
     "presets": [
