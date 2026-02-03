@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklamp_platform=globalThis.webpackChunklamp_platform||[]).push([[8582],{7231:a=>{a.exports=JSON.parse('{"name":"docusaurus-plugin-openapi","id":"api"}')}}]);
