@@ -36,8 +36,8 @@ try {
   publicationsData = [];
 }
 
-// Color palette for cards (cycling through these)
-const CARD_COLORS = [
+// Color palette for cards - assigned by year
+const COLOR_PALETTE = [
   '#5b9bfc', // primary blue
   '#3dbf8f', // mint
   '#9C27B0', // purple
@@ -45,6 +45,13 @@ const CARD_COLORS = [
   '#E91E63', // pink
   '#607D8B', // blue-grey
 ];
+
+// Get color for a year (consistent color per year)
+const getYearColor = (year: number | null): string => {
+  if (!year) return COLOR_PALETTE[0];
+  // Use year to determine color - same year always gets same color
+  return COLOR_PALETTE[year % COLOR_PALETTE.length];
+};
 
 const PublicationsList: React.FC = () => {
   const [selectedYears, setSelectedYears] = useState<Set<number>>(new Set());
@@ -371,10 +378,10 @@ const PublicationsList: React.FC = () => {
 
       {/* Publications Grid */}
       <section className={styles.publicationsGrid}>
-        {filteredPublications.map((pub, index) => {
+        {filteredPublications.map((pub) => {
           const safeId = getSafeId(pub);
           const isExpanded = expandedCards.has(pub.doi || safeId);
-          const cardColor = CARD_COLORS[index % CARD_COLORS.length];
+          const cardColor = getYearColor(pub.year);
 
           return (
             <article
