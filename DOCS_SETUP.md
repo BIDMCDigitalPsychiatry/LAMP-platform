@@ -238,6 +238,43 @@ Run `git submodule update --init --recursive` to initialize the submodule.
 2. Delete `node_modules` and run `npm install`
 3. Check for TypeScript errors with `npm run typecheck`
 
+## Ongoing Maintenance
+
+### Making Documentation Edits
+The deployment process is automatic. Simply:
+1. Edit files locally (e.g., in `docs/` or `src/`)
+2. Commit and push to master:
+   ```bash
+   git add .
+   git commit -m "Your message"
+   git push origin master
+   ```
+3. GitHub Actions automatically builds and deploys
+
+You can also edit files directly on GitHub - the workflow triggers on any push to master.
+
+### Re-syncing Publications
+To update publications after adding new entries in Notion (without code changes):
+1. Go to GitHub → Actions → "Deploy to GitHub Pages"
+2. Click "Run workflow" → "Run workflow"
+
+### NOTION_TOKEN Expiration
+If the Notion integration token is regenerated:
+1. Go to GitHub repo → Settings → Secrets → Actions
+2. Update the `NOTION_TOKEN` secret with the new value
+
+### Notion Database Schema Changes
+If field names change in Notion, update `scripts/sync-publications.mjs` to match the new property names.
+
+### Updating the LAMP-protocol Submodule
+To pull the latest OpenAPI spec:
+```bash
+git submodule update --remote LAMP-protocol
+git add LAMP-protocol
+git commit -m "Update LAMP-protocol submodule"
+git push
+```
+
 ## Contributing
 
 1. Create a feature branch
