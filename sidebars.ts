@@ -11,7 +11,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'link',
           label: 'Publications with LAMP',
-          href: 'https://www.digitalpsych.org/mindlamp-publications.html',
+          href: '/publications',
         },
       ],
     },

@@ -7,6 +7,9 @@
   },
   "scripts": {
     "docusaurus": "docusaurus",
+    "sync:publications": "node scripts/sync-publications.mjs",
+    "prestart": "npm run sync:publications",
+    "prebuild": "npm run sync:publications",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
@@ -18,6 +21,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "@docusaurus/core": "3.7.0",
     "@docusaurus/plugin-content-docs": "3.7.0",
     "@docusaurus/plugin-client-redirects": "3.7.0",
@@ -102,6 +106,11 @@
             "to": "/api"
           },
           {
+            "label": "Publications",
+            "position": "left",
+            "to": "/publications"
+          },
+          {
             "label": "Community",
             "position": "right",
             "items": [
@@ -170,12 +179,7 @@
           [
       "@docusaurus/plugin-client-redirects",
       {
-        "redirects": [
-          {
-            "from": "/publications",
-            "to": "https://www.digitalpsych.org/mindlamp-publications.html"
-          }
-        ]
+        "redirects": []
       }
     ]
     ]

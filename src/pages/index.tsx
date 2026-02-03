@@ -581,7 +581,7 @@ function EvidenceSection() {
         </div>
 
         <div className={styles.textCenter}>
-          <Link className={styles.btnPrimaryAlt} to="https://www.digitalpsych.org/mindlamp-publications.html">
+          <Link className={styles.btnPrimaryAlt} to="/publications">
             Browse All Publications
           </Link>
         </div>
