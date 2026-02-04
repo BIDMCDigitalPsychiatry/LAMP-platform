@@ -10,41 +10,46 @@ import styles from './index.module.css';
 function HeroSection() {
   return (
     <header className={styles.hero}>
-      <div className={styles.heroContent}>
-        <div className={styles.heroTagline}>Open-source digital health platform</div>
-        <Heading as="h1" className={styles.heroTitle}>
-          One platform. Infinite configurations.
-        </Heading>
-        <p className={styles.heroSubtitle}>
-          mindLAMP is a modular digital health platform backed by 120+ peer-reviewed publications. The same platform supports entirely different
-          studies and clinical workflows, with data stored in a uniform schema for cross-study comparison.
-        </p>
-        <div className={styles.heroButtons}>
-          <Link className={styles.btnPrimary} to="/get-started">
-            Request Consultation
-          </Link>
-          <Link className={styles.btnSecondary} to="/docs">
-            Explore Documentation
-          </Link>
+      <div className={styles.heroInner}>
+        <div className={styles.heroContent}>
+          <div className={styles.heroTagline}>Open-source digital health platform</div>
+          <Heading as="h1" className={styles.heroTitle}>
+            One platform.<br />
+            Infinite configurations.
+          </Heading>
+          <p className={styles.heroSubtitle}>
+            mindLAMP is a modular digital health platform backed by 120+ peer-reviewed publications. The same platform supports entirely different
+            studies and clinical workflows, with data stored in a uniform schema for cross-study comparison.
+          </p>
+          <div className={styles.heroButtons}>
+            <Link className={styles.btnPrimary} to="/get-started">
+              Request Consultation
+            </Link>
+            <Link className={styles.btnSecondary} to="/docs">
+              Explore Documentation
+            </Link>
+          </div>
+          <div className={styles.trustBadges}>
+            <div className={styles.trustBadge}>
+              <span className={styles.trustNumber}>50+</span>
+              <span className={styles.trustLabel}>Sites Worldwide</span>
+            </div>
+            <div className={styles.trustBadge}>
+              <span className={styles.trustNumber}>13</span>
+              <span className={styles.trustLabel}>Countries</span>
+            </div>
+            <div className={styles.trustBadge}>
+              <span className={styles.trustNumber}>10</span>
+              <span className={styles.trustLabel}>Languages</span>
+            </div>
+            <div className={styles.trustBadge}>
+              <span className={styles.trustNumber}>7</span>
+              <span className={styles.trustLabel}>Years</span>
+            </div>
+          </div>
         </div>
-
-        <div className={styles.trustBadges}>
-          <div className={styles.trustBadge}>
-            <span className={styles.trustNumber}>50+</span>
-            <span className={styles.trustLabel}>Sites Worldwide</span>
-          </div>
-          <div className={styles.trustBadge}>
-            <span className={styles.trustNumber}>13</span>
-            <span className={styles.trustLabel}>Countries</span>
-          </div>
-          <div className={styles.trustBadge}>
-            <span className={styles.trustNumber}>10</span>
-            <span className={styles.trustLabel}>Languages</span>
-          </div>
-          <div className={styles.trustBadge}>
-            <span className={styles.trustNumber}>7</span>
-            <span className={styles.trustLabel}>Years Clinical Use</span>
-          </div>
+        <div className={styles.heroLogo}>
+          <img src="/img/logo.svg" alt="mindLAMP" className={styles.heroLogoImg} />
         </div>
       </div>
     </header>

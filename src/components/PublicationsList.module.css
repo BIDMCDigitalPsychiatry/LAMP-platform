@@ -13,10 +13,10 @@
 
 /* ========== HERO SECTION ========== */
 .hero {
-  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary) 100%);
+  background: linear-gradient(135deg, #0a1628 0%, #0344b8 40%, #5b9bfc 100%);
   color: #fff;
   text-align: center;
-  padding: 4rem 2rem 3rem;
+  padding: 5rem 2rem 3.5rem;
   margin: -2rem -1rem 0;
   border-radius: 0 0 24px 24px;
 }

@@ -102,14 +102,14 @@
             "className": "navbar-bold"
           },
           {
-            "label": "Documentation",
-            "position": "left",
-            "to": "/docs"
-          },
-          {
             "label": "Publications",
             "position": "left",
             "to": "/publications"
+          },
+          {
+            "label": "Documentation",
+            "position": "left",
+            "to": "/docs"
           },
           {
             "label": "API",

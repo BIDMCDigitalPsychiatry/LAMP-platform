@@ -22,14 +22,61 @@
   flex-direction: column;
   justify-content: center;
   padding: 6rem 2rem 4rem;
-  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary) 100%);
+  background: linear-gradient(135deg, #0a1628 0%, #0344b8 40%, #5b9bfc 100%);
   color: #fff;
-  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroInner {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .heroContent {
-  max-width: 900px;
-  margin: 0 auto;
+  flex: 1;
+  text-align: left;
+  max-width: 650px;
+}
+
+.heroLogo {
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.heroLogo::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
+  width: 1500px;
+  height: 600px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(91, 155, 252, 0.5) 10%,
+    rgba(91, 155, 252, 0.3) 30%,
+    rgba(255, 255, 255, 0.1) 60%,
+    transparent 100%
+  );
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.heroLogoImg {
+  width: 550px;
+  height: 550px;
+  opacity: 1;
+  filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.4));
 }
 
 .heroTagline {
@@ -54,17 +101,17 @@
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2.5rem;
-  max-width: 800px;
-  margin-left: auto;
+  max-width: 750px;
+  margin-left: 0;
   margin-right: auto;
 }
 
 .heroButtons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .btnPrimary {
@@ -110,12 +157,18 @@
 /* Trust Badges */
 .trustBadges {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 3rem;
   flex-wrap: wrap;
-  padding-top: 2rem;
+  padding-top: 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 2rem;
+  margin-top: 3rem;
+  max-width: 750px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .trustBadge {
@@ -145,18 +198,46 @@
     padding: 4rem 1.5rem 3rem;
   }
 
+  .heroInner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroContent {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .heroLogo {
+    display: none;
+  }
+
+  .heroLogoImg {
+    display: none;
+  }
+
   .heroTitle {
     font-size: 2.25rem;
   }
 
   .heroSubtitle {
     font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .trustBadges {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
