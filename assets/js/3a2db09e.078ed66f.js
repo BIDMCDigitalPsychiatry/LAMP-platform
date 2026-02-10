@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklamp_platform=globalThis.webpackChunklamp_platform||[]).push([[8121],{68070:n=>{n.exports=JSON.parse('{"tags":[{"label":"Announcements","permalink":"/blog/tags/announcements","description":"News and announcements about mindLAMP","count":1}]}')}}]);
