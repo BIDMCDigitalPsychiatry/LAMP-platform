@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 6rem 2rem 4rem;
-  background: linear-gradient(135deg, #0a1628 0%, #0344b8 40%, #5b9bfc 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, var(--mindlamp-blue) 100%);
   color: #fff;
   text-align: center;
 }
@@ -86,7 +86,7 @@
 
 .optionNumber {
   display: inline-block;
-  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #5b9bfc 100%);
+  background: var(--mindlamp-blue);
   color: #fff;
   font-size: 0.85rem;
   font-weight: 600;
@@ -295,4 +295,29 @@
     font-size: 0.95rem;
     padding: 0 1.25rem 1rem;
   }
+}
+
+/* ========== DARK MODE OVERRIDES ========== */
+
+[data-theme='dark'] .optionCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .optionFeatures {
+  background: rgba(134, 182, 255, 0.1);
+}
+
+[data-theme='dark'] .optionNote {
+  background: rgba(255, 214, 69, 0.1);
+  border-color: rgba(255, 214, 69, 0.3);
+}
+
+[data-theme='dark'] .faqItem {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .faqQuestion:hover {
+  background: rgba(134, 182, 255, 0.1);
 }

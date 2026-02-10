@@ -9,38 +9,175 @@
 
 /* mindLAMP Color Scheme */
 :root {
-  /* Primary - Darker Blue #5b9bfc */
-  --ifm-color-primary: #5b9bfc;
-  --ifm-color-primary-dark: #4890fc;
-  --ifm-color-primary-darker: #2878fc;
-  --ifm-color-primary-darkest: #0344b8;
-  --ifm-color-primary-light: #80b2fd;
-  --ifm-color-primary-lighter: #a5c9fe;
-  --ifm-color-primary-lightest: #e7f1ff;
+  /* Primary - Blue (Infima scale) */
+  --ifm-color-primary: #86b6ff;
+  --ifm-color-primary-dark: #6aa3ff;
+  --ifm-color-primary-darker: #5c99ff;
+  --ifm-color-primary-darkest: #2b7aff;
+  --ifm-color-primary-light: #a2c9ff;
+  --ifm-color-primary-lighter: #b0d1ff;
+  --ifm-color-primary-lightest: #e8f2ff;
 
-  /* Secondary/Accent colors */
-  --mindlamp-mint: #3dbf8f;
-  --mindlamp-yellow: #fcc419;
-  --mindlamp-coral: #fc6b52;
+  /* ========== mindLAMP Brand Colors ========== */
 
+  /* Blue - Primary brand color */
+  --mindlamp-blue: #86b6ff;
+  --mindlamp-blue-dark: #5c99ff;
+  --mindlamp-blue-light: #a2c9ff;
+  --mindlamp-blue-lighter: #c4deff;
+  --mindlamp-blue-lightest: #e8f2ff;
+  --mindlamp-blue-tint: rgba(134, 182, 255, 0.1);
+  --mindlamp-blue-tint-medium: rgba(134, 182, 255, 0.2);
+
+  /* Teal - Secondary accent */
+  --mindlamp-teal: #64cebf;
+  --mindlamp-teal-dark: #4db8a9;
+  --mindlamp-teal-light: #8dddd2;
+  --mindlamp-teal-lighter: #b5ebe4;
+  --mindlamp-teal-lightest: #e5f8f5;
+  --mindlamp-teal-tint: rgba(100, 206, 191, 0.1);
+  --mindlamp-teal-tint-medium: rgba(100, 206, 191, 0.2);
+
+  /* Coral - Warning/accent */
+  --mindlamp-coral: #ff775c;
+  --mindlamp-coral-dark: #ff5c3d;
+  --mindlamp-coral-light: #ff9a85;
+  --mindlamp-coral-lighter: #ffbdae;
+  --mindlamp-coral-lightest: #ffe8e3;
+  --mindlamp-coral-tint: rgba(255, 119, 92, 0.1);
+
+  /* Yellow - Tertiary accent */
+  --mindlamp-yellow: #ffd645;
+  --mindlamp-yellow-dark: #ffc800;
+  --mindlamp-yellow-light: #ffe178;
+  --mindlamp-yellow-lighter: #ffecab;
+  --mindlamp-yellow-lightest: #fff8e0;
+  --mindlamp-yellow-tint: rgba(255, 214, 69, 0.1);
+
+  /* ========== Section Backgrounds ========== */
+
+  /* Dark section backgrounds - derived from brand blue */
+  --section-bg-dark: #1a3a5c;           /* Deep blue, derived from brand */
+  --section-bg-dark-alt: #234b73;       /* Slightly lighter variant */
+  --section-bg-dark-gradient-start: #1a3a5c;
+  --section-bg-dark-gradient-end: #2d5a87;
+
+  /* Surface colors for elevated elements (dropdowns, modals) */
+  --surface-elevated: #ffffff;
+  --surface-elevated-dark: #1e3a5a;     /* Dark mode elevated surfaces - brand blue derived */
+
+  /* Light section backgrounds - subtle tints */
+  --section-bg-light: var(--ifm-background-color);
+  --section-bg-light-alt: var(--ifm-background-surface-color);
+  --section-bg-blue-tint: #f0f6ff;      /* Very light blue tint */
+  --section-bg-teal-tint: #f0faf8;      /* Very light teal tint */
+  --section-bg-warm-tint: #fffbf5;      /* Very light warm tint */
+
+  /* ========== Functional Colors ========== */
+
+  /* Neutral/outline button colors */
+  --btn-outline-border: var(--ifm-color-emphasis-300);
+  --btn-outline-text: var(--ifm-color-emphasis-700);
+  --btn-outline-hover-bg: var(--ifm-color-emphasis-100);
+  --btn-outline-hover-border: var(--ifm-color-emphasis-400);
+
+  /* ========== Footer ========== */
+  --ifm-footer-background-color: var(--ifm-background-surface-color);
+  --ifm-footer-color: var(--ifm-color-emphasis-700);
+  --ifm-footer-link-color: var(--ifm-color-emphasis-700);
+  --ifm-footer-link-hover-color: var(--ifm-color-primary);
+  --ifm-footer-title-color: var(--ifm-heading-color);
+
+  /* ========== Other ========== */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(91, 155, 252, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(134, 182, 255, 0.1);
 }
 
-/* Dark mode - slightly brighter primary for better contrast */
+/* ========== Dark Mode ========== */
 [data-theme='dark'] {
-  --ifm-color-primary: #80b2fd;
-  --ifm-color-primary-dark: #5b9bfc;
-  --ifm-color-primary-darker: #4890fc;
-  --ifm-color-primary-darkest: #2878fc;
-  --ifm-color-primary-light: #a5c9fe;
-  --ifm-color-primary-lighter: #b8d4fe;
-  --ifm-color-primary-lightest: #e7f1ff;
+  /* Primary - slightly brighter for better contrast */
+  --ifm-color-primary: #a2c9ff;
+  --ifm-color-primary-dark: #86b6ff;
+  --ifm-color-primary-darker: #6aa3ff;
+  --ifm-color-primary-darkest: #5c99ff;
+  --ifm-color-primary-light: #b0d1ff;
+  --ifm-color-primary-lighter: #c4deff;
+  --ifm-color-primary-lightest: #e8f2ff;
 
-  --docusaurus-highlighted-code-line-bg: rgba(91, 155, 252, 0.2);
+  /* Brand color tints - more visible on dark backgrounds */
+  --mindlamp-blue-tint: rgba(134, 182, 255, 0.15);
+  --mindlamp-blue-tint-medium: rgba(134, 182, 255, 0.25);
+  --mindlamp-teal-tint: rgba(100, 206, 191, 0.15);
+  --mindlamp-teal-tint-medium: rgba(100, 206, 191, 0.25);
+  --mindlamp-coral-tint: rgba(255, 119, 92, 0.15);
+  --mindlamp-yellow-tint: rgba(255, 214, 69, 0.15);
+
+  /* Section backgrounds for dark mode */
+  --section-bg-light: var(--ifm-background-color);
+  --section-bg-light-alt: var(--ifm-background-surface-color);
+  --section-bg-blue-tint: rgba(134, 182, 255, 0.08);
+  --section-bg-teal-tint: rgba(100, 206, 191, 0.08);
+  --section-bg-warm-tint: rgba(255, 214, 69, 0.05);
+
+  /* Dark section stays consistent */
+  --section-bg-dark: #1a3a5c;
+  --section-bg-dark-alt: #234b73;
+
+  /* Elevated surface uses brand-derived dark blue */
+  --surface-elevated: var(--surface-elevated-dark);
+
+  /* Footer - matches page background in dark mode */
+  --ifm-footer-background-color: var(--ifm-background-surface-color);
+  --ifm-footer-color: var(--ifm-color-emphasis-400);
+  --ifm-footer-link-color: var(--ifm-color-emphasis-400);
+  --ifm-footer-link-hover-color: var(--ifm-color-primary);
+
+  /* Functional colors - adjusted for dark mode */
+  --btn-outline-border: var(--ifm-color-emphasis-400);
+  --btn-outline-text: var(--ifm-color-emphasis-300);
+  --btn-outline-hover-bg: var(--ifm-color-emphasis-800);
+  --btn-outline-hover-border: var(--ifm-color-emphasis-300);
+
+  --docusaurus-highlighted-code-line-bg: rgba(134, 182, 255, 0.2);
 }
 
 /* Hide sidebar items with hidden-sidebar class */
 .hidden-sidebar {
   display: none;
+}
+
+/* Announcement bar styling */
+div[class*='announcementBar'] {
+  padding: 0.75rem 1rem;
+}
+
+div[class*='announcementBarContent'] {
+  max-width: none;
+  font-size: 0.95rem;
+}
+
+div[class*='announcementBarContent'] a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+[data-theme='dark'] div[class*='announcementBar'] {
+  background: var(--section-bg-dark) !important;
+  color: #fff;
+}
+
+[data-theme='dark'] div[class*='announcementBar'] * {
+  background: transparent;
+}
+
+[data-theme='dark'] div[class*='announcementBarContent'] a {
+  color: var(--ifm-color-primary-light);
+}
+
+[data-theme='dark'] div[class*='announcementBar'] button {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] div[class*='announcementBarClose'] {
+  background: transparent !important;
 }

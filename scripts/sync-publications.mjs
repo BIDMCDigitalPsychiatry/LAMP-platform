@@ -109,6 +109,7 @@ function parsePublication(page, tagMap, projectMap) {
 
   // Extract relation IDs
   const projectIDs = getRelation(props['projectIDs']);
+  const directTagIDs = getRelation(props['directTagIDs']);
 
   // Resolve projects (simplified - just name for display)
   const projects = projectIDs
@@ -116,16 +117,8 @@ function parsePublication(page, tagMap, projectMap) {
     .filter(Boolean)
     .map(p => ({ id: p.id, projectID: p.projectID, name: p.name }));
 
-  // Get tags through projects (Publications → Projects → Tags)
-  const tagIDsSet = new Set();
-  projectIDs.forEach(projectId => {
-    const project = projectMap.get(projectId);
-    if (project && project.tagIDs) {
-      project.tagIDs.forEach(tagId => tagIDsSet.add(tagId));
-    }
-  });
-
-  const tags = Array.from(tagIDsSet)
+  // Get tags directly from publication's directTagIDs field
+  const tags = directTagIDs
     .map(id => tagMap.get(id))
     .filter(Boolean)
     .map(t => ({ id: t.id, tagID: t.tagID, name: t.name }));

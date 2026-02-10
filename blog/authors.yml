@@ -1,0 +1,27 @@
+edenrozenblit:
+  name: Eden Rozenblit
+  image_url: https://avatars.githubusercontent.com/u/168096182?v=4
+  page: true
+  socials:
+    linkedin: eden-rozenblit
+    github: e-rozenblit
+
+mattflathers:
+  name: Matt Flathers
+  image_url: https://avatars.githubusercontent.com/u/59424032?v=4
+  page: true
+  socials:
+    linkedin: matthew-f-551001141
+    github: MattMatt27
+
+johntorous:
+  name: John Torous
+  image_url: https://avatars.githubusercontent.com/u/5789826?v=4
+  page: true
+  socials:
+    linkedin: johntorous
+    github: jtorous
+
+seanryan:
+  name: Sean Ryan
+  page: true

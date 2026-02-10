@@ -8,8 +8,10 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "sync:publications": "node scripts/sync-publications.mjs",
-    "prestart": "npm run sync:publications",
-    "prebuild": "npm run sync:publications",
+    "sync:projects": "node scripts/sync-projects.mjs",
+    "sync:all": "npm run sync:publications && npm run sync:projects",
+    "prestart": "npm run sync:all",
+    "prebuild": "npm run sync:all",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
@@ -22,6 +24,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
+    "csv-parse": "^5.5.6",
     "@docusaurus/core": "3.7.0",
     "@docusaurus/plugin-content-docs": "3.7.0",
     "@docusaurus/plugin-client-redirects": "3.7.0",
@@ -74,6 +77,13 @@
       "disableSwitch": false,
       "respectPrefersColorScheme": true,
       "image": "img/logo.svg",
+      "announcementBar": {
+        "id": "blog_subscribe_v2",
+        "content": "📬 Want to stay updated? <a href=\"/blog/atom.xml\">Subscribe to our blog</a> to get notified when we publish new posts!",
+        "backgroundColor": "#e8f2ff",
+        "textColor": "#1a3a5c",
+        "isCloseable": true
+      },
       "languageTabs": [
         {
           "tabName": "cURL",
@@ -107,6 +117,11 @@
             "to": "/publications"
           },
           {
+            "label": "Projects",
+            "position": "left",
+            "to": "/projects"
+          },
+          {
             "label": "Documentation",
             "position": "left",
             "to": "/docs"
@@ -115,12 +130,39 @@
             "label": "API",
             "position": "left",
             "to": "/api"
+          },
+          {
+            "type": "dropdown",
+            "label": "Community",
+            "position": "right",
+            "items": [
+              {
+                "label": "Blog",
+                "to": "/blog"
+              },
+              {
+                "label": "GitHub",
+                "href": "https://github.com/BIDMCDigitalPsychiatry"
+              },
+              {
+                "label": "Lab Website",
+                "href": "https://www.digitalpsych.org"
+              },
+              {
+                "label": "Contact Us",
+                "href": "mailto:team@digitalpsych.org"
+              }
+            ]
           }
         ]
       },
       "footer": {
-        "style": "dark",
+        "style": "light",
         "links": [
+                    {
+            "label": "Blog",
+            "to": "/blog"
+          },
           {
             "label": "GitHub",
             "href": "https://github.com/BIDMCDigitalPsychiatry"
@@ -152,7 +194,18 @@
             "03-about/**"
           ]
           },
-          "blog": false,
+          "blog": {
+            "showReadingTime": true,
+            "blogTitle": "mindLAMP Blog",
+            "blogDescription": "Updates, tutorials, and news from the mindLAMP team",
+            "feedOptions": {
+              "type": ["rss", "atom"],
+              "xslt": true
+            },
+            "onInlineTags": "warn",
+            "onInlineAuthors": "warn",
+            "onUntruncatedBlogPosts": "warn"
+          },
           "theme": {
             "customCss": "./src/css/custom.css"
           },

@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 6rem 2rem 4rem;
-  background: linear-gradient(135deg, #0a1628 0%, #0344b8 40%, #5b9bfc 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, var(--mindlamp-blue) 100%);
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -58,25 +58,46 @@
   top: 50%;
   left: 40%;
   transform: translateY(-50%);
-  width: 1500px;
-  height: 600px;
+  width: 1800px;
+  height: 700px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(91, 155, 252, 0.5) 10%,
-    rgba(91, 155, 252, 0.3) 30%,
-    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(134, 182, 255, 0.45) 10%,
+    rgba(134, 182, 255, 0.25) 30%,
+    rgba(255, 255, 255, 0.08) 60%,
     transparent 100%
   );
-  filter: blur(60px);
+  filter: blur(70px);
   z-index: -1;
+  transition: all 0.3s ease;
 }
 
 .heroLogoImg {
   width: 550px;
   height: 550px;
   opacity: 1;
-  filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.4));
+  filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.35)) drop-shadow(0 0 30px rgba(134, 182, 255, 0.25));
+  transition: filter 0.3s ease;
+}
+
+/* Dark mode - brighter beam */
+[data-theme='dark'] .heroLogo::after {
+  width: 2000px;
+  height: 800px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(134, 182, 255, 0.75) 10%,
+    rgba(134, 182, 255, 0.5) 30%,
+    rgba(255, 255, 255, 0.2) 60%,
+    transparent 100%
+  );
+  filter: blur(80px);
+}
+
+[data-theme='dark'] .heroLogoImg {
+  filter: drop-shadow(0 0 120px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 60px rgba(134, 182, 255, 0.5)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
 }
 
 .heroTagline {
@@ -284,13 +305,13 @@
 }
 
 .solutionTransition {
-  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, rgba(61, 191, 143, 0.15) 100%);
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, rgba(100, 206, 191, 0.15) 100%);
   border-radius: var(--card-radius);
   padding: 1.5rem 2rem;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  border-left: 4px solid var(--mindlamp-mint);
+  border-left: 4px solid var(--mindlamp-teal);
 }
 
 .solutionTransition p {
@@ -455,7 +476,7 @@
 }
 
 .buildingBlockCustom {
-  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--mindlamp-mint) 100%);
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--mindlamp-teal) 100%);
   color: #fff;
   padding: 0.4rem 0.75rem;
   border-radius: 6px;
@@ -603,7 +624,7 @@
 }
 
 .appTabImageWrapper {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--section-bg-blue-tint) 0%, var(--ifm-color-emphasis-100) 100%);
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -677,10 +698,10 @@
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
-  background: linear-gradient(135deg, rgba(61, 191, 143, 0.15) 0%, var(--ifm-color-primary-lightest) 100%);
-  border-left: 4px solid var(--mindlamp-mint);
-  border-radius: 0 var(--card-radius) var(--card-radius) 0;
-  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, var(--section-bg-blue-tint) 0%, var(--section-bg-teal-tint) 100%);
+  border: 1px solid var(--ifm-color-primary-light);
+  border-radius: var(--card-radius);
+  padding: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -691,13 +712,14 @@
 }
 
 .uniformDataContent h4 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--ifm-heading-color);
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.75rem 0;
 }
 
 .uniformDataContent p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--ifm-color-emphasis-700);
   line-height: 1.6;
   margin: 0;
@@ -887,7 +909,7 @@
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
-  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, rgba(61, 191, 143, 0.1) 100%);
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, rgba(100, 206, 191, 0.1) 100%);
   border-left: 4px solid var(--ifm-color-primary);
   border-radius: 0 var(--card-radius) var(--card-radius) 0;
   padding: 1.5rem 2rem;
@@ -1217,7 +1239,7 @@
 }
 
 .improving {
-  color: #3dbf8f;
+  color: var(--mindlamp-teal);
   font-weight: bold;
 }
 
@@ -1346,7 +1368,7 @@
 
 /* ========== CORE SERVICE SECTION ========== */
 .sectionCore {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, var(--section-bg-dark) 0%, var(--section-bg-dark-alt) 100%);
   color: #fff;
 }
 
@@ -1405,7 +1427,7 @@
   font-weight: 700;
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(91, 155, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(134, 182, 255, 0.4);
 }
 
 .phaseContent h4 {
@@ -1919,12 +1941,12 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--mindlamp-mint);
+  color: var(--mindlamp-teal);
   font-weight: bold;
 }
 
 .clinicalExample {
-  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, rgba(61, 191, 143, 0.1) 100%);
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, rgba(100, 206, 191, 0.1) 100%);
   border-radius: var(--card-radius);
   padding: 2rem;
   max-width: 900px;
@@ -2038,7 +2060,7 @@
   border-radius: var(--card-radius);
   padding: 1.5rem;
   box-shadow: var(--card-shadow);
-  border-left: 4px solid var(--mindlamp-mint);
+  border-left: 4px solid var(--mindlamp-teal);
 }
 
 .findingCard h4 {
@@ -2168,7 +2190,7 @@
 }
 
 .reportStatTrend[data-trend="up"] {
-  color: var(--mindlamp-mint);
+  color: var(--mindlamp-teal);
 }
 
 .reportStatTrend[data-trend="down"] {
@@ -2180,11 +2202,11 @@
 }
 
 .reportInsight {
-  background: linear-gradient(135deg, rgba(61, 191, 143, 0.1) 0%, rgba(91, 155, 252, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(100, 206, 191, 0.1) 0%, rgba(134, 182, 255, 0.1) 100%);
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1.25rem;
-  border-left: 3px solid var(--mindlamp-mint);
+  border-left: 3px solid var(--mindlamp-teal);
 }
 
 .insightHeader {
@@ -2231,7 +2253,7 @@
 .completionPercent {
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--mindlamp-mint);
+  color: var(--mindlamp-teal);
 }
 
 .completionBar {
@@ -2244,7 +2266,7 @@
 
 .completionFill {
   height: 100%;
-  background: linear-gradient(90deg, var(--mindlamp-mint) 0%, var(--ifm-color-primary) 100%);
+  background: linear-gradient(90deg, var(--mindlamp-teal) 0%, var(--ifm-color-primary) 100%);
   border-radius: 4px;
 }
 
@@ -2380,7 +2402,7 @@
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 700;
-  box-shadow: 0 4px 12px rgba(91, 155, 252, 0.3);
+  box-shadow: 0 4px 12px rgba(134, 182, 255, 0.3);
 }
 
 .stepContent {
@@ -2499,7 +2521,7 @@
   width: 100%;
   height: 280px;
   object-fit: contain;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--section-bg-blue-tint) 0%, var(--ifm-color-emphasis-100) 100%);
   padding: 1rem;
 }
 
@@ -2546,7 +2568,7 @@
   width: 100%;
   height: 220px;
   object-fit: contain;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--section-bg-blue-tint) 0%, var(--ifm-color-emphasis-100) 100%);
   padding: 1rem;
 }
 
@@ -2818,7 +2840,7 @@
   display: block;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--mindlamp-mint);
+  color: var(--mindlamp-teal);
 }
 
 .previewStatTrendNeutral {
@@ -2829,12 +2851,12 @@
 }
 
 .reportPreviewInsight {
-  background: linear-gradient(135deg, rgba(61, 191, 143, 0.15) 0%, rgba(91, 155, 252, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(100, 206, 191, 0.15) 0%, rgba(134, 182, 255, 0.1) 100%);
   border-radius: 8px;
   padding: 1rem;
   font-size: 0.9rem;
   color: var(--ifm-color-emphasis-700);
-  border-left: 3px solid var(--mindlamp-mint);
+  border-left: 3px solid var(--mindlamp-teal);
 }
 
 .reportPreviewBenefits {
@@ -2985,7 +3007,7 @@
   border-radius: var(--card-radius);
   padding: 1.5rem;
   box-shadow: var(--card-shadow);
-  border-left: 4px solid var(--mindlamp-mint);
+  border-left: 4px solid var(--mindlamp-teal);
 }
 
 .findingItem h4 {
@@ -3183,7 +3205,7 @@
   font-weight: 700;
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(91, 155, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(134, 182, 255, 0.4);
 }
 
 .coreStep h4 {
@@ -3399,7 +3421,7 @@
 
 /* ========== CUSTOM DEV NOTE ========== */
 .customDevNote {
-  background: linear-gradient(135deg, rgba(91, 155, 252, 0.1) 0%, rgba(61, 191, 143, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(134, 182, 255, 0.1) 0%, rgba(100, 206, 191, 0.1) 100%);
   border-left: 4px solid var(--ifm-color-primary);
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.25rem;
@@ -3619,4 +3641,124 @@
   .reportBenefits {
     grid-template-columns: 1fr;
   }
+}
+
+/* ========== DARK MODE OVERRIDES ========== */
+
+/* Problem cards */
+[data-theme='dark'] .problemCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .problemIcon {
+  background: linear-gradient(135deg, rgba(134, 182, 255, 0.2) 0%, rgba(100, 206, 191, 0.15) 100%);
+}
+
+/* Solution/Feature sections with light gradients */
+[data-theme='dark'] .solutionTransition {
+  background: linear-gradient(135deg, rgba(100, 206, 191, 0.1) 0%, rgba(134, 182, 255, 0.1) 100%);
+}
+
+/* Cards with light backgrounds */
+[data-theme='dark'] .appTabCard,
+[data-theme='dark'] .featureCard,
+[data-theme='dark'] .benefitCard,
+[data-theme='dark'] .outputCard,
+[data-theme='dark'] .coreCard,
+[data-theme='dark'] .reportCard,
+[data-theme='dark'] .useCaseCard,
+[data-theme='dark'] .implementationCard,
+[data-theme='dark'] .findingCard,
+[data-theme='dark'] .validationCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* Icon wrappers with light backgrounds */
+[data-theme='dark'] .iconWrapper,
+[data-theme='dark'] .stepIcon,
+[data-theme='dark'] .benefitIcon,
+[data-theme='dark'] .featureIcon {
+  background: linear-gradient(135deg, rgba(134, 182, 255, 0.2) 0%, rgba(100, 206, 191, 0.15) 100%);
+}
+
+/* Screenshot/image wrappers */
+[data-theme='dark'] .appTabImageWrapper,
+[data-theme='dark'] .screenshotImage,
+[data-theme='dark'] .screenshotImageSmall {
+  background: linear-gradient(135deg, rgba(134, 182, 255, 0.1) 0%, rgba(100, 206, 191, 0.08) 100%);
+}
+
+/* Stat badges with light backgrounds */
+[data-theme='dark'] .statBadge,
+[data-theme='dark'] .metricCard {
+  background: var(--ifm-background-surface-color);
+}
+
+/* Tags and chips */
+[data-theme='dark'] .tag,
+[data-theme='dark'] .chip,
+[data-theme='dark'] .badge {
+  background: linear-gradient(135deg, rgba(134, 182, 255, 0.2) 0%, rgba(100, 206, 191, 0.15) 100%);
+  color: var(--ifm-color-primary-light);
+  border-color: rgba(134, 182, 255, 0.3);
+}
+
+/* Light section backgrounds */
+[data-theme='dark'] .sectionAlt {
+  background: var(--ifm-background-surface-color);
+}
+
+/* Timeline and progress elements */
+[data-theme='dark'] .timelineItem,
+[data-theme='dark'] .progressStep {
+  background: var(--ifm-background-surface-color);
+}
+
+/* Dropdown and input elements */
+[data-theme='dark'] .dropdown,
+[data-theme='dark'] .input,
+[data-theme='dark'] .select {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+/* Quote/testimonial cards */
+[data-theme='dark'] .quoteCard,
+[data-theme='dark'] .testimonialCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* CTA cards that sit on gradient backgrounds - keep white */
+[data-theme='dark'] .ctaCard,
+[data-theme='dark'] .ctaOption {
+  background: #fff;
+  color: var(--ifm-font-color-base-inverse);
+}
+
+[data-theme='dark'] .ctaCard h3,
+[data-theme='dark'] .ctaOption h3 {
+  color: var(--section-bg-dark);
+}
+
+[data-theme='dark'] .ctaCard p,
+[data-theme='dark'] .ctaCardFor,
+[data-theme='dark'] .ctaOption p {
+  color: #4a5568;
+}
+
+/* Uniform Data Highlight - dark mode */
+[data-theme='dark'] .uniformDataHighlight {
+  background: linear-gradient(135deg, rgba(134, 182, 255, 0.15) 0%, rgba(100, 206, 191, 0.1) 100%);
+  border-color: rgba(134, 182, 255, 0.4);
+}
+
+[data-theme='dark'] .uniformDataContent h4 {
+  color: #fff;
+}
+
+[data-theme='dark'] .uniformDataContent p {
+  color: rgba(255, 255, 255, 0.8);
 }

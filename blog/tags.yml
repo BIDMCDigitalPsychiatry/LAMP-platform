@@ -1,0 +1,19 @@
+announcements:
+  label: Announcements
+  permalink: /announcements
+  description: News and announcements about mindLAMP
+
+tutorials:
+  label: Tutorials
+  permalink: /tutorials
+  description: Step-by-step guides and tutorials
+
+research:
+  label: Research
+  permalink: /research
+  description: Research updates and findings
+
+updates:
+  label: Updates
+  permalink: /updates
+  description: Platform updates and new features

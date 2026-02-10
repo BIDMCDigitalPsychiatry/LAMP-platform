@@ -1,5 +1,5 @@
 /**
- * Publications List Styles
+ * Project Gallery Styles
  * Matches LAMP-platform design system
  */
 
@@ -73,47 +73,17 @@
   line-height: 1;
 }
 
-.statLabel {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.8);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .statTotal {
   font-size: 1.25rem;
   font-weight: 400;
   opacity: 0.7;
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    padding: 3rem 1.5rem 2rem;
-  }
-
-  .heroTitle {
-    font-size: 1.75rem;
-  }
-
-  .heroSubtitle {
-    font-size: 1rem;
-  }
-
-  .statsBadges {
-    gap: 1.5rem;
-  }
-
-  .statNumber {
-    font-size: 1.75rem;
-  }
-
-  .statTotal {
-    font-size: 1rem;
-  }
-
-  .statLabel {
-    font-size: 0.75rem;
-  }
+.statLabel {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* ========== FILTERS SECTION ========== */
@@ -231,6 +201,13 @@
   cursor: pointer;
 }
 
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
 .sortItem {
   display: block;
   width: 100%;
@@ -284,36 +261,8 @@
   color: var(--ifm-color-emphasis-600);
 }
 
-@media screen and (max-width: 768px) {
-  .filtersContainer {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .searchWrapper {
-    max-width: none;
-  }
-
-  .dropdown {
-    width: 100%;
-  }
-
-  .dropdownTrigger {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .dropdownMenu {
-    width: 100%;
-  }
-
-  .resetBtn {
-    width: 100%;
-  }
-}
-
-/* ========== PUBLICATIONS GRID ========== */
-.publicationsGrid {
+/* ========== PROJECTS GRID ========== */
+.projectsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 1.5rem;
@@ -321,13 +270,13 @@
 }
 
 @media screen and (max-width: 400px) {
-  .publicationsGrid {
+  .projectsGrid {
     grid-template-columns: 1fr;
   }
 }
 
-/* ========== PUBLICATION CARD ========== */
-.pubCard {
+/* ========== PROJECT CARD ========== */
+.projectCard {
   background: var(--ifm-card-background-color, var(--ifm-background-color));
   border-radius: var(--card-radius);
   border: 1px solid var(--ifm-color-emphasis-200);
@@ -338,16 +287,12 @@
   scroll-margin-top: 100px;
 }
 
-.pubCard:hover {
+.projectCard:hover {
   transform: translateY(-4px);
   box-shadow: var(--card-shadow-hover);
 }
 
-.pubCard:target {
-  box-shadow: 0 0 0 3px var(--ifm-color-primary-light);
-}
-
-.pubCard.highlighted {
+.projectCard.highlighted {
   box-shadow: 0 4px 20px rgba(134, 182, 255, 0.5), 0 8px 32px rgba(134, 182, 255, 0.3);
 }
 
@@ -359,26 +304,20 @@
   margin-bottom: 0.75rem;
 }
 
-.yearPill {
+.statusPill {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   font-size: 0.8125rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   color: #fff;
 }
 
-.externalLink {
+.dateRange {
   font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--ifm-color-primary);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.externalLink:hover {
-  color: var(--ifm-color-primary-dark);
-  text-decoration: underline;
+  color: var(--ifm-color-emphasis-600);
 }
 
 /* Card Title */
@@ -390,12 +329,26 @@
   color: var(--ifm-heading-color);
 }
 
-/* Citation Preview */
-.citationPreview {
+/* Description */
+.description {
   font-size: 0.875rem;
   color: var(--ifm-color-emphasis-600);
   line-height: 1.5;
   margin: 0 0 1rem;
+}
+
+/* Quick Stats */
+.quickStats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.quickStat strong {
+  color: var(--ifm-font-color-base);
 }
 
 /* Tags List */
@@ -500,14 +453,14 @@
   margin: 0;
 }
 
-/* Projects List */
-.projectsList {
+/* Publications List in expanded section */
+.publicationsList {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.projectChip {
+.publicationChip {
   display: inline-block;
   padding: 0.375rem 0.75rem;
   background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, rgba(100, 206, 191, 0.2) 100%);
@@ -520,22 +473,10 @@
   transition: all 0.2s ease;
 }
 
-.projectChip:hover {
+.publicationChip:hover {
   background: linear-gradient(135deg, var(--ifm-color-primary-light) 0%, rgba(100, 206, 191, 0.35) 100%);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(134, 182, 255, 0.2);
-}
-
-/* DOI Link */
-.doiLink {
-  color: var(--ifm-color-primary);
-  font-size: 0.9375rem;
-  text-decoration: none;
-  word-break: break-all;
-}
-
-.doiLink:hover {
-  text-decoration: underline;
 }
 
 /* ========== EMPTY STATE ========== */
@@ -578,7 +519,7 @@
 }
 
 /* ========== DARK MODE ADJUSTMENTS ========== */
-[data-theme='dark'] .pubCard {
+[data-theme='dark'] .projectCard {
   background: var(--ifm-background-surface-color);
   border-color: var(--ifm-color-emphasis-300);
 }
@@ -593,7 +534,6 @@
   background: var(--surface-elevated-dark);
   border-color: var(--ifm-color-emphasis-400);
 }
-
 
 [data-theme='dark'] .expandBtn {
   border-color: var(--btn-outline-border);
@@ -699,12 +639,12 @@
   color: var(--section-bg-dark);
 }
 
-[data-theme='dark'] .projectChip {
+[data-theme='dark'] .publicationChip {
   background: linear-gradient(135deg, rgba(134, 182, 255, 0.2) 0%, rgba(100, 206, 191, 0.15) 100%);
   color: var(--ifm-color-primary-light);
 }
 
-[data-theme='dark'] .projectChip:hover {
+[data-theme='dark'] .publicationChip:hover {
   background: linear-gradient(135deg, rgba(134, 182, 255, 0.3) 0%, rgba(100, 206, 191, 0.25) 100%);
 }
 
@@ -715,4 +655,61 @@
 
 [data-theme='dark'] .sortItemActive:hover {
   background: linear-gradient(135deg, rgba(134, 182, 255, 0.4) 0%, rgba(100, 206, 191, 0.3) 100%);
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .heroTitle {
+    font-size: 1.75rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .statsBadges {
+    gap: 1.5rem;
+  }
+
+  .statNumber {
+    font-size: 1.75rem;
+  }
+
+  .statTotal {
+    font-size: 1rem;
+  }
+
+  .statLabel {
+    font-size: 0.75rem;
+  }
+
+  .filtersContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchWrapper {
+    max-width: none;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdownTrigger {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+  }
+
+  .resetBtn {
+    width: 100%;
+  }
 }

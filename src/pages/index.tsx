@@ -460,56 +460,56 @@ function EvidenceSection() {
       institution: '43 sites, 5 continents',
       population: '2,600+ youth at clinical high risk for psychosis',
       highlight: 'Multi-language EMA + passive sensing in 9 languages',
-      color: '#5b9bfc',
+      color: '#86b6ff', // mindlamp-blue
     },
     {
       name: 'PREDiCTOR',
       institution: 'Mount Sinai + IBM Research',
       population: 'Youth (15-30) seeking mental health care',
       highlight: 'AI prediction using smartphone + clinical interview data',
-      color: '#9C27B0',
+      color: '#64cebf', // mindlamp-teal
     },
     {
       name: 'Digital Clinic',
       institution: 'Beth Israel Deaconess',
       population: 'Depression & anxiety patients',
       highlight: '7 years of continuous clinical operation',
-      color: '#3dbf8f',
+      color: '#ff775c', // mindlamp-coral
     },
     {
       name: 'SHARP',
       institution: 'Boston, Bengaluru, Bhopal',
       population: 'Adults with schizophrenia',
       highlight: 'Relapse prediction via 12-month monitoring',
-      color: '#FF9800',
+      color: '#ffd645', // mindlamp-yellow
     },
     {
       name: 'CAPTURE-AD',
       institution: 'Butler Hospital',
       population: 'Older adults (60-77) with/without MCI',
       highlight: '90% passive data capture rate',
-      color: '#E91E63',
+      color: '#86b6ff', // mindlamp-blue
     },
     {
       name: 'SMART-A',
       institution: 'Beth Israel Deaconess',
       population: 'MCI and mild Alzheimer\'s patients',
       highlight: '6 novel cognitive tasks for early AD detection',
-      color: '#795548',
+      color: '#64cebf', // mindlamp-teal
     },
     {
       name: 'momLAMP',
       institution: 'Brigham & Women\'s Hospital',
       population: 'Women with postpartum anxiety',
       highlight: '8-week CBT/ACT with high engagement',
-      color: '#F06292',
+      color: '#ff775c', // mindlamp-coral
     },
     {
       name: 'Safeguard',
       institution: 'Henry M Jackson Foundation',
       population: 'U.S. Army soldiers',
       highlight: 'Life skills training for suicide prevention',
-      color: '#607D8B',
+      color: '#ffd645', // mindlamp-yellow
     },
   ];
 
@@ -649,32 +649,32 @@ function WhySection() {
     {
       title: 'Truly Modular',
       description: 'Configure activities, schedules, study groups, app layout, and phone/wearable sensor data collection without writing code.',
-      color: '#5b9bfc',
+      color: '#86b6ff', // mindlamp-blue
     },
     {
       title: 'Proactive Quality',
       description: 'Real-time monitoring catches issues before data loss. Troubleshoot proactively.',
-      color: '#3dbf8f',
+      color: '#64cebf', // mindlamp-teal
     },
     {
       title: 'Uniform Data',
       description: 'All configurations produce the same schema. Compare across studies and reproduce methods.',
-      color: '#9C27B0',
+      color: '#ff775c', // mindlamp-coral
     },
     {
       title: 'Open Source',
       description: 'Inspect, modify, and extend the code. Adapt as your needs evolve.',
-      color: '#FF9800',
+      color: '#ffd645', // mindlamp-yellow
     },
     {
       title: '10 Languages Supported',
       description: 'English, Spanish, French, Hindi, German, Italian, Korean, Danish, and Chinese.',
-      color: '#E91E63',
+      color: '#86b6ff', // mindlamp-blue
     },
     {
       title: 'Flexible Deployment',
       description: 'Shared infrastructure, dedicated instances, or self-hosted for data residency requirements.',
-      color: '#607D8B',
+      color: '#64cebf', // mindlamp-teal
     },
   ];
 

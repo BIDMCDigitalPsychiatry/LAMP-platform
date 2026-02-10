@@ -36,14 +36,12 @@ try {
   publicationsData = [];
 }
 
-// Color palette for cards - assigned by year
+// Color palette for cards - assigned by year (mindLAMP brand colors)
 const COLOR_PALETTE = [
-  '#5b9bfc', // primary blue
-  '#3dbf8f', // mint
-  '#9C27B0', // purple
-  '#FF9800', // orange
-  '#E91E63', // pink
-  '#607D8B', // blue-grey
+  '#86b6ff', // mindlamp-blue
+  '#64cebf', // mindlamp-teal
+  '#ff775c', // mindlamp-coral
+  '#ffd645', // mindlamp-yellow
 ];
 
 // Get color for a year (consistent color per year)
@@ -59,7 +57,9 @@ const PublicationsList: React.FC = () => {
   const [sortOption, setSortOption] = useState<SortOption>('year-desc');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set());
+  const [expandedTags, setExpandedTags] = useState<Set<string>>(new Set());
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [highlightedCard, setHighlightedCard] = useState<string | null>(null);
 
   const publications = publicationsData as Publication[];
 
@@ -165,6 +165,14 @@ const PublicationsList: React.FC = () => {
     });
   };
 
+  const toggleTagsExpanded = (pubId: string) => {
+    setExpandedTags(prev => {
+      const next = new Set(prev);
+      next.has(pubId) ? next.delete(pubId) : next.add(pubId);
+      return next;
+    });
+  };
+
   const handleReset = () => {
     setSelectedYears(new Set());
     setSelectedTags(new Set());
@@ -190,20 +198,28 @@ const PublicationsList: React.FC = () => {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     if (location.hash) {
-      const targetId = decodeURIComponent(location.hash.substring(1));
+      const targetDoi = decodeURIComponent(location.hash.substring(1));
       setTimeout(() => {
-        const el = document.getElementById(targetId);
+        const el = document.getElementById(targetDoi);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          // Auto-expand the card
-          setExpandedCards(prev => new Set(prev).add(targetId));
+          setHighlightedCard(targetDoi);
         }
       }, 300);
     }
   }, []);
 
+  // Clear highlight on click anywhere
+  useEffect(() => {
+    if (!highlightedCard) return;
+    const handleClick = () => setHighlightedCard(null);
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, [highlightedCard]);
+
   const getSafeId = (pub: Publication) => {
-    return pub.doi ? encodeURIComponent(pub.doi) : pub.title.toLowerCase().replace(/\s+/g, '-');
+    // Use raw DOI as ID (HTML5 allows any characters)
+    return pub.doi || pub.title.toLowerCase().replace(/\s+/g, '-');
   };
 
   if (publications.length === 0) {
@@ -242,20 +258,71 @@ const PublicationsList: React.FC = () => {
               <span className={styles.statLabel}>Publications</span>
             </div>
             <div className={styles.statBadge}>
-              <span className={styles.statNumber}>{stats.years}</span>
-              <span className={styles.statLabel}>Years</span>
-            </div>
-            <div className={styles.statBadge}>
               <span className={styles.statNumber}>{stats.domains}</span>
               <span className={styles.statLabel}>Domains</span>
+            </div>
+            <div className={styles.statBadge}>
+              <span className={styles.statNumber}>{stats.years}</span>
+              <span className={styles.statLabel}>Years</span>
             </div>
           </div>
         </div>
       </header>
 
+      {/* Contribution Callout */}
+      <div className={styles.contributionCallout}>
+        <h3>Published research using mindLAMP?</h3>
+        <p>
+          Help us showcase the growing body of mindLAMP research. Submit your publication to be featured in our database.
+        </p>
+        <a
+          href="https://forms.gle/YourPublicationFormLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.contributionLink}
+        >
+          Submit Your Publication
+        </a>
+      </div>
+
       {/* Filters Section */}
       <section className={styles.filtersSection}>
         <div className={styles.filtersContainer}>
+          {/* Sort */}
+          <div className={styles.dropdown}>
+            <button
+              className={styles.dropdownTrigger}
+              onClick={(e) => {
+                e.stopPropagation();
+                setActiveDropdown(activeDropdown === 'sort' ? null : 'sort');
+              }}
+            >
+              Sort
+              <span className={styles.dropdownIcon}>{activeDropdown === 'sort' ? '\u25B2' : '\u25BC'}</span>
+            </button>
+            {activeDropdown === 'sort' && (
+              <div className={styles.dropdownMenu}>
+                {[
+                  { value: 'year-desc', label: 'Newest First' },
+                  { value: 'year-asc', label: 'Oldest First' },
+                  { value: 'title-asc', label: 'Title (A-Z)' },
+                  { value: 'title-desc', label: 'Title (Z-A)' },
+                ].map(opt => (
+                  <button
+                    key={opt.value}
+                    className={`${styles.sortItem} ${sortOption === opt.value ? styles.sortItemActive : ''}`}
+                    onClick={() => {
+                      setSortOption(opt.value as SortOption);
+                      setActiveDropdown(null);
+                    }}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* Search */}
           <div className={styles.searchWrapper}>
             <input
@@ -325,41 +392,6 @@ const PublicationsList: React.FC = () => {
             </div>
           )}
 
-          {/* Sort */}
-          <div className={styles.dropdown}>
-            <button
-              className={styles.dropdownTrigger}
-              onClick={(e) => {
-                e.stopPropagation();
-                setActiveDropdown(activeDropdown === 'sort' ? null : 'sort');
-              }}
-            >
-              Sort
-              <span className={styles.dropdownIcon}>{activeDropdown === 'sort' ? '\u25B2' : '\u25BC'}</span>
-            </button>
-            {activeDropdown === 'sort' && (
-              <div className={styles.dropdownMenu}>
-                {[
-                  { value: 'year-desc', label: 'Newest First' },
-                  { value: 'year-asc', label: 'Oldest First' },
-                  { value: 'title-asc', label: 'Title (A-Z)' },
-                  { value: 'title-desc', label: 'Title (Z-A)' },
-                ].map(opt => (
-                  <button
-                    key={opt.value}
-                    className={`${styles.sortItem} ${sortOption === opt.value ? styles.sortItemActive : ''}`}
-                    onClick={() => {
-                      setSortOption(opt.value as SortOption);
-                      setActiveDropdown(null);
-                    }}
-                  >
-                    {opt.label}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
           {/* Reset */}
           {hasFilters && (
             <button className={styles.resetBtn} onClick={handleReset}>
@@ -383,10 +415,12 @@ const PublicationsList: React.FC = () => {
           const isExpanded = expandedCards.has(pub.doi || safeId);
           const cardColor = getYearColor(pub.year);
 
+          const isHighlighted = highlightedCard === safeId;
+
           return (
             <article
               key={pub.doi || pub.title}
-              className={styles.pubCard}
+              className={`${styles.pubCard} ${isHighlighted ? styles.highlighted : ''}`}
               id={safeId}
               style={{ borderLeftColor: cardColor }}
             >
@@ -421,13 +455,21 @@ const PublicationsList: React.FC = () => {
               {/* Tags */}
               {pub.tags && pub.tags.length > 0 && (
                 <div className={styles.tagsList}>
-                  {pub.tags.slice(0, 3).map((tag) => (
-                    <span key={tag.id} className={styles.tag}>
+                  {(expandedTags.has(safeId) ? pub.tags : pub.tags.slice(0, 3)).map((tag) => (
+                    <span
+                      key={tag.id}
+                      className={styles.tag}
+                    >
                       {tag.name}
                     </span>
                   ))}
                   {pub.tags.length > 3 && (
-                    <span className={styles.tagMore}>+{pub.tags.length - 3}</span>
+                    <button
+                      className={styles.tagMore}
+                      onClick={() => toggleTagsExpanded(safeId)}
+                    >
+                      {expandedTags.has(safeId) ? 'Show less' : `+${pub.tags.length - 3}`}
+                    </button>
                   )}
                 </div>
               )}
@@ -455,9 +497,13 @@ const PublicationsList: React.FC = () => {
                       <h4>Related Projects</h4>
                       <div className={styles.projectsList}>
                         {pub.projects.map((project) => (
-                          <span key={project.id} className={styles.projectChip}>
+                          <a
+                            key={project.id}
+                            href={`/projects#${encodeURIComponent(project.projectID)}`}
+                            className={styles.projectChip}
+                          >
                             {project.name}
-                          </span>
+                          </a>
                         ))}
                       </div>
                     </div>
