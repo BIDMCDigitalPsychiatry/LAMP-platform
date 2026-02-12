@@ -12,6 +12,78 @@ The mindLAMP documentation site is built using [Docusaurus 3](https://docusaurus
 - Project Gallery page (synced from Notion)
 - Landing page with platform overview
 
+## Notion Database Schema & Workflow
+
+This section describes the Notion databases that serve as the source of truth for Publications and Projects data.
+
+### Database Structure
+
+#### Publications Database
+<!-- TODO: Document all fields, their types, and purposes -->
+
+| Field Name | Type | Purpose |
+|------------|------|---------|
+| | | |
+
+#### Projects Database
+<!-- TODO: Document all fields, their types, and purposes -->
+
+| Field Name | Type | Purpose |
+|------------|------|---------|
+| | | |
+
+#### Tags Database
+<!-- TODO: Document all fields, their types, and purposes -->
+
+| Field Name | Type | Purpose |
+|------------|------|---------|
+| | | |
+
+### Database Relationships
+
+<!-- TODO: Document how databases are connected -->
+- Publications ↔ Projects:
+- Publications ↔ Tags:
+- Projects ↔ Tags:
+
+### Internal Workflow
+
+#### Data Flow
+```
+Notion Databases → Sync Scripts → JSON Files → Docusaurus Components → Live Site
+```
+
+<!-- TODO: Describe when/how to update each part -->
+
+#### When to Update Notion vs. Code
+- **Update Notion when:**
+- **Update sync scripts when:**
+- **Update components when:**
+
+#### Data Validation Rules
+<!-- TODO: Document any validation rules or constraints -->
+
+### Field Mapping
+
+Maps Notion field names to JSON output and TypeScript interfaces.
+
+#### Publications
+| Notion Field | JSON Field | TypeScript Type | Notes |
+|--------------|------------|-----------------|-------|
+| | | | |
+
+#### Projects
+| Notion Field | JSON Field | TypeScript Type | Notes |
+|--------------|------------|-----------------|-------|
+| | | | |
+
+#### Tags
+| Notion Field | JSON Field | TypeScript Type | Notes |
+|--------------|------------|-----------------|-------|
+| | | | |
+
+---
+
 ## Tech Stack
 
 - **Framework:** Docusaurus 3.7.0
