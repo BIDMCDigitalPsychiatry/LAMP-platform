@@ -27,15 +27,31 @@ The mindLAMP documentation site is built using [Docusaurus 3](https://docusaurus
 - Any new publications/projects added to Notion will NOT appear on the site until this is fixed
 
 **To fix:**
-1. Fix the Notion database issue (may need to update API version or restructure databases)
-   - Error mentions: "Databases with multiple data sources are not supported in this API version"
-   - Minimum API version required: `2025-09-03`
-2. Test locally with `npm run sync:all` to verify access is restored
-3. Restore the sync hooks in `package.json`:
+1. Update the Notion API version in sync scripts from `"2022-06-28"` to `"2025-09-03"`:
+   - `scripts/sync-publications.mjs` (line 16)
+   - `scripts/sync-projects.mjs` (line 17)
+   - `scripts/import-projects-to-notion.mjs` (line 18)
+
+   Change:
+   ```js
+   notionVersion: "2022-06-28"
+   ```
+   To:
+   ```js
+   notionVersion: "2025-09-03"
+   ```
+
+2. Check the [Notion API changelog](https://developers.notion.com/changelog) for any breaking changes between versions that may require code updates
+
+3. Test locally with `npm run sync:all` to verify it works
+
+4. Restore the sync hooks in `package.json`:
    - `"prestart": "npm run sync:all"`
    - `"prebuild": "npm run sync:all"`
-4. Uncomment the sync step in `.github/workflows/deploy.yml`
-5. Remove this "Known Issues" section once resolved
+
+5. Uncomment the sync step in `.github/workflows/deploy.yml`
+
+6. Remove this "Known Issues" section once resolved
 
 **Files to update when fixed:**
 - `package.json` - Restore prestart/prebuild hooks
