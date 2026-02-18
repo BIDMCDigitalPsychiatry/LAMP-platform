@@ -17,7 +17,9 @@
 .env.production.local
 
 # Generated data (synced from Notion)
-/static/data/
+# NOTE: Temporarily tracking static/data/ because Notion sync is disabled
+# When sync is re-enabled, uncomment the line below:
+# /static/data/
 
 npm-debug.log*
 yarn-debug.log*

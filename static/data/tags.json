@@ -1,0 +1,128 @@
+[
+  {
+    "id": "2b533133-d8a2-800c-af90-e941fd2fc957",
+    "tagID": "obsessive-compulsive",
+    "name": "obsessive-compulsive",
+    "description": "Studies of obsessive-compulsive traits or disorders including OCD, body dysmorphic disorder, trichotillomania, and related conditions. Not currently represented in existing projects."
+  },
+  {
+    "id": "2b533133-d8a2-802d-82dc-d5b24556271b",
+    "tagID": "family",
+    "name": "family",
+    "description": "Studies focused on family relationships including child-parent dynamics, spousal/partner relationships, and caregiver studies. Not currently represented in existing projects."
+  },
+  {
+    "id": "2b533133-d8a2-8043-8370-e4ff9d755b66",
+    "tagID": "neurodevelopmental",
+    "name": "neurodevelopmental",
+    "description": "Studies of neurodevelopmental traits or disorders including autism spectrum disorder, ADHD, learning disorders, intellectual disabilities, communication disorders, and Tourettes syndrome."
+  },
+  {
+    "id": "2b533133-d8a2-804c-b5dd-fb3f80c5197a",
+    "tagID": "adolescent",
+    "name": "adolescent",
+    "description": "Studies focused on adolescents ages 12-17, or populations explicitly labeled as adolescent. Includes clinical adolescents in outpatient mental health treatment."
+  },
+  {
+    "id": "2b533133-d8a2-804e-a0e5-e1743523b104",
+    "tagID": "stress-trauma",
+    "name": "stress-trauma",
+    "description": "Studies of stress and trauma-related traits or disorders including PTSD, acute stress disorder, adjustment disorders, and elevated perceived stress (PSS). Includes studies of college students with stress."
+  },
+  {
+    "id": "2b533133-d8a2-8084-a8d9-db1be4092fa6",
+    "tagID": "bipolar",
+    "name": "bipolar",
+    "description": "Studies of bipolar traits or disorders including Bipolar I, Bipolar II, and cyclothymia. Includes mood disorder classification and clustering studies."
+  },
+  {
+    "id": "2b533133-d8a2-808b-831f-e9585b0ceb79",
+    "tagID": "depressive",
+    "name": "depressive",
+    "description": "Studies of depressive traits or disorders including major depressive disorder (MDD), persistent depressive disorder, postpartum/perinatal depression, and treatment-resistant depression. The most commonly studied condition in mindLAMP research."
+  },
+  {
+    "id": "2b533133-d8a2-8099-8342-e960e39940f3",
+    "tagID": "child",
+    "name": "child",
+    "description": "Studies focused on children ages 0-11. Not currently represented in existing mindLAMP projects (studies typically begin at age 12+)."
+  },
+  {
+    "id": "2b533133-d8a2-809b-8e0f-f1561313ab9b",
+    "tagID": "anxiety",
+    "name": "anxiety",
+    "description": "Studies of anxiety traits or disorders including generalized anxiety disorder (GAD), social anxiety, phobias, and panic disorder. Often studied alongside depression in comorbid populations."
+  },
+  {
+    "id": "2b533133-d8a2-80ab-917b-c52279b94c42",
+    "tagID": "sex-gender-sexuality",
+    "name": "sex-gender-sexuality",
+    "description": "Studies focused on sex, gender, or sexuality-related topics including LGBTQ+ populations, OBGYN/reproductive health, menstrual-related conditions, pregnancy/perinatal populations, and gendered anatomy considerations."
+  },
+  {
+    "id": "2b533133-d8a2-80ac-a5f7-c18d55a10c0b",
+    "tagID": "military-veteran",
+    "name": "military-veteran",
+    "description": "Studies focused on veterans or active military personnel. Includes studies of homeless veterans with serious mental illness."
+  },
+  {
+    "id": "2b533133-d8a2-80ae-8c5f-da022c8d8d85",
+    "tagID": "neurocognitive",
+    "name": "neurocognitive",
+    "description": "Studies of neurocognitive traits or disorders including Alzheimers disease, Parkinsons disease, Huntingtons disease, mild cognitive impairment (MCI), and dementia. Also includes studies using cognitive games/training for assessment or intervention (e.g., Jewels/Trails, Spatial Span, N-Back, cognitive training apps)."
+  },
+  {
+    "id": "2b533133-d8a2-80d2-b2eb-fd6992036a5e",
+    "tagID": "eating",
+    "name": "eating",
+    "description": "Studies of eating traits or disorders including anorexia nervosa, bulimia nervosa, binge eating disorder, and related conditions. Not currently represented in existing projects."
+  },
+  {
+    "id": "2b533133-d8a2-80d9-b0b9-f0a75953bcaa",
+    "tagID": "psychotic",
+    "name": "psychotic",
+    "description": "Studies of psychotic traits or disorders including schizophrenia, schizoaffective disorder, clinical high risk for psychosis (CHR-p), first episode psychosis (FEP), and hallucinations. Includes relapse prediction and early intervention studies."
+  },
+  {
+    "id": "2b533133-d8a2-80da-ac1c-e025b30928af",
+    "tagID": "addictive",
+    "name": "addictive",
+    "description": "Studies of addictive behaviors including substance use disorders (alcohol, drugs) and behavioral addictions such as problematic internet use (PIU), social media addiction, and smartphone/screen addiction."
+  },
+  {
+    "id": "2b533133-d8a2-80db-88b6-d9a252b21fe1",
+    "tagID": "low-income",
+    "name": "low-income",
+    "description": "Studies focused on underserved, low-income, or resource-limited populations. Includes rural health initiatives and populations with limited healthcare access."
+  },
+  {
+    "id": "2b533133-d8a2-80e9-90a8-f377e371bbc6",
+    "tagID": "older-adult",
+    "name": "older-adult",
+    "description": "Studies focused on older adults, typically ages 60 and above. Includes studies of cognitive aging, dementia, and digital health feasibility in seniors."
+  },
+  {
+    "id": "2b533133-d8a2-80ec-bb80-e57cf057420f",
+    "tagID": "sleep",
+    "name": "sleep",
+    "description": "Studies of sleep traits or disorders including insomnia, sleep-wake disorders, and circadian rhythm disruptions. Note: Many studies measure sleep as a passive feature but are not focused on sleep disorders specifically."
+  },
+  {
+    "id": "2b533133-d8a2-80f2-ac0d-f6b3dd95693b",
+    "tagID": "personality",
+    "name": "personality",
+    "description": "Studies focused on personality traits or personality disorders (e.g., borderline, narcissistic, antisocial personality disorders). Not currently represented in existing projects."
+  },
+  {
+    "id": "2b533133-d8a2-80f9-add1-e230f890a853",
+    "tagID": "young-adult",
+    "name": "young-adult",
+    "description": "Studies focused on young adults ages 18-25, college students, or populations explicitly labeled as young adult. The most common demographic in mindLAMP research."
+  },
+  {
+    "id": "2b633133-d8a2-80f6-988d-d8a62dcba1c3",
+    "tagID": "race-ethnicity-language",
+    "name": "race-ethnicity-language",
+    "description": "Studies focused on specific racial, ethnic, or linguistic populations, cultural factors in mental health, or international/global mental health collaborations. Includes research conducted in non-US settings (India, Kenya, China, Bulgaria, etc.) and multi-national consortia."
+  }
+]
