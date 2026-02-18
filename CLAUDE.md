@@ -21,20 +21,24 @@ The mindLAMP documentation site is built using [Docusaurus 3](https://docusaurus
 **Problem:** The Notion databases (Tags, Publications, Projects) are no longer accessible to the API bot. Error: `Database with ID 2b233133-d8a2-801b-ad2c-cdd3c9904dac does not contain any data sources accessible by this API bot.`
 
 **What's affected:**
+- `package.json` - The `prestart` and `prebuild` hooks now just echo a message instead of syncing
 - `.github/workflows/deploy.yml` - The `npm run sync:publications` step is commented out
 - The site deploys using the existing static JSON files in `static/data/`
 - Any new publications/projects added to Notion will NOT appear on the site until this is fixed
 
 **To fix:**
-1. Go to Notion and re-share the databases with the API integration:
-   - Publications database
-   - Projects database
-   - Tags database
+1. Fix the Notion database issue (may need to update API version or restructure databases)
+   - Error mentions: "Databases with multiple data sources are not supported in this API version"
+   - Minimum API version required: `2025-09-03`
 2. Test locally with `npm run sync:all` to verify access is restored
-3. Uncomment the sync step in `.github/workflows/deploy.yml`
-4. Remove this "Known Issues" section once resolved
+3. Restore the sync hooks in `package.json`:
+   - `"prestart": "npm run sync:all"`
+   - `"prebuild": "npm run sync:all"`
+4. Uncomment the sync step in `.github/workflows/deploy.yml`
+5. Remove this "Known Issues" section once resolved
 
 **Files to update when fixed:**
+- `package.json` - Restore prestart/prebuild hooks
 - `.github/workflows/deploy.yml` - Uncomment the sync step
 - `CLAUDE.md` - Remove this Known Issues section
 
