@@ -23,7 +23,8 @@ The mindLAMP documentation site is built using [Docusaurus 3](https://docusaurus
 **What's affected:**
 - `package.json` - The `prestart` and `prebuild` hooks now just echo a message instead of syncing
 - `.github/workflows/deploy.yml` - The `npm run sync:publications` step is commented out
-- The site deploys using the existing static JSON files in `static/data/`
+- `.gitignore` - The `static/data/` directory is now tracked (was previously ignored)
+- `static/data/*.json` - These files are now committed to the repo instead of being generated
 - Any new publications/projects added to Notion will NOT appear on the site until this is fixed
 
 **To fix:**
@@ -56,6 +57,8 @@ The mindLAMP documentation site is built using [Docusaurus 3](https://docusaurus
 **Files to update when fixed:**
 - `package.json` - Restore prestart/prebuild hooks
 - `.github/workflows/deploy.yml` - Uncomment the sync step
+- `.gitignore` - Uncomment `/static/data/` to stop tracking generated files
+- `static/data/*.json` - Remove from git tracking (`git rm --cached static/data/`)
 - `CLAUDE.md` - Remove this Known Issues section
 
 ---
