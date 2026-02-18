@@ -12,6 +12,34 @@ The mindLAMP documentation site is built using [Docusaurus 3](https://docusaurus
 - Project Gallery page (synced from Notion)
 - Landing page with platform overview
 
+## Known Issues (Action Required)
+
+### ⚠️ Notion Sync Disabled (February 2026)
+
+**Status:** The Notion database sync is temporarily disabled in the deploy workflow.
+
+**Problem:** The Notion databases (Tags, Publications, Projects) are no longer accessible to the API bot. Error: `Database with ID 2b233133-d8a2-801b-ad2c-cdd3c9904dac does not contain any data sources accessible by this API bot.`
+
+**What's affected:**
+- `.github/workflows/deploy.yml` - The `npm run sync:publications` step is commented out
+- The site deploys using the existing static JSON files in `static/data/`
+- Any new publications/projects added to Notion will NOT appear on the site until this is fixed
+
+**To fix:**
+1. Go to Notion and re-share the databases with the API integration:
+   - Publications database
+   - Projects database
+   - Tags database
+2. Test locally with `npm run sync:all` to verify access is restored
+3. Uncomment the sync step in `.github/workflows/deploy.yml`
+4. Remove this "Known Issues" section once resolved
+
+**Files to update when fixed:**
+- `.github/workflows/deploy.yml` - Uncomment the sync step
+- `CLAUDE.md` - Remove this Known Issues section
+
+---
+
 ## Notion Database Schema & Workflow
 
 This section describes the Notion databases that serve as the source of truth for Publications and Projects data.

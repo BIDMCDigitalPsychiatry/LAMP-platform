@@ -37,10 +37,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Sync publications from Notion
-        env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: npm run sync:publications
+      # TEMPORARILY DISABLED - Notion database access needs to be restored
+      # See CLAUDE.md "Known Issues" section for details
+      # - name: Sync publications from Notion
+      #   env:
+      #     NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      #   run: npm run sync:publications
 
       - name: Build website
         env:

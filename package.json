@@ -117,11 +117,6 @@
             "to": "/publications"
           },
           {
-            "label": "Projects",
-            "position": "left",
-            "to": "/projects"
-          },
-          {
             "label": "Documentation",
             "position": "left",
             "to": "/docs"
