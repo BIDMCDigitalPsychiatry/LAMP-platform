@@ -17,7 +17,7 @@ function extractDois(text) {
 console.log('=== DATA VERIFICATION ===\n');
 
 // 1. Load publications.csv (authoritative source)
-const pubsCsvPath = '/Users/edenrozenblit/Desktop/documentation/publications/publications.csv';
+const pubsCsvPath = '/Users/edenrozenblit/Desktop/documentation/source-data/publications.csv';
 const pubsCsv = fs.readFileSync(pubsCsvPath, 'utf8');
 const pubsRecords = parse(pubsCsv, { columns: true, skip_empty_lines: true, relax_column_count: true });
 
@@ -43,7 +43,7 @@ notionPubs.forEach(pub => {
 console.log(`Notion publications: ${notionDois.size} unique DOIs\n`);
 
 // 3. Load projects CSV
-const projCsvPath = '/Users/edenrozenblit/Desktop/documentation/publications/mindLAMP_projects_database.csv';
+const projCsvPath = '/Users/edenrozenblit/Desktop/documentation/source-data/mindLAMP_projects_database.csv';
 const projCsv = fs.readFileSync(projCsvPath, 'utf8');
 const projRecords = parse(projCsv, { columns: true, skip_empty_lines: true, relax_column_count: true });
 

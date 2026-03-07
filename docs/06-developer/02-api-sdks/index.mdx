@@ -1,0 +1,31 @@
+---
+sidebar_position: 0
+title: "API & SDKs"
+description: "Programmatic access to all platform data. Official SDKs in Python and JavaScript, plus JSONata and Tags."
+---
+
+import {DocCard, DocCardGrid} from '@site/src/components/DocCard';
+
+# API and SDKs
+
+The LAMP API provides programmatic access to all data and configuration in the mindLAMP platform. Everything that can be done through the dashboard can also be done through the API.
+
+## Official SDKs
+
+<DocCardGrid>
+  <DocCard id="developer/api-sdks/python-sdk" />
+  <DocCard id="developer/api-sdks/javascript-sdk" />
+</DocCardGrid>
+
+:::note R SDK
+The R SDK is deprecated. Existing R users should use the REST API directly or call the Python SDK through `reticulate`.
+:::
+
+## Additional Topics
+
+<DocCardGrid>
+  <DocCard id="developer/api-sdks/jsonata" />
+  <DocCard id="developer/api-sdks/tags-attachments" />
+</DocCardGrid>
+
+See the [API Introduction](introduction) for authentication, the object model, and the full [interactive API reference](/api).

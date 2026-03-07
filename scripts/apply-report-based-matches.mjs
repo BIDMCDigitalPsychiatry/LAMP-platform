@@ -236,7 +236,7 @@ async function updateProjectPublications(projectId, publicationIds) {
 
 async function main() {
   console.log('=== APPLYING REPORT-BASED PROJECT-PUBLICATION MATCHES ===\n');
-  console.log('Based on detailed analysis from /publications/reports/\n');
+  console.log('Based on detailed analysis from /source-data/reports/\n');
 
   const updates = [];
 

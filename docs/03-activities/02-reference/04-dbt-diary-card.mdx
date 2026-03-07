@@ -1,0 +1,98 @@
+---
+slug: "/activities/reference/dbt-diary-card"
+sidebar_position: 4
+sidebar_label: DBT Diary Card
+title: "DBT Diary Card"
+---
+
+# DBT Diary Card
+
+<div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1.5rem'}}>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/dbt-diary-card/emotion-selection.png" alt="Emotion selection" width="220" />
+    <div><strong>Emotions</strong> — Rate intensity of each emotion</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/dbt-diary-card/skills-used.png" alt="Skills used" width="220" />
+    <div><strong>Skills</strong> — Record DBT skills used</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/dbt-diary-card/daily-actions.png" alt="Daily actions" width="220" />
+    <div><strong>Daily actions</strong> — Track target behaviors</div>
+  </div>
+</div>
+
+The DBT (Dialectical Behavior Therapy) Diary Card is a structured activity for tracking therapy-related targets, emotions, and skills. Originally developed for the LA County consortium partnership, it digitalizes the standard DBT diary card process.
+
+**ActivitySpec:** `lamp.dbt_diary_card`
+
+## Configuration
+
+1. Click **+ Add** in the Activities tab and select **DBT Diary Card**.
+2. Select the target group.
+3. Configure the card's targets, emotions, and skills sections.
+4. Save.
+
+The card can be customized to include specific targets, emotions, and skills relevant to each participant's treatment plan.
+
+### Example Configuration
+
+- **Targets:** Self-harm urges, substance use urges, treatment compliance, suicidal ideation
+- **Emotions:** Joy, anger, sadness, fear, shame, guilt (each rated 0–5)
+- **Skills:** Mindfulness, distress tolerance, emotion regulation, interpersonal effectiveness (each rated by frequency of use)
+
+## Usage
+
+The diary card consists of several sections:
+
+- **Targets** — Track target behaviors (e.g., self-harm urges, substance use, treatment compliance).
+- **Emotions** — Rate the intensity of emotions experienced during the day.
+- **Skills** — Record which DBT skills were used and their effectiveness.
+- **Notes** — Add freeform notes about the day.
+
+Clinicians can review entries through the dashboard, tracking patterns in targets, emotions, and skill usage over time.
+
+## Data
+
+### temporal_slices
+
+One entry per section response, similar to survey responses:
+
+| Field | Description |
+|-------|-------------|
+| `item` | The target, emotion, or skill being rated |
+| `value` | The rating or response value |
+| `duration` | Time on this item in milliseconds |
+
+### Example
+
+```json
+{
+  "timestamp": 1649859300000,
+  "activity": "dbt_diary_card_id",
+  "duration": 120000,
+  "static_data": {},
+  "temporal_slices": [
+    {
+      "item": "Self-harm urges",
+      "value": "3",
+      "type": null,
+      "duration": 5000,
+      "level": null
+    },
+    {
+      "item": "Anger",
+      "value": "4",
+      "type": null,
+      "duration": 3000,
+      "level": null
+    }
+  ]
+}
+```
+
+### Cortex Features
+
+No Cortex features currently process DBT Diary Card data.
+
+View in [Portal](/app/app-tabs/portal) | [Python SDK](/developer/api-sdks/python-sdk) | [API Reference](/activities/reference)

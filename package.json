@@ -106,10 +106,26 @@
         },
         "items": [
           {
-            "label": "Get Started",
+            "type": "dropdown",
+            "label": "Capabilities",
             "position": "left",
-            "to": "/get-started",
-            "className": "navbar-bold"
+            "items": [
+              { "label": "Engage Participants", "to": "/capabilities/experience" },
+              { "label": "Collect Rich Data", "to": "/capabilities/collect" },
+              { "label": "Monitor Engagement", "to": "/capabilities/monitor" },
+              { "label": "Analyze & Visualize", "to": "/capabilities/analyze" },
+              { "label": "Customize & Scale", "to": "/capabilities/configure" }
+            ]
+          },
+          {
+            "label": "Docs",
+            "position": "left",
+            "to": "/docs"
+          },
+          {
+            "label": "Projects",
+            "position": "left",
+            "to": "/projects"
           },
           {
             "label": "Publications",
@@ -117,14 +133,20 @@
             "to": "/publications"
           },
           {
-            "label": "Documentation",
-            "position": "left",
-            "to": "/docs"
-          },
-          {
             "label": "API",
             "position": "left",
             "to": "/api"
+          },
+          {
+            "label": "Get Started",
+            "position": "left",
+            "to": "/get-started",
+            "className": "navbar-bold"
+          },
+          {
+            "label": "Privacy",
+            "position": "right",
+            "to": "/privacy"
           },
           {
             "type": "dropdown",
@@ -179,15 +201,11 @@
         "@docusaurus/preset-classic",
         {
           "docs": {
+            "sidebarPath": "./sidebars.ts",
             "routeBasePath": "/",
             "showLastUpdateAuthor": false,
             "showLastUpdateTime": false,
-            "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/",
-          "exclude": [
-            "07-deploy/**",
-            "10-consortium/**",
-            "03-about/**"
-          ]
+            "editUrl": "https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/edit/master/"
           },
           "blog": {
             "showReadingTime": true,
@@ -203,9 +221,6 @@
           },
           "theme": {
             "customCss": "./src/css/custom.css"
-          },
-          "googleAnalytics": {
-            "trackingID": "UA-192736629-1"
           }
         }
       ]
@@ -232,7 +247,104 @@
           [
       "@docusaurus/plugin-client-redirects",
       {
-        "redirects": []
+        "redirects": [
+          { "from": "/start_here/overview", "to": "/app" },
+          { "from": "/data_science/intro", "to": "/developer/api-sdks/introduction" },
+          { "from": "/data_science/cortex/getting-started", "to": "/developer/cortex/getting-started" },
+          { "from": "/develop/intro", "to": "/developer/architecture/components" },
+          { "from": "/develop/how_works", "to": "/developer/architecture/data-flow" },
+          { "from": "/data_science/data_types/sensor_types", "to": "/sensors-data/reference" },
+          { "from": "/data_science/data_types/activity_types", "to": "/activities/reference" },
+          { "from": "/developer/data-science/intro", "to": "/developer/api-sdks/introduction" },
+          { "from": "/developer/architecture/intro", "to": "/developer/architecture/components" },
+          { "from": "/developer/architecture/how_works", "to": "/developer/architecture/data-flow" },
+          { "from": "/developer/data-science/data_types/sensor_types", "to": "/sensors-data/reference" },
+          { "from": "/developer/data-science/data_types/activity_types", "to": "/activities/reference" },
+          { "from": "/guides/getting-started/overview", "to": "/app" },
+          { "from": "/capabilities/data-collection", "to": "/capabilities/collect" },
+          { "from": "/capabilities/participant-experience", "to": "/capabilities/experience" },
+          { "from": "/capabilities/analytics-insights", "to": "/capabilities/analyze" },
+          { "from": "/capabilities/study-configuration", "to": "/capabilities/configure" },
+          { "from": "/overview/how-it-works", "to": "/docs" },
+          { "from": "/overview/core-services", "to": "/get-started" },
+          { "from": "/guides/getting-started/accessing_account", "to": "/app/getting-started/sign-in" },
+          { "from": "/guides/getting-started/logging_in", "to": "/app/getting-started/sign-in" },
+          { "from": "/guides/getting-started/create_patients_participants", "to": "/dashboard/credentials" },
+          { "from": "/guides/getting-started/users_vs_activities", "to": "/dashboard" },
+          { "from": "/guides/activities/create_tips", "to": "/activities/reference/tips" },
+          { "from": "/guides/activities/create_surveys", "to": "/activities/reference/surveys" },
+          { "from": "/guides/activities/create_activities", "to": "/activities" },
+          { "from": "/guides/activities/customize_activities", "to": "/dashboard/scheduling" },
+          { "from": "/guides/activities/complete_activities", "to": "/app/app-tabs/feed" },
+          { "from": "/guides/sensors-wearables/sensors", "to": "/sensors-data" },
+          { "from": "/guides/sensors-wearables/wearables", "to": "/sensors-data/configuration" },
+          { "from": "/guides/sensors-wearables/updating_frequency", "to": "/dashboard/sensors-tab" },
+          { "from": "/guides/sensors-wearables/battery_data_usage", "to": "/app/getting-started/background-collection" },
+          { "from": "/guides/managing-studies/import_activities", "to": "/activities/configuration" },
+          { "from": "/guides/managing-studies/view_dashboard", "to": "/dashboard" },
+          { "from": "/guides/managing-studies/care_team", "to": "/dashboard/messaging" },
+          { "from": "/guides/managing-studies/instruments", "to": "/activities/reference/surveys" },
+          { "from": "/guides/app-tabs/app", "to": "/app" },
+          { "from": "/guides/app-tabs/learn", "to": "/app/app-tabs/learn-assess-manage" },
+          { "from": "/guides/app-tabs/assess", "to": "/app/app-tabs/learn-assess-manage" },
+          { "from": "/guides/app-tabs/manage", "to": "/app/app-tabs/learn-assess-manage" },
+          { "from": "/app/app-tabs/learn", "to": "/app/app-tabs/learn-assess-manage" },
+          { "from": "/app/app-tabs/assess", "to": "/app/app-tabs/learn-assess-manage" },
+          { "from": "/app/app-tabs/manage", "to": "/app/app-tabs/learn-assess-manage" },
+          { "from": "/guides/app-tabs/portal", "to": "/app/app-tabs/portal" },
+          { "from": "/guides/app-tabs/surveys", "to": "/activities/reference/surveys" },
+          { "from": "/guides/app-tabs/cog_games", "to": "/activities" },
+          { "from": "/guides/app-tabs/sensors", "to": "/sensors-data" },
+          { "from": "/guides/app-tabs/clustering_activities", "to": "/activities/configuration" },
+          { "from": "/support/faq", "to": "/docs" },
+          { "from": "/faq", "to": "/docs" },
+          { "from": "/bug", "to": "/docs" },
+          { "from": "/support/troubleshooting", "to": "/docs" },
+          { "from": "/support/bug-reporting", "to": "/docs" },
+          { "from": "/developer/data-science/data_portal", "to": "/dashboard/data-portal" },
+          { "from": "/developer/data-science/jsonata", "to": "/developer/api-sdks/jsonata" },
+          { "from": "/developer/cortex/visualizations/data_quality", "to": "/developer/cortex/visualizations" },
+          { "from": "/developer/deployment/prereqs", "to": "/developer" },
+          { "from": "/developer/data-types", "to": "/docs" },
+          { "from": "/developer/data-types/activity-types", "to": "/activities/reference" },
+          { "from": "/developer/data-types/sensor-types", "to": "/sensors-data/reference" },
+          { "from": "/developer/cortex/feature_types", "to": "/developer/cortex/features/secondary-features" },
+          { "from": "/developer/cortex/raw-features", "to": "/developer/cortex/features/raw-features" },
+          { "from": "/developer/cortex/primary-features", "to": "/developer/cortex/features/primary-features" },
+          { "from": "/developer/cortex/secondary-features", "to": "/developer/cortex/features/secondary-features" },
+          { "from": "/activities/overview", "to": "/activities" },
+          { "from": "/activities/surveys", "to": "/activities/reference/surveys" },
+          { "from": "/activities/surveys/question-types", "to": "/activities/reference/surveys" },
+          { "from": "/activities/surveys/creating-surveys", "to": "/activities/reference/surveys" },
+          { "from": "/activities/surveys/validated-instruments", "to": "/activities/reference/surveys" },
+          { "from": "/activities/surveys/data-schema", "to": "/activities/reference/surveys" },
+          { "from": "/activities/cognitive-games", "to": "/activities" },
+          { "from": "/activities/cognitive-games/game-reference", "to": "/activities" },
+          { "from": "/activities/cognitive-games/data-schemas", "to": "/activities" },
+          { "from": "/activities/tips", "to": "/activities/reference/tips" },
+          { "from": "/activities/manage-activities", "to": "/activities/reference/breathe" },
+          { "from": "/activities/voice-recording", "to": "/activities/reference/voice-recording" },
+          { "from": "/activities/dbt-diary-card", "to": "/activities/reference/dbt-diary-card" },
+          { "from": "/activities/reference/scratch-card", "to": "/activities/reference" },
+          { "from": "/activities/activity-groups", "to": "/activities/configuration" },
+          { "from": "/activities/import-export", "to": "/activities/configuration" },
+          { "from": "/sensors-data/overview", "to": "/sensors-data" },
+          { "from": "/sensors-data/concepts", "to": "/sensors-data/usage" },
+          { "from": "/sensors-data/device-sensors", "to": "/sensors-data" },
+          { "from": "/sensors-data/health-platform-data", "to": "/sensors-data" },
+          { "from": "/sensors-data/wearables", "to": "/sensors-data/configuration" },
+          { "from": "/sensors-data/data-format", "to": "/sensors-data/data" },
+          { "from": "/sensors-data/data-quality", "to": "/sensors-data/usage" },
+          { "from": "/sensors-data/deprecated-sensors", "to": "/sensors-data/data" },
+          { "from": "/sensors-data/general/configuration", "to": "/sensors-data/configuration" },
+          { "from": "/sensors-data/general/usage", "to": "/sensors-data/usage" },
+          { "from": "/sensors-data/general/data", "to": "/sensors-data/data" },
+          { "from": "/activities/general/configuration", "to": "/activities/configuration" },
+          { "from": "/activities/general/usage", "to": "/activities/usage" },
+          { "from": "/activities/general/data", "to": "/activities/data" },
+          { "from": "/app/app-tabs", "to": "/app" },
+          { "from": "/app/getting-started", "to": "/app" }
+        ]
       }
     ]
     ]

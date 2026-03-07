@@ -1,0 +1,271 @@
+---
+sidebar_position: 3
+title: "Cortex Features"
+description: "Overview of the three-tier feature pipeline: raw, primary, and secondary features."
+---
+
+import {DocCard, DocCardGrid} from '@site/src/components/DocCard';
+
+# Cortex Features
+
+Cortex processes mindLAMP data through three tiers. **Raw features** fetch sensor and activity data from the LAMP API into a consistent format. **Primary features** are sparse, event-based — they identify discrete events or periods (e.g., individual trips, screen-on bouts, location clusters) with variable counts per time range. **Secondary features** are dense, time-windowed — they aggregate data into exactly one value per fixed time window (controlled by the `resolution` parameter, default 1 day), producing regular time-series suitable for statistical analysis.
+
+## Feature Tiers
+
+<DocCardGrid>
+  <DocCard id="developer/cortex/features/raw-features/index" />
+  <DocCard id="developer/cortex/features/primary-features/index" />
+  <DocCard id="developer/cortex/features/secondary-features/index" />
+</DocCardGrid>
+
+## Pipeline Overview
+
+<svg viewBox="0 0 800 920" xmlns="http://www.w3.org/2000/svg" style={{width: '100%', maxWidth: '800px', margin: '2rem auto', display: 'block'}}>
+  <defs>
+    <linearGradient id="sourceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#334155" />
+      <stop offset="100%" stopColor="#64748b" />
+    </linearGradient>
+    <linearGradient id="rawGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1e3a8a" />
+      <stop offset="100%" stopColor="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#065f46" />
+      <stop offset="100%" stopColor="#10b981" />
+    </linearGradient>
+    <linearGradient id="secondaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#7c3aed" />
+      <stop offset="100%" stopColor="#a78bfa" />
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 3.5 L 0 7 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  {/* ===== COLUMN HEADERS ===== */}
+  <rect x="20" y="12" width="140" height="36" rx="6" fill="url(#sourceGrad)" />
+  <text x="90" y="35" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="12" fontWeight="700">Data Sources</text>
+
+  <rect x="200" y="12" width="120" height="36" rx="6" fill="url(#rawGrad)" />
+  <text x="260" y="35" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="12" fontWeight="700">Raw</text>
+
+  <rect x="365" y="12" width="145" height="36" rx="6" fill="url(#primaryGrad)" />
+  <text x="437" y="35" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="12" fontWeight="700">Primary</text>
+
+  <rect x="555" y="12" width="220" height="36" rx="6" fill="url(#secondaryGrad)" />
+  <text x="665" y="35" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="12" fontWeight="700">Secondary</text>
+
+  {/* ===== GPS Pipeline ===== */}
+  <rect x="25" y="68" width="130" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="85" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.gps</text>
+
+  <rect x="205" y="68" width="110" height="26" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="85" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">gps</text>
+
+  <rect x="370" y="60" width="135" height="24" rx="5" fill="#ecfdf5" stroke="#a7f3d0" strokeWidth="1" />
+  <text x="437" y="76" textAnchor="middle" fill="#065f46" fontFamily="system-ui, sans-serif" fontSize="10">significant_locations</text>
+  <rect x="370" y="88" width="135" height="24" rx="5" fill="#ecfdf5" stroke="#a7f3d0" strokeWidth="1" />
+  <text x="437" y="104" textAnchor="middle" fill="#065f46" fontFamily="system-ui, sans-serif" fontSize="10">trips</text>
+
+  <rect x="560" y="48" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="62" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">hometime</text>
+  <rect x="560" y="70" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="84" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">entropy</text>
+  <rect x="560" y="92" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="106" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">trip_distance</text>
+  <rect x="560" y="114" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="128" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">trip_duration</text>
+
+  {/* GPS solid arrows */}
+  <line x1="155" y1="81" x2="203" y2="81" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="75" x2="368" y2="72" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="87" x2="368" y2="100" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="67" x2="558" y2="58" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="77" x2="558" y2="80" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="95" x2="558" y2="102" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="105" x2="558" y2="124" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+
+  {/* --- Data Quality (curved paths avoid primary boxes) --- */}
+  <rect x="560" y="136" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="150" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">data_quality</text>
+  {/* GPS→data_quality: curves below trips primary box */}
+  <path d="M 315 94 C 360 130, 510 150, 558 146" stroke="#94a3b8" strokeWidth="1.2" fill="none" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+  {/* Accelerometer→data_quality: curves above acc_jerk primary box */}
+  <path d="M 315 160 C 360 140, 510 138, 558 146" stroke="#94a3b8" strokeWidth="1.2" fill="none" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* ===== Accelerometer Pipeline ===== */}
+  <rect x="25" y="168" width="130" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="185" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.accelerometer</text>
+  <rect x="205" y="168" width="110" height="26" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="185" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">accelerometer</text>
+  <rect x="370" y="168" width="135" height="26" rx="5" fill="#ecfdf5" stroke="#a7f3d0" strokeWidth="1" />
+  <text x="437" y="185" textAnchor="middle" fill="#065f46" fontFamily="system-ui, sans-serif" fontSize="10">acc_jerk</text>
+  <rect x="560" y="168" width="210" height="26" rx="5" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="185" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">inactive_duration</text>
+  <line x1="155" y1="181" x2="203" y2="181" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="181" x2="368" y2="181" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="181" x2="558" y2="181" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+
+  {/* ===== Device State Pipeline ===== */}
+  <rect x="25" y="210" width="130" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="227" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.device_state</text>
+  <rect x="205" y="210" width="110" height="26" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="227" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">device_state</text>
+  <rect x="370" y="210" width="135" height="26" rx="5" fill="#ecfdf5" stroke="#a7f3d0" strokeWidth="1" />
+  <text x="437" y="227" textAnchor="middle" fill="#065f46" fontFamily="system-ui, sans-serif" fontSize="10">screen_active</text>
+  <rect x="560" y="206" width="210" height="22" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="221" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">screen_duration</text>
+  <rect x="560" y="232" width="210" height="22" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="247" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">battery_level</text>
+  {/* Solid arrows: source→raw→primary→screen_duration */}
+  <line x1="155" y1="223" x2="203" y2="223" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="223" x2="368" y2="223" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="218" x2="558" y2="217" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  {/* Dashed: raw→battery_level curves below screen_active primary box */}
+  <path d="M 315 236 C 380 260, 510 256, 558 243" stroke="#94a3b8" strokeWidth="1.2" fill="none" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* ===== Steps ===== */}
+  <rect x="25" y="270" width="130" height="24" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="286" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.steps</text>
+  <rect x="205" y="270" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="286" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">steps</text>
+  <rect x="560" y="270" width="210" height="24" rx="5" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="286" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">step_count</text>
+  <line x1="155" y1="282" x2="203" y2="282" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="282" x2="558" y2="282" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* ===== Nearby Device ===== */}
+  <rect x="25" y="302" width="130" height="24" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="318" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.nearby_device</text>
+  <rect x="205" y="302" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="318" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">nearby_device</text>
+  <rect x="560" y="302" width="210" height="24" rx="5" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="318" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">nearby_device_count</text>
+  <line x1="155" y1="314" x2="203" y2="314" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="314" x2="558" y2="314" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* ===== Telephony (raw centered between 3 secondaries, symmetric split arrows) ===== */}
+  <rect x="25" y="350" width="130" height="24" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="366" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.telephony</text>
+  <rect x="205" y="350" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="366" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">telephony</text>
+  <rect x="560" y="332" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="346" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">call_number</text>
+  <rect x="560" y="354" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="368" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">call_duration</text>
+  <rect x="560" y="376" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="390" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">call_degree</text>
+  <line x1="155" y1="362" x2="203" y2="362" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="356" x2="558" y2="342" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+  <line x1="315" y1="362" x2="558" y2="364" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+  <line x1="315" y1="368" x2="558" y2="386" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* ===== Sleep ===== */}
+  <rect x="25" y="410" width="130" height="24" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="426" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.sleep</text>
+  <rect x="205" y="410" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="426" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">sleep</text>
+  <rect x="560" y="410" width="210" height="24" rx="5" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="426" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">healthkit_sleep_duration</text>
+  <line x1="155" y1="422" x2="203" y2="422" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="422" x2="558" y2="422" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* ===== Survey Pipeline ===== */}
+  <rect x="25" y="450" width="130" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="467" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.survey</text>
+  <rect x="205" y="450" width="110" height="26" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="467" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">survey</text>
+  <rect x="370" y="450" width="135" height="26" rx="5" fill="#ecfdf5" stroke="#a7f3d0" strokeWidth="1" />
+  <text x="437" y="467" textAnchor="middle" fill="#065f46" fontFamily="system-ui, sans-serif" fontSize="10">survey_scores</text>
+  <rect x="560" y="450" width="210" height="26" rx="5" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="467" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">survey_results</text>
+  <line x1="155" y1="463" x2="203" y2="463" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="463" x2="368" y2="463" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="463" x2="558" y2="463" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+
+  {/* ===== Games Pipeline ===== */}
+  <rect x="25" y="490" width="130" height="100" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="508" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.jewels_a</text>
+  <text x="90" y="523" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.jewels_b</text>
+  <text x="90" y="538" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.balloon_risk</text>
+  <text x="90" y="553" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.cats_and_dogs</text>
+  <text x="90" y="568" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.pop_the_bubbles</text>
+  <text x="90" y="583" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.spatial_span</text>
+
+  <rect x="205" y="490" width="110" height="100" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="508" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">jewels_a</text>
+  <text x="260" y="523" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">jewels_b</text>
+  <text x="260" y="538" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">balloon_risk</text>
+  <text x="260" y="553" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">cats_and_dogs</text>
+  <text x="260" y="568" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">pop_the_bubbles</text>
+  <text x="260" y="583" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">spatial_span</text>
+
+  <rect x="370" y="527" width="135" height="26" rx="5" fill="#ecfdf5" stroke="#a7f3d0" strokeWidth="1" />
+  <text x="437" y="544" textAnchor="middle" fill="#065f46" fontFamily="system-ui, sans-serif" fontSize="10">game_level_scores</text>
+  <rect x="560" y="527" width="210" height="26" rx="5" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="544" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">game_results</text>
+  <line x1="155" y1="540" x2="203" y2="540" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="315" y1="540" x2="368" y2="540" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+  <line x1="505" y1="540" x2="558" y2="540" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+
+  {/* ===== Analytics (auxiliary — feeds step_count, app_time) ===== */}
+  <rect x="25" y="604" width="130" height="24" rx="5" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="90" y="620" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">lamp.analytics</text>
+  <rect x="205" y="604" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="620" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">analytics</text>
+  <text x="437" y="620" textAnchor="middle" fill="#94a3b8" fontFamily="system-ui, sans-serif" fontSize="9" fontStyle="italic">feeds step_count, app_time</text>
+  <line x1="155" y1="616" x2="203" y2="616" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" />
+
+  {/* ===== SENSORKIT ===== */}
+  <text x="20" y="652" fill="#94a3b8" fontFamily="system-ui, sans-serif" fontSize="9" fontWeight="700">SENSORKIT (iOS RESEARCH ENROLLMENT)</text>
+  <line x1="20" y1="658" x2="775" y2="658" stroke="#e2e8f0" strokeWidth="1" />
+
+  {/* --- device_usage → 4 secondary (raw centered, symmetric split arrows) --- */}
+  <rect x="205" y="699" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="715" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">device_usage</text>
+  <rect x="560" y="670" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="684" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">screen_unlocks</text>
+  <rect x="560" y="692" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="706" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">screen_unlock_duration</text>
+  <rect x="560" y="714" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="728" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">screen_wakes</text>
+  <rect x="560" y="736" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="750" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">app_time</text>
+  <line x1="315" y1="704" x2="558" y2="680" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+  <line x1="315" y1="708" x2="558" y2="702" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+  <line x1="315" y1="714" x2="558" y2="724" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+  <line x1="315" y1="718" x2="558" y2="746" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* --- messages_usage → 2 secondary (raw centered, symmetric split arrows) --- */}
+  <rect x="205" y="780" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="796" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">messages_usage</text>
+  <rect x="560" y="770" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="784" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">text_number</text>
+  <rect x="560" y="792" width="210" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="806" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">text_degree</text>
+  <line x1="315" y1="787" x2="558" y2="780" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+  <line x1="315" y1="797" x2="558" y2="802" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* --- visits → visit_time --- */}
+  <rect x="205" y="824" width="110" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe" strokeWidth="1" />
+  <text x="260" y="840" textAnchor="middle" fill="#1e40af" fontFamily="system-ui, sans-serif" fontSize="10">visits</text>
+  <rect x="560" y="824" width="210" height="24" rx="5" fill="#f5f3ff" stroke="#ddd6fe" strokeWidth="1" />
+  <text x="665" y="840" textAnchor="middle" fill="#5b21b6" fontFamily="system-ui, sans-serif" fontSize="10">visit_time</text>
+  <line x1="315" y1="836" x2="558" y2="836" stroke="#94a3b8" strokeWidth="1.2" markerEnd="url(#arrow)" strokeDasharray="4 3" />
+
+  {/* ===== LEGEND ===== */}
+  <rect x="20" y="866" width="755" height="40" rx="8" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="1" />
+  <line x1="40" y1="890" x2="70" y2="890" stroke="#94a3b8" strokeWidth="1.5" markerEnd="url(#arrow)" />
+  <text x="78" y="894" fill="#475569" fontFamily="system-ui, sans-serif" fontSize="10">Full pipeline (raw → primary → secondary)</text>
+  <line x1="420" y1="890" x2="450" y2="890" stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="4 3" markerEnd="url(#arrow)" />
+  <text x="458" y="894" fill="#475569" fontFamily="system-ui, sans-serif" fontSize="10">Direct (raw → secondary, skipping primary)</text>
+</svg>
+
+Raw features virtualize low-level data streams into a consistent format, handling iOS/Android harmonization automatically. Primary features produce **sparse** output — a variable number of discrete events per time range (e.g., a list of trips or screen-on bouts, each with start/end timestamps). Secondary features produce **dense** output — exactly one value per time window (e.g., total daily screen time, daily step count), making them directly suitable for statistical analysis and clinical reporting.
+
+Cortex automatically manages dependencies — requesting a secondary feature like `hometime` triggers computation of all required primary and raw features. Raw features handle iOS/Android harmonization automatically, so downstream features receive uniform data regardless of the source platform.
+
+:::note SensorKit features
+Some features (`screen_unlocks`, `text_number`, `visit_time`, etc.) depend on iOS SensorKit data, available only on devices enrolled in Apple-approved research studies. Most deployments use the standard sensor equivalents instead. See the [Secondary Features](secondary-features) page for details.
+:::

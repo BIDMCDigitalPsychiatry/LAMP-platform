@@ -47,11 +47,10 @@ try {
   projectsData = [];
 }
 
-// Status colors (keys match Notion select values) - using mindLAMP brand colors
+// Status colors (keys match Notion Stage values) - using mindLAMP brand colors
 const STATUS_COLORS: Record<string, string> = {
-  Ongoing: '#64cebf',    // mindlamp-teal
-  Completed: '#86b6ff',  // mindlamp-blue
-  Planned: '#ffd645',    // mindlamp-yellow
+  Active: '#64cebf',     // mindlamp-teal
+  Complete: '#86b6ff',   // mindlamp-blue
 };
 
 const ProjectGallery: React.FC = () => {
@@ -130,7 +129,7 @@ const ProjectGallery: React.FC = () => {
 
   // Stats
   const stats = useMemo(() => {
-    const activeCount = filteredProjects.filter(p => p.status === 'Ongoing').length;
+    const activeCount = filteredProjects.filter(p => p.status === 'Active').length;
     const totalParticipants = filteredProjects.reduce((sum, p) => sum + (p.participants || 0), 0);
     const uniqueCountriesCount = new Set(filteredProjects.flatMap(p => p.countries || [])).size;
     const totalPubs = filteredProjects.reduce((sum, p) => sum + (p.publications?.length || 0), 0);
@@ -262,7 +261,7 @@ const ProjectGallery: React.FC = () => {
           <div className={styles.heroTagline}>mindLAMP in Action</div>
           <h1 className={styles.heroTitle}>Project Gallery</h1>
           <p className={styles.heroSubtitle}>
-            Explore research studies, clinical implementations, and real-world deployments of mindLAMP across diverse populations and institutions worldwide.
+            Explore real-world deployments of mindLAMP across diverse populations and institutions worldwide.
           </p>
 
           {/* Stats Badges */}
@@ -280,7 +279,7 @@ const ProjectGallery: React.FC = () => {
             </div>
             <div className={styles.statBadge}>
               <span className={styles.statNumber}>{stats.active}</span>
-              <span className={styles.statLabel}>Ongoing</span>
+              <span className={styles.statLabel}>Active</span>
             </div>
             <div className={styles.statBadge}>
               <span className={styles.statNumber}>{stats.countries}</span>
@@ -289,22 +288,6 @@ const ProjectGallery: React.FC = () => {
           </div>
         </div>
       </header>
-
-      {/* Contribution Callout */}
-      <div className={styles.contributionCallout}>
-        <h3>Have a project using mindLAMP?</h3>
-        <p>
-          We'd love to feature your work. Share your project details and help grow the mindLAMP community.
-        </p>
-        <a
-          href="https://forms.gle/YourProjectFormLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.contributionLink}
-        >
-          Submit Your Project
-        </a>
-      </div>
 
       {/* Filters Section */}
       <section className={styles.filtersSection}>

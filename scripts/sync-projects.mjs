@@ -11,7 +11,7 @@ import { Client } from '@notionhq/client';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// --- Initialize Notion client ---
+// --- Initialize Notion client (old API for traditional database support) ---
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
   notionVersion: "2022-06-28"
@@ -21,7 +21,7 @@ const notion = new Client({
 const DB_IDS = {
   projects: process.env.NOTION_PROJECTS_DB_ID || '2b233133d8a280d79629d7c48f9737a6',
   publications: process.env.NOTION_PUBLICATIONS_DB_ID || '2b233133d8a2802786f3c1dd4d802d1e',
-  tags: process.env.NOTION_TAGS_DB_ID || '2b233133d8a2801bad2ccdd3c9904dac'
+  tags: process.env.NOTION_TAGS_DB_ID || '30c33133d8a280e1a48fd37bb4afb704'
 };
 
 // --- Validation ---
@@ -79,6 +79,7 @@ async function fetchAllPages(databaseId) {
   do {
     const response = await notion.databases.query({
       database_id: databaseId,
+      page_size: 100,
       start_cursor: cursor,
     });
 
@@ -92,31 +93,48 @@ async function fetchAllPages(databaseId) {
 // --- Parse functions ---
 function parseTag(page) {
   const props = page.properties;
+  // Notion field is 'tag' (title), not 'tagID'
+  const tagValue = getTitle(props['tag']);
   return {
     id: page.id,
-    tagID: getTitle(props['tagID']),
-    name: getTitle(props['tagID']),
+    tagID: tagValue,
+    name: tagValue,
     description: getRichText(props['description'])
   };
 }
 
 function parsePublication(page) {
   const props = page.properties;
+  // 'title' is the title field in Publications data source
+  // DOI may be embedded in URL or we extract from title
+  const url = props['url']?.url || '';
+  const doi = url.includes('doi.org/') ? url.split('doi.org/')[1] : '';
   return {
     id: page.id,
-    doi: getTitle(props['doi']),
-    title: getRichText(props['title']),
+    doi: doi,
+    title: getTitle(props['title']),
     year: getNumber(props['year']),
-    url: props['url']?.url || ''
+    url: url
   };
+}
+
+function getDate(prop) {
+  if (!prop || !prop.date || !prop.date.start) return null;
+  return prop.date.start;
+}
+
+function getYearFromDate(prop) {
+  const d = getDate(prop);
+  if (!d) return null;
+  return parseInt(d.substring(0, 4), 10);
 }
 
 function parseProject(page, tagMap, pubMap) {
   const props = page.properties;
 
-  // Extract relation IDs
-  const tagIDs = getRelation(props['tagIDs']);
-  const pubIDs = getRelation(props['publicationIDs']);
+  // Extract relation IDs (renamed fields)
+  const tagIDs = getRelation(props['Tags']);
+  const pubIDs = getRelation(props['Publications']);
 
   // Resolve tags
   const tags = tagIDs
@@ -130,24 +148,31 @@ function parseProject(page, tagMap, pubMap) {
     .filter(Boolean)
     .map(p => ({ id: p.id, doi: p.doi, title: p.title, year: p.year, url: p.url }));
 
+  // Extract projectID - field is rich_text type, format is "0031: Name"
+  const rawProjectID = getRichText(props['Project ID']);
+  const projectIDMatch = rawProjectID.match(/^(\d+)/);
+  const projectID = projectIDMatch ? `PRJ-${projectIDMatch[1].padStart(4, '0')}` : rawProjectID;
+
+  // Stage is the single status field now
+  const status = getSelect(props['Stage']) || 'Active';
+
   return {
     id: page.id,
-    projectID: getTitle(props['projectID']),
-    name: getRichText(props['name']),
-    shortDescription: getRichText(props['shortDescription']),
-    mindLAMPFeatures: getRichText(props['mindLAMPFeatures']),
-    institutions: getRichText(props['institutions']),
-    countries: getMultiSelect(props['country']),
-    status: getSelect(props['status']),
-    start: getNumber(props['start']),
-    end: getNumber(props['end']),
-    participants: getNumber(props['participants']),
-    studyDuration: getRichText(props['studyDuration']),
-    projectDuration: getRichText(props['projectDuration']),
-    population: getRichText(props['population']),
-    ageRange: getRichText(props['ageRange']),
+    projectID: projectID,
+    name: getTitle(props['Name']),
+    shortDescription: getRichText(props['Description']),
+    mindLAMPFeatures: getRichText(props['Features Used']),
+    institutions: getRichText(props['Institutions']),
+    countries: getMultiSelect(props['Country']),
+    status: status,
+    start: getYearFromDate(props['Start Date']),
+    end: getYearFromDate(props['End Date']),
+    participants: getNumber(props['Participants']),
+    studyDuration: getRichText(props['Study Duration']),
+    population: getRichText(props['Population']),
+    ageRange: getRichText(props['Age Range']),
     irb: getRichText(props['IRB']),
-    funding: getRichText(props['funding']),
+    funding: getRichText(props['Funding']),
     tags,
     publications
   };
@@ -157,16 +182,15 @@ function parseProject(page, tagMap, pubMap) {
 async function main() {
   console.log('Starting Notion projects sync...\n');
 
-  // Fetch databases
-  console.log('Fetching databases...');
-  const [tagsPages, publicationsPages, projectsPages] = await Promise.all([
-    fetchAllPages(DB_IDS.tags),
-    fetchAllPages(DB_IDS.publications),
-    fetchAllPages(DB_IDS.projects)
-  ]);
-
+  // Fetch all pages from each database
+  console.log('Fetching from databases...');
+  const tagsPages = await fetchAllPages(DB_IDS.tags);
   console.log(`  Tags: ${tagsPages.length}`);
+
+  const publicationsPages = await fetchAllPages(DB_IDS.publications);
   console.log(`  Publications: ${publicationsPages.length}`);
+
+  const projectsPages = await fetchAllPages(DB_IDS.projects);
   console.log(`  Projects: ${projectsPages.length}\n`);
 
   // Parse and build lookup maps
@@ -185,11 +209,11 @@ async function main() {
 
   console.log(`  Resolved ${projects.length} projects\n`);
 
-  // Sort projects: active first, then by start date descending
+  // Sort projects: Active first, then by start date descending
   projects.sort((a, b) => {
     // Active projects first
-    if (a.status === 'active' && b.status !== 'active') return -1;
-    if (a.status !== 'active' && b.status === 'active') return 1;
+    if (a.status === 'Active' && b.status !== 'Active') return -1;
+    if (a.status !== 'Active' && b.status === 'Active') return 1;
     // Then by start date (newer first)
     return (b.start || 0) - (a.start || 0);
   });

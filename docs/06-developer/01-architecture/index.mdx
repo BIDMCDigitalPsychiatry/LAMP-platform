@@ -1,0 +1,110 @@
+---
+sidebar_position: 0
+title: "Platform Architecture"
+description: "How mindLAMP is built: Node.js backend, DocumentDB storage, Redis caching, and the push notification pipeline."
+---
+
+import Link from '@docusaurus/Link';
+import {DocCard, DocCardGrid} from '@site/src/components/DocCard';
+
+# Platform Architecture
+
+mindLAMP is built on a Node.js backend with DocumentDB (CouchDB-compatible) storage and Redis caching. The platform exposes a REST API that serves both the dashboard and the mobile apps.
+
+<svg viewBox="0 0 640 410" xmlns="http://www.w3.org/2000/svg" style={{width: '100%', maxWidth: '640px', margin: '2rem auto', display: 'block'}}>
+  <defs>
+    <linearGradient id="appGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#065f46" />
+      <stop offset="100%" stopColor="#10b981" />
+    </linearGradient>
+    <linearGradient id="serverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1e3a8a" />
+      <stop offset="100%" stopColor="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="dashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#b45309" />
+      <stop offset="100%" stopColor="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="cortexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#7c3aed" />
+      <stop offset="100%" stopColor="#a78bfa" />
+    </linearGradient>
+    <marker id="arrowDown" viewBox="0 0 10 7" refX="5" refY="7" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 5 7 L 10 0" fill="none" stroke="#94a3b8" strokeWidth="1.5" />
+    </marker>
+  </defs>
+
+  {/* ===== ROW 1: Clients ===== */}
+  <rect x="20" y="10" width="270" height="58" rx="10" fill="url(#appGrad)" />
+  <text x="155" y="34" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="14" fontWeight="700">The App</text>
+  <text x="155" y="52" textAnchor="middle" fill="rgba(255,255,255,0.85)" fontFamily="system-ui, sans-serif" fontSize="10">iOS · Android · watchOS · Wear OS</text>
+
+  <rect x="350" y="10" width="270" height="58" rx="10" fill="url(#dashGrad)" />
+  <text x="485" y="34" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="14" fontWeight="700">The Dashboard</text>
+  <text x="485" y="52" textAnchor="middle" fill="rgba(255,255,255,0.85)" fontFamily="system-ui, sans-serif" fontSize="10">Web coordinator interface</text>
+
+  {/* ===== Arrows: Clients → Server ===== */}
+  <line x1="155" y1="68" x2="253" y2="113" stroke="#94a3b8" strokeWidth="1.5" />
+  <polygon points="257,115 248,115 252,108" fill="#94a3b8" />
+
+  <line x1="485" y1="68" x2="387" y2="113" stroke="#94a3b8" strokeWidth="1.5" />
+  <polygon points="383,115 392,115 388,108" fill="#94a3b8" />
+
+  <rect x="260" y="82" width="120" height="22" rx="4" fill="white" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="320" y="97" textAnchor="middle" fill="#475569" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">REST API</text>
+
+  {/* ===== ROW 2: LAMP Server ===== */}
+  <rect x="80" y="120" width="480" height="60" rx="10" fill="url(#serverGrad)" />
+  <text x="320" y="146" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="15" fontWeight="700">LAMP Server</text>
+  <text x="320" y="165" textAnchor="middle" fill="rgba(255,255,255,0.85)" fontFamily="system-ui, sans-serif" fontSize="10">Node.js API · Push Notifications (APNs / FCM)</text>
+
+  {/* ===== Arrows: Server → Infrastructure ===== */}
+  <line x1="200" y1="180" x2="142" y2="214" stroke="#94a3b8" strokeWidth="1.2" />
+  <polygon points="138,217 146,216 142,210" fill="#94a3b8" />
+
+  <line x1="320" y1="180" x2="320" y2="213" stroke="#94a3b8" strokeWidth="1.2" />
+  <polygon points="316,212 320,217 324,212" fill="#94a3b8" />
+
+  <line x1="440" y1="180" x2="498" y2="214" stroke="#94a3b8" strokeWidth="1.2" />
+  <polygon points="502,217 494,216 498,210" fill="#94a3b8" />
+
+  {/* ===== ROW 3: Infrastructure ===== */}
+  <rect x="40" y="222" width="180" height="46" rx="8" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1.5" />
+  <text x="130" y="243" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="12" fontWeight="600">DocumentDB</text>
+  <text x="130" y="259" textAnchor="middle" fill="#64748b" fontFamily="system-ui, sans-serif" fontSize="9.5">CouchDB-compatible storage</text>
+
+  <rect x="240" y="222" width="160" height="46" rx="8" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1.5" />
+  <text x="320" y="243" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="12" fontWeight="600">Redis</text>
+  <text x="320" y="259" textAnchor="middle" fill="#64748b" fontFamily="system-ui, sans-serif" fontSize="9.5">Cache &amp; sessions</text>
+
+  <rect x="420" y="222" width="180" height="46" rx="8" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1.5" />
+  <text x="510" y="243" textAnchor="middle" fill="#334155" fontFamily="system-ui, sans-serif" fontSize="12" fontWeight="600">NATS</text>
+  <text x="510" y="259" textAnchor="middle" fill="#64748b" fontFamily="system-ui, sans-serif" fontSize="9.5">Message queue</text>
+
+  {/* ===== Arrow: Server → Cortex ===== */}
+  <line x1="320" y1="268" x2="320" y2="325" stroke="#94a3b8" strokeWidth="1.5" />
+  <polygon points="316,324 320,329 324,324" fill="#94a3b8" />
+
+  <rect x="260" y="290" width="120" height="22" rx="4" fill="white" stroke="#cbd5e1" strokeWidth="1" />
+  <text x="320" y="305" textAnchor="middle" fill="#475569" fontFamily="system-ui, sans-serif" fontSize="10" fontWeight="600">REST API</text>
+
+  {/* ===== ROW 4: Cortex ===== */}
+  <rect x="120" y="334" width="400" height="58" rx="10" fill="url(#cortexGrad)" />
+  <text x="320" y="358" textAnchor="middle" fill="white" fontFamily="system-ui, sans-serif" fontSize="15" fontWeight="700">Cortex</text>
+  <text x="320" y="377" textAnchor="middle" fill="rgba(255,255,255,0.85)" fontFamily="system-ui, sans-serif" fontSize="10">Python feature extraction &amp; analysis library</text>
+</svg>
+
+## In This Section
+
+<DocCardGrid>
+  <DocCard id="developer/architecture/components" />
+  <DocCard id="developer/architecture/data-flow" />
+  <DocCard id="developer/architecture/low-power" />
+  <DocCard id="developer/architecture/app-gateway" />
+</DocCardGrid>
+
+## Key Design Principles
+
+- **API-first** — All functionality is accessible through the REST API. The dashboard and mobile apps are clients with no privileged access.
+- **Credential hierarchy** — Access is scoped by a three-level hierarchy: server administrators, researchers/clinicians, and participants.
+- **Extensibility** — Custom activities, automations, and integrations are built on top of the API without modifying the core platform.

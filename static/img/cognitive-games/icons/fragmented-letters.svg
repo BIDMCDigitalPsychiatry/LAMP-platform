@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#E3F2FD"/>
+  <!-- Fragmented letter "T" made of scattered blocks -->
+  <g transform="translate(106, 80)">
+    <!-- Top bar fragments -->
+    <rect x="0" y="0" width="56" height="48" rx="4" fill="#1E88E5"/>
+    <rect x="72" y="0" width="56" height="48" rx="4" fill="#42A5F5"/>
+    <rect x="144" y="0" width="56" height="48" rx="4" fill="#1E88E5"/>
+    <rect x="216" y="0" width="56" height="48" rx="4" fill="#42A5F5"/>
+    <!-- Missing fragment -->
+    <rect x="72" y="0" width="56" height="48" rx="4" fill="#BBDEFB" opacity="0.4"/>
+    <!-- Vertical bar fragments -->
+    <rect x="108" y="64" width="56" height="48" rx="4" fill="#42A5F5"/>
+    <rect x="108" y="128" width="56" height="48" rx="4" fill="#1E88E5"/>
+    <!-- Missing fragment -->
+    <rect x="108" y="192" width="56" height="48" rx="4" fill="#BBDEFB" opacity="0.4"/>
+    <rect x="108" y="256" width="56" height="48" rx="4" fill="#42A5F5"/>
+    <rect x="108" y="320" width="56" height="48" rx="4" fill="#1E88E5"/>
+  </g>
+  <!-- Question mark -->
+  <text x="420" y="440" font-family="system-ui, sans-serif" font-size="80" font-weight="700" fill="#1565C0">?</text>
+</svg>

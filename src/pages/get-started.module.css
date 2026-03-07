@@ -76,25 +76,10 @@
 }
 
 .optionCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .optionHeader {
   margin-bottom: 1.5rem;
-}
-
-.optionNumber {
-  display: inline-block;
-  background: var(--mindlamp-blue);
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 600;
-  padding: 0.35rem 0.85rem;
-  border-radius: 20px;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .optionTitle {
@@ -119,13 +104,6 @@
   flex-grow: 1;
 }
 
-.featuresTitle {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0 0 1rem 0;
-  color: var(--ifm-heading-color);
-}
-
 .featuresList {
   margin: 0;
   padding-left: 1.25rem;
@@ -140,23 +118,6 @@
 
 .featuresList li:last-child {
   margin-bottom: 0;
-}
-
-.optionNote {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: rgba(255, 193, 7, 0.1);
-  border: 1px solid rgba(255, 193, 7, 0.3);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-  color: var(--ifm-color-emphasis-700);
-}
-
-.noteIcon {
-  font-size: 1.25rem;
 }
 
 .optionLink {
@@ -247,6 +208,50 @@
   margin-top: -0.25rem;
 }
 
+/* ========== EXPLORE SECTION ========== */
+.exploreSection {
+  padding: 5rem 0;
+  background: var(--ifm-background-color);
+}
+
+.exploreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.exploreCard {
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.exploreCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.exploreCardTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.35rem;
+}
+
+.exploreCardDescription {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+  line-height: 1.5;
+}
+
 /* ========== RESPONSIVE ========== */
 @media screen and (max-width: 996px) {
   .hero {
@@ -274,6 +279,10 @@
   .optionTitle {
     font-size: 1.5rem;
   }
+
+  .exploreGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -284,6 +293,10 @@
   .ctaButton {
     width: 100%;
     text-align: center;
+  }
+
+  .exploreGrid {
+    grid-template-columns: 1fr;
   }
 
   .faqQuestion {
@@ -308,11 +321,6 @@
   background: rgba(134, 182, 255, 0.1);
 }
 
-[data-theme='dark'] .optionNote {
-  background: rgba(255, 214, 69, 0.1);
-  border-color: rgba(255, 214, 69, 0.3);
-}
-
 [data-theme='dark'] .faqItem {
   background: var(--ifm-background-surface-color);
   border-color: var(--ifm-color-emphasis-300);
@@ -320,4 +328,13 @@
 
 [data-theme='dark'] .faqQuestion:hover {
   background: rgba(134, 182, 255, 0.1);
+}
+
+[data-theme='dark'] .exploreCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .exploreCard:hover {
+  border-color: var(--ifm-color-primary);
 }

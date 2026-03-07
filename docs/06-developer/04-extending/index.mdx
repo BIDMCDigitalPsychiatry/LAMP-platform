@@ -1,0 +1,24 @@
+---
+sidebar_position: 0
+title: "Extending mindLAMP"
+description: "Custom activities, automated interventions, scheduled tasks, and identity provider integration."
+---
+
+import {DocCard, DocCardGrid} from '@site/src/components/DocCard';
+
+# Extending mindLAMP
+
+mindLAMP can be extended beyond its built-in capabilities with custom content, automated interventions, scheduled tasks, and identity provider integrations.
+
+## In This Section
+
+<DocCardGrid>
+  <DocCard id="developer/extending/custom-activities" />
+  <DocCard id="developer/extending/interventions" />
+  <DocCard id="developer/extending/cron-jobs" />
+  <DocCard id="developer/extending/oauth-oidc" />
+</DocCardGrid>
+
+## General Approach
+
+Extensions interact with mindLAMP through the REST API. Custom activities run client-side within the app's embedded browser. Automations and cron jobs run server-side. This separation means extensions operate as independent clients without modifying the core platform.

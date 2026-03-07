@@ -288,8 +288,6 @@
 }
 
 .projectCard:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--card-shadow-hover);
 }
 
 .projectCard.highlighted {

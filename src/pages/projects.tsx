@@ -6,7 +6,7 @@ export default function ProjectsPage() {
   return (
     <Layout
       title="Project Gallery"
-      description="Explore research projects and studies using mindLAMP across diverse populations, institutions, and clinical domains worldwide"
+      description="Explore how teams around the world use mindLAMP to support mental health programs, clinical care, and research"
     >
       <main style={{ padding: '2rem 1rem', maxWidth: '1400px', margin: '0 auto' }}>
         <ProjectGallery />

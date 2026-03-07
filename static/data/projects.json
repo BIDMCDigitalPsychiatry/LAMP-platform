@@ -1,59 +1,5 @@
 [
   {
-    "id": "2fd33133-d8a2-8128-bce3-ee0fecc92f32",
-    "projectID": "PRJ-0031",
-    "name": "iTECSC (Implementing Technologies to Enhance Coordinated Specialty Care)",
-    "shortDescription": "Quality improvement project implementing mindLAMP into coordinated specialty care for CHR-p and first episode psychosis at BIDMC",
-    "mindLAMPFeatures": "Surveys; mindfulness; psychoeducation; CBT worksheets",
-    "institutions": "Beth Israel Deaconess Medical Center",
-    "countries": [
-      "USA"
-    ],
-    "status": "",
-    "start": 2023,
-    "end": 2023,
-    "participants": 9,
-    "studyDuration": "12 weeks",
-    "projectDuration": "3 months (2024)",
-    "population": "Clinical High Risk for Psychosis (CHR-p) and First Episode Psychosis (FEP)",
-    "ageRange": "",
-    "irb": "BIDMC #2023P000231",
-    "funding": "Not specified",
-    "tags": [
-      {
-        "id": "2b533133-d8a2-80d9-b0b9-f0a75953bcaa",
-        "tagID": "psychotic",
-        "name": "psychotic"
-      },
-      {
-        "id": "2b533133-d8a2-804c-b5dd-fb3f80c5197a",
-        "tagID": "adolescent",
-        "name": "adolescent"
-      },
-      {
-        "id": "2b533133-d8a2-80f9-add1-e230f890a853",
-        "tagID": "young-adult",
-        "name": "young-adult"
-      }
-    ],
-    "publications": [
-      {
-        "id": "2b533133-d8a2-80a3-a68d-c2fcdabd7e83",
-        "doi": "10.2196/47006",
-        "title": "Digital Phenotyping for Mood Disorders: Methodology-Oriented Pilot Feasibility Study",
-        "year": 2023,
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10787337/"
-      },
-      {
-        "id": "2b533133-d8a2-80c8-a3be-f60e8fe02802",
-        "doi": "10.2196/46491",
-        "title": "Implementing Technologies to Enhance Coordinated Specialty Care Framework: Implementation Outcomes From a Development and Usability Study",
-        "year": 2023,
-        "url": "https://doi.org/10.2196/46491"
-      }
-    ]
-  },
-  {
     "id": "2fd33133-d8a2-818d-9f0c-fcd6ae962dec",
     "projectID": "PRJ-0018",
     "name": "KePROS (Kenya Psychosis-Risk Outcomes Study)",
@@ -64,7 +10,7 @@
       "USA",
       "Kenya"
     ],
-    "status": "",
+    "status": "Active",
     "start": 2023,
     "end": null,
     "participants": 150,
@@ -107,6 +53,391 @@
     ]
   },
   {
+    "id": "2fd33133-d8a2-8144-a994-f04634d825f3",
+    "projectID": "PRJ-0002",
+    "name": "SHARP (Smartphone Health Assessment for Relapse Prevention)",
+    "shortDescription": "International observational longitudinal study of schizophrenia relapse prediction across Boston Bengaluru and Bhopal using mindLAMP for EMA cognitive testing and passive data",
+    "mindLAMPFeatures": "Twice-daily then twice-weekly surveys (mood medication adherence anxiety sleep social behaviors psychosis symptoms); Jewels Trail A/B; Box Game; Cats and Dogs; Balloon Risk; Pop the Bubbles; GPS; call/text logs; screen-time; accelerometer; smartwatch (steps sleep heart rate)",
+    "institutions": "Beth Israel Deaconess Medical Center; NIMHANS Bangalore; AIIMS Bhopal; Sangath",
+    "countries": [
+      "USA",
+      "India"
+    ],
+    "status": "Active",
+    "start": 2020,
+    "end": null,
+    "participants": 150,
+    "studyDuration": "12 months",
+    "projectDuration": "4 years (2017-2021)",
+    "population": "Schizophrenia spectrum disorders + Healthy Controls",
+    "ageRange": "",
+    "irb": "BIDMC IRB; Sangath/AIIMS Bhopal Joint IRB; NIMHANS IRB; India Health Ministry Screening Committee",
+    "funding": "Wellcome Trust 215843/Z/19/Z",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-80d9-b0b9-f0a75953bcaa",
+        "tagID": "psychotic",
+        "name": "psychotic"
+      },
+      {
+        "id": "2b533133-d8a2-80db-88b6-d9a252b21fe1",
+        "tagID": "low-income",
+        "name": "low-income"
+      },
+      {
+        "id": "2b533133-d8a2-80ae-8c5f-da022c8d8d85",
+        "tagID": "neurocognitive",
+        "name": "neurocognitive"
+      },
+      {
+        "id": "2b633133-d8a2-80f6-988d-d8a62dcba1c3",
+        "tagID": "race-ethnicity-language",
+        "name": "race-ethnicity-language"
+      }
+    ],
+    "publications": [
+      {
+        "id": "2b533133-d8a2-805b-a665-cc26bd0c2225",
+        "doi": "10.2196/70073",
+        "title": "mindLAMPVis as a Co-Designed Clinician-Facing Data Visualization Portal to Integrate Clinical Observations From Digital Phenotyping in Schizophrenia: User-Centered Design Process and Pilot Implementation",
+        "year": 2025,
+        "url": "https://doi.org/10.2196/70073"
+      },
+      {
+        "id": "2b533133-d8a2-80bb-a703-fdc70520d3b6",
+        "doi": "",
+        "title": "Analyzing Trends in Suicidal Thoughts Among Patients With Psychosis in India: Exploratory Secondary Analysis of Smartphone Ecological Momentary Assessment Data",
+        "year": 2025,
+        "url": "https://formative.jmir.org/2025/1/e67745/"
+      },
+      {
+        "id": "2b533133-d8a2-80c0-9d01-f3a2d3a0b3b7",
+        "doi": "10.1111/acps.13712",
+        "title": "Digital phenotyping data and anomaly detection methods to assess changes in mood and anxiety symptoms across a transdiagnostic clinical sample",
+        "year": 2024,
+        "url": "https://doi.org/10.1111/acps.13712"
+      },
+      {
+        "id": "2b533133-d8a2-80c3-8331-ec490741e563",
+        "doi": "10.1038/s44184-023-00023-0",
+        "title": "Monitoring sleep using smartphone data in a population of college students",
+        "year": 2023,
+        "url": "https://doi.org/10.1038/s44184-023-00023-0"
+      },
+      {
+        "id": "2b533133-d8a2-80f8-88b5-cc55f9c68bb5",
+        "doi": "10.1007/s40501-023-00309-2",
+        "title": "Digital Interventions for Relapse Prevention, Illness Self-Management, and Health Promotion In Schizophrenia: Recent Advances, Continued Challenges, and Future Opportunities",
+        "year": 2023,
+        "url": "https://doi.org/10.1007/s40501-023-00309-2"
+      },
+      {
+        "id": "2b533133-d8a2-80d7-9685-e5162c3932d7",
+        "doi": "10.1016/j.ssmmh.2022.100063",
+        "title": "A qualitative exploration of perceived needs and barriers of individuals with schizophrenia, caregivers and clinicians in using mental health applications in Madhya Pradesh, India",
+        "year": 2022,
+        "url": "https://doi.org/10.1016/j.ssmmh.2022.100063"
+      },
+      {
+        "id": "2b533133-d8a2-80a1-910e-f2e43cda6633",
+        "doi": "10.1017/gmh.2021.28",
+        "title": "Cross cultural and global uses of a digital mental health app: results of focus groups with clinicians, patients and family members in India and the United States",
+        "year": 2021,
+        "url": "https://doi.org/10.1017/gmh.2021.28"
+      },
+      {
+        "id": "2b533133-d8a2-805a-acf0-f5f068452113",
+        "doi": "10.1192/bjo.2020.142",
+        "title": "Smartphone Health Assessment for Relapse Prevention (SHARP): a digital solution toward global mental health",
+        "year": 2021,
+        "url": "https://doi.org/10.1192/bjo.2020.142"
+      }
+    ]
+  },
+  {
+    "id": "2fd33133-d8a2-819f-91ee-d96e01377a34",
+    "projectID": "PRJ-0001",
+    "name": "AMP SCZ (Accelerating Medicines Partnership Schizophrenia)",
+    "shortDescription": "Large international longitudinal cohort study of clinical high risk for psychosis across 43 sites and 13 countries using mindLAMP for daily EMA surveys voice diaries and passive sensing",
+    "mindLAMPFeatures": "Daily 30-item EMA surveys (emotions thoughts behaviors); voice diaries (2 min); GPS (5 Hz); accelerometer (5 Hz); screen state; Axivity AX3 wristwatch actigraphy (12.5 Hz)",
+    "institutions": "Yale; UCLA; Zucker/Northwell; Emory; UCSF; UPenn; UNC Chapel Hill; Beth Israel Deaconess; Northwestern; Washington Univ St. Louis; McLean; BWH; MGH; Mount Sinai; Pittsburgh; UC Irvine; University of Calgary; McGill; University of Cologne; Jena University Hospital; University of Manchester; University of Hong Kong; Seoul National University; Chonnam National University; Orygen/University of Melbourne; University of Singapore; Shanghai; University of Birmingham; King's College London; University of Pavia; University of Copenhagen; University of Munich; University of Chile",
+    "countries": [
+      "USA",
+      "Canada",
+      "Germany",
+      "UK",
+      "Hong Kong",
+      "South Korea",
+      "Australia",
+      "Singapore",
+      "China",
+      "Italy",
+      "Denmark",
+      "Chile"
+    ],
+    "status": "Active",
+    "start": 2020,
+    "end": null,
+    "participants": 3000,
+    "studyDuration": "up to 1 year per participant",
+    "projectDuration": "5-year study (2020-ongoing)",
+    "population": "Clinical High Risk for Psychosis + Healthy Controls",
+    "ageRange": "",
+    "irb": "Site-specific IRBs",
+    "funding": "NIMH U24MH124629; U01MH124631; U01MH124639; Wellcome Trust 220664/Z/20/Z; 220664/A/20/Z",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-80d9-b0b9-f0a75953bcaa",
+        "tagID": "psychotic",
+        "name": "psychotic"
+      },
+      {
+        "id": "2b533133-d8a2-804c-b5dd-fb3f80c5197a",
+        "tagID": "adolescent",
+        "name": "adolescent"
+      },
+      {
+        "id": "2b533133-d8a2-80f9-add1-e230f890a853",
+        "tagID": "young-adult",
+        "name": "young-adult"
+      },
+      {
+        "id": "2b633133-d8a2-80f6-988d-d8a62dcba1c3",
+        "tagID": "race-ethnicity-language",
+        "name": "race-ethnicity-language"
+      }
+    ],
+    "publications": [
+      {
+        "id": "2b533133-d8a2-806b-997e-f54e329b29bb",
+        "doi": "10.1038/s41537-025-00599-w",
+        "title": "Digital health technologies in the accelerating medicines Partnership® Schizophrenia Program",
+        "year": 2025,
+        "url": "https://doi.org/10.1038/s41537-025-00599-w"
+      },
+      {
+        "id": "2b533133-d8a2-804d-9464-d26e130be12d",
+        "doi": "10.1038/s41537-025-00560-x",
+        "title": "Enabling FAIR data stewardship in complex international multi-site studies: Data Operations for the Accelerating Medicines Partnership® Schizophrenia Program",
+        "year": 2025,
+        "url": "https://doi.org/10.1038/s41537-025-00560-x"
+      },
+      {
+        "id": "2b533133-d8a2-8048-9c2e-f54876b0ea5c",
+        "doi": "10.1038/s41537-025-00572-7",
+        "title": "Bridging Science and Hope: integrating and Communicating Lived experience in Accelerating Medicines Partnership® Schizophrenia Program",
+        "year": 2025,
+        "url": "https://doi.org/10.1038/s41537-025-00572-7"
+      },
+      {
+        "id": "2b533133-d8a2-80f8-bc24-c3ea508ca9b1",
+        "doi": "10.1093/schizbullopen/sgae025",
+        "title": "Utilizing Technology to Enhance the Ecological Validity of Cognitive and Functional Assessments in Schizophrenia: An Overview of the State-of-the-Art",
+        "year": 2024,
+        "url": "https://doi.org/10.1093/schizbullopen/sgae025"
+      },
+      {
+        "id": "2b533133-d8a2-808e-8913-ec7d3dfe1fc0",
+        "doi": "",
+        "title": "Accelerating Medicines Partnership® Schizophrenia (AMP® SCZ): Rationale and Study Design of the Largest Global Prospective Cohort Study of Clinical High Risk for Psychosis",
+        "year": 2024,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38451304/"
+      }
+    ]
+  },
+  {
+    "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
+    "projectID": "PRJ-0003",
+    "name": "The Digital Clinic",
+    "shortDescription": "Hybrid care model integrating mindLAMP into outpatient psychiatry at BIDMC combining weekly CBT therapy sessions with daily app-based symptom tracking and Digital Navigator support",
+    "mindLAMPFeatures": "Daily PHQ-9; GAD-7; custom mood/anxiety/function surveys; CBT/DBT/ACT skills (mindfulness goal tracking safety planning journaling behavioral activation); optional GPS; steps; screentime",
+    "institutions": "Beth Israel Deaconess Medical Center; Beth Israel Deaconess Hospital-Needham",
+    "countries": [
+      "USA"
+    ],
+    "status": "Active",
+    "start": 2018,
+    "end": null,
+    "participants": 400,
+    "studyDuration": "8 weeks",
+    "projectDuration": "6 years (2019-ongoing)",
+    "population": "Adults with depression anxiety or both",
+    "ageRange": "",
+    "irb": "2022D000016 (QI project)",
+    "funding": "Not specified",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-808b-831f-e9585b0ceb79",
+        "tagID": "depressive",
+        "name": "depressive"
+      },
+      {
+        "id": "2b533133-d8a2-809b-8e0f-f1561313ab9b",
+        "tagID": "anxiety",
+        "name": "anxiety"
+      },
+      {
+        "id": "2b533133-d8a2-80f9-add1-e230f890a853",
+        "tagID": "young-adult",
+        "name": "young-adult"
+      }
+    ],
+    "publications": [
+      {
+        "id": "2b533133-d8a2-8049-b283-f2894191add2",
+        "doi": "10.2196/65222",
+        "title": "Testing the Feasibility, Acceptability, and Potential Efficacy of an Innovative Digital Mental Health Care Delivery Model Designed to Increase Access to Care: Open Trial of the Digital Clinic",
+        "year": 2025,
+        "url": "https://doi.org/10.2196/65222"
+      },
+      {
+        "id": "2b533133-d8a2-8045-b369-d5bdc2bafbc0",
+        "doi": "10.1038/s41746-025-01860-3",
+        "title": "Transdiagnostic-focused apps for depression and anxiety: a meta-analysis",
+        "year": 2025,
+        "url": "https://doi.org/10.1038/s41746-025-01860-3"
+      },
+      {
+        "id": "2b533133-d8a2-806b-993c-c5822f24f15a",
+        "doi": "10.1016/j.jad.2025.02.051",
+        "title": "Evaluating clinical outcomes for anxiety and depression: A real-world comparison of the digital clinic and primary care",
+        "year": 2025,
+        "url": "https://doi.org/10.1016/j.jad.2025.02.051"
+      },
+      {
+        "id": "2b533133-d8a2-80c0-9d01-f3a2d3a0b3b7",
+        "doi": "10.1111/acps.13712",
+        "title": "Digital phenotyping data and anomaly detection methods to assess changes in mood and anxiety symptoms across a transdiagnostic clinical sample",
+        "year": 2024,
+        "url": "https://doi.org/10.1111/acps.13712"
+      },
+      {
+        "id": "2b533133-d8a2-8042-a3dc-fd6cfab4e221",
+        "doi": "10.1056/cat.23.0100",
+        "title": "The Digital Clinic: An Innovative Mental Health Care Delivery Model Utilizing Hybrid Synchronous and Asynchronous Treatment",
+        "year": 2023,
+        "url": "https://doi.org/10.1056/cat.23.0100"
+      },
+      {
+        "id": "2b533133-d8a2-803d-aeb1-ee920e3e3fea",
+        "doi": "10.1007/s40501-023-00288-4",
+        "title": "Methods for Navigating the Mobile Mental Health App Landscape for Clinical Use",
+        "year": 2023,
+        "url": "https://doi.org/10.1007/s40501-023-00288-4"
+      },
+      {
+        "id": "2b533133-d8a2-80e9-8c7d-f5db860fc76a",
+        "doi": "10.1016/j.psychres.2022.115015",
+        "title": "Smartphone app engagement and clinical outcomes in a hybrid clinic",
+        "year": 2023,
+        "url": "https://doi.org/10.1016/j.psychres.2022.115015"
+      },
+      {
+        "id": "2b533133-d8a2-8010-9351-f60c81c62a98",
+        "doi": "10.1002/wps.20938",
+        "title": "Designing and scaling up integrated youth mental health care",
+        "year": 2022,
+        "url": "https://doi.org/10.1002/wps.20938"
+      },
+      {
+        "id": "2b533133-d8a2-804f-a356-c62cdf39bdef",
+        "doi": "",
+        "title": "Problematic Internet Use Before and During the COVID-19 Pandemic in Youth in Outpatient Mental Health Treatment: App-Based Ecological Momentary Assessment Study",
+        "year": 2022,
+        "url": "https://mental.jmir.org/2022/1/e33114"
+      },
+      {
+        "id": "2b533133-d8a2-8026-a0c6-ef5537e2d365",
+        "doi": "10.1080/09540261.2020.1859465",
+        "title": "Case studies from the digital clinic: integrating digital phenotyping and clinical practice into today’s world",
+        "year": 2021,
+        "url": "https://doi.org/10.1080/09540261.2020.1859465"
+      },
+      {
+        "id": "2b533133-d8a2-8001-a23b-cd2f9526198c",
+        "doi": "10.2196/23771",
+        "title": "Technology Enabled Clinical Care (TECC): Protocol for a Prospective Longitudinal Cohort Study of Smartphone-Augmented Mental Health Treatment",
+        "year": 2021,
+        "url": "https://doi.org/10.2196/23771"
+      },
+      {
+        "id": "2b533133-d8a2-80b9-b551-dc556379b4a5",
+        "doi": "",
+        "title": "Integrating mobile health into mental health: An exploratory analysis and case series from the digital clinic",
+        "year": 2021,
+        "url": "https://www.proquest.com/docview/2615322291/abstract/32D65F20C6CB4843PQ/1?accountid=11311&sourcetype=Dissertations%20&%20Theses"
+      },
+      {
+        "id": "2b533133-d8a2-80fd-9b94-c2ce7baccf31",
+        "doi": "10.1007/s11920-021-01254-8",
+        "title": "Digital Clinics and Mobile Technology Implementation for Mental Health Care",
+        "year": 2021,
+        "url": "https://doi.org/10.1007/s11920-021-01254-8"
+      },
+      {
+        "id": "2b533133-d8a2-8002-872a-c2c84c93580a",
+        "doi": "10.1016/j.genhosppsych.2020.06.009",
+        "title": "The digital clinic: Implementing technology and augmenting care for mental health",
+        "year": 2020,
+        "url": "https://doi.org/10.1016/j.genhosppsych.2020.06.009"
+      }
+    ]
+  },
+  {
+    "id": "2fd33133-d8a2-8128-bce3-ee0fecc92f32",
+    "projectID": "PRJ-0031",
+    "name": "iTECSC (Implementing Technologies to Enhance Coordinated Specialty Care)",
+    "shortDescription": "Quality improvement project implementing mindLAMP into coordinated specialty care for CHR-p and first episode psychosis at BIDMC",
+    "mindLAMPFeatures": "Surveys; mindfulness; psychoeducation; CBT worksheets",
+    "institutions": "Beth Israel Deaconess Medical Center",
+    "countries": [
+      "USA"
+    ],
+    "status": "Complete",
+    "start": 2023,
+    "end": 2023,
+    "participants": 9,
+    "studyDuration": "12 weeks",
+    "projectDuration": "3 months (2024)",
+    "population": "Clinical High Risk for Psychosis (CHR-p) and First Episode Psychosis (FEP)",
+    "ageRange": "",
+    "irb": "BIDMC #2023P000231",
+    "funding": "Not specified",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-80d9-b0b9-f0a75953bcaa",
+        "tagID": "psychotic",
+        "name": "psychotic"
+      },
+      {
+        "id": "2b533133-d8a2-804c-b5dd-fb3f80c5197a",
+        "tagID": "adolescent",
+        "name": "adolescent"
+      },
+      {
+        "id": "2b533133-d8a2-80f9-add1-e230f890a853",
+        "tagID": "young-adult",
+        "name": "young-adult"
+      }
+    ],
+    "publications": [
+      {
+        "id": "2b533133-d8a2-80c8-a3be-f60e8fe02802",
+        "doi": "10.2196/46491",
+        "title": "Implementing Technologies to Enhance Coordinated Specialty Care Framework: Implementation Outcomes From a Development and Usability Study",
+        "year": 2023,
+        "url": "https://doi.org/10.2196/46491"
+      },
+      {
+        "id": "2b533133-d8a2-80a3-a68d-c2fcdabd7e83",
+        "doi": "",
+        "title": "Digital Phenotyping for Mood Disorders: Methodology-Oriented Pilot Feasibility Study",
+        "year": 2023,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10787337/"
+      }
+    ]
+  },
+  {
     "id": "2fd33133-d8a2-81a6-9556-c97971401743",
     "projectID": "PRJ-0006",
     "name": "Mount Sinai NYC Mood & Anxiety Study",
@@ -116,7 +447,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2023,
     "end": 2024,
     "participants": 114,
@@ -146,7 +477,7 @@
     "publications": [
       {
         "id": "2b533133-d8a2-806e-9665-d9b9df47a69a",
-        "doi": "10.1038/s41746-025-01669-0",
+        "doi": "",
         "title": "Digital measures of activity and motivation impact depression and anxiety in the real world",
         "year": 2025,
         "url": "10.1038/s41746-025-01669-0"
@@ -170,7 +501,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2022,
     "end": 2024,
     "participants": 37,
@@ -194,11 +525,11 @@
     ],
     "publications": [
       {
-        "id": "2b533133-d8a2-802d-a57b-c2fc24eba163",
-        "doi": "10.2196/59974",
-        "title": "Mobility-Based Smartphone Digital Phenotypes for Unobtrusively Capturing Everyday Cognition, Mood, and Community Life-Space in Older Adults: Feasibility, Acceptability, and Preliminary Validity Study",
-        "year": 2024,
-        "url": "https://doi.org/10.2196/59974"
+        "id": "2b533133-d8a2-8048-b5da-d04413839d6f",
+        "doi": "10.1002/alz.093355",
+        "title": "Exploring the differential impact of sociodemographic and extrinsic factors on mobility‐based digital phenotypes versus standard cognitive tests among older adults",
+        "year": 2025,
+        "url": "https://doi.org/10.1002/alz.093355"
       },
       {
         "id": "2b533133-d8a2-8041-b7b2-e08353239338",
@@ -208,11 +539,18 @@
         "url": "https://doi.org/10.1002/alz.093386"
       },
       {
-        "id": "2b533133-d8a2-8048-b5da-d04413839d6f",
-        "doi": "10.1002/alz.093355",
-        "title": "Exploring the differential impact of sociodemographic and extrinsic factors on mobility‐based digital phenotypes versus standard cognitive tests among older adults",
+        "id": "2b533133-d8a2-802c-96c4-f13b43060471",
+        "doi": "10.1016/j.inpsyc.2025.100123",
+        "title": "Barriers and facilitators to usability of a smartphone-based digital mental health tool in older adults: Insights from a secondary analysis of mindLAMP",
         "year": 2025,
-        "url": "https://doi.org/10.1002/alz.093355"
+        "url": "https://doi.org/10.1016/j.inpsyc.2025.100123"
+      },
+      {
+        "id": "2b533133-d8a2-802d-a57b-c2fc24eba163",
+        "doi": "10.2196/59974",
+        "title": "Mobility-Based Smartphone Digital Phenotypes for Unobtrusively Capturing Everyday Cognition, Mood, and Community Life-Space in Older Adults: Feasibility, Acceptability, and Preliminary Validity Study",
+        "year": 2024,
+        "url": "https://doi.org/10.2196/59974"
       },
       {
         "id": "2b533133-d8a2-8004-ba73-c92b00ed5d00",
@@ -220,13 +558,6 @@
         "title": "3 Smartphone Digital Phenotyping for Unobtrusive and Continuous Assessment of Everyday Cognition and Movement Trajectories in Older Adults",
         "year": 2023,
         "url": "https://doi.org/10.1017/S1355617723003132"
-      },
-      {
-        "id": "2b533133-d8a2-802c-96c4-f13b43060471",
-        "doi": "10.1016/j.inpsyc.2025.100123",
-        "title": "Barriers and facilitators to usability of a smartphone-based digital mental health tool in older adults: Insights from a secondary analysis of mindLAMP",
-        "year": 2025,
-        "url": "https://doi.org/10.1016/j.inpsyc.2025.100123"
       }
     ]
   },
@@ -240,7 +571,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2022,
     "end": 2022,
     "participants": 73,
@@ -284,7 +615,7 @@
       "Switzerland",
       "UK"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2022,
     "end": 2022,
     "participants": 1,
@@ -321,7 +652,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2022,
     "end": 2023,
     "participants": 1,
@@ -357,18 +688,18 @@
         "url": "https://doi.org/10.1007/s40501-023-00288-4"
       },
       {
-        "id": "2b533133-d8a2-80b1-a468-d350430ce165",
-        "doi": "10.1007/s40501-023-00301-w",
-        "title": "A Systematic Review and Exploration of Smartphone App Interventions for Perinatal Depression With Case Study",
-        "year": 2023,
-        "url": "https://doi.org/10.1007/s40501-023-00301-w"
-      },
-      {
         "id": "2b533133-d8a2-80ec-a22c-cd33416e2d82",
         "doi": "10.1038/s41746-023-00756-4",
         "title": "Digital mental health for postpartum women: perils, pitfalls, and promise",
         "year": 2023,
         "url": "https://doi.org/10.1038/s41746-023-00756-4"
+      },
+      {
+        "id": "2b533133-d8a2-80b1-a468-d350430ce165",
+        "doi": "10.1007/s40501-023-00301-w",
+        "title": "A Systematic Review and Exploration of Smartphone App Interventions for Perinatal Depression With Case Study",
+        "year": 2023,
+        "url": "https://doi.org/10.1007/s40501-023-00301-w"
       }
     ]
   },
@@ -382,7 +713,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2022,
     "participants": 96,
@@ -424,7 +755,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2023,
     "participants": 116,
@@ -453,18 +784,18 @@
     ],
     "publications": [
       {
-        "id": "2b533133-d8a2-80c0-b494-f5db4ce98089",
-        "doi": "10.1038/s41746-023-00977-7",
-        "title": "Classifying and clustering mood disorder patients using smartphone data from a feasibility study",
-        "year": 2023,
-        "url": "https://doi.org/10.1038/s41746-023-00977-7"
-      },
-      {
         "id": "2b533133-d8a2-802a-ab91-ebaa9ad0d99c",
         "doi": "10.1016/j.bionps.2024.100105",
         "title": "Using data processing to understand inconsistency in smartphone behavior among patients with serious mental illness: Results of a digital phenotyping biomarker study",
         "year": 2024,
         "url": "https://doi.org/10.1016/j.bionps.2024.100105"
+      },
+      {
+        "id": "2b533133-d8a2-80c0-b494-f5db4ce98089",
+        "doi": "10.1038/s41746-023-00977-7",
+        "title": "Classifying and clustering mood disorder patients using smartphone data from a feasibility study",
+        "year": 2023,
+        "url": "https://doi.org/10.1038/s41746-023-00977-7"
       }
     ]
   },
@@ -479,7 +810,7 @@
       "India",
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2022,
     "participants": 23,
@@ -503,18 +834,18 @@
     ],
     "publications": [
       {
+        "id": "2b533133-d8a2-808c-afdf-d3925caa6ead",
+        "doi": "",
+        "title": "Utility of Smartphone-Based Digital Phenotyping Biomarkers in Assessing Treatment Response to Transcranial Magnetic Stimulation in Depression: Proof-of-Concept Study",
+        "year": 2023,
+        "url": "https://formative.jmir.org/2023/1/e40197"
+      },
+      {
         "id": "2b533133-d8a2-80c8-a3be-f60e8fe02802",
         "doi": "10.2196/46491",
         "title": "Implementing Technologies to Enhance Coordinated Specialty Care Framework: Implementation Outcomes From a Development and Usability Study",
         "year": 2023,
         "url": "https://doi.org/10.2196/46491"
-      },
-      {
-        "id": "2b533133-d8a2-808c-afdf-d3925caa6ead",
-        "doi": "10.2196/40197",
-        "title": "Utility of Smartphone-Based Digital Phenotyping Biomarkers in Assessing Treatment Response to Transcranial Magnetic Stimulation in Depression: Proof-of-Concept Study",
-        "year": 2023,
-        "url": "https://formative.jmir.org/2023/1/e40197"
       }
     ]
   },
@@ -528,7 +859,7 @@
     "countries": [
       "India"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2022,
     "participants": 50,
@@ -570,7 +901,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2022,
     "participants": 156,
@@ -617,7 +948,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2024,
     "participants": 33,
@@ -686,7 +1017,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2022,
     "participants": 15,
@@ -728,7 +1059,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2022,
     "participants": 28,
@@ -790,7 +1121,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2021,
     "end": 2021,
     "participants": 66,
@@ -829,18 +1160,18 @@
     ],
     "publications": [
       {
-        "id": "2b533133-d8a2-8049-959f-ca21f28a362a",
-        "doi": "10.2196/37954",
-        "title": "Digital Phenotyping Data to Predict Symptom Improvement andApp Personalization: Protocol for a Prospective Study",
-        "year": 2022,
-        "url": "https://www.researchprotocols.org/2022/11/e37954"
-      },
-      {
         "id": "2b533133-d8a2-80ca-ba77-ce6e52420476",
         "doi": "10.2196/39258",
         "title": "Digital Phenotyping Data to Predict Symptom Improvement and Mental Health App Personalization in College Students: Prospective Validation of a Predictive Model",
         "year": 2023,
         "url": "https://doi.org/10.2196/39258"
+      },
+      {
+        "id": "2b533133-d8a2-8049-959f-ca21f28a362a",
+        "doi": "",
+        "title": "Digital Phenotyping Data to Predict Symptom Improvement andApp Personalization: Protocol for a Prospective Study",
+        "year": 2022,
+        "url": "https://www.researchprotocols.org/2022/11/e37954"
       },
       {
         "id": "2b533133-d8a2-8086-96d3-f2151515f1f2",
@@ -861,7 +1192,7 @@
     "countries": [
       "Bulgaria"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2020,
     "end": 2021,
     "participants": 20,
@@ -886,112 +1217,10 @@
     "publications": [
       {
         "id": "2b533133-d8a2-800e-8718-f4bf86d8468d",
-        "doi": "2021643-8-2",
+        "doi": "",
         "title": "Digital follow-up in patients with substance use disorders – pilot study assessing feasibility",
         "year": 2021,
         "url": "https://bulgarian-journal-of-psychiatry.bg/en/2021643-8-2/"
-      }
-    ]
-  },
-  {
-    "id": "2fd33133-d8a2-8144-a994-f04634d825f3",
-    "projectID": "PRJ-0002",
-    "name": "SHARP (Smartphone Health Assessment for Relapse Prevention)",
-    "shortDescription": "International observational longitudinal study of schizophrenia relapse prediction across Boston Bengaluru and Bhopal using mindLAMP for EMA cognitive testing and passive data",
-    "mindLAMPFeatures": "Twice-daily then twice-weekly surveys (mood medication adherence anxiety sleep social behaviors psychosis symptoms); Jewels Trail A/B; Box Game; Cats and Dogs; Balloon Risk; Pop the Bubbles; GPS; call/text logs; screen-time; accelerometer; smartwatch (steps sleep heart rate)",
-    "institutions": "Beth Israel Deaconess Medical Center; NIMHANS Bangalore; AIIMS Bhopal; Sangath",
-    "countries": [
-      "USA",
-      "India"
-    ],
-    "status": "",
-    "start": 2020,
-    "end": null,
-    "participants": 150,
-    "studyDuration": "12 months",
-    "projectDuration": "4 years (2017-2021)",
-    "population": "Schizophrenia spectrum disorders + Healthy Controls",
-    "ageRange": "",
-    "irb": "BIDMC IRB; Sangath/AIIMS Bhopal Joint IRB; NIMHANS IRB; India Health Ministry Screening Committee",
-    "funding": "Wellcome Trust 215843/Z/19/Z",
-    "tags": [
-      {
-        "id": "2b533133-d8a2-80d9-b0b9-f0a75953bcaa",
-        "tagID": "psychotic",
-        "name": "psychotic"
-      },
-      {
-        "id": "2b533133-d8a2-80db-88b6-d9a252b21fe1",
-        "tagID": "low-income",
-        "name": "low-income"
-      },
-      {
-        "id": "2b533133-d8a2-80ae-8c5f-da022c8d8d85",
-        "tagID": "neurocognitive",
-        "name": "neurocognitive"
-      },
-      {
-        "id": "2b633133-d8a2-80f6-988d-d8a62dcba1c3",
-        "tagID": "race-ethnicity-language",
-        "name": "race-ethnicity-language"
-      }
-    ],
-    "publications": [
-      {
-        "id": "2b533133-d8a2-805a-acf0-f5f068452113",
-        "doi": "10.1192/bjo.2020.142",
-        "title": "Smartphone Health Assessment for Relapse Prevention (SHARP): a digital solution toward global mental health",
-        "year": 2021,
-        "url": "https://doi.org/10.1192/bjo.2020.142"
-      },
-      {
-        "id": "2b533133-d8a2-80c3-8331-ec490741e563",
-        "doi": "10.1038/s44184-023-00023-0",
-        "title": "Monitoring sleep using smartphone data in a population of college students",
-        "year": 2023,
-        "url": "https://doi.org/10.1038/s44184-023-00023-0"
-      },
-      {
-        "id": "2b533133-d8a2-805b-a665-cc26bd0c2225",
-        "doi": "10.2196/70073",
-        "title": "mindLAMPVis as a Co-Designed Clinician-Facing Data Visualization Portal to Integrate Clinical Observations From Digital Phenotyping in Schizophrenia: User-Centered Design Process and Pilot Implementation",
-        "year": 2025,
-        "url": "https://doi.org/10.2196/70073"
-      },
-      {
-        "id": "2b533133-d8a2-80a1-910e-f2e43cda6633",
-        "doi": "10.1017/gmh.2021.28",
-        "title": "Cross cultural and global uses of a digital mental health app: results of focus groups with clinicians, patients and family members in India and the United States",
-        "year": 2021,
-        "url": "https://doi.org/10.1017/gmh.2021.28"
-      },
-      {
-        "id": "2b533133-d8a2-80bb-a703-fdc70520d3b6",
-        "doi": "10.2196/67745",
-        "title": "Analyzing Trends in Suicidal Thoughts Among Patients With Psychosis in India: Exploratory Secondary Analysis of Smartphone Ecological Momentary Assessment Data",
-        "year": 2025,
-        "url": "https://formative.jmir.org/2025/1/e67745/"
-      },
-      {
-        "id": "2b533133-d8a2-80c0-9d01-f3a2d3a0b3b7",
-        "doi": "10.1111/acps.13712",
-        "title": "Digital phenotyping data and anomaly detection methods to assess changes in mood and anxiety symptoms across a transdiagnostic clinical sample",
-        "year": 2024,
-        "url": "https://doi.org/10.1111/acps.13712"
-      },
-      {
-        "id": "2b533133-d8a2-80d7-9685-e5162c3932d7",
-        "doi": "10.1016/j.ssmmh.2022.100063",
-        "title": "A qualitative exploration of perceived needs and barriers of individuals with schizophrenia, caregivers and clinicians in using mental health applications in Madhya Pradesh, India",
-        "year": 2022,
-        "url": "https://doi.org/10.1016/j.ssmmh.2022.100063"
-      },
-      {
-        "id": "2b533133-d8a2-80f8-88b5-cc55f9c68bb5",
-        "doi": "10.1007/s40501-023-00309-2",
-        "title": "Digital Interventions for Relapse Prevention, Illness Self-Management, and Health Promotion In Schizophrenia: Recent Advances, Continued Challenges, and Future Opportunities",
-        "year": 2023,
-        "url": "https://doi.org/10.1007/s40501-023-00309-2"
       }
     ]
   },
@@ -1005,7 +1234,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2020,
     "end": 2020,
     "participants": 50,
@@ -1045,7 +1274,7 @@
     "publications": [
       {
         "id": "2b533133-d8a2-80b8-90c6-d4a255e3b8c6",
-        "doi": "28413045",
+        "doi": "",
         "title": "The use of digital phenotyping to investigate the relationship between digital media use and mental health in a cohort of clinical adolescents ",
         "year": 2021,
         "url": "https://search.proquest.com/dissertations-theses/use-digital-phenotyping-investigate-relationship/docview/2615322301/se-2"
@@ -1062,7 +1291,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2020,
     "end": 2021,
     "participants": 42,
@@ -1104,7 +1333,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2020,
     "end": 2020,
     "participants": 100,
@@ -1161,7 +1390,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2020,
     "end": 2021,
     "participants": 42,
@@ -1208,101 +1437,10 @@
       },
       {
         "id": "2b533133-d8a2-804f-a356-c62cdf39bdef",
-        "doi": "10.2196/33114",
+        "doi": "",
         "title": "Problematic Internet Use Before and During the COVID-19 Pandemic in Youth in Outpatient Mental Health Treatment: App-Based Ecological Momentary Assessment Study",
         "year": 2022,
         "url": "https://mental.jmir.org/2022/1/e33114"
-      }
-    ]
-  },
-  {
-    "id": "2fd33133-d8a2-819f-91ee-d96e01377a34",
-    "projectID": "PRJ-0001",
-    "name": "AMP SCZ (Accelerating Medicines Partnership Schizophrenia)",
-    "shortDescription": "Large international longitudinal cohort study of clinical high risk for psychosis across 43 sites and 13 countries using mindLAMP for daily EMA surveys voice diaries and passive sensing",
-    "mindLAMPFeatures": "Daily 30-item EMA surveys (emotions thoughts behaviors); voice diaries (2 min); GPS (5 Hz); accelerometer (5 Hz); screen state; Axivity AX3 wristwatch actigraphy (12.5 Hz)",
-    "institutions": "Yale; UCLA; Zucker/Northwell; Emory; UCSF; UPenn; UNC Chapel Hill; Beth Israel Deaconess; Northwestern; Washington Univ St. Louis; McLean; BWH; MGH; Mount Sinai; Pittsburgh; UC Irvine; University of Calgary; McGill; University of Cologne; Jena University Hospital; University of Manchester; University of Hong Kong; Seoul National University; Chonnam National University; Orygen/University of Melbourne; University of Singapore; Shanghai; University of Birmingham; King's College London; University of Pavia; University of Copenhagen; University of Munich; University of Chile",
-    "countries": [
-      "USA",
-      "Canada",
-      "Germany",
-      "UK",
-      "Hong Kong",
-      "South Korea",
-      "Australia",
-      "Singapore",
-      "China",
-      "Italy",
-      "Denmark",
-      "Chile"
-    ],
-    "status": "",
-    "start": 2020,
-    "end": null,
-    "participants": 3000,
-    "studyDuration": "up to 1 year per participant",
-    "projectDuration": "5-year study (2020-ongoing)",
-    "population": "Clinical High Risk for Psychosis + Healthy Controls",
-    "ageRange": "",
-    "irb": "Site-specific IRBs",
-    "funding": "NIMH U24MH124629; U01MH124631; U01MH124639; Wellcome Trust 220664/Z/20/Z; 220664/A/20/Z",
-    "tags": [
-      {
-        "id": "2b533133-d8a2-80d9-b0b9-f0a75953bcaa",
-        "tagID": "psychotic",
-        "name": "psychotic"
-      },
-      {
-        "id": "2b533133-d8a2-804c-b5dd-fb3f80c5197a",
-        "tagID": "adolescent",
-        "name": "adolescent"
-      },
-      {
-        "id": "2b533133-d8a2-80f9-add1-e230f890a853",
-        "tagID": "young-adult",
-        "name": "young-adult"
-      },
-      {
-        "id": "2b633133-d8a2-80f6-988d-d8a62dcba1c3",
-        "tagID": "race-ethnicity-language",
-        "name": "race-ethnicity-language"
-      }
-    ],
-    "publications": [
-      {
-        "id": "2b533133-d8a2-808e-8913-ec7d3dfe1fc0",
-        "doi": "10.1093/schbul/sbae011",
-        "title": "Accelerating Medicines Partnership® Schizophrenia (AMP® SCZ): Rationale and Study Design of the Largest Global Prospective Cohort Study of Clinical High Risk for Psychosis",
-        "year": 2024,
-        "url": "https://pubmed.ncbi.nlm.nih.gov/38451304/"
-      },
-      {
-        "id": "2b533133-d8a2-8048-9c2e-f54876b0ea5c",
-        "doi": "10.1038/s41537-025-00572-7",
-        "title": "Bridging Science and Hope: integrating and Communicating Lived experience in Accelerating Medicines Partnership® Schizophrenia Program",
-        "year": 2025,
-        "url": "https://doi.org/10.1038/s41537-025-00572-7"
-      },
-      {
-        "id": "2b533133-d8a2-804d-9464-d26e130be12d",
-        "doi": "10.1038/s41537-025-00560-x",
-        "title": "Enabling FAIR data stewardship in complex international multi-site studies: Data Operations for the Accelerating Medicines Partnership® Schizophrenia Program",
-        "year": 2025,
-        "url": "https://doi.org/10.1038/s41537-025-00560-x"
-      },
-      {
-        "id": "2b533133-d8a2-806b-997e-f54e329b29bb",
-        "doi": "10.1038/s41537-025-00599-w",
-        "title": "Digital health technologies in the accelerating medicines Partnership® Schizophrenia Program",
-        "year": 2025,
-        "url": "https://doi.org/10.1038/s41537-025-00599-w"
-      },
-      {
-        "id": "2b533133-d8a2-80f8-bc24-c3ea508ca9b1",
-        "doi": "10.1093/schizbullopen/sgae025",
-        "title": "Utilizing Technology to Enhance the Ecological Validity of Cognitive and Functional Assessments in Schizophrenia: An Overview of the State-of-the-Art",
-        "year": 2024,
-        "url": "https://doi.org/10.1093/schizbullopen/sgae025"
       }
     ]
   },
@@ -1316,7 +1454,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2020,
     "end": 2021,
     "participants": 695,
@@ -1350,11 +1488,11 @@
     ],
     "publications": [
       {
-        "id": "2b533133-d8a2-8049-959f-ca21f28a362a",
-        "doi": "10.2196/37954",
-        "title": "Digital Phenotyping Data to Predict Symptom Improvement andApp Personalization: Protocol for a Prospective Study",
-        "year": 2022,
-        "url": "https://www.researchprotocols.org/2022/11/e37954"
+        "id": "2b533133-d8a2-808a-856e-edb99e948323",
+        "doi": "10.1007/s41347-023-00310-9",
+        "title": "Digital Phenotyping Models of Symptom Improvement in College Mental Health: Generalizability Across Two Cohorts",
+        "year": 2023,
+        "url": "https://doi.org/10.1007/s41347-023-00310-9"
       },
       {
         "id": "2b533133-d8a2-80ca-ba77-ce6e52420476",
@@ -1362,20 +1500,6 @@
         "title": "Digital Phenotyping Data to Predict Symptom Improvement and Mental Health App Personalization in College Students: Prospective Validation of a Predictive Model",
         "year": 2023,
         "url": "https://doi.org/10.2196/39258"
-      },
-      {
-        "id": "2b533133-d8a2-8086-96d3-f2151515f1f2",
-        "doi": "10.1192/bjo.2022.507",
-        "title": "Digital phenotyping correlations in larger mental health samples: analysis and replication",
-        "year": 2022,
-        "url": "https://doi.org/10.1192/bjo.2022.507"
-      },
-      {
-        "id": "2b533133-d8a2-808a-856e-edb99e948323",
-        "doi": "10.1007/s41347-023-00310-9",
-        "title": "Digital Phenotyping Models of Symptom Improvement in College Mental Health: Generalizability Across Two Cohorts",
-        "year": 2023,
-        "url": "https://doi.org/10.1007/s41347-023-00310-9"
       },
       {
         "id": "2b533133-d8a2-804b-93d0-d56bbd150d51",
@@ -1390,6 +1514,20 @@
         "title": "Assessing engagement features in an observational study of mental health apps in college students",
         "year": 2022,
         "url": "https://doi.org/10.1016/j.psychres.2022.114470"
+      },
+      {
+        "id": "2b533133-d8a2-8049-959f-ca21f28a362a",
+        "doi": "",
+        "title": "Digital Phenotyping Data to Predict Symptom Improvement andApp Personalization: Protocol for a Prospective Study",
+        "year": 2022,
+        "url": "https://www.researchprotocols.org/2022/11/e37954"
+      },
+      {
+        "id": "2b533133-d8a2-8086-96d3-f2151515f1f2",
+        "doi": "10.1192/bjo.2022.507",
+        "title": "Digital phenotyping correlations in larger mental health samples: analysis and replication",
+        "year": 2022,
+        "url": "https://doi.org/10.1192/bjo.2022.507"
       }
     ]
   },
@@ -1403,7 +1541,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2019,
     "end": 2020,
     "participants": 27,
@@ -1465,7 +1603,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2019,
     "end": 2020,
     "participants": 30,
@@ -1514,7 +1652,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2019,
     "end": 2025,
     "participants": 3360,
@@ -1556,7 +1694,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2018,
     "end": 2020,
     "participants": 32,
@@ -1584,144 +1722,6 @@
     ]
   },
   {
-    "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
-    "projectID": "PRJ-0003",
-    "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)",
-    "shortDescription": "Hybrid care model integrating mindLAMP into outpatient psychiatry at BIDMC combining weekly CBT therapy sessions with daily app-based symptom tracking and Digital Navigator support",
-    "mindLAMPFeatures": "Daily PHQ-9; GAD-7; custom mood/anxiety/function surveys; CBT/DBT/ACT skills (mindfulness goal tracking safety planning journaling behavioral activation); optional GPS; steps; screentime",
-    "institutions": "Beth Israel Deaconess Medical Center; Beth Israel Deaconess Hospital-Needham",
-    "countries": [
-      "USA"
-    ],
-    "status": "",
-    "start": 2018,
-    "end": null,
-    "participants": 400,
-    "studyDuration": "8 weeks",
-    "projectDuration": "6 years (2019-ongoing)",
-    "population": "Adults with depression anxiety or both",
-    "ageRange": "",
-    "irb": "2022D000016 (QI project)",
-    "funding": "Not specified",
-    "tags": [
-      {
-        "id": "2b533133-d8a2-808b-831f-e9585b0ceb79",
-        "tagID": "depressive",
-        "name": "depressive"
-      },
-      {
-        "id": "2b533133-d8a2-809b-8e0f-f1561313ab9b",
-        "tagID": "anxiety",
-        "name": "anxiety"
-      },
-      {
-        "id": "2b533133-d8a2-80f9-add1-e230f890a853",
-        "tagID": "young-adult",
-        "name": "young-adult"
-      }
-    ],
-    "publications": [
-      {
-        "id": "2b533133-d8a2-804f-a356-c62cdf39bdef",
-        "doi": "10.2196/33114",
-        "title": "Problematic Internet Use Before and During the COVID-19 Pandemic in Youth in Outpatient Mental Health Treatment: App-Based Ecological Momentary Assessment Study",
-        "year": 2022,
-        "url": "https://mental.jmir.org/2022/1/e33114"
-      },
-      {
-        "id": "2b533133-d8a2-8001-a23b-cd2f9526198c",
-        "doi": "10.2196/23771",
-        "title": "Technology Enabled Clinical Care (TECC): Protocol for a Prospective Longitudinal Cohort Study of Smartphone-Augmented Mental Health Treatment",
-        "year": 2021,
-        "url": "https://doi.org/10.2196/23771"
-      },
-      {
-        "id": "2b533133-d8a2-8002-872a-c2c84c93580a",
-        "doi": "10.1016/j.genhosppsych.2020.06.009",
-        "title": "The digital clinic: Implementing technology and augmenting care for mental health",
-        "year": 2020,
-        "url": "https://doi.org/10.1016/j.genhosppsych.2020.06.009"
-      },
-      {
-        "id": "2b533133-d8a2-8010-9351-f60c81c62a98",
-        "doi": "10.1002/wps.20938",
-        "title": "Designing and scaling up integrated youth mental health care",
-        "year": 2022,
-        "url": "https://doi.org/10.1002/wps.20938"
-      },
-      {
-        "id": "2b533133-d8a2-8026-a0c6-ef5537e2d365",
-        "doi": "10.1080/09540261.2020.1859465",
-        "title": "Case studies from the digital clinic: integrating digital phenotyping and clinical practice into today’s world",
-        "year": 2021,
-        "url": "https://doi.org/10.1080/09540261.2020.1859465"
-      },
-      {
-        "id": "2b533133-d8a2-803d-aeb1-ee920e3e3fea",
-        "doi": "10.1007/s40501-023-00288-4",
-        "title": "Methods for Navigating the Mobile Mental Health App Landscape for Clinical Use",
-        "year": 2023,
-        "url": "https://doi.org/10.1007/s40501-023-00288-4"
-      },
-      {
-        "id": "2b533133-d8a2-8042-a3dc-fd6cfab4e221",
-        "doi": "10.1056/cat.23.0100",
-        "title": "The Digital Clinic: An Innovative Mental Health Care Delivery Model Utilizing Hybrid Synchronous and Asynchronous Treatment",
-        "year": 2023,
-        "url": "https://doi.org/10.1056/cat.23.0100"
-      },
-      {
-        "id": "2b533133-d8a2-8045-b369-d5bdc2bafbc0",
-        "doi": "10.1038/s41746-025-01860-3",
-        "title": "Transdiagnostic-focused apps for depression and anxiety: a meta-analysis",
-        "year": 2025,
-        "url": "https://doi.org/10.1038/s41746-025-01860-3"
-      },
-      {
-        "id": "2b533133-d8a2-8049-b283-f2894191add2",
-        "doi": "10.2196/65222",
-        "title": "Testing the Feasibility, Acceptability, and Potential Efficacy of an Innovative Digital Mental Health Care Delivery Model Designed to Increase Access to Care: Open Trial of the Digital Clinic",
-        "year": 2025,
-        "url": "https://doi.org/10.2196/65222"
-      },
-      {
-        "id": "2b533133-d8a2-806b-993c-c5822f24f15a",
-        "doi": "10.1016/j.jad.2025.02.051",
-        "title": "Evaluating clinical outcomes for anxiety and depression: A real-world comparison of the digital clinic and primary care",
-        "year": 2025,
-        "url": "https://doi.org/10.1016/j.jad.2025.02.051"
-      },
-      {
-        "id": "2b533133-d8a2-80b9-b551-dc556379b4a5",
-        "doi": "28412334",
-        "title": "Integrating mobile health into mental health: An exploratory analysis and case series from the digital clinic",
-        "year": 2021,
-        "url": "https://www.proquest.com/docview/2615322291/abstract/32D65F20C6CB4843PQ/1?accountid=11311&sourcetype=Dissertations%20&%20Theses"
-      },
-      {
-        "id": "2b533133-d8a2-80c0-9d01-f3a2d3a0b3b7",
-        "doi": "10.1111/acps.13712",
-        "title": "Digital phenotyping data and anomaly detection methods to assess changes in mood and anxiety symptoms across a transdiagnostic clinical sample",
-        "year": 2024,
-        "url": "https://doi.org/10.1111/acps.13712"
-      },
-      {
-        "id": "2b533133-d8a2-80e9-8c7d-f5db860fc76a",
-        "doi": "10.1016/j.psychres.2022.115015",
-        "title": "Smartphone app engagement and clinical outcomes in a hybrid clinic",
-        "year": 2023,
-        "url": "https://doi.org/10.1016/j.psychres.2022.115015"
-      },
-      {
-        "id": "2b533133-d8a2-80fd-9b94-c2ce7baccf31",
-        "doi": "10.1007/s11920-021-01254-8",
-        "title": "Digital Clinics and Mobile Technology Implementation for Mental Health Care",
-        "year": 2021,
-        "url": "https://doi.org/10.1007/s11920-021-01254-8"
-      }
-    ]
-  },
-  {
     "id": "2fd33133-d8a2-81df-a8c6-e29e621e8be8",
     "projectID": "PRJ-0011",
     "name": "Boston Schizophrenia Digital Phenotyping Study",
@@ -1731,7 +1731,7 @@
     "countries": [
       "USA"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2018,
     "end": 2021,
     "participants": 126,
@@ -1768,7 +1768,7 @@
       },
       {
         "id": "2b533133-d8a2-802a-adb1-dd8af2f1056d",
-        "doi": "10.1038/s41398-020-01123-7",
+        "doi": "",
         "title": "Anomaly detection to predict relapse risk in schizophrenia",
         "year": 2021,
         "url": "https://www.nature.com/articles/s41398-020-01123-7"
@@ -1807,7 +1807,7 @@
       "USA",
       "China"
     ],
-    "status": "",
+    "status": "Complete",
     "start": 2017,
     "end": 2019,
     "participants": 80,
@@ -1848,5 +1848,178 @@
         "url": "https://doi.org/10.1016/j.ajp.2021.102587"
       }
     ]
+  },
+  {
+    "id": "manual-momlamp",
+    "projectID": "PRJ-0032",
+    "name": "momLAMP",
+    "shortDescription": "Pilot feasibility study of a digital mental health intervention for postpartum anxiety (PPA), delivering CBT- and ACT-driven psychoeducation, tools, and skill-building exercises through a customized 8-week mindLAMP experience for women receiving care at BWH",
+    "mindLAMPFeatures": "CBT/ACT psychoeducation modules (Learn tab); mood and anxiety surveys (Edinburgh Perinatal Depression Scale, Perinatal Anxiety Screening Scale); mindfulness exercises; skill-building tools; engagement tracking with reminder calls if <1 module per 3–4 days",
+    "institutions": "Brigham and Women's Hospital; Harvard Medical School; Mary Horrigan Connors Center for Women's Health Research; Beth Israel Deaconess Medical Center",
+    "countries": [
+      "USA"
+    ],
+    "status": "Active",
+    "start": 2025,
+    "end": null,
+    "participants": 10,
+    "studyDuration": "8 weeks",
+    "projectDuration": "",
+    "population": "Women with postpartum anxiety receiving care at BWH Women's Mental Health clinic",
+    "ageRange": "26-37",
+    "irb": "",
+    "funding": "Mass Life Sciences Center/BWH Connors Center First Look award",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-809b-8e0f-f1561313ab9b",
+        "tagID": "anxiety",
+        "name": "anxiety"
+      },
+      {
+        "id": "2b533133-d8a2-80ab-917b-c52279b94c42",
+        "tagID": "sex-gender-sexuality",
+        "name": "sex-gender-sexuality"
+      }
+    ],
+    "publications": []
+  },
+  {
+    "id": "manual-safeguard",
+    "projectID": "PRJ-0033",
+    "name": "Safeguard",
+    "shortDescription": "Life skills training program for U.S. Army soldiers, delivering educational content and engagement monitoring through a customized mindLAMP experience",
+    "mindLAMPFeatures": "Educational content delivery (Learn tab); engagement monitoring; custom tips and modules",
+    "institutions": "Henry M Jackson Foundation for the Advancement of Military Medicine",
+    "countries": [
+      "USA"
+    ],
+    "status": "Active",
+    "start": null,
+    "end": null,
+    "participants": null,
+    "studyDuration": "",
+    "projectDuration": "",
+    "population": "U.S. Army soldiers",
+    "ageRange": "",
+    "irb": "",
+    "funding": "",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-808d-9fa7-dde3b9afb4d0",
+        "tagID": "stress-trauma",
+        "name": "stress-trauma"
+      }
+    ],
+    "publications": []
+  },
+  {
+    "id": "manual-smart-a",
+    "projectID": "PRJ-0034",
+    "name": "SMART-A (Smartphone Monitoring Assessments in Real Time for Alzheimer's Disease)",
+    "shortDescription": "6-month observational study evaluating smartphone-based cognitive assessments as digital biomarkers for Alzheimer's disease, combining digitized standard neuropsychological tests and novel game-based assessments with passive sensing and EMA surveys",
+    "mindLAMPFeatures": "Digitized cognitive tests (Trail Making A/B, Digit Symbol Substitution); cognitive games (Jewels A/B, Spatial Span, Pop the Bubbles, Cats and Dogs); EMA surveys; GPS; accelerometer; screen state; step count; sleep",
+    "institutions": "Beth Israel Deaconess Medical Center",
+    "countries": [
+      "USA"
+    ],
+    "status": "Active",
+    "start": null,
+    "end": null,
+    "participants": null,
+    "studyDuration": "6 months",
+    "projectDuration": "",
+    "population": "Mild cognitive impairment; mild Alzheimer's disease",
+    "ageRange": "",
+    "irb": "",
+    "funding": "",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-80ae-8c5f-da022c8d8d85",
+        "tagID": "neurocognitive",
+        "name": "neurocognitive"
+      },
+      {
+        "id": "2b533133-d8a2-80fe-a3b1-c3b8e64ab2ee",
+        "tagID": "older-adult",
+        "name": "older-adult"
+      }
+    ],
+    "publications": [
+      {
+        "id": "30433133-d8a2-80cb-9e23-d7ca83419607",
+        "doi": "10.2196/93259",
+        "title": "Real-time Smartphone Monitoring Assessments as a Cognitive Biomarker of Alzheimer's Disease: Protocol for the SMART-A Study",
+        "year": 2026,
+        "url": "https://doi.org/10.2196/93259"
+      }
+    ]
+  },
+  {
+    "id": "manual-predictor",
+    "projectID": "PRJ-0035",
+    "name": "PREDiCTOR",
+    "shortDescription": "Predicting treatment outcomes in youth seeking mental health care using smartphone sensor data and clinical interview data",
+    "mindLAMPFeatures": "Surveys; GPS; accelerometer; screen state; clinical assessments",
+    "institutions": "Icahn School of Medicine at Mount Sinai; IBM Research",
+    "countries": [
+      "USA"
+    ],
+    "status": "Active",
+    "start": null,
+    "end": null,
+    "participants": null,
+    "studyDuration": "",
+    "projectDuration": "",
+    "population": "Youth (15-30) seeking mental health care",
+    "ageRange": "15-30",
+    "irb": "",
+    "funding": "",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-804c-b5dd-fb3f80c5197a",
+        "tagID": "adolescent",
+        "name": "adolescent"
+      },
+      {
+        "id": "2b533133-d8a2-80f9-add1-e230f890a853",
+        "tagID": "young-adult",
+        "name": "young-adult"
+      }
+    ],
+    "publications": []
+  },
+  {
+    "id": "manual-capture-ad",
+    "projectID": "PRJ-0036",
+    "name": "CAPTURE-AD",
+    "shortDescription": "Feasibility and acceptability study of combined active and passive digital phenotyping for Alzheimer's disease detection in cognitively normal older adults and those with mild cognitive impairment, using mindLAMP surveys and GPS over a 6-week monitoring period",
+    "mindLAMPFeatures": "Active data (surveys); passive data (GPS with data quality scoring); activity monitor; 6-week continuous monitoring; technical support tracking",
+    "institutions": "Butler Hospital; Brown University; Beth Israel Deaconess Medical Center",
+    "countries": [
+      "USA"
+    ],
+    "status": "Active",
+    "start": null,
+    "end": null,
+    "participants": 19,
+    "studyDuration": "6 weeks",
+    "projectDuration": "",
+    "population": "Cognitively normal older adults and individuals with mild cognitive impairment",
+    "ageRange": "60-77",
+    "irb": "",
+    "funding": "",
+    "tags": [
+      {
+        "id": "2b533133-d8a2-80ae-8c5f-da022c8d8d85",
+        "tagID": "neurocognitive",
+        "name": "neurocognitive"
+      },
+      {
+        "id": "2b533133-d8a2-80e9-90a8-f377e371bbc6",
+        "tagID": "older-adult",
+        "name": "older-adult"
+      }
+    ],
+    "publications": []
   }
 ]

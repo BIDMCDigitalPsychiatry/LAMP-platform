@@ -339,8 +339,6 @@
 }
 
 .pubCard:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--card-shadow-hover);
 }
 
 .pubCard:target {

@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import { capabilityPages } from '@site/src/components/capabilityPages';
 
 // ========== HERO SECTION ==========
 function HeroSection() {
@@ -12,28 +13,26 @@ function HeroSection() {
     <header className={styles.hero}>
       <div className={styles.heroInner}>
         <div className={styles.heroContent}>
-          <div className={styles.heroTagline}>Open-source digital health platform</div>
+          <div className={styles.heroTagline}>BIDMC / Harvard Medical School</div>
           <Heading as="h1" className={styles.heroTitle}>
-            One platform.<br />
-            Infinite configurations.
+            mindLAMP
           </Heading>
+          <p className={styles.heroValueProp}>
+            An open-source platform for mobile health research and clinical care
+          </p>
           <p className={styles.heroSubtitle}>
-            mindLAMP is a modular digital health platform backed by 120+ peer-reviewed publications. The same platform supports entirely different
-            studies and clinical workflows, with data stored in a uniform schema for cross-study comparison.
+            Everything you need to run a digital health program, from participant-facing
+            tools to data analysis, with one consistent data format.
           </p>
           <div className={styles.heroButtons}>
             <Link className={styles.btnPrimary} to="/get-started">
               Request Consultation
             </Link>
-            <Link className={styles.btnSecondary} to="/docs">
-              Explore Documentation
+            <Link className={styles.btnSecondary} to="/#capabilities">
+              Explore Capabilities
             </Link>
           </div>
           <div className={styles.trustBadges}>
-            <div className={styles.trustBadge}>
-              <span className={styles.trustNumber}>50+</span>
-              <span className={styles.trustLabel}>Sites Worldwide</span>
-            </div>
             <div className={styles.trustBadge}>
               <span className={styles.trustNumber}>13</span>
               <span className={styles.trustLabel}>Countries</span>
@@ -43,8 +42,8 @@ function HeroSection() {
               <span className={styles.trustLabel}>Languages</span>
             </div>
             <div className={styles.trustBadge}>
-              <span className={styles.trustNumber}>7</span>
-              <span className={styles.trustLabel}>Years</span>
+              <span className={styles.trustNumber}>120+</span>
+              <span className={styles.trustLabel}>Publications</span>
             </div>
           </div>
         </div>
@@ -56,394 +55,298 @@ function HeroSection() {
   );
 }
 
-// ========== PROBLEM SECTION ==========
-function ProblemSection() {
+// ========== CAPABILITY IMAGE COMPOSITIONS ==========
+const capabilityImages: Record<string, ReactNode> = {
+  '/capabilities/collect': (
+    <div className={styles.collectLayout}>
+      {/* Two phones fanning out with watch centered between them */}
+      <div className={styles.collectDevices}>
+        <div className={clsx(styles.collectPhone, styles.collectPhoneLeft)}>
+          <div className={styles.fanPhoneBezel}>
+            <div className={styles.iphoneDynamicIsland} />
+            <div className={styles.fanPhoneScreen}>
+              <img src="/assets/projects/smart-a/trails-b-gameplay.png" alt="Trails B cognitive game" />
+            </div>
+          </div>
+          <div className={styles.deviceLabel}>Cognitive Games</div>
+        </div>
+        <div className={styles.collectWatch}>
+          <div className={styles.watchFrame}>
+            <div className={styles.watchBand} />
+            <div className={styles.watchBody}>
+              <div className={styles.watchCrown} />
+              <div className={styles.watchScreenInner}>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ef4444" strokeWidth="2.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                <div className={styles.watchBpm}>72 <small>bpm</small></div>
+                <div className={styles.watchStats}>
+                  <span>4,280 steps</span>
+                  <span>HRV 42ms</span>
+                </div>
+                <div className={styles.watchRings}>
+                  <svg viewBox="0 0 60 60" width="44" height="44">
+                    <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(239,68,68,0.2)" strokeWidth="3" />
+                    <circle cx="30" cy="30" r="26" fill="none" stroke="#ef4444" strokeWidth="3" strokeDasharray="130 164" strokeLinecap="round" transform="rotate(-90 30 30)" />
+                    <circle cx="30" cy="30" r="21" fill="none" stroke="rgba(52,211,153,0.2)" strokeWidth="3" />
+                    <circle cx="30" cy="30" r="21" fill="none" stroke="#34d399" strokeWidth="3" strokeDasharray="100 132" strokeLinecap="round" transform="rotate(-90 30 30)" />
+                    <circle cx="30" cy="30" r="16" fill="none" stroke="rgba(96,165,250,0.2)" strokeWidth="3" />
+                    <circle cx="30" cy="30" r="16" fill="none" stroke="#60a5fa" strokeWidth="3" strokeDasharray="75 100" strokeLinecap="round" transform="rotate(-90 30 30)" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div className={styles.watchBand} />
+          </div>
+          <div className={styles.deviceLabel}>Wearable</div>
+        </div>
+        <div className={clsx(styles.collectPhone, styles.collectPhoneRight)}>
+          <div className={styles.fanPhoneBezel}>
+            <div className={styles.iphoneDynamicIsland} />
+            <div className={styles.fanPhoneScreen}>
+              <img src="/assets/projects/digital-clinic/survey-likert-question.png" alt="Weekly Depression Survey question" />
+            </div>
+          </div>
+          <div className={styles.deviceLabel}>Surveys</div>
+        </div>
+      </div>
+      {/* Passive sensor tags */}
+      <div className={styles.collectSensorSection}>
+        <div className={styles.collectSensorLabel}>Passive Sensors</div>
+        <div className={styles.collectSensors}>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          GPS
+        </div>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12h4l3-9 6 18 3-9h4"/></svg>
+          Accelerometer
+        </div>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01" strokeWidth="2" strokeLinecap="round"/></svg>
+          Screen Time
+        </div>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.36 1.6.68 2.34a2 2 0 01-.45 2.11L8.09 9.41a16 16 0 006.5 6.5l1.24-1.24a2 2 0 012.11-.45c.74.32 1.53.55 2.34.68A2 2 0 0122 16.92z"/></svg>
+          Calls
+        </div>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          Heart Rate
+        </div>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          Steps
+        </div>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          Sleep
+        </div>
+        <div className={styles.collectSensorTag}>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          Gyroscope
+        </div>
+        </div>
+      </div>
+    </div>
+  ),
+  '/capabilities/experience': (
+    <div className={styles.experienceFan}>
+      <div className={clsx(styles.fanPhone, styles.fanPhoneLeft)}>
+        <div className={styles.fanPhoneBezel}>
+          <div className={styles.iphoneDynamicIsland} />
+          <div className={styles.fanPhoneScreen}>
+            <img src="/img/experience/breathe.png" alt="Breathe intervention" />
+          </div>
+        </div>
+      </div>
+      <div className={clsx(styles.fanPhone, styles.fanPhoneCenter)}>
+        <div className={styles.fanPhoneBezel}>
+          <div className={styles.iphoneDynamicIsland} />
+          <div className={styles.fanPhoneScreen}>
+            <img src="/img/app-feed.png" alt="mindLAMP Feed tab" />
+          </div>
+        </div>
+      </div>
+      <div className={clsx(styles.fanPhone, styles.fanPhoneRight)}>
+        <div className={styles.fanPhoneBezel}>
+          <div className={styles.iphoneDynamicIsland} />
+          <div className={styles.fanPhoneScreen}>
+            <img src="/img/experience/journal.png" alt="Journal activity" />
+          </div>
+        </div>
+      </div>
+    </div>
+  ),
+  '/capabilities/configure': (
+    <div className={styles.configureComposition}>
+      {/* Central hub branching to groups */}
+      <div className={styles.configureHub}>
+        <div className={styles.configureHubCenter}>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /><rect x="14" y="14" width="7" height="7" />
+          </svg>
+          <span>1 Platform</span>
+        </div>
+        <div className={styles.configureHubLines}>
+          <div className={styles.configureHubLine} />
+          <div className={styles.configureHubLine} />
+          <div className={styles.configureHubLine} />
+        </div>
+        <div className={styles.configureGroups}>
+          {[
+            { name: 'Groups', icon: <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#f59e0b" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> },
+            { name: 'Scheduling', icon: <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#3b82f6" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg> },
+            { name: 'Languages', icon: <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#10b981" strokeWidth="2"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg> },
+          ].map((g) => (
+            <div key={g.name} className={styles.configureGroup}>
+              <div className={styles.configureGroupIcon}>{g.icon}</div>
+              <div className={styles.configureGroupName}>{g.name}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  ),
+  '/capabilities/monitor': (
+    <div className={styles.monitorComposition}>
+      {/* Gauge charts */}
+      <div className={styles.monitorCard}>
+        <img src="/img/monitor/engagement-gauges.png" alt="Data Quality, Survey Completion, and Skill Practices gauges" />
+      </div>
+      {/* Participant cards with active/passive indicators */}
+      <div className={styles.monitorParticipants}>
+        <div className={styles.monitorParticipantCard}>
+          <div className={styles.monitorParticipantInfo}>
+            <span className={styles.monitorParticipantName}>U0310713415</span>
+            <span className={styles.monitorParticipantGroup}>Cohort A</span>
+          </div>
+          <div className={styles.monitorIndicators}>
+            <span className={styles.monitorBtnYellow}>Last Passive</span>
+            <span className={styles.monitorBtnGreen}>Last Active</span>
+          </div>
+        </div>
+        <div className={styles.monitorParticipantCard}>
+          <div className={styles.monitorParticipantInfo}>
+            <span className={styles.monitorParticipantName}>U2360822259</span>
+            <span className={styles.monitorParticipantGroup}>Cohort B</span>
+          </div>
+          <div className={styles.monitorIndicators}>
+            <span className={styles.monitorBtnRed}>Last Passive</span>
+            <span className={styles.monitorBtnRed}>Last Active</span>
+          </div>
+        </div>
+      </div>
+      {/* Data quality heatmap */}
+      <div className={styles.monitorCard}>
+        <img src="/img/data-quality-gps.png" alt="GPS data quality heatmap showing data received over time" />
+      </div>
+    </div>
+  ),
+  '/capabilities/analyze': (
+    <div className={styles.analyzeStack}>
+      {/* Side-by-side visualizations */}
+      <div className={styles.analyzeRow}>
+        <div className={styles.analyzeCard}>
+          <img src="/img/monitor/sleep-patterns.png" alt="Last week's sleeping patterns showing onset and wake times by day" />
+        </div>
+        <div className={styles.analyzeCard}>
+          <img src="/img/report-snippet-3.png" alt="Correlation matrix of behavioral features" />
+        </div>
+      </div>
+      {/* Pipeline strip */}
+      <div className={styles.analyzePipeline}>
+        <span className={styles.pipelineStep}>Raw Sensors</span>
+        <span className={styles.pipelineArrow} />
+        <span className={styles.pipelineStep}>Cortex Features</span>
+        <span className={styles.pipelineArrow} />
+        <span className={styles.pipelineStep}>Insights</span>
+      </div>
+    </div>
+  ),
+};
+
+// ========== CAPABILITIES OVERVIEW SECTION ==========
+function CapabilitiesOverviewSection() {
   return (
-    <section className={styles.problemSection}>
+    <section id="capabilities" className={styles.section}>
       <div className="container">
         <div className={styles.sectionHeader}>
           <Heading as="h2" className={styles.sectionTitle}>
-            Why most digital health tools fail
+            What you can do with mindLAMP
           </Heading>
           <p className={styles.sectionSubtitle}>
-            Most digital health tools are built for single studies, creating barriers to reproducible science.
-          </p>
-        </div>
-
-        <div className={styles.problemGrid}>
-          <div className={styles.problemCard}>
-            <h3>Incompatible Data</h3>
-            <p>
-              Each study builds its own app with unique data formats. Results can't be compared
-              and infrastructure investment is wasted.
-            </p>
-          </div>
-
-          <div className={styles.problemCard}>
-            <h3>Consumer Apps Lack Rigor</h3>
-            <p>
-              Popular wellness apps lack research-grade data capture, clinical workflow integration,
-              and the transparency research requires.
-            </p>
-          </div>
-
-          <div className={styles.problemCard}>
-            <h3>Expertise Gap</h3>
-            <p>
-              Even good platforms fail without digital phenotyping experience. Teams struggle with
-              study design and avoiding pitfalls that cause data loss.
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.solutionTransition}>
-          <p>
-            <strong>mindLAMP solves all three.</strong> Not just as software, but as a platform
-            with expert support and 7 years of continuous clinical operation.
+            From data collection to actionable insights, mindLAMP covers every step.
+            Explore each capability to see real-world examples and how-to guides.
           </p>
         </div>
       </div>
-    </section>
-  );
-}
 
-// ========== VIDEO SECTION ==========
-function VideoSection() {
-  return (
-    <section className={styles.videoSection}>
-      <div className="container">
-        <div className={styles.sectionHeader}>
-          <Heading as="h2" className={styles.sectionTitle}>
-            See how it works
-          </Heading>
-        </div>
-        <div className={styles.videoWrapper}>
-          <iframe
-            src="https://www.youtube.com/embed/wnFml3qrLHI"
-            title="mindLAMP Platform Overview"
-            style={{ border: 'none' }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+      <div className={styles.capabilityShowcase}>
+        {capabilityPages.map((page, idx) => {
+          const reversed = idx % 2 === 1;
+          return (
+            <div key={page.route} className={styles.capabilityPanel}>
+              <div className={clsx(styles.capabilityPanelInner, reversed && styles.capabilityPanelReversed)}>
+                <div className={styles.capabilityText}>
+                  <div className={styles.capabilityAccent} style={{ background: page.color }} />
+                  <h3 className={styles.capabilityTitle}>{page.title}</h3>
+                  <p className={styles.capabilityDescription}>{page.description}</p>
+                  <div className={styles.capabilityPills}>
+                    {page.pills.map((pill) => (
+                      <span key={pill} className={styles.capabilityPill} style={{ borderColor: page.color, color: page.color }}>
+                        {pill}
+                      </span>
+                    ))}
+                  </div>
+                  <Link className={styles.capabilityExplore} to={page.route} style={{ color: page.color }}>
+                    Explore <span className={styles.capabilityExploreArrow}>&#8594;</span>
+                  </Link>
+                </div>
+                <div className={styles.capabilityImageSide}>
+                  {capabilityImages[page.route]}
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
-    </section>
-  );
-}
 
-// ========== HOW IT WORKS SECTION (Dashboard Configuration) ==========
-function HowItWorksSection() {
-  return (
-    <section className={styles.section}>
       <div className="container">
-        <div className={styles.sectionHeader}>
-          <Heading as="h2" className={styles.sectionTitle}>
-            Configure Your Study
-          </Heading>
-          <p className={styles.sectionSubtitle}>
-            Use the researcher dashboard to design exactly what participants experience. Rather than hard-coded study logic, mindLAMP represents studies as configurations of reusable building blocks.
-          </p>
-        </div>
-
-        <div className={styles.howItWorksFlow}>
-          {/* Step 1: Choose Data Sources */}
-          <div className={styles.howItWorksStep}>
-            <div className={styles.stepNumber}>1</div>
-            <div className={styles.stepContent}>
-              <h3>Choose Your Data Sources</h3>
-              <p>
-                Capture both what participants tell you and what their behavior shows.
-                Select which sources to enable for each study group.
+        <div className={styles.audienceRouter}>
+          <div className={styles.audienceRouterTitle}>Not sure where to start?</div>
+          <div className={styles.audienceRouterGrid}>
+            <div className={styles.audienceRouterCard}>
+              <div className={styles.audienceRouterCardAccent} style={{ background: '#3b82f6' }} />
+              <h4 className={styles.audienceRouterCardTitle}>Writing a grant?</h4>
+              <p className={styles.audienceRouterCardText}>
+                Start with{' '}
+                <Link to="/capabilities/collect">Collect Rich Data</Link> and{' '}
+                <Link to="/capabilities/analyze">Analyze & Visualize Outcomes</Link> to describe your data strategy.
               </p>
-
-              <div className={styles.dataSourcesGrid}>
-                <div className={styles.dataSourceColumn}>
-                  <div className={styles.dataSourceHeader}>
-                    <strong>Active Data</strong>
-                  </div>
-                  <p className={styles.dataSourceSubhead}>What participants complete</p>
-                  <div className={styles.buildingBlocksGrid}>
-                    <span className={styles.buildingBlock}>Educational Tips & Modules</span>
-                    <span className={styles.buildingBlock}>Surveys & EMA</span>
-                    <span className={styles.buildingBlock}>Cognitive Games</span>
-                    <span className={styles.buildingBlock}>Breathing Exercises</span>
-                    <span className={styles.buildingBlock}>Journal Entries</span>
-                    <span className={styles.buildingBlock}>Voice Recordings</span>
-                    <span className={styles.buildingBlock}>DBT Diary Card</span>
-                    <span className={styles.buildingBlock}>Scratch Card</span>
-                  </div>
-                </div>
-
-                <div className={styles.dataSourceColumn}>
-                  <div className={styles.dataSourceHeader}>
-                    <strong>Passive Data</strong>
-                  </div>
-                  <p className={styles.dataSourceSubhead}>Background sensor collection from phone & wearables</p>
-                  <div className={styles.buildingBlocksGrid}>
-                    <span className={styles.buildingBlock}>GPS</span>
-                    <span className={styles.buildingBlock}>Accelerometer</span>
-                    <span className={styles.buildingBlock}>Steps & Activity</span>
-                    <span className={styles.buildingBlock}>Sleep</span>
-                    <span className={styles.buildingBlock}>Heart Rate</span>
-                    <span className={styles.buildingBlock}>Calls & Texts</span>
-                    <span className={styles.buildingBlock}>Device Events</span>
-                    <span className={styles.buildingBlock}>Gyroscope</span>
-                    <span className={styles.buildingBlock}>Screen Time</span>
-                    <span className={styles.buildingBlock}>Ambient Light</span>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-
-          {/* Step 2: Configure & Customize */}
-          <div className={styles.howItWorksStep}>
-            <div className={styles.stepNumber}>2</div>
-            <div className={styles.stepContent}>
-              <h3>Customize the Participant Experience</h3>
-              <p>Tailor every aspect of how your study runs</p>
-              <div className={styles.configFeaturesExpanded}>
-                <div className={styles.configFeature}>
-                  <strong>Study Groups</strong>
-                  <span>Create multiple groups with different configurations for control vs intervention, different languages, or different protocols</span>
-                </div>
-                <div className={styles.configFeature}>
-                  <strong>Visual Presentation</strong>
-                  <span>Choose icons, naming, and page layout</span>
-                </div>
-                <div className={styles.configFeature}>
-                  <strong>Schedules & Notifications</strong>
-                  <span>Define when activities appear in the feed, set reminder schedules, and configure push notification timing</span>
-                </div>
-              </div>
-
-              <div className={styles.customDevNote}>
-                <strong>Need more?</strong> With additional funding, the Core team can develop
-                new activities, specialized Cortex analysis scripts, or unique features tailored to your research needs.
-              </div>
-
-              <Link className={styles.learnMoreLink} to="https://docs.lamp.digital/start_here/overview/">
-                View all configuration options →
-              </Link>
+            <div className={styles.audienceRouterCard}>
+              <div className={styles.audienceRouterCardAccent} style={{ background: '#10b981' }} />
+              <h4 className={styles.audienceRouterCardTitle}>Evaluating for clinical use?</h4>
+              <p className={styles.audienceRouterCardText}>
+                See{' '}
+                <Link to="/capabilities/experience">Engage Participants</Link> and{' '}
+                <Link to="/capabilities/monitor">Monitor Engagement</Link> for clinical workflows.
+              </p>
             </div>
-          </div>
-        </div>
-
-        <div className={styles.uniformDataHighlight}>
-          <div className={styles.uniformDataContent}>
-            <h4>Uniform Data Schema Across All Projects</h4>
-            <p>
-              Despite infinite configuration options, all mindLAMP data is stored in a standardized schema.
-              This enables cross-study comparison and cumulative science.
-            </p>
-            <Link className={styles.learnMoreLink} to="/data_science/intro">
-              Explore the data model →
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ========== APP SECTION (What Participants See) ==========
-function AppSection() {
-  return (
-    <section className={clsx(styles.section, styles.sectionAlt)}>
-      <div className="container">
-        <div className={styles.sectionHeader}>
-          <Heading as="h2" className={styles.sectionTitle}>
-            The Participant Experience
-          </Heading>
-          <p className={styles.sectionSubtitle}>
-            Participants engage through a user-friendly iOS and Android app with five configurable tabs. You decide which tabs to enable and what content appears in each.
-          </p>
-        </div>
-
-        <div className={styles.outputsSubsection}>
-
-          <div className={styles.carouselContainer}>
-            <div className={styles.screenshotCarousel}>
-              <div className={styles.carouselTrack}>
-                <div className={styles.carouselSlide}>
-                  <img src="/img/app-feed.png" alt="Feed tab" className={styles.carouselImage} />
-                  <div className={styles.carouselLabel}>
-                    <h4>Feed</h4>
-                    <p>Daily schedule of activities to complete</p>
-                  </div>
-                </div>
-                <div className={styles.carouselSlide}>
-                  <img src="/img/app-learn.png" alt="Learn tab" className={styles.carouselImage} />
-                  <div className={styles.carouselLabel}>
-                    <h4>Learn</h4>
-                    <p>Educational tips & modules</p>
-                  </div>
-                </div>
-                <div className={styles.carouselSlide}>
-                  <img src="/img/app-assess.png" alt="Assess tab" className={styles.carouselImage} />
-                  <div className={styles.carouselLabel}>
-                    <h4>Assess</h4>
-                    <p>Surveys & cognitive tests</p>
-                  </div>
-                </div>
-                <div className={styles.carouselSlide}>
-                  <img src="/img/app-manage.png" alt="Manage tab" className={styles.carouselImage} />
-                  <div className={styles.carouselLabel}>
-                    <h4>Manage</h4>
-                    <p>Wellness tools & journaling</p>
-                  </div>
-                </div>
-                <div className={styles.carouselSlide}>
-                  <img src="/img/app-portal.png" alt="Portal tab" className={styles.carouselImage} />
-                  <div className={styles.carouselLabel}>
-                    <h4>Portal</h4>
-                    <p>Personal data & progress</p>
-                  </div>
-                </div>
-              </div>
+            <div className={styles.audienceRouterCard}>
+              <div className={styles.audienceRouterCardAccent} style={{ background: '#f59e0b' }} />
+              <h4 className={styles.audienceRouterCardTitle}>Ready to implement?</h4>
+              <p className={styles.audienceRouterCardText}>
+                Jump to{' '}
+                <Link to="/capabilities/configure">Customize & Scale</Link> to see deployment and configuration options.
+              </p>
             </div>
-            <div className={styles.carouselNav}>
-              <div className={styles.carouselDots}>
-                <span className={clsx(styles.carouselDot, styles.carouselDotActive)}></span>
-                <span className={styles.carouselDot}></span>
-                <span className={styles.carouselDot}></span>
-                <span className={styles.carouselDot}></span>
-                <span className={styles.carouselDot}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ========== CORTEX SECTION (Analytics & Data Processing) ==========
-function CortexSection() {
-  return (
-    <section className={styles.section}>
-      <div className="container">
-        <div className={styles.sectionHeader}>
-          <Heading as="h2" className={styles.sectionTitle}>
-            Analytics with Cortex
-          </Heading>
-          <p className={styles.sectionSubtitle}>
-            Cortex is a Python library that transforms raw sensor data into meaningful behavioral features. Use it to monitor data quality, run standardized analyses, and generate customized reports.
-          </p>
-        </div>
-
-        {/* Data Quality Monitoring */}
-        <div className={styles.analyticsBlock}>
-          <div className={styles.analyticsBlockHeader}>
-            <div>
-              <h4>Monitor Data Quality</h4>
-              <p>Track sensor collection and identify issues in real-time</p>
-            </div>
-          </div>
-          <div className={styles.dataQualityShowcase}>
-            <div className={styles.dataQualityImageLarge}>
-              <img
-                src="/img/data-quality-gps.png"
-                alt="GPS data collection heatmap"
-                className={styles.qualityImage}
-              />
-              <p><strong>GPS Collection Heatmap</strong><br/>Visualize coverage by hour and day</p>
-            </div>
-            <div className={styles.dataQualityImageLarge}>
-              <img
-                src="/img/data-quality-acc.png"
-                alt="Accelerometer sampling rate"
-                className={styles.qualityImage}
-              />
-              <p><strong>Sampling Rate Monitoring</strong><br/>Track against target thresholds</p>
-            </div>
-          </div>
-          <p className={styles.analyticsBlockNote}>
-            Catch sensor issues, permission problems, and engagement drops before losing data.
-          </p>
-        </div>
-
-        {/* Feature Extraction Pipeline */}
-        <div className={styles.analyticsBlock}>
-          <div className={styles.analyticsBlockHeader}>
-            <div>
-              <h4>Extract Behavioral Features</h4>
-              <p>Transform raw sensor streams into research-ready metrics</p>
-            </div>
-          </div>
-          <div className={styles.cortexPipelineVisual}>
-            <div className={styles.pipelineStep}>
-              <div className={styles.pipelineStepLabel}>Raw Data</div>
-              <div className={styles.pipelineStepDesc}>GPS coordinates, accelerometer readings, screen events</div>
-            </div>
-            <div className={styles.pipelineArrow}>→</div>
-            <div className={styles.pipelineStep}>
-              <div className={styles.pipelineStepLabel}>Primary Features</div>
-              <div className={styles.pipelineStepDesc}>Trips, screen bouts, significant locations</div>
-            </div>
-            <div className={styles.pipelineArrow}>→</div>
-            <div className={styles.pipelineStep}>
-              <div className={styles.pipelineStepLabel}>Secondary Features</div>
-              <div className={styles.pipelineStepDesc}>Daily hometime, trip distance, location entropy</div>
-            </div>
-          </div>
-          <div className={styles.cortexMetricSamples}>
-            <span>Hometime</span>
-            <span>Trip Distance</span>
-            <span>Screen Duration</span>
-            <span>Location Entropy</span>
-            <span>Sleep Patterns</span>
-            <span>Step Counts</span>
-          </div>
-          <div className={styles.textCenter}>
-            <Link className={styles.learnMoreLink} to="/data_science/cortex/getting-started">
-              Explore Cortex documentation →
-            </Link>
-          </div>
-        </div>
-
-        {/* Customized Reports */}
-        <div className={styles.analyticsBlock}>
-          <div className={styles.analyticsBlockHeader}>
-            <div>
-              <h4>Generate Custom Reports</h4>
-              <p>Create visualizations for dashboards, patient portals, or clinical handouts</p>
-            </div>
-          </div>
-          <div className={styles.reportCarouselContainer}>
-            <div className={styles.reportCarousel}>
-              <div className={styles.reportCarouselTrack}>
-                <div className={styles.reportCarouselSlide}>
-                  <img src="/img/report-snippet-1.png" alt="Data quality gauges" className={styles.reportCarouselImage} />
-                  <p className={styles.reportCarouselCaption}>Data quality tracking with completion gauges</p>
-                </div>
-                <div className={styles.reportCarouselSlide}>
-                  <img src="/img/report-snippet-2.png" alt="Symptom trends" className={styles.reportCarouselImage} />
-                  <p className={styles.reportCarouselCaption}>Longitudinal symptom trends (PHQ-9, GAD-7)</p>
-                </div>
-                <div className={styles.reportCarouselSlide}>
-                  <img src="/img/report-snippet-3.png" alt="Feature correlation matrix" className={styles.reportCarouselImage} />
-                  <p className={styles.reportCarouselCaption}>Feature correlation matrix</p>
-                </div>
-                <div className={styles.reportCarouselSlide}>
-                  <img src="/img/report-snippet-4.png" alt="Behavioral correlations" className={styles.reportCarouselImage} />
-                  <p className={styles.reportCarouselCaption}>Passive data correlated with active symptoms</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.reportCarouselNav}>
-              <div className={styles.carouselDots}>
-                <span className={clsx(styles.carouselDot, styles.carouselDotActive)}></span>
-                <span className={styles.carouselDot}></span>
-                <span className={styles.carouselDot}></span>
-                <span className={styles.carouselDot}></span>
-              </div>
-            </div>
-            <p className={styles.carouselHint}>Swipe to view report examples</p>
-            <div className={styles.reportBenefits}>
-              <p><strong>For participants:</strong> Understand patterns and track progress</p>
-              <p><strong>For clinicians:</strong> Identify concerning changes between visits</p>
-              <p><strong>For researchers:</strong> Export data for deeper analysis</p>
+            <div className={styles.audienceRouterCard}>
+              <div className={styles.audienceRouterCardAccent} style={{ background: '#64cebf' }} />
+              <h4 className={styles.audienceRouterCardTitle}>Looking for technical docs?</h4>
+              <p className={styles.audienceRouterCardText}>
+                Browse the{' '}
+                <Link to="/docs">full documentation</Link> for app guides, API reference, and developer resources.
+              </p>
             </div>
           </div>
         </div>
@@ -459,15 +362,17 @@ function EvidenceSection() {
       name: 'AMP SCZ',
       institution: '43 sites, 5 continents',
       population: '2,600+ youth at clinical high risk for psychosis',
-      highlight: 'Multi-language EMA + passive sensing in 9 languages',
+      highlight: 'Daily check-ins and continuous sensor data collection in 9 languages',
       color: '#86b6ff', // mindlamp-blue
+      link: '/projects#PRJ-0001',
     },
     {
       name: 'PREDiCTOR',
       institution: 'Mount Sinai + IBM Research',
       population: 'Youth (15-30) seeking mental health care',
-      highlight: 'AI prediction using smartphone + clinical interview data',
+      highlight: 'Predicting outcomes using smartphone and clinical interview data',
       color: '#64cebf', // mindlamp-teal
+      link: '/projects#PRJ-0035',
     },
     {
       name: 'Digital Clinic',
@@ -475,6 +380,7 @@ function EvidenceSection() {
       population: 'Depression & anxiety patients',
       highlight: '7 years of continuous clinical operation',
       color: '#ff775c', // mindlamp-coral
+      link: '/projects#PRJ-0003',
     },
     {
       name: 'SHARP',
@@ -482,27 +388,31 @@ function EvidenceSection() {
       population: 'Adults with schizophrenia',
       highlight: 'Relapse prediction via 12-month monitoring',
       color: '#ffd645', // mindlamp-yellow
+      link: '/projects#PRJ-0002',
     },
     {
       name: 'CAPTURE-AD',
       institution: 'Butler Hospital',
-      population: 'Older adults (60-77) with/without MCI',
-      highlight: '90% passive data capture rate',
+      population: 'Older adults (60-77) with/without mild cognitive impairment',
+      highlight: '90% continuous data capture rate',
       color: '#86b6ff', // mindlamp-blue
+      link: '/projects#PRJ-0036',
     },
     {
       name: 'SMART-A',
       institution: 'Beth Israel Deaconess',
-      population: 'MCI and mild Alzheimer\'s patients',
-      highlight: '6 novel cognitive tasks for early AD detection',
+      population: 'Mild cognitive impairment and early Alzheimer\'s patients',
+      highlight: '6 novel cognitive tasks for early detection of cognitive decline',
       color: '#64cebf', // mindlamp-teal
+      link: '/projects#PRJ-0034',
     },
     {
       name: 'momLAMP',
       institution: 'Brigham & Women\'s Hospital',
       population: 'Women with postpartum anxiety',
-      highlight: '8-week CBT/ACT with high engagement',
+      highlight: '8-week therapy program delivered through the app with high engagement',
       color: '#ff775c', // mindlamp-coral
+      link: '/projects#PRJ-0032',
     },
     {
       name: 'Safeguard',
@@ -510,26 +420,10 @@ function EvidenceSection() {
       population: 'U.S. Army soldiers',
       highlight: 'Life skills training for suicide prevention',
       color: '#ffd645', // mindlamp-yellow
+      link: '/projects#PRJ-0033',
     },
   ];
 
-  const findings = [
-    {
-      title: 'Relapse Prediction',
-      finding: 'Anomaly detection achieved clinically significant prediction of symptom exacerbation, with GPS-derived mobility showing strongest signal.',
-      citation: 'Cohen et al., 2023',
-    },
-    {
-      title: 'Convergent Validity',
-      finding: 'App-based mood ratings correlated r=0.80 with clinician-administered assessments.',
-      citation: 'Torous et al., 2019',
-    },
-    {
-      title: 'Participant Engagement',
-      finding: 'Studies report 60-80% survey completion rates across diverse populations over multi-week protocols.',
-      citation: 'Multiple studies, 2018-2024',
-    },
-  ];
 
   return (
     <section className={styles.section}>
@@ -539,55 +433,36 @@ function EvidenceSection() {
             Proven across diverse contexts
           </Heading>
           <p className={styles.sectionSubtitle}>
-            120+ peer-reviewed publications across 50+ sites demonstrate that the modular approach works.
           </p>
         </div>
 
         <div className={styles.projectsGridCompact}>
           {projects.map((project, idx) => (
-            <div key={idx} className={styles.projectCardCompact} style={{ borderLeftColor: project.color }}>
+            <Link key={idx} className={styles.projectCardCompact} to={project.link} style={{ borderLeftColor: project.color, textDecoration: 'none', color: 'inherit' }}>
               <h3>{project.name}</h3>
               <p className={styles.projectInst}>{project.institution}</p>
               <p className={styles.projectPop}>{project.population}</p>
               <p className={styles.projectHighlight}>{project.highlight}</p>
-            </div>
+            </Link>
           ))}
         </div>
 
         <div className={styles.domainsStrip}>
-          <h4>Research Domains</h4>
           <div className={styles.domainTags}>
-            <span>Schizophrenia</span>
-            <span>Depression</span>
-            <span>Anxiety</span>
-            <span>Bipolar</span>
-            <span>Dementia</span>
-            <span>PTSD</span>
-            <span>Postpartum</span>
-            <span>Veterans</span>
-            <span>College Students</span>
-            <span>Chronic Pain</span>
-            <span>Dermatology</span>
-            <span>Cardiology</span>
-          </div>
-        </div>
-
-        <div className={styles.findingsSection}>
-          <h3>Selected Research Findings</h3>
-          <div className={styles.findingsList}>
-            {findings.map((item, idx) => (
-              <div key={idx} className={styles.findingItem}>
-                <h4>{item.title}</h4>
-                <p>{item.finding}</p>
-                <cite>{item.citation}</cite>
-              </div>
+            {['Schizophrenia', 'Depression', 'Anxiety', 'Bipolar', 'Dementia', 'PTSD',
+              'Postpartum', 'Veterans', 'College Students', 'Chronic Pain', 'Dermatology', 'Cardiology',
+            ].map((d) => (
+              <span key={d} className={styles.domainTag}>{d}</span>
             ))}
           </div>
         </div>
 
-        <div className={styles.textCenter}>
+        <div className={styles.textCenter} style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+          <Link className={styles.btnPrimaryAlt} to="/projects">
+            View All Projects
+          </Link>
           <Link className={styles.btnPrimaryAlt} to="/publications">
-            Browse All Publications
+            View All Publications
           </Link>
         </div>
       </div>
@@ -595,91 +470,49 @@ function EvidenceSection() {
   );
 }
 
-// ========== WHO IT SERVES SECTION ==========
-function AudienceSection() {
-  return (
-    <section className={clsx(styles.section, styles.sectionAlt)}>
-      <div className="container">
-        <div className={styles.sectionHeader}>
-          <Heading as="h2" className={styles.sectionTitle}>
-            Who it serves
-          </Heading>
-        </div>
-
-        <div className={styles.audienceCards}>
-          <div className={styles.audienceCard}>
-            <h3>Research Teams</h3>
-            <ul>
-              <li>Real-time data quality monitoring</li>
-              <li>Multi-site consistency across 50+ locations</li>
-              <li>Standardized schemas for cross-study comparison</li>
-              <li>Cortex analytics pipeline for behavioral analysis</li>
-            </ul>
-          </div>
-
-          <div className={styles.audienceCard}>
-            <h3>Clinical Programs</h3>
-            <ul>
-              <li>Spot concerning patterns before crisis</li>
-              <li>Data-informed conversations with patients</li>
-              <li>Track progress with objective evidence</li>
-              <li>Dashboards highlight who needs attention</li>
-            </ul>
-          </div>
-
-          <div className={styles.audienceCard}>
-            <h3>Participants</h3>
-            <ul>
-              <li>In-your-pocket accessibility to studies & interventions</li>
-              <li>Personalized reports</li>
-              <li>See how behaviors connect to mood</li>
-              <li>Understand trends over time</li>
-              <li>Review reports with care team</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ========== WHY MINDLAMP SECTION ==========
+// ========== WHY MINDLAMP SECTION (combines audience + differentiators) ==========
 function WhySection() {
   const reasons = [
     {
       title: 'Truly Modular',
-      description: 'Configure activities, schedules, study groups, app layout, and phone/wearable sensor data collection without writing code.',
-      color: '#86b6ff', // mindlamp-blue
+      description: 'Configure activities, schedules, groups, app layout, and sensor collection without writing code.',
+      color: '#86b6ff',
+      link: '/capabilities/configure',
     },
     {
-      title: 'Proactive Quality',
-      description: 'Real-time monitoring catches issues before data loss. Troubleshoot proactively.',
-      color: '#64cebf', // mindlamp-teal
+      title: 'Consistent Data Format',
+      description: 'Every project produces data in the same structure, making it easy to compare across sites and populations.',
+      color: '#64cebf',
+      link: '/capabilities/collect',
     },
     {
-      title: 'Uniform Data',
-      description: 'All configurations produce the same schema. Compare across studies and reproduce methods.',
-      color: '#ff775c', // mindlamp-coral
+      title: 'Real-Time Quality Monitoring',
+      description: 'Catch missing data before it becomes a problem. Dashboards flag participants who need outreach.',
+      color: '#ff775c',
+      link: '/capabilities/monitor',
     },
     {
       title: 'Open Source',
-      description: 'Inspect, modify, and extend the code. Adapt as your needs evolve.',
-      color: '#ffd645', // mindlamp-yellow
+      description: 'Inspect, modify, and extend the code. Adapt the platform as your needs evolve.',
+      color: '#ffd645',
+      link: 'https://github.com/BIDMCDigitalPsychiatry',
     },
     {
-      title: '10 Languages Supported',
-      description: 'English, Spanish, French, Hindi, German, Italian, Korean, Danish, and Chinese.',
-      color: '#86b6ff', // mindlamp-blue
+      title: '10 Languages',
+      description: 'English, Spanish, French, Hindi, German, Italian, Korean, Danish, Chinese (Simplified & Traditional).',
+      color: '#86b6ff',
+      link: '/capabilities/experience',
     },
     {
-      title: 'Flexible Deployment',
-      description: 'Shared infrastructure, dedicated instances, or self-hosted for data residency requirements.',
-      color: '#64cebf', // mindlamp-teal
+      title: 'Expert Support',
+      description: 'The Core team at BIDMC guides you from initial setup through ongoing operation and troubleshooting.',
+      color: '#64cebf',
+      link: '/get-started',
     },
   ];
 
   return (
-    <section className={styles.section}>
+    <section className={clsx(styles.section, styles.sectionAlt)}>
       <div className="container">
         <div className={styles.sectionHeader}>
           <Heading as="h2" className={styles.sectionTitle}>
@@ -689,10 +522,10 @@ function WhySection() {
 
         <div className={styles.whyGrid}>
           {reasons.map((reason, idx) => (
-            <div key={idx} className={styles.whyCard} style={{ borderTopColor: reason.color }}>
+            <Link key={idx} className={styles.whyCard} to={reason.link} style={{ borderTopColor: reason.color, textDecoration: 'none', color: 'inherit' }}>
               <h4>{reason.title}</h4>
               <p>{reason.description}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -710,7 +543,7 @@ function CoreSection() {
             How we support you
           </Heading>
           <p className={styles.sectionSubtitleLight}>
-            The mindLAMP Core team provides expert support from study design through analysis.
+            The mindLAMP Core team at Beth Israel Deaconess Medical Center provides expert support at every stage of your project.
           </p>
         </div>
 
@@ -718,17 +551,17 @@ function CoreSection() {
           <div className={styles.coreStep}>
             <div className={styles.coreStepNum}>1</div>
             <h4>Consult</h4>
-            <p>Map your goals to configuration options</p>
+            <p>Understand your goals and identify the right approach</p>
           </div>
           <div className={styles.coreStep}>
             <div className={styles.coreStepNum}>2</div>
             <h4>Design</h4>
-            <p>Optimize protocol based on prior studies</p>
+            <p>Plan your setup based on what has worked in similar projects</p>
           </div>
           <div className={styles.coreStep}>
             <div className={styles.coreStepNum}>3</div>
             <h4>Configure</h4>
-            <p>Technical configuration to align with institutional requirements</p>
+            <p>Set up the platform to match your specific requirements</p>
           </div>
           <div className={styles.coreStep}>
             <div className={styles.coreStepNum}>4</div>
@@ -744,46 +577,15 @@ function CoreSection() {
 
         <div className={styles.coreNote}>
           <p>
-            The Core team at Beth Israel Deaconess Medical Center has supported projects
-            across diverse domains, bringing operational expertise so you can focus on your research.
+            With 8+ years of continuous clinical and research operation, the Core team brings
+            operational expertise so you can focus on what matters.
           </p>
         </div>
 
         <div className={styles.textCenter}>
           <Link className={styles.btnLight} to="/get-started">
-            Learn About Core Services
+            Schedule Free Consultation
           </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ========== CTA SECTION ==========
-function CtaSection() {
-  return (
-    <section className={styles.ctaSection}>
-      <div className="container">
-        <Heading as="h2" className={styles.ctaTitle}>
-          Get started
-        </Heading>
-
-        <div className={styles.ctaOptions}>
-          <div className={styles.ctaOption}>
-            <h3>Request a Consultation</h3>
-            <p>Discuss your needs, see examples from similar projects, and determine fit.</p>
-            <Link className={styles.ctaOptionButton} to="/get-started">
-              Schedule Free Consultation
-            </Link>
-          </div>
-
-          <div className={styles.ctaOption}>
-            <h3>Explore Documentation</h3>
-            <p>Review configuration options, analytics, API schemas, and open-source code.</p>
-            <Link className={styles.ctaOptionButtonAlt} to="/docs">
-              Browse Documentation
-            </Link>
-          </div>
         </div>
       </div>
     </section>
@@ -795,20 +597,14 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Modular Digital Health Platform"
-      description="mindLAMP is a modular open-source platform backed by 120+ publications. Configure exactly what participants experience. One platform supports entirely different studies with uniform data schema."
+      description="mindLAMP is an open-source platform for mobile health research and clinical care. Everything you need to run a digital health program, from participant-facing tools to data analysis, with one consistent data format."
     >
       <HeroSection />
       <main>
-        <ProblemSection />
-        <WhySection />
-        <VideoSection />
-        <HowItWorksSection />
-        <AppSection />
-        <CortexSection />
+        <CapabilitiesOverviewSection />
         <EvidenceSection />
-        <AudienceSection />
+        <WhySection />
         <CoreSection />
-        <CtaSection />
       </main>
     </Layout>
   );

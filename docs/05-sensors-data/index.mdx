@@ -1,0 +1,29 @@
+---
+sidebar_position: 0
+title: "Sensors & Passive Data"
+---
+
+import {DocCard, DocCardGrid} from '@site/src/components/DocCard';
+
+# Sensors & Passive Data
+
+> For a high-level overview of data collection capabilities, see [Collect Rich Data](/capabilities/collect).
+
+mindLAMP continuously collects background sensor data from participants' devices without any action required. This includes GPS location, accelerometer, screen state, device motion, health metrics, and more. All sensor data follows a consistent JSON event format, making it straightforward to query, export, and analyze.
+
+mindLAMP supports **9 device sensors** (GPS, accelerometer, device motion, device state, steps, nearby devices, telephony, analytics, activity recognition) and **10 health platform sensors** that read from Apple HealthKit or Google Health Connect (sleep, heart rate, HRV, respiratory rate, blood pressure, blood glucose, oxygen saturation, body temperature, workouts, nutrition). On enrolled iOS research devices, [SensorKit](/developer/cortex/features/raw-features#sensorkit) provides additional data streams.
+
+See the [Sensor Reference](reference) for per-sensor documentation, or [Sensor Configuration](configuration) for setup and sampling rates.
+
+## In This Section
+
+<DocCardGrid>
+  <DocCard id="sensors-data/usage" />
+  <DocCard id="sensors-data/configuration" />
+  <DocCard id="sensors-data/data" />
+  <DocCard id="sensors-data/reference/index" />
+</DocCardGrid>
+
+## Further Reading
+
+Configure sensors through the [dashboard's Sensors tab](/dashboard/sensors-tab). For programmatic access, see the [API and SDKs](/developer/api-sdks). For per-sensor schemas, see the [Sensor Reference](/sensors-data/reference). For the Cortex analysis pipeline (raw → primary → secondary features), see the [Cortex documentation](/developer/cortex).

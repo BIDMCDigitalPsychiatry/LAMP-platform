@@ -1,0 +1,25 @@
+---
+sidebar_position: 1
+title: "Activities & Active Data"
+---
+
+import {DocCard, DocCardGrid} from '@site/src/components/DocCard';
+
+# Activities & Active Data
+
+> For a high-level overview of data collection capabilities, see [Collect Rich Data](/capabilities/collect).
+
+Activities are the building blocks of any mindLAMP study or clinical program. They are the tasks, assessments, and content that participants interact with through the app.
+
+mindLAMP includes **surveys**, **cognitive games**, **self-management tools** (breathing exercises, journaling), and **educational content** (tips). Activities are organized into three app tabs — **Learn**, **Assess**, and **Manage** — and can be scheduled to appear in the participant's Feed. Every activity has a unique **ActivitySpec** identifier used in the API and data events.
+
+All activities produce **ActivityEvents** — timestamped records containing session-level summaries and per-action detail. See [Activity Data Format](data) for the event structure, and each activity's page in the [Activity Reference](reference) for its specific schema.
+
+## In This Section
+
+<DocCardGrid>
+  <DocCard id="activities/usage" />
+  <DocCard id="activities/configuration" />
+  <DocCard id="activities/data" />
+  <DocCard id="activities/reference/index" />
+</DocCardGrid>

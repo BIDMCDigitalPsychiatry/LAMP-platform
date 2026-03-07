@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#E3F2FD"/>
+  <!-- Two cards side by side -->
+  <!-- Card 1 - face up -->
+  <g transform="translate(40, 96)">
+    <rect x="0" y="0" width="192" height="260" rx="16" fill="#fff" stroke="#1E88E5" stroke-width="3"/>
+    <!-- Simple image placeholder (star) -->
+    <polygon points="96,60 112,108 164,108 122,138 138,188 96,158 54,188 70,138 28,108 80,108" fill="#42A5F5"/>
+    <rect x="32" y="220" width="128" height="8" rx="4" fill="#BBDEFB"/>
+  </g>
+  <!-- Card 2 - face up (matching) -->
+  <g transform="translate(280, 96)">
+    <rect x="0" y="0" width="192" height="260" rx="16" fill="#fff" stroke="#1E88E5" stroke-width="3"/>
+    <!-- Same star -->
+    <polygon points="96,60 112,108 164,108 122,138 138,188 96,158 54,188 70,138 28,108 80,108" fill="#42A5F5"/>
+    <rect x="32" y="220" width="128" height="8" rx="4" fill="#BBDEFB"/>
+  </g>
+  <!-- Match indicator line -->
+  <line x1="232" y1="226" x2="280" y2="226" stroke="#1565C0" stroke-width="4" stroke-dasharray="8,6"/>
+  <!-- Checkmark circle -->
+  <circle cx="256" cy="420" r="30" fill="#1565C0"/>
+  <polyline points="240,420 252,432 274,408" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

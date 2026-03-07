@@ -243,7 +243,7 @@ const PublicationsList: React.FC = () => {
       <header className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroTagline}>Peer-Reviewed Research</div>
-          <h1 className={styles.heroTitle}>MindLAMP Publications</h1>
+          <h1 className={styles.heroTitle}>mindLAMP Publications</h1>
           <p className={styles.heroSubtitle}>
             Explore the growing body of research using mindLAMP across diverse populations and clinical domains.
           </p>
@@ -268,22 +268,6 @@ const PublicationsList: React.FC = () => {
           </div>
         </div>
       </header>
-
-      {/* Contribution Callout */}
-      <div className={styles.contributionCallout}>
-        <h3>Published research using mindLAMP?</h3>
-        <p>
-          Help us showcase the growing body of mindLAMP research. Submit your publication to be featured in our database.
-        </p>
-        <a
-          href="https://forms.gle/YourPublicationFormLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.contributionLink}
-        >
-          Submit Your Publication
-        </a>
-      </div>
 
       {/* Filters Section */}
       <section className={styles.filtersSection}>
@@ -487,7 +471,7 @@ const PublicationsList: React.FC = () => {
                 <div className={styles.expandedContent}>
                   {pub.mindlampRelevance && (
                     <div className={styles.detailSection}>
-                      <h4>MindLAMP Relevance</h4>
+                      <h4>How mindLAMP Was Used</h4>
                       <p>{pub.mindlampRelevance}</p>
                     </div>
                   )}

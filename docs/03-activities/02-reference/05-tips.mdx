@@ -1,0 +1,121 @@
+---
+slug: "/activities/reference/tips"
+sidebar_position: 5
+sidebar_label: Tips
+title: "Tips"
+---
+
+# Tips
+
+<div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1.5rem'}}>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/digital-clinic/tip-launch-dialog.png" alt="Tip launch dialog" width="220" />
+    <div><strong>Launch</strong> — Title and Begin button</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/digital-clinic/tip-content-with-survey.png" alt="Tip content" width="220" />
+    <div><strong>Content</strong> — Scrollable rich text</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/digital-clinic/tip-completion.png" alt="Tip completion" width="220" />
+    <div><strong>Bottom</strong> — Helpfulness prompt and Mark Complete</div>
+  </div>
+</div>
+
+Tips are educational or motivational content items that appear in the Learn tab. They support rich content including text, images, videos, and interactive elements.
+
+**ActivitySpec:** `lamp.tips`
+
+## Configuration
+
+1. Log in to the dashboard and navigate to the **Activities** tab.
+2. Click **+ Add** and select **Tips**.
+3. Select the group you wish to add the tip to.
+4. Enter a title. Optionally add a link and author.
+5. Press the **(+)** icon to add content items (text, images, media).
+
+### Content Formatting
+
+Tips support [Markdown-formatted text](https://www.markdownguide.org/getting-started/), including:
+
+- **Headings** — `#`, `##`, `###`
+- **Bold and italic** — `**bold**` and `*italic*`
+- **Lists** — Ordered and unordered
+- **Links** — `[link text](url)`
+- **Images** — `![alt text](url)` or inline HTML. Upload directly (up to 4 MB, PNG/SVG/JPEG) or embed as base64 data URIs.
+- **Tables** — Standard Markdown table syntax
+- **Embedded video** — YouTube via `<iframe>`
+- **Expandable sections** — `<details>` and `<summary>` tags
+
+### Embedding Video
+
+```html
+<iframe width="400" height="300"
+  src="https://www.youtube.com/embed/VIDEO_ID"
+  frameborder="0" allowfullscreen></iframe>
+```
+
+### Multiple Tip Items
+
+A single tip can contain multiple content items. Press the **(+)** icon to add additional items — all items appear on a single scrollable page. To present tips in a multi-step sequence, use an [Activity Group](/activities/reference/activity-groups) to bundle multiple tips together.
+
+### Use Cases
+
+- General health education (physical wellness, sleep hygiene, mental health literacy)
+- Skill-building resources for therapy techniques
+- Individualized content for a specific participant's needs
+- Embedded video tutorials or guided exercises
+- Links to external resources and reading materials
+
+### Real-World Examples
+
+**Tips with embedded video** — The Social Media study's Sleep Module [activity group](/activities/reference/activity-groups) includes multiple tips with embedded YouTube videos. Each tip has a video player, explanatory text, a helpfulness prompt, and a Mark Complete button.
+
+<div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1rem'}}>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/social-media/tip-with-video.png" alt="Tip with embedded YouTube video" width="220" />
+    <div><strong>Tip 1</strong> — Introduction video about social media and sleep</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/social-media/tip-with-video-2.png" alt="Second tip with embedded video" width="220" />
+    <div><strong>Tip 2</strong> — Follow-up video on nighttime routines</div>
+  </div>
+</div>
+
+**Tips with embedded images** — momLAMP's "Thoughts, Feelings, and Behaviors" tip combines text and inline images to illustrate CBT concepts.
+
+<img src="/assets/projects/momlamp/tip-content.png" alt="momLAMP tip with embedded images" width="220" />
+
+## Usage
+
+After viewing a tip, participants see a **"Was this helpful today?"** prompt with thumbs up ("Yes") and thumbs down ("No") buttons, followed by a "Mark complete" button.
+
+Tapping "Mark complete" records the response. If the participant taps "Mark complete" without explicitly selecting a thumb, the response defaults to `"Yes"`.
+
+## Data
+
+| Field | Value |
+|-------|-------|
+| `static_data.sentiment` | `"Yes"` (helpful) or `"No"` (not helpful). Defaults to `"Yes"` if no selection made. |
+| `duration` | Time spent viewing the tip in milliseconds |
+| `temporal_slices` | Always an empty array |
+
+### Example
+
+```json
+{
+  "timestamp": 1649859300000,
+  "activity": "tip_activity_id",
+  "duration": 15000,
+  "static_data": {
+    "sentiment": "Yes"
+  },
+  "temporal_slices": []
+}
+```
+
+### Cortex Features
+
+No Cortex features currently process Tips data.
+
+View in [Portal](/app/app-tabs/portal) | [Python SDK](/developer/api-sdks/python-sdk) | [API Reference](/activities/reference)

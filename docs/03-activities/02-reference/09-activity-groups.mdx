@@ -1,0 +1,70 @@
+---
+slug: "/activities/reference/activity-groups"
+sidebar_position: 9
+sidebar_label: Activity Groups
+title: "Activity Groups"
+---
+
+# Activity Groups
+
+Activity groups bundle multiple activities together so participants complete them as a single unit in a specific order.
+
+**ActivitySpec:** `lamp.group`
+
+## Configuration
+
+1. Go to the Activities tab and create all individual activities you want to group.
+2. For each activity in the group, select **Customize which Tab this Activity appears in** and **uncheck all tabs**. This hides the individual activities — participants will only see the group.
+3. Click **+ Add** and select **Activity Group**.
+4. Name the group and upload an icon.
+5. Select which tab(s) the group should appear in.
+6. In the activity selector, add activities using the **(+)** icon. Use the delete button to remove.
+7. **Drag activities** to arrange them in the desired completion order.
+8. Save.
+
+## Usage
+
+When a participant taps an activity group, the included activities are presented one after another in the configured order. The group appears as a single item in the Feed and on the selected tab(s).
+
+### Scheduling Groups
+
+Activity groups can be scheduled like individual activities. A single notification is sent for the group, and the participant completes all included activities in sequence. See [Scheduling](/dashboard/scheduling) for details.
+
+### Use Cases
+
+- Administering a battery of surveys in a fixed order
+- Combining a survey with a cognitive game for a single assessment session
+- Creating a daily check-in that includes mood tracking, journaling, and a breathing exercise
+
+### Example: Social Media Study — Sleep Module
+
+The Sleep Module is an activity group from the Social Media study that combines tips and surveys into a guided session. It bundles psychoeducation tips (with embedded YouTube videos), reflection surveys (slider and free-text questions), and a planning activity. Activity groups can mix any activity types — tips, surveys, games, breathing exercises — in whatever order the study requires.
+
+<div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1rem'}}>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/social-media/manage-tab-activity-groups.png" alt="Activity groups in Manage tab" width="220" />
+    <div><strong>Manage tab</strong> — Groups appear as single items</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/social-media/sleep-module-launch.png" alt="Sleep Module launch" width="220" />
+    <div><strong>Launch</strong> — Group description and Begin button</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/social-media/tip-with-video.png" alt="Tip with video inside group" width="220" />
+    <div><strong>Tip</strong> — Embedded video within the group</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/social-media/activity-group-survey-slider.png" alt="Survey within group" width="220" />
+    <div><strong>Survey</strong> — Slider question (activity 3 of 5)</div>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="/assets/projects/social-media/activity-group-planning-survey.png" alt="Planning activity" width="220" />
+    <div><strong>Survey</strong> — Free-text planning prompts</div>
+  </div>
+</div>
+
+## Data
+
+Each individual activity within the group produces its own ActivityEvent with the appropriate schema. The group itself does not produce a separate event.
+
+View in [Portal](/app/app-tabs/portal) | [Python SDK](/developer/api-sdks/python-sdk) | [API Reference](/activities/reference)

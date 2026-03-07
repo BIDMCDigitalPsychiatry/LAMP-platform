@@ -10,7 +10,7 @@ import { Client } from '@notionhq/client';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// --- Initialize Notion client ---
+// --- Initialize Notion client (old API for traditional database support) ---
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
   notionVersion: "2022-06-28"
@@ -20,7 +20,7 @@ const notion = new Client({
 const DB_IDS = {
   publications: process.env.NOTION_PUBLICATIONS_DB_ID || '2b233133d8a2802786f3c1dd4d802d1e',
   projects: process.env.NOTION_PROJECTS_DB_ID || '2b233133d8a280d79629d7c48f9737a6',
-  tags: process.env.NOTION_TAGS_DB_ID || '2b233133d8a2801bad2ccdd3c9904dac'
+  tags: process.env.NOTION_TAGS_DB_ID || '30c33133d8a280e1a48fd37bb4afb704'
 };
 
 // --- Validation ---
@@ -73,6 +73,7 @@ async function fetchAllPages(databaseId) {
   do {
     const response = await notion.databases.query({
       database_id: databaseId,
+      page_size: 100,
       start_cursor: cursor,
     });
 
@@ -86,30 +87,37 @@ async function fetchAllPages(databaseId) {
 // --- Parse functions ---
 function parseTag(page) {
   const props = page.properties;
+  // Actual field name is 'tag' (title), not 'tagID'
+  const tagValue = getTitle(props['tag']);
   return {
     id: page.id,
-    tagID: getTitle(props['tagID']),
-    name: getTitle(props['tagID']),
-    projectIDs: getRelation(props['projectIDs'])
+    tagID: tagValue,
+    name: tagValue,
+    projectIDs: getRelation(props['relatedProjects'])
   };
 }
 
 function parseProject(page) {
   const props = page.properties;
+  // Extract projectID - field is rich_text type, format is "0031: Name"
+  const rawProjectID = getRichText(props['Project ID']);
+  const projectIDMatch = rawProjectID.match(/^(\d+)/);
+  const projectID = projectIDMatch ? `PRJ-${projectIDMatch[1].padStart(4, '0')}` : rawProjectID;
+
   return {
     id: page.id,
-    projectID: getTitle(props['projectID']),
-    name: getRichText(props['name']),
-    tagIDs: getRelation(props['tagIDs'])
+    projectID: projectID,
+    name: getTitle(props['Name']),
+    tagIDs: getRelation(props['Tags'])
   };
 }
 
 function parsePublication(page, tagMap, projectMap) {
   const props = page.properties;
 
-  // Extract relation IDs
-  const projectIDs = getRelation(props['projectIDs']);
-  const directTagIDs = getRelation(props['directTagIDs']);
+  // Actual field names: 'relatedProjects' and 'relatedTags' (not projectIDs/directTagIDs)
+  const projectIDs = getRelation(props['relatedProjects']);
+  const directTagIDs = getRelation(props['relatedTags']);
 
   // Resolve projects (simplified - just name for display)
   const projects = projectIDs
@@ -117,21 +125,25 @@ function parsePublication(page, tagMap, projectMap) {
     .filter(Boolean)
     .map(p => ({ id: p.id, projectID: p.projectID, name: p.name }));
 
-  // Get tags directly from publication's directTagIDs field
+  // Get tags directly from publication's relatedTags field
   const tags = directTagIDs
     .map(id => tagMap.get(id))
     .filter(Boolean)
     .map(t => ({ id: t.id, tagID: t.tagID, name: t.name }));
 
+  // 'title' is the title field; extract DOI from URL if present
+  const url = getUrl(props['url']);
+  const doi = url.includes('doi.org/') ? url.split('doi.org/')[1] : '';
+
   return {
     id: page.id,
-    doi: getTitle(props['doi']),
-    title: getRichText(props['title']),
+    doi: doi,
+    title: getTitle(props['title']),
     citation: getRichText(props['citation']),
     abstract: getRichText(props['abstract']),
     year: getNumber(props['year']),
-    url: getUrl(props['url']),
-    mindlampRelevance: getRichText(props['mindlampRelevence']),
+    url: url,
+    mindlampRelevance: getRichText(props['mindlampRelevance']),
     projects,
     tags
   };
@@ -141,16 +153,15 @@ function parsePublication(page, tagMap, projectMap) {
 async function main() {
   console.log('Starting Notion publications sync...\n');
 
-  // Fetch databases
-  console.log('Fetching databases...');
-  const [tagsPages, projectsPages, publicationsPages] = await Promise.all([
-    fetchAllPages(DB_IDS.tags),
-    fetchAllPages(DB_IDS.projects),
-    fetchAllPages(DB_IDS.publications)
-  ]);
-
+  // Fetch all pages from each database
+  console.log('Fetching from databases...');
+  const tagsPages = await fetchAllPages(DB_IDS.tags);
   console.log(`  Tags: ${tagsPages.length}`);
+
+  const projectsPages = await fetchAllPages(DB_IDS.projects);
   console.log(`  Projects: ${projectsPages.length}`);
+
+  const publicationsPages = await fetchAllPages(DB_IDS.publications);
   console.log(`  Publications: ${publicationsPages.length}\n`);
 
   // Parse and build lookup maps
@@ -165,7 +176,7 @@ async function main() {
   console.log('Resolving publication relationships...');
   const publications = publicationsPages
     .map(page => parsePublication(page, tagMap, projectMap))
-    .filter(p => p.doi && p.title);
+    .filter(p => p.title);  // Only require title; DOI may be extracted from URL
 
   console.log(`  Resolved ${publications.length} publications\n`);
 

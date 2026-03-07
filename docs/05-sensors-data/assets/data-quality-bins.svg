@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="coverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">How GPS data quality is calculated</text>
+
+  <!-- Time axis label -->
+  <text x="360" y="52" text-anchor="middle" font-size="11" fill="#64748b">24-hour day divided into 144 non-overlapping 10-minute bins</text>
+
+  <!-- Bin row -->
+  <g transform="translate(40, 70)">
+    <!-- Show 12 representative bins -->
+    <!-- Bin 1: covered -->
+    <rect x="0" y="0" width="52" height="60" rx="4" fill="url(#coverGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="5" fill="#3b82f6"/>
+    <text x="26" y="88" text-anchor="middle" font-size="9" fill="#64748b">B1</text>
+
+    <!-- Bin 2: covered (multiple points) -->
+    <rect x="57" y="0" width="52" height="60" rx="4" fill="url(#coverGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="71" cy="22" r="4" fill="#3b82f6"/>
+    <circle cx="83" cy="38" r="4" fill="#3b82f6"/>
+    <circle cx="95" cy="28" r="4" fill="#3b82f6"/>
+    <text x="83" y="88" text-anchor="middle" font-size="9" fill="#64748b">B2</text>
+
+    <!-- Bin 3: missing -->
+    <rect x="114" y="0" width="52" height="60" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <line x1="128" y1="18" x2="152" y2="42" stroke="#ef4444" stroke-width="2"/>
+    <line x1="152" y1="18" x2="128" y2="42" stroke="#ef4444" stroke-width="2"/>
+    <text x="140" y="88" text-anchor="middle" font-size="9" fill="#64748b">B3</text>
+
+    <!-- Bin 4: covered -->
+    <rect x="171" y="0" width="52" height="60" rx="4" fill="url(#coverGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="197" cy="34" r="5" fill="#3b82f6"/>
+    <text x="197" y="88" text-anchor="middle" font-size="9" fill="#64748b">B4</text>
+
+    <!-- Ellipsis -->
+    <text x="248" y="35" text-anchor="middle" font-size="18" fill="#94a3b8">...</text>
+
+    <!-- Bin 50: covered -->
+    <rect x="270" y="0" width="52" height="60" rx="4" fill="url(#coverGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="288" cy="26" r="4" fill="#3b82f6"/>
+    <circle cx="304" cy="36" r="4" fill="#3b82f6"/>
+    <text x="296" y="88" text-anchor="middle" font-size="9" fill="#64748b">B50</text>
+
+    <!-- Bin 51: missing -->
+    <rect x="327" y="0" width="52" height="60" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <line x1="341" y1="18" x2="365" y2="42" stroke="#ef4444" stroke-width="2"/>
+    <line x1="365" y1="18" x2="341" y2="42" stroke="#ef4444" stroke-width="2"/>
+    <text x="353" y="88" text-anchor="middle" font-size="9" fill="#64748b">B51</text>
+
+    <!-- Ellipsis -->
+    <text x="404" y="35" text-anchor="middle" font-size="18" fill="#94a3b8">...</text>
+
+    <!-- Bin 143: covered -->
+    <rect x="426" y="0" width="52" height="60" rx="4" fill="url(#coverGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="452" cy="30" r="5" fill="#3b82f6"/>
+    <text x="452" y="88" text-anchor="middle" font-size="9" fill="#64748b">B143</text>
+
+    <!-- Bin 144: covered -->
+    <rect x="483" y="0" width="52" height="60" rx="4" fill="url(#coverGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="501" cy="20" r="4" fill="#3b82f6"/>
+    <circle cx="517" cy="40" r="4" fill="#3b82f6"/>
+    <text x="509" y="88" text-anchor="middle" font-size="9" fill="#64748b">B144</text>
+
+    <!-- Result arrow and score -->
+    <text x="564" y="16" font-size="11" fill="#64748b">Score =</text>
+    <text x="564" y="36" font-size="11" fill="#334155">covered bins</text>
+    <line x1="564" y1="40" x2="640" y2="40" stroke="#334155" stroke-width="1"/>
+    <text x="564" y="55" font-size="11" fill="#334155">total bins (144)</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(40, 180)">
+    <rect x="0" y="0" width="16" height="16" rx="3" fill="url(#coverGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="8" cy="8" r="3" fill="#3b82f6"/>
+    <text x="22" y="12" font-size="11" fill="#475569">Covered — at least 1 GPS data point in this 10-min window</text>
+
+    <rect x="370" y="0" width="16" height="16" rx="3" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <line x1="374" y1="4" x2="382" y2="12" stroke="#ef4444" stroke-width="1.5"/>
+    <line x1="382" y1="4" x2="374" y2="12" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="392" y="12" font-size="11" fill="#475569">Missing — no GPS data in this window</text>
+  </g>
+</svg>

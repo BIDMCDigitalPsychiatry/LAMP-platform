@@ -7,12 +7,12 @@ import { parse } from 'csv-parse/sync';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Read the projects CSV
-const projectsCsvPath = '/Users/edenrozenblit/Desktop/documentation/publications/mindLAMP_projects_database.csv';
+const projectsCsvPath = '/Users/edenrozenblit/Desktop/documentation/source-data/mindLAMP_projects_database.csv';
 const projectsCsv = fs.readFileSync(projectsCsvPath, 'utf8');
 const projectsRecords = parse(projectsCsv, { columns: true, skip_empty_lines: true });
 
 // Read the publications CSV
-const publicationsCsvPath = '/Users/edenrozenblit/Desktop/documentation/publications/publications.csv';
+const publicationsCsvPath = '/Users/edenrozenblit/Desktop/documentation/source-data/publications.csv';
 const publicationsCsv = fs.readFileSync(publicationsCsvPath, 'utf8');
 const publicationsRecords = parse(publicationsCsv, { columns: true, skip_empty_lines: true });
 
