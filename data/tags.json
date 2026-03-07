@@ -124,5 +124,11 @@
     "tagID": "race-ethnicity-language",
     "name": "race-ethnicity-language",
     "description": "Studies focused on specific racial, ethnic, or linguistic populations, cultural factors in mental health, or international/global mental health collaborations. Includes research conducted in non-US settings (India, Kenya, China, Bulgaria, etc.) and multi-national consortia."
+  },
+  {
+    "id": "30333133-d8a2-80e4-a560-ec39b2ef7d08",
+    "tagID": "other",
+    "name": "other",
+    "description": ""
   }
 ]

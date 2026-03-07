@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklamp_platform=globalThis.webpackChunklamp_platform||[]).push([[1391],{60212:(a,l,r)=>{r.r(l),r.d(l,{default:()=>u});var t=r(56347),p=r(74848);function u(){return(0,p.jsx)(t.rd,{to:"/"})}}}]);

@@ -12,7 +12,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -46,7 +46,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -122,7 +122,7 @@
   },
   {
     "id": "2b533133-d8a2-800e-8718-f4bf86d8468d",
-    "doi": "2021643-8-2",
+    "doi": "",
     "title": "Digital follow-up in patients with substance use disorders – pilot study assessing feasibility",
     "citation": "Krasteva, S. (2021). Digital follow-up in patients with substance use disorders – pilot study assessing feasibility. Bulgarian Journal of Psychiatry, 6(4), 3–8. https://bulgarian-journal-of-psychiatry.bg/en/2021643-8-2/",
     "abstract": "Continuing care for patients with substance use disorders is often insufficient due to the relatively low share of health insurance and the lack of social support and means for outpatient treatment. Technological advances in the development of digital psychiatry and telemedicine provide solutions regarding remote medical services that require a lower level of economic and human resources. The present study aims to establish the feasibility of digital methods among addicted patients in Bulgaria. The clinical and research mobile application mindLAMP2 was used. The study included 85 patients, of whom 52 (61%) had a personal smart device. Out of them, 12 (23%) proved to have insufficient digital literacy. A total of 20 patients received access to the application on their personal smart devices for a period of 3 months. No adverse events related to the use of the tool were registered. Throughout the study, a total of 836 ecological momentary assessments were completed. We found that the digital activity is not determined by the age of the participants both in terms of the number of completed questionnaires and the length of the period of activity. Our study confirms that digital methods of follow-up are applicable for use among patients with substance use disorders in Bulgaria.",
@@ -162,7 +162,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -399,7 +399,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -468,7 +468,7 @@
   },
   {
     "id": "2b533133-d8a2-802a-adb1-dd8af2f1056d",
-    "doi": "10.1038/s41398-020-01123-7",
+    "doi": "",
     "title": "Anomaly detection to predict relapse risk in schizophrenia",
     "citation": "Henson, P., D’Mello, R., Vaidyam, A. et al. Anomaly detection to predict relapse risk in schizophrenia. Transl Psychiatry 11, 28 (2021). https://doi.org/10.1038/s41398-020-01123-7",
     "abstract": "The integration of technology in clinical care is growing rapidly and has become especially relevant during the global COVID-19 pandemic. Smartphone-based digital phenotyping, or the use of integrated sensors to identify patterns in behavior and symptomatology, has shown potential in detecting subtle moment-to-moment changes. These changes, often referred to as anomalies, represent significant deviations from an individual’s baseline, may be useful in informing the risk of relapse in serious mental illness. Our investigation of smartphone-based anomaly detection resulted in 89% sensitivity and 75% specificity for predicting relapse in schizophrenia. These results demonstrate the potential of longitudinal collection of real-time behavior and symptomatology via smartphones and the clinical utility of individualized analysis. Future studies are necessary to explore how specificity can be improved, just-in-time adaptive interventions utilized, and clinical integration achieved.",
@@ -674,7 +674,7 @@
   },
   {
     "id": "2b533133-d8a2-8034-8a4c-e5a9560b3cbe",
-    "doi": "10.2196/67659",
+    "doi": "",
     "title": "Mobile Therapeutic Attention for Treatment-Resistant Schizophrenia (m-RESIST) Solution for Improving Clinical and Functional Outcomes in Treatment-Resistant Schizophrenia: Prospective, Multicenter Efficacy Study",
     "citation": "Seppälä J, Grasa E, Alonso-Solis A, Roldan-Bejarano A, Haapea M, Isohanni M, Miettunen J, Caro Mendivelso J, Almazán C, Rubinstein K, Caspi A, Unoka Z, Farkas K, Reixach E, Berdun J, Usall J, Ochoa S, Corripio I, Jääskeläinen E, m-Resist GroupMobile Therapeutic Attention for Treatment-Resistant Schizophrenia (m-RESIST) Solution for Improving Clinical and Functional Outcomes in Treatment-Resistant Schizophrenia: Prospective, Multicenter Efficacy StudyJMIR Hum Factors 2025;12:e67659",
     "abstract": "Background:Treatment-resistant schizophrenia (TRS) is a severe form of schizophrenia associated with low adherence to treatment and poor outcomes. Mobile health (mHealth) interventions may be effective in preventing relapses, increasing treatment adherence, and managing some of the symptoms of schizophrenia. Mobile therapeutic attention for treatment-resistant schizophrenia (m-RESIST) is an innovative mHealth developed specifically for TRS.Objective:We aim to evaluate the effects of m-RESIST on the clinical and functional outcomes and on the perceived quality of life in people with TRS.Methods:A feasibility study without a control group was performed to test the m-RESIST solution on patients with TRS. Participants were recruited from Spain, Israel, and Hungary. This study’s population (N=31) followed 3 months of intervention. The m-RESIST was configured by an app, a wearable, and a web-based platform. The severity of symptoms was evaluated by using the Positive and Negative Syndrome Scale (PANSS) and the Clinical Global Impression-Schizophrenia (CGI-SCH) scale. Functionality was assessed by the Global Assessment of Functioning and perceived quality of life was evaluated by the EuroQol visual analogue scale (EQ-VAS).Results:Significant reductions were found in symptoms from pretrial to posttrial on the PANSS total (mean difference −7.2, 95% CI −11.1 to −3.4; P=.001), the PANSS positive (mean difference −1.36, 95% CI −2.6 to −0.1; P=.04), the PANSS negative (mean difference −2.1, 95% CI −3.1 to −1.1; P<.001), and the PANSS general symptoms (mean difference −3.8, 95% CI −6.8 to −0.8; P=.02). In almost one-fifth of the participants (6/31), the overall score for the PANSS decreased by more than 20%, which may be considered a clinically significant change. On the CGI-SCH scale, the sum of total severity of illness decreased significantly (P=.03). A decrease in the sum of positive and negative symptoms of the CGI-SCH score was also found (P=.04 and P=.03, respectively). The sum of depressive or cognitive symptoms did not change. The functionality of participants increased significantly on the Global Assessment of Functioning (P≤.001). The perceived quality of life on the EQ-VAS also improved (mean difference 6.7, 95% CI 0.5 to 12.9; P=.04).Conclusions:To our best knowledge, this was the first study to address the efficacy of the mHealth app m-RESIST on the symptoms and functional capacity and on the quality of life for people with TRS. Our preliminary findings showed that implementing the m-RESIST solution decreased the symptoms and severity of disease, and improved the functionality and perceived quality of life among those with TRS. The change of symptoms on the PANSS total may be clinically significant. Modern technologies such as mHealth interventions may be useful in treating symptoms and functionality even in TRS, which is a major clinical challenge, with usually poor outcomes. These results should be corroborated by performing a controlled trial.",
@@ -692,7 +692,7 @@
   },
   {
     "id": "2b533133-d8a2-803a-8de0-ea846912014e",
-    "doi": "10.1371/journal.pdig.0000526",
+    "doi": "",
     "title": "Digital phenotyping correlates of mobile cognitive measures in schizophrenia: A multisite global mental health feasibility trial",
     "citation": "Cohen, A., Joshi, D., Bondre, A., Chand, P. K., Chaturvedi, N., Choudhary, S., Dutt, S., Khan, A., Langholm, C., Kumar, M., Gupta, S., Nagendra, S., Reddy, P. V., Rozatkar, A., Sen, Y., Shrivastava, R., Singh, R., Thirthalli, J., Tugnawat, D. K., Bhan, A., … Torous, J. (2024). Digital phenotyping correlates of mobile cognitive measures in schizophrenia: A multisite global mental health feasibility trial. PLOS digital health, 3(6), e0000526. https://doi.org/10.1371/journal.pdig.0000526",
     "abstract": "Traditional cognitive assessments in schizophrenia are time-consuming and necessitate specialized training, making routine evaluation challenging. To overcome these limitations, this study investigates the feasibility and advantages of utilizing smartphone-based assessments to capture both cognitive functioning and digital phenotyping data and compare these results to gold standard measures. We conducted a secondary analysis of data from 76 individuals with schizophrenia, who were recruited across three sites (one in Boston, two in India) was conducted. The open-source mindLAMP smartphone app captured digital phenotyping data and Trails A/B assessments of attention / memory for up to 12 months. The smartphone-cognitive tasks exhibited potential for normal distribution and these scores showed small but significant correlations with the results from the Brief Assessment of Cognition in Schizophrenia, especially the digital span and symbol coding tasks (r2 = 0.21). A small but significant correlation (r2 = 0.29) between smartphone-derived cognitive scores and health-related behaviors such as sleep duration patterns was observed. Smartphone-based cognitive assessments show promise as cross-cultural tools that can capture relevant data on momentary states among individuals with schizophrenia. Cognitive results related to sleep suggest functional applications to digital phenotyping data, and the potential of this multimodal data approach in research.",
@@ -780,7 +780,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -884,7 +884,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -936,7 +936,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -1068,7 +1068,7 @@
   },
   {
     "id": "2b533133-d8a2-8049-959f-ca21f28a362a",
-    "doi": "10.2196/37954",
+    "doi": "",
     "title": "Digital Phenotyping Data to Predict Symptom Improvement andApp Personalization: Protocol for a Prospective Study",
     "citation": "Currey, D., & Torous, J. (2022). Digital phenotyping data to predict symptom improvement and app personalization: Protocol for a prospective study. JMIR Research Protocols, 11(11), e37954. https://doi.org/10.2196/37954",
     "abstract": "Background:Smartphone apps that capture surveys and sensors are increasingly being leveraged to collect data on clinical conditions. In mental health, this data could be used to personalize psychiatric support offered by apps so that they are more effective and engaging. Yet today, few mental health apps offer this type of support, often because of challenges associated with accurately predicting users’ actual future mental health.Objective:In this protocol, we present a study design to explore engagement with mental health apps in college students, using the Technology Acceptance Model as a theoretical framework, and assess the accuracy of predicting mental health changes using digital phenotyping data.Methods:There are two main goals of this study. First, we present a logistic regression model fit on data from a prior study on college students and prospectively test this model on a new student cohort to assess its accuracy. Second, we will provide users with data-driven activity suggestions every 4 days to determine whether this type of personalization will increase engagement or attitudes toward the app compared to those receiving no personalized recommendations.Results:The study was completed in the spring of 2022, and the manuscript is currently in review at JMIR Publications.Conclusions:This is one of the first digital phenotyping algorithms to be prospectively validated. Overall, our results will inform the potential of digital phenotyping data to serve as tailoring data in adaptive interventions and to increase rates of engagement.",
@@ -1156,7 +1156,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -1293,7 +1293,7 @@
   },
   {
     "id": "2b533133-d8a2-804f-a356-c62cdf39bdef",
-    "doi": "10.2196/33114",
+    "doi": "",
     "title": "Problematic Internet Use Before and During the COVID-19 Pandemic in Youth in Outpatient Mental Health Treatment: App-Based Ecological Momentary Assessment Study",
     "citation": "Gansner M, Nisenson M, Lin V, Pong S, Torous J, Carson NProblematic Internet Use Before and During the COVID-19 Pandemic in Youth in Outpatient Mental Health Treatment: App-Based Ecological Momentary Assessment StudyJMIR Ment Health 2022;9(1):e33114URL: https://mental.jmir.org/2022/1/e33114DOI: 10.2196/33114",
     "abstract": "Background:Youth with existing psychiatric illness are more apt to use the internet as a coping skill. Because many “in-person” coping skills were not easily accessible during the COVID-19 pandemic, youth in outpatient mental health treatment may have been particularly vulnerable to the development of problematic internet use (PIU). The identification of a pandemic-associated worsening of PIU in this population is critical in order to guide clinical care; if these youth have become dependent upon the internet to regulate their negative emotions, PIU must be addressed as part of mental health treatment. However, many existing studies of youth digital media use in the pandemic do not include youth in psychiatric treatment or are reliant upon cross-sectional methodology and self-report measures of digital media use.Objective:This is a retrospective cohort study that used data collected from an app-based ecological momentary assessment protocol to examine potential pandemic-associated changes in digital media youth in outpatient mental health treatment. Secondary analyses assessed for differences in digital media use dependent upon personal and familial COVID-19 exposure and familial hospitalization, as well as factors associated with PIU in this population.Methods:The participants were aged 12-23 years and were receiving mental health treatment in an outpatient community hospital setting. All participants completed a 6-week daily ecological momentary assessment protocol on their personal smartphones. Questions were asked about depression (PHQ-8 [8-item Patient Health Questionnaire]), anxiety (GAD-7 [7-item General Anxiety Disorder]), PIU (PIU-SF-6 [Problematic Internet Use Short Form 6]), digital media use based on Apple’s daily screen time reports, and personal and familial COVID-19 exposure. The analyses compared screen time, psychiatric symptoms, and PIU between cohorts, as well as between youth with personal or familial COVID-19 exposures and those without. The analyses also assessed for demographic and psychiatric factors associated with clinically significant PIU-SF-6 scores.Results:A total of 69 participants completed the study. The participants recruited during the pandemic were significantly more likely to meet the criteria for PIU based on their average PIU-SF-6 score (P=.02) and to spend more time using social media each day (P=.049). The overall amount of daily screen time did not differ between cohorts. Secondary analyses revealed a significant increase in average daily screen time among subjects who were exposed to COVID-19 (P=.01). Youth with clinically significant PIU-SF-6 scores were younger and more likely to have higher PHQ-8 (P=.003) and GAD-7 (P=.003) scores. No differences in scale scores or media use were found between subjects based on familial COVID-19 exposure or hospitalization.Conclusions:Our findings support our hypothesis that PIU may have worsened for youth in mental health treatment during the pandemic, particularly the problematic use of social media. Mental health clinicians should incorporate screening for PIU into routine clinical care in order to prevent potential familial conflict and subsequent psychiatric crises that might stem from unrecognized PIU.",
@@ -1304,7 +1304,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       },
       {
         "id": "2fd33133-d8a2-819c-93f3-d5a038da0494",
@@ -1381,7 +1381,7 @@
   },
   {
     "id": "2b533133-d8a2-805a-ae31-f2f97f3d8029",
-    "doi": "2932343581",
+    "doi": "",
     "title": "Examining the relationship between digital media and substance use: A study using ecological momentary assessment in youth",
     "citation": "Horton, A. (2023). Examining the relationship between digital media and substance use: A study using ecological momentary assessment in youth (Order No. 30316725). Available from ProQuest Dissertations & Theses Global. (2932343581). Retrieved from https://search.proquest.com/dissertations-theses/examining-relationship-between-digital-media/docview/2932343581/se-2",
     "abstract": "Background: Adolescents exposed to substance-related content online appear to havehigher rates of substance use; youth with a history of Problematic Internet Use (PIU) alsomay be more likely to struggle with substance use. There is limited data examining whattypes of digital media may be more significantly associated with use of substances, orwhether youth with active PIU symptoms are more likely to use substances. This studyused smartphone-based ecological momentary assessment to gather pilot data onpotentially relevant relationships between PIU, digital media exposures, and substanceuse.Methods: Youth aged 13-23 were recruited from outpatient mental health clinics atCambridge Health Alliance. Participants used the app mindLAMP for 6 weeks to recorddaily substance use, online exposures to drug-related content, PIU (via the PIU-SF-6screen), and most frequently used apps or websites that day. Digital media content wasextracted from daily iPhone screen time reports. Multilevel mixed effects regressionmodels were used to analyze data, controlling for random effects at the level of theparticipant.viviiResults: The pilot study recruited 26 participants (61.5% female, mean age 15.96). Therewas a significant positive correlation between PIU score and the active urge to usesubstances; however, controlling for urge to use substances and online substance-relatedexposures, PIU scores were significantly lower on days with reported substance use.Days with frequent use of direct messaging social media platforms were associated withgreater risk for both exposure to substance-related content online and substance use.Substance use was specifically linked to viewing social media posts where peers haddisclosed their own substance use.Conclusion: Use of social media platforms that allow for direct messaging appear to beassociated with a greater risk of both exposure to substance-related content and substanceuse. Our data also suggest that excessive Internet use may actually represent a copingskill to avoid engagement in substance use. More highly powered longitudinal studies areneeded to confirm and expand upon our findings.",
@@ -1489,7 +1489,7 @@
   },
   {
     "id": "2b533133-d8a2-805d-aa43-e87cd6742191",
-    "doi": "10.1097/PRA.0000000000000820",
+    "doi": "",
     "title": "Digital Technologies Tracking Active and Passive Data Collection in Depressive Disorders: Lessons Learned From a Case Series",
     "citation": "Gardea-Resendez, Manuel MD*,†; Breitinger, Scott MD*; Walker, Alex MHS‡; Harper, Laura*; Xiong, Ashley*; Stoppel, Cynthia*; Volety, Rama M. MBAM§; Raman, Jeyakumar§; Byun, Jin Soo MS∥; Langholm, Carsten∥; Goes, Fernando S. MD‡; Zandi, Peter P. PhD‡; Torous, John MD∥; Frye, Mark A. MD*. Digital Technologies Tracking Active and Passive Data Collection in Depressive Disorders: Lessons Learned From a Case Series. Journal of Psychiatric Practice 30(6):p 434-439, November 2024. | DOI: 10.1097/PRA.0000000000000820 ",
     "abstract": "In this case series, we present several examples from participants (2 patients and 1 healthy control) of a 12-week pilot feasibility study to create a digital phenotype of depression (unipolar or bipolar) through active and passive data collection from a smartphone and a wearable device combined with routine clinical care for mood disorders. The selected cases represent real clinical examples that highlight the intrinsic challenges that should be expected when conducting similar studies, including appropriate health data privacy protection, clinical standardization, and interindividual differences in levels of engagement and acceptability of active and passive data collection (ie, self-reported, behavioral, cognitive, and physiological data), particularly with patient-generated data in mobile apps, digital proficiency habituation, and consistent use of wearable devices. In the context of the rapidly growing use of digital technologies in psychiatry, anticipating challenges for the integration of personal mobile devices and smartphone mental health apps as aides to track specific aspects of depressive disorders is critical for a clinically meaningful digital transformation of mood disorders care.",
@@ -1605,7 +1605,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -1714,7 +1714,7 @@
   },
   {
     "id": "2b533133-d8a2-806e-9665-d9b9df47a69a",
-    "doi": "10.1038/s41746-025-01669-0",
+    "doi": "",
     "title": "Digital measures of activity and motivation impact depression and anxiety in the real world",
     "citation": "Beltrán, J. M., Jacob, Y., Mehta, M. M., Hossain, T., Adams, A., Fontaine, S., Torous, J., McDonough, C., Johnson, M., Delgado, A. D., Murrough, J. W., & Morris, L. S. (2025). Digital measures of activity and motivation impact depression and anxiety in the real world. NPJ Digital Medicine, 8, 268. https://doi.org/10.1038/s41746-025-01669-0",
     "abstract": "Mood and anxiety disorders are highly comorbid, with symptom severity varying over time. Individuals with and without these disorders completed 30-days of ecological momentary assessment (EMAs) of depression, anxiety and distress, developed based on the established Mood and Anxiety Symptom Questionnaire (MASQ). These electronic MASQ (eMASQ) EMAs were collected alongside novel intrinsic and extrinsic motivation EMAs, and physical/digital activity measures (steps/screentime) across N = 70–101 participants. Each eMASQ-EMA significantly related to its corresponding MASQ measure. Extrinsic and intrinsic motivation negatively related to each eMASQ-EMA and had the greatest influence on patients’ overall symptom profile. Physical, but not digital activity, was negatively associated with concurrent and 1-week lagged anxiety and depression, highlighting the temporally delayed benefits of physical activity on depression and anxiety symptoms in psychiatric groups. Collectively, this study suggests cognitive constructs related to drive and physical activity, may be useful in predicting continuous and transient psychiatric symptoms in the real-world.",
@@ -1907,7 +1907,7 @@
   },
   {
     "id": "2b533133-d8a2-8089-aee2-fc4ee423a0a0",
-    "doi": "10.1007/s41347-024-00476-w",
+    "doi": "",
     "title": "App Assisted Depression Self-Management in Integrated Primary Care: A Pilot Study Exploring Patient and Provider Experiences",
     "citation": "Johnson, D.J., Emerson, M.R., Dinkel, D. et al. App Assisted Depression Self-Management in Integrated Primary Care: A Pilot Study Exploring Patient and Provider Experiences. J. technol. behav. sci. (2025). https://doi.org/10.1007/s41347-024-00476-w",
     "abstract": "The integrated primary care (IPC) setting is currently the de facto institution for accessing mental healthcare among underserved populations. However, many barriers exist for these populations when seeking regular and adequate mental healthcare, including provider availability and transportation challenges. This study piloted the incorporation of mindLAMP, a mHealth app, into IPC treatment to offer a low-resource intervention designed to improve and expand access to mental healthcare for underserved patients between face-to-face visits. This study gathered data from a sample of both behavioral health providers and patients (N = 6) in IPC settings to pilot the use of the mindLAMP app among traditionally underserved patients with depression. The Patient Activation Measure and Patient Health Questionnaire were used to assess patient outcomes in addition to conducting a directed content analysis on qualitative data obtained with interviews of both patients and providers. Results from the mixed methods study design indicate that implementing this digital intervention in the IPC setting is feasible and positively experienced by both patients and providers. Perceived positive outcomes were reported by both patients and providers after incorporating the mHealth app into their mental healthcare. However, both patients and providers discussed barriers to mHealth app use that need to be addressed in order to accommodate more widespread use. Further, constraints and barriers at the provider, patient, and healthcare system levels were discussed and need to be examined further to increase the implementation of this multilevel digital intervention.",
@@ -1964,7 +1964,7 @@
   },
   {
     "id": "2b533133-d8a2-808c-afdf-d3925caa6ead",
-    "doi": "10.2196/40197",
+    "doi": "",
     "title": "Utility of Smartphone-Based Digital Phenotyping Biomarkers in Assessing Treatment Response to Transcranial Magnetic Stimulation in Depression: Proof-of-Concept Study",
     "citation": "Kelkar RS, Currey D, Nagendra S, Mehta UM, Sreeraj VS, Torous J, Thirthalli JUtility of Smartphone-Based Digital Phenotyping Biomarkers in Assessing Treatment Response to Transcranial Magnetic Stimulation in Depression: Proof-of-Concept StudyJMIR Form Res 2023;7:e40197doi: 10.2196/40197PMID: 37656496PMCID: 10504622",
     "abstract": "Background:Identifying biomarkers of response to transcranial magnetic stimulation (TMS) in treatment-resistant depression is a priority for personalizing care. Clinical and neurobiological determinants of treatment response to TMS, while promising, have limited scalability. Therefore, evaluating novel, technologically driven, and potentially scalable biomarkers, such as digital phenotyping, is necessary.Objective:This study aimed to examine the potential of smartphone-based digital phenotyping and its feasibility as a predictive biomarker of treatment response to TMS in depression.Methods:We assessed the feasibility of digital phenotyping by examining the adherence and retention rates. We used smartphone data from passive sensors as well as active symptom surveys to determine treatment response in a naturalistic course of TMS treatment for treatment-resistant depression. We applied a scikit-learn logistic regression model (l1 ratio=0.5; 2-fold cross-validation) using both active and passive data. We analyzed related variance metrics throughout the entire treatment duration and on a weekly basis to predict responders and nonresponders to TMS, defined as ≥50% reduction in clinician-rated symptom severity from baseline.Results:The adherence rate was 89.47%, and the retention rate was 73%. The area under the curve for correct classification of TMS response ranged from 0.59 (passive data alone) to 0.911 (both passive and active data) for data collected throughout the treatment course. Importantly, a model using the average of all features (passive and active) for the first week had an area under the curve of 0.7375 in predicting responder status at the end of the treatment.Conclusions:The results of our study suggest that it is feasible to use digital phenotyping data to assess response to TMS in depression. Early changes in digital phenotyping biomarkers, such as predicting response from the first week of data, as shown in our results, may also help guide the treatment course.",
@@ -2005,7 +2005,7 @@
   },
   {
     "id": "2b533133-d8a2-808e-8913-ec7d3dfe1fc0",
-    "doi": "10.1093/schbul/sbae011",
+    "doi": "",
     "title": "Accelerating Medicines Partnership® Schizophrenia (AMP® SCZ): Rationale and Study Design of the Largest Global Prospective Cohort Study of Clinical High Risk for Psychosis",
     "citation": "Wannan, C. M. J., Nelson, B., Addington, J., Allott, K., Anticevic, A., Arango, C., Baker, J. T., Bearden, C. E., Billah, T., Bouix, S., Broome, M. R., Buccilli, K., Cadenhead, K. S., Calkins, M. E., Cannon, T. D., Cecci, G., Chen, E. Y. H., Cho, K. I. K., Choi, J., Clark, S. R., … Shenton, M. E. (2024). Accelerating Medicines Partnership® Schizophrenia (AMP® SCZ): Rationale and Study Design of the Largest Global Prospective Cohort Study of Clinical High Risk for Psychosis. Schizophrenia bulletin, 50(3), 496–512. https://doi.org/10.1093/schbul/sbae011",
     "abstract": "This article describes the rationale, aims, and methodology of the Accelerating Medicines Partnership® Schizophrenia (AMP® SCZ). This is the largest international collaboration to date that will develop algorithms to predict trajectories and outcomes of individuals at clinical high risk (CHR) for psychosis and to advance the development and use of novel pharmacological interventions for CHR individuals. We present a description of the participating research networks and the data processing analysis and coordination center, their processes for data harmonization across 43 sites from 13 participating countries (recruitment across North America, Australia, Europe, Asia, and South America), data flow and quality assessment processes, data analyses, and the transfer of data to the National Institute of Mental Health (NIMH) Data Archive (NDA) for use by the research community. In an expected sample of approximately 2000 CHR individuals and 640 matched healthy controls, AMP SCZ will collect clinical, environmental, and cognitive data along with multimodal biomarkers, including neuroimaging, electrophysiology, fluid biospecimens, speech and facial expression samples, novel measures derived from digital health technologies including smartphone-based daily surveys, and passive sensing as well as actigraphy. The study will investigate a range of clinical outcomes over a 2-year period, including transition to psychosis, remission or persistence of CHR status, attenuated positive symptoms, persistent negative symptoms, mood and anxiety symptoms, and psychosocial functioning. The global reach of AMP SCZ and its harmonized innovative methods promise to catalyze the development of new treatments to address critical unmet clinical and public health needs in CHR individuals.",
@@ -2127,7 +2127,7 @@
   },
   {
     "id": "2b533133-d8a2-8097-8e9c-fc45bf1b6df0",
-    "doi": "2778534136",
+    "doi": "",
     "title": "Examining the relationship between problematic internet use and impulsivity in adolescents and young adults: A longitudinal study",
     "citation": "Singh, R. (2022). Examining the relationship between problematic internet use and impulsivity in adolescents and young adults: A longitudinal study (Order No. 29064438). Available from ProQuest Dissertations & Theses Global. (2778534136). Retrieved from https://search.proquest.com/dissertations-theses/examining-relationship-between-problematic/docview/2778534136/se-2",
     "abstract": "Background: With the ubiquity of digital media and smartphone use in the lives of adolescents and young adults, it is critical to determine the effects that excessive amounts of internet use may have on this mentally developing population. Problematic internet use (PIU) is defined as excessive or uncontrolled internet use and is often associated with psychiatric impairment or distress. With adolescents who suffer from PIU likening the experience to common psychiatric disorders such as substance use or gambling disorders, researchers are exploring characteristics that PIU may have in common with these existing psychiatric disorders such as impulsivity, anxiety, and depression. This study uses novel smartphone app-based ecological momentary assessment to assess whether there is an association between in-the-moment reports of PIU and impulsivity in adolescents and young adults, and secondarily to examine the relationships between PIU and psychiatric symptoms such as anxiety and depression, as these are factors associated with impulsivity. We hypothesize that the adolescents and young adults in our study population will have a significant relationship between daily PIU-SF-6 and BIS-BRIEF scores, suggesting a temporal relationship between severity of PIU and impulsivity. As PIU habits have also been suggested to develop as a way to manage uncomfortable affective symptoms, we hypothesize that the adolescents and young adults in our study population will also have significant relationships between PIU-SF-6 scores and both PHQ-8 and GAD-7 scores. Contrasting with prior methodologies used in PIU studies, ecological momentary assessment allows for an increased ability to capture rapid shifts in mood and behavior states in a teenager’s home environment. If adolescents and young adults are reporting higher impulsivity in the same moments where they are reporting higher levels of PIU, it may, in part, explain how device separation leads to such psychiatric crises.Methods: This study enrolled 30 participants aged 13-22 who received outpatient mental health care at a community hospital within the greater Boston area and have access to Wi-Fi. Participants utilized the mental health phone application mindLAMP for 6 weeks to answer surveys assessing daily problematic internet use and weekly depression and anxiety.Results: Individual daily PIU-SF-6 and BIS-BRIEF scores for each participant were assessed to determine if there were associations between in-the-moment PIU severity and impulsivity measurements. A significant relationship was observed between BIS-BRIEF and PIU-SF-6 scores (p = 0.00). Age, gender, psychiatric diagnosis, mean GAD-7 and PHQ-8 scores were also compared to mean PIU-SF-scores to identify potential relationships between these variables and PIU, but no significant relationships were observed.Conclusion: The findings from this study suggest that strong associations between PIU severity and impulsivity may exist, supporting the expected primary hypothesis and suggesting comorbidity between the two variables. Results also suggest that there are no significant associations between PIU severity and psychiatric symptoms such as anxiety and depression, contradicting the expected secondary hypothesis. However, issues posed by sample size, participant adherence, and subjectivity of impulsivity measurements should be considered when drawing conclusions from the data analyses. Future research should aim to increase sample size and adherence, and consider objective measurements so that collected data may be used more effectively.",
@@ -2155,7 +2155,7 @@
   },
   {
     "id": "2b533133-d8a2-8098-8279-ff7127f73e34",
-    "doi": "2825060601",
+    "doi": "",
     "title": "Smartphone-sourced data visualization in mental health",
     "citation": "Scheuer, L. S. (2022). Smartphone-sourced data visualization in mental health (Order No. 29261662). Available from ProQuest Dissertations & Theses Global. (2825060601). Retrieved from https://search.proquest.com/dissertations-theses/smartphone-sourced-data-visualization-mental/docview/2825060601/se-2",
     "abstract": "Background. While smartphone digital phenotyping smartphone apps today cancollect vast amounts of information on participants, less is known about how thisdata can be shared back with participants. Effective data visualization is critical toensuring applications of digital signals are more informed, ethical, and impactful.But little is known about how sharing of this data, especially at different levelsfrom raw data to analyzed data, impacts patients’ perceptions.Methods. We compared five different visualizations strategies, each a graph,generated from data created by the open source mindLAMP app, that reflecteddifferent ways to share data from simple amount of data captured to morecomplex clinical correlations. All graphs were shown to 28 participants duringindividual video interviews, and the graphs usability was measured via theSystem Usability Scale (SUS). Additionally, participants were asked about theircomfort sharing different kinds of data, administered the Digital Working AllianceInventory (D-WAI), and if they would want to use these visualizations with careproviders.Results. Of the five graphs shown to participants, the graph visualizing changein survey responses over the course of a week, received the highest usability vscore, with the graph showing multiple metrics changing over a week receivingthe lowest usability score. Participants were significantly more likely to be willingto share geolocation data after viewing the graphs, and 25 of 28 participantsagreed that they would like to use these graphs to communicate with theirclinician.Conclusions. Data visualization can help participants and patients understanddigitally-sourced data and increase trust in how they are sampled and used tocreate visualizations. As data sourced from digital technology becomes morecomplex, simple visualizations may fail to capture their multiple dimensions andnew interactive data visualizations may be necessary to help realize their fullvalue.",
@@ -2381,7 +2381,7 @@
   },
   {
     "id": "2b533133-d8a2-80a1-95cb-cf902fdcebcb",
-    "doi": "2144/48116",
+    "doi": "",
     "title": "Evaluating the efficacy of a smartphone mental health app, mindLAMP, in reducing anxiety and depression symptoms",
     "citation": "Chang, S. (2023). Evaluating the efficacy of a smartphone mental health app, mindLAMP, in reducing anxiety and depression symptoms. https://hdl.handle.net/2144/48116",
     "abstract": "BACKGROUND: Despite the growing popularity and widespread adoption of mobile mental health apps, there is still insufficient high-quality evidence demonstrating their safety and efficacy. Aims: This exploratory analysis investigates the potential effect size of mindLAMP, a smartphone mental health app, on reducing symptoms of depression and anxiety by comparing the results of using mindLAMP in a control implementation and in a intervention implementation. METHODS: A total of 238 participants were eligible and finished the study in the control implementation, while 156 participants completed the study in the intervention implementation of the mindLAMP app. All participants (both groups) had access to the same in-app activities, including self-assessments and therapeutic interventions. RESULTS: After multiple imputation, analysis revealed significant minor effect sizes of Hedge’s g = 0.21 and Hedge’s g = 0.34 in the reduction of depression and anxiety symptoms respectively. CONCLUSIONS: mindLAMP demonstrates a promising potential in reducing symptoms of depression and anxiety. Additionally, this study underscores the adaptability, reusability, and scalability of smartphone apps, as they can be implemented in diverse settings. These results serve as a basis for further research to examine the effectiveness of not only mindLAMP but also other mental health apps in addressing symptoms of depression and anxiety.",
@@ -2404,7 +2404,7 @@
   },
   {
     "id": "2b533133-d8a2-80a3-a68d-c2fcdabd7e83",
-    "doi": "10.2196/47006",
+    "doi": "",
     "title": "Digital Phenotyping for Mood Disorders: Methodology-Oriented Pilot Feasibility Study",
     "citation": "Breitinger, S., Gardea-Resendez, M., Langholm, C., Xiong, A., Laivell, J., Stoppel, C., Harper, L., Volety, R., Walker, A., D'Mello, R., Byun, A. J. S., Zandi, P., Goes, F. S., Frye, M., & Torous, J. (2023). Digital Phenotyping for Mood Disorders: Methodology-Oriented Pilot Feasibility Study. Journal of medical Internet research, 25, e47006. https://doi.org/10.2196/47006",
     "abstract": "BackgroundIn the burgeoning area of clinical digital phenotyping research, there is a dearth of literature that details methodology, including the key challenges and dilemmas in developing and implementing a successful architecture for technological infrastructure, patient engagement, longitudinal study participation, and successful reporting and analysis of diverse passive and active digital data streams.ObjectiveThis article provides a narrative rationale for our study design in the context of the current evidence base and best practices, with an emphasis on our initial lessons learned from the implementation challenges and successes of this digital phenotyping study.MethodsWe describe the design and implementation approach for a digital phenotyping pilot feasibility study with attention to synthesizing key literature and the reasoning for pragmatic adaptations in implementing a multisite study encompassing distinct geographic and population settings. This methodology was used to recruit patients as study participants with a clinician-validated diagnostic history of unipolar depression, bipolar I disorder, or bipolar II disorder, or healthy controls in 2 geographically distinct health care systems for a longitudinal digital phenotyping study of mood disorders.ResultsWe describe the feasibility of a multisite digital phenotyping pilot study for patients with mood disorders in terms of passively and actively collected phenotyping data quality and enrollment of patients. Overall data quality (assessed as the amount of sensor data obtained vs expected) was high compared to that in related studies. Results were reported on the relevant demographic features of study participants, revealing recruitment properties of age (mean subgroup age ranged from 31 years in the healthy control subgroup to 38 years in the bipolar I disorder subgroup), sex (predominance of female participants, with 7/11, 64% females in the bipolar II disorder subgroup), and smartphone operating system (iOS vs Android; iOS ranged from 7/11, 64% in the bipolar II disorder subgroup to 29/32, 91% in the healthy control subgroup). We also described implementation considerations around digital phenotyping research for mood disorders and other psychiatric conditions.ConclusionsDigital phenotyping in affective disorders is feasible on both Android and iOS smartphones, and the resulting data quality using an open-source platform is higher than that in comparable studies. While the digital phenotyping data quality was independent of gender and race, the reported demographic features of study participants revealed important information on possible selection biases that may result from naturalistic research in this domain. We believe that the methodology described will be readily reproducible and generalizable to other study settings and patient populations given our data on deployment at 2 unique sites.",
@@ -2438,7 +2438,7 @@
   },
   {
     "id": "2b533133-d8a2-80a6-aec4-ef52c661093f",
-    "doi": "10.56334/sei/8.6.30",
+    "doi": "10.56334/sei/8.6.30 ",
     "title": "The Application of Artificial Intelligence in Diagnosis and Psychotherapy",
     "citation": "Rahmani, D., & Senoussaoui, A. (2025). The application of artificial intelligence in diagnosis and psychotherapy. Science, Education and Innovations in the Context of Modern Problems, 8(6), 290–297. doi:10.56334/sei/8.6.30",
     "abstract": "As the second decade of the twenty-first century draws to a close, human aspirations are growing to resolve escalating global challenges—especially those related to mental health. With the limitations of traditional approaches becoming increasingly evident, there is renewed hope that advanced computer technologies, particularly artificial intelligence (AI), may offer innovative solutions. Psychological disorders continue to strain the available resources, making it difficult to meet the needs of a growing number of individuals seeking care. In response, the integration of new, scalable, and more effective methods has become a necessity. Recent advancements in AI applications in public health—particularly in mental health—suggest that AI has the potential to significantly transform the field of psychiatry for both clinicians and patients. This development raises a critical question: What are the prospects of using artificial intelligence in diagnosing mental health conditions and providing psychological support to those in need? ",
@@ -2530,7 +2530,7 @@
   },
   {
     "id": "2b533133-d8a2-80b8-90c6-d4a255e3b8c6",
-    "doi": "28413045",
+    "doi": "",
     "title": "The use of digital phenotyping to investigate the relationship between digital media use and mental health in a cohort of clinical adolescents ",
     "citation": "Lin, V. (2021). The use of digital phenotyping to investigate the relationship between digital media use and mental health in a cohort of clinical adolescents (Order No. 28413045). Available from ProQuest Dissertations & Theses Global. (2615322301). Retrieved from https://search.proquest.com/dissertations-theses/use-digital-phenotyping-investigate-relationship/docview/2615322301/se-2",
     "abstract": "Background: As smartphone devices have become a ubiquitous part of our modern lives,parents and clinicians have become increasingly concerned about the effects of digitalmedia use on the mental well-being of adolescents and young adults. Smartphoneownership in youth has increased significantly over the last decade, paralleling the rise inmental health disorders. This study seeks to use the digital phenotyping (DP)methodology to elucidate these relationships. Most studies examining these variables usecross-sectional data in healthy adolescents. To our knowledge, no studies have used DPmethodology to characterize the relationship between digital media use, depression andanxiety in a population of clinical adolescents.Methods: 50 adolescent and young adults between the ages of 12-23 receiving outpatientmental health services from a community hospital network in the greater Boston areawere enrolled. Participants installed an application on their personal smartphones thatcollected daily surveys that captured mood symptoms, digital media use (screen time,social media time, and top apps used [active data]), and that also continuously capturedsensor data (GPS and accelerometer [passive data]) over six weeks.Results: Using linear regression and multilevel modeling, no significant associationswere found between screen time or social media time, and anxiety and depressionsymptoms. Productivity apps were used significantly more in those with no depressionsymptoms than in those with moderate to severe levels of depression.Conclusion: Our study results challenge the present intuition that the amount of digitalmedia use negatively impacts mental well-being in youth. Total screen time and socialmedia time measures may be insufficient when attempting to assess the impact of digitalmedia engagement on youth. Additionally, the results of our study suggest that the typesof apps used by youth may depend on an individual’s mood severity. Although notwithout limitations, DP studies may be the ideal methodology for capturing with greatergranularity digital use behavior and its association with mood symptoms in adolescents.",
@@ -2586,7 +2586,7 @@
   },
   {
     "id": "2b533133-d8a2-80b9-b551-dc556379b4a5",
-    "doi": "28412334",
+    "doi": "",
     "title": "Integrating mobile health into mental health: An exploratory analysis and case series from the digital clinic",
     "citation": "Lavoie, J. A. (2021). Integrating mobile health into mental health: An exploratory analysis and case series from the digital clinic (Order No. 28412334). Available from ProQuest Dissertations & Theses Global. (2615322291). Retrieved from https://search.proquest.com/dissertations-theses/integrating-mobile-health-into-mental-exploratory/docview/2615322291/se-2",
     "abstract": "Background: The COVID-19 pandemic has increased the demand for mental health services but has also imposed new barriers for those seeking care, creating a widespread shortage. As a result, providers are increasingly looking to incorporate technology into mental healthcare. Despite the increased focus on mental health technology in recent years, many new technologies are framed as products rather than clinical tools and fail to be effectively implemented. Digital clinics, hybrids of clinical care and technology, such as a smartphone app, offer a model of how technology can be implemented into mental healthcare. In addition to increasing the need for technology in mental healthcare, the COVID-19 pandemic has also lessened many historical barriers to successful implementation of a digital clinic including regularity restrictions, financial challenges, and the motivations of patients and providers in adding technology into healthcare.Objective: In order to better understand how technology can be incorporated into mental healthcare, the Technology Enabled Care Program (TECC), a digital clinic at Beth Israel Deaconess Medical Center, will be evaluated through the study of a case series. The integrated-Promoting Action on Research Implementation in Health Services (i-PARISH) framework, an implementation science model, will be applied to TECC in order to identify factors important to the larger scale implementation of this digital clinic.Methods: The TECC program combines eight sessions of face-to-face therapy via telehealth with the use of a mindLAMP, a mental health smartphone app. The app is customizable for each use case and is supported by a 3-member care team containing technology specialists and a therapist. Quantitative data from this program will be investigated and discussed along with information on patients’ qualitative experiences in order to get a better understanding of the successes and areas for improvement in this first implementation of TECC.Results: From the six initial patients who have completed TECC, four were selected to be represented in this case series. One patient was highly engaged with the app and used it on a daily basis throughout the program. Two patients use the app consistently at times but experienced periods of low engagement during their care. A fourth patient struggled with technical issues and their app use was intermittent. Most feedback on the program was positive, but exceptions will be detailed.Conclusion: Implementation of the TECC program and mindLAMP app into practice was successful in many regards and these early cases shed light on areas of potential improvement in future iterations of the digital clinic. Moving forward, these results will inform a focus on factors that can increase adoption by patients, clinicians, and healthcare systems.",
@@ -2597,7 +2597,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -2620,7 +2620,7 @@
   },
   {
     "id": "2b533133-d8a2-80bb-a703-fdc70520d3b6",
-    "doi": "10.2196/67745",
+    "doi": "",
     "title": "Analyzing Trends in Suicidal Thoughts Among Patients With Psychosis in India: Exploratory Secondary Analysis of Smartphone Ecological Momentary Assessment Data",
     "citation": "Bondre AP, Ranjan A, Shrivastava R, Tugnawat D, Chaturvedi NK, Bhan A, Gupta S, Rozatkar AR, Nagendra S, Dutt S, Choudhary S, Reddy PV, Mehta UM, Naslund JA, Torous JAnalyzing Trends in Suicidal Thoughts Among Patients With Psychosis in India: Exploratory Secondary Analysis of Smartphone Ecological Momentary Assessment DataJMIR Form Res 2025;9:e67745doi: 10.2196/67745PMID: 40440651PMCID: 12140503",
     "abstract": "Background:India has the world’s largest number of suicides, but there is little research on the trends in suicidal thoughts, especially for individuals with psychosis. More research is necessary to develop preventive interventions. Smartphone-based ecological momentary assessments (EMAs) can assess dynamic symptoms, but most EMA studies are conducted in higher income settings and have shorter (≤1 month) follow-up periods.Objective:This study aimed to examine the duration of onset to offset of suicidal ideation (SI) in tertiary hospital outpatients with psychosis in India.Methods:This study is an exploratory, secondary analysis of smartphone EMA data nested within the ongoing “Smartphone Health Assessment for Relapse Prevention (SHARP)” project. Tertiary hospital outpatients (n=50) with early course schizophrenia at 2 socioculturally different sites in India were recruited and given the “mindLAMP” app for monitoring mood through daily EMA surveys. The mood survey matched the 9-item Patient Health Questionnaire; the ninth item was used to define an instance of SI (score ≥1). A total of 14 patients with ≥1 SI instances who met the site-specific EMA survey use cutoff were included. We examined the between- and within-person variability in SI and computed the timescale of “episodic” SI (sequences of consecutive daily observations of SI score ≥1). Positive and Negative Syndrome Scale (PANSS) was used to assess changes in psychosis symptoms and its relationship with the temporality of SI.Results:Over approximately 11 (SD 2.1) months of EMA reporting on average, 3253 mood surveys were filled by the 14 participants (median 213, IQR 147‐256). A total of 521 instances of SI were reported. Monthly SI instances showed substantial within- and between-person variations. Timescale summary statistics revealed episodic SI patterns in 11 patients, with an average of 5.9 episodes (SD 4.4; range:1‐14; n=65) with an episode lasting on average 2.5 days (SD 1.5; range:1‐5.3; n=27). There was an average lag of approximately 59, 66, and 81 days between the time of the first drop in PANSS positive, negative, and general psychopathology scores, respectively, and the last reported SI instance. Results after imputation of missing data showed an average of 12.1 episodes and 228 days (average lag) between the first drop in PANSS scores and last reported SI. This indicated that SI was an enduring vulnerability subsequent to the beginning of clinical improvement in psychosis.Conclusions:Our study adds to the much-needed evidence base in India to measure the dynamics of suicidal thinking within an individual, for more targeted preventive interventions. Further steps in EMA research are highlighted such as the use of higher frequency “burst” surveys to assess the duration of an SI episode in hours or minutes, and inclusion of both active and passive SI markers to measure the timescale of suicidal thinking.",
@@ -2698,7 +2698,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -2838,7 +2838,7 @@
   },
   {
     "id": "2b533133-d8a2-80c4-a5c0-f0b468b44fe7",
-    "doi": "10.22215/etd/2021-14740",
+    "doi": "",
     "title": "Validation of Smartphone-Based Cognitive Assessments for Individuals with Major Depressive Disorder",
     "citation": "Thérond, Alexandra. (2021). Validation of Smartphone-Based Cognitive Assessments for Individuals with Major Depressive Disorder. ",
     "abstract": "Cognitive deficits are often present in major depressive disorder (MDD) and negatively impact functional outcomes. However, it remains challenging to assess these impairments in clinical and research settings. Smartphone applications provide the opportunity to measure cognitive impairments in an accessible way. In this study, 24 individuals with MDD and 34 healthy controls (HC) completed the Trail Making Tests (TMT), and the smartphone-based versions, named the Jewels Trail Tests (JTT). Significant positive relationships between the JTT and TMT were observed with a moderate concurrent validity for Parts A and strong concurrent validity for Parts B. The intraclass correlations showed moderate test-retest reliability for Part A of the JTT and good reliability for Part B. This study did not find significant differences between the MDD and HC groups completion time. Lastly, higher sleep quality was associated with a faster completion time on the speed processing task over a period of three months.",
@@ -3150,7 +3150,7 @@
   },
   {
     "id": "2b533133-d8a2-80de-b4cd-c4e9c691e826",
-    "doi": "10.2196/62725",
+    "doi": "",
     "title": "Assessing Digital Phenotyping for App Recommendations and Sustained Engagement: Cohort Study",
     "citation": "Dwyer, B., Flathers, M., Burns, J., Mikkelson, J., Perlmutter, E., Chen, K., Ram, N., & Torous, J. (2024). Assessing digital phenotyping for app recommendations and sustained engagement: Cohort study. JMIR Formative Research, 8(1), e62725. https://doi.org/10.2196/62725",
     "abstract": "Background:Low engagement with mental health apps continues to limit their impact. New approaches to help match patients to the right app may increase engagement by ensuring the app they are using is best suited to their mental health needs.Objective:This study aims to pilot how digital phenotyping, using data from smartphone sensors to infer symptom, behavioral, and functional outcomes, could be used to match people to mental health apps and potentially increase engagementMethods:After 1 week of collecting digital phenotyping data with the mindLAMP app (Beth Israel Deaconess Medical Center), participants were randomly assigned to the digital phenotyping arm, receiving feedback and recommendations based on those data to select 1 of 4 predetermined mental health apps (related to mood, anxiety, sleep, and fitness), or the control arm, selecting the same apps but without any feedback or recommendations. All participants used their selected app for 4 weeks with numerous metrics of engagement recorded, including objective screentime measures, self-reported engagement measures, and Digital Working Alliance Inventory scores.Results:A total of 82 participants enrolled in the study; 17 (21%) dropped out of the digital phenotyping arm and 18 (22%) dropped out from the control arm. Across both groups, few participants chose or were recommended the insomnia or fitness app. The majority (39/47, 83%) used a depression or anxiety app. Engagement as measured by objective screen time and Digital Working Alliance Inventory scores were higher in the digital phenotyping arm. There was no correlation between self-reported and objective metrics of app use. Qualitative results highlighted the importance of habit formation in sustained app use.Conclusions:The results suggest that digital phenotyping app recommendation is feasible and may increase engagement. This approach is generalizable to other apps beyond the 4 apps selected for use in this pilot, and practical for real-world use given that the study was conducted without any compensation or external incentives that may have biased results. Advances in digital phenotyping will likely make this method of app recommendation more personalized and thus of even greater interest.",
@@ -3174,7 +3174,7 @@
   },
   {
     "id": "2b533133-d8a2-80e7-beb8-f4201762aff0",
-    "doi": "2931399802",
+    "doi": "",
     "title": "Assessing the relationship between anxiety, depression and digital media use in adolescents using ecological momentary assessment",
     "citation": "Doble, N. V. (2023). Assessing the relationship between anxiety, depression and digital media use in adolescents using ecological momentary assessment (Order No. 30316041). Available from ProQuest Dissertations & Theses Global. (2931399802). Retrieved from https://search.proquest.com/dissertations-theses/assessing-relationship-between-anxiety-depression/docview/2931399802/se-2",
     "abstract": "Background: As digital media use has increasingly become a part of daily life for adolescents, it is critical to ascertain any potential link between digital media use and poorer mental health. Many studies have explored the relationship between screen time and psychiatric symptoms, but most of these studies have been limited by cross-sectional and participant recall. Moreover, many of these studies examine youth digital media use as a whole, rather than examining qualitative use. This study uses smartphone-based ecological momentary assessment to capture daily relationships between anxiety and depression symptoms and quality and quantity of smartphone use.Methods: Youth aged 12 to 22 years-old were recruited from Cambridge Health Alliance’s outpatient psychiatry clinics to participate in the study. Participants were asked to use the mindLAMP app daily for six weeks to record depression and anxiety symptoms (via PHQ-8 and GAD-7 screeners), as well as provide daily screen time and three most frequently used apps obtained from their smartphone’s screen time report feature. Patient psychiatric diagnosis and demographic data were obtained from the medical record upon study enrollment. Multilevel mixed effects regression models were used to assess relationships between daily depression and anxiety symptoms and digital media use; linear regression models assessed relationships between psychiatric diagnoses and average screen and social media time over the course of the study.Results: The study recruited a total of 51 youth. Frequent use of a specific type of digital media was not related to an increase in daily depression or anxiety symptoms. While no one category of psychiatric diagnosis was related to higher or lower average screen time, a statistically significant relationship was observed between daily GAD-7 score and daily time spent on social media (p=0.004) and percent of daily screen time that was spent on social media (p=0.01) with increased daily GAD-7 scores. Daily PHQ-8 scores were also positively correlated to daily time spent on social media (p=0.023).Conclusions: Our findings support those of prior studies that a significant relationship exists between anxiety, depression and time spent on screens. It is less evident whether a specific type of digital media use may be more or less associated with these symptoms. More focused research with digital phenotyping or ecological momentary assessment may help to determine whether digital media use causes worsening of psychiatric symptoms or alternatively, is being used to help manage them. Either way, mental health clinicians should educate their adolescent patients about these existing relationships and encourage patient self-awareness regarding personal patterns of digital media use.",
@@ -3213,7 +3213,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -3309,7 +3309,7 @@
   },
   {
     "id": "2b533133-d8a2-80ec-b1df-ece216dbad31",
-    "doi": "doi.org/10.1111/pcn.13786",
+    "doi": "10.1111/pcn.13786",
     "title": "Digital phenotyping of social functioning and employment in people with schizophrenia: Pilot data from an international sample",
     "citation": "Lane, E., Gray, L., Kimhy, D., Jeste, D., & Torous, J. (2025). Digital phenotyping of social functioning and employment in people with schizophrenia: Pilot data from an international sample. Psychiatry and Clinical Neurosciences, 79(3). https://doi.org/10.1111/pcn.13786",
     "abstract": "AbstractAimIndividuals living with schizophrenia experience significant impairments in social functioning. As a major clinical outcome, social functioning requires appropriate measurement tools that can capture its dynamic nature. Digital phenotyping, using smartphone technology to collect high volume ecologically valid data, can potentially capture these facets. We investigated the viability of digital data, such as GPS, Accelerometer, and screen activation as a proxy for common social functioning measurements.MethodsWe used an ordinary least squares linear regression approach to compare the performance of digital signals with the performance of past social functioning scale (SFS) scores for predicting current SFS scores and subdomain values in 62 individuals with schizophrenia using smartphone and clinical assessments over the course of a year. The outcome of interest was the current SFS, for which we compared the capacity of the digital data (active and passive), and prior SFS scores to predict SFS scores.ResultsOverall, the sub-scale models in order of performance (measured by RMSE score) were: (i) employment, (ii) social engagement, (iii) interpersonal behavior, (iv) recreation, (v) prosocial activities, (vii) performance, and (vii) competence. Digital data were particularly capable of predicting subdomain scores for employment (R2 = 0.746, Mean Squared Error (MSE) = 1.663) and social engagement (R2 = 0.710, MSE = 2.318).ConclusionsDigital phenotyping may have the capacity to operate as a proxy for certain social functioning measures. Future research should expand on this pilot data by focusing on establishing the reliability and validity of digital phenotyping to measure social functioning, and exploring which subdomains of social functioning are best measured digitally.",
@@ -3455,7 +3455,7 @@
       {
         "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
         "projectID": "PRJ-0003",
-        "name": "Digital Clinic / TECC (Technology Enabled Clinical Care)"
+        "name": "The Digital Clinic"
       }
     ],
     "tags": [
@@ -3473,6 +3473,64 @@
         "id": "2b533133-d8a2-80f9-add1-e230f890a853",
         "tagID": "young-adult",
         "name": "young-adult"
+      }
+    ]
+  },
+  {
+    "id": "30433133-d8a2-80cb-9e23-d7ca83419607",
+    "doi": "10.2196/93259",
+    "title": "Real-time Smartphone Monitoring Assessments as a Cognitive Biomarker of Alzheimer’s Disease: Protocol for the SMART-A Study",
+    "citation": "McKenna, M., Torous, J., Rozenblit, E., Flathers, M., Ryan, S., & Lim, C. (2026). Real-time Smartphone Monitoring Assessments as a Cognitive Biomarker of Alzheimer’s Disease: Protocol for the SMART-A Study. JMIR Research Protocols (Preprint). https://doi.org/10.2196/93259",
+    "abstract": "This protocol describes a 6-month observational study using the SMART-A (Smartphone Monitoring Assessments in Real Time for Alzheimer’s Disease) framework built on mindLAMP to evaluate smartphone-based cognitive assessments as digital biomarkers for Alzheimer’s disease. The study combines digitized standard neuropsychological tests and novel game-based assessments across four cognitive domains — executive function, memory, language, and visuospatial ability — with continuous passive sensor data (GPS, accelerometer, screen time, step count, sleep) and ecological momentary assessment surveys. Targeting individuals with mild cognitive impairment and mild Alzheimer’s disease, the study aims to determine whether smartphone-derived cognitive and behavioral measures can identify and characterize cognitive impairment, track longitudinal change, and complement traditional clinical assessments.",
+    "year": 2026,
+    "url": "https://doi.org/10.2196/93259",
+    "mindlampRelevance": "Demonstrates mindLAMP’s full-stack capabilities for Alzheimer’s disease research: digitized standard cognitive tests (Trail Making, Digit Symbol Substitution) alongside novel game-based assessments (Jewels, Spatial Span, Pop the Bubbles), passive sensing (GPS, accelerometer, screen state, sleep, steps), and survey-based ecological momentary assessments — all deployed through a single platform. Showcases the SMART-A assessment framework as a model for combining active and passive digital phenotyping in neurodegenerative disease populations.",
+    "projects": [
+      {
+        "id": "manual-smart-a",
+        "projectID": "PRJ-0034",
+        "name": "SMART-A (Smartphone-Aided Resilience Training for Aging)"
+      }
+    ],
+    "tags": [
+      {
+        "id": "2b533133-d8a2-80ae-8c5f-da022c8d8d85",
+        "tagID": "neurocognitive",
+        "name": "neurocognitive"
+      },
+      {
+        "id": "2b533133-d8a2-80e9-90a8-f377e371bbc6",
+        "tagID": "older-adult",
+        "name": "older-adult"
+      }
+    ]
+  },
+  {
+    "id": "calvert-2026-data-quality",
+    "doi": "10.1038/s41598-026-41435-0",
+    "title": "Evaluating the impact of data quality on digital phenotyping features from smartphone sensor data",
+    "citation": "Calvert, E., Currey, D., Henson, P., & Torous, J. (2026). Evaluating the impact of data quality on digital phenotyping features from smartphone sensor data. Scientific Reports. https://doi.org/10.1038/s41598-026-41435-0",
+    "abstract": "Examines how smartphone sensor data quality affects the reliability of digital phenotyping features derived from GPS and accelerometer data. Introduces a binning-based data quality metric, establishes quality thresholds (>0.80 good, 0.50–0.80 acceptable, <0.50 poor), and demonstrates that GPS-derived features like home time become unreliable below 0.50 quality scores, with estimates off by 2–4 hours. Finds that passive data quality is strongly correlated with app interaction frequency (Spearman's r = 0.94) and that Low Power Mode is the most common resolvable cause of poor data quality. Data quality degrades within approximately 3 days without app interaction due to OS background process throttling.",
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s41598-026-41435-0",
+    "mindlampRelevance": "Core methodological paper for mindLAMP data quality assessment. Establishes the data quality scoring approach used in the Cortex data_quality feature, validates GPS quality thresholds against derived behavioral features (home time, entropy), and provides practical guidance for maintaining data quality in mindLAMP deployments. Findings informed the data quality monitoring documentation and Cortex visualization thresholds used across the platform.",
+    "projects": [
+      {
+        "id": "2fd33133-d8a2-8133-bc13-f558a1eeb5ed",
+        "projectID": "PRJ-0003",
+        "name": "The Digital Clinic"
+      }
+    ],
+    "tags": [
+      {
+        "id": "2b533133-d8a2-808b-831f-e9585b0ceb79",
+        "tagID": "depressive",
+        "name": "depressive"
+      },
+      {
+        "id": "2b533133-d8a2-809b-8e0f-f1561313ab9b",
+        "tagID": "anxiety",
+        "name": "anxiety"
       }
     ]
   }
