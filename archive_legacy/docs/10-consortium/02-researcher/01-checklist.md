@@ -1,0 +1,16 @@
+# Researcher Checklist
+- [ ] Download the LAMP app
+- [ ] Log into LAMP
+- [ ] Create a study
+- [ ] Create a _Learn_ tip
+- [ ] Create an _Assess_ activity like Jewels
+- [ ] Create a Survey
+- [ ] Create a DBT Diary Card
+- [ ] Create a _Manage_ activity like Mindfulness
+- [ ] Schedule any activity
+- [ ] Delete any activity
+- [ ] Create a user
+- [ ] Rename a user
+- [ ] Reset a user's credentials
+- [ ] Share a user's log in link
+- [ ] Delete a user

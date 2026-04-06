@@ -1,0 +1,2445 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AWS Inventory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous" />
+  <style>
+    /* spinner from Bootstrap v4.1 https://github.com/twbs/bootstrap/pull/22960 */
+    @keyframes spinner-border {
+      to { transform: rotate(360deg); }
+    }
+
+    .spinner-border {
+      position: relative;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      overflow: hidden;
+      text-indent: -999em;
+      vertical-align: text-bottom;
+      border: .25em solid;
+      border-color: currentColor transparent currentColor currentColor;
+      border-radius: 50%;
+      animation-name: spinner-border;
+      animation-duration: .75s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .spinner-border-reverse {
+      border-color: transparent currentColor transparent transparent;
+    }
+
+    .spinner-border-reverse::after {
+      position: absolute;
+      top: -.25em;
+      right: -.25em;
+      bottom: -.25em;
+      left: -.25em;
+      display: inline-block;
+      content: "";
+      border: .25em solid rgba(0, 0, 0, .1);
+      border-radius: 50%;
+    }
+
+    .spinner-border-sm {
+      width: 1rem;
+      height: 1rem;
+      border-width: .2em;
+
+    }
+
+    .spinner-border-sm.spinner-border-reverse::after {
+      border-width: .2em;
+    }
+  </style>
+  <style>
+    .side-bar {
+      position:sticky;
+      top: 4rem;
+      z-index: 1000;
+      height: calc(100vh - 4rem);
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid"><!-- container -->
+
+    <div class="navbar sticky-top navbar-expand-md navbar-light bg-light"><!-- navbar -->
+      <a href="#" class="navbar-brand">AWS Inventory</a>
+
+      <form id="aws-credentials" role="form" class="form-inline col"><!-- credentials -->
+        <div class="form-row col">
+          <div class="col col-5 align-self-start">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text">AWS Key ID</span>
+              </div>
+              <input type="text" tabindex="1" id="aws-access-key-id" class="form-control form-control-sm" placeholder="AKIA0123456789ABCDEF">
+            </div>
+          </div>
+          <div class="col col-5">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Secret</span>
+              </div>
+              <input type="password" tabindex="2" id="aws-access-secret-key" class="form-control form-control-sm" placeholder="0123456789abcdef">
+            </div>
+          </div>
+          <div class="col col-1 align-self-end">
+            <div class="input-group input-group-sm">
+              <button type="submit" tabindex="7" id="aws-credentials-verify" class="btn btn-outline-primary btn-sm form-control form-control-sm" data-toggle="button" aria-pressed="false" autocomplete="off">confirm</button>
+            </div>
+          </div>
+          <div class="col col-1 align-self-end">
+            <div class="input-group input-group-sm">
+              <button type="button" tabindex="8" id="btn-advanced" class="btn btn-outline-secondary btn-sm form-control form-control-sm" data-toggle="button" aria-expanded="false" aria-pressed="false" aria-controls="aws-advanced" autocomplete="off">advanced</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row col col-12 mt-1" id="aws-session" style="display:none">
+          <div class="col col-10">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Session Token</span>
+              </div>
+              <input type="password" tabindex="2" id="aws-session-token" class="form-control form-control-sm" placeholder="optionally required">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row col col-12 mt-1" id="aws-advanced" style="display:none">
+          <div class="col col-4">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Role ARN</div>
+              </div>
+              <input type="text" id="aws-role-arn" class="form-control form-control-sm" tabindex="4" placeholder="arn:aws:iam::123456789012:role/demo">
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">External ID</div>
+              </div>
+              <input type="text" id="aws-external-id" class="form-control form-control-sm" tabindex="5" placeholder="optionally required">
+            </div>
+          </div>
+          <div class="col col-2">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <div class="input-group-text">MFA Code</div>
+              </div>
+              <input type="text" id="aws-mfa-token-code" class="form-control form-control-sm" tabindex="6" placeholder="optionally required">
+            </div>
+          </div>
+        </div>
+      </form><!-- /credentials -->
+
+      <form id="aws-credentials-arn-form" class="form-inline col" style="display:none"><!-- credentials-arn -->
+        <div class="form-row col">
+          <div class="col col-12 align-self-start">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend bg-light">
+                <span class="input-group-text bg-light">Credentials ARN</span>
+              </div>
+              <input type="text" id="aws-credentials-arn" readonly class="form-control form-control-sm">
+              <div class="input-group-append">
+                <button type="button" id="aws-credentials-drop" class="btn btn-dark" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form><!-- /credentials-arn -->
+
+    </div><!-- /navbar -->
+
+    <div id="alerts"></div>
+
+    <div class="row mt-2">
+      <div class="col-2 side-bar">
+        <ul id="aws-region-tabs" class="nav flex-sm-column nav-pills" role="tablist" aria-orientation="vertical"></ul><!-- regions -->
+      </div>
+      <div class="col-10">
+        <div id="aws-inventory" class="tab-content"></div>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js" integrity="sha256-pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jmespath/0.15.0/jmespath.min.js" integrity="sha256-qWz+UNAHPTcBryGj4/YRC+NPcwjGx135OqBzZrMRY/A=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.610.0/aws-sdk.min.js" integrity="sha256-AsmTWD190JSBufhxQ2oobbkAuwQFy+AtFXqN8c6kmMg=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      // bootstrap utils
+      $(".alert").alert();
+      $(".collapse").collapse();
+      $('[data-toggle="tooltip"]').tooltip();
+      $("#aws-credentials input").val("");
+
+      var awsQueries = [
+        { service: "ACM",
+          api: "listCertificates",
+          title: "ACM Certificates",
+          id: "acm-certificates",
+          jmespath: "CertificateSummaryList",
+          headings: ["DomainName", "CertificateArn"]
+        },
+        { service: "APIGateway",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ca-central-1", "eu-west-1", "ap-southeast-2", "eu-west-2", "eu-central-1", "eu-west-3", "us-east-1"],
+          api: "getRestApis",
+          title: "API Gateway REST APIs",
+          id: "apigw-rest-apis",
+          jmespath: "items",
+          headings: ["id", "name", "description", "createdDate"]
+        },
+        { service: "ApplicationAutoScaling",
+          api: "describeScalableTargets",
+          params: { ServiceNamespace: "ecs" },
+          title: "Application Auto Scaling ECS Scalable Targets",
+          id: "appscaling-scalable-targets-ecs",
+          jmespath: "ScalableTargets",
+          headings: ["ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"]
+        },
+        { service: "ApplicationAutoScaling",
+          api: "describeScalableTargets",
+          params: { ServiceNamespace: "elasticmapreduce" },
+          title: "Application Auto Scaling EMR Scalable Targets",
+          id: "appscaling-scalable-targets-emr",
+          jmespath: "ScalableTargets",
+          headings: ["ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"]
+        },
+        { service: "ApplicationAutoScaling",
+          api: "describeScalableTargets",
+          params: { ServiceNamespace: "ec2" },
+          title: "Application Auto Scaling EC2 Scalable Targets",
+          id: "appscaling-scalable-targets-ec2",
+          jmespath: "ScalableTargets",
+          headings: ["ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"]
+        },
+        { service: "ApplicationAutoScaling",
+          api: "describeScalableTargets",
+          params: { ServiceNamespace: "appstream" },
+          title: "Application Auto Scaling AppStream Scalable Targets",
+          id: "appscaling-scalable-targets-appstream",
+          jmespath: "ScalableTargets",
+          headings: ["ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"]
+        },
+        { service: "ApplicationAutoScaling",
+          api: "describeScalableTargets",
+          params: { ServiceNamespace: "dynamodb" },
+          title: "Application Auto Scaling DynamoDB Scalable Targets",
+          id: "appscaling-scalable-targets-dynamodb",
+          jmespath: "ScalableTargets",
+          headings: ["ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"]
+        },
+        { service: "ApplicationAutoScaling",
+          api: "describeScalableTargets",
+          params: { ServiceNamespace: "rds" },
+          title: "Application Auto Scaling RDS Scalable Targets",
+          id: "appscaling-scalable-targets-rds",
+          jmespath: "ScalableTargets",
+          headings: ["ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"]
+        },
+        { service: "AutoScaling",
+          api: "describeAutoScalingGroups",
+          title: "EC2 Auto Scaling Groups",
+          id: "autoscaling-groups",
+          jmespath: "AutoScalingGroups",
+          headings: ["AutoScalingGroupName", "MinSize", "MaxSize", "DesiredCapacity", "AvailabilityZones[]", "HealthCheckType", "CreatedTime"]
+        },
+        { service: "AutoScaling",
+          api: "describeLaunchConfigurations",
+          title: "EC2 Auto Scaling Launch Configurations",
+          id: "autoscaling-launch-configs",
+          jmespath: "LaunchConfigurations",
+          headings: ["LaunchConfigurationName", "ImageId", "InstanceType", "CreatedTime"]
+        },
+        { service: "CloudFormation",
+          api: "listStacks",
+          title: "CloudFormation Stacks",
+          id: "cloudformation-stacks",
+          jmespath: "StackSummaries[?StackStatus != `DELETE_COMPLETE`]",
+          headings: ["StackId", "StackName", "CreationTime", "LastUpdatedTime", "StackStatus"]
+        },
+        { service: "CloudFormation",
+          api: "listStacks",
+          title: "CloudFormation Stacks [DELETE_COMPLETE]",
+          id: "cloudformation-stacks-deleted",
+          jmespath: "StackSummaries[?StackStatus == `DELETE_COMPLETE`]",
+          headings: ["StackId", "StackName", "CreationTime", "LastUpdatedTime", "StackStatus"]
+        },
+        { service: "CloudFormation",
+          api: "listStackSets",
+          title: "CloudFormation Stack Sets",
+          id: "cloudformation-stack-sets",
+          jmespath: "Summaries",
+          headings: ["StackSetId", "StackSetName", "Description", "Status"]
+        },
+        { service: "CloudFront",
+          region: "global",
+          api: "listDistributions",
+          title: "CloudFront Distributions",
+          id: "cloudfront-distribution",
+          jmespath: "DistributionList.Items",
+          headings: ["Id", "Status", "DomainName", "LastModifiedTime", {"DomainName(s)": "Origins.Items[].DomainName"}]
+        },
+        { service: "CloudFront",
+          region: "global",
+          api: "listStreamingDistributions",
+          title: "CloudFront Streaming Distributions",
+          id: "cloudfront-streaming-distribution",
+          jmespath: "StreamingDistributionList.Items",
+          headings: ["Id", "Status", "DomainName", "LastModifiedTime", "S3Origin.DomainName", {"Aliases": "Aliases.Items[]"}]
+        },
+        { service: "CloudFront",
+          region: "global",
+          api: "listCloudFrontOriginAccessIdentities",
+          title: "CloudFront Origin Access Identities",
+          id: "cloudfront-origin-access-ids",
+          jmespath: "CloudFrontOriginAccessIdentityList.Items",
+          headings: ["Id", "S3CanonicalUserId", "Comment"]
+        },
+        // -- no CORS for CloudHSMV2 and CloudHSM is deprecated
+        // { service: "CloudHSMV2",
+        //   api: "describeBackups",
+        //   title: "CloudHSM Backups",
+        //   id: "cloudhsm-backups",
+        //   jmespath: "Backups",
+        //   headings: ["BackupId", "BackupState", "ClusterId", "CreateTimestamp"]
+        // },
+        // { service: "CloudHSMV2",
+        //   api: "describeClusters",
+        //   title: "CloudHSM Clusters",
+        //   id: "cloudhsm-clusters",
+        //   jmespath: "Clusters",
+        //   headings: ["ClusterId", "CreateTimestamp", "HsmType", "State"]
+        // },
+        // { service: "CloudHSMV2",
+        //   api: "describeClusters",
+        //   title: "CloudHSM Cluster HSMs",
+        //   id: "cloudhsm-clusters",
+        //   jmespath: "Clusters.Hsms",
+        //   headings: ["HsmId", "ClusterId", "AvailabilityZone", "State", "StateMessage"]
+        // },
+        { service: "CloudTrail",
+          api: "describeTrails",
+          title: "CloudTrail Trails",
+          id: "cloudtrail-trails",
+          jmespath: "trailList",
+          headings: ["Name", "S3BucketName", "SnsTopicName", "IncludeGlobalServiceEvents", "IsMultiRegionTrail", "HomeRegion", "HasCustomEventSelectors"]
+        },
+        { service: "CloudWatch",
+          api: "describeAlarms",
+          title: "CloudWatch Alarms",
+          id: "cloudwatch-alarms",
+          jmespath: "MetricAlarms",
+          headings: ["AlarmName", "AlarmDescription", "MetricName", "Statistic", "Dimensions[].Name", "Period", "Unit", "EvaluationPeriods", "DatapointsToAlarm", "Threshold", "TreatMissingData", "ActionsEnabled", "OKActions[]", "AlarmActions[]", "InsufficientDataActions[]", "StateValue"]
+        },
+        { service: "CloudWatch",
+          api: "listDashboards",
+          title: "CloudWatch Dashboards",
+          id: "cloudwatch-dashboards",
+          jmespath: "DashboardEntries",
+          headings: ["DashboardName", "LastModified", "Size", "DashboardArn"]
+        },
+        { service: "CloudWatch",
+          api: "listMetrics",
+          title: "CloudWatch Metrics",
+          id: "cloudwatch-metrics",
+          jmespath: "Metrics",
+          headings: ["Namespace", "MetricName", "Dimensions[].Name"]
+        },
+        // { service: "CloudWatchEvents",
+        //   api: "describeEventBus",
+        //   title: "CloudWatch Events Event Bus",
+        //   id: "cloudwatch-events-eventbus",
+        //   jmespath: "[Name, Arn, Policy]", // not supported at the moment...
+        //   headings: ["Name", "Arn", "Policy"]
+        // },
+        { service: "CloudWatchEvents",
+          api: "listRules",
+          title: "CloudWatch Events Rules",
+          id: "cloudwatch-events-rules",
+          jmespath: "Rules",
+          headings: ["Name", "Arn", "EventPattern", "State", "Description", "ScheduleExpression", "RoleArn"]
+        },
+        { service: "CloudWatchLogs",
+          api: "describeLogGroups",
+          title: "CloudWatch Logs Log Groups",
+          id: "cloudwatch-logs-loggroups",
+          jmespath: "logGroups",
+          headings: ["logGroupName", "creationTime", "retentionInDays", "metricFilterCount", "storedBytes"]
+        },
+        { service: "CloudWatchLogs",
+          api: "describeExportTasks",
+          title: "CloudWatch Logs Export Tasks",
+          id: "cloudwatch-logs-exporttasks",
+          jmespath: "exportTasks",
+          headings: ["taskId", "taskName", "logGroupName", "from", "to", "destination", "destinationPrefix", "status.code", "status.message"]
+        },
+        { service: "CloudWatchLogs",
+          api: "describeDestinations",
+          title: "CloudWatch Logs Destinations",
+          id: "cloudwatch-logs-destinations",
+          jmespath: "destinations",
+          headings: ["destinationName", "targetArn", "roleArn", "arn", "creationTime"]
+        },
+        { service: "CloudWatchLogs",
+          api: "describeMetricFilters",
+          title: "CloudWatch Logs Metric Filters",
+          id: "cloudwatch-logs-metric-filters",
+          jmespath: "metricFilters",
+          headings: ["filterName", "filterPattern", "creationTime", "logGroupName", "metricTransformations[].metricName"]
+        },
+        { service: "CloudWatchLogs",
+          api: "describeResourcePolicies",
+          title: "CloudWatch Logs Resource Policies",
+          id: "cloudwatch-logs-resource-policies",
+          jmespath: "resourcePolicies",
+          headings: ["policyName", "lastUpdatedTime", "policyDocument"]
+        },
+        { service: "CodeCommit",
+          skip_regions: ["eu-west-3"],
+          api: "listRepositories",
+          title: "CodeCommit Repositories",
+          id: "codecommit-repositories",
+          jmespath: "repositories",
+          headings: ["repositoryId", "repositoryName"]
+        },
+        { service: "CodeDeploy",
+          api: "listApplications",
+          title: "CodeDeploy Applications",
+          id: "codedeploy-applications",
+          jmespath: "map(&{Name:@}, applications)", // create a {Name:X} instead of every X in applications
+          headings: ["Name"]
+        },
+        { service: "CodeDeploy",
+          api: "listGitHubAccountTokenNames",
+          title: "CodeDeploy GitHub Account Tokens",
+          id: "codedeploy-github-tokens",
+          jmespath: "map(&{Name:@}, tokenNameList)", // create a {Name:X} instead of every X in tokenNameList
+          headings: ["Name"]
+        },
+        { service: "CodeDeploy",
+          api: "listOnPremisesInstances",
+          title: "CodeDeploy OnPremises Instances",
+          id: "codedeploy-onpremises-instances",
+          jmespath: "map(&{Name:@}, instanceNames)", // create a {Name:X} instead of every X in instanceNames
+          headings: ["Name"]
+        },
+        { service: "CodePipeline",
+          skip_regions: ["eu-west-3"],
+          api: "listPipelines",
+          title: "CodePipeline Pipelines",
+          id: "codepipeline-pipelines",
+          jmespath: "pipelines",
+          headings: ["name", "version", "created", "updated"]
+        },
+        { service: "CognitoIdentity",
+          skip_regions: ["ca-central-1", "eu-west-3", "sa-east-1", "us-west-1", "us-east-2"],
+          params: { MaxResults: 60 },
+          api: "listIdentityPools",
+          title: "Cognito Identity Pools",
+          id: "cognito-identity-pools",
+          jmespath: "IdentityPools",
+          headings: ["IdentityPoolId", "IdentityPoolName"]
+        },
+        { service: "CognitoIdentityServiceProvider",
+          skip_regions: ["ca-central-1", "eu-west-3", "sa-east-1", "us-west-1", "us-east-2"],
+          params: { MaxResults: 60 },
+          api: "listUserPools",
+          title: "Cognito User Pools",
+          id: "cognito-user-pools",
+          jmespath: "UserPools",
+          headings: ["Id", "Name", "Status", "LastModifiedDate", "CreationDate"]
+        },
+        { service: "CognitoSync",
+          skip_regions: ["ca-central-1", "eu-west-3", "sa-east-1", "us-west-1", "us-east-2"],
+          api: "listIdentityPoolUsage",
+          title: "Cognito Sync Identity Pool Usage",
+          id: "cognitosync-identity-pool-usage",
+          jmespath: "IdentityPoolUsages",
+          headings: ["IdentityPoolId", "SyncSessionCount", "DataStorage", "LastModifiedDate"]
+        },
+        // { service: "Comprehend", // not included in default aws-sdk-js build, needs custom build
+        //   api: "listTopicsDetectionJobs",
+        //   title: "Comprehend Topics Detection Jobs",
+        //   id: "comprehend-topics-detection-jobs",
+        //   jmespath: "TopicsDetectionJobPropertiesList",
+        //   headings: ["JobId", "JobName", "JobStatus", "Message", "SubmitTime", "EndTime", "InputDataConfig.S3Uri", "OutputDataConfig.S3Uri"]
+        // },
+        { service: "ConfigService",
+          api: "describeConfigRules",
+          title: "Config Service Rules",
+          id: "config-rules",
+          jmespath: "ConfigRules",
+          headings: ["ConfigRuleName", "ConfigRuleArn", "ConfigRuleId", "Description", "Source.Owner", "ConfigRuleState", "MaximumExecutionFrequency"]
+        },
+        { service: "ConfigService",
+          api: "describeConfigRuleEvaluationStatus",
+          title: "Config Service Rule Evaluation Statuses",
+          id: "config-rules",
+          jmespath: "ConfigRulesEvaluationStatus",
+          headings: ["ConfigRuleName", "ConfigRuleId", "LastSuccessfulInvocationTime", "LastFailedInvocationTime", "LastSuccessfulEvaluationTime", "LastFailedEvaluationTime", "FirstActivatedTime", "LastErrorCode", "LastErrorMessage"]
+        },
+        { service: "ConfigService",
+          api: "describeConfigurationRecorders",
+          title: "Config Service Recorders",
+          id: "config-recorders",
+          jmespath: "ConfigurationRecorders",
+          headings: ["name", "roleARN", "recordingGroup.allSupported", "recordingGroup.resourceTypes"]
+        },
+        { service: "ConfigService",
+          api: "describeConfigurationRecorderStatus",
+          title: "Config Service Recorder Statuses",
+          id: "config-recorder-statuses",
+          jmespath: "ConfigurationRecordersStatus",
+          headings: ["name", "lastStartTime", "lastStopTime", "recording", "lastStatus", "lastErrorcode", "lastErrorMessage", "lastStatusChangeTime"]
+        },
+        { service: "ConfigService",
+          api: "describeDeliveryChannels",
+          title: "Config Service Delivery Channels",
+          id: "config-delivery-channels",
+          jmespath: "DeliveryChannels",
+          headings: ["name", "s3BucketName", "s3KeyPrefix", "snsTopicARN", "configSnapshotDeliveryProperties.deliveryFrequency"]
+        },
+        { service: "ConfigService",
+          api: "describeDeliveryChannelStatus",
+          title: "Config Service Delivery Channel Statuses",
+          id: "config-delivery-channel-statuses",
+          jmespath: "DeliveryChannelsStatus",
+          headings: ["name", "configSnapshotDeliveryInfo.lastStatus", "configHistoryDeliveryInfo.lastStatus", "configStreamDeliveryInfo.lastStatus"]
+        },
+        { service: "CUR",
+          region: "us-east-1",
+          api: "describeReportDefinitions",
+          title: "Cost and Usage Report Definitions",
+          id: "cur-report-definitions",
+          jmespath: "ReportDefinitions",
+          headings: ["ReportName", "TimeUnit", "Format", "Compression", "S3Region", "S3Bucket", "S3Prefix", "AdditionalArtifacts[]"]
+        },
+        { service: "DeviceFarm",
+          region: "us-west-2",
+          api: "listProjects",
+          title: "Device Farm Projects",
+          id: "devicefarm-projects",
+          jmespath: "projects",
+          headings: ["arn", "name", "defaultJobTimeoutMinutes", "created"]
+        },
+        { service: "DirectConnect",
+          api: "describeConnections",
+          title: "Direct Connect Connections",
+          id: "direct-connect-connections",
+          jmespath: "connections",
+          headings: ["ownerAccount", "connectionId", "connectionName", "connectionState", "region", "location", "bandwidth", "partnerName", "awsDevice"]
+        },
+        // { service: "DirectConnect", // Only works for authorized Direct Connect partners
+        //   api: "describeInterconnects",
+        //   title: "Direct Connect Interconnects",
+        //   id: "direct-connect-interconnects",
+        //   jmespath: "interconnects",
+        //   headings: ["interconnectId", "interconnectName", "interconnectState", "region", "location", "bandwidth"]
+        // },
+        { service: "DirectConnect",
+          api: "describeLags",
+          title: "Direct Connect Link Aggregations Groups",
+          id: "direct-connect-lags",
+          jmespath: "lags",
+          headings: ["connectionsBandwidth", "numberOfConnections", "lagId", "ownerAccount", "lagName", "lagState", "location", "region", "minimumLinks", "awsDevice"]
+        },
+        { service: "DirectConnect",
+          api: "describeVirtualGateways",
+          title: "Direct Connect Virtual Gateways",
+          id: "direct-connect-virtual-gateways",
+          jmespath: "virtualGateways",
+          headings: ["virtualGatewayId", "virtualGatewayState"]
+        },
+        { service: "DirectConnect",
+          api: "describeVirtualInterfaces",
+          title: "Direct Connect Virtual Interfaces",
+          id: "direct-connect-virtual-interfaces",
+          jmespath: "virtualInterfaces",
+          headings: ["ownerAccount", "virtualInterfaceId", "location", "connectionId", "virtualInterfaceType", "virtualInterfaceName", "amazonAddress", "customerAddress", "virtualInterfaceState"]
+        },
+        { service: "DynamoDB",
+          skip_regions: ["ap-southeast-2", "ap-southeast-1", "ap-south-1", "ap-northeast-2", "ap-northeast-1", "eu-central-1", "eu-west-3", "eu-west-2", "ca-central-1", "us-west-1", "sa-east-1"],
+          api: "listBackups",
+          title: "DynamoDB Backups",
+          id: "dynamodb-backups",
+          jmespath: "BackupSummaries",
+          headings: ["TableName", "TableId", "BackupArn", "BackupName", "BackupCreationDateTime", "BackupStatus", "BackupSizeBytes"]
+        },
+        { service: "DynamoDB",
+          skip_regions: ["ap-southeast-2", "ap-southeast-1", "ap-south-1", "ap-northeast-2", "ap-northeast-1", "eu-central-1", "eu-west-3", "eu-west-2", "ca-central-1", "us-west-1", "sa-east-1"],
+          api: "listGlobalTables",
+          title: "DynamoDB Global Tables",
+          id: "dynamodb-global-tables",
+          jmespath: "GlobalTables",
+          headings: ["GlobalTableName", "ReplicationGroup[].RegionName"]
+        },
+        { service: "DynamoDB",
+          api: "listTables",
+          title: "DynamoDB Tables",
+          id: "dynamodb-tables",
+          jmespath: "map(&{Name:@}, TableNames)", // create a {Name:X} instead of every X in TableNames
+          headings: ["Name"]
+        },
+        { service: "DynamoDBStreams",
+          api: "listStreams",
+          title: "DynamoDB Streams",
+          id: "dynamodb-streams",
+          jmespath: "Streams",
+          headings: ["StreamArn", "TableName", "StreamLabel", "LastEvaluatedStreamArn"]
+        },
+        // start ec2
+        { service: "EC2",
+          api: "describeAddresses",
+          title: "EC2 Elastic IP Addresses",
+          id: "ec2-eips",
+          jmespath: "Addresses",
+          headings: ["InstanceId", "PublicIp", "AllocationId", "AssociationId", "Domain", "NetworkInterfaceId", "NetworkInterfaceOwnerId", "PrivateIpAddress", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeAvailabilityZones",
+          title: "EC2 Availability Zones",
+          id: "ec2-availability-zones",
+          jmespath: "AvailabilityZones",
+          headings: ["ZoneName", "State", "Messages[]"]
+        },
+        { service: "EC2",
+          api: "describeBundleTasks",
+          title: "EC2 Bundle Tasks",
+          id: "ec2-bundle-tasks",
+          jmespath: "BundleTasks",
+          headings: ["BundleId", "BundleTaskError.Message", "InstanceId", "Progress", "StartTime", "State", "Storage", "UpdateTime"]
+        },
+        { service: "EC2",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ca-central-1", "us-east-2", "eu-west-2", "eu-west-3", "eu-central-1"],
+          api: "describeClassicLinkInstances",
+          title: "EC2 ClassicLink Instances",
+          id: "ec2-classiclink-instances",
+          jmespath: "Instances",
+          headings: ["InstanceId", "VpcId", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          skip_regions: ["eu-west-3"],
+          api: "describeConversionTasks",
+          title: "EC2 Import/Export Conversion Tasks",
+          id: "ec2-coversion-tasks",
+          jmespath: "ConversionTasks",
+          headings: ["ConversionTaskId", "ExpirationTime", "ImportInstance.Description", "ImportInstance.InstanceId", "State", "StatusMessage", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeCustomerGateways",
+          title: "EC2 VPC Customer Gateways",
+          id: "ec2-customer-gateways",
+          jmespath: "CustomerGateways",
+          headings: ["BgpAsn", "CustomerGatewayId", "IpAddress", "State", "Type", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeDhcpOptions",
+          title: "EC2 VPC DHCP Options",
+          id: "ec2-dhcp-options",
+          jmespath: "DhcpOptions",
+          headings: ["DhcpOptionsId", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeEgressOnlyInternetGateways",
+          title: "EC2 VPC Egress Internet Gateways",
+          id: "ec2-egress-inetgw",
+          jmespath: "EgressOnlyInternetGateways",
+          headings: ["EgressOnlyInternetGatewayId", "Attachments[].State"]
+        },
+        { service: "EC2",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "sa-east-1", "us-west-1", "ca-central-1", "eu-west-2", "eu-west-3"],
+          api: "describeElasticGpus",
+          title: "EC2 Elastic GPUs",
+          id: "ec2-elastic-gpus",
+          jmespath: "ElasticGpuSet",
+          headings: ["ElasticGpuId", "AvailabilityZone", "ElasticGpuType", "ElasticGpuHealth.Status", "ElasticGpuState", "InstanceId"]
+        },
+        { service: "EC2",
+          skip_regions: ["eu-west-3"],
+          api: "describeExportTasks",
+          title: "EC2 Export Tasks",
+          id: "ec2-export-tasks",
+          jmespath: "ExportTasks",
+          headings: ["ExportTaskId", "Description", "ExportToS3Task.S3Bucket", "ExportToS3Task.S3Key", "InstanceExportDetails.InstanceId", "State", "StatusMessage"]
+        },
+        { service: "EC2",
+          api: "describeFlowLogs",
+          title: "EC2 Flow Logs",
+          id: "ec2-flow-logs",
+          jmespath: "FlowLogs",
+          headings: ["CreationTime", "FlowLogId", "FlowLogStatus", "DeliverLogsStatus", "DeliverLogsErrorMessage", "TrafficType"]
+        },
+        { service: "EC2",
+          api: "describeHostReservations",
+          title: "EC2 Dedicated Host Reservations",
+          id: "ec2-host-reservations",
+          jmespath: "HostReservationSet",
+          headings: ["HostReservationId ", "Count", "CurrencyCode", "Duration", "Start", "End", "HostIdSet", "InstanceFamily", "PaymentOption", "State"]
+        },
+        { service: "EC2",
+          api: "describeHostReservations",
+          title: "EC2 Dedicated Hosts",
+          id: "ec2-hosts",
+          jmespath: "Hosts",
+          headings: ["HostId", "AvailabilityZone", "State"]
+        },
+        { service: "EC2",
+          api: "describeIamInstanceProfileAssociations",
+          title: "EC2 IAM Instance Profile Associations",
+          id: "ec2-iam-instance-profile-associations",
+          jmespath: "IamInstanceProfileAssociations",
+          headings: ["AssociationId", "InstanceId", "IamInstanceProfile.Id", "State", "Timestamp"]
+        },
+        { service: "EC2",
+          api: "describeImportImageTasks",
+          title: "EC2 Import Image Tasks",
+          id: "ec2-import-image-tasks",
+          jmespath: "ImportImageTasks",
+          headings: ["ImportTaskId", "Description", "ImageId", "Progress", "Status", "StatusMessage"]
+        },
+        { service: "EC2",
+          api: "describeImportSnapshotTasks",
+          title: "EC2 Import Snapshot Tasks",
+          id: "ec2-import-snapshot-tasks",
+          jmespath: "ImportSnapshotTasks",
+          headings: ["ImportTaskId", "Description", "SnapshotTaskDetail.Status", "SnapshotTaskDetail.StatusMessage"]
+        },
+        { service: "EC2",
+          api: "describeInstances",
+          title: "EC2 Instances",
+          id: "ec2-instances",
+          jmespath: "Reservations[].Instances",
+          headings: ["InstanceId", "InstanceType", "ImageId", "LaunchTime", "KeyName", "State.Name", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeInternetGateways",
+          title: "EC2 VPC Internet Gateways",
+          id: "ec2-internet-gateways",
+          jmespath: "InternetGateways",
+          headings: ["InternetGatewayId", "Attachments[].State", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeKeyPairs",
+          title: "EC2 SSH Key Pairs",
+          id: "ec2-ssh-keypairs",
+          jmespath: "KeyPairs",
+          headings: ["KeyName", "KeyFingerprint"]
+        },
+        { service: "EC2",
+          api: "describeLaunchTemplates",
+          title: "EC2 Launch Templates",
+          id: "ec2-launch-templates",
+          jmespath: "LaunchTemplates",
+          headings: ["LaunchTemplateId", "LaunchTemplateName", "CreateTime", "CreatedBy", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ca-central-1", "us-east-2", "eu-west-2", "eu-west-3", "eu-central-1"],
+          api: "describeMovingAddresses",
+          title: "EC2 Classic<->VPC Moving Elastic IPs",
+          id: "ec2-moving-addresses",
+          jmespath: "MovingAddressStatuses",
+          headings: ["PublicIp", "MoveStatus"]
+        },
+        { service: "EC2",
+          api: "describeNatGateways",
+          title: "EC2 VPC NAT Gateways",
+          id: "ec2-nat-gateways",
+          jmespath: "NatGateways",
+          headings: ["NatGatewayId", "NatGatewayAddresses.PublicIp", "NatGatewayAddresses.PrivateIp", "CreateTime", "DeleteTime", "FailureCode", "State", "VpcId", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeNetworkAcls",
+          title: "EC2 VPC Network ACLs",
+          id: "ec2-network-acls",
+          jmespath: "NetworkAcls",
+          headings: ["NetworkAclId", "Associations.SubnetId", "IsDefault", "Entries.RuleNumber", "Entries.RuleAction", "Entries.CidrBlock", "Entries.PortRange", "Entries.Egress", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeNetworkInterfaces",
+          title: "EC2 Network Interfaces",
+          id: "ec2-network-interfaces",
+          jmespath: "NetworkInterfaces",
+          headings: ["NetworkInterfaceId", "Description", "AvailabilityZone", "InterfaceType", "SourceDestCheck", "Status", {"Tag:Name": 'TagSet[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describePlacementGroups",
+          title: "EC2 Placement Groups",
+          id: "ec2-placement-groups",
+          jmespath: "PlacementGroups",
+          headings: ["GroupName", "State", "Strategy"]
+        },
+        { service: "EC2",
+          api: "describeReservedInstances",
+          title: "EC2 Reserved Instances",
+          id: "ec2-reserved-instances",
+          jmespath: "ReservedInstances",
+          headings: ["ReservedInstancesId", "AvailabilityZone", "Duration", "Start", "End", "FixedPrice", "InstanceCount", "InstanceType", "ProductDescription", "State", "UsagePrice", "InstanceTenancy", "OfferingClass", "OfferingType", "Scope", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        // { service: "EC2",
+        //   api: "describeReservedInstancesListings",
+        //   title: "EC2 Reserved Instance Marketplace Listings",
+        //   id: "ec2-reserved-instance-marketplace-listings",
+        //   jmespath: "ReservedInstancesListings",
+        //   headings: ["ReservedInstancesListingId", "CreateDate", "InstanceCounts.InstanceCount", "InstanceCounts.State", "Status", "StatusMessage", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        // },
+        { service: "EC2",
+          api: "describeReservedInstancesModifications",
+          title: "EC2 Reserved Instance Modification Requests",
+          id: "ec2-reserved-instance-modifications",
+          jmespath: "ReservedInstancesModifications",
+          headings: ["ReservedInstancesModificationId", "CreateDate", "UpdateDate", "EffectiveDate", "Status", "StatusMessage"]
+        },
+        { service: "EC2",
+          api: "describeRouteTables",
+          title: "EC2 VPC Route Tables",
+          id: "ec2-route-tables",
+          jmespath: "RouteTables",
+          headings: ["RouteTableId", "VpcId", "Associations.Main", "Associations.SubnetId", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          region: "us-east-1",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "sa-east-1", "us-west-1", "ca-central-1", "us-east-2", "eu-west-2", "eu-west-3", "ap-sourtheast-1", "ap-southeast-2", "eu-central-1"],
+          api: "describeScheduledInstances",
+          title: "EC2 Scheduled Instances",
+          id: "ec2-scheduled-instances",
+          jmespath: "ScheduledInstanceSet",
+          headings: ["ScheduledInstanceId", "TermStartDate", "TermEndDate", "Platform", "CreateDate", "InstanceCount", "InstanceType"]
+        },
+        { service: "EC2",
+          api: "describeSecurityGroups",
+          title: "EC2 Security Groups",
+          id: "ec2-security-groups",
+          jmespath: "SecurityGroups",
+          headings: ["GroupId", "GroupName", "Description", "VpcId", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        // { service: "EC2", // takes very very long to query and return results
+        //   api: "describeSnapshots",
+        //   title: "EC2 EBS Snapshots",
+        //   id: "ec2-ebs-snapshots",
+        //   jmespath: "Snapshots",
+        //   headings: ["SnapshotId", "Description", "Encrypted", "State", "StateMessage", "VolumeId", "VolumeSize", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        // },
+        { service: "EC2",
+          api: "describeSpotFleetRequests",
+          title: "EC2 Spot Fleet Requests",
+          id: "ec2-spot-fleet-requests",
+          jmespath: "SpotFleetRequestConfigs",
+          headings: ["SpotFleetRequestId", "SpotFleetRequestState", "ActivityStatus", "CreateTime", "SpotPrice", "TargetCapacity", "Type", "ValidFrom", "ValidUntil"]
+        },
+        { service: "EC2",
+          api: "describeSpotInstanceRequests",
+          title: "EC2 Spot Instance Requests",
+          id: "ec2-spot-instance-requests",
+          jmespath: "SpotInstanceRequests",
+          headings: ["CreateTime", "LaunchSpecification.SpotInstanceRequestId", "LaunchSpecification.SpotPrice", "LaunchSpecification.State", "LaunchSpecification.Status.Code"]
+        },
+        { service: "EC2",
+          api: "describeSubnets",
+          title: "EC2 VPC Subnets",
+          id: "ec2-subnets",
+          jmespath: "Subnets",
+          headings: ["SubnetId", "VpcId", "State", "DefaultForAz", "AvailabilityZone", "AvailableIpAddressCount", "CidrBlock", "MapPublicIpOnLaunch", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeTags",
+          title: "EC2 Tags",
+          id: "ec2-tags",
+          jmespath: "Tags",
+          headings: ["ResourceType", "ResourceId", "Key", "Value"]
+        },
+        { service: "EC2",
+          api: "describeVolumes",
+          title: "EC2 EBS Volumes",
+          id: "ec2-volumes",
+          jmespath: "Volumes",
+          headings: ["VolumeId", "VolumeType", "State", "Size", "AvailabilityZone", "CreateTime", "Attachments.InstanceId", "Attachments.DeleteOnTermination", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeVolumesModifications",
+          title: "EC2 EBS Volume Modifications",
+          id: "ec2-volume-modifications",
+          jmespath: "VolumesModifications",
+          headings: ["VolumeId", "ModificationState", "StatusMessage", "TargetSize", "TargetIops", "TargetVolumeType", "OriginalSize", "OriginalIops", "OriginalVolumeType", "Progress", "StartTime", "EndTime"]
+        },
+        { service: "EC2",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ca-central-1", "us-east-2", "eu-west-2", "eu-west-3", "eu-central-1"],
+          api: "describeVpcClassicLink",
+          title: "EC2 VPC ClassicLink",
+          id: "ec2-vpc-classiclink",
+          jmespath: "Vpcs",
+          headings: ["VpcId", "ClassicLinkEnabled", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ca-central-1", "us-east-2", "eu-west-2", "eu-west-3", "eu-central-1"],
+          api: "describeVpcClassicLinkDnsSupport",
+          title: "EC2 VPC ClassicLink DNS Support",
+          id: "ec2-vpc-classiclink-dns-support",
+          jmespath: "Vpcs",
+          headings: ["VpcId", "ClassicLinkDnsSupported"]
+        },
+        { service: "EC2",
+          skip_regions: ["eu-west-3"],
+          api: "describeVpcEndpointConnectionNotifications",
+          title: "EC2 VPC Endpoint Connection Notifications",
+          id: "ec2-vpc-endpoint-connection-notifications",
+          jmespath: "ConnectionNotificationSet",
+          headings: ["ConnectionNotificationId", "ServiceId", "VpcEndpointId", "ConnectionNotificationArn", "ConnectionEvents", "ConnectionNotificationState"]
+        },
+        { service: "EC2",
+          skip_regions: ["eu-west-3"],
+          api: "describeVpcEndpointConnections",
+          title: "EC2 VPC Endpoint Connections",
+          id: "ec2-vpc-endpoint-connections",
+          jmespath: "VpcEndpointConnections",
+          headings: ["ServiceId", "VpcEndpointId", "VpcEndpointOwner", "VpcEndpointState", "CreationTimestamp"]
+        },
+        { service: "EC2",
+          api: "describeVpcEndpoints",
+          title: "EC2 VPC Endpoints",
+          id: "ec2-vpc-endpoints",
+          jmespath: "VpcEndpoints",
+          headings: ["VpcEndpointId", "VpcEndpointType", "VpcId", "ServiceName", "State", "CreationTimestamp"]
+        },
+        { service: "EC2",
+          skip_regions: ["eu-west-3"],
+          api: "describeVpcEndpointServiceConfigurations",
+          title: "EC2 VPC Endpoint Service Configurations",
+          id: "ec2-vpc-endpoint-service-configs",
+          jmespath: "ServiceConfigurations",
+          headings: ["ServiceId", "ServiceName", "ServiceState", "AcceptanceRequired", "PrivateDnsName"]
+        },
+        { service: "EC2",
+          api: "describeVpcPeeringConnections",
+          title: "EC2 VPC Peering Connections",
+          id: "ec2-vpc-peering-connections",
+          jmespath: "VpcPeeringConnections",
+          headings: ["VpcPeeringConnectionId", "AccepterVpcInfo.VpcId", "AccepterVpcInfo.Region", "RequesterVpcInfo.VpcId", "RequesterVpcInfo.Region", "ExpirationTime", "Status.Code", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeVpcs",
+          title: "EC2 VPCs",
+          id: "ec2-vpcs",
+          jmespath: "Vpcs",
+          headings: ["VpcId", "State", "CidrBlock", "IsDefault", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "EC2",
+          api: "describeVpnConnections",
+          title: "EC2 VPN Connections",
+          id: "ec2-vpn-connections",
+          jmespath: "VpnConnections",
+          headings: ["VpnConnectionId", "VpnGatewayId", "State", "Type", "CustomerGatewayId", "VgwTelemetry.Status"]
+        },
+        { service: "EC2",
+          api: "describeVpnGateways",
+          title: "EC2 VPN Gateways",
+          id: "ec2-vpn-gateways",
+          jmespath: "VpnGateways",
+          headings: ["VpnGatewayId", "AvailabilityZone", "State", "Type", "AmazonSideAsn", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        // end ec2
+        { service: "ECR",
+          api: "describeRepositories",
+          title: "ECR Repositories",
+          id: "ecr-repositories",
+          jmespath: "repositories",
+          headings: ["registryId", "repositoryName", "createdAt", "repositoryUri", "repositoryArn"]
+        },
+        { service: "ECS",
+          api: "listClusters",
+          title: "ECS Clusters",
+          id: "ecs-clusters",
+          jmespath: "map(&{Name:@}, clusterArns)",
+          headings: [{"Cluster ARNs": "Name"}]
+        },
+        // { service: "ECS",
+        //   params: { cluster: "MUST_USE_CLUSTER_ARN" }, // does not work without a cluster arn
+        //   api: "listServices",
+        //   title: "ECS Services",
+        //   id: "ecs-services",
+        //   jmespath: "map(&{Name:@}, serviceArns)",
+        //   headings: [{"Service ARNs": "Name"}]
+        // },
+        // { service: "ECS",
+        //   params: { cluster: "MUST_USE_CLUSTER_ARN" }, // does not work without a cluster arn
+        //   api: "listServices",
+        //   api: "listContainerInstances",
+        //   title: "ECS Container Instances",
+        //   id: "ecs-container-instances",
+        //   jmespath: "map(&{Name:@}, containerInstanceArns)",
+        //   headings: [{"Container Instance ARNs": "Name"}]
+        // },
+        { service: "ECS",
+          api: "listTaskDefinitionFamilies",
+          title: "ECS Task Definition Families",
+          id: "ecs-task-definition-families",
+          jmespath: "map(&{Name:@}, families)",
+          headings: [{"Task Definition Family ARNs": "Name"}]
+        },
+        { service: "ECS",
+          api: "listTaskDefinitions",
+          title: "ECS Task Definitions",
+          id: "ecs-task-definitions-active",
+          jmespath: "map(&{Name:@}, taskDefinitionArns)",
+          headings: [{"Task Definition ARNs": "Name"}]
+        },
+        { service: "ECS",
+          params: { status: "INACTIVE" },
+          api: "listTaskDefinitions",
+          title: "ECS Task Definitions [INACTIVE]",
+          id: "ecs-task-definitions-inactive",
+          jmespath: "map(&{Name:@}, taskDefinitionArns)",
+          headings: [{"Task Definition ARNs [INACTIVE]": "Name"}]
+        },
+        { service: "ElastiCache",
+          api: "describeCacheClusters",
+          title: "ElastiCache Clusters",
+          id: "elasticache-cache-clusters",
+          jmespath: "CacheClusters",
+          headings: ["CacheClusterId", {"Cfg.Address": "ConfigurationEndpoint.Address"}, {"Cfg.Port": "ConfigurationEndpoint.Port"}, "CacheNodeType", "Engine", "EngineVersion", "CacheClusterStatus", "NumCacheNodes", "PreferredAvailabilityZone", "CacheClusterCreateTime"]
+        },
+        { service: "ElastiCache",
+          api: "describeCacheParameterGroups",
+          title: "ElastiCache Parameter Groups",
+          id: "elasticache-parameter-groups",
+          jmespath: "CacheParameterGroups",
+          headings: ["CacheParameterGroupName", "CacheParameterGroupFamily", "Description"]
+        },
+        { service: "ElastiCache",
+          skip_regions: ["ap-south-1", "ap-northeast-2", "eu-central-1", "eu-west-3", "ap-southeast-2", "ca-central-1", "us-east-2", "eu-west-2"],
+          api: "describeCacheSecurityGroups",
+          title: "ElastiCache Security Groups",
+          id: "elasticache-security-groups",
+          jmespath: "CacheSecurityGroups",
+          headings: ["OwnerId", "CacheSecurityGroupName", "Description", "EC2SecurityGroups[].Status", "EC2SecurityGroups[].EC2SecurityGroupName"]
+        },
+        { service: "ElastiCache",
+          api: "describeCacheSubnetGroups",
+          title: "ElastiCache Subnet Groups",
+          id: "elasticache-subnet-groups",
+          jmespath: "CacheSubnetGroups",
+          headings: ["CacheSubnetGroupName", "CacheSubnetGroupDescription", "VpcId", "Subnets[].SubnetIdentifier"]
+        },
+        { service: "ElastiCache",
+          api: "describeReplicationGroups",
+          title: "ElastiCache Replication Groups",
+          id: "elasticache-replication-groups",
+          jmespath: "ReplicationGroups",
+          headings: ["ReplicationGroupId", "Description", "Status", "MemberClusters[]", "AutomaticFailover", "ClusterEnabled", "CacheNodeType"]
+        },
+        { service: "ElastiCache",
+          api: "describeReservedCacheNodes",
+          title: "ElastiCache Reserved Cache Nodes",
+          id: "elasticache-reserved-cache-nodes",
+          jmespath: "ReservedCacheNodes",
+          headings: ["ReservedCacheNodeId", "ReservedCacheNodesOfferingId", "CacheNodeType", "StartTime", "Duration", "FixedPrice", "UsagePrice", "CacheNodeCount", "ProductDescription", "OfferingType", "State"]
+        },
+        { service: "ElastiCache",
+          api: "describeSnapshots",
+          title: "ElastiCache Snapshots",
+          id: "elasticache-snapshots",
+          jmespath: "Snapshots",
+          headings: ["SnapshotName", "ReplicationGroupId", "ReplicationGroupDescription", "CacheClusterId", "SnapshotStatus", "SnapshotSource", "CacheNodeType", "Engine", "EngineVersion", "NumCacheNodes"]
+        },
+        { service: "ElasticBeanstalk",
+          api: "describeApplications",
+          title: "ElasticBeanstalk Applications",
+          id: "elasticbeanstalk-applications",
+          jmespath: "Applications",
+          headings: ["ApplicationName", "DateCreated", "Description"]
+        },
+        { service: "ElasticBeanstalk",
+          api: "describeApplicationVersions",
+          title: "ElasticBeanstalk Application Versions",
+          id: "elasticbeanstalk-application-versions",
+          jmespath: "ApplicationVersions",
+          headings: ["ApplicationName", "DateCreated", "DateUpdated", "Description", "VersionLabel", "SourceBundle.S3Bucket", "SourceBundle.S3Key"]
+        },
+        { service: "ElasticBeanstalk",
+          api: "describeEnvironments",
+          title: "ElasticBeanstalk Environments",
+          id: "elasticbeanstalk-environments",
+          jmespath: "Environments",
+          headings: ["EnvironmentName", "EnvironmentId", "ApplicationName", "VersionLabel", "SolutionStackName", "Description", "DateCreated", "Status", "Health", "HealthStatus"]
+        },
+        // { service: "ElasticBeanstalk",
+        //   api: "listPlatformVersions", // platforms offered by AWS, not real inventory
+        //   title: "ElasticBeanstalk Platform Versions",
+        //   id: "elasticbeanstalk-platform-versions",
+        //   jmespath: "PlatformSummaryList",
+        //   headings: ["PlatformOwner", "PlatformStatus", "PlatformCategory", "OperatingSystemName", "OperatingSystemVersion"]
+        // },
+        { service: "ELB",
+          api: "describeAccountLimits",
+          title: "Classic ELB Account Limits",
+          id: "elb-account-limits",
+          jmespath: "Limits",
+          headings: ["Name", "Max"]
+        },
+        { service: "ELB",
+          api: "describeLoadBalancerPolicyTypes",
+          title: "Classic ELB Policy Types",
+          id: "elb-policy-types",
+          jmespath: "PolicyTypeDescriptions",
+          headings: ["PolicyTypeName", "Description"]
+        },
+        { service: "ELB",
+          api: "describeLoadBalancerPolicies",
+          title: "Classic ELB Policies",
+          id: "elb-policies",
+          jmespath: "PolicyDescriptions",
+          headings: ["PolicyTypeName", "PolicyName"]
+        },
+        { service: "ELB",
+          api: "describeLoadBalancers",
+          title: "Classic ELB Load Balancers",
+          id: "elb-load-balancers",
+          jmespath: "LoadBalancerDescriptions",
+          headings: ["LoadBalancerName", "AvailabilityZones[]", "VPCId", "Subnets[]", "CreatedTime", "Scheme"]
+        },
+        { service: "ELBv2",
+          api: "describeAccountLimits",
+          title: "ELB v2 Account Limits",
+          id: "elbv2-account-limits",
+          jmespath: "Limits",
+          headings: ["Name", "Max"]
+        },
+        { service: "ELBv2",
+          api: "describeLoadBalancers",
+          title: "ELB v2 Load Balancers",
+          id: "elbv2-load-balancers",
+          jmespath: "LoadBalancers",
+          headings: ["LoadBalancerName", "Type", "Scheme", "VpcId", "State", "AvailabilityZones[].ZoneName", "AvailabilityZones[].SubnetId", "IpAddressType"]
+        },
+        { service: "ELBv2",
+          api: "describeSSLPolicies",
+          title: "ELB v2 SSL Policies",
+          id: "elbv2-ssl-policies",
+          jmespath: "SslPolicies",
+          headings: ["Name", "SslProtocols[]"]
+        },
+        { service: "ELBv2",
+          api: "describeTargetGroups",
+          title: "ELB v2 Target Groups",
+          id: "elbv2-target-groups",
+          jmespath: "TargetGroups",
+          headings: ["TargetGroupName", "VpcId", "Protocol", "Port", "HealthCheckProtocol", "HealthCheckPort", "HealthCheckPath", "HealthCheckIntervalSeconds", "UnhealthyThresholdCount"]
+        },
+        { service: "EMR",
+          api: "listClusters",
+          title: "EMR Clusters",
+          id: "emr-clusters",
+          jmespath: "Clusters",
+          headings: ["Id", "Name", "State", "StateChangeReason.Code", "StateChangeReason.Message", "Timeline.CreationDateTime"]
+        },
+        { service: "EMR",
+          api: "listSecurityConfigurations",
+          title: "EMR Security Configurations",
+          id: "emr-security-configurations",
+          jmespath: "SecurityConfigurations",
+          headings: ["Name", "CreationDateTime"]
+        },
+        // { service: "ES", // ES is not part of default AWS-SDK.js
+        //   api: "listDomainNames",
+        //   title: "ElasticSearch Domain Names",
+        //   id: "es-domain-names",
+        //   jmespath: "DomainNames",
+        //   headings: ["DomainName"]
+        // },
+        // { service: "ES",
+        //   api: "listElasticsearchVersions",
+        //   title: "ElasticSearch Supported Versions",
+        //   id: "es-versions",
+        //   jmespath: "map(&{Version:@}, ElasticsearchVersions)",
+        //   headings: ["Version"]
+        // },
+        { service: "ElasticTranscoder",
+          skip_regions: ["ap-northeast-2", "eu-west-2", "eu-central-1", "eu-west-3", "ca-central-1", "us-east-2", "sa-east-1", "us-east-2", "eu-west-3", "eu-west-2", "eu-central-1", "ca-central-1", "eu-west-3"],
+          api: "listPipelines",
+          title: "ElasticTranscoder Pipelines",
+          id: "elastictranscoder-pipelines",
+          jmespath: "Pipelines",
+          headings: ["Id", "Arn", "Name", "Status", "InputBucket", "OutputBucket"]
+        },
+        { service: "Firehose",
+          skip_regions: ["ap-northeast-2", "ap-south-1", "ca-central-1", "eu-west-2", "eu-west-3", "sa-east-1"],
+          api: "listDeliveryStreams",
+          title: "Kinesis Firehose Delivery Streams",
+          id: "firehose-delivery-streams",
+          jmespath: "map(&{Name:@}, DeliveryStreamNames)",
+          headings: ["Name"]
+        },
+        // { service: "Gamelift", // Gamelift is not part of default AWS-SDK.js
+        //   api: "describeFleetCapacity",
+        //   title: "Gamelift Fleet Capacity",
+        //   id: "gamelift-fleet-capacity",
+        //   jmespath: "FleetCapacity",
+        //   headings: ["FleetId", "InstanceType", "InstanceCounts.ACTIVE", "InstanceCounts.DESIRED", "InstanceCounts.MAXIMUM"]
+        // },
+        // { service: "Gamelift",
+        //   api: "describeFleetUtilization",
+        //   title: "Gamelift Fleet Utilization",
+        //   id: "gamelift-fleet-utilization",
+        //   jmespath: "FleetUtilization",
+        //   headings: ["FleetId", "ActiveServerProcessCount", "ActiveGameSessionCount", "CurrentPlayerSessionCount", "MaximumPlayerSessionCount"]
+        // },
+        // { service: "Gamelift",
+        //   api: "describeGameSessions",
+        //   title: "Gamelift Game Sessions",
+        //   id: "gamelift-game-sessions",
+        //   jmespath: "GameSessions",
+        //   headings: ["GameSessionId", "Name", "FleetId", "CreationTime", "CurrentPlayerSessionCount", "Status"]
+        // },
+        // { service: "Gamelift",
+        //   api: "describeMatchmakingConfigurations",
+        //   title: "Gamelift Matchmaking Configurations",
+        //   id: "gamelift-matchmaking-configurations",
+        //   jmespath: "Configurations",
+        //   headings: ["Name", "Description", "RuleSetName", "CreationTime"]
+        // },
+        // { service: "Gamelift",
+        //   api: "describeMatchmakingRuleSets",
+        //   title: "Gamelift Matchmaking Rule Sets",
+        //   id: "gamelift-matchmaking-rule-sets",
+        //   jmespath: "map(&{Name:@}, Names)",
+        //   headings: ["Name"]
+        // },
+        // { service: "Gamelift",
+        //   api: "describeVpcPeeringAuthorizations",
+        //   title: "Gamelift VPC Peering Authorizations",
+        //   id: "gamelift-vpc-peering-authorizations",
+        //   jmespath: "VpcPeeringAuthorizations",
+        //   headings: ["GameLiftAwsAccountId", "PeerVpcAwsAccountId", "PeerVpcId", "CreationTime", "ExpirationTime"]
+        // },
+        // { service: "Gamelift",
+        //   api: "describeVpcPeeringConnections",
+        //   title: "Gamelift VPC Peering Connections",
+        //   id: "gamelift-vpc-peering-connections",
+        //   jmespath: "VpcPeeringConnections",
+        //   headings: ["FleetId", "IpV4CidrBlock", "VpcPeeringConnectionId", "Status.Code", "Status.Message", "PeerVpcId", "GameLiftVpcId"]
+        // },
+        // { service: "Gamelift",
+        //   api: "listAliases",
+        //   title: "Gamelift Aliases",
+        //   id: "gamelift-aliases",
+        //   jmespath: "Aliases",
+        //   headings: ["AliasId", "Name", "Description", "RoutingStrategy.Type", "RoutingStrategy.FleetId", "CreationTime"]
+        // },
+        // { service: "Gamelift",
+        //   api: "listBuilds",
+        //   title: "Gamelift Builds",
+        //   id: "gamelift-builds",
+        //   jmespath: "Builds",
+        //   headings: ["BuildId", "Name", "Version", "Status", "SizeOnDisk", "OperatingSystem", "CreationTime"]
+        // },
+        // { service: "Gamelift",
+        //   api: "listFleets",
+        //   title: "Gamelift Fleets",
+        //   id: "gamelift-fleets",
+        //   jmespath: "map(&{Fleet:@}, FleetIds)",
+        //   headings: ["Fleet"]
+        // },
+        // { service: "Glacier", // Glacier is not part of default AWS-SDK.js
+        //   api: "listVaults",
+        //   title: "Glacier Vaults",
+        //   id: "glacier-vaults",
+        //   jmespath: "VaultList",
+        //   headings: ["VaultARN", "VaultName", "CreationDate", "NumberOfArchives", "SizeInBytes"]
+        // },
+        { service: "Inspector",
+          skip_regions: ["ap-southeast-1", "ca-central-1", "eu-west-2", "eu-west-3", "sa-east-1"],
+          api: "listRulesPackages",
+          title: "Inspector Rules Packages",
+          id: "inspector-rules-packages",
+          jmespath: "map(&{Arn:@}, rulesPackageArns)",
+          headings: ["Arn"]
+        },
+        { service: "Inspector",
+          skip_regions: ["ap-southeast-1", "ca-central-1", "eu-west-2", "eu-west-3", "sa-east-1"],
+          api: "listAssessmentTargets",
+          params: { maxResults: 500 },
+          title: "Inspector Assessment Targets",
+          id: "inspector-assessment-targets",
+          jmespath: "map(&{Arn:@}, assessmentTargetArns)",
+          headings: ["Arn"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listAuthorizers",
+          title: "IoT Authorizers",
+          id: "iot-authorizers",
+          jmespath: "authorizers",
+          headings: ["authorizerName", "authorizerArn"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listCACertificates",
+          title: "IoT CA Certificates",
+          id: "iot-ca-certificates",
+          jmespath: "certificates",
+          headings: ["certificateArn", "certificateId", "status", "creationDate"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listCertificates",
+          title: "IoT Certificates",
+          id: "iot-certificates",
+          jmespath: "certificates",
+          headings: ["certificateArn", "certificateId", "status", "creationDate"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listIndices",
+          title: "IoT Indices",
+          id: "iot-indices",
+          jmespath: "map(&{Name:@}, indexNames)",
+          headings: ["Name"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listJobs",
+          title: "IoT Jobs",
+          id: "iot-jobs",
+          jmespath: "jobs",
+          headings: ["jobArn", "jobId", "thingGroupId", "targetSelection", "status", "createdAt", "lastUpdateAt", "completedAt"]
+        },
+        // { service: "Iot", // CORS not enabled
+        //   skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+        //   api: "listOTAUpdates",
+        //   title: "IoT OTA Updates",
+        //   id: "iot-ota-updates",
+        //   jmespath: "otaUpdates",
+        //   headings: ["otaUpdateId", "otaUpdateArn", "creationDate"]
+        // },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listOutgoingCertificates",
+          title: "IoT Outgoing Certificates",
+          id: "iot-outgoing-certificates",
+          jmespath: "outgoingCertificates",
+          headings: ["certificateArn", "certificateId", "transferredTo", "transferDate", "transferMessage", "creationDate"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listPolicies",
+          title: "IoT Policies",
+          id: "iot-policies",
+          jmespath: "policies",
+          headings: ["policyName", "policyArn"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listRoleAliases",
+          title: "IoT Role Aliases",
+          id: "iot-role-aliases",
+          jmespath: "map(&{Alias:@}, roleAliases)",
+          headings: ["Alias"]
+        },
+        // { service: "Iot", // CORS not enabled
+        //   skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+        //   api: "listStreams",
+        //   title: "IoT Streams",
+        //   id: "iot-streams",
+        //   jmespath: "streams",
+        //   headings: ["streamId", "streamArn", "streamVersion", "description"]
+        // },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listThingGroups",
+          title: "IoT Thing Groups",
+          id: "iot-thing-groups",
+          jmespath: "thingGroups",
+          headings: ["groupName", "groupArn"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listThingRegistrationTasks",
+          title: "IoT Thing Registration Tasks",
+          id: "iot-thing-registration-tasks",
+          jmespath: "map(&{TaskId:@}, taskIds)",
+          headings: ["TaskId"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listThings",
+          title: "IoT Things",
+          id: "iot-things",
+          jmespath: "things",
+          headings: ["thingName", "thingTypeName", "thingArn"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listThingTypes",
+          title: "IoT Thing Types",
+          id: "iot-thing-types",
+          jmespath: "thingTypes",
+          headings: ["thingTypeName", "thingTypeArn", "thingTypeProperties.thingTypeDescription"]
+        },
+        { service: "Iot",
+          skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+          api: "listTopicRules",
+          title: "IoT Topic Rules",
+          id: "iot-topic-rules",
+          jmespath: "rules",
+          headings: ["ruleArn", "ruleName", "topicPattern", "createdAt", "ruleDisabled"]
+        },
+        // { service: "Iot", // CORS not enabled
+        //   skip_regions: ["ap-south-1", "ca-central-1", "eu-west-3", "sa-east-1", "us-west-1"],
+        //   api: "listV2LoggingLevels",
+        //   title: "IoT V2 Logging Levels",
+        //   id: "iot-v2-logging-levels",
+        //   jmespath: "logTargetConfigurations",
+        //   headings: ["logTarget.targetType", "logTarget.targetName", "logLevel"]
+        // },
+        { service: "Kinesis",
+          api: "describeLimits",
+          title: "Kinesis Account Limits",
+          id: "kinesis-limits",
+          jmespath: "[@]",
+          headings: ["ShardLimit", "OpenShardCount"]
+        },
+        // { service: "Kinesis", // not included by default in AWS-SDK.js
+        //   api: "listShards",
+        //   title: "Kinesis Shards",
+        //   id: "kinesis-shards",
+        //   jmespath: "Shards",
+        //   headings: ["ShardId", "ParentShardId", "AdjacentParentShardId"]
+        // },
+        { service: "Kinesis",
+          api: "listStreams",
+          title: "Kinesis Streams",
+          id: "kinesis-streams",
+          jmespath: "map(&{Name:@}, StreamNames)",
+          headings: ["Name"]
+        },
+        // { service: "KinesisAnalytics", // not included by default in AWS-SDK.js
+        //   api: "listApplications",
+        //   title: "Kinesis Analytics Applications",
+        //   id: "kinesis-analytics-applications",
+        //   jmespath: "ApplicationSummaries",
+        //   headings: ["ApplicationName", "ApplicationARN", "ApplicationStatus"]
+        // },
+        { service: "KMS",
+          api: "listAliases",
+          title: "KMS Aliases",
+          id: "kms-aliases",
+          jmespath: "Aliases",
+          headings: ["AliasArn", "AliasName", "TargetKeyId"]
+        },
+        { service: "KMS",
+          api: "listKeys",
+          title: "KMS CMK Keys",
+          id: "kms-cmk-keys",
+          jmespath: "Keys",
+          headings: ["KeyId", "KeyArn"]
+        },
+        { service: "Lambda",
+          api: "getAccountSettings",
+          title: "Lambda Account Limits",
+          id: "lambda-account-limits",
+          jmespath: "[AccountLimit]",
+          headings: ["TotalCodeSize", "CodeSizeUnzipped", "CodeSizeZipped", "ConcurrentExecutions", "UnreservedConcurrentExecutions"]
+        },
+        { service: "Lambda",
+          api: "getAccountSettings",
+          title: "Lambda Account Usage",
+          id: "lambda-account-usage",
+          jmespath: "[AccountUsage]",
+          headings: ["TotalCodeSize", "FunctionCount"]
+        },
+        { service: "Lambda",
+          api: "listEventSourceMappings",
+          title: "Lambda EventSource Mappings",
+          id: "lambda-event-source-mappings",
+          jmespath: "EventSourceMappings",
+          headings: ["UUID", "BatchSize", "EventSourceArn", "FunctionArn", "LastModified", "LastProcessingResult", "State", "StateTransitionReason"]
+        },
+        { service: "Lambda",
+          api: "listFunctions",
+          title: "Lambda Functions",
+          id: "lambda-functions",
+          jmespath: "Functions",
+          headings: ["FunctionName", "FunctionArn", "Runtime", "Role", "Handler", "CodeSize", "Description", "Timeout", "MemorySize", "LastModified", "Version"]
+        },
+        { service: "MachineLearning",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ap-southeast-1", "ap-southeast-2", "ca-central-1", "eu-central-1", "eu-west-2", "eu-west-3", "sa-east-1", "us-east-2", "us-west-1", "us-west-2"],
+          api: "describeBatchPredictions",
+          title: "Machine Learning Batch Predictions",
+          id: "ml-batch-predictions",
+          jmespath: "Results",
+          headings: ["BatchPredictionId", "MLModelId", "BatchPredictionDataSourceId", "InputDataLocationS3", "CreatedByIamUser", "CreatedAt", "Name", "Status", "Message"]
+        },
+        { service: "MachineLearning",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ap-southeast-1", "ap-southeast-2", "ca-central-1", "eu-central-1", "eu-west-2", "eu-west-3", "sa-east-1", "us-east-2", "us-west-1", "us-west-2"],
+          api: "describeEvaluations",
+          title: "Machine Learning Evaluations",
+          id: "ml-evaluations",
+          jmespath: "Results",
+          headings: ["EvaluationId", "MLModelId", "EvaluationDataSourceId", "CreatedAt", "Name"]
+        },
+        { service: "MachineLearning",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ap-southeast-1", "ap-southeast-2", "ca-central-1", "eu-central-1", "eu-west-2", "eu-west-3", "sa-east-1", "us-east-2", "us-west-1", "us-west-2"],
+          api: "describeDataSources",
+          title: "Machine Learning Data Sources",
+          id: "ml-data-sources",
+          jmespath: "Results",
+          headings: ["DataSourceId", "DataLocationS3", "CreatedByIamUser", "CreatedAt", "DataSizeInBytes", "Name", "Status"]
+        },
+        { service: "MachineLearning",
+          skip_regions: ["ap-northeast-1", "ap-northeast-2", "ap-south-1", "ap-southeast-1", "ap-southeast-2", "ca-central-1", "eu-central-1", "eu-west-2", "eu-west-3", "sa-east-1", "us-east-2", "us-west-1", "us-west-2"],
+          api: "describeMLModels",
+          title: "Machine Learning Models",
+          id: "ml-models",
+          jmespath: "Results",
+          headings: ["MLModelId", "TrainingDataSourceId", "CreatedByIamUser", "CreatedAt", "Name", "Status", "SizeInBytes", "MLModelType", "Message"]
+        },
+        // { service: "MTurk", // requires AWS account to be signed for MTurk
+        //   region: "us-east-1",
+        //   api: "getAccountBalance",
+        //   title: "Mechanical Turk Account Balance",
+        //   id: "mturk-account-balance",
+        //   jmespath: "[@]",
+        //   headings: ["AvailableBalance", "OnHoldBalance"]
+        // },
+        { service: "OpsWorks",
+          api: "describeStacks",
+          title: "OpsWorks Stacks",
+          id: "opsworks-stacks",
+          jmespath: "Stacks",
+          headings: ["StackId", "Name", "Arn", "Region", "VpcId", "CreatedAt"]
+        },
+        { service: "Polly",
+          api: "listLexicons",
+          title: "Polly Lexicons",
+          id: "polly-lexicons",
+          jmespath: "Lexicons",
+          headings: ["Name", "Attributes.Size", "Attributes.LanguageCode"]
+        },
+        { service: "RDS",
+          api: "describeAccountAttributes",
+          title: "RDS Account Attributes",
+          id: "rds-account-attributes",
+          jmespath: "AccountQuotas",
+          headings: ["AccountQuotaName", "Used", "Max"]
+        },
+        { service: "RDS",
+          api: "describeCertificates",
+          title: "RDS Certificates",
+          id: "rds-certificates",
+          jmespath: "Certificates",
+          headings: ["CertificateIdentifier", "CertificateType", "Thumbprint", "ValidFrom", "ValidTill", "CertificateArn"]
+        },
+        { service: "RDS",
+          api: "describeDBClusterParameterGroups",
+          title: "RDS DB Cluster Parameter Groups",
+          id: "rds-cluster-parameter-groups",
+          jmespath: "DBClusterParameterGroups",
+          headings: ["DBClusterParameterGroupName", "DBParameterGroupFamily", "Description"]
+        },
+        { service: "RDS",
+          api: "describeDBClusters",
+          title: "RDS DB Clusters",
+          id: "rds-clusters",
+          jmespath: "DBClusters",
+          headings: ["AllocatedStorage", "AvailabilityZones", "BackupRetentionPeriod", "DatabaseName", "DBClusterIdentifier", "DBClusterParameterGroup", "Status", "MultiAZ", "Engine", "EngineVersion", "ClusterCreateTime"]
+        },
+        // { service: "RDS", // lists ALL supported RDS versions
+        //   api: "describeDBEngineVersions",
+        //   title: "RDS DB Engine Versions",
+        //   id: "rds-engine-versions",
+        //   jmespath: "DBEngineVersions",
+        //   headings: ["Engine", "EngineVersion", "DBEngineDescription"]
+        // },
+        { service: "RDS",
+          api: "describeDBInstances",
+          title: "RDS DB Instances",
+          id: "rds-db-instances",
+          jmespath: "DBInstances",
+          headings: ["DBInstanceIdentifier", "DBInstanceClass", "Engine", "EngineVersion", "DBInstanceStatus", "MasterUsername", "DBName", "AvailabilityZone", "MultiAZ", "LicenseModel", "StorageType"]
+        },
+        { service: "RDS",
+          api: "describeDBParameterGroups",
+          title: "RDS DB Parameter Groups",
+          id: "rds-db-parameter-groups",
+          jmespath: "DBParameterGroups",
+          headings: ["DBParameterGroupName", "DBParameterGroupFamily", "Description", "DBParameterGroupArn"]
+        },
+        { service: "RDS",
+          api: "describeDBSecurityGroups",
+          title: "RDS DB Security Groups",
+          id: "rds-db-security-groups",
+          jmespath: "DBSecurityGroups",
+          headings: ["OwnerId", "DBSecurityGroupName", "DBSecurityGroupDescription", "VpcId"]
+        },
+        { service: "RDS",
+          api: "describeDBSnapshots",
+          title: "RDS DB Snapshots",
+          id: "rds-db-snapshots",
+          jmespath: "DBSnapshots",
+          headings: ["DBSnapshotIdentifier", "DBInstanceIdentifier", "SnapshotCreateTime", "Engine", "AllocatedStorage", "Status", "AvailabilityZone", "VpcId", "EngineVersion"]
+        },
+        { service: "RDS",
+          api: "describeDBSubnetGroups",
+          title: "RDS DB Subnet Groups",
+          id: "rds-db-subnet-groups",
+          jmespath: "DBSubnetGroups",
+          headings: ["DBSubnetGroupName", "DBSubnetGroupDescription", "VpcId", "SubnetGroupStatus", "DBSubnetGroupArn"]
+        },
+        { service: "RDS",
+          api: "describeEventCategories",
+          title: "RDS DB Event Categories",
+          id: "rds-db-event-categories",
+          jmespath: "EventCategoriesMapList",
+          headings: ["SourceType", "EventCategories[]"]
+        },
+        { service: "RDS",
+          api: "describeEventSubscriptions",
+          title: "RDS DB Event Subscriptions",
+          id: "rds-db-event-subscriptions",
+          jmespath: "EventSubscriptionsList",
+          headings: ["CustomerAwsId", "CustSubscriptionId", "SnsTopicArn", "Status", "SubscriptionCreationTime", "SourceType", "Enabled"]
+        },
+        { service: "RDS",
+          api: "describeOptionGroups",
+          title: "RDS DB Option Groups",
+          id: "rds-db-option-groups",
+          jmespath: "OptionGroupsList",
+          headings: ["OptionGroupName", "OptionGroupDescription", "EngineName", "MajorEngineVersion", "VpcId"]
+        },
+        { service: "RDS",
+          api: "describeReservedDBInstances",
+          title: "RDS DB Reserved Instances",
+          id: "rds-db-reserved-instances",
+          jmespath: "ReservedDBInstances",
+          headings: ["ReservedDBInstanceId", "ReservedDBInstancesOfferingId", "DBInstanceClass", "StartTime", "Duration", "DBInstanceCount", "OfferingType", "MultiAZ", "State"]
+        },
+        { service: "RDS",
+          api: "describeSourceRegions",
+          title: "RDS DB Source Regions",
+          id: "rds-db-source-regions",
+          jmespath: "SourceRegions",
+          headings: ["RegionName", "Status", "Endpoint"]
+        },
+        { service: "Redshift",
+          api: "describeClusterParameterGroups",
+          title: "Redshift Cluster Parameter Groups",
+          id: "redshift-cluster-parameter-groups",
+          jmespath: "ParameterGroups",
+          headings: ["ParameterGroupName", "ParameterGroupFamily", "Description", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeClusters",
+          title: "Redshift Clusters",
+          id: "redshift-clusters",
+          jmespath: "Clusters",
+          headings: ["ClusterIdentifier", "NodeType", "ClusterStatus", "ModifyStatus", "MasterUsername", "DBName", "ClusterCreateTime", "VpcId", "ClusterVersion", "NumberOfNodes", "PubliclyAccessible"]
+        },
+        { service: "Redshift",
+          api: "describeClusterSecurityGroups",
+          title: "Redshift Cluster Security Groups",
+          id: "redshift-cluster-security-groups",
+          jmespath: "ClusterSecurityGroups",
+          headings: ["ClusterSecurityGroupName", "Description", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeClusterSnapshots",
+          title: "Redshift Cluster Snapshots",
+          id: "redshift-cluster-snapshots",
+          jmespath: "Snapshots",
+          headings: ["SnapshotIdentifier", "ClusterIdentifier", "SnapshotCreateTime", "Status", "AvailabilityZone", "ClusterCreateTime", "SnapshotType", "NodeType", "NumberOfNodes", "DBName", "VpcId", "OwnerAccount", "SourceRegion", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeClusterSubnetGroups",
+          title: "Redshift Cluster Subnet Groups",
+          id: "redshift-cluster-subnet-groups",
+          jmespath: "ClusterSubnetGroups",
+          headings: ["ClusterSubnetGroupName", "Description", "VpcId", "SubnetGroupStatus", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeClusterVersions",
+          title: "Redshift Cluster Versions",
+          id: "redshift-cluster-versions",
+          jmespath: "ClusterVersions",
+          headings: ["ClusterVersion", "ClusterParameterGroupFamily", "Description"]
+        },
+        { service: "Redshift",
+          api: "describeEventCategories",
+          title: "Redshift Event Categories",
+          id: "redshift-event-categories",
+          jmespath: "EventCategoriesMapList.Events",
+          headings: ["SourceType", "Events[].EventId", "Events[].EventDescription", "Events[].Severity"]
+        },
+        { service: "Redshift",
+          api: "describeEventSubscriptions",
+          title: "Redshift Event Subscriptions",
+          id: "redshift-event-subscriptions",
+          jmespath: "EventSubscriptionsList",
+          headings: ["CustomerAwsId", "CustSubscriptionId", "SnsTopicArn", "Status", "SubscriptionCreationTime", "SourceType", "Severity", "Enabled", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeHsmClientCertificates",
+          title: "Redshift HSM Client Certificates",
+          id: "redshift-hsm-client-certificates",
+          jmespath: "HsmClientCertificates",
+          headings: ["HsmClientCertificateIdentifier", "HsmClientCertificatePublicKey", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeHsmConfigurations",
+          title: "Redshift HSM Configurations",
+          id: "redshift-hsm-configurations",
+          jmespath: "HsmConfigurations",
+          headings: ["HsmConfigurationIdentifier", "Description", "HsmIpAddress", "HsmPartitionName", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeReservedNodes",
+          title: "Redshift Reserved Nodes",
+          id: "redshift-reserved-nodes",
+          jmespath: "ReservedNodes",
+          headings: ["ReservedNodeId", "ReservedNodeOfferingId", "NodeType", "StartTime", "Duration", "NodeCount", "State", "OfferingType"]
+        },
+        { service: "Redshift",
+          api: "describeSnapshotCopyGrants",
+          title: "Redshift Snapshot Copy Grants",
+          id: "redshift-snapshot-copy-grants",
+          jmespath: "SnapshotCopyGrants",
+          headings: ["SnapshotCopyGrantName", "KmsKeyId", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Redshift",
+          api: "describeTags",
+          title: "Redshift Tags",
+          id: "redshift-tags",
+          jmespath: "TaggedResources",
+          headings: ["ResourceName", "ResourceType", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Rekognition",
+          api: "listCollections",
+          title: "Rekognition",
+          id: "rekognition",
+          jmespath: "",
+          headings: ["ResourceName", "ResourceType", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "Route53",
+          region: "global",
+          api: "listHealthChecks",
+          title: "Route53 Health Checks",
+          id: "route53-health-checks",
+          jmespath: "HealthChecks",
+          headings: ["Id", "CallerReference", "LinkedService.ServicePrincipal", "LinkedService.Description", "HealthCheckConfig.Type", "HealthCheckConfig.IPAddress", "HealthCheckConfig.Port", "HealthCheckConfig.ResourcePath", "HealthCheckConfig.FullyQualifiedDomainName", "HealthCheckConfig.SearchString", "HealthCheckConfig.RequestInterval", "HealthCheckConfig.Inverted", "HealthCheckConfig.Regions[]", "HealthCheckVersion"]
+        },
+        { service: "Route53",
+          region: "global",
+          api: "listHostedZones",
+          title: "Route53 Zones",
+          id: "route53-zones",
+          jmespath: "HostedZones",
+          headings: ["Id", "Name", "ResourceRecordSetCount", "Config.PrivateZone", "LinkedService.ServicePrincipal", "LinkedService.Description"]
+        },
+        { service: "Route53",
+          region: "global",
+          api: "listQueryLoggingConfigs",
+          title: "Route53 Query Logging Configs",
+          id: "route53-query-logging-configs",
+          jmespath: "QueryLoggingConfigs",
+          headings: ["Id", "HostedZoneId", "CloudWatchLogsLogGroupArn"]
+        },
+        { service: "Route53",
+          region: "global",
+          api: "listReusableDelegationSets",
+          title: "Route53 Reusable Delegation Sets",
+          id: "route53-reusable-delegation-sets",
+          jmespath: "DelegationSets",
+          headings: ["Id", "CallerReference", "NameServers[]"]
+        },
+        { service: "Route53",
+          region: "global",
+          api: "listTrafficPolicies",
+          title: "Route53 Traffic Policies",
+          id: "route53-traffic-policies",
+          jmespath: "TrafficPolicySummaries",
+          headings: ["Id", "Name", "Type", "LatestVersion", "TrafficPolicyCount"]
+        },
+        { service: "Route53",
+          region: "global",
+          api: "listTrafficPolicyInstances",
+          title: "Route53 Traffic Policy Instances",
+          id: "route53-traffic-policy-instances",
+          jmespath: "TrafficPolicyInstances",
+          headings: ["Id", "HostedZoneId", "Name", "TTL", "State", "Message", "TrafficPolicyId", "TrafficPolicyVersion", "TrafficPolicyType"]
+        },
+        { service: "Route53Domains",
+          region: "us-east-1",
+          api: "listDomains",
+          title: "Route53 Domains",
+          id: "route53domains-domains",
+          jmespath: "Domains",
+          headings: ["DomainName", "AutoRenew", "TransferLock", "Expiry"]
+        },
+        { service: "Route53Domains",
+          region: "us-east-1",
+          api: "listOperations",
+          title: "Route53 Domains Operations",
+          id: "route53domains-operations",
+          jmespath: "Operations",
+          headings: ["OperationId", "Status", "Type", "SubmittedDate"]
+        },
+        // { service: "S3", // blocked on https://github.com/aws/aws-sdk-js/issues/1939
+        //   api: "listBuckets",
+        //   title: "S3 Buckets",
+        //   id: "s3-buckets",
+        //   jmespath: "Buckets",
+        //   headings: ["Name", "CreationDate"]
+        // },
+        { service: "ServiceCatalog",
+          api: "listAcceptedPortfolioShares",
+          title: "Service Catalog Accepted Portfolio Shares",
+          id: "servicecatalog-accepted-portfolio-shares",
+          jmespath: "PortfolioDetails",
+          headings: ["Id", "DisplayName", "Description", "CreatedTime", "ProviderName"]
+        },
+        { service: "ServiceCatalog",
+          api: "listPortfolios",
+          title: "Service Catalog Portfolios",
+          id: "servicecatalog-portfolios",
+          jmespath: "PortfolioDetails",
+          headings: ["Id", "DisplayName", "Description", "CreatedTime", "ProviderName"]
+        },
+        // { service: "ServiceCatalog", // only works on accounts that have product plans provisioned
+        //   api: "listProvisionedProductPlans",
+        //   title: "Service Catalog Provisioned Product Plans",
+        //   id: "servicecatalog-provisioned-product-plans",
+        //   jmespath: "ProvisionedProductPlans",
+        //   headings: ["PlanName", "PlanId", "ProvisionProductId", "ProvisionProductName", "PlanType", "ProvisioningArtifactId"]
+        // },
+        { service: "ServiceCatalog",
+          api: "listRecordHistory",
+          title: "Service Catalog Record History",
+          id: "servicecatalog-record-history",
+          jmespath: "RecordDetails",
+          headings: ["RecordId", "ProvisionedProductName", "Status", "CreatedTime", "UpdatedTime", "ProvisionedProductType", "RecordType", "ProvisionedProductId", "ProductId", "ProvisioningArtifactId", "PathId"]
+        },
+        // { service: "ServiceCatalog", // only works on accounts that finished TagOptions migration
+        //   api: "listTagOptions",
+        //   title: "Service Catalog Tag Options",
+        //   id: "servicecatalog-tag-options",
+        //   jmespath: "TagOptionDetails",
+        //   headings: ["Key", "Value", "Active", "Id"]
+        // },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "describeActiveReceiptRuleSet",
+          title: "Simple Email Service (SES) Active Receipt Rule Set",
+          id: "ses-active-receipt-ruleset",
+          jmespath: "Rules",
+          headings: ["Name", "Enabled", "TlsPolicy", "Recipients[]", "ScanEnabled"]
+        },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "listConfigurationSets",
+          title: "Simple Email Service (SES) Configuration Sets",
+          id: "ses-configuration-sets",
+          jmespath: "ConfigurationSets",
+          headings: ["Name"]
+        },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "listCustomVerificationEmailTemplates",
+          params: { MaxResults: 50 },
+          title: "Simple Email Service (SES) Custom Vertification Email Templates",
+          id: "ses-custom-verification-email-templates",
+          jmespath: "CustomVerificationEmailTemplates",
+          headings: ["TemplateName", "FromEmailAddress", "TemplateSubject", "SuccessRedirectionURL", "FailureRedirectionURL"]
+        },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "listIdentities",
+          title: "Simple Email Service (SES) Identities",
+          id: "ses-identities",
+          jmespath: "map(&{Identity:@}, Identities)",
+          headings: ["Identity"]
+        },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "listReceiptFilters",
+          title: "Simple Email Service (SES) Receipt Filters",
+          id: "ses-receipt-filters",
+          jmespath: "Filters",
+          headings: ["Name", "IpFilter.Policy", "IpFilter.Cidr"]
+        },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "listReceiptRuleSets",
+          title: "Simple Email Service (SES) Receipt Rule Sets",
+          id: "ses-receipt-rule-sets",
+          jmespath: "RuleSets",
+          headings: ["Name", "CreatedTimestamp"]
+        },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "listTemplates",
+          title: "Simple Email Service (SES) Templates",
+          id: "ses-templates",
+          jmespath: "TemplatesMetadata",
+          headings: ["Name", "CreatedTimestamp"]
+        },
+        { service: "SES",
+          skip_regions: ['eu-west-2', 'eu-west-3', 'ap-southeast-2', 'us-west-1', 'ap-south-1', 'ap-southeast-1', 'us-east-2', 'eu-central-1', 'ap-northeast-1', 'ca-central-1', 'ap-northeast-2', 'sa-east-1' ],
+          api: "listVerifiedEmailAddresses",
+          title: "Simple Email Service (SES) Verified Email Addresses",
+          id: "ses-verified-email-addresses",
+          jmespath: "map(&{Address: @}, VerifiedEmailAddresses)",
+          headings: ["Address"]
+        },
+        { service: "SNS",
+          api: "listPhoneNumbersOptedOut",
+          title: "Simple Notification Service (SNS) Phone Numbers Opted Out",
+          id: "sns-phone-number-opted-out",
+          jmespath: "map(&{Number: @}, phoneNumbers)",
+          headings: ["Number"]
+        },
+        { service: "SNS",
+          api: "listSubscriptions",
+          title: "Simple Notification Service (SNS) Subscriptions (for current credentials ARN)",
+          id: "sns-subscriptions",
+          jmespath: "Subscriptions",
+          headings: ["SubscriptionArn", "Owner", "Protocol", "Endpoint", "TopicArn"]
+        },
+        { service: "SNS",
+          api: "listTopics",
+          title: "Simple Notification Service (SNS) Topics",
+          id: "sns-topics",
+          jmespath: "Topics",
+          headings: ["TopicArn"]
+        },
+        { service: "SQS",
+          api: "listQueues",
+          title: "Simple Queue Service (SQS) Queues",
+          id: "sqs-queues",
+          jmespath: "map(&{URL:@}, QueueUrls)",
+          headings: ["URL"]
+        },
+        { service: "SSM",
+          api: "describeActivations",
+          title: "Systems Manager Activations",
+          id: "ssm-activations",
+          jmespath: "ActivationList",
+          headings: ["ActivationId", "Description", "DefaultInstanceName", "IamRole", "RegistrationLimit", "RegistrationsCount", "ExpirationDate", "Expired", "CreatedDate"]
+        },
+        { service: "SSM",
+          api: "describeAutomationExecutions",
+          title: "Systems Manager Automation Executions",
+          id: "ssm-automation-executions",
+          jmespath: "AutomationExecutionMetadataList",
+          headings: ["AutomationExecutionId", "DocumentName", "DocumentVersion", "AutomationExecutionStatus", "ExecutionStartTime", "ExecutionEndTime", "ExecutedBy", "LogFile", "Mode", "FailureMessage", "Target"]
+        },
+        { service: "SSM",
+          api: "describeAvailablePatches",
+          title: "Systems Manager Available Patches",
+          id: "ssm-available-patches",
+          jmespath: "Filters",
+          headings: ["Key", "Values"]
+        },
+        { service: "SSM",
+          api: "describeAvailablePatches",
+          title: "Systems Manager Available Patches",
+          id: "ssm-available-patches",
+          jmespath: "Filters",
+          headings: ["Key", "Values"]
+        },
+        { service: "SSM",
+          api: "describeMaintenanceWindows",
+          title: "Systems Manager Maintenance Windows",
+          id: "ssm-maintenance-windows",
+          jmespath: "WindowIdentities",
+          headings: ["WindowId", "Name", "Description", "Enabled", "Duration", "Cutoff"]
+        },
+        { service: "SSM",
+          api: "describeParameters",
+          title: "Systems Manager Parameters",
+          id: "ssm-parameters",
+          jmespath: "Parameters",
+          headings: ["Name", "Type", "KeyId", "LastModifiedDate", "LastModifiedUser", "Description", "AllowedPattern", "Version"]
+        },
+        { service: "SSM",
+          api: "describePatchBaselines",
+          title: "Systems Manager Patch Baselines",
+          id: "ssm-patch-baselines",
+          jmespath: "BaselineIdentities",
+          headings: ["BaselineId", "BaselineName", "OperatingSystem", "BaselineDescription", "DefaultBaseline"]
+        },
+        { service: "SSM",
+          api: "describePatchGroups",
+          title: "Systems Manager Patch Groups",
+          id: "ssm-patch-groups",
+          jmespath: "Mappings",
+          headings: ["PatchGroup", "BaselineIdentity.BaselineName", "BaselineIdentity.BaselineId", "BaselineIdentity.OperatingSystem", "BaselineIdentity.BaselineDescription", "BaselineIdentity.DefaultBaseline"]
+        },
+        { service: "SSM",
+          api: "listAssociations",
+          title: "Systems Manager Associations",
+          id: "ssm-associations",
+          jmespath: "Associations",
+          headings: ["Name", "InstanceId", "AssociationId", "AssociationVersion", "DocumentVersion", "LastExecutionDate", "Overview.Status", "Overview.DetailedStatus", "AssociationName"]
+        },
+        { service: "SSM",
+          api: "listCommandInvocations",
+          title: "Systems Manager Command Invocations",
+          id: "ssm-command-invocations",
+          jmespath: "CommandInvocations",
+          headings: ["CommandId", "InstanceId", "InstanceName", "Comment", "DocumentName", "RequestedDateTime", "Status", "StatusDetails", "TraceOutput", "StandardOutputUrl", "StandardErrorUrl", "ServiceRole"]
+        },
+        { service: "SSM",
+          api: "listCommands",
+          title: "Systems Manager Commands",
+          id: "ssm-commands",
+          jmespath: "Commands",
+          headings: ["CommandId", "DocumentName", "Comment", "ExpiresAfter", "RequestedDateTime", "Status", "StatusDetails", "MaxConcurrency", "MaxErrors", "TargetCount", "CompletedCount", "ErrorCount", "ServiceRole"]
+        },
+        { service: "SSM",
+          api: "listDocuments",
+          title: "Systems Manager Documents",
+          id: "ssm-documents",
+          jmespath: "DocumentIdentifiers",
+          headings: ["Name", "Owner", "PlatformTypes[]", "DocumentVersion", "DocumentType", "SchemaVersion", "DocumentFormat", "TargetType", {"Tag:Name": 'Tags[?Key=="Name"].Value[]'}]
+        },
+        { service: "SSM",
+          api: "listResourceDataSync",
+          title: "Systems Manager Resource Data Sync",
+          id: "ssm-resource-data-sync",
+          jmespath: "ResourceDataSyncItems",
+          headings: ["SyncName", "LastSyncTime", "LastSuccessfulSyncTime", "LastStatus", "SyncCreatedTime"]
+        },
+        { service: "StorageGateway",
+          api: "listFileShares",
+          title: "Storage Gateway File Shares",
+          id: "storagegateway-file-shares",
+          jmespath: "FileShareInfoList",
+          headings: ["FileShareARN", "FileShareId", "FileShareStatus", "GatewayARN"]
+        },
+        { service: "StorageGateway",
+          api: "listGateways",
+          title: "Storage Gateway Gateways",
+          id: "storagegateway-gateways",
+          jmespath: "Gateways",
+          headings: ["GatewayId", "GatewayType", "GatewayOperationalState", "GatewayName"]
+        },
+        { service: "StorageGateway",
+          api: "listTapes",
+          title: "Storage Gateway Tapes",
+          id: "storagegateway-tapes",
+          jmespath: "TapeInfos",
+          headings: ["TapeARN", "TapeBarcode", "TapeSizeInBytes", "TapeStatus", "GatewayARN"]
+        },
+        { service: "WAF",
+          api: "listByteMatchSets",
+          title: "WAF Byte Match Sets",
+          id: "waf-byte-match-sets",
+          jmespath: "ByteMatchSets",
+          headings: ["ByteMatchSetId", "Name"]
+        },
+        { service: "WAF",
+          api: "listGeoMatchSets",
+          title: "WAF Geo Match Sets",
+          id: "waf-get-match-sets",
+          jmespath: "GeoMatchSets",
+          headings: ["GeoMatchSetId", "Name"]
+        },
+        { service: "WAF",
+          api: "listIPSets",
+          title: "WAF IP Sets",
+          id: "waf-ip-sets",
+          jmespath: "IPSets",
+          headings: ["IPSetId", "Name"]
+        },
+        { service: "WAF",
+          api: "listRateBasedRules",
+          title: "WAF Rate Based Rules",
+          id: "waf-rate-based-rules",
+          jmespath: "Rules",
+          headings: ["RuleId", "Name"]
+        },
+        { service: "WAF",
+          api: "listRegexMatchSets",
+          title: "WAF Regex Match Sets",
+          id: "waf-regex-match-sets",
+          jmespath: "RegexMatchSets",
+          headings: ["RegexMatchSetId", "Name"]
+        },
+        { service: "WAF",
+          api: "listRegexPatternSets",
+          title: "WAF Regex Pattern Sets",
+          id: "waf-regex-pattern-sets",
+          jmespath: "RegexPatternSets",
+          headings: ["RegexPatternSetId", "Name"]
+        },
+        { service: "WAF",
+          api: "listRuleGroups",
+          title: "WAF Rule Groups",
+          id: "waf-rule-groups",
+          jmespath: "RuleGroups",
+          headings: ["RuleGroupId", "Name"]
+        },
+        { service: "WAF",
+          api: "listRules",
+          title: "WAF Rules",
+          id: "waf-rules",
+          jmespath: "Rules",
+          headings: ["RuleId", "Name"]
+        },
+        { service: "WAF",
+          api: "listSizeConstraintSets",
+          title: "WAF Size Constraint Sets",
+          id: "waf-size-constraint-sets",
+          jmespath: "SizeConstraintSets",
+          headings: ["SizeConstraintSetId", "Name"]
+        },
+        { service: "WAF",
+          api: "listSqlInjectionMatchSets",
+          title: "WAF SQL Injection Match Sets",
+          id: "waf-sql-injection-match-sets",
+          jmespath: "SqlInjectionMatchSets",
+          headings: ["SqlInjectionMatchSetId", "Name"]
+        },
+        { service: "WAF",
+          api: "listSubscribedRuleGroups",
+          title: "WAF Subscribed Rule Groups",
+          id: "waf-subscribed-rule-groups",
+          jmespath: "RuleGroups",
+          headings: ["RuleGroupId", "Name", "MetricName"]
+        },
+        { service: "WAF",
+          api: "listWebACLs",
+          title: "WAF Web ACLs",
+          id: "waf-web-acls",
+          jmespath: "WebACLs",
+          headings: ["WebACLId", "Name"]
+        },
+        { service: "WAF",
+          api: "listXssMatchSets",
+          title: "WAF XSS Match Sets",
+          id: "waf-xss-match-sets",
+          jmespath: "XssMatchSets",
+          headings: ["XssMatchSetId", "Name"]
+        },
+      ];
+
+      var tableTemplate =
+      `<div class="mb-1 col-12 collapse" data-parent="#aws-inventory">
+        <code>
+          <table class="table table-bordered table-hover table-sm">
+            <thead class="thead-light"></thead>
+            <tbody></tbody>
+          </table>
+        </code>
+      </div>`
+
+      var serviceButton =
+      `<a href="#" class="btn btn-sm btn-light col col-12 text-left mb-1" data-toggle="collapse" aria-expanded="false">
+        <span class="spinner spinner-border spinner-border-sm"></span>
+        <span class="counter badge badge-light" style="display:none">?</span>
+        &nbsp;<span class="title"></span><span class="timing badge font-weight-light" style="display:none"></span>
+      </a>`
+
+      function createTsvHead(headings) {
+        let tsvHead = '#\t'
+        for (let h = 0; h < headings.length; h++) {
+          if (typeof headings[h] === 'string') {
+            tsvHead += headings[h]
+          } else {
+            tsvHead += Object.keys(headings[h])[0]
+          }
+          if (h < (headings.length - 1)) tsvHead += '\t'
+        }
+        tsvHead += '\n'
+        return tsvHead
+      }
+
+      function createTsvBody(headings, data) {
+        const rows = []
+        for (let d = 0; d < data.length; d++) {
+          let tsvRow = `${d + 1}\t`
+          for (let h = 0; h < headings.length; h++) {
+            if (typeof headings[h] === 'string') {
+              try {
+                tsvRow += jmespath.search(data[d], headings[h])
+              } catch (e) {
+                console.error(`Error with jmespath: ${headings[h]}: ${e.message}`)
+              }
+            } else {
+              try {
+                tsvRow += jmespath.search(data[d], Object.values(headings[h])[0])
+              } catch (e) {
+                console.error(`Error with jmespath: ${Object.values(headings[h])[0]}: ${e.message}`)
+              }
+            }
+            if (h < (headings.length - 1)) tsvRow += '\t'
+          }
+          rows.push(tsvRow)
+        }
+        return rows.join('\n')
+      }
+
+      function createTsvLink(fileTitle = 'export', tsv = '') {
+        const fileName = fileTitle + '.tsv'
+        const blob = new Blob([tsv], { type: 'text/tab-separated-values;charset=utf-8;' })
+        const link = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        link.className = "btn btn-primary btn-sm";
+        link.textContent = `Download ${fileName}`
+        if (link.download !== undefined) {
+          link.setAttribute("download", fileName);
+        }
+        return link
+      }
+
+      function createTableHead(headings) {
+        const tr = $('<tr></tr>')
+        tr.append($('<th class="text-center">#</th>'))
+        for (let h=0; h<headings.length; h++) {
+          if (typeof headings[h] === 'string') {
+            tr.append($(`<th>${headings[h]}</th>`))
+          } else {
+            tr.append($(`<th>${Object.keys(headings[h])[0]}</th>`))
+          }
+
+        }
+        return tr
+      }
+
+      function createTableBody(headings, data) {
+        const rows = []
+        for (let d=0; d<data.length; d++) {
+          const tr = $('<tr></tr>')
+          tr.append($(`<td class="text-center">${d + 1}</td>`))
+          for (let h=0; h<headings.length; h++) {
+            if (typeof headings[h] === 'string') {
+              try {
+                tr.append($(`<td>${jmespath.search(data[d], headings[h])}</td>`))
+              } catch (e) {
+                console.error(`Error with jmespath: ${headings[h]}: ${e.message}`)
+              }
+            } else {
+              try {
+                tr.append($(`<td>${jmespath.search(data[d], Object.values(headings[h])[0])}</td>`))
+              } catch (e) {
+                console.error(`Error with jmespath: ${Object.values(headings[h])[0]}: ${e.message}`)
+              }
+            }
+          }
+          rows.push(tr)
+        }
+        return rows
+      }
+
+      function inventoryServices() {
+        for (let r=0; r<AWS_REGIONS.length; r++) {
+          let region = AWS_REGIONS[r];
+          for (let q=0; q<awsQueries.length; q++) {
+            const query = awsQueries[q]
+            // if (query.service !== 'WAF') { // DEBUG
+            //   continue // DEBUG
+            // } // DEBUG
+            if (region === 'global' && (!query.hasOwnProperty('region') || query.region !== 'global')) {
+              continue // show only global resources on global tab
+            }
+            if (region !== 'global' && query.hasOwnProperty('region') && query.region === 'global') {
+              continue // do not show global resources in other regions
+            }
+            if (query.hasOwnProperty('region') && query.region !== region) {
+              continue // restrict to specific region only
+            }
+            if (query.hasOwnProperty('skip_regions') && query.skip_regions.includes(region)) {
+              continue // skip specified regions
+            }
+            const startTs = Date.now()
+            let caller
+            try {
+              caller = new AWS[query.service]({ region: region });
+            } catch (e) {
+              console.log(`Error using query.service ${query.service}: `, e.message)
+              continue
+            }
+            let content = $(tableTemplate);
+            content.attr('id', `region-${region}-${query.id}`);
+            let button = $(serviceButton);
+            button.attr('id', `btn-region-${region}-${query.id}`)
+            button.attr('data-target', `#region-${region}-${query.id}`);
+            button.attr('aria-controls', `region-${region}-${query.id}`);
+            button.find('.title').text(query.title);
+            $(`#region-${region}`).append([button, content]);
+            const showCounter = function(text, timing) {
+              button.find('.counter').text(text)
+              button.find('.timing').html(timing.toString().length < 3 ? `&mdash; ${timing}ms` : `&mdash; ${timing/1000}s`)
+              button.find('.spinner').hide()
+              button.find('.counter').show()
+              button.find('.timing').show()
+            }
+            const tableHandler = function(err, data) {
+              if (err) {
+                content.empty()
+                var alert = $(`<div class="alert alert-danger show my-2" role="alert"><strong>Error:</strong> ${err.message}</div>`)
+                content.append(alert);
+                button.removeClass('btn-light').addClass('btn-warning')
+                showCounter('X', Date.now() - startTs)
+                return false
+              }
+              let information
+              try {
+                information = jmespath.search(data, `${query.jmespath}[]`)
+              } catch (e) {
+                console.error(`Error with jmespath: ${query.jmespath}[]: ${e.message}`)
+              }
+              if (!information) {
+                button.removeClass('btn-light').addClass('btn-warning')
+                showCounter('0', Date.now() - startTs)
+                return false
+              }
+              if (information.length > 0) {
+                // button.find('.btn-outline-primary').removeClass('btn-outline-primary').addClass('btn-primary')
+                button.removeClass('btn-light').addClass('btn-primary')
+                content.find('thead').append(createTableHead(query.headings))
+                content.find('tbody').append(createTableBody(query.headings, information))
+                let tsv = createTsvHead(query.headings)
+                tsv += createTsvBody(query.headings, information)
+                content.append(createTsvLink(query.id, tsv))
+              }
+              showCounter(information.length, Date.now() - startTs)
+            }
+            if (query.hasOwnProperty('params')) {
+              caller[query.api].call(caller, query.params, tableHandler)
+            } else {
+              try {
+                caller[query.api].call(caller, tableHandler)
+              } catch (e) {
+                console.error(`Error calling ${query.service}.${query.api}: ${e.message}`)
+              }
+            }
+          }
+        }
+      }
+
+      function contentRegionsCreate() {
+        /* creates tabs and tab-content for each region available, as returned
+           by the ec2 api */
+        var ec2 = new AWS.EC2()
+        var tabs = []
+        var tabPanes = []
+        ec2.describeRegions(function(err, data) {
+          $('#aws-region-tabs').empty()
+          $('#aws-inventory').empty()
+          let regions = data.Regions.map(function(r){ return r.RegionName }).sort();
+          regions = ["global"].concat(regions);
+          window.AWS_REGIONS = regions;
+          for (var i=0; i<regions.length; i++) {
+            tabs.push( $(`<li class="nav-item"><a href="#region-${regions[i]}" id="tab-region-${regions[i]}" class="nav-link" data-toggle="pill" role="tab">${regions[i]}</a></li>`) );
+            tabPanes.push( $(`<div class="tab-pane show" id="region-${regions[i]}" role="tabpanel" aria-labelledby="tab-region-${regions[i]}"></div>`) )
+          }
+          $('#aws-region-tabs').append(tabs);
+          $('#aws-inventory').append(tabPanes);
+          inventoryServices()
+          $('#tab-region-'+regions[0]).tab('show');
+        })
+      }
+
+      function credentialsFailAlert(message) {
+        var closeButton = $(`<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>`)
+        var alert = $(`<div class="alert alert-danger alert-dismissible show my-2" role="alert"><strong>Error verifying credentials.</strong> ${message}</div>`)
+        alert.append(closeButton);
+        $('#alerts').append(alert);
+      }
+
+      function credentialsVerify(event) {
+        /* verify that the entered credentials are usable
+           then hide credentials input form */
+        $('#aws-credentials-verify').prop('disabled', true);
+        AWS.config.region = 'us-east-1'
+        // AWS.config.logger = console // for debugging AWS-SDK
+        const credentials = {
+          accessKeyId: $('#aws-access-key-id').val(),
+          secretAccessKey: $('#aws-access-secret-key').val(),
+        }
+        const sessionToken = $('#aws-session-token').val()
+        if (sessionToken) {
+            credentials.sessionToken = sessionToken
+        }
+        const role_arn = $('#aws-role-arn').val()
+        const external_id = $('#aws-external-id').val()
+        const token_code = $('#aws-mfa-token-code').val()
+        AWS.config.credentials = new AWS.Credentials(credentials)
+        var sts = new AWS.STS()
+        sts.getCallerIdentity(function(err, data) {
+          event.preventDefault();
+          if (err) {
+            $('#aws-credentials-verify').prop('disabled', false);
+            credentialsFailAlert(err.message);
+            return false
+          }
+          if (role_arn !== '') {
+            const external_params = external_id ? { ExternalId: external_id } : {};
+            // , SerialNumber: data.Arn.replace(':user/', ':mfa/')
+            const token_params = token_code ? { TokenCode: token_code, SerialNumber: data.Arn.replace(':user/', ':mfa/') } : {};
+            const assume_role_params = Object.assign({
+              RoleArn: role_arn,
+              RoleSessionName: 'aws-inventory',
+              DurationSeconds: 900,
+              Policy: `{"Statement":[{"Effect":"Allow","Action":"*","Resource":"*"}]}`
+            }, external_params, token_params)
+            sts.assumeRole(assume_role_params, function(err,data) {
+              event.preventDefault();
+              if (err) {
+                $('#aws-credentials-verify').prop('disabled', false);
+                credentialsFailAlert(err.message);
+                return false
+              }
+              AWS.config.credentials = new AWS.Credentials(data.Credentials.AccessKeyId, data.Credentials.SecretAccessKey, data.Credentials.SessionToken)
+              $('#aws-credentials-arn').val(data.AssumedRoleUser.Arn);
+              $('.alert').alert('close');
+              $('#aws-credentials').hide();
+              $('#aws-credentials-verify').prop('disabled', false);
+              $('#aws-credentials-arn-form').show();
+              $('#aws-credentials input').val('');
+              contentRegionsCreate();
+            })
+          } else {
+            $('#aws-credentials-arn').val(data.Arn);
+            $('.alert').alert('close');
+            $('#aws-credentials').hide();
+            $('#aws-credentials-verify').prop('disabled', false);
+            $('#aws-credentials-arn-form').show();
+            $('#aws-credentials input').val('');
+            contentRegionsCreate();
+          }
+        })
+        return false
+      }
+
+      function credentialsDrop() {
+        /* forget stored credentials, and show input form for credentials */
+        AWS.config.credentials = undefined
+        $('#aws-credentials-arn-form').hide()
+        $('#aws-credentials-verify').prop('disabled', false);
+        $('#aws-credentials').show()
+        $('#aws-region-tabs').empty()
+        $('#aws-inventory').empty()
+      }
+
+      $('#aws-credentials-verify').on('click', credentialsVerify);
+      $('#aws-credentials-drop').on('click', credentialsDrop);
+      $('#btn-advanced').on('click', function(){ $('#aws-session').show(); $('#aws-advanced').show(); $('#btn-advanced').hide() })
+    });
+  </script>
+</html>
