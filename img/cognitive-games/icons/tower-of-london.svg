@@ -1,0 +1,10 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Single peg -->
+<rect x="46" y="24" width="8" height="56" rx="4" fill="#FAC1B5"/>
+<!-- Base -->
+<rect x="26" y="76" width="48" height="8" rx="4" fill="#C75E5A"/>
+<!-- Stacked discs, largest at bottom -->
+<rect x="28" y="62" width="44" height="12" rx="6" fill="#C75E5A"/>
+<rect x="33" y="48" width="34" height="12" rx="6" fill="#F9907B"/>
+<rect x="38" y="34" width="24" height="12" rx="6" fill="#FAC1B5"/>
+</svg>

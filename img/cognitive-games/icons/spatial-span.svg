@@ -1,30 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="64" fill="#E3F2FD"/>
-  <!-- 4x4 grid of squares -->
-  <g transform="translate(56, 56)">
-    <!-- Row 1 -->
-    <rect x="0" y="0" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="104" y="0" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="208" y="0" width="88" height="88" rx="12" fill="#42A5F5" stroke="#1E88E5" stroke-width="2"/>
-    <rect x="312" y="0" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <!-- Row 2 -->
-    <rect x="0" y="104" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="104" y="104" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="208" y="104" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="312" y="104" width="88" height="88" rx="12" fill="#42A5F5" stroke="#1E88E5" stroke-width="2"/>
-    <!-- Row 3 -->
-    <rect x="0" y="208" width="88" height="88" rx="12" fill="#42A5F5" stroke="#1E88E5" stroke-width="2"/>
-    <rect x="104" y="208" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="208" y="208" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="312" y="208" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <!-- Row 4 -->
-    <rect x="0" y="312" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="104" y="312" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="208" y="312" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <rect x="312" y="312" width="88" height="88" rx="12" fill="#BBDEFB" stroke="#90CAF9" stroke-width="2"/>
-    <!-- Checkmarks on highlighted squares -->
-    <polyline points="228,36 248,56 276,20" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <polyline points="332,140 352,160 380,124" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <polyline points="20,244 40,264 68,228" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- 3x3 grid of squares -->
+<rect x="14" y="14" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="40" y="14" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="66" y="14" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="14" y="40" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="40" y="40" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="66" y="40" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="14" y="66" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="40" y="66" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<rect x="66" y="66" width="20" height="20" rx="3" fill="#FAC1B5"/>
+<!-- Highlighted sequence: 3 squares lit up -->
+<rect x="14" y="14" width="20" height="20" rx="3" fill="#C75E5A"/>
+<rect x="40" y="40" width="20" height="20" rx="3" fill="#F9907B"/>
+<rect x="66" y="66" width="20" height="20" rx="3" fill="#C75E5A"/>
 </svg>

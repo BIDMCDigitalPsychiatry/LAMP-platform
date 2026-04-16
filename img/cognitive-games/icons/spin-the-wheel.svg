@@ -1,24 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="64" fill="#E3F2FD"/>
-  <!-- Wheel background -->
-  <circle cx="256" cy="256" r="180" fill="#BBDEFB"/>
-  <!-- 8 segments — muted pastel tones matching the jewel icon palette -->
-  <path d="M256,256 L256,76 A180,180 0 0,1 383.3,128.7Z" fill="#E8A838"/>
-  <path d="M256,256 L383.3,128.7 A180,180 0 0,1 436,256Z" fill="#7BAE7F"/>
-  <path d="M256,256 L436,256 A180,180 0 0,1 383.3,383.3Z" fill="#7BAED4"/>
-  <path d="M256,256 L383.3,383.3 A180,180 0 0,1 256,436Z" fill="#D4908A"/>
-  <path d="M256,256 L256,436 A180,180 0 0,1 128.7,383.3Z" fill="#E8A838"/>
-  <path d="M256,256 L128.7,383.3 A180,180 0 0,1 76,256Z" fill="#7BAE7F"/>
-  <path d="M256,256 L76,256 A180,180 0 0,1 128.7,128.7Z" fill="#7BAED4"/>
-  <path d="M256,256 L128.7,128.7 A180,180 0 0,1 256,76Z" fill="#D4908A"/>
-  <!-- Segment divider lines -->
-  <line x1="256" y1="76" x2="256" y2="436" stroke="#fff" stroke-width="2" opacity="0.7"/>
-  <line x1="76" y1="256" x2="436" y2="256" stroke="#fff" stroke-width="2" opacity="0.7"/>
-  <line x1="128.7" y1="128.7" x2="383.3" y2="383.3" stroke="#fff" stroke-width="2" opacity="0.7"/>
-  <line x1="383.3" y1="128.7" x2="128.7" y2="383.3" stroke="#fff" stroke-width="2" opacity="0.7"/>
-  <!-- Center circle -->
-  <circle cx="256" cy="256" r="36" fill="#fff"/>
-  <circle cx="256" cy="256" r="18" fill="#1E88E5"/>
-  <!-- Pointer arrow at top -->
-  <polygon points="256,56 242,24 270,24" fill="#1565C0"/>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Outer ring -->
+<circle cx="50" cy="52" r="36" fill="#C75E5A"/>
+<!-- Inner wheel -->
+<circle cx="50" cy="52" r="32" fill="#FAC1B5"/>
+<!-- Segments (6 alternating) -->
+<path d="M50 52L50 20L77.7 36Z" fill="#F9907B"/>
+<path d="M50 52L77.7 68L77.7 36Z" fill="#C75E5A"/>
+<path d="M50 52L50 84L77.7 68Z" fill="#F9907B"/>
+<path d="M50 52L50 84L22.3 68Z" fill="#C75E5A"/>
+<path d="M50 52L22.3 36L22.3 68Z" fill="#F9907B"/>
+<path d="M50 52L50 20L22.3 36Z" fill="#C75E5A"/>
+<!-- Center hub -->
+<circle cx="50" cy="52" r="5" fill="white"/>
+<!-- Pointer -->
+<path d="M50 6L44 16L56 16Z" fill="#C75E5A"/>
 </svg>

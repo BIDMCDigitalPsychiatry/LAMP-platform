@@ -1,0 +1,13 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Rotation arrow (above, centered) -->
+<path d="M38 24C46 18 58 18 66 24" stroke="#FAC1B5" stroke-width="3" stroke-linecap="round" fill="none"/>
+<path d="M63 20L66 24L62 27" stroke="#FAC1B5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- L-shaped block (original, left side) -->
+<rect x="12" y="38" width="14" height="14" rx="2" fill="#C75E5A"/>
+<rect x="12" y="52" width="14" height="14" rx="2" fill="#F9907B"/>
+<rect x="26" y="52" width="14" height="14" rx="2" fill="#F9907B"/>
+<!-- L-shaped block (rotated 90° clockwise, right side, offset down) -->
+<rect x="60" y="46" width="14" height="14" rx="2" fill="#F9907B"/>
+<rect x="74" y="46" width="14" height="14" rx="2" fill="#F9907B"/>
+<rect x="74" y="60" width="14" height="14" rx="2" fill="#C75E5A"/>
+</svg>

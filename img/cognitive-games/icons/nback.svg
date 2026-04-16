@@ -1,0 +1,9 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Three circles fading back in opacity — vertically centered -->
+<circle cx="72" cy="54" r="16" fill="#C75E5A"/>
+<circle cx="46" cy="54" r="14" fill="#F9907B" opacity="0.6"/>
+<circle cx="24" cy="54" r="12" fill="#FAC1B5" opacity="0.3"/>
+<!-- Connecting arc (looking back) -->
+<path d="M72 38C60 24 36 24 24 38" stroke="#C75E5A" stroke-width="2.5" stroke-linecap="round" fill="none" stroke-dasharray="5 4"/>
+<path d="M28 34L24 38L20 34" stroke="#C75E5A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

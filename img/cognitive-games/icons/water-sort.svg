@@ -1,0 +1,15 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Tube 1 (mixed) -->
+<path d="M18 22H36V72C36 76.42 32.42 80 28 80H26C21.58 80 18 76.42 18 72V22Z" fill="none" stroke="#C75E5A" stroke-width="2.5"/>
+<rect x="19.5" y="62" width="15" height="12" fill="#F9907B"/>
+<rect x="19.5" y="50" width="15" height="12" fill="#C75E5A"/>
+<rect x="19.5" y="38" width="15" height="12" fill="#FAC1B5"/>
+<!-- Tube 2 (mixed) -->
+<path d="M42 22H60V72C60 76.42 56.42 80 52 80H50C45.58 80 42 76.42 42 72V22Z" fill="none" stroke="#C75E5A" stroke-width="2.5"/>
+<rect x="43.5" y="62" width="15" height="12" fill="#FAC1B5"/>
+<rect x="43.5" y="50" width="15" height="12" fill="#F9907B"/>
+<!-- Tube 3 (empty, receiving) -->
+<path d="M66 22H84V72C84 76.42 80.42 80 76 80H74C69.58 80 66 76.42 66 72V22Z" fill="none" stroke="#FAC1B5" stroke-width="2.5"/>
+<rect x="67.5" y="62" width="15" height="12" fill="#C75E5A"/>
+
+</svg>
