@@ -37,6 +37,20 @@ Every activity has a unique **ActivitySpec** identifier used in the API and data
 | [Funny Memory](funny-memory) | `lamp.funny_memory` | [Raw only](funny-memory#cortex-features) |
 | [Fragmented Letters](fragmented-letters) | `lamp.fragmented_letters` | [Raw only](fragmented-letters#cortex-features) |
 | [Memory Game](memory-game) | `lamp.memory_game` | — |
+| [Simple RT](simple-rt) | `lamp.simple_rt` | — |
+| [Stroop](stroop) | `lamp.stroop` | — |
+| [Flanker](flanker) | `lamp.flanker` | — |
+| [N-Back](nback) | `lamp.nback` | — |
+| [Tower of London](tower-of-london) | `lamp.tower_of_london` | — |
+| [WCST](wcst) | `lamp.wcst` | — |
+| [Water Sort](water-sort) | `lamp.water_sort` | — |
+| [Sliding Puzzle](sliding-puzzle) | `lamp.sliding_puzzle` | — |
+| [Nonogram](nonogram) | `lamp.nonogram` | — |
+| [Memory Match](memory-match) | `lamp.memory_match` | — |
+| [Mental Rotation](mental-rotation) | `lamp.mental_rotation` | — |
+| [Lexical Decision](lexical-decision) | `lamp.lexical_decision` | — |
+| [Letter Logic](letter-logic) | `lamp.letter_logic` | — |
+| [Delay Discounting](delay-discounting) | `lamp.delay_discounting` | — |
 | [Voice Recording](voice-recording) | `lamp.recording` | [Raw only](voice-recording#cortex-features) |
 | [DBT Diary Card](dbt-diary-card) | `lamp.dbt_diary_card` | — |
 
@@ -46,6 +60,7 @@ Every activity has a unique **ActivitySpec** identifier used in the API and data
 |----------|------------|:------:|
 | [Breathe](breathe) | `lamp.breathe` | — |
 | [Journal](journal) | `lamp.journal` | — |
+| [Scratch Card](scratch-card) | `lamp.scratch_card` | — |
 
 ## Other
 

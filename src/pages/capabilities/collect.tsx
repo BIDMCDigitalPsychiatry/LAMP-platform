@@ -93,8 +93,22 @@ const cognitiveGames = [
   { name: 'DCog', icon: '/img/cognitive-games/icons/d-cog.svg', domain: 'Working memory', link: '/activities/reference/d-cog' },
   { name: 'Memory Game', icon: '/img/cognitive-games/icons/memory-game.svg', domain: 'Spatial & temporal memory', link: '/activities/reference/memory-game' },
   { name: 'Digit Span', icon: '/img/cognitive-games/icons/digit-span.svg', domain: 'Working memory', link: '/activities/reference/digit-span' },
-  { name: 'Fragmented Letters', icon: '/img/cognitive-games/icons/fragmented-letters.svg', domain: 'Language / Visual processing', link: '/activities/reference/fragmented-letters' },
+  { name: 'Fragmented Letters', icon: '/img/cognitive-games/icons/fragmented-letters.svg', domain: 'Visual and perceptual processing', link: '/activities/reference/fragmented-letters' },
   { name: 'Funny Memory', icon: '/img/cognitive-games/icons/funny-memory.svg', domain: 'Associative memory', link: '/activities/reference/funny-memory' },
+  { name: 'Simple RT', icon: '/img/cognitive-games/icons/simple-rt.svg', domain: 'Processing speed', link: '/activities/reference/simple-rt' },
+  { name: 'Stroop', icon: '/img/cognitive-games/icons/stroop.svg', domain: 'Selective attention', link: '/activities/reference/stroop' },
+  { name: 'Flanker', icon: '/img/cognitive-games/icons/flanker.svg', domain: 'Attentional control', link: '/activities/reference/flanker' },
+  { name: 'N-Back', icon: '/img/cognitive-games/icons/nback.svg', domain: 'Working memory', link: '/activities/reference/nback' },
+  { name: 'Tower of London', icon: '/img/cognitive-games/icons/tower-of-london.svg', domain: 'Planning', link: '/activities/reference/tower-of-london' },
+  { name: 'WCST', icon: '/img/cognitive-games/icons/wcst.svg', domain: 'Cognitive flexibility', link: '/activities/reference/wcst' },
+  { name: 'Water Sort', icon: '/img/cognitive-games/icons/water-sort.svg', domain: 'Executive function', link: '/activities/reference/water-sort' },
+  { name: 'Sliding Puzzle', icon: '/img/cognitive-games/icons/sliding-puzzle.svg', domain: 'Spatial planning', link: '/activities/reference/sliding-puzzle' },
+  { name: 'Nonogram', icon: '/img/cognitive-games/icons/nonogram.svg', domain: 'Logic & reasoning', link: '/activities/reference/nonogram' },
+  { name: 'Memory Match', icon: '/img/cognitive-games/icons/memory-match.svg', domain: 'Visual-spatial memory', link: '/activities/reference/memory-match' },
+  { name: 'Mental Rotation', icon: '/img/cognitive-games/icons/mental-rotation.svg', domain: 'Spatial visualization', link: '/activities/reference/mental-rotation' },
+  { name: 'Lexical Decision', icon: '/img/cognitive-games/icons/lexical-decision.svg', domain: 'Language processing', link: '/activities/reference/lexical-decision' },
+  { name: 'Letter Logic', icon: '/img/cognitive-games/icons/letter-logic.svg', domain: 'Vocabulary & logic', link: '/activities/reference/letter-logic' },
+  { name: 'Delay Discounting', icon: '/img/cognitive-games/icons/delay-discounting.svg', domain: 'Impulsivity', link: '/activities/reference/delay-discounting' },
 ];
 
 /* mindLAMP teal for selected states, matching the app */
@@ -491,9 +505,9 @@ export default function Collect() {
             Cognitive Games
           </Heading>
           <p className={styles.subsectionDescription}>
-            Configurable cognitive assessments across executive functioning, memory, attention, and
-            decision-making. Every tap is timestamped, so you can analyze not just accuracy but
-            response patterns across each task.
+            Configurable cognitive assessments across executive functioning, memory, attention,
+            language processing, spatial reasoning, processing speed, and decision-making. Every tap
+            is timestamped, so you can analyze not just accuracy but response patterns across each task.
           </p>
 
           <div className={styles.gameThumbnailGrid}>

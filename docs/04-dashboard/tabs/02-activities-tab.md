@@ -33,7 +33,7 @@ Click **+ Add** to create a new activity. The menu is organized into sections:
 - **Activity Group** — Bundle multiple activities together (see [Activity Groups](/activities/reference/activity-groups)).
 
 **Cognitive Tests & Activities**
-- **Cognitive games** — Standardized games covering executive functioning, memory, attention, social cognition, and decision-making (see [Cognitive Games](/activities/reference#assess)).
+- **Cognitive games** — Standardized games covering executive functioning, memory, attention, language processing, spatial reasoning, processing speed, social cognition, and decision-making (see [Cognitive Games](/activities/reference#assess)).
 - **Tips** — Educational content for the Learn tab (see [Tips](/activities/reference/tips)).
 - **Breathe** — Guided breathing exercises (see [Breathe](/activities/reference/breathe)).
 - **Journal** — Free-form journaling (see [Journal](/activities/reference/journal)).

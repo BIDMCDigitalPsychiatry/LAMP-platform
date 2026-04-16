@@ -57,20 +57,25 @@ Useful for context and initial claims, but should be cross-verified against Tier
 
 ## Source Repositories (Detail)
 
-Local copies at `/Users/edenrozenblit/Desktop/documentation/archive/github/`:
+All repos are under the `BIDMCDigitalPsychiatry` GitHub organization. Local clones were removed 2026-03-12 to reduce workspace size (~250MB). Re-clone as needed:
 
-| Repository | Contents | Key Directories |
-|-----------|----------|-----------------|
-| `LAMP-dashboard/` | React web dashboard + participant app | `src/components/` (all UI), `package.json` |
-| `LAMP-activities/` | Cognitive game implementations | `src/` (game components: Jewels, BalloonRisk, SpatialSpan, etc.) |
-| `LAMP-cortex/` | Python data processing library | `cortex/` (feature modules), `setup.py` |
-| `LAMP-server/` | API server | `src/` |
-| `LAMP-core-ios/` | iOS native layer (sensors, push) | `Sources/` (sensor implementations) |
-| `LAMP-core-android/` | Android native layer (sensors, push) | `app/src/` (sensor implementations) |
+```bash
+# Clone any repo for source verification
+git clone https://github.com/BIDMCDigitalPsychiatry/<REPO_NAME>.git
+```
 
-Also relevant (not local):
-- `LAMP-swift/` — iOS sensor implementations. `LocationsSensor.swift` confirmed GPS defaults.
-- `LAMP-protocol/` — OpenAPI spec (git submodule in LAMP-platform at `LAMP-protocol/openapi.yml`)
+| Repository | Contents | Key Directories | What We Verified Against It |
+|-----------|----------|-----------------|----------------------------|
+| `LAMP-dashboard` | React web dashboard + participant app | `src/components/` (all UI), `package.json` | Feed behavior, Portal, scheduling, credential UI, messaging, data quality indicators, activity menus |
+| `LAMP-activities` | Cognitive game implementations | `src/` (game components: Jewels, BalloonRisk, SpatialSpan, etc.) | Game mechanics, data schemas, activity types |
+| `LAMP-cortex` | Python data processing library | `cortex/` (feature modules), `setup.py` | Feature pipeline (32 raw, 6 primary, 23 secondary), package name (`lamp-cortex`), bin sizes, target_hz |
+| `LAMP-server` | API server | `src/` | Scheduling engine, push notification delivery |
+| `LAMP-core-ios` | iOS native layer (sensors, push) | `Sources/` (sensor implementations) | GPS rate (1 Hz default), sensor data formats, push registration |
+| `LAMP-core-android` | Android native layer (sensors, push) | `app/src/` (sensor implementations) | WearOS 3+ (`minSdkVersion 30`), Health Connect integration, sensor implementations |
+
+Also relevant (not cloned locally):
+- `LAMP-swift` — iOS sensor implementations. `LocationsSensor.swift` confirmed GPS defaults (`minimumInterval` = 1s).
+- `LAMP-protocol` — OpenAPI spec (git submodule in LAMP-platform at `LAMP-protocol/openapi.yml`)
 
 ---
 

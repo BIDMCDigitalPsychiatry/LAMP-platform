@@ -55,17 +55,17 @@ Scoring is based on the number of correct selections within the timeframe of the
 | `correct_answers` | number | Total correct taps |
 | `wrong_answers` | number | Total incorrect taps |
 | `total_questions` | number | Total trials (always 45) |
-| `score` | number | Score percentage |
+| `is_favorite` | boolean | Whether the participant favorited this activity |
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Box number (1–10) |
-| `type` | `true` = correct, `false` = incorrect |
-| `duration` | Time since last tap (ms) |
-| `level` | Game level (1–3) |
-| `value` | Unused |
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Box number (1–10) |
+| `type` | boolean | `true` = correct, `false` = incorrect |
+| `duration` | number | Time since last tap (ms) |
+| `level` | number | Game level (1–3) |
+| `value` | null | Unused |
 
 ### Cortex Features
 

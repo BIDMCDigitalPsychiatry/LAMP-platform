@@ -59,24 +59,25 @@ Scoring is based on the total number of correct symbols selected within the give
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `score` | number | Overall score |
+| `score` | number | Correct Responses Per Minute (CRPM) |
 | `number_of_symbols` | number | Total symbols presented |
 | `number_of_correct_responses` | number | Correct responses |
 | `number_of_incorrect_responses` | number | Incorrect responses |
 | `avg_correct_response_time` | number | Average time for correct responses |
 | `avg_incorrect_response_time` | number | Average time for incorrect responses |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `value` | `true` = correct, `false` = incorrect |
-| `type` | Digit corresponding to symbol |
-| `duration` | Response time (seconds) |
-| `level` | Unused |
+| Field | Type | Description |
+|-------|------|-------------|
+| `value` | boolean | `true` = correct, `false` = incorrect |
+| `type` | number | Digit corresponding to symbol |
+| `duration` | number | Response time (seconds) |
+| `level` | null | Unused |
 
 ### Cortex Features
 
-No Cortex features currently process Symbol-Digit Substitution data.
+No Cortex features are currently available for this activity.
 
 View in [Portal](/app/app-tabs/portal) | [Python SDK](/developer/api-sdks/python-sdk) | [API Reference](/activities/reference)

@@ -7,7 +7,7 @@ title: "Digit Span"
 
 # Digit Span
 
-Digit Span is a standard neuropsychological assessment (Wechsler, 2008) measuring working memory. A sequence of numbers (0–10) is read aloud by an automated voice and shown on screen one at a time. The participant repeats the sequence by tapping the numbers, either in forwards or backwards order. The game is adaptive — the sequence length changes based on whether the participant answered correctly.
+Digit Span is a standard neuropsychological assessment (Wechsler, 2008) measuring working memory, now scored using the WAIS-IV standard. A sequence of numbers (0–10) is read aloud by an automated voice and shown on screen one at a time. The participant repeats the sequence by tapping the numbers, either in forwards or backwards order. The game is adaptive — the sequence length changes based on whether the participant answered correctly. Use `forward_span`, `backward_span`, and `total_raw_score` for cognitive analysis; the `score` field is retained for legacy compatibility.
 
 **ActivitySpec:** `lamp.digit_span`
 
@@ -23,7 +23,7 @@ The game is configured through the Activities tab. Select **Digit Span** and cho
 
 ## Usage
 
-Numbers appear on screen one at a time while being read aloud. After the sequence completes, the participant taps the numbers in the correct order. If correct, the next sequence is longer; if incorrect, the next sequence is shorter.
+Numbers appear on screen one at a time while being read aloud. After the sequence completes, the participant taps the numbers in the correct order. Forward phase starts at 3-digit sequences, backward phase at 2-digit sequences. Two consecutive errors at the same length end a phase. Each round has a 30-second timeout. Maximum sequence length is 9 digits.
 
 <details>
 <summary>References</summary>
@@ -38,11 +38,31 @@ Numbers appear on screen one at a time while being read aloud. After the sequenc
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `score` | number | Computed score |
-| `correct_answers` | number | Correct responses |
-| `wrong_answers` | number | Incorrect responses |
-| `rating` | number | Session rating |
-| `type` | number | Forward or backward variant indicator |
+| `forward_span` | number | Maximum digit sequence length recalled forward |
+| `backward_span` | number | Maximum digit sequence length recalled backward |
+| `forward_trials_correct` | number | Correct trials in forward phase |
+| `backward_trials_correct` | number | Correct trials in backward phase |
+| `total_raw_score` | number | WAIS-IV raw score (sum of correct trials) |
+| `question_sequences` | array | All presented sequences with responses |
+| `score` | number | Legacy compatibility score |
+| `correct_answers` | number | Total correct trials |
+| `wrong_answers` | number | Total incorrect trials |
+| `total_questions` | number | Total trials |
+| `point` | number | Score indicator |
+| `bestForwardDigitSpan` | number | Legacy: same as forward_span |
+| `bestBackwardDigitSpan` | number | Legacy: same as backward_span |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
+
+### temporal_slices
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Sequence index |
+| `type` | boolean | `true` = correct, `false` = incorrect |
+| `value` | null | Unused |
+| `duration` | number | Response time (ms) |
+| `level` | number | Sequence length |
+| `mode` | number | `0` = forward, `1` = backward |
 
 ### Cortex Features
 

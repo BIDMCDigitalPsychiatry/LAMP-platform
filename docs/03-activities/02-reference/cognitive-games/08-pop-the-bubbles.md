@@ -63,17 +63,37 @@ Scoring is based on: percentage of bubbles successfully popped, percentage incor
 
 ### static_data
 
-Unused (always `{}`).
+| Field | Type | Description |
+|-------|------|-------------|
+| `score` | number | Overall score |
+| `correct_answers` | number | Correct taps (go targets hit + no-go targets avoided) |
+| `wrong_answers` | number | Errors (go targets missed + no-go targets tapped) |
+| `total_questions` | number | Total targets presented |
+| `point` | number | Score indicator |
+| `levels` | array | Per-level breakdown (see below) |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
+
+Each entry in the `levels` array contains:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `go_correct` | number | Go targets correctly tapped |
+| `go_total` | number | Total go targets |
+| `go_missed` | number | Go targets missed |
+| `nogo_correct` | number | No-go targets correctly avoided |
+| `nogo_total` | number | Total no-go targets |
+| `nogo_wrong` | number | No-go targets incorrectly tapped |
+| `false_hits` | number | Taps on non-target bubbles |
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Bubble index in level |
-| `value` | Color + trial type (e.g., `"blue go"`, `"red no-go"`, `"green no-go-constant"`) |
-| `type` | `true` = correct response, `false` = incorrect |
-| `level` | Level number |
-| `duration` | Reaction time in ms (may be absent if bubble was ignored) |
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Bubble index in level |
+| `value` | string | Color + trial type (e.g., `"blue go"`, `"red no-go"`, `"green no-go-constant"`) |
+| `type` | boolean | `true` = correct response, `false` = incorrect |
+| `level` | number | Level number |
+| `duration` | number | Reaction time in ms (may be absent if bubble was ignored) |
 
 ### Cortex Features
 

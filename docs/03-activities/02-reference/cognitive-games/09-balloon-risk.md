@@ -71,17 +71,46 @@ If the balloon does not pop and the user collects, points equal the number of pu
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `points` | number | Total points earned in the session |
+| `total_earnings` | number | Total points earned |
+| `total_pumps` | number | Total pump taps across all balloons |
+| `balloons_collected` | number | Balloons where points were banked |
+| `balloons_popped` | number | Balloons that burst |
+| `total_balloons` | number | Total balloons presented |
+| `avg_pumps` | number | Average pumps per balloon |
+| `avg_pumps_collected` | number | Average pumps on collected balloons (standard BART risk index) |
+| `pop_rate` | number | Proportion of balloons that popped |
+| `balloon_count` | number | Configuration: number of balloons |
+| `breakpoint_mean` | number | Configuration: mean burst threshold |
+| `breakpoint_std` | number | Configuration: burst threshold variability |
+| `breakpoints` | number[] | Actual burst thresholds for each balloon |
+| `balloon_results` | array | Per-balloon detail (see below) |
+| `score` | number | Legacy score |
+| `correct_answers` | number | Balloons collected |
+| `total_questions` | number | Total balloons |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
+
+Each entry in `balloon_results`:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `pumps` | number | Pumps on this balloon |
+| `collected` | boolean | Whether points were collected |
+| `earnings` | number | Points earned (0 if popped) |
+| `breakpoint` | number | Burst threshold for this balloon |
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Pump number within the balloon |
-| `value` | `0` = balloon exploded, `1` = intact |
-| `type` | `false` = exploded, `true` = intact |
-| `duration` | Time since last pump (ms) |
-| `level` | Balloon number |
+The activity emits three event types per balloon:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Balloon number |
+| `type` | string | Event type: "pump", "burst", or "collect" |
+| `value` | number | Cumulative pumps (0 for burst events) |
+| `duration` | number | Time since last event (ms) |
+| `level` | number | Balloon number |
+| `pumps` | number | Cumulative pump count |
+| `event` | string | "pump", "burst", or "collect" |
 
 ### Cortex Features
 

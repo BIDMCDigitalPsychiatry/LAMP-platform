@@ -36,6 +36,12 @@ Spatial Span assesses visuospatial memory, derived from the Corsi Block Test and
 
 </details>
 
+| Setting | API Field | Type | Default | Description |
+|---------|-----------|------|---------|-------------|
+| Starting Span | `starting_span` | number | 2 | Starting sequence length |
+| Max Levels | `max_levels` | number | 5 | Maximum number of sequences |
+| Max Failures | `max_failures` | number | 2 | Consecutive failures to end the game |
+
 ### Sample Instructions
 
 **Forward:** *"You will see a grid of boxes. The boxes will light up in a certain order. Remember that order, and then tap the boxes in the same order in which they lit up. Each level will have more boxes light up. See how far you can get!"*
@@ -44,7 +50,7 @@ Spatial Span assesses visuospatial memory, derived from the Corsi Block Test and
 
 ## Usage
 
-Squares light up one at a time, then return to white. The participant taps the squares in the correct order (forward or backward). At every subsequent level, the number of squares increases.
+The game uses a 4x4 grid (16 positions). Squares highlight in sequence, and the participant must tap them in the same order. Sequences start at a configurable length (default 2) and increase. Two consecutive failures at the same span length end the game.
 
 ### Scoring
 
@@ -79,22 +85,34 @@ Scoring is based on how many times participants can correctly complete the task 
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `point` | number | `2` if all correct, else `1` |
-| `score` | number | Percentage of stages correct |
-| `correct_answers` | number | Total correct taps |
-| `wrong_answers` | number | Total incorrect taps |
-| `StartTime` | string | Session start (human-readable) |
-| `EndTime` | string | Session end (human-readable) |
+| `mode` | string | "forward" or "backward" |
+| `max_span` | number | Maximum sequence length correctly recalled (primary outcome) |
+| `total_score` | number | Total correct sequences |
+| `starting_span` | number | Starting sequence length |
+| `level_results` | array | Per-sequence results (see below) |
+| `levels_completed` | number | Number of sequences completed |
+| `total_levels` | number | Total sequences presented |
+| `score` | number | Legacy score |
+| `correct_answers` | number | Correct sequences |
+| `wrong_answers` | number | Incorrect sequences |
+| `point` | number | Legacy indicator |
+| `StartTime` | number | Game start timestamp (ms) |
+| `EndTime` | number | Game end timestamp (ms) |
+| `max_score` | number | Legacy: maximum possible score |
+| `type` | string | Legacy: game type |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Grid box index (1–16, row-major) |
-| `type` | `true` = correct, `false` = incorrect |
-| `duration` | Time since previous tap (ms). First duration includes sequence display time. |
-| `level` | Sequence level (advances each round) |
-| `value` | Unused |
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Square tapped |
+| `type` | boolean | `true` = correct, `false` = incorrect |
+| `value` | null | Unused |
+| `duration` | number | Time since last tap (ms) |
+| `level` | number | Sequence length |
+| `span` | number | Current span being tested |
+| `tap_index` | number | Position in the participant's response sequence |
 
 ### Cortex Features
 

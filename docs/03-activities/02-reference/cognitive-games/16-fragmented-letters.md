@@ -11,7 +11,7 @@ The participant identifies letters of the alphabet that have been partially "fra
 
 **ActivitySpec:** `lamp.fragmented_letters`
 
-**Cognitive domain:** Visual/perceptual processing
+**Cognitive domain:** Visual and perceptual processing
 
 ## Configuration
 
@@ -40,21 +40,19 @@ Letters appear on screen with varying levels of fragmentation. The participant v
 
 ### static_data
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `score` | number | Overall score |
-| `correct_answers` | number | Correctly identified letters |
-| `wrong_answers` | number | Incorrect responses |
+No `static_data` is included in the normal completion payload. This is a known limitation — the activity records audio responses but does not evaluate correctness in-game.
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Letter presented |
-| `value` | Participant's response |
-| `type` | `true` = correct, `false` = incorrect |
-| `duration` | Response time (ms) |
-| `level` | Fragmentation level |
+One entry per level (up to 10 levels):
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | string | The letter displayed (A-Z) |
+| `value` | string | Base64-encoded audio recording of the participant's verbal response |
+| `type` | null | Always null — correctness is not evaluated in-game (responses must be scored offline from the audio recordings) |
+| `duration` | number | Time since previous recording completed (ms) |
+| `level` | number | Fragmentation percentage at this level (increases by 10% per level) |
 
 ### Cortex Features
 

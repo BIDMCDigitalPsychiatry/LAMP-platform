@@ -33,7 +33,7 @@ Trails B is a digital adaptation of Part B of the Trail Making Test. The partici
 
 ## Usage
 
-The participant sees an array of dots containing numbers and letters and must tap them in the correct alternating sequence. The game progresses through two levels with increasing dot counts.
+The participant sees an array of dots containing numbers and letters and must tap them in the correct alternating sequence. The game has 3 levels (numbers only, letters only, alternating numbers-letters). A 5-mistake limit triggers game over.
 
 ### Scoring
 
@@ -66,10 +66,42 @@ Scoring is based on the accuracy with which the user taps out each sequence.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `point` | number | Point value |
-| `rating` | number | Session rating |
-| `score` | number | Computed score |
-| `total_attempts` | number | Total attempts |
+| `score` | number | Overall score |
+| `correct_answers` | number | Correct taps |
+| `wrong_answers` | number | Incorrect taps |
+| `total_questions` | number | Total items |
+| `total_taps` | number | Total taps made |
+| `total_items` | number | Total dots to connect |
+| `percentageCorrectOverall` | number | Overall accuracy percentage |
+| `total_levels` | number | Number of levels completed |
+| `end_reason` | string | "completed", "timeout", "too_many_mistakes", or "manual_exit" |
+| `point` | number | Score indicator |
+| `level_summaries` | array | Per-level breakdown (see below) |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
+
+Each entry in `level_summaries`:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `duration_ms` | number | Time spent on this level (ms) |
+| `correct_taps` | number | Correct dot taps |
+| `wrong_taps` | number | Incorrect taps |
+| `total_items` | number | Total dots in this level |
+| `sequence` | string | Expected sequence type |
+| `dot_positions` | array | Dot coordinates |
+
+### temporal_slices
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | string | Label of the dot tapped |
+| `type` | boolean | `true` = correct, `false` = incorrect |
+| `value` | null | Unused |
+| `duration` | number | Time since last tap (ms) |
+| `level` | number | Game level (1-3) |
+| `tapped` | string | What was tapped |
+| `expected` | string | What should have been tapped |
+| `correct` | boolean | Whether the tap was correct |
 
 ### Cortex Features
 

@@ -83,21 +83,23 @@ Scoring is out of 100 points, with each incorrect jewel resulting in a deduction
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `point` | number | `1` = timed out, `2` = voluntarily exited |
+| `point` | number | `2` if final level was completed, `1` if the game ended on a timeout |
 | `score` | string | Percentage correct (e.g., `"97.37"`) |
 | `total_attempts` | number | Total tap attempts |
 | `total_bonus_collected` | number | Accumulated bonus (time remaining − 2 × errors) |
 | `total_jewels_collected` | number | Correctly tapped jewels |
+| `is_favorite` | boolean | Whether the participant favorited this activity |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Jewel number tapped |
-| `type` | `true` = correct, `false` = incorrect |
-| `duration` | Time since previous tap (ms) |
-| `level` | Trial level |
-| `value` | Unused |
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Jewel number tapped |
+| `type` | boolean | `true` = correct, `false` = incorrect |
+| `duration` | number | Time since previous tap (ms) |
+| `level` | number | Trial level |
+| `value` | null | Unused |
 
 ### Example
 

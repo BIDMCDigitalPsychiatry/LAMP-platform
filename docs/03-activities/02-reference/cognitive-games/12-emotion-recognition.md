@@ -16,9 +16,9 @@ Emotion Recognition tests whether participants can identify the emotion expresse
 
 ## Configuration
 
-Researchers must provide a dataset of up to 50 facial images and label each with the corresponding emotion. Available emotions: happiness, sadness, fear, anger, and neutral.
+Researchers must provide a dataset of up to 50 facial images and label each with the corresponding emotion. Default emotions: happiness, sadness, fear, anger, and neutral. Custom emotion labels beyond these five can be added in the activity settings.
 
-If fewer than 10 images are uploaded, all images will be shown in random order.
+A random subset of up to 10 images is selected and shuffled each session. If fewer than 10 images are uploaded, all images will be shown in random order.
 
 ### Sample Instructions
 
@@ -44,16 +44,16 @@ Scoring is based on whether the user correctly identifies the emotion expressed 
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Question number |
-| `value` | Selected emotion: `"Happiness"`, `"Sadness"`, `"Fear"`, `"Anger"`, `"Neutral"` |
-| `type` | `true` = correct, `false` = incorrect |
-| `duration` | Response time (seconds) |
-| `level` | Prompt text |
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Trial number (1-indexed, up to 10) |
+| `value` | string | Selected emotion: `"Happiness"`, `"Sadness"`, `"Fear"`, `"Anger"`, `"Neutral"` |
+| `type` | boolean | `true` = correct, `false` = incorrect |
+| `duration` | number | Response time (ms) |
+| `level` | string | Correct emotion text label (the expected answer for this trial) |
 
 ### Cortex Features
 
-No Cortex features currently process Emotion Recognition data.
+No Cortex features are currently available for this activity.
 
 View in [Portal](/app/app-tabs/portal) | [Python SDK](/developer/api-sdks/python-sdk) | [API Reference](/activities/reference)

@@ -8,11 +8,11 @@ title: "Maze Game"
 # Maze Game
 
 
-The Maze task measures motor control and spatial problem solving. Digital maze games have been utilized in assessing visual cognition in individuals with neurodegenerative disorders, brain injury, and schizophrenia. Participants tilt their phone to move a ball and navigate out of the maze. Difficulty increases with each level.
+The Maze task measures motor control and spatial problem-solving. Digital maze games have been utilized in assessing visual cognition in individuals with neurodegenerative disorders, brain injury, and schizophrenia. Participants tilt their phone to move a ball and navigate out of the maze. Difficulty increases with each level.
 
 **ActivitySpec:** `lamp.maze_game`
 
-**Cognitive domain:** Visual cognition, spatial problem solving
+**Cognitive domain:** Visual cognition, spatial problem-solving
 
 ## Configuration
 
@@ -54,16 +54,16 @@ Scoring is based on the time taken to complete each level and the number of leve
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Number of circles in the maze (starting from 2) |
-| `value` | Time elapsed in ms |
-| `type` | `true` = completed, `false` = not completed |
-| `duration` | Time for this level (seconds) |
-| `level` | Game level |
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Number of concentric rings in the maze (starting from 2) |
+| `value` | number | Time elapsed for this level (ms) |
+| `type` | boolean | `true` = completed, `false` = not completed |
+| `duration` | number | Time for this level (ms) — same value as `value` |
+| `level` | number | Game level (1-12) |
 
 ### Cortex Features
 
-No Cortex features currently process Maze Game data.
+No Cortex features are currently available for this activity.
 
 View in [Portal](/app/app-tabs/portal) | [Python SDK](/developer/api-sdks/python-sdk) | [API Reference](/activities/reference)

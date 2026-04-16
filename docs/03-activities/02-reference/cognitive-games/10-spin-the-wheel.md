@@ -12,7 +12,7 @@ Based on the Iowa Gambling Task, Spin the Wheel measures decision-making and ris
 
 **ActivitySpec:** `lamp.spin_wheel`
 
-**Cognitive domain:** Decision-making, risk-taking behavior
+**Cognitive domain:** Risk-taking behavior, decision-making
 
 ## Configuration
 
@@ -29,7 +29,7 @@ Based on the Iowa Gambling Task, Spin the Wheel measures decision-making and ris
 
 ## Usage
 
-The participant selects one of four buttons to spin the wheel. Each spin results in a gain or loss. The total balance is tracked at the top of the screen. The game ends after the configured number of spins.
+The game presents 4 buttons, with 2 randomly assigned as high-risk and 2 as low-risk each session. Buttons do not display their risk level — participants discover risk through experience. High-risk buttons offer larger potential rewards but also larger potential losses. The participant selects one of four buttons to spin the wheel. Each spin results in a gain or loss. The total balance is tracked at the top of the screen. The game ends after the configured number of spins.
 
 ### Scoring
 
@@ -59,21 +59,36 @@ Scoring is based on the amount of money the user has at the end of the game.
 
 ### static_data
 
-Unused (always `{}`).
+| Field | Type | Description |
+|-------|------|-------------|
+| `final_balance` | number | Final point balance |
+| `starting_balance` | number | Starting point balance |
+| `net_earnings` | number | Net points gained or lost |
+| `total_spins` | number | Total spins completed |
+| `total_high_risk_choices` | number | Times a high-risk button was chosen |
+| `total_low_risk_choices` | number | Times a low-risk button was chosen |
+| `risk_taking_rate` | number | Proportion of high-risk choices |
+| `mean_reaction_time` | number | Mean time to choose a button (ms) |
+| `score` | number | Overall score |
+| `correct_answers` | number | Total spins |
+| `wrong_answers` | number | Unused (0) |
+| `total_questions` | number | Total spins |
+| `questionnaire` | object | Post-game ratings: clarity (1-5), happiness (1-5) |
 
 ### temporal_slices
 
-| Field | Description |
-|-------|-------------|
-| `item` | Spin number |
-| `value` | `1` = high risk choice, `0` = low risk |
-| `type` | Running score after this spin |
-| `duration` | Time since last spin (string format, e.g., `"0.9s"`) |
-| `level` | Button pressed (1–4) |
-
-:::note
-The `duration` field uses a string format with an "s" suffix (e.g., `"0.9s"`). Parse by removing the trailing "s" and converting to a number.
-:::
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Spin number |
+| `type` | boolean | `true` = net gain or break-even, `false` = net loss |
+| `value` | null | Unused |
+| `duration` | number | Reaction time (ms) |
+| `level` | number | Spin number |
+| `risk_level` | string | "high" or "low" |
+| `win_amount` | number | Points won on this spin |
+| `loss_amount` | number | Points lost on this spin |
+| `net_change` | number | Net point change |
+| `balance_after` | number | Balance after this spin |
 
 ### Cortex Features
 

@@ -52,19 +52,38 @@ The assessment progresses through multiple phases:
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `score` | number | Overall score |
-| `correct_answers` | number | Correctly identified associations |
-| `wrong_answers` | number | Incorrect responses |
+| `image_exposure_time` | number | Time each image was shown during learning (ms) |
+| `learning_trials` | number | Number of learning trial repetitions |
+| `image_set_shown` | number | Image set used (1-6, selected based on current month) |
+| `delay_time` | number | Delay period between learning and recall (seconds) |
+| `timeTakenForTrial` | number | Total time for all learning trials (ms) |
+| `timeTakenForRecall` | number | Time for free recall phase (ms) |
+| `timeForRecognition1` | number | Time for cued recall phase (ms) |
+| `timeForRecognition2` | number | Time for forced-choice recognition phase (ms) |
+| `number_of_correct_force_choice` | number | Correct selections in the forced-choice recognition phase (0-6) |
+| `total_number_of_pairings_listed` | number | Number of image pairs presented |
+| `orientation_survey` | object | Delay-period orientation responses (see below) |
 
-### temporal_slices
+The `orientation_survey` object contains responses to orientation questions asked during the delay period. Each field has a `value` (the participant's answer) and `is_correct` (boolean, compared against actual date/time):
 
 | Field | Description |
 |-------|-------------|
-| `item` | Image pair index |
-| `value` | Selected response |
-| `type` | `true` = correct, `false` = incorrect |
-| `duration` | Response time (ms) |
-| `level` | Game phase (learning vs. recognition) |
+| `start_time` | Current time (H:M format; correct if within 5 minutes) |
+| `day` | Day of the week |
+| `today_date` | Day of the month |
+| `month` | Current month |
+| `year` | Current year |
+| `season` | Current season |
+
+### temporal_slices
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `item` | number | Image index from the randomized set |
+| `value` | string or null | Base64-encoded audio recording (learning, recall, and cued recall phases) or null (recognition phase) |
+| `type` | null or boolean | null for audio-based phases; `true`/`false` for recognition phase (correct/incorrect image selection) |
+| `duration` | number | Time since previous interaction (ms) |
+| `level` | string | Phase name: "Trial", "Trial1", "Trial2", "recall", "recognition1", or "recognition2" |
 
 ### Cortex Features
 

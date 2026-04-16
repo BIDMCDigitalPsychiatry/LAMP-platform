@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- 2x2 grid of uniform-sized shapes -->
+<!-- Star (top-left) -->
+<path d="M30 16L33.8 26.8H45L35.6 33.2L39.4 44L30 37.6L20.6 44L24.4 33.2L15 26.8H26.2Z" fill="#C75E5A"/>
+<!-- Circle (top-right) -->
+<circle cx="70" cy="30" r="14" fill="#F9907B"/>
+<!-- Triangle (bottom-left) -->
+<path d="M30 56L44 84H16Z" fill="#FE8470"/>
+<!-- Plus (bottom-right) -->
+<rect x="63" y="58" width="14" height="28" rx="2" fill="#FAC1B5"/>
+<rect x="56" y="65" width="28" height="14" rx="2" fill="#FAC1B5"/>
+</svg>
