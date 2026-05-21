@@ -568,6 +568,17 @@ const ProjectGallery: React.FC = () => {
                     </div>
                   )}
 
+                  {project.projectID === 'PRJ-0033' && (
+                    <div className={styles.detailSection}>
+                      <h4>Feature Showcase</h4>
+                      <p>
+                        <a href="/projects/safeguard">
+                          View Safeguard feature showcase &rarr;
+                        </a>
+                      </p>
+                    </div>
+                  )}
+
                   {project.studyDuration && (
                     <div className={styles.detailSection}>
                       <h4>Participant Duration</h4>

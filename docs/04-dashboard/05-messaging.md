@@ -43,3 +43,7 @@ Participants access messaging through their profile section in the app. They can
 - Messaging is asynchronous — there is no expectation of real-time response.
 - All messages are stored on the mindLAMP server.
 - Establish clear guidelines for what constitutes an emergency and how emergencies should be handled (messaging is **not** appropriate for crisis situations).
+
+:::note Project-specific extension
+The [Safeguard](/projects/safeguard#messaging) deployment adds a dedicated **Message Coordinator** account role that scopes a staff user to participant messaging without the broader permissions of a research coordinator. This role is not part of standard mindLAMP installations.
+:::
