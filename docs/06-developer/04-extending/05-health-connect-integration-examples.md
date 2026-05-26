@@ -1,6 +1,4 @@
 ---
-unlisted: true
-slug: /health-connect-integration-examples
 title: Health Connect Integration Examples
 description: How mindLAMP integrates Health Connect data with mental-health context to deliver meaningful insights in the participant portal.
 ---
