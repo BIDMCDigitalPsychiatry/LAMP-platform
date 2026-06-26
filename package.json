@@ -77,13 +77,6 @@
       "disableSwitch": false,
       "respectPrefersColorScheme": true,
       "image": "img/logo.svg",
-      "announcementBar": {
-        "id": "blog_subscribe_v2",
-        "content": "📬 Want to stay updated? <a href=\"/blog/atom.xml\" target=\"_blank\" rel=\"noopener noreferrer\">Subscribe to our blog</a> to get notified when we publish new posts!",
-        "backgroundColor": "#e8f2ff",
-        "textColor": "#1a3a5c",
-        "isCloseable": true
-      },
       "languageTabs": [
         {
           "tabName": "cURL",
@@ -212,8 +205,7 @@
             "blogTitle": "mindLAMP Blog",
             "blogDescription": "Updates, tutorials, and news from the mindLAMP team",
             "feedOptions": {
-              "type": ["rss", "atom"],
-              "xslt": true
+              "type": null
             },
             "onInlineTags": "warn",
             "onInlineAuthors": "warn",

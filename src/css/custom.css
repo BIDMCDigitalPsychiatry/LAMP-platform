@@ -146,42 +146,6 @@
   display: none;
 }
 
-/* Announcement bar styling */
-div[class*='announcementBar'] {
-  padding: 0.75rem 1rem;
-}
-
-div[class*='announcementBarContent'] {
-  max-width: none;
-  font-size: 0.95rem;
-}
-
-div[class*='announcementBarContent'] a {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-[data-theme='dark'] div[class*='announcementBar'] {
-  background: var(--section-bg-dark) !important;
-  color: #fff;
-}
-
-[data-theme='dark'] div[class*='announcementBar'] * {
-  background: transparent;
-}
-
-[data-theme='dark'] div[class*='announcementBarContent'] a {
-  color: var(--ifm-color-primary-light);
-}
-
-[data-theme='dark'] div[class*='announcementBar'] button {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-[data-theme='dark'] div[class*='announcementBarClose'] {
-  background: transparent !important;
-}
-
 /* ========== Role Cards (platform overview) ========== */
 
 .role-card-grid {
