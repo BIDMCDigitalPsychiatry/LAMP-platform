@@ -222,6 +222,17 @@ const PublicationsList: React.FC = () => {
     return pub.doi || pub.title.toLowerCase().replace(/\s+/g, '-');
   };
 
+  // Click a card's empty space to surface its shareable deep link in the
+  // address bar (does NOT write to the clipboard — the user copies it there).
+  const handleCardLink = (e: React.MouseEvent, cardId: string) => {
+    if (typeof window === 'undefined') return;
+    const target = e.target as HTMLElement;
+    // Leave existing controls (buttons, links, inputs) and text selection alone
+    if (target.closest('a, button, input, label')) return;
+    if (window.getSelection()?.toString()) return;
+    history.replaceState(null, '', `#${encodeURIComponent(cardId)}`);
+  };
+
   if (publications.length === 0) {
     return (
       <div className={styles.container}>
@@ -404,9 +415,11 @@ const PublicationsList: React.FC = () => {
           return (
             <article
               key={pub.doi || pub.title}
-              className={`${styles.pubCard} ${isHighlighted ? styles.highlighted : ''}`}
+              className={`${styles.pubCard} ${styles.copyable} ${isHighlighted ? styles.highlighted : ''}`}
               id={safeId}
               style={{ borderLeftColor: cardColor }}
+              onClick={(e) => handleCardLink(e, safeId)}
+              title="Click to put this publication's link in the address bar"
             >
               {/* Header with year and link */}
               <div className={styles.cardHeader}>

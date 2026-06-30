@@ -294,6 +294,11 @@
   box-shadow: 0 4px 20px rgba(134, 182, 255, 0.5), 0 8px 32px rgba(134, 182, 255, 0.3);
 }
 
+/* Click-to-copy a shareable link to a card */
+.copyable {
+  cursor: pointer;
+}
+
 /* Card Header */
 .cardHeader {
   display: flex;

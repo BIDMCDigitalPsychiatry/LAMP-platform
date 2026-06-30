@@ -238,6 +238,17 @@ const ProjectGallery: React.FC = () => {
     return num.toString();
   };
 
+  // Click a card's empty space to surface its shareable deep link in the
+  // address bar (does NOT write to the clipboard — the user copies it there).
+  const handleCardLink = (e: React.MouseEvent, cardId: string) => {
+    if (typeof window === 'undefined') return;
+    const target = e.target as HTMLElement;
+    // Leave existing controls (buttons, links, inputs) and text selection alone
+    if (target.closest('a, button, input, label')) return;
+    if (window.getSelection()?.toString()) return;
+    history.replaceState(null, '', `#${encodeURIComponent(cardId)}`);
+  };
+
   if (projects.length === 0) {
     return (
       <div className={styles.container}>
@@ -458,9 +469,11 @@ const ProjectGallery: React.FC = () => {
           return (
             <article
               key={project.projectID}
-              className={`${styles.projectCard} ${isHighlighted ? styles.highlighted : ''}`}
+              className={`${styles.projectCard} ${styles.copyable} ${isHighlighted ? styles.highlighted : ''}`}
               id={project.projectID}
               style={{ borderLeftColor: statusColor }}
+              onClick={(e) => handleCardLink(e, project.projectID)}
+              title="Click to put this project's link in the address bar"
             >
               {/* Header with status and dates */}
               <div className={styles.cardHeader}>
