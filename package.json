@@ -73,6 +73,13 @@
     "onDuplicateRoutes": "warn",
     "onBrokenMarkdownLinks": "warn",
     "themeConfig": {
+      "announcementBar": {
+        "id": "newsletter_signup_2026_07",
+        "content": "Get mindLAMP updates in your inbox! — <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://digitalpsychiatry.notion.site/39733133d8a2808b9575d4dec8dfbe28\">Subscribe</a>",
+        "backgroundColor": "#e8f2ff",
+        "textColor": "#1e3a8a",
+        "isCloseable": true
+      },
       "defaultMode": "light",
       "disableSwitch": false,
       "respectPrefersColorScheme": true,
@@ -147,7 +154,7 @@
             "position": "right",
             "items": [
               {
-                "label": "Blog",
+                "label": "Updates",
                 "to": "/blog"
               },
               {
@@ -170,7 +177,7 @@
         "style": "light",
         "links": [
                     {
-            "label": "Blog",
+            "label": "Updates",
             "to": "/blog"
           },
           {
@@ -202,7 +209,7 @@
           },
           "blog": {
             "showReadingTime": true,
-            "blogTitle": "mindLAMP Blog",
+            "blogTitle": "mindLAMP Updates",
             "blogDescription": "Updates, tutorials, and news from the mindLAMP team",
             "feedOptions": {
               "type": null
