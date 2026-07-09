@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunklamp_platform=globalThis.webpackChunklamp_platform||[]).push([[8146],{29328:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Updates, tutorials, and news from the mindLAMP team","blogTitle":"mindLAMP Blog"}}')}}]);

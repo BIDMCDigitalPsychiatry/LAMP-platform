@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunklamp_platform=globalThis.webpackChunklamp_platform||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"mindLAMP Blog","authorsListPath":"/blog/authors"}')}}]);
