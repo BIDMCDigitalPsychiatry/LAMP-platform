@@ -11,7 +11,7 @@ The OAuth2/OIDC integration for the LAMP Platform allows 3rd party identity serv
 
 :::note
 
-Support for OAuth2/OIDC is under active development is a **BETA** feature at this time. For more information and assistance, [contact us](mailto:team@digitalpsych.org).
+Support for OAuth2/OIDC is under active development is a **BETA** feature at this time. For more information and assistance, [contact us](mailto:mindlamp@bidmc.harvard.edu).
 
 :::
 

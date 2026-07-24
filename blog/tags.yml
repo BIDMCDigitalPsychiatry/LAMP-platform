@@ -17,3 +17,8 @@ updates:
   label: Updates
   permalink: /updates
   description: Platform updates and new features
+
+authentication:
+  label: Authentication
+  permalink: /authentication
+  description: The mindLAMP authentication and API upgrade

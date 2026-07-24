@@ -57,7 +57,7 @@ Once the database completes saving data and any backup processes, the scheduler 
 
 Assuming no internal maintenance tasks need to run, the scheduler may create an execution plan with only a single applet. Once started, a new virtual environment is prepared and securely isolated from other data. For example, an R environment would analyze the script to run and install the correct versions of all required packages, replicating the environment used by the applet's author.
 
-[Please contact us directly for guidance on delivery of just-in-time interventions.](mailto:team@digitalpsych.org)
+[Please contact us directly for guidance on delivery of just-in-time interventions.](mailto:mindlamp@bidmc.harvard.edu)
 
 ![](assets/Untitled_77.png)
 
