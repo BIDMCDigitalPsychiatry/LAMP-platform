@@ -1,4 +1,8 @@
 {
   "label": "Cognitive Games",
-  "position": 2
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "activities/reference/cognitive-games/index"
+  }
 }

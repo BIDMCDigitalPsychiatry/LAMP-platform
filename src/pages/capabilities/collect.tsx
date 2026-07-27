@@ -529,6 +529,9 @@ export default function Collect() {
               </Link>
             ))}
           </div>
+          <p className={styles.sectionLinks} style={{ marginTop: '1rem' }}>
+            <Link to="/activities/reference/cognitive-games">Explore all cognitive games &#8594;</Link>
+          </p>
           </div>
         </div>
       </section>

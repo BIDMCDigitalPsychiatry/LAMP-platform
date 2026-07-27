@@ -44,13 +44,6 @@ Difficulty levels control the structure: Easy (3 rounds, 8 guesses each), Medium
 
 Primary metrics are rounds solved, mean guesses to solve, and guess efficiency (proportion of guess budget used). The guess distribution shows frequency of solving in 1, 2, 3, etc. guesses.
 
-<details>
-<summary>References</summary>
-
-1. Berger, J. (2023). Wordle and constraint satisfaction: cognitive mechanisms underlying word-guessing games. Cognitive Science, 47(3), e13281.
-
-</details>
-
 ## Data
 
 ### static_data

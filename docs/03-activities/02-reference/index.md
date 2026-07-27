@@ -18,9 +18,10 @@ Every activity has a unique **ActivitySpec** identifier used in the API and data
 
 ## Assess
 
+### Cognitive Games
+
 | Activity | ActivitySpec | Cortex |
 |----------|------------|:------:|
-| [Surveys](surveys) | `lamp.survey` | [Yes](surveys#cortex-features) |
 | [Jewels A](jewels-a) | `lamp.jewels_a` | [Yes](jewels-a#cortex-features) |
 | [Jewels B](jewels-b) | `lamp.jewels_b` | [Yes](jewels-b#cortex-features) |
 | [Trails B](trails-b) | `lamp.trails_b` | [Raw only](trails-b#cortex-features) |
@@ -51,6 +52,12 @@ Every activity has a unique **ActivitySpec** identifier used in the API and data
 | [Lexical Decision](lexical-decision) | `lamp.lexical_decision` | — |
 | [Letter Logic](letter-logic) | `lamp.letter_logic` | — |
 | [Delay Discounting](delay-discounting) | `lamp.delay_discounting` | — |
+
+### Other Assessments
+
+| Activity | ActivitySpec | Cortex |
+|----------|------------|:------:|
+| [Surveys](surveys) | `lamp.survey` | [Yes](surveys#cortex-features) |
 | [Voice Recording](voice-recording) | `lamp.recording` | [Raw only](voice-recording#cortex-features) |
 | [DBT Diary Card](dbt-diary-card) | `lamp.dbt_diary_card` | — |
 
