@@ -24,3 +24,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Cognitive-game bundles fetched at build time by scripts/fetch-activities.mjs
+/static/play/games/

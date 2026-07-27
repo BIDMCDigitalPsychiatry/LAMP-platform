@@ -13,6 +13,12 @@ Digit Span is a standard neuropsychological assessment (Wechsler, 2008) measurin
 
 **Cognitive domain:** Working memory
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=digit-span" title="Play Digit Span" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 The game is configured through the Activities tab. Select **Digit Span** and choose the forward or backward variant.

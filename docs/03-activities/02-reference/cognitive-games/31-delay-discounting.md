@@ -13,6 +13,12 @@ The Delay Discounting task measures temporal impulsivity -- the tendency to pref
 
 **Cognitive domain:** Temporal impulsivity, reward valuation, decision-making
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=delay-discounting" title="Play Delay Discounting" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

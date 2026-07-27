@@ -13,6 +13,12 @@ The Sliding Puzzle is a classic spatial problem-solving task that measures plann
 
 **Cognitive domain:** Spatial planning, spatial working memory, problem-solving
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=sliding-puzzle" title="Play Sliding Puzzle" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

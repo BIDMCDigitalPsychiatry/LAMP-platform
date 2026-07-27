@@ -14,6 +14,12 @@ The Maze task measures motor control and spatial problem-solving. Digital maze g
 
 **Cognitive domain:** Visual cognition, spatial problem-solving
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=maze-game" title="Play Maze Game" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
@@ -38,17 +44,6 @@ Scoring is based on the time taken to complete each level and the number of leve
 3. Wilkins, L. K. et al. (2017) Hippocampal activation and memory performance in schizophrenia depend on strategy use in a virtual maze. Psychiatry Research: Neuroimaging, 268, 1-8. DOI: [10.1016/j.pscychresns.2017.07.007](https://doi.org/10.1016/j.pscychresns.2017.07.007)
 
 </details>
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ROXLDutOhxo?si=XsMLskiTP0P8jell" title="Maze Game gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/maze-gameplay.png" alt="Maze Game gameplay" width="280" />
-  <img src="/img/cognitive-games/maze-conclusion.png" alt="Maze Game conclusion" width="150" />
-</div>
 
 ## Data
 

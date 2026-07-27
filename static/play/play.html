@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Try it — mindLAMP cognitive game</title>
+<style>
+  html, body { margin: 0; height: 100%; background: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 8px; }
+  .frame { width: 100%; max-width: 390px; height: 640px; border-radius: 22px; overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,.15); background: #000; }
+  .frame iframe { width: 100%; height: 100%; border: none; display: block; background: #fff; }
+  .status { font-size: 12px; color: #888; min-height: 16px; text-align: center; }
+  .err { color: #b00; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="frame"><iframe id="game" title="Cognitive game"></iframe></div>
+    <div class="status" id="status">Loading…</div>
+  </div>
+  <script>
+    (function () {
+      var slug = (new URLSearchParams(location.search).get('game') || '').replace(/[^a-z0-9-]/gi, '');
+      var iframe = document.getElementById('game');
+      var statusEl = document.getElementById('status');
+      if (!slug) { statusEl.className = 'status err'; statusEl.textContent = 'No game specified.'; return; }
+
+      var config = null, sends = 0, timer = null;
+      function send() { if (!config) return; try { iframe.contentWindow.postMessage(config, '*'); sends++; } catch (e) {} }
+
+      fetch('configs.json').then(function (r) { return r.json(); }).then(function (all) {
+        var entry = all[slug];
+        if (!entry) { statusEl.className = 'status err'; statusEl.textContent = 'Unknown game: ' + slug; return; }
+        config = entry.config || { configuration: { language: 'en-US' }, activity: { settings: {} } };
+        iframe.addEventListener('load', function () {
+          statusEl.textContent = 'Ready — follow the on-screen instructions.';
+          send(); // the game's message listener may mount just after load, so retry briefly
+          timer = setInterval(function () { send(); if (sends >= 6) clearInterval(timer); }, 400);
+        });
+        iframe.addEventListener('error', function () {
+          statusEl.className = 'status err'; statusEl.textContent = 'This game could not be loaded.';
+        });
+        iframe.src = 'games/' + slug;
+      }).catch(function () { statusEl.className = 'status err'; statusEl.textContent = 'Could not load game configuration.'; });
+
+      // Reflect completion (demo only — nothing is saved)
+      window.addEventListener('message', function (e) {
+        if (e.source === iframe.contentWindow && e.data &&
+            (e.data.static_data || e.data.temporal_slices || e.data.timestamp)) {
+          statusEl.textContent = 'Finished — this is a demo, so no data is saved.';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

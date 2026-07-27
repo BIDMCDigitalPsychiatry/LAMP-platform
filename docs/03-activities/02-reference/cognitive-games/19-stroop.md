@@ -13,6 +13,12 @@ The Stroop Color-Word Interference Test (Stroop, 1935) measures selective attent
 
 **Cognitive domain:** Selective attention, cognitive control, interference suppression
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=stroop" title="Play Stroop Color-Word Test" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

@@ -14,6 +14,12 @@ Based on the Iowa Gambling Task, Spin the Wheel measures decision-making and ris
 
 **Cognitive domain:** Risk-taking behavior, decision-making
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=spin-the-wheel" title="Play Spin the Wheel" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |
@@ -22,6 +28,9 @@ Based on the Iowa Gambling Task, Spin the Wheel measures decision-making and ris
 | **Starting balance** | Initial balance (default $2000) |
 | **Sum** | Amount added or subtracted per spin: 50, 100, or 250 |
 | **Probability** | Probability of landing on a given sum: 0%, 25%, 50%, or 75% |
+
+**Configuring Spin the Wheel in the dashboard:**
+<img src="/img/cognitive-games/spin-the-wheel-customization.png" alt="Spin the Wheel dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
 
 ### Sample Instructions
 
@@ -43,17 +52,6 @@ Scoring is based on the amount of money the user has at the end of the game.
 3. Bowman, C. H. et al. (2005) Artificial time constraints on the Iowa gambling task. Brain and Cognition, 57, 21-25. DOI: [10.1016/j.bandc.2004.08.015](https://doi.org/10.1016/j.bandc.2004.08.015)
 
 </details>
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/65pG23pwAmY?si=aaD8at4H6v6vRojd" title="Spin the Wheel gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/spin-the-wheel-gameplay.png" alt="Spin the Wheel gameplay" width="280" />
-  <img src="/img/cognitive-games/spin-the-wheel-customization.png" alt="spin the wheel customization" width="500" />
-</div>
 
 ## Data
 

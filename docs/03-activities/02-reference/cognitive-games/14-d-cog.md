@@ -14,6 +14,12 @@ Similar to Cats and Dogs, D-Cog presents an array of boxes that briefly reveal t
 
 **Cognitive domain:** Visual and working memory, attention, response control, set-shifting
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=d-cog" title="Play D-Cog" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 The game automatically progresses as levels are completed. No researcher-defined customization is necessary.
@@ -36,13 +42,6 @@ Scoring is based on the number of dogs remembered correctly across trials.
 1. Weil, R. S. et al. (2017) The cats-and-dogs test: a tool to identify visuoperceptual deficits in Parkinson's disease. Movement Disorders, 32(12), 1789-1790. DOI: [10.1002/mds.27176](https://doi.org/10.1002/mds.27176)
 
 </details>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/dcog-gameplay.png" alt="D-Cog gameplay" width="500" />
-  <img src="/img/cognitive-games/dcog-end-screen.png" alt="D-Cog end screen" width="280" />
-</div>
 
 ## Data
 

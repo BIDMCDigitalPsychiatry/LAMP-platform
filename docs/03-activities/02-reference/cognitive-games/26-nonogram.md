@@ -13,6 +13,12 @@ Nonograms are logic puzzles that require constraint satisfaction and deductive r
 
 **Cognitive domain:** Logic, deductive reasoning, working memory, spatial reasoning
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=nonogram" title="Play Nonogram" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

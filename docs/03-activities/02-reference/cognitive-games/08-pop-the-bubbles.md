@@ -14,6 +14,12 @@ A go/no-go attention task where the participant must "pop" target bubbles while 
 
 **Cognitive domain:** Attention, inhibition
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=pop-the-bubbles" title="Play Pop the Bubbles" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |
@@ -35,6 +41,9 @@ A go/no-go attention task where the participant must "pop" target bubbles while 
 
 </details>
 
+**Configuring Pop the Bubbles in the dashboard:**
+<img src="/img/cognitive-games/pop-the-bubbles-customization.png" alt="Pop the Bubbles dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
+
 ### Sample Instructions
 
 *"In this game, you will see lots of different colored bubbles, one at a time. Your task is to 'pop' the correctly colored bubbles, while ignoring the incorrect ones. Pay attention to the instructions for each level to know which colored bubbles you should tap, and which ones you should ignore. Your score is based on the percentage of balloons shown that you correctly tapped, minus the percentage that you incorrectly tapped, with a perfect score being 100%."*
@@ -46,18 +55,6 @@ Bubbles appear one at a time. The participant must tap target bubbles (go) and a
 ### Scoring
 
 Scoring is based on: percentage of bubbles successfully popped, percentage incorrectly missed, percentage correctly ignored, and percentage incorrectly popped.
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C-rctV4syp0?si=xrQm1Rkzfrgg9a1x" title="Pop the Bubbles gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/pop-the-bubbles-gameplay.png" alt="Pop the Bubbles gameplay" width="280" />
-  <img src="/img/cognitive-games/pop-the-bubbles-customization.png" alt="pop the uuubles customization" width="500" />
-  <img src="/img/cognitive-games/pop-the-bubbles-scoring.png" alt="Pop the Bubbles scoring" width="280" />
-</div>
 
 ## Data
 

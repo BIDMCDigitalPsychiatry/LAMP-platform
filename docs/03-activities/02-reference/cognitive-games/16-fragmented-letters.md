@@ -13,6 +13,12 @@ The participant identifies letters of the alphabet that have been partially "fra
 
 **Cognitive domain:** Visual and perceptual processing
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=fragmented-letters" title="Play Fragmented Letters" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 No researcher-defined customization is necessary. The game adapts automatically based on participant performance.
@@ -27,14 +33,6 @@ Letters appear on screen with varying levels of fragmentation. The participant v
 1. Warrington, E. K. & James, M. (1991) The Visual Object and Space Perception Battery. Thames Valley Test Company.
 
 </details>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/fragmented-letters-1.png" alt="Fragmented Letters phase 1" width="280" />
-  <img src="/img/cognitive-games/fragmented-letters-2.png" alt="Fragmented Letters phase 2" width="280" />
-  <img src="/img/cognitive-games/fragmented-letters-3.png" alt="Fragmented Letters phase 3" width="280" />
-</div>
 
 ## Data
 

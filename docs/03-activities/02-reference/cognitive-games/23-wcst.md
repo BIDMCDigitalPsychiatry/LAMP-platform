@@ -13,6 +13,12 @@ The Wisconsin Card Sorting Test (WCST) is the gold-standard measure of cognitive
 
 **Cognitive domain:** Cognitive flexibility, set-shifting, abstract reasoning
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=wcst" title="Play Wisconsin Card Sorting Test" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

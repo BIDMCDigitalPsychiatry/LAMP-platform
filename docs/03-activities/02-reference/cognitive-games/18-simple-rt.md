@@ -13,6 +13,12 @@ The Simple and Choice Reaction Time task combines the two most fundamental parad
 
 **Cognitive domain:** Processing speed, psychomotor speed, decision time
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=simple-rt" title="Play Simple & Choice Reaction Time" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

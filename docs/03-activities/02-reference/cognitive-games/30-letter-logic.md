@@ -13,6 +13,12 @@ Letter Logic is a constrained word-guessing task that measures vocabulary breadt
 
 **Cognitive domain:** Vocabulary, hypothesis testing, constraint satisfaction, working memory
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=letter-logic" title="Play Letter Logic" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

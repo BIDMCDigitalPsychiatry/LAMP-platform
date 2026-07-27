@@ -20,6 +20,9 @@ Researchers must provide a dataset of up to 50 facial images and label each with
 
 A random subset of up to 10 images is selected and shuffled each session. If fewer than 10 images are uploaded, all images will be shown in random order.
 
+**Configuring Emotion Recognition in the dashboard:**
+<img src="/img/cognitive-games/emotion-recognition-customization.png" alt="Emotion Recognition dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
+
 ### Sample Instructions
 
 *"In this task you will be presented with up to 10 facial images and asked to identify the emotion expressed by each one from a list of 5 emotions."*
@@ -36,7 +39,6 @@ Scoring is based on whether the user correctly identifies the emotion expressed 
 
 <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
   <img src="/img/cognitive-games/emotion-recognition-gameplay.png" alt="Emotion Recognition gameplay" width="280" />
-  <img src="/img/cognitive-games/emotion-recognition-customization.png" alt="Emotion Recognition customization" width="500" />
 </div>
 
 

@@ -14,6 +14,12 @@ Jewels B is the alternating variant of the Jewels Trail Making Test. Instead of 
 
 **Cognitive domain:** Executive function, set-shifting, visual and motor abilities
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=jewels-b" title="Play Jewels B" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 1. Navigate to the Activities tab and click **+ Add**.
@@ -44,6 +50,9 @@ Jewels B is the alternating variant of the Jewels Trail Making Test. Instead of 
 
 </details>
 
+**Configuring Jewels B in the dashboard:**
+<img src="/img/cognitive-games/jewels-customization.png" alt="Jewels B dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
+
 ### Sample Instructions
 
 *"Look at the bottom of the screen to see which jewel to collect first. Tap number 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected."*
@@ -64,17 +73,6 @@ Scoring is out of 100 points, with each incorrect jewel resulting in a deduction
 3. Magdalene R. Bracken et al. (2019) Trail Making Test: Comparison of paper-and-pencil and electronic versions, Applied Neuropsychology: Adult, 26:6, DOI: [10.1080/23279095.2018.1460371](https://doi.org/10.1080/23279095.2018.1460371)
 
 </details>
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qVdbbUZJTgM?si=9L_5l4NkxBSIVxaL" title="Jewels B gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/jewels-gameplay.png" alt="Jewels gameplay" width="280" />
-  <img src="/img/cognitive-games/jewels-customization.png" alt="jewels customization" width="500" />
-</div>
 
 ## Data
 

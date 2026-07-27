@@ -13,6 +13,12 @@ The Lexical Decision Task is one of the most widely used paradigms in psycholing
 
 **Cognitive domain:** Word recognition, lexical access, language processing
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=lexical-decision" title="Play Lexical Decision Task" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

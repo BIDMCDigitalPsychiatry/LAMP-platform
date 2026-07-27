@@ -14,6 +14,12 @@ Spatial Span assesses visuospatial memory, derived from the Corsi Block Test and
 
 **Cognitive domain:** Visuospatial memory, working memory
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=spatial-span" title="Play Spatial Span" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 1. Navigate to the Activities tab and click **+ Add**.
@@ -42,6 +48,10 @@ Spatial Span assesses visuospatial memory, derived from the Corsi Block Test and
 | Max Levels | `max_levels` | number | 5 | Maximum number of sequences |
 | Max Failures | `max_failures` | number | 2 | Consecutive failures to end the game |
 
+**Configuring Spatial Span in the dashboard:**
+
+<img src="/img/cognitive-games/spatial-span-customization.png" alt="Spatial Span dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
+
 ### Sample Instructions
 
 **Forward:** *"You will see a grid of boxes. The boxes will light up in a certain order. Remember that order, and then tap the boxes in the same order in which they lit up. Each level will have more boxes light up. See how far you can get!"*
@@ -65,19 +75,6 @@ Scoring is based on how many times participants can correctly complete the task 
 4. Douglas, K. M. et al. (2018) Prevalence of cognitive impairment in major depression and bipolar disorder. Bipolar Disorders, 20(3), 260-274. DOI: [10.1111/bdi.12602](https://doi.org/10.1111/bdi.12602)
 
 </details>
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gn9gyoi8G0M?si=tQrlz3QqRJW1meCu" title="Spatial Span gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/spatial-span-forward.png" alt="Spatial Span forward" width="280" />
-  <img src="/img/cognitive-games/spatial-span-gameplay.png" alt="Spatial Span gameplay" width="280" />
-  <img src="/img/cognitive-games/spatial-span-customization.png" alt="spatial span customization" width="500" />
-  <img src="/img/cognitive-games/spatial-span-conclusion.png" alt="Spatial Span conclusion" width="150" />
-</div>
 
 ## Data
 

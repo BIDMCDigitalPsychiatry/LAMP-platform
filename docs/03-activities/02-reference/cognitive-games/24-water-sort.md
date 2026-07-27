@@ -13,6 +13,12 @@ Water Sort is a planning and problem-solving task in the same family as the Towe
 
 **Cognitive domain:** Planning, executive function, working memory, inhibitory control
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=water-sort" title="Play Water Sort" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

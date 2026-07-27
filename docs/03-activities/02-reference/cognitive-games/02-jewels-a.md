@@ -14,6 +14,12 @@ Jewels A is based on the Trail Making Test, a standard screening tool for dement
 
 **Cognitive domain:** Executive function, visual and motor abilities
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=jewels-a" title="Play Jewels A" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 1. Navigate to the Activities tab and click **+ Add**.
@@ -44,6 +50,9 @@ Jewels A is based on the Trail Making Test, a standard screening tool for dement
 
 </details>
 
+**Configuring Jewels A in the dashboard:**
+<img src="/img/cognitive-games/jewels-customization.png" alt="Jewels A dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
+
 ### Sample Instructions
 
 *"Tap the jewels in chronological order, starting with number 1."*
@@ -65,17 +74,6 @@ Scoring is out of 100 points, with each incorrect jewel resulting in a deduction
 4. Robert P. Fellows, Jessamyn Dahmen, Diane Cook & Maureen Schmitter-Edgecombe (2017) Multicomponent analysis of a digital Trail Making Test, The Clinical Neuropsychologist, 31:1, 154-167, DOI: [10.1080/13854046.2016.1238510](https://doi.org/10.1080/13854046.2016.1238510)
 
 </details>
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ynDuquI8Kuc?si=CqjuNFC0bJWhiND1" title="Jewels A gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/jewels-gameplay.png" alt="Jewels gameplay" width="280" />
-  <img src="/img/cognitive-games/jewels-customization.png" alt="jewels customization" width="500" />
-</div>
 
 ## Data
 

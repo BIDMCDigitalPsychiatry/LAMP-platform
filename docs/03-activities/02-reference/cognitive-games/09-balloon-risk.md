@@ -14,6 +14,12 @@ The Balloon Analog Risk Task (BART) is a computerized risk-reward assessment. Th
 
 **Cognitive domain:** Risk-taking behavior, decision-making
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=balloon-risk" title="Play Balloon Risk" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |
@@ -32,6 +38,9 @@ The Balloon Analog Risk Task (BART) is a computerized risk-reward assessment. Th
 | Breakpoint Std Dev | `breakpoint_std` | number |
 
 </details>
+
+**Configuring Balloon Risk in the dashboard:**
+<img src="/img/cognitive-games/balloon-risk-customization.png" alt="Balloon Risk dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
 
 ### Sample Instructions
 
@@ -53,17 +62,6 @@ If the balloon does not pop and the user collects, points equal the number of pu
 3. Lauriola, M. et al. (2014) Individual differences in risky decision making: A meta-analysis of sensation seeking and impulsivity with the BART. Journal of Behavioral Decision Making, 27(1), 20-36. DOI: [10.1002/bdm.1784](https://doi.org/10.1002/bdm.1784)
 
 </details>
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NL8X5Jyl0cM?si=yhWMnokG_f0sndHv" title="Balloon Risk gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/balloon-risk-gameplay.png" alt="Balloon Risk gameplay" width="280" />
-  <img src="/img/cognitive-games/balloon-risk-customization.png" alt="ualloon risk customization" width="500" />
-</div>
 
 ## Data
 

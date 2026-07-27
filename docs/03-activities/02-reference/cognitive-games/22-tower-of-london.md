@@ -13,6 +13,12 @@ The Tower of London task is a classic neuropsychological test of executive funct
 
 **Cognitive domain:** Planning, problem-solving, executive function
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=tower-of-london" title="Play Tower of London" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

@@ -13,6 +13,12 @@ Memory Match is a classic card-matching task that engages visual-spatial recogni
 
 **Cognitive domain:** Visual-spatial recognition memory, working memory
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=memory-match" title="Play Memory Match" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |

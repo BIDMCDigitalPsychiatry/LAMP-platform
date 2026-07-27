@@ -14,6 +14,12 @@ Trails B is a digital adaptation of Part B of the Trail Making Test. The partici
 
 **Cognitive domain:** Frontoexecutive function
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=trails-b" title="Play Trails B" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 1. Navigate to the Activities tab and click **+ Add**.
@@ -26,6 +32,9 @@ Trails B is a digital adaptation of Part B of the Trail Making Test. The partici
 | **Timeout period for Level 1** | Time limit in seconds |
 | **Number of dots for Level 2** | 20 or 24 |
 | **Timeout period for Level 2** | Time limit in seconds |
+
+**Configuring Trails B in the dashboard:**
+<img src="/img/cognitive-games/trails-b-customization.png" alt="Trails B dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
 
 ### Sample Instructions
 
@@ -45,20 +54,6 @@ Scoring is based on the accuracy with which the user taps out each sequence.
 1. Army Individual Test Battery (1984)
 
 </details>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/trails-b-gameplay.png" alt="Trails B gameplay" width="280" />
-  <img src="/img/cognitive-games/trails-b-customization.png" alt="Trails B customization" width="500" />
-</div>
-
-<div style={{display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'flex-start', marginTop: '1rem'}}>
-  <img src="/img/cognitive-games/trails-b-smarta-1.png" alt="Trails B phase 1" width="280" />
-  <img src="/img/cognitive-games/trails-b-smarta-2.png" alt="Trails B phase 2" width="280" />
-  <img src="/img/cognitive-games/trails-b-smarta-3.png" alt="Trails B phase 3" width="280" />
-  <img src="/img/cognitive-games/trails-b-smarta-4.png" alt="Trails B phase 4" width="280" />
-</div>
 
 ## Data
 

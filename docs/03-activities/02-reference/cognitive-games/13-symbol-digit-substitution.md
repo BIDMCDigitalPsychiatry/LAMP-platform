@@ -14,12 +14,21 @@ Originally part of the Wechsler Adult Intelligence Scale, the Symbol-Digit Subst
 
 **Cognitive domain:** Motor speed, attention, associative thinking
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=symbol-digit-substitution" title="Play Symbol-Digit Substitution" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |
 |---------|-------------|
 | **Number of symbols** | How many symbols appear in the task |
 | **Duration** | Task duration in seconds |
+
+**Configuring Symbol-Digit Substitution in the dashboard:**
+<img src="/img/cognitive-games/symbol-digit-customization.png" alt="Symbol-Digit Substitution dashboard configuration" style={{width: "100%", maxWidth: "760px"}} />
 
 ### Sample Instructions
 
@@ -41,17 +50,6 @@ Scoring is based on the total number of correct symbols selected within the give
 3. Jaeger, J. (2018) Digit symbol substitution test: the case for sensitivity over specificity. Journal of Clinical Psychopharmacology, 38(5), 513. DOI: [10.1097/JCP.0000000000000941](https://doi.org/10.1097/JCP.0000000000000941)
 
 </details>
-
-### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tiqKDGtdyKo?si=EixF6CQYp4cOINns" title="Symbol-Digit Substitution gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Screenshots
-
-<div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-start'}}>
-  <img src="/img/cognitive-games/symbol-digit-gameplay.png" alt="symuol digit gameplay" width="500" />
-  <img src="/img/cognitive-games/symbol-digit-customization.png" alt="Symbol-Digit Substitution customization" width="500" />
-</div>
 
 ## Data
 

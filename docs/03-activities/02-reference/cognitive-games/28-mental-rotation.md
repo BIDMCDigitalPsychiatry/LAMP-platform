@@ -13,6 +13,12 @@ The Mental Rotation task measures spatial visualization ability. Participants vi
 
 **Cognitive domain:** Spatial visualization, mental imagery
 
+## Try it
+
+Play the activity right here. This is the same task mindLAMP delivers to participants, running in your browser with default settings; nothing is saved.
+
+<iframe src="/play/play?game=mental-rotation" title="Play Mental Rotation" loading="lazy" style={{width: '100%', maxWidth: '420px', height: '740px', border: 'none'}}></iframe>
+
 ## Configuration
 
 | Setting | Description |
