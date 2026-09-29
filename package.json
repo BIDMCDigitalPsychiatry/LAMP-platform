@@ -220,6 +220,9 @@
           },
           "theme": {
             "customCss": "./src/css/custom.css"
+          },
+          "sitemap": {
+            "ignorePatterns": ["/levelup-terms", "/levelup-privacy"]
           }
         }
       ]
@@ -240,7 +243,8 @@
           "indexDocs": true,
           "indexBlog": true,
           "indexPages": true,
-          "hashed": true
+          "hashed": true,
+          "ignoreFiles": ["levelup-terms", "levelup-privacy"]
         }
       ],
           [
