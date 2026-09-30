@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
+import Admonition from '@theme/Admonition';
 import styles from '../capabilities/capabilities.module.css';
 
 /* ============================================================
@@ -386,7 +387,7 @@ function FeatureSection({ feature, index }: { feature: Feature; index: number })
             <div style={extendsCalloutStyle}>
               <strong>Extends:</strong>{' '}
               <Link to={feature.extends.href}>{feature.extends.label}</Link> in standard
-              mindLAMP. This Safeguard build adds the configuration options described below.
+              mindLAMP. This Level Up build adds the configuration options described below.
             </div>
           )}
 
@@ -438,8 +439,8 @@ export default function SafeguardFeatures() {
 
   return (
     <Layout
-      title="Safeguard Feature Showcase"
-      description="Features developed for the Safeguard deployment of mindLAMP — home page, modules, branching logic, streaks, favoriting, messaging, and embedded video conferencing."
+      title="Level Up Feature Showcase"
+      description="Level Up, powered by mindLAMP, is the app for SAFEGUARD, a life skills training program for U.S. Army soldiers. Features include home page, modules, branching logic, streaks, favoriting, messaging, and embedded video conferencing."
     >
       {/* Hero */}
       <header
@@ -447,19 +448,40 @@ export default function SafeguardFeatures() {
         style={{ background: 'linear-gradient(135deg, #1f3a2e 0%, #6b8c75 100%)' }}
       >
         <div className={styles.heroContent}>
-          <div className={styles.heroTagline}>Project Showcase</div>
-          <Heading as="h1" className={styles.heroTitle}>
-            Safeguard
+          <Heading as="h1" className={styles.heroTitle} style={{ marginBottom: '0.25rem' }}>
+            Level Up
           </Heading>
+          <div className={styles.heroTagline} style={{ marginBottom: '1.5rem' }}>
+            Powered by mindLAMP
+          </div>
           <p className={styles.heroSubtitle}>
-            Safeguard is a life skills training program for U.S. Army soldiers, delivered
-            through a customized mindLAMP experience built to support group-based program
+            Level Up is the app for SAFEGUARD, a life skills training program for U.S. Army
+            soldiers. It is built to support group-based program
             delivery. The features below help administrators organize app content, personalize
             each cohort&rsquo;s experience, and guide participants to the activities,
             resources, and communication channels most relevant to their group.
           </p>
         </div>
       </header>
+
+      {/* Redirect for Level Up app users who land on this showcase */}
+      <section
+        className={styles.section}
+        style={{ paddingTop: '1.5rem', paddingBottom: 0 }}
+      >
+        <div className="container">
+          <div style={featureBlockStyle}>
+            <Admonition type="info" title="Using the Level Up app?">
+              For questions about your account, the study, or the app, contact the study
+              team at{' '}
+              <a href="mailto:life-skills-study-ggg@usuhs.edu">
+                life-skills-study-ggg@usuhs.edu
+              </a>
+              .
+            </Admonition>
+          </div>
+        </div>
+      </section>
 
       {/* Feature tab strip */}
       <section
@@ -468,7 +490,7 @@ export default function SafeguardFeatures() {
       >
         <div className="container">
           <div style={featureBlockStyle}>
-            <div role="tablist" aria-label="Safeguard features" style={tabStripStyle}>
+            <div role="tablist" aria-label="Level Up features" style={tabStripStyle}>
               {features.map((f) => {
                 const isActive = f.id === activeId;
                 return (
