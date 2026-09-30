@@ -1,0 +1,256 @@
+---
+slug: /privacy
+sidebar_label: "Security & Privacy Policy"
+sidebar_position: 7
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Security & Privacy Policy
+
+> Looking for other documentation? See the [platform overview](/docs) or [get started with a free consultation](/get-started).
+
+## Privacy Policy
+
+### What Data We Collect
+
+The LAMP Platform collects the following types of data, depending on how a study or deployment is configured:
+
+- **Account credentials:** A username and password used to authenticate. By default, participants are identified by a randomly generated ID (e.g. "U123456789"), not by name, phone number, or address.
+- **Timestamps:** All data collected by the platform is timestamped. Timestamps are considered protected health information (PHI) under HIPAA.
+- **Survey and cognitive test responses:** Answers to researcher-configured surveys and results from cognitive assessments.
+- **App interaction data:** Date, time, feature requested, and completion status when you interact with the mindLAMP app.
+- **Device-collected sensor data:** If enabled by the researcher and permitted by the participant, the app may collect passive sensor data such as accelerometer, GPS, step count, screen state, and others. See [Sensors & Data](/docs/sensors-data) for the full reference.
+- **GPS / geospatial data (opt-in):** If enabled, the app records location data. GPS data is considered PHI under HIPAA (geographic subdivision smaller than a state). Collection requires explicit opt-in.
+- **Health platform data (opt-in):** If enabled, the app reads data from Apple HealthKit, Apple SensorKit, or Google HealthConnect. See [Health & Sensor Data Access](#health--sensor-data-access) below for the full list of supported data types.
+- **Email address (optional):** Researchers may optionally configure email-based credentials. We strongly recommend against this, as it introduces personally identifiable information.
+
+:::info
+The LAMP Platform does not by default request, use, or store any personally identifiable information, and we strongly recommend against configuring it to do so. The PHI footprint is limited to timestamps and, when opted in, GPS data.
+:::
+
+### How We Use Your Data
+
+Your data may be used to support internal operations, including troubleshooting, user support, and service improvements. We also use data to create aggregated statistics to evaluate usage patterns, demand, and error rates. These aggregated statistics are not linked to any information that can identify an individual.
+
+The Division of Digital Psychiatry at Beth Israel Deaconess Medical Center will never access your data without prior consent and permission. If self-deploying the LAMP Platform, you are in sole control and ownership of all data consumed or produced by the platform.
+
+### Information We Share
+
+We do not sell, trade, or otherwise transfer to outside parties any information we receive. We may release information to judicial, law enforcement, or other government agencies when we believe release is appropriate to comply with a governmental or court order or the law, to enforce our own policies, or to protect ours or others' rights, property, or safety.
+
+We may share aggregate statistics about app usage, survey responses, cognitive test results, and sensor data for purely research purposes. If used for research, your data will only be used in aggregate form. We will never use your data for marketing or commercial purposes.
+
+### How We Protect Your Information
+
+We make every reasonable effort to protect your information against unauthorized access, alteration, disclosure, or destruction using current security technologies. Servers that host the mindLAMP app and store your data are maintained in a secured facility behind a firewall. Security measures are reviewed regularly and are consonant with policies for secure healthcare data storage. We restrict access to user data to employees, contractors, and agents who need it to provide support and services. These individuals are required to complete training on patient privacy and confidentiality and are bound by strict confidentiality obligations.
+
+### Deleting Your Account and Data
+
+Your account may be deleted at any time via the app through the "Delete My Account" button, or by contacting your site administrator.
+
+When an account or data record is deleted, it is **soft-deleted** — immediately removed from all queries and no longer accessible through the app or API, but retained in the database.
+
+**Why soft-deletion?** The LAMP Platform is designed for research environments where data integrity and auditability are critical. Allowing unrestricted permanent deletion through the app or API would risk compromising the integrity of research datasets. Instead, permanent deletion requires action by a site administrator through audited protocols, ensuring a clear chain of accountability.
+
+:::caution What soft-deletion means for your data
+- Deleted data is **immediately inaccessible** through the app and API.
+- Deleted data is **not permanently erased** from the database. Permanent deletion requires a site administrator to manually remove the records through audited procedures.
+- **Event data** (survey responses, sensor readings) does not currently support deletion through the API. To remove event data, contact your site administrator.
+- For BIDMC-hosted sites, permanent deletion follows strict internal protocols. **We encourage all self-deploying teams to establish similarly audited deletion procedures.**
+:::
+
+### Health & Sensor Data Access
+
+The mindLAMP app can read data from the following health platforms when the participant grants permission. Permission can be revoked for any individual sensor at the discretion of either the researcher or participant.
+
+<Tabs>
+  <TabItem value="healthconnect" label="Google HealthConnect" default>
+
+  | Sensor | Record Type |
+  |--------|------------|
+  | Heart Rate | `HeartRateRecord` |
+  | Steps | `StepsRecord` |
+  | Steps Cadence | `StepsCadenceRecord` |
+  | Speed | `SpeedRecord` |
+  | Distance | `DistanceRecord` |
+  | Total Calories Burned | `TotalCaloriesBurnedRecord` |
+  | Hydration | `HydrationRecord` |
+  | Nutrition | `NutritionRecord` |
+  | Blood Glucose | `BloodGlucoseRecord` |
+  | Blood Pressure | `BloodPressureRecord` |
+  | Body Temperature | `BodyTemperatureRecord` |
+  | Sleep | `SleepSessionRecord` |
+  | Respiratory Rate | `RespiratoryRateRecord` |
+
+  The use of information received from Health Connect adheres to the [Health Connect Permissions Policy](https://support.google.com/googleplay/android-developer/answer/9888170), including the Limited Use requirements.
+
+  </TabItem>
+  <TabItem value="healthkit" label="Apple HealthKit">
+
+  The use of information received from Apple HealthKit adheres to Apple's [HealthKit developer guidelines](https://developer.apple.com/health-fitness/), including data minimization and user consent requirements.
+
+  **Quantity Types**
+
+  | Sensor | LAMP Identifier |
+  |--------|----------------|
+  | Heart Rate | `lamp.heart_rate` |
+  | Heart Rate Variability (SDNN) | `lamp.heartratevariability_sdnn` |
+  | Respiratory Rate | `lamp.respiratory_rate` |
+  | Steps | `lamp.steps` |
+  | Body Temperature | `lamp.body_temperature` |
+  | Oxygen Saturation | `lamp.oxygen_saturation` |
+  | Blood Glucose | `lamp.blood_glucose` |
+  | Nutrition (37 dietary subtypes) | `lamp.nutrition` |
+
+  **Category Types**
+
+  | Sensor | LAMP Identifier |
+  |--------|----------------|
+  | Sleep Analysis | `lamp.sleep` |
+
+  **Correlation Types**
+
+  | Sensor | LAMP Identifier |
+  |--------|----------------|
+  | Blood Pressure (Systolic & Diastolic) | `lamp.blood_pressure` |
+
+  **Workout Types**
+
+  | Sensor | LAMP Identifier |
+  |--------|----------------|
+  | Workouts / Exercise Segments | `lamp.segment` |
+
+  **Characteristic Types (read-once)**
+
+  | Sensor | LAMP Identifier |
+  |--------|----------------|
+  | Biological Sex | `lamp.biologicalsex` |
+  | Blood Type | `lamp.bloodtype` |
+  | Date of Birth | `lamp.dob` |
+  | Skin Type | `lamp.skintype` |
+  | Wheelchair Use | `lamp.wheelchairuse` |
+
+  </TabItem>
+  <TabItem value="sensorkit" label="Apple SensorKit">
+
+  | Sensor | SensorKit Identifier |
+  |--------|---------------------|
+  | Device Usage Report | `com.apple.sensorkit.device_usage` |
+  | Ambient Light | `com.apple.sensorkit.ambient_light` |
+  | Phone Usage Report | `com.apple.sensorkit.phone_usage` |
+  | Messages Usage Report | `com.apple.sensorkit.messages_usage` |
+  | Visits (Location) | `com.apple.sensorkit.visits` |
+  | Wrist Detection | `com.apple.sensorkit.wrist_state` |
+  | Siri Speech Metrics | `com.apple.sensorkit.siri_speech_metrics` |
+  | Telephony Speech Metrics | `com.apple.sensorkit.telephony_speech_metrics` |
+
+  SensorKit access requires an approved entitlement from Apple and is only available for research studies. The use of SensorKit data adheres to Apple's [SensorKit usage policies](https://developer.apple.com/documentation/sensorkit).
+
+  </TabItem>
+</Tabs>
+
+---
+
+## Security & Technical Safeguards
+
+### Authentication & Access Control
+
+Credentials are required to access the LAMP Platform. By default, a clinician can see the data of their patients, but any other access must be explicitly granted. Clinicians can view aggregate reports that contain no identifying information about individual patients.
+
+The LAMP Platform supports two-factor authentication (2FA) and OAuth-based single sign-on for researcher and administrator accounts, in line with modern authentication best practices.
+
+### Infrastructure
+
+BIDMC-hosted LAMP deployments run on load-balanced containers in AWS Elastic Container Service (ECS), providing high availability, automatic failover, and isolation between services. Self-deploying organizations can adopt a similar containerized architecture to benefit from the same security and reliability properties.
+
+### Encryption & Data Protection
+
+Data in transit between the device and server is encrypted using TLS v1.3 over HTTP/2.0. Data at rest is encrypted using AES-256 encryption with a secret key unique to each site. All API requests (create, read, update, delete) are logged to an audit trail along with the credentials used, so that a site can monitor all data access.
+
+### Breach Policy
+
+In the event of a suspected data breach, a site lead may immediately revoke all credentials and disable access to the data. Separate private keys are maintained per site and per patient, so a breach of one sub-section of data cannot affect other sub-sections. Devices are identified by a unique per-device token, and data integrity in flight can be verified by cross-referencing this token in the audit trail. Because LAMP identifies users by codes rather than names, a breach does not directly expose the identity of participants.
+
+### Security Threat Protocol
+
+In the event of an active security threat, our team will:
+1. Determine how and what information has been endangered.
+2. Alert users with any steps they must take, such as changing their passwords.
+3. Identify and complete the steps needed to secure the server, dashboard, and data.
+4. Log the type of threat, when and how it occurred, and the resolution.
+
+---
+
+## Compliance & Deployment Guidance
+
+This section is for organizations evaluating the LAMP Platform for research or clinical use.
+
+### Personal Health Information (PHI)
+
+Of the [18 HIPAA identifiers](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html), the LAMP Platform may collect the following depending on study configuration:
+
+| PHI Type | Collected? | Details |
+|----------|-----------|---------|
+| Dates | **Yes** | All data is timestamped. |
+| Geographic data | **Opt-in** | GPS sensor, if enabled. |
+| Email addresses | **Optional** | Only if a researcher configures email-based credentials. |
+| Names, phone numbers, SSNs, etc. | **No** | LAMP uses randomly generated participant IDs. |
+
+LAMP does not collect patient names and uses codes instead. Linking any information collected by LAMP to a unique individual requires a key that is kept by each site and not shared.
+
+### HIPAA
+
+LAMP offers physical and technical safeguards in line with the HIPAA Security Rule, which requires covered entities to maintain reasonable and appropriate administrative, technical, and physical safeguards for protecting e-PHI, including:
+
+1. Ensure the confidentiality, integrity, and availability of all e-PHI they create, receive, maintain, or transmit;
+2. Identify and protect against reasonably anticipated threats to the security or integrity of the information;
+3. Protect against reasonably anticipated, impermissible uses or disclosures; and
+4. Ensure compliance by their workforce.
+
+**LAMP meets these requirements through the following features:**
+
+1. Limited facility access and control with authorized access procedures
+2. Access control restricting data access to authorized personnel
+3. Audit reports and tracking logs that record all data access activity
+4. Integrity controls ensuring data is not altered or destroyed without appropriate permissions
+5. Encrypted network transmissions (TLS v1.3) and encrypted storage (AES-256)
+
+:::note
+LAMP is not an electronic health record (EHR) system. It is a research and clinical data collection platform. HIPAA compliance also depends on your organization's administrative and physical safeguards, which are outside the scope of the LAMP software itself.
+:::
+
+### IRB Guidance
+
+Here is sample language you may find useful when conveying the LAMP Platform's privacy posture to your IRB:
+
+> Encrypted information from survey responses and passive data will be sent and stored electronically on a secure server. Responses from individual participants will be identified by a randomly generated ID and contain no personally identifiable information. If GPS data collection is enabled for the study, participants will be informed and must opt in.
+
+Regarding participant anonymity:
+
+> The app does not record or store personal identity information by default. Every participant is assigned a randomly generated participant ID (for example, "U123456789"), and all participant data are connected only to that ID, not to a name, phone number, or address.
+
+### Risk Analysis & Penetration Testing
+
+Our team performs ongoing risk analysis as part of our security management processes:
+
+1. Regular review of logs for all BIDMC-hosted research and clinical sites to identify potential risks.
+2. Assessment of the probability and impact of security issues.
+3. Frequent security updates to proactively address new threats.
+
+**Penetration Testing:** In July 2025, Echelon Risk + Cyber performed penetration testing against both the mobile and web applications for mindLAMP in a test environment on BIDMC infrastructure. The observations identified in testing have been addressed. However, due to differences in infrastructure and configurations across environments, **we recommend having a penetration test performed in your own environment** before deploying mindLAMP.
+
+We recommend Echelon Risk + Cyber for this testing due to their familiarity with the application:
+- Greg DeLeonardis: greg.deleonardis@echeloncyber.com
+- Steve Snider: steve.snider@echeloncyber.com
+
+---
+
+## Copyright & Proprietary Rights
+
+The LAMP Platform is free and open source software developed by the Division of Digital Psychiatry at Beth Israel Deaconess Medical Center.
+
+The mindLAMP app, its features, and contents are protected by copyright and other intellectual property laws. Unless otherwise expressly provided in these Terms of Use, you may print or download information from the app for personal, non-commercial use only, provided you identify the source of the material, include a statement that the material is protected by copyright law, and do not modify any of the information. Reprinting or reproducing any document in whole or in part is prohibited unless prior written consent is obtained from the copyright owner.
+
+Nothing in these Terms of Use shall be deemed to grant you any right, title, license, or interest in or to any software or documentation, or in any related patents, copyrights, trademarks, trade secrets, or other intellectual property of any kind.
